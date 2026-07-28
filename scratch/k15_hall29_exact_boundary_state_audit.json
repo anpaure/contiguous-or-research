@@ -1,0 +1,54 @@
+{
+  "status": "K15_HALL29_EXACT_BOUNDARY_STATE_AUDIT",
+  "date": "2026-07-28",
+  "catalogue": {
+    "vertices": 6435,
+    "directed_edges": 15890,
+    "parents": [
+      "scratch/k15_doubletrans_05_213_hall29.json",
+      "scratch/k15_outer2_p1_h30_bridge.json",
+      "scratch/k15_trans1113_balanced_hall31.json"
+    ]
+  },
+  "witness": {
+    "name": "A29",
+    "file": "scratch/k15_doubletrans_05_213_hall29.dm_witness.json",
+    "targets": 1524,
+    "exact_neighbourhood": 1495,
+    "exact_depth_counts": [81, 395, 1019],
+    "selected_left_boundary": [0, 0, 0],
+    "selected_right_boundary": [0, 0, 0]
+  },
+  "centered_active_counts": {
+    "4_edges": [90, 421, 1233],
+    "5_edges": [81, 404, 1126],
+    "6_edges": [81, 395, 1047],
+    "7_edges": [81, 395, 1019]
+  },
+  "minimal_exact_edges_by_depth": [5, 6, 7],
+  "positive_catalogue_states": {
+    "depth0_at_5_edges": 29027,
+    "depth1_at_6_edges": 137426,
+    "depth2_at_7_edges": 595220,
+    "adaptive_total": 761673,
+    "uniform_7_edge_total": 1108667
+  },
+  "boundary_collar_census": {
+    "edges_per_collar": 8,
+    "collars_each_side": 8967022,
+    "weight_range": [0, 18],
+    "left_variable_endpoints": 6383,
+    "right_variable_endpoints": 6388,
+    "left_zero_possible_endpoints": 3718,
+    "right_zero_possible_endpoints": 3720,
+    "incumbent_start": 9901,
+    "incumbent_start_possible_weights": [0, 1, 3, 4, 6],
+    "incumbent_end": 7779,
+    "incumbent_end_possible_weights": [0, 1, 2, 3, 6]
+  },
+  "regressions": {
+    "random_boundary_walks": 1000,
+    "random_interior_walks": 4995,
+    "result": "PASS"
+  }
+}

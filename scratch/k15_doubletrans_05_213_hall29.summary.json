@@ -1,0 +1,64 @@
+{
+  "artifacts": {
+    "scratch/k15_doubletrans_05_213_hall29.dm_witness.json": {
+      "bytes": 33073,
+      "sha256": "d329d6302257dcd31ad83192ea8f88e86b46eb364719b1bb040e75e761ebb6d6"
+    },
+    "scratch/k15_doubletrans_05_213_hall29.json": {
+      "bytes": 196370,
+      "sha256": "5516482eadaba4f8fb9549b41c79c3b949df2e3224ce68f9dacd3b5b6bc2d21c"
+    },
+    "scratch/k15_doubletrans_05_213_hall29.native_hall.json": {
+      "bytes": 17859,
+      "sha256": "649b5c0f87ae2cebb4fff77535139afbe72efcba10d354395703ae7b38c3d3b3"
+    }
+  },
+  "exact_audit": {
+    "hall_deficiency": 29,
+    "hall_zero_candidates": 7,
+    "hall_zero_targets": [
+      2575,
+      5801,
+      13616,
+      13620,
+      17738,
+      21641,
+      29776
+    ],
+    "lower_q1_holes": 4,
+    "lower_q1_repeats": 3,
+    "lower_q2_holes": 21,
+    "lower_q3_holes": 4,
+    "residence_bad_motifs": 0,
+    "structural_identity": true,
+    "upper_holes": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    }
+  },
+  "permutation": [
+    5,
+    1,
+    13,
+    3,
+    4,
+    0,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    2,
+    14
+  ],
+  "source": "scratch/k15_outer2_p1_h30_bridge.json",
+  "status": "K15_DOUBLE_TRANSPOSITION_TRADE_HALL29",
+  "trades_selected": 683
+}

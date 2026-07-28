@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.o
+*.a
+*.so
+*.dylib
+*.cnf
+*.cnf.*
+*.model
+*.drat
+*.bin
+*.log
+*.out
+*.status
+*.tgz
+tmp/

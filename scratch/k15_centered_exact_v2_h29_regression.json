@@ -1,0 +1,47 @@
+{
+  "leaves": 213501726,
+  "locality": {
+    "0": [
+      5,
+      2,
+      2
+    ],
+    "1": [
+      6,
+      2,
+      2
+    ],
+    "2": [
+      7,
+      2,
+      2
+    ]
+  },
+  "motif": "scratch/directed293031_A29.centered_exact_v2.tsv",
+  "parent": "scratch/k15_doubletrans_05_213_hall29.json",
+  "patterns": 761673,
+  "status": "K15_CENTERED_EXACT_V2_REGRESSION_PASS",
+  "witnesses": [
+    {
+      "interior_by_depth": [
+        81,
+        395,
+        1019
+      ],
+      "label": "A29",
+      "left_boundary_by_depth": [
+        0,
+        0,
+        0
+      ],
+      "native_fixed_neighbourhood": 1495,
+      "right_boundary_by_depth": [
+        0,
+        0,
+        0
+      ],
+      "targets": 1524,
+      "total": 1495
+    }
+  ]
+}

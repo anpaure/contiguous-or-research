@@ -1,0 +1,52 @@
+{
+  "arc_source_multiplicity": {
+    "1": 12424,
+    "2": 222
+  },
+  "balanced_parent_windows": [],
+  "best_key": null,
+  "census": [
+    {
+      "round": 0,
+      "status": "INFEASIBLE"
+    }
+  ],
+  "directed_arcs": 12646,
+  "elapsed": 24.691676691174507,
+  "exact_fixed_models": [
+    {
+      "by_kind": {
+        "I": 165626,
+        "L_upper_endpoints": 6132,
+        "R_upper_endpoints": 6081
+      },
+      "patterns": 165626,
+      "source": "pair24_block2.exact.tsv",
+      "threshold": 1529
+    },
+    {
+      "by_kind": {
+        "I": 169689,
+        "L_upper_endpoints": 6113,
+        "R_upper_endpoints": 6103
+      },
+      "patterns": 169689,
+      "source": "pair24_block4.exact.tsv",
+      "threshold": 1524
+    }
+  ],
+  "fixed_models": [],
+  "forced_tuple": null,
+  "maximize_fixed_min_slack": false,
+  "parent_count": 2,
+  "parent_window_models": [],
+  "residence_forbidden_motifs": 52570,
+  "sources": [
+    "k15_trans1113_balanced_hall31.json",
+    "k15_accumulated_zero_parent_winner.json"
+  ],
+  "status": "DONE",
+  "target_motif_model": null,
+  "upper_constraints": 0,
+  "upper_witness_count": {}
+}

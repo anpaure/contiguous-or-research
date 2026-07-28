@@ -1,0 +1,2077 @@
+{
+  "census": {
+    "cycle_counts": {
+      "3": 404,
+      "4": 314,
+      "5": 365,
+      "7": 857
+    },
+    "emitted_total": 207,
+    "include_parent_pure": true,
+    "max_support": 6,
+    "scope": "exact five-parent intrinsic multiparent transfers, support 3 through 7",
+    "status": "PASS",
+    "transpositions": 818,
+    "types": {
+      "2+2": {
+        "disjoint": 334017,
+        "emitted": 24,
+        "hamilton": 82742,
+        "intrinsic": 231999,
+        "parent_pure": 102018,
+        "residence_safe": 51,
+        "total": 334153,
+        "upper_safe": 24
+      },
+      "3": {
+        "disjoint": 404,
+        "emitted": 0,
+        "hamilton": 29,
+        "intrinsic": 68,
+        "parent_pure": 336,
+        "residence_safe": 0,
+        "total": 404,
+        "upper_safe": 0
+      },
+      "3+3": {
+        "disjoint": 81332,
+        "emitted": 48,
+        "hamilton": 18761,
+        "intrinsic": 62658,
+        "parent_pure": 18674,
+        "residence_safe": 244,
+        "total": 81406,
+        "upper_safe": 48
+      },
+      "4+2": {
+        "disjoint": 256595,
+        "emitted": 35,
+        "hamilton": 54366,
+        "intrinsic": 204235,
+        "parent_pure": 52360,
+        "residence_safe": 61,
+        "total": 256852,
+        "upper_safe": 35
+      },
+      "5": {
+        "disjoint": 365,
+        "emitted": 0,
+        "hamilton": 58,
+        "intrinsic": 186,
+        "parent_pure": 179,
+        "residence_safe": 0,
+        "total": 365,
+        "upper_safe": 0
+      }
+    }
+  },
+  "enumerator_sha256": "317219cf064045ec47dbd75d964e85537a1fda7dc0ef2c824f19eb0267001f54",
+  "hall_histograms": {
+    "2+2": {
+      "34": 2,
+      "35": 9,
+      "36": 6,
+      "37": 5,
+      "38": 1,
+      "39": 1
+    },
+    "3+3": {
+      "29": 13,
+      "30": 8,
+      "31": 2,
+      "32": 1,
+      "33": 18,
+      "34": 3,
+      "35": 1,
+      "37": 2
+    },
+    "4+2": {
+      "32": 2,
+      "33": 8,
+      "34": 8,
+      "35": 10,
+      "36": 5,
+      "37": 2
+    },
+    "parent-pure/2+2": {
+      "34": 4,
+      "35": 11,
+      "36": 5,
+      "37": 5,
+      "38": 1
+    },
+    "parent-pure/3": {
+      "29": 8,
+      "30": 2,
+      "33": 3
+    },
+    "parent-pure/3+3": {
+      "29": 20,
+      "30": 7,
+      "31": 1,
+      "33": 8,
+      "34": 3,
+      "35": 1,
+      "37": 1
+    },
+    "parent-pure/4+2": {
+      "32": 3,
+      "33": 2,
+      "34": 7,
+      "35": 2,
+      "36": 3,
+      "37": 1,
+      "38": 2
+    }
+  },
+  "minimum_parent_pure_deficiency": 29,
+  "parent_pure_census": {
+    "status": "PASS",
+    "types": {
+      "2+2": {
+        "emitted": 26,
+        "evaluated": 102018,
+        "hamilton": 35858,
+        "residence_safe": 33,
+        "upper_safe": 26
+      },
+      "3": {
+        "emitted": 13,
+        "evaluated": 336,
+        "hamilton": 173,
+        "residence_safe": 28,
+        "upper_safe": 13
+      },
+      "3+3": {
+        "emitted": 41,
+        "evaluated": 18674,
+        "hamilton": 5915,
+        "residence_safe": 178,
+        "upper_safe": 41
+      },
+      "4+2": {
+        "emitted": 20,
+        "evaluated": 52360,
+        "hamilton": 14122,
+        "residence_safe": 40,
+        "upper_safe": 20
+      },
+      "5": {
+        "emitted": 0,
+        "evaluated": 179,
+        "hamilton": 44,
+        "residence_safe": 0,
+        "upper_safe": 0
+      }
+    }
+  },
+  "parent_pure_records": [
+    {
+      "deficiency": 29,
+      "id": "candidate_0000000",
+      "matching": 16354,
+      "parts": [
+        [
+          3036,
+          6620,
+          7128
+        ]
+      ],
+      "path_sha256": "d7873bf03a482b8efb39e0abf715a8279f95761604867b5cea6983490c742a2c",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000001",
+      "matching": 16350,
+      "parts": [
+        [
+          4923,
+          5019,
+          21275
+        ]
+      ],
+      "path_sha256": "f9d3509a50fd65dafbce8798f30910aa2816f57169c47a1fcef1eb12e19e3643",
+      "type": "parent-pure/3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000002",
+      "matching": 16354,
+      "parts": [
+        [
+          8911,
+          13005,
+          8941
+        ]
+      ],
+      "path_sha256": "1fd81b67858d88ccc422b94e0f6e1cb0cc0649b6594a2d612d6deec455d0472f",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000003",
+      "matching": 16350,
+      "parts": [
+        [
+          9933,
+          21197,
+          17103
+        ]
+      ],
+      "path_sha256": "dd7066b2b4c1553c4240f282d418ea35c0c0bb4709dfedd2d29defbda66d007d",
+      "type": "parent-pure/3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000004",
+      "matching": 16353,
+      "parts": [
+        [
+          10814,
+          10910,
+          11038
+        ]
+      ],
+      "path_sha256": "91e7c0b96f151bd9eca92b01a8a9d806fe4e9a2e738af7c51f329c126f78417f",
+      "type": "parent-pure/3",
+      "zero_candidates": 8
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000005",
+      "matching": 16354,
+      "parts": [
+        [
+          19426,
+          23490,
+          23520
+        ]
+      ],
+      "path_sha256": "e5bcfe3ae5e33ef8296960053af75a01ba461f212c211df9fa671beb8a12396e",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000006",
+      "matching": 16354,
+      "parts": [
+        [
+          20011,
+          24075,
+          24105
+        ]
+      ],
+      "path_sha256": "b95112d4b8948b49ddabefe1061705030d83736870e047b48ae1f3872fd29bd7",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000007",
+      "matching": 16354,
+      "parts": [
+        [
+          20194,
+          24288,
+          24258
+        ]
+      ],
+      "path_sha256": "efd5b604466cfe4321064ad7308f8963e5487dee06f291bd9b8f4bd0105148f0",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000008",
+      "matching": 16354,
+      "parts": [
+        [
+          20274,
+          24338,
+          24368
+        ]
+      ],
+      "path_sha256": "0a2475d9dec624a8965d257b7a7903eb1f8c78c01d61891600b20786c0d2f038",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000009",
+      "matching": 16354,
+      "parts": [
+        [
+          20386,
+          24480,
+          22434
+        ]
+      ],
+      "path_sha256": "c59eae67b108709c804df4b280435576476f67cedd4f6a76d38faa7fa0c59060",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000010",
+      "matching": 16350,
+      "parts": [
+        [
+          23623,
+          23653,
+          23749
+        ]
+      ],
+      "path_sha256": "c4226767797ab5965063ee361d631b798b2c56c2f9521db5194d831c9653a39c",
+      "type": "parent-pure/3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000011",
+      "matching": 16354,
+      "parts": [
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "2b6542f607b6782611ab3bd0cabacb16da420c212a528402a75c36eff760a099",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000012",
+      "matching": 16353,
+      "parts": [
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "efd9025e748a72cb7a570ab845221288af8a6ac4d6176e6d38671080480d8dce",
+      "type": "parent-pure/3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000013",
+      "matching": 16349,
+      "parts": [
+        [
+          2998,
+          10678
+        ],
+        [
+          7467,
+          7563
+        ]
+      ],
+      "path_sha256": "2e6d6210b13c6435ff7b29f0d88d1fcb8e7d2b6067be61ecf4736b91f4e78654",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000017",
+      "matching": 16347,
+      "parts": [
+        [
+          2998,
+          10678
+        ],
+        [
+          29289,
+          29385
+        ]
+      ],
+      "path_sha256": "596db089a5167b99ccf9e9470e082071316ddfd2369ec8a72d7cbddef84ba8f4",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000018",
+      "matching": 16348,
+      "parts": [
+        [
+          2998,
+          10678
+        ],
+        [
+          30945,
+          31968
+        ]
+      ],
+      "path_sha256": "f9457fca7da8b3281820d9f998fcd0e7404a8ca7b9a68ba0bdf3243a9c9740d4",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000021",
+      "matching": 16349,
+      "parts": [
+        [
+          7467,
+          7563
+        ],
+        [
+          12074,
+          12170
+        ]
+      ],
+      "path_sha256": "aceff6009aad69057077cefb1d636b94c6b50711b73320c717048a2ce36dae4d",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000022",
+      "matching": 16349,
+      "parts": [
+        [
+          7467,
+          7563
+        ],
+        [
+          14130,
+          14226
+        ]
+      ],
+      "path_sha256": "e46cc7834b9e8b218e1aebbe72c396e4ffac267a5ab131de0ad11ab95a8ec5f9",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000023",
+      "matching": 16348,
+      "parts": [
+        [
+          7467,
+          7563
+        ],
+        [
+          15139,
+          15235
+        ]
+      ],
+      "path_sha256": "b676a53788336187c855a7b73bde08f8660b90998c16e0ca809332bc0f9d9828",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000024",
+      "matching": 16349,
+      "parts": [
+        [
+          7467,
+          7563
+        ],
+        [
+          17133,
+          21228
+        ]
+      ],
+      "path_sha256": "f0e7d513e53c489ab5909712682bdaebe21c48721d1ae006c7e2f8ed933484b4",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000027",
+      "matching": 16348,
+      "parts": [
+        [
+          7467,
+          7563
+        ],
+        [
+          29289,
+          29385
+        ]
+      ],
+      "path_sha256": "3a6c2af34ac6e6ef214a4a738196d70c4bacdfef25543c0ac5c67d2b8ade086c",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000030",
+      "matching": 16348,
+      "parts": [
+        [
+          11373,
+          11469
+        ],
+        [
+          12074,
+          12170
+        ]
+      ],
+      "path_sha256": "f21ced5847cac75c0f93e1751436517da28ecaf792bdbedec657c5eef305cd67",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000031",
+      "matching": 16348,
+      "parts": [
+        [
+          11373,
+          11469
+        ],
+        [
+          14130,
+          14226
+        ]
+      ],
+      "path_sha256": "9a3cb7a9f7914940049e015d05ac300935997831fb2f2d04b769fe767edbe256",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 37,
+      "id": "candidate_0000033",
+      "matching": 16346,
+      "parts": [
+        [
+          12074,
+          12170
+        ],
+        [
+          13102,
+          13198
+        ]
+      ],
+      "path_sha256": "336810fa93151d081500c31d078d526862db4d3ff78d3d6a23ad9e58499aebde",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000034",
+      "matching": 16347,
+      "parts": [
+        [
+          12074,
+          12170
+        ],
+        [
+          14130,
+          14226
+        ]
+      ],
+      "path_sha256": "845dfc87064024928984cb4815d48e34d445237cee9177e4b8962b1350db8e59",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000035",
+      "matching": 16348,
+      "parts": [
+        [
+          12074,
+          12170
+        ],
+        [
+          17133,
+          21228
+        ]
+      ],
+      "path_sha256": "efc45419b019ebd54d6971fa9bc36ae6540e2f05508e0e22bb3d6ebadbe2022a",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000036",
+      "matching": 16348,
+      "parts": [
+        [
+          12074,
+          12170
+        ],
+        [
+          30945,
+          31968
+        ]
+      ],
+      "path_sha256": "0464e3735be83749f3397b77d8c236f3fc64581fd84e672a4f82f3a7ac92ae61",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 37,
+      "id": "candidate_0000037",
+      "matching": 16346,
+      "parts": [
+        [
+          13102,
+          13198
+        ],
+        [
+          14130,
+          14226
+        ]
+      ],
+      "path_sha256": "8d04508f4998b05e331b3e76c095b1483240ae2eabb155258d5d2af1c7217ed1",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 38,
+      "id": "candidate_0000041",
+      "matching": 16345,
+      "parts": [
+        [
+          13102,
+          13198
+        ],
+        [
+          29289,
+          29385
+        ]
+      ],
+      "path_sha256": "cdb52301f3e990d93497a1935c0ee5f65c0152d0cb665bd95bd763f4baf42b38",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 37,
+      "id": "candidate_0000042",
+      "matching": 16346,
+      "parts": [
+        [
+          13102,
+          13198
+        ],
+        [
+          30945,
+          31968
+        ]
+      ],
+      "path_sha256": "cac4f8bfdbd7af33cb4027fa4c4f93fa15bbbd2f4a91b189d2abf8bed47c94fe",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000043",
+      "matching": 16347,
+      "parts": [
+        [
+          14130,
+          14226
+        ],
+        [
+          15154,
+          15250
+        ]
+      ],
+      "path_sha256": "becd24e4d4101beac35934e172a07a42952dd6f586fa6386d79c0e741226fc6d",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000044",
+      "matching": 16348,
+      "parts": [
+        [
+          14130,
+          14226
+        ],
+        [
+          17133,
+          21228
+        ]
+      ],
+      "path_sha256": "9369abc22d881891927b541fe1b6811a9e5feaf3f70905b32222eba6a6baef37",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 37,
+      "id": "candidate_0000046",
+      "matching": 16346,
+      "parts": [
+        [
+          14130,
+          14226
+        ],
+        [
+          18684,
+          26872
+        ]
+      ],
+      "path_sha256": "3de3a87e48926a064cdf27f6c41baa18830fa215675c4a6aaf0066069ad66085",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000048",
+      "matching": 16348,
+      "parts": [
+        [
+          14130,
+          14226
+        ],
+        [
+          30945,
+          31968
+        ]
+      ],
+      "path_sha256": "0a853ab4bde9885840fcbedf868f8719949d885fcaf95be062432b22480657dd",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000053",
+      "matching": 16347,
+      "parts": [
+        [
+          17133,
+          21228
+        ],
+        [
+          29289,
+          29385
+        ]
+      ],
+      "path_sha256": "7aba459a68d863963afc81a3e59e68930e4530e369492b04be74b2e8af62d652",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000054",
+      "matching": 16348,
+      "parts": [
+        [
+          17133,
+          21228
+        ],
+        [
+          30945,
+          31968
+        ]
+      ],
+      "path_sha256": "5282266a7c84a61c696b24bdc0ff0deb0fb1efda7955b213d6db4bff2ff9abd7",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000055",
+      "matching": 16348,
+      "parts": [
+        [
+          17333,
+          20915
+        ],
+        [
+          25239,
+          29333
+        ]
+      ],
+      "path_sha256": "2a7b136e0834d34f1af4f0e322f021c5bc7bdf1f50d6e3ee4c15a39cb0338dd9",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 10
+    },
+    {
+      "deficiency": 37,
+      "id": "candidate_0000056",
+      "matching": 16346,
+      "parts": [
+        [
+          17333,
+          20915
+        ],
+        [
+          25879,
+          29973
+        ]
+      ],
+      "path_sha256": "af0afd7929cc83b624e39b29cfdb065563552032fe4535f4c54c774c11a4bdc3",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000062",
+      "matching": 16347,
+      "parts": [
+        [
+          29289,
+          29385
+        ],
+        [
+          30945,
+          31968
+        ]
+      ],
+      "path_sha256": "6a7fe50067a73956931c91af27252b88d1fd25290fe2378cfabdc376ca56f4f2",
+      "type": "parent-pure/2+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000071",
+      "matching": 16350,
+      "parts": [
+        [
+          3036,
+          6620,
+          7128
+        ],
+        [
+          4923,
+          5019,
+          21275
+        ]
+      ],
+      "path_sha256": "89f3f479535429512c5afd988279404989c40c1867b039046d11e8b2e1c7568f",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000074",
+      "matching": 16353,
+      "parts": [
+        [
+          3036,
+          6620,
+          7128
+        ],
+        [
+          10814,
+          10910,
+          11038
+        ]
+      ],
+      "path_sha256": "1805da2459defbec2b6df037299b44b640931c383c2992b8888c3c5009041f7f",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 8
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000080",
+      "matching": 16350,
+      "parts": [
+        [
+          3036,
+          6620,
+          7128
+        ],
+        [
+          23623,
+          23653,
+          23749
+        ]
+      ],
+      "path_sha256": "b64e74d83b0161d2e3b28e353c070550b751ff4b42a451ec6ecd93d9d80359ca",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000083",
+      "matching": 16354,
+      "parts": [
+        [
+          3939,
+          3941,
+          8033
+        ],
+        [
+          8911,
+          13005,
+          8941
+        ]
+      ],
+      "path_sha256": "dee70c663f06ab656d30d6731f9b5c3eb407ec12f1da1f701c5b2e948a85cc08",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000084",
+      "matching": 16350,
+      "parts": [
+        [
+          3939,
+          3941,
+          8033
+        ],
+        [
+          9933,
+          21197,
+          17103
+        ]
+      ],
+      "path_sha256": "03c5f0faade6c6e7d94252f8bda2036c441c47f0aecd7787996e4bcff5976dd0",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000085",
+      "matching": 16354,
+      "parts": [
+        [
+          3939,
+          3941,
+          8033
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "dc04aa3e186ec49c2bad8bb0e894013d08a8b9935710e8503f4a76781b803a9a",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000088",
+      "matching": 16349,
+      "parts": [
+        [
+          4923,
+          5019,
+          21275
+        ],
+        [
+          10814,
+          10910,
+          11038
+        ]
+      ],
+      "path_sha256": "dad2d18aec10a95bdecc3341a56fd1bd91545729de26ce2da13a4f3bd77fe945",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 10
+    },
+    {
+      "deficiency": 37,
+      "id": "candidate_0000094",
+      "matching": 16346,
+      "parts": [
+        [
+          4923,
+          5019,
+          21275
+        ],
+        [
+          23623,
+          23653,
+          23749
+        ]
+      ],
+      "path_sha256": "4de9011825ef4b979b1d30cd476c35415421730a59da39b378330edbc4b10972",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000097",
+      "matching": 16350,
+      "parts": [
+        [
+          8911,
+          13005,
+          8941
+        ],
+        [
+          9933,
+          21197,
+          17103
+        ]
+      ],
+      "path_sha256": "02f69338e486d3c28042db1fd19fd7d1a959598d73e0a4a0fd8cc5607709d3a2",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000099",
+      "matching": 16354,
+      "parts": [
+        [
+          8911,
+          13005,
+          8941
+        ],
+        [
+          19426,
+          23490,
+          23520
+        ]
+      ],
+      "path_sha256": "ed14537fa8191c0be6f0312c90ef3c4ea1bf1476cece0f82343fa083562ec012",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000100",
+      "matching": 16354,
+      "parts": [
+        [
+          8911,
+          13005,
+          8941
+        ],
+        [
+          20011,
+          24075,
+          24105
+        ]
+      ],
+      "path_sha256": "a7d1383477952f77ae42c6ee036b7cd178d403d187da2983aa99442d7be52151",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000101",
+      "matching": 16354,
+      "parts": [
+        [
+          8911,
+          13005,
+          8941
+        ],
+        [
+          20194,
+          24288,
+          24258
+        ]
+      ],
+      "path_sha256": "d583bdf7bf9c28a73341945cb4e1de9456ad842bde34091b1e0c8342db260d01",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000103",
+      "matching": 16354,
+      "parts": [
+        [
+          8911,
+          13005,
+          8941
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "411bb0d7df537274d44c6cbf762d34040b2f7c49f0cc4e60e84002b6d5a1b387",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000104",
+      "matching": 16353,
+      "parts": [
+        [
+          8911,
+          13005,
+          8941
+        ],
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "5faa6aa3ddb335e669d7f5545c18b672402852f9b9ebbb285f70b91139d023f9",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 31,
+      "id": "candidate_0000106",
+      "matching": 16352,
+      "parts": [
+        [
+          9678,
+          13772,
+          9708
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "72757d0808ca47011c2c2a6c02f246d245b0ee60c1450bba5786bdd13960e9ed",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000108",
+      "matching": 16350,
+      "parts": [
+        [
+          9933,
+          21197,
+          17103
+        ],
+        [
+          19426,
+          23490,
+          23520
+        ]
+      ],
+      "path_sha256": "3188b9d6313406935d61f174e3833f362e5ca3b585b2cde741952ef8b228e0e5",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000109",
+      "matching": 16350,
+      "parts": [
+        [
+          9933,
+          21197,
+          17103
+        ],
+        [
+          20011,
+          24075,
+          24105
+        ]
+      ],
+      "path_sha256": "001a04e08cb16f9241f1ac2cde86b8fc1bb457a1dff2b504e372c21ae76c0036",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000110",
+      "matching": 16350,
+      "parts": [
+        [
+          9933,
+          21197,
+          17103
+        ],
+        [
+          20194,
+          24288,
+          24258
+        ]
+      ],
+      "path_sha256": "b83ec46d0f81b91a8641b7887179905e9800e67c97f9e051ca521a8c54581f51",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000112",
+      "matching": 16350,
+      "parts": [
+        [
+          9933,
+          21197,
+          17103
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "4c2055765959a653a8c3c342134d4d07a8108880c23d7d46c3573667eb72bd62",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000113",
+      "matching": 16349,
+      "parts": [
+        [
+          9933,
+          21197,
+          17103
+        ],
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "6bc317602740d44f3c81e911498c51649f0333b0a68dbbe174d99250e5485937",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000119",
+      "matching": 16349,
+      "parts": [
+        [
+          10814,
+          10910,
+          11038
+        ],
+        [
+          23623,
+          23653,
+          23749
+        ]
+      ],
+      "path_sha256": "b533dcfeaa7fb0164f518a082c7ab9c53cebe620ba372d9701807ae409ae67af",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 10
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000122",
+      "matching": 16348,
+      "parts": [
+        [
+          14891,
+          14987,
+          15111
+        ],
+        [
+          23623,
+          23653,
+          23749
+        ]
+      ],
+      "path_sha256": "1ccdf9b29f6f3dbfe94d6ce0c0026edf2c2c511acf112388bdb9b788ecce79c2",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000124",
+      "matching": 16354,
+      "parts": [
+        [
+          19426,
+          23490,
+          23520
+        ],
+        [
+          20011,
+          24075,
+          24105
+        ]
+      ],
+      "path_sha256": "c132d0ffd24c405fd6386ca1d425e4047546451bc2bf676272fee1e2da7fa4ce",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000125",
+      "matching": 16354,
+      "parts": [
+        [
+          19426,
+          23490,
+          23520
+        ],
+        [
+          20194,
+          24288,
+          24258
+        ]
+      ],
+      "path_sha256": "87dc273866872d14b2b9fb36739baac4db96b2cc7a6979834b10820f30cace25",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000126",
+      "matching": 16354,
+      "parts": [
+        [
+          19426,
+          23490,
+          23520
+        ],
+        [
+          20274,
+          24338,
+          24368
+        ]
+      ],
+      "path_sha256": "189b2045cb8d59f7aa0e97fcafcae331955b240098737f9840f5b44fdbe5c588",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000127",
+      "matching": 16354,
+      "parts": [
+        [
+          19426,
+          23490,
+          23520
+        ],
+        [
+          20386,
+          24480,
+          22434
+        ]
+      ],
+      "path_sha256": "131fa4f298830256b21ee7888e611a26d4a2e5ac29f7563a44c6b79d88342498",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000129",
+      "matching": 16354,
+      "parts": [
+        [
+          19426,
+          23490,
+          23520
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "517d4c5df13a620b0cf752d7ab366253d83b1bf0d8f0367046c099fbcef30c5e",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000130",
+      "matching": 16353,
+      "parts": [
+        [
+          19426,
+          23490,
+          23520
+        ],
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "c044031e22c2378a7daa997a3e17f86d30edb7e18f62fffc619dfe9bc6489c3d",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000133",
+      "matching": 16354,
+      "parts": [
+        [
+          19914,
+          19944,
+          24008
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "8c220dab241998c2ea0f867481513e6631e0f230b2505bfbc30a60afeb347866",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000134",
+      "matching": 16354,
+      "parts": [
+        [
+          20011,
+          24075,
+          24105
+        ],
+        [
+          20194,
+          24288,
+          24258
+        ]
+      ],
+      "path_sha256": "4802f2a966cb59641eb4e438e48ea4dca89f455c6477852e0c3ed272579e5328",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000135",
+      "matching": 16354,
+      "parts": [
+        [
+          20011,
+          24075,
+          24105
+        ],
+        [
+          20274,
+          24338,
+          24368
+        ]
+      ],
+      "path_sha256": "776c53307f6d8d368854cdf42ab784b6d19d912c43a05fa19e7ac36d9378bf85",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000137",
+      "matching": 16354,
+      "parts": [
+        [
+          20011,
+          24075,
+          24105
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "65f79e9d5c945989f33e4cedf5bf6e3ae8a94c5e51f711c79b05e5fc262c2027",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000138",
+      "matching": 16353,
+      "parts": [
+        [
+          20011,
+          24075,
+          24105
+        ],
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "361c7d4d95794abbfb0acb457aac30299582e56f5a6cd96ceb09681d3a95229b",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000139",
+      "matching": 16354,
+      "parts": [
+        [
+          20194,
+          24288,
+          24258
+        ],
+        [
+          20386,
+          24480,
+          22434
+        ]
+      ],
+      "path_sha256": "0089a5ba77708d88e50ada3feb1bdc6acd7c817cbee63505b4d76f9bcf7284db",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000141",
+      "matching": 16354,
+      "parts": [
+        [
+          20194,
+          24288,
+          24258
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "0b2436ef1cf66ffdf34e39ab29f085b4f2ef2da53437a09ae8f0ae8f9dc9d8af",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000142",
+      "matching": 16353,
+      "parts": [
+        [
+          20194,
+          24288,
+          24258
+        ],
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "5f7a0ef8d269c24c46243f7cdf03d202009f5d14803b3f15137d207a26ebcfbb",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000143",
+      "matching": 16354,
+      "parts": [
+        [
+          20194,
+          24288,
+          24258
+        ],
+        [
+          25939,
+          30033,
+          25941
+        ]
+      ],
+      "path_sha256": "f5447f3dc52c04cd96947d331eff93f5cbfc284f1e5a7f0e3b0ea87d90101bb1",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000144",
+      "matching": 16354,
+      "parts": [
+        [
+          20274,
+          24338,
+          24368
+        ],
+        [
+          20386,
+          24480,
+          22434
+        ]
+      ],
+      "path_sha256": "4bae5e2a4e558c91394e8dbbee79447d24fe77e5a2ddbacd7fe965cd51284533",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 29,
+      "id": "candidate_0000146",
+      "matching": 16354,
+      "parts": [
+        [
+          20274,
+          24338,
+          24368
+        ],
+        [
+          25043,
+          29137,
+          25045
+        ]
+      ],
+      "path_sha256": "8ef073de2d436890d8df010af817810d3514243f0e500e5a498f0a4cb0a98098",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000148",
+      "matching": 16353,
+      "parts": [
+        [
+          20386,
+          24480,
+          22434
+        ],
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "dfb267bacc94b0434b6758907d030ff3b51a1c874ef454c605463794c1970db3",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 30,
+      "id": "candidate_0000151",
+      "matching": 16353,
+      "parts": [
+        [
+          25043,
+          29137,
+          25045
+        ],
+        [
+          25374,
+          29468,
+          29466
+        ]
+      ],
+      "path_sha256": "09eab71b3daea8fe5b728a405a0663a6606a77a74e8f5da0a640835768ffd17c",
+      "type": "parent-pure/3+3",
+      "zero_candidates": 7
+    },
+    {
+      "deficiency": 32,
+      "id": "candidate_0000153",
+      "matching": 16351,
+      "parts": [
+        [
+          510,
+          4604,
+          12764,
+          8670
+        ],
+        [
+          7290,
+          7770
+        ]
+      ],
+      "path_sha256": "4c17cbbb156d58c6bd2b683467e6e7a7fdaac300e487c074520c9a224b370a3f",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000154",
+      "matching": 16350,
+      "parts": [
+        [
+          510,
+          4604,
+          12764,
+          8670
+        ],
+        [
+          7523,
+          7538
+        ]
+      ],
+      "path_sha256": "c88b6697abf966a3ce9491c9e3e64ea0f1d5de49dcfb5553f676b25d319eeada",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 33,
+      "id": "candidate_0000159",
+      "matching": 16350,
+      "parts": [
+        [
+          510,
+          4604,
+          12764,
+          8670
+        ],
+        [
+          25239,
+          29333
+        ]
+      ],
+      "path_sha256": "57f129f562f17c41d409ae00359876f39b719f39e4b470fa857583081d8ea0f9",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000160",
+      "matching": 16348,
+      "parts": [
+        [
+          510,
+          4604,
+          12764,
+          8670
+        ],
+        [
+          25879,
+          29973
+        ]
+      ],
+      "path_sha256": "d0a0f3577b2d18c2e211ac7d6f2f2cf7130223e497d411551ff3fec5aa8118d1",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 10
+    },
+    {
+      "deficiency": 32,
+      "id": "candidate_0000167",
+      "matching": 16351,
+      "parts": [
+        [
+          3046,
+          11234,
+          15328,
+          7140
+        ],
+        [
+          17333,
+          20915
+        ]
+      ],
+      "path_sha256": "031c45dbd39d8a50bef7023560d33b3c818edcf11455b94b44b434fee893f9e2",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 8
+    },
+    {
+      "deficiency": 32,
+      "id": "candidate_0000168",
+      "matching": 16351,
+      "parts": [
+        [
+          3046,
+          11234,
+          15328,
+          7140
+        ],
+        [
+          25239,
+          29333
+        ]
+      ],
+      "path_sha256": "4c2ead287409140baa3b94f5b6f753489534ed7ed9b58089e204bf0a458253bb",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 9
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000170",
+      "matching": 16349,
+      "parts": [
+        [
+          4851,
+          22211,
+          22241,
+          22115
+        ],
+        [
+          2998,
+          10678
+        ]
+      ],
+      "path_sha256": "df6b86f78daa14a065dfa5dd4e1c1ed75286a214c0e4a197a083d9f3a1ab0a15",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000172",
+      "matching": 16349,
+      "parts": [
+        [
+          4851,
+          22211,
+          22241,
+          22115
+        ],
+        [
+          11373,
+          11469
+        ]
+      ],
+      "path_sha256": "f01707162748e4f0ae8078bea65b802497ef35a095e0dae2740a5a78bef4dd62",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000173",
+      "matching": 16349,
+      "parts": [
+        [
+          4851,
+          22211,
+          22241,
+          22115
+        ],
+        [
+          12074,
+          12170
+        ]
+      ],
+      "path_sha256": "41161d21a35db1455913066dd85c7a80d6f5bf9433c50a2122e50d5985ddbf2b",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000174",
+      "matching": 16349,
+      "parts": [
+        [
+          4851,
+          22211,
+          22241,
+          22115
+        ],
+        [
+          14130,
+          14226
+        ]
+      ],
+      "path_sha256": "3185259fc1b5f2195bc78556c79bd0b3f0122caacca42d2c1d357b5bdab555b2",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000192",
+      "matching": 16349,
+      "parts": [
+        [
+          8830,
+          10846,
+          14940,
+          12924
+        ],
+        [
+          17333,
+          20915
+        ]
+      ],
+      "path_sha256": "1f5a3766c0ba24dca9db15bddb00d02b8ccc635a3a77559b25a1ed7717dc331f",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000193",
+      "matching": 16349,
+      "parts": [
+        [
+          8830,
+          10846,
+          14940,
+          12924
+        ],
+        [
+          25239,
+          29333
+        ]
+      ],
+      "path_sha256": "dba1edac55f4f3020cbbcfe7e3bc15020896d24207b4e35490b1dfbf3c859e16",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 34,
+      "id": "candidate_0000196",
+      "matching": 16349,
+      "parts": [
+        [
+          8887,
+          9879,
+          26390,
+          9783
+        ],
+        [
+          10038,
+          10134
+        ]
+      ],
+      "path_sha256": "206663d67fe0a18ef50eb69ceca3c4c37216df0cbd3ce07caae193feee302a41",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 11
+    },
+    {
+      "deficiency": 35,
+      "id": "candidate_0000197",
+      "matching": 16348,
+      "parts": [
+        [
+          13875,
+          13971,
+          14228,
+          14132
+        ],
+        [
+          7467,
+          7563
+        ]
+      ],
+      "path_sha256": "4efc3d4259e7f76fc3289833d7110493039f5d9483e511f6cf8984c338ab46d9",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000199",
+      "matching": 16347,
+      "parts": [
+        [
+          13875,
+          13971,
+          14228,
+          14132
+        ],
+        [
+          12074,
+          12170
+        ]
+      ],
+      "path_sha256": "3ab36f989bf4a91db2d3fac517babf6d40b5ca730a6a3ba663187f7759062e0a",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 38,
+      "id": "candidate_0000200",
+      "matching": 16345,
+      "parts": [
+        [
+          13875,
+          13971,
+          14228,
+          14132
+        ],
+        [
+          13102,
+          13198
+        ]
+      ],
+      "path_sha256": "ef8ed9f297b111e5c05ffeb365ceeda8716c3ed6683b0f1fbcf2b2227e4f98ba",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 37,
+      "id": "candidate_0000201",
+      "matching": 16346,
+      "parts": [
+        [
+          13875,
+          13971,
+          14228,
+          14132
+        ],
+        [
+          15154,
+          15250
+        ]
+      ],
+      "path_sha256": "c8564f289ccc5cbe4990bc912c992cf73f115447a48cfa8f20c6c1126989fde2",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000202",
+      "matching": 16347,
+      "parts": [
+        [
+          13875,
+          13971,
+          14228,
+          14132
+        ],
+        [
+          17133,
+          21228
+        ]
+      ],
+      "path_sha256": "4b24b7b90aced8082eba393e273e78828414e6793fed2b4efe50584946b436d9",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 38,
+      "id": "candidate_0000204",
+      "matching": 16345,
+      "parts": [
+        [
+          13875,
+          13971,
+          14228,
+          14132
+        ],
+        [
+          18684,
+          26872
+        ]
+      ],
+      "path_sha256": "5875ff8115090d7fdd67fbe28d2d904eab1a27fc9bb6ef7db0f4975d65b0e23b",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    },
+    {
+      "deficiency": 36,
+      "id": "candidate_0000206",
+      "matching": 16347,
+      "parts": [
+        [
+          13875,
+          13971,
+          14228,
+          14132
+        ],
+        [
+          30945,
+          31968
+        ]
+      ],
+      "path_sha256": "067a28657516b2cf944308195dc75eddded89feb0ea7c50c135a7d75f4ff56ae",
+      "type": "parent-pure/4+2",
+      "zero_candidates": 12
+    }
+  ],
+  "parents": [
+    {
+      "path": "scratch/k15_doubletrans_05_213_hall29.json",
+      "sha256": "5516482eadaba4f8fb9549b41c79c3b949df2e3224ce68f9dacd3b5b6bc2d21c"
+    },
+    {
+      "path": "scratch/k15_outer2_p1_h30_bridge.json",
+      "sha256": "6ea03a3d48a7dd4462d936218385c5cacc17957bbe3be377ca2e00a360487d91"
+    },
+    {
+      "path": "scratch/k15_trans1113_balanced_hall31.json",
+      "sha256": "6d7cee2418f10dbd02076971fdd119d7bc7c35d154430522a70c06f953687ea7"
+    },
+    {
+      "path": "scratch/k15_transposition_parent_winner.json",
+      "sha256": "8d0f732c28a552e919857b1a1c80794ac65f390816d2b89b66a67ed63475d2dd"
+    },
+    {
+      "path": "scratch/k15_accumulated_zero_parent_winner.json",
+      "sha256": "2b25279185b50a9485c65cbc727a08d95b71a1d310332cbdcb23dd6b0b3d2cb7"
+    }
+  ],
+  "scope": "all parent-pure Hamilton/residence/all-upper transfers through support 6, plus intrinsic regression",
+  "status": "PASS"
+}

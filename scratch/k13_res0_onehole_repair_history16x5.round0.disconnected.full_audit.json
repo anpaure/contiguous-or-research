@@ -1,0 +1,162 @@
+{
+  "middle_load_histogram": {
+    "1": 1716
+  },
+  "middle_unique": 1716,
+  "physical_cycle_count": 2,
+  "physical_cycle_lengths": [
+    1547,
+    169
+  ],
+  "quotient_components": [
+    {
+      "physical_cycle_lengths": [
+        1547
+      ],
+      "quotient_vertices": 119,
+      "quotient_voltage": 8
+    },
+    {
+      "physical_cycle_lengths": [
+        169
+      ],
+      "quotient_vertices": 13,
+      "quotient_voltage": 6
+    }
+  ],
+  "residence_defects_le3": 0,
+  "shadows": {
+    "1": {
+      "lower": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "1": 1716
+        }
+      },
+      "upper": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "1": 936,
+          "2": 273,
+          "3": 78
+        }
+      }
+    },
+    "2": {
+      "lower": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "1": 858,
+          "2": 429
+        }
+      },
+      "upper": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "1": 221,
+          "2": 221,
+          "3": 182,
+          "4": 65,
+          "5": 26
+        }
+      }
+    },
+    "3": {
+      "lower": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "1": 156,
+          "2": 221,
+          "3": 234,
+          "4": 104
+        }
+      },
+      "upper": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "1": 13,
+          "2": 52,
+          "3": 52,
+          "4": 65,
+          "5": 52,
+          "6": 13,
+          "7": 26,
+          "12": 13
+        }
+      }
+    },
+    "4": {
+      "lower": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "2": 13,
+          "3": 39,
+          "4": 26,
+          "5": 65,
+          "6": 39,
+          "7": 52,
+          "9": 13,
+          "10": 13,
+          "11": 13,
+          "12": 13
+        }
+      },
+      "upper": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "5": 13,
+          "9": 26,
+          "10": 13,
+          "11": 13,
+          "12": 13
+        }
+      }
+    },
+    "5": {
+      "lower": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "10": 13,
+          "11": 13,
+          "17": 13,
+          "18": 13,
+          "21": 13,
+          "22": 13
+        }
+      },
+      "upper": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "23": 13
+        }
+      }
+    },
+    "6": {
+      "lower": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "51": 13
+        }
+      },
+      "upper": {
+        "hole_masks": [],
+        "holes": 0,
+        "load_histogram": {
+          "52": 1
+        }
+      }
+    }
+  },
+  "source": "scratch/k13_res0_onehole_repair_history16x5.round0.disconnected.json"
+}

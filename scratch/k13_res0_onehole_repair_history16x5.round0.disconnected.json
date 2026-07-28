@@ -1,0 +1,1865 @@
+{
+  "status": "SAT_DISCONNECTED",
+  "k": 13,
+  "round": 0,
+  "components": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      65,
+      66,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      101,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      117,
+      119,
+      121,
+      122,
+      123,
+      124,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131
+    ],
+    [
+      21,
+      25,
+      36,
+      63,
+      64,
+      67,
+      99,
+      100,
+      102,
+      116,
+      118,
+      120,
+      125
+    ]
+  ],
+  "component_sizes": [
+    119,
+    13
+  ],
+  "selected_options": [
+    {
+      "lower": 63,
+      "add": [
+        9,
+        10
+      ],
+      "upper": 1599,
+      "endpoints": [
+        28,
+        27
+      ],
+      "voltage": 10
+    },
+    {
+      "lower": 95,
+      "add": [
+        5,
+        8
+      ],
+      "upper": 383,
+      "endpoints": [
+        0,
+        8
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 111,
+      "add": [
+        4,
+        12
+      ],
+      "upper": 4223,
+      "endpoints": [
+        0,
+        2
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 119,
+      "add": [
+        7,
+        8
+      ],
+      "upper": 503,
+      "endpoints": [
+        4,
+        10
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 123,
+      "add": [
+        7,
+        8
+      ],
+      "upper": 507,
+      "endpoints": [
+        5,
+        11
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 125,
+      "add": [
+        8,
+        10
+      ],
+      "upper": 1405,
+      "endpoints": [
+        12,
+        80
+      ],
+      "voltage": 10
+    },
+    {
+      "lower": 159,
+      "add": [
+        9,
+        11
+      ],
+      "upper": 2719,
+      "endpoints": [
+        34,
+        33
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 175,
+      "add": [
+        4,
+        10
+      ],
+      "upper": 1215,
+      "endpoints": [
+        1,
+        82
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 183,
+      "add": [
+        3,
+        11
+      ],
+      "upper": 2239,
+      "endpoints": [
+        1,
+        42
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 187,
+      "add": [
+        8,
+        11
+      ],
+      "upper": 2491,
+      "endpoints": [
+        16,
+        45
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 189,
+      "add": [
+        8,
+        12
+      ],
+      "upper": 4541,
+      "endpoints": [
+        17,
+        11
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 207,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3279,
+      "endpoints": [
+        86,
+        53
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 215,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3287,
+      "endpoints": [
+        87,
+        57
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 219,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3291,
+      "endpoints": [
+        88,
+        60
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 221,
+      "add": [
+        1,
+        5
+      ],
+      "upper": 255,
+      "endpoints": [
+        2,
+        6
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 231,
+      "add": [
+        3,
+        10
+      ],
+      "upper": 1263,
+      "endpoints": [
+        3,
+        90
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 235,
+      "add": [
+        8,
+        10
+      ],
+      "upper": 1515,
+      "endpoints": [
+        23,
+        91
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 237,
+      "add": [
+        1,
+        8
+      ],
+      "upper": 495,
+      "endpoints": [
+        3,
+        24
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 243,
+      "add": [
+        2,
+        9
+      ],
+      "upper": 759,
+      "endpoints": [
+        4,
+        46
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 245,
+      "add": [
+        8,
+        9
+      ],
+      "upper": 1013,
+      "endpoints": [
+        26,
+        47
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 249,
+      "add": [
+        1,
+        2
+      ],
+      "upper": 255,
+      "endpoints": [
+        5,
+        6
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 287,
+      "add": [
+        5,
+        10
+      ],
+      "upper": 1343,
+      "endpoints": [
+        7,
+        79
+      ],
+      "voltage": 8
+    },
+    {
+      "lower": 303,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3375,
+      "endpoints": [
+        95,
+        85
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 311,
+      "add": [
+        3,
+        11
+      ],
+      "upper": 2367,
+      "endpoints": [
+        7,
+        89
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 315,
+      "add": [
+        9,
+        10
+      ],
+      "upper": 1851,
+      "endpoints": [
+        52,
+        97
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 317,
+      "add": [
+        11,
+        12
+      ],
+      "upper": 6461,
+      "endpoints": [
+        94,
+        32
+      ],
+      "voltage": 1
+    },
+    {
+      "lower": 335,
+      "add": [
+        9,
+        12
+      ],
+      "upper": 4943,
+      "endpoints": [
+        54,
+        34
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 343,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3415,
+      "endpoints": [
+        100,
+        102
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 347,
+      "add": [
+        2,
+        11
+      ],
+      "upper": 2399,
+      "endpoints": [
+        8,
+        105
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 349,
+      "add": [
+        7,
+        10
+      ],
+      "upper": 1501,
+      "endpoints": [
+        21,
+        102
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 359,
+      "add": [
+        4,
+        12
+      ],
+      "upper": 4471,
+      "endpoints": [
+        10,
+        39
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 363,
+      "add": [
+        2,
+        9
+      ],
+      "upper": 879,
+      "endpoints": [
+        9,
+        59
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 365,
+      "add": [
+        1,
+        12
+      ],
+      "upper": 4463,
+      "endpoints": [
+        9,
+        41
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 371,
+      "add": [
+        7,
+        11
+      ],
+      "upper": 2547,
+      "endpoints": [
+        25,
+        116
+      ],
+      "voltage": 11
+    },
+    {
+      "lower": 373,
+      "add": [
+        3,
+        12
+      ],
+      "upper": 4477,
+      "endpoints": [
+        12,
+        44
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 377,
+      "add": [
+        10,
+        12
+      ],
+      "upper": 5497,
+      "endpoints": [
+        82,
+        46
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 399,
+      "add": [
+        5,
+        6
+      ],
+      "upper": 495,
+      "endpoints": [
+        14,
+        18
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 407,
+      "add": [
+        3,
+        6
+      ],
+      "upper": 479,
+      "endpoints": [
+        13,
+        19
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 411,
+      "add": [
+        5,
+        10
+      ],
+      "upper": 1467,
+      "endpoints": [
+        16,
+        109
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 413,
+      "add": [
+        1,
+        10
+      ],
+      "upper": 1439,
+      "endpoints": [
+        13,
+        110
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 423,
+      "add": [
+        6,
+        9
+      ],
+      "upper": 999,
+      "endpoints": [
+        22,
+        68
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 427,
+      "add": [
+        6,
+        9
+      ],
+      "upper": 1003,
+      "endpoints": [
+        23,
+        69
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 429,
+      "add": [
+        1,
+        4
+      ],
+      "upper": 447,
+      "endpoints": [
+        14,
+        17
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 435,
+      "add": [
+        2,
+        11
+      ],
+      "upper": 2487,
+      "endpoints": [
+        15,
+        123
+      ],
+      "voltage": 4
+    },
+    {
+      "lower": 437,
+      "add": [
+        1,
+        9
+      ],
+      "upper": 951,
+      "endpoints": [
+        15,
+        72
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 441,
+      "add": [
+        11,
+        12
+      ],
+      "upper": 6585,
+      "endpoints": [
+        96,
+        61
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 455,
+      "add": [
+        3,
+        10
+      ],
+      "upper": 1487,
+      "endpoints": [
+        18,
+        65
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 459,
+      "add": [
+        4,
+        9
+      ],
+      "upper": 987,
+      "endpoints": [
+        20,
+        74
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 461,
+      "add": [
+        4,
+        11
+      ],
+      "upper": 2525,
+      "endpoints": [
+        21,
+        125
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 467,
+      "add": [
+        2,
+        12
+      ],
+      "upper": 4567,
+      "endpoints": [
+        19,
+        68
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 469,
+      "add": [
+        9,
+        12
+      ],
+      "upper": 5077,
+      "endpoints": [
+        77,
+        69
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 473,
+      "add": [
+        1,
+        12
+      ],
+      "upper": 4571,
+      "endpoints": [
+        20,
+        71
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 483,
+      "add": [
+        4,
+        12
+      ],
+      "upper": 4595,
+      "endpoints": [
+        25,
+        64
+      ],
+      "voltage": 5
+    },
+    {
+      "lower": 485,
+      "add": [
+        1,
+        10
+      ],
+      "upper": 1511,
+      "endpoints": [
+        22,
+        95
+      ],
+      "voltage": 5
+    },
+    {
+      "lower": 489,
+      "add": [
+        2,
+        11
+      ],
+      "upper": 2541,
+      "endpoints": [
+        24,
+        98
+      ],
+      "voltage": 3
+    },
+    {
+      "lower": 497,
+      "add": [
+        2,
+        3
+      ],
+      "upper": 509,
+      "endpoints": [
+        26,
+        27
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 559,
+      "add": [
+        8,
+        12
+      ],
+      "upper": 4911,
+      "endpoints": [
+        50,
+        48
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 567,
+      "add": [
+        8,
+        10
+      ],
+      "upper": 1847,
+      "endpoints": [
+        51,
+        61
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 571,
+      "add": [
+        2,
+        7
+      ],
+      "upper": 703,
+      "endpoints": [
+        28,
+        37
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 573,
+      "add": [
+        11,
+        12
+      ],
+      "upper": 6717,
+      "endpoints": [
+        77,
+        78
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 591,
+      "add": [
+        4,
+        10
+      ],
+      "upper": 1631,
+      "endpoints": [
+        29,
+        93
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 599,
+      "add": [
+        7,
+        10
+      ],
+      "upper": 1751,
+      "endpoints": [
+        40,
+        106
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 603,
+      "add": [
+        7,
+        8
+      ],
+      "upper": 987,
+      "endpoints": [
+        41,
+        56
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 605,
+      "add": [
+        1,
+        7
+      ],
+      "upper": 735,
+      "endpoints": [
+        29,
+        42
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 615,
+      "add": [
+        3,
+        4
+      ],
+      "upper": 639,
+      "endpoints": [
+        30,
+        31
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 619,
+      "add": [
+        4,
+        8
+      ],
+      "upper": 891,
+      "endpoints": [
+        32,
+        59
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 621,
+      "add": [
+        1,
+        11
+      ],
+      "upper": 2671,
+      "endpoints": [
+        30,
+        129
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 627,
+      "add": [
+        2,
+        10
+      ],
+      "upper": 1655,
+      "endpoints": [
+        31,
+        119
+      ],
+      "voltage": 4
+    },
+    {
+      "lower": 629,
+      "add": [
+        3,
+        8
+      ],
+      "upper": 893,
+      "endpoints": [
+        33,
+        62
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 633,
+      "add": [
+        8,
+        11
+      ],
+      "upper": 2937,
+      "endpoints": [
+        63,
+        99
+      ],
+      "voltage": 3
+    },
+    {
+      "lower": 655,
+      "add": [
+        10,
+        12
+      ],
+      "upper": 5775,
+      "endpoints": [
+        75,
+        79
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 663,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3735,
+      "endpoints": [
+        116,
+        118
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 667,
+      "add": [
+        5,
+        8
+      ],
+      "upper": 955,
+      "endpoints": [
+        37,
+        66
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 669,
+      "add": [
+        5,
+        11
+      ],
+      "upper": 2749,
+      "endpoints": [
+        38,
+        130
+      ],
+      "voltage": 7
+    },
+    {
+      "lower": 679,
+      "add": [
+        4,
+        10
+      ],
+      "upper": 1719,
+      "endpoints": [
+        36,
+        125
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 683,
+      "add": [
+        2,
+        11
+      ],
+      "upper": 2735,
+      "endpoints": [
+        35,
+        131
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 685,
+      "add": [
+        1,
+        12
+      ],
+      "upper": 4783,
+      "endpoints": [
+        35,
+        101
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 691,
+      "add": [
+        2,
+        10
+      ],
+      "upper": 1719,
+      "endpoints": [
+        36,
+        120
+      ],
+      "voltage": 4
+    },
+    {
+      "lower": 693,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3765,
+      "endpoints": [
+        128,
+        131
+      ],
+      "voltage": 4
+    },
+    {
+      "lower": 697,
+      "add": [
+        2,
+        10
+      ],
+      "upper": 1725,
+      "endpoints": [
+        38,
+        87
+      ],
+      "voltage": 3
+    },
+    {
+      "lower": 711,
+      "add": [
+        5,
+        10
+      ],
+      "upper": 1767,
+      "endpoints": [
+        43,
+        66
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 715,
+      "add": [
+        5,
+        12
+      ],
+      "upper": 4843,
+      "endpoints": [
+        44,
+        108
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 717,
+      "add": [
+        1,
+        11
+      ],
+      "upper": 2767,
+      "endpoints": [
+        39,
+        126
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 723,
+      "add": [
+        8,
+        12
+      ],
+      "upper": 5075,
+      "endpoints": [
+        76,
+        111
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 725,
+      "add": [
+        1,
+        12
+      ],
+      "upper": 4823,
+      "endpoints": [
+        40,
+        112
+      ],
+      "voltage": 12
+    },
+    {
+      "lower": 729,
+      "add": [
+        10,
+        12
+      ],
+      "upper": 5849,
+      "endpoints": [
+        88,
+        114
+      ],
+      "voltage": 9
+    },
+    {
+      "lower": 739,
+      "add": [
+        2,
+        11
+      ],
+      "upper": 2791,
+      "endpoints": [
+        43,
+        55
+      ],
+      "voltage": 5
+    },
+    {
+      "lower": 741,
+      "add": [
+        3,
+        4
+      ],
+      "upper": 765,
+      "endpoints": [
+        45,
+        47
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 745,
+      "add": [
+        4,
+        8
+      ],
+      "upper": 1017,
+      "endpoints": [
+        48,
+        80
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 795,
+      "add": [
+        2,
+        10
+      ],
+      "upper": 1823,
+      "endpoints": [
+        49,
+        58
+      ],
+      "voltage": 8
+    },
+    {
+      "lower": 797,
+      "add": [
+        1,
+        6
+      ],
+      "upper": 863,
+      "endpoints": [
+        49,
+        57
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 807,
+      "add": [
+        4,
+        11
+      ],
+      "upper": 2871,
+      "endpoints": [
+        51,
+        91
+      ],
+      "voltage": 8
+    },
+    {
+      "lower": 811,
+      "add": [
+        2,
+        4
+      ],
+      "upper": 831,
+      "endpoints": [
+        50,
+        52
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 813,
+      "add": [
+        7,
+        10
+      ],
+      "upper": 1965,
+      "endpoints": [
+        70,
+        111
+      ],
+      "voltage": 8
+    },
+    {
+      "lower": 819,
+      "add": [
+        7,
+        10
+      ],
+      "upper": 1971,
+      "endpoints": [
+        71,
+        119
+      ],
+      "voltage": 8
+    },
+    {
+      "lower": 821,
+      "add": [
+        3,
+        7
+      ],
+      "upper": 957,
+      "endpoints": [
+        53,
+        72
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 825,
+      "add": [
+        7,
+        11
+      ],
+      "upper": 3001,
+      "endpoints": [
+        73,
+        103
+      ],
+      "voltage": 3
+    },
+    {
+      "lower": 839,
+      "add": [
+        7,
+        10
+      ],
+      "upper": 1991,
+      "endpoints": [
+        64,
+        67
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 843,
+      "add": [
+        4,
+        7
+      ],
+      "upper": 987,
+      "endpoints": [
+        56,
+        74
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 845,
+      "add": [
+        1,
+        7
+      ],
+      "upper": 975,
+      "endpoints": [
+        54,
+        75
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 851,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 3923,
+      "endpoints": [
+        122,
+        128
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 853,
+      "add": [
+        1,
+        10
+      ],
+      "upper": 1879,
+      "endpoints": [
+        55,
+        130
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 857,
+      "add": [
+        5,
+        12
+      ],
+      "upper": 4985,
+      "endpoints": [
+        63,
+        120
+      ],
+      "voltage": 3
+    },
+    {
+      "lower": 869,
+      "add": [
+        1,
+        4
+      ],
+      "upper": 887,
+      "endpoints": [
+        58,
+        62
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 873,
+      "add": [
+        2,
+        12
+      ],
+      "upper": 4973,
+      "endpoints": [
+        60,
+        121
+      ],
+      "voltage": 3
+    },
+    {
+      "lower": 915,
+      "add": [
+        2,
+        6
+      ],
+      "upper": 983,
+      "endpoints": [
+        65,
+        76
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 917,
+      "add": [
+        3,
+        10
+      ],
+      "upper": 1949,
+      "endpoints": [
+        67,
+        99
+      ],
+      "voltage": 7
+    },
+    {
+      "lower": 921,
+      "add": [
+        5,
+        10
+      ],
+      "upper": 1977,
+      "endpoints": [
+        73,
+        93
+      ],
+      "voltage": 3
+    },
+    {
+      "lower": 933,
+      "add": [
+        3,
+        12
+      ],
+      "upper": 5037,
+      "endpoints": [
+        70,
+        110
+      ],
+      "voltage": 5
+    },
+    {
+      "lower": 937,
+      "add": [
+        10,
+        11
+      ],
+      "upper": 4009,
+      "endpoints": [
+        94,
+        107
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 969,
+      "add": [
+        4,
+        10
+      ],
+      "upper": 2009,
+      "endpoints": [
+        78,
+        81
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 1175,
+      "add": [
+        8,
+        11
+      ],
+      "upper": 3479,
+      "endpoints": [
+        108,
+        84
+      ],
+      "voltage": 10
+    },
+    {
+      "lower": 1179,
+      "add": [
+        5,
+        9
+      ],
+      "upper": 1723,
+      "endpoints": [
+        84,
+        123
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1181,
+      "add": [
+        1,
+        6
+      ],
+      "upper": 1247,
+      "endpoints": [
+        81,
+        89
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1191,
+      "add": [
+        4,
+        6
+      ],
+      "upper": 1271,
+      "endpoints": [
+        83,
+        90
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1195,
+      "add": [
+        9,
+        11
+      ],
+      "upper": 3755,
+      "endpoints": [
+        126,
+        101
+      ],
+      "voltage": 10
+    },
+    {
+      "lower": 1197,
+      "add": [
+        4,
+        9
+      ],
+      "upper": 1725,
+      "endpoints": [
+        85,
+        127
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1203,
+      "add": [
+        2,
+        8
+      ],
+      "upper": 1463,
+      "endpoints": [
+        83,
+        114
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1205,
+      "add": [
+        11,
+        12
+      ],
+      "upper": 7349,
+      "endpoints": [
+        112,
+        113
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1227,
+      "add": [
+        2,
+        9
+      ],
+      "upper": 1743,
+      "endpoints": [
+        86,
+        109
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 1229,
+      "add": [
+        5,
+        12
+      ],
+      "upper": 5357,
+      "endpoints": [
+        92,
+        121
+      ],
+      "voltage": 10
+    },
+    {
+      "lower": 1235,
+      "add": [
+        8,
+        12
+      ],
+      "upper": 5587,
+      "endpoints": [
+        117,
+        124
+      ],
+      "voltage": 10
+    },
+    {
+      "lower": 1237,
+      "add": [
+        9,
+        12
+      ],
+      "upper": 5845,
+      "endpoints": [
+        129,
+        127
+      ],
+      "voltage": 10
+    },
+    {
+      "lower": 1253,
+      "add": [
+        3,
+        11
+      ],
+      "upper": 3309,
+      "endpoints": [
+        92,
+        103
+      ],
+      "voltage": 5
+    },
+    {
+      "lower": 1323,
+      "add": [
+        6,
+        12
+      ],
+      "upper": 5483,
+      "endpoints": [
+        104,
+        107
+      ],
+      "voltage": 8
+    },
+    {
+      "lower": 1325,
+      "add": [
+        4,
+        7
+      ],
+      "upper": 1469,
+      "endpoints": [
+        98,
+        113
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1331,
+      "add": [
+        3,
+        6
+      ],
+      "upper": 1403,
+      "endpoints": [
+        97,
+        106
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1333,
+      "add": [
+        1,
+        7
+      ],
+      "upper": 1463,
+      "endpoints": [
+        96,
+        115
+      ],
+      "voltage": 0
+    },
+    {
+      "lower": 1355,
+      "add": [
+        5,
+        11
+      ],
+      "upper": 3435,
+      "endpoints": [
+        104,
+        115
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 1357,
+      "add": [
+        5,
+        9
+      ],
+      "upper": 1901,
+      "endpoints": [
+        105,
+        124
+      ],
+      "voltage": 6
+    },
+    {
+      "lower": 1363,
+      "add": [
+        7,
+        9
+      ],
+      "upper": 2003,
+      "endpoints": [
+        117,
+        122
+      ],
+      "voltage": 4
+    },
+    {
+      "lower": 1365,
+      "add": [
+        1,
+        7
+      ],
+      "upper": 1495,
+      "endpoints": [
+        100,
+        118
+      ],
+      "voltage": 0
+    }
+  ]
+}
