@@ -30,12 +30,22 @@ import ortools
 from ortools.sat.python import cp_model
 
 from audit_k15_phasefactor_safe_openings import linear_residence_violations
+from k15_arc_propagated_dm_channel import (
+    add_arc_propagated_compiler_channel,
+    add_arc_propagated_dm_constraint,
+)
 from search_k15_multiroot_seam_sat import chronology_audit
 
 
 K = 15
 R = 8
 W = 6435
+
+
+def stable_object_sha256(value: object) -> str:
+    return hashlib.sha256(
+        json.dumps(value, separators=(",", ":"), sort_keys=True).encode()
+    ).hexdigest()
 
 
 def load_path(path: Path) -> list[int]:
@@ -1470,6 +1480,14 @@ def main() -> int:
         "--maximize-parent-arcs", type=int, default=-1,
         help="maximize overlap with this parent (overrides fixed-bound objective)",
     )
+    ap.add_argument(
+        "--min-parent-arcs", action="append", default=[], metavar="INDEX=COUNT",
+        help=(
+            "hard lower bound on selected normal arcs belonging to a parent; "
+            "for the H29 parent this gives an exact finite successor-support "
+            "budget up to the separately audited dummy endpoint"
+        ),
+    )
     ap.add_argument("--require-target-motif-file", type=Path)
     ap.add_argument(
         "--exact-fixed-motif-file", type=Path, action="append", default=[]
@@ -1505,7 +1523,15 @@ def main() -> int:
         "--dynamic-exact-dm", action="store_true",
         help=(
             "run an exact all-shore Benders loop over one shared 19,311-cell "
-            "position-indexed compiler channel"
+            "arc-propagated compiler channel"
+        ),
+    )
+    ap.add_argument(
+        "--legacy-position-exact-dm", action="store_true",
+        help=(
+            "use the old all-position AddInverse/AddElement exact-DM channel "
+            "for regression; the default exact channel propagates erosion "
+            "masks directly on selected catalogue arcs"
         ),
     )
     ap.add_argument(
@@ -1674,6 +1700,17 @@ def main() -> int:
                 arc_sources[node_of[first], node_of[second]].add(parent_index)
     arc_pairs = sorted(arc_sources)
     arc_index = {arc: index for index, arc in enumerate(arc_pairs)}
+    # Reconstruct the literal mask-edge catalogue independently of the
+    # node-indexed consumer table.  The exact-DM channel requires equality
+    # with this set; containment would unsoundly admit a restricted pair-face
+    # motif language in the full five-parent union.
+    expected_full_mask_catalogue = set()
+    for row in parents:
+        oriented_rows = [row]
+        if args.include_reverses:
+            oriented_rows.append(list(reversed(row)))
+        for oriented in oriented_rows:
+            expected_full_mask_catalogue.update(zip(oriented, oriented[1:]))
     adjacency: dict[int, list[int]] = {node: [] for node in range(W)}
     for tail, head in arc_pairs:
         adjacency[tail].append(head)
@@ -1973,26 +2010,53 @@ def main() -> int:
             hard_zero=False,
             interface="explicit_static_allowance",
         ))
+    exact_dm_requested = bool(args.dynamic_exact_dm or preloaded_dm_shores)
+    if args.legacy_position_exact_dm and not exact_dm_requested:
+        raise ValueError(
+            "--legacy-position-exact-dm needs a dynamic/preloaded exact shore"
+        )
     order_channel = None
     if (
         args.adaptive_exact_motif_file is not None
-        or args.dynamic_exact_dm
-        or preloaded_dm_shores
+        or (exact_dm_requested and args.legacy_position_exact_dm)
     ):
         order_channel = add_compact_order_channel(
             model, normal_lits, arc_pairs, dummy_out, dummy_in, masks,
-            global_compiler=bool(args.dynamic_exact_dm or preloaded_dm_shores),
+            global_compiler=bool(
+                exact_dm_requested and args.legacy_position_exact_dm
+            ),
         )
     elif args.adaptive_exact_threshold:
         raise ValueError(
             "--adaptive-exact-threshold requires --adaptive-exact-motif-file"
         )
 
+    arc_propagated_channel = None
+    if exact_dm_requested and not args.legacy_position_exact_dm:
+        arc_propagated_channel = add_arc_propagated_compiler_channel(
+            model, normal_lits, arc_pairs, dummy_out, dummy_in, masks,
+            coordinate_count=K,
+            expected_catalogue_mask_edges=expected_full_mask_catalogue,
+        )
+
+    def add_exact_dm_shore(
+        targets: list[int], allowance: int, cut_index: int,
+    ) -> dict:
+        if args.legacy_position_exact_dm:
+            return add_global_exact_dm_constraint(
+                model, order_channel, targets, allowance, cut_index,
+            )
+        if arc_propagated_channel is None:
+            raise AssertionError("missing arc-propagated exact-DM channel")
+        return add_arc_propagated_dm_constraint(
+            model, arc_propagated_channel, targets, allowance, cut_index,
+            coordinate_count=K, middle_rank=R,
+        )
+
     preloaded_dm_models = []
     for cut_index, shore in enumerate(preloaded_dm_shores):
-        encoded = add_global_exact_dm_constraint(
-            model, order_channel, list(shore["targets"]),
-            int(shore["allowance"]), cut_index,
+        encoded = add_exact_dm_shore(
+            list(shore["targets"]), int(shore["allowance"]), cut_index,
         )
         encoded.update({
             "path": shore["path"],
@@ -2176,7 +2240,18 @@ def main() -> int:
         # intentionally omits every fixed-shore threshold.  Negative margins
         # must therefore remain representable.  The incumbent is only a hint:
         # accepted paths are found after all hard rows have been restored.
-        soft_margin = model.NewIntVar(-W, W, "soft_fixed_homotopy_margin")
+        # Every score is nonnegative, so -max_i(threshold_i) is a valid common
+        # lower bound for every signed margin.  The former -W lower bound
+        # silently imposed score >= threshold-W on rows with threshold>W, so
+        # the purportedly soft phase could discard legal base-model paths.
+        # Deriving the floor from the actual rows also keeps this interface
+        # sound for deliberately overlarge exploratory thresholds.
+        soft_margin_floor = -max(
+            int(row["threshold"]) for row in all_fixed_rows
+        )
+        soft_margin = model.NewIntVar(
+            soft_margin_floor, W, "soft_fixed_homotopy_margin"
+        )
         for row in all_fixed_rows:
             model.Add(
                 soft_margin
@@ -2260,6 +2335,25 @@ def main() -> int:
             literal
             for row in fixed_models for literal in row["indicators"]
         ))
+    parent_arc_lower_bounds: dict[int, int] = {}
+    for specification in args.min_parent_arcs:
+        if "=" not in specification:
+            raise ValueError("parent arc lower bounds must be INDEX=COUNT")
+        parent_text, count_text = specification.split("=", 1)
+        parent = int(parent_text)
+        count = int(count_text)
+        if not 0 <= parent < len(parents) or not 0 <= count <= W - 1:
+            raise ValueError(("bad parent arc lower bound", specification))
+        if parent in parent_arc_lower_bounds:
+            raise ValueError(("duplicate parent arc lower bound", parent))
+        overlap_literals = [
+            normal_lits[index]
+            for index, pair in enumerate(arc_pairs)
+            if parent in arc_sources[pair]
+        ]
+        model.Add(sum(overlap_literals) >= count)
+        parent_arc_lower_bounds[parent] = count
+
     if args.maximize_parent_arcs >= 0:
         parent = args.maximize_parent_arcs
         model.Maximize(sum(
@@ -2325,6 +2419,13 @@ def main() -> int:
         path, chosen = selected_path(
             solver, normal_arcs, dummy_out, dummy_in, masks
         )
+        selected_parent_arc_counts = {
+            str(parent): sum(
+                parent in arc_sources[arc_pairs[index]] for index in chosen
+            )
+            for parent in range(len(parents))
+        }
+        path_sha256 = stable_object_sha256(path)
         audit = chronology_audit(path)
         if audit["residence_bad_motifs"] and not args.skip_residence:
             raise AssertionError(("residence encoding incomplete", audit))
@@ -2516,9 +2617,8 @@ def main() -> int:
                     "a previously encoded exact DM shore remains violated",
                     len(shore), hall["dm_right"], args.dynamic_dm_allowance,
                 ))
-            cut = add_global_exact_dm_constraint(
-                model, order_channel, list(shore),
-                args.dynamic_dm_allowance,
+            cut = add_exact_dm_shore(
+                list(shore), args.dynamic_dm_allowance,
                 len(preloaded_dm_models) + len(dynamic_dm_models),
             )
             dynamic_dm_shores.add(shore_key)
@@ -2534,6 +2634,8 @@ def main() -> int:
                 "cut_index": cut["cut"],
                 "calibration": dynamic_calibration,
                 "upper_constraints": len(upper_encoded),
+                "path_sha256": path_sha256,
+                "selected_parent_arc_counts": selected_parent_arc_counts,
             }
             census.append(cut_row)
             print(json.dumps(cut_row), flush=True)
@@ -2586,6 +2688,8 @@ def main() -> int:
             "adaptive_exact_native_scores": adaptive_native_scores,
             "dynamic_exact_calibration": dynamic_calibration,
             "preloaded_exact_dm_evaluations": preloaded_dm_evaluations,
+            "path_sha256": path_sha256,
+            "selected_parent_arc_counts": selected_parent_arc_counts,
             "fixed_projected_upper_bounds": [
                 sum(solver.BooleanValue(lit) for lit in item["indicators"])
                 + item["boundary_allowance"]
@@ -2626,6 +2730,8 @@ def main() -> int:
             "adaptive_exact_native_scores": adaptive_native_scores,
             "dynamic_exact_calibration": dynamic_calibration,
             "preloaded_exact_dm_evaluations": preloaded_dm_evaluations,
+            "path_sha256": path_sha256,
+            "selected_parent_arc_counts": selected_parent_arc_counts,
             **audit,
         }
         if args.save_all:
@@ -2666,6 +2772,71 @@ def main() -> int:
     else:
         summary_status = "INCOMPLETE"
 
+    full_normal_catalogue = sorted(
+        (masks[tail], masks[head]) for tail, head in arc_pairs
+    )
+    active_parent_indices = frozenset(
+        restricted_parent_subset
+        if restricted_parent_subset is not None else range(len(parents))
+    )
+    active_normal_catalogue = sorted(
+        (masks[tail], masks[head])
+        for tail, head in arc_pairs
+        if arc_sources[tail, head].intersection(active_parent_indices)
+    )
+
+    def augmented_catalogue(
+        normal: list[tuple[int, int]],
+        starts: list[int],
+        ends: list[int],
+    ) -> list[list[int | str]]:
+        return (
+            [["normal", first, second] for first, second in normal]
+            + [["start", 1 << K, start] for start in starts]
+            + [["end", end, 1 << K] for end in ends]
+        )
+
+    full_starts = sorted(masks[node] for node in parent_starts)
+    full_ends = sorted(masks[node] for node in parent_ends)
+    active_starts = sorted(
+        masks[node] for node in parent_starts
+        if parent_start_sources[node].intersection(active_parent_indices)
+    )
+    active_ends = sorted(
+        masks[node] for node in parent_ends
+        if parent_end_sources[node].intersection(active_parent_indices)
+    )
+    runtime_catalogue_contract = {
+        "full_normal_arcs": len(full_normal_catalogue),
+        "full_normal_sha256": stable_object_sha256(full_normal_catalogue),
+        "full_augmented_arcs": (
+            len(full_normal_catalogue) + len(full_starts) + len(full_ends)
+        ),
+        "full_augmented_sha256": stable_object_sha256(augmented_catalogue(
+            full_normal_catalogue, full_starts, full_ends
+        )),
+        "active_parent_indices": sorted(active_parent_indices),
+        "active_normal_arcs": len(active_normal_catalogue),
+        "active_normal_sha256": stable_object_sha256(active_normal_catalogue),
+        "active_augmented_arcs": (
+            len(active_normal_catalogue) + len(active_starts) + len(active_ends)
+        ),
+        "active_augmented_sha256": stable_object_sha256(augmented_catalogue(
+            active_normal_catalogue, active_starts, active_ends
+        )),
+        "active_starts": active_starts,
+        "active_ends": active_ends,
+    }
+    residual_exhausted = termination_reason == "INFEASIBLE"
+    candidate_nogood_path_sha256 = [
+        row["path_sha256"] for row in census
+        if row.get("status") == "CANDIDATE"
+    ] if residual_exhausted else []
+    dynamic_cut_path_sha256 = [
+        row["path_sha256"] for row in census
+        if row.get("status") == "DYNAMIC_EXACT_DM_CUT"
+    ] if residual_exhausted else []
+
     summary = {
         "status": summary_status,
         "command_argv": list(sys.argv),
@@ -2675,7 +2846,16 @@ def main() -> int:
         "termination_reason": termination_reason,
         "certified_infeasible": certified_infeasible,
         "exploratory_infeasible": exploratory_infeasible,
-        "hall_transfer_safe_infeasible": certified_infeasible,
+        # There is no sound scope-free Hall-transfer bit: branch restrictions,
+        # forced motifs/windows, and caller-supplied fixed rows can all make an
+        # exact CP-SAT INFEASIBLE result strictly narrower than the full loaded
+        # catalogue.  Consumers must inspect certified_infeasible_scope (and,
+        # for the canonical 16-branch theorem, the external hash/branch
+        # manifest) instead of treating one Boolean as a global no-go.
+        "hall_transfer_safe_infeasible": False,
+        "residual_exhausted": residual_exhausted,
+        "residual_candidate_nogood_path_sha256": candidate_nogood_path_sha256,
+        "residual_dynamic_cut_path_sha256": dynamic_cut_path_sha256,
         "certified_infeasible_scope": (
             {
                 "sources": list(map(str, args.source)),
@@ -2692,6 +2872,14 @@ def main() -> int:
                 "upper_constraints_added": len(upper_encoded),
                 "dynamic_dm_constraints_added": len(dynamic_dm_models),
                 "preloaded_dm_constraints": len(preloaded_dm_models),
+                "exact_dm_channel": (
+                    "legacy_position_indexed_19311"
+                    if args.legacy_position_exact_dm
+                    else (
+                        "arc_propagated_exact_3w_plus_6"
+                        if exact_dm_requested else None
+                    )
+                ),
                 "restricted_parent_subset": restricted_parent_model,
                 "escape_parent_subsets": escape_parent_subset_models,
                 "parent_dummy_only": args.parent_dummy_only,
@@ -2704,6 +2892,7 @@ def main() -> int:
                     if args.force_tuple_json is not None else None
                 ),
                 "min_parent_windows": dict(sorted(window_requirements.items())),
+                "min_parent_arcs": dict(sorted(parent_arc_lower_bounds.items())),
                 "parent_window_length": args.parent_window_length,
                 "require_target_motif_file": (
                     str(args.require_target_motif_file)
@@ -2729,6 +2918,13 @@ def main() -> int:
             if certified_infeasible else None
         ),
         "sources": list(map(str, args.source)),
+        "source_sha256": [
+            hashlib.sha256(path.read_bytes()).hexdigest() for path in args.source
+        ],
+        "solver_script_sha256": hashlib.sha256(
+            Path(__file__).resolve().read_bytes()
+        ).hexdigest(),
+        "runtime_catalogue_contract": runtime_catalogue_contract,
         "parent_count": len(parents),
         "parent_dummy_only": args.parent_dummy_only,
         "parent_dummy_starts": sorted(masks[node] for node in parent_starts),
@@ -2760,6 +2956,7 @@ def main() -> int:
             {key: value for key, value in row.items() if key != "indicators"}
             for row in parent_window_models
         ],
+        "parent_arc_lower_bounds": dict(sorted(parent_arc_lower_bounds.items())),
         "balanced_parent_windows": sorted(balanced_parents),
         "exact_fixed_models": [
             {key: value for key, value in row.items() if key != "weighted_terms"}
@@ -2777,8 +2974,27 @@ def main() -> int:
         ],
         "adaptive_parent_regressions": adaptive_parent_regressions,
         "dynamic_exact_dm": args.dynamic_exact_dm,
+        "exact_dm_channel": (
+            "legacy_position_indexed_19311"
+            if args.legacy_position_exact_dm
+            else (
+                "arc_propagated_exact_3w_plus_6"
+                if exact_dm_requested else None
+            )
+        ),
+        "exact_dm_channel_catalogue": (
+            {
+                key: arc_propagated_channel[key]
+                for key in (
+                    "catalogue_edges", "catalogue_sha256",
+                    "catalogue_equality_asserted", "cell_count", "interface",
+                )
+            }
+            if arc_propagated_channel is not None else None
+        ),
         "dynamic_dm_allowance": args.dynamic_dm_allowance,
         "dynamic_dm_continue": args.dynamic_dm_continue,
+        "save_all": args.save_all,
         "preloaded_exact_dm_models": [
             {
                 key: value for key, value in row.items()

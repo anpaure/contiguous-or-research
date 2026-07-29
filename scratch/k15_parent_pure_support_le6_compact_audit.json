@@ -9,7 +9,8 @@
     "emitted_total": 207,
     "include_parent_pure": true,
     "max_support": 6,
-    "scope": "exact five-parent intrinsic multiparent transfers, support 3 through 7",
+    "min_support": 3,
+    "scope": "exact five-parent transfer census, support 3 through 6, intrinsic plus parent-pure evaluation",
     "status": "PASS",
     "transpositions": 818,
     "types": {
@@ -124,6 +125,7 @@
       "38": 2
     }
   },
+  "intrinsic_emitted": 107,
   "minimum_parent_pure_deficiency": 29,
   "parent_pure_census": {
     "status": "PASS",
@@ -165,6 +167,7 @@
       }
     }
   },
+  "parent_pure_emitted": 100,
   "parent_pure_records": [
     {
       "deficiency": 29,
@@ -2073,5 +2076,6 @@
     }
   ],
   "scope": "all parent-pure Hamilton/residence/all-upper transfers through support 6, plus intrinsic regression",
-  "status": "PASS"
+  "status": "PASS",
+  "total_emitted": 207
 }

@@ -1,0 +1,53 @@
+{
+  "candidate": "scratch/k15_fixed_matching_pbbs_resident_20260729/from3_markov_s7_merge.best.json",
+  "candidate_sha256": "0c11aefbfe3a0661c457b48f0a7a82afacc6d02d4362e23e5d710bb799135555",
+  "choice_table_sha256": "8d09676a3c073c5bb688c6ea61d8561087f560ebcc1fac775b9a97d33b1cf08a",
+  "compiler_eligible": false,
+  "compiler_interface": {
+    "carrier_output": null,
+    "carrier_sha256": null,
+    "command": "python3 scratch/graded_quotient_pipeline.py compile CARRIER --word WORD --audit AUDIT",
+    "components_output": "scratch/k15_fixed_matching_pbbs_resident_20260729/from3_markov_s7_merge.independent.components.json",
+    "components_sha256": "f765d52aa68810af0e4897c6881f46ecf016b86394341a97f894dc6b53058151"
+  },
+  "exact_fiber": {
+    "degree_histogram": {
+      "2": 6435
+    },
+    "lower_colour_orbits": 429,
+    "physical_cycle_count": 2,
+    "physical_cycle_lengths": [
+      6390,
+      45
+    ],
+    "physical_middle_vertices": 6435,
+    "selected_edge_orbits": 429
+  },
+  "graded_shadows": {
+    "carrier_pass_ignoring_connectivity": true,
+    "connectivity_pending": true,
+    "lower_q2_missing_orbits": 0,
+    "lower_q3_positive_degree_missing_orbits": 0,
+    "upper_missing_by_rank": {},
+    "upper_missing_orbits": 0
+  },
+  "physical_shadows": {
+    "collision_floor_excess": 9,
+    "lower_q2_pair_collisions": 97,
+    "missing_lower_q2_orbits": 0,
+    "missing_lower_q2_physical": 0,
+    "missing_upper_q1_orbits": 0,
+    "missing_upper_q1_physical": 0,
+    "missing_upper_q2_orbits": 0,
+    "missing_upper_q2_physical": 0,
+    "upper_q1_pair_collisions": 100
+  },
+  "residence": {
+    "minimum_run": 4,
+    "residence_bad_runs": 0,
+    "residence_shortfall": 0
+  },
+  "schema": "global-rainbow-factor-independent-audit-v1",
+  "scope": "PASS proves the exact non-loop rainbow 2-factor, physical component, residence, and q1/q2 counts. It does not prove compiler SAT or full-word coverage.",
+  "status": "PASS"
+}

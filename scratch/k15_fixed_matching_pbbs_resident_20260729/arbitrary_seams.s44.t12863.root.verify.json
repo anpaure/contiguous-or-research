@@ -1,0 +1,38 @@
+{
+  "covered_nonempty_masks": 32767,
+  "enumerated_intervals_until_full": 122031,
+  "k": 15,
+  "length": 6438,
+  "lower_bound_B": 6438,
+  "lower_bound_depth": 3,
+  "middle_rank": 8,
+  "middle_row_exact": true,
+  "middle_width": 6435,
+  "missing_masks": 0,
+  "row_rank_histograms": [
+    {
+      "1": 15,
+      "2": 105,
+      "3": 455,
+      "4": 1365,
+      "5": 4495,
+      "6": 1,
+      "7": 2
+    },
+    {
+      "6": 6433,
+      "7": 2,
+      "8": 2
+    },
+    {
+      "7": 6434,
+      "8": 2
+    },
+    {
+      "8": 6435
+    }
+  ],
+  "status": "VERIFIED_OPTIMAL",
+  "word": "scratch/k15_fixed_matching_pbbs_resident_20260729/arbitrary_seams.s44.t12863.word",
+  "word_sha256": "f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b"
+}

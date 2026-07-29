@@ -3,10 +3,9 @@
 //
 // The selected successor is Q=P0 o p.  A transfer p is intrinsic
 // multiparent when no one nonbase parent supplies every changed successor
-// arc.  For support at most eight, parity leaves exactly these derangement
+// arc.  For support at most seven, parity leaves exactly these derangement
 // types:
-//   3, 2+2, 5, 3+3, 4+2, 7, 3+2+2,
-//   6+2, 5+3, 4+4, 2+2+2+2.
+//   3, 2+2, 5, 3+3, 4+2, 7, 3+2+2.
 // Every candidate is tested for exact Hamilton monodromy, exact linear
 // depth-three residence, and literal upper coverage q=1,...,7.  Every
 // locally legal path is emitted for the independent Hall/DM auditor.
@@ -172,23 +171,25 @@ struct FourChordCount {
   uint64_t mutual_rescue_candidates = 0;
   uint64_t intrinsic_candidates = 0;
   uint64_t parent_pure_candidates = 0;
+  uint64_t incompatible_pure_candidates = 0;
   uint64_t intrinsic_residence_safe = 0;
   uint64_t parent_pure_residence_safe = 0;
+  uint64_t incompatible_pure_residence_safe = 0;
   uint64_t intrinsic_upper_safe = 0;
   uint64_t parent_pure_upper_safe = 0;
+  uint64_t incompatible_pure_upper_safe = 0;
   uint64_t intrinsic_emitted = 0;
   uint64_t parent_pure_emitted = 0;
+  uint64_t incompatible_pure_emitted = 0;
 };
 
 class Census {
  public:
   explicit Census(const std::array<std::string,PARENTS>& source,
                   const std::filesystem::path& output,
-                  int min_support,
                   int max_support,
                   bool include_parent_pure)
-      : source_(source), output_(output), min_support_(min_support),
-        max_support_(max_support),
+      : source_(source), output_(output), max_support_(max_support),
         include_parent_pure_(include_parent_pure) {
     std::filesystem::create_directories(output_);
     load();
@@ -747,7 +748,7 @@ class Census {
       return a.partner<b.partner;
     });
     std::ofstream out(output_/"support8_2222_patterns.tsv");
-    out<<"pattern_id\tedges\ta_ranks\tb_ranks\n";
+    out<<"pattern_id\tedge0\tedge1\tedge2\tedge3\ta_ranks\tb_ranks\n";
     for(size_t id=0;id<four_patterns_.size();++id) {
       const auto&p=four_patterns_[id];
       out<<id;
@@ -842,13 +843,17 @@ class Census {
     std::vector<Cycle> parts;
     parts.reserve(4);
     uint8_t common=31;
+    bool every_component_parent_pure=true;
     for(int edge:edge_ids) {
       parts.push_back(as_cycle(trans_[edge]));
       common&=trans_[edge].common;
+      every_component_parent_pure&=trans_[edge].common!=0;
     }
     const bool pure=common!=0;
+    const bool incompatible_pure=!pure&&every_component_parent_pure;
     four_count_.intrinsic_candidates+=!pure;
     four_count_.parent_pure_candidates+=pure;
+    four_count_.incompatible_pure_candidates+=incompatible_pure;
     if(pure&&!include_parent_pure_)return;
     Permutation p=make_p(parts);
     if(!hamilton_monodromy(p))
@@ -856,15 +861,18 @@ class Census {
     if(!residence_safe_local(p)) {clear_p(p);return;}
     four_count_.intrinsic_residence_safe+=!pure;
     four_count_.parent_pure_residence_safe+=pure;
+    four_count_.incompatible_pure_residence_safe+=incompatible_pure;
     if(!upper_safe_local(p)) {clear_p(p);return;}
     four_count_.intrinsic_upper_safe+=!pure;
     four_count_.parent_pure_upper_safe+=pure;
+    four_count_.incompatible_pure_upper_safe+=incompatible_pure;
     std::vector<int> row=materialize(p);
     if(row.empty()||!residence_safe_direct(row)||!upper_safe_direct(row))
       throw std::runtime_error("four-chord local/direct replay mismatch");
     emit(pure?"parent-pure/2+2+2+2":"2+2+2+2",parts,row,pattern_id);
     four_count_.intrinsic_emitted+=!pure;
     four_count_.parent_pure_emitted+=pure;
+    four_count_.incompatible_pure_emitted+=incompatible_pure;
     clear_p(p);
   }
 
@@ -972,6 +980,26 @@ class Census {
     }
     out<<"],\n";
     if(pattern_id>=0)out<<"  \"pattern_id\":"<<pattern_id<<",\n";
+    uint8_t global_common=31;
+    out<<"  \"directed_source_masks\":[";
+    for(size_t i=0;i<parts.size();++i) {
+      if(i)out<<',';
+      out<<'[';
+      for(size_t j=0;j<parts[i].v.size();++j) {
+        if(j)out<<',';
+        int x=parts[i].v[j],y=parts[i].v[(j+1)%parts[i].v.size()];
+        auto found=transfer_[x].find(y);
+        if(found==transfer_[x].end())
+          throw std::runtime_error("emitted part is not a literal transfer cycle");
+        global_common&=found->second;
+        out<<static_cast<int>(found->second);
+      }
+      out<<']';
+    }
+    out<<"],\n  \"global_common_parent_mask\":"
+       <<static_cast<int>(global_common)<<",\n";
+    if((pure&&global_common==0)||(!pure&&global_common!=0))
+      throw std::runtime_error("emitted purity/source-mask mismatch");
     out<<"  \"middle_path\":[";
     for(size_t i=0;i<row.size();++i){if(i)out<<',';out<<masks_[row[i]];}
     out<<"]\n}\n";
@@ -1037,7 +1065,42 @@ class Census {
          <<",\"upper_safe\":"<<c.upper_safe
          <<",\"emitted\":"<<c.emitted<<'}';
     }
-    out<<"\n  },\n  \"emitted_total\":"<<output_id_<<"\n}\n";
+    out<<"\n  }";
+    if(!four_patterns_.empty()) {
+      const auto&c=four_count_;
+      out<<",\n  \"indexed_2+2+2+2\":{";
+      out<<"\"raw_four_edge_subsets\":"<<c.raw_four_edge_subsets
+         <<",\"abstract_matchings\":"<<c.abstract_matchings
+         <<",\"abstract_cycle_histogram\":{\"1\":"<<c.abstract_one_cycle
+         <<",\"3\":"<<c.abstract_three_cycle
+         <<",\"5\":"<<c.abstract_five_cycle<<'}'
+         <<",\"crossing_pair_kernels\":"<<c.crossing_pair_kernels
+         <<",\"impossible_pair_kernels\":"<<c.impossible_pair_kernels
+         <<",\"indexed_pair_kernels\":"<<c.indexed_pair_kernels
+         <<",\"clean_pair_kernels\":"<<c.clean_pair_kernels
+         <<",\"rescue_queries\":"<<c.rescue_queries
+         <<",\"range_queries\":"<<c.range_queries
+         <<",\"postings_scanned\":"<<c.postings_scanned
+         <<",\"box_candidates\":"<<c.box_candidates
+         <<",\"mutual_rescue_candidates\":"<<c.mutual_rescue_candidates
+         <<",\"intrinsic_candidates\":"<<c.intrinsic_candidates
+         <<",\"parent_pure_candidates\":"<<c.parent_pure_candidates
+         <<",\"incompatible_pure_candidates\":"
+         <<c.incompatible_pure_candidates
+         <<",\"intrinsic_residence_safe\":"<<c.intrinsic_residence_safe
+         <<",\"parent_pure_residence_safe\":"<<c.parent_pure_residence_safe
+         <<",\"incompatible_pure_residence_safe\":"
+         <<c.incompatible_pure_residence_safe
+         <<",\"intrinsic_upper_safe\":"<<c.intrinsic_upper_safe
+         <<",\"parent_pure_upper_safe\":"<<c.parent_pure_upper_safe
+         <<",\"incompatible_pure_upper_safe\":"
+         <<c.incompatible_pure_upper_safe
+         <<",\"intrinsic_emitted\":"<<c.intrinsic_emitted
+         <<",\"parent_pure_emitted\":"<<c.parent_pure_emitted
+         <<",\"incompatible_pure_emitted\":"
+         <<c.incompatible_pure_emitted<<'}';
+    }
+    out<<",\n  \"emitted_total\":"<<output_id_<<"\n}\n";
     // Insert the optional pure audit as a sibling JSON file so the primary
     // intrinsic schema and its frozen hashes remain stable.
     if(include_parent_pure_) {
@@ -1053,7 +1116,16 @@ class Census {
             <<",\"upper_safe\":"<<c.upper_safe
             <<",\"emitted\":"<<c.emitted<<'}';
       }
-      pure<<"\n  }\n}\n";
+      pure<<"\n  }";
+      if(!four_patterns_.empty()) {
+        pure<<",\n  \"indexed_2+2+2+2\":{"
+            <<"\"candidates\":"<<four_count_.parent_pure_candidates
+            <<",\"residence_safe\":"
+            <<four_count_.parent_pure_residence_safe
+            <<",\"upper_safe\":"<<four_count_.parent_pure_upper_safe
+            <<",\"emitted\":"<<four_count_.parent_pure_emitted<<'}';
+      }
+      pure<<"\n}\n";
     }
   }
 };

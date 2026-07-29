@@ -240,3 +240,198 @@ where `a_ij` says that transposition chords `i,j` interlace in the base
 order.  Equation (6.1) is the nonsingularity condition for the four-chord
 intersection matrix and avoids treating all `binom(818,4)` quadruples as
 Hamilton candidates.
+
+## 7. Exact four-chord reduction
+
+The support-eight `2+2+2+2` case has a stronger normal form. Number the
+four transposition chords and let `a_ij` be one when chords `i,j` interlace
+in the base cyclic order.
+
+### Theorem 7.1 (odd crossing-split theorem)
+
+The four-transposition transfer is Hamilton if and only if
+
+\[
+ a_{12}a_{34}+a_{13}a_{24}+a_{14}a_{23}=1\pmod2.
+\tag{7.1}
+\]
+
+Consequently an odd number of the three splits of the four chords into two
+pairs have both pairs crossing. In particular every Hamilton four-chord
+deck has a decomposition into two support-four Hamilton kernels.
+
+#### Proof
+
+For a product of transpositions, the exact circuit formula is
+
+\[
+ c(f_0p)=1+\operatorname{nullity}_{\mathbf F_2} A,
+\]
+
+where `A=(a_ij)` is the symmetric zero-diagonal chord-intersection matrix.
+Thus Hamiltonity is equivalent to nonsingularity. In characteristic two,
+the determinant of a `4x4` alternating matrix is the square of its
+Pfaffian, and squaring is the identity. Its Pfaffian is exactly the left
+side of (7.1). Each product in (7.1) records one split into two crossing
+pairs. \(\square\)
+
+There are `105` perfect matchings on eight cyclic positions. Exact abstract
+enumeration gives the component-count histogram
+
+\[
+ \{1:21,\ 3:70,\ 5:14\}.
+\tag{7.2}
+\]
+
+Thus only 21 ordered chord diagrams need be physically embedded.
+
+### Theorem 7.2 (mutual residence-rescue criterion)
+
+Let `A` be one crossing-pair kernel. Evaluate its partial transfer and, for
+each resulting forbidden residence word, let `R` be the set of tails in
+that word which are outside `supp(A)` and occur in at least one available
+transposition. Delete supersets and call the remaining family
+`cal R(A)`.
+
+If a disjoint crossing-pair kernel `B` completes `A` to a residence-safe
+four-chord deck, then
+
+\[
+ \operatorname{supp}(B)\cap R\ne\varnothing
+ \qquad(R\in\mathcal R(A)),
+\tag{7.3}
+\]
+
+and symmetrically with `A,B` reversed. An empty `R` proves that `A` has no
+completion. Conversely, after (7.3), literal evaluation of the combined
+eight-tail transfer is necessary and sufficient.
+
+#### Proof
+
+If no outgoing arc at a tail of a bad partial word is changed by `B`, every
+arc of that word survives in the combined transfer, so the residence defect
+survives. This proves necessity and the empty-clause obstruction. Once the
+supports are fixed, direct evaluation is the definition of residence and is
+therefore sufficient. \(\square\)
+
+For each of the 21 abstract diagrams, the four positions of `B` lie in four
+literal open intervals cut out by the four sorted positions of `A`. Hence
+the complete enumeration is a four-dimensional orthogonal range join of
+crossing-pair kernels, restricted by the two hitting systems (7.3). This is
+an exact indexed join, not a sample from the `18,518,759,260` raw
+four-transposition subsets.
+
+The frozen run gives:
+
+```text
+crossing-pair kernels            118600
+impossible partial kernels       114918
+indexed kernels                    3682
+pattern-box joins                 45614
+mutual-rescue joins                1638
+intrinsic candidates               1523
+parent-pure candidates              115
+intrinsic all-upper/resident         483
+parent-pure all-upper/resident        103
+```
+
+All 1,523 intrinsic candidates are componentwise parent-pure but globally
+incompatible: each transposition has a donor, yet no one donor supplies all
+four. This is exactly the case that an “at least one rainbow component”
+filter would incorrectly delete.
+
+## 8. The all-shore Hall-delta identity
+
+Let `G_0` be the compiler graph of `P0`, with deficiency `delta_0=29`, and
+let `G_Q` be the graph after any transfer. For a target shore `A` put
+
+\[
+ g_0(A)=|A|-|N_0(A)|,\qquad
+ s_0(A)=29-g_0(A)\ge0,
+\]
+
+and
+
+\[
+ \Delta_Q(A)=|N_Q(A)|-|N_0(A)|.
+\]
+
+### Theorem 8.1 (exact moving-shore gain)
+
+\[
+ \boxed{\mu(G_Q)-\mu(G_0)
+   =\min_{A\subseteq\mathcal T}\bigl(s_0(A)+\Delta_Q(A)\bigr).}
+\tag{8.1}
+\]
+
+Therefore `Q` improves Hall 29 if and only if
+
+\[
+ s_0(A)+\Delta_Q(A)\ge1
+ \qquad\text{for every target shore }A.
+\tag{8.2}
+\]
+
+#### Proof
+
+Hall's deficiency formula gives
+
+\[
+ \delta(Q)=\max_A\{g_0(A)-\Delta_Q(A)\}.
+\]
+
+Since matching size is `|T|-delta`, subtract from `delta_0=29` and move the
+maximum through the minus sign. \(\square\)
+
+This identity says exactly why passing the five displayed private shores is
+only a filter. A transfer can move the minimizing shore. An exact positive
+certificate is either the universal inequality (8.2), or, finitely, a
+matching of size at least 16,355 together with the usual maximum-matching
+audit. For a fixed old maximum matching `M_0`, if `r` of its edges are
+destroyed and `alpha` is the maximum number of augmenting paths from the
+retained matching in `G_Q`, then the same gain is
+
+\[
+ \mu(G_Q)-\mu(G_0)=\alpha-r.
+\tag{8.3}
+\]
+
+Thus a four-chord candidate must provide at least `r+1` compatible
+augmentations; raw new-cell count is not enough.
+
+## 9. Exact support-eight outcome
+
+All four parity-legal support-eight types have now been exhausted, including
+parent-pure candidates:
+
+| type | locally legal | best exact Hall deficiency |
+|---|---:|---:|
+| `6+2` | 0 | -- |
+| `5+3` | 0 | -- |
+| `4+4` | 3 | 34 |
+| intrinsic `2+2+2+2` | 483 | 39 |
+| parent-pure `2+2+2+2` | 103 | 40 |
+
+The full four-chord deficiency histograms are
+
+```text
+intrinsic:   39:5,40:33,41:87,42:124,43:115,44:77,45:29,46:12,47:1
+parent-pure: 40:6,41:21,42:32,43:24,44:14,45:4,46:2
+```
+
+Hence no Hamilton, residence-safe, all-upper intrinsic transfer of support
+at most eight in the canonical five-parent atlas lowers Hall below 29. Once
+the separate parent-pure support-seven audit is included, the same statement
+holds for every transfer through support eight. Without that last audit, the
+logically unconditional statement is: intrinsic transfers are closed
+through eight and all transfers are closed through six.
+
+The support-eight enumerator and compact audit are
+
+```text
+scratch/enumerate_k15_intrinsic_multiparent_support3_8.cpp
+SHA-256 722731a8fdc51b4c3924be165e9a83d59f6e07da8dd3191bab75e460aa2d2d94
+
+scratch/k15_support8_all_types_compact_audit.json
+SHA-256 b81846ac94d7ef910a73dd75464678cd5c2e3f4486b964c5e8d8e5c16d65c88d
+```

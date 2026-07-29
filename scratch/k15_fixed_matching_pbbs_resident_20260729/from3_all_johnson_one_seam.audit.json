@@ -1,0 +1,8615 @@
+{
+  "best_rows": [
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        22,
+        41
+      ],
+      "join": 4,
+      "lower_holes": 2,
+      "lower_missing": [
+        18033,
+        18553
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 44,
+      "target_state": 12863,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        448,
+        38
+      ],
+      "join": 136,
+      "lower_holes": 2,
+      "lower_missing": [
+        1945,
+        26392
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 896,
+      "target_state": 12857,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        874,
+        35
+      ],
+      "join": 268,
+      "lower_holes": 2,
+      "lower_missing": [
+        29068,
+        31120
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 1748,
+      "target_state": 12851,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1300,
+        32
+      ],
+      "join": 400,
+      "lower_holes": 2,
+      "lower_missing": [
+        6350,
+        6415
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 2600,
+      "target_state": 12845,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1726,
+        29
+      ],
+      "join": 532,
+      "lower_holes": 2,
+      "lower_missing": [
+        3299,
+        4339
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 3452,
+      "target_state": 12839,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2152,
+        26
+      ],
+      "join": 664,
+      "lower_holes": 2,
+      "lower_missing": [
+        3890,
+        20017
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 4304,
+      "target_state": 12833,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2578,
+        23
+      ],
+      "join": 796,
+      "lower_holes": 2,
+      "lower_missing": [
+        25369,
+        29473
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 5156,
+      "target_state": 12827,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3004,
+        20
+      ],
+      "join": 928,
+      "lower_holes": 2,
+      "lower_missing": [
+        12700,
+        12830
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 6008,
+      "target_state": 12821,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3430,
+        17
+      ],
+      "join": 1060,
+      "lower_holes": 2,
+      "lower_missing": [
+        6598,
+        8678
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 6860,
+      "target_state": 12815,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3856,
+        14
+      ],
+      "join": 1192,
+      "lower_holes": 2,
+      "lower_missing": [
+        7267,
+        7780
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 7712,
+      "target_state": 12809,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4282,
+        11
+      ],
+      "join": 1324,
+      "lower_holes": 2,
+      "lower_missing": [
+        17971,
+        26179
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 8564,
+      "target_state": 12803,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4708,
+        8
+      ],
+      "join": 1456,
+      "lower_holes": 2,
+      "lower_missing": [
+        25400,
+        25660
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 9416,
+      "target_state": 12797,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5134,
+        5
+      ],
+      "join": 1588,
+      "lower_holes": 2,
+      "lower_missing": [
+        13196,
+        17356
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 10268,
+      "target_state": 12791,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5560,
+        2
+      ],
+      "join": 1720,
+      "lower_holes": 2,
+      "lower_missing": [
+        14534,
+        15560
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 11120,
+      "target_state": 12785,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5986,
+        44
+      ],
+      "join": 1852,
+      "lower_holes": 2,
+      "lower_missing": [
+        3175,
+        19591
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 11972,
+      "target_state": 12869,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5560,
+        2
+      ],
+      "join": 2076,
+      "lower_holes": 2,
+      "lower_missing": [
+        14534,
+        15560
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12784,
+      "target_state": 11121,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5134,
+        5
+      ],
+      "join": 2226,
+      "lower_holes": 2,
+      "lower_missing": [
+        13196,
+        17356
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12790,
+      "target_state": 10269,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4708,
+        8
+      ],
+      "join": 2350,
+      "lower_holes": 2,
+      "lower_missing": [
+        25400,
+        25660
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12796,
+      "target_state": 9417,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4282,
+        11
+      ],
+      "join": 2474,
+      "lower_holes": 2,
+      "lower_missing": [
+        17971,
+        26179
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12802,
+      "target_state": 8565,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3856,
+        14
+      ],
+      "join": 2603,
+      "lower_holes": 2,
+      "lower_missing": [
+        7267,
+        7780
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12808,
+      "target_state": 7713,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3430,
+        17
+      ],
+      "join": 2754,
+      "lower_holes": 2,
+      "lower_missing": [
+        6598,
+        8678
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12814,
+      "target_state": 6861,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3004,
+        20
+      ],
+      "join": 2877,
+      "lower_holes": 2,
+      "lower_missing": [
+        12700,
+        12830
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12820,
+      "target_state": 6009,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2578,
+        23
+      ],
+      "join": 3002,
+      "lower_holes": 2,
+      "lower_missing": [
+        25369,
+        29473
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12826,
+      "target_state": 5157,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2152,
+        26
+      ],
+      "join": 3125,
+      "lower_holes": 2,
+      "lower_missing": [
+        3890,
+        20017
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12832,
+      "target_state": 4305,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1726,
+        29
+      ],
+      "join": 3281,
+      "lower_holes": 2,
+      "lower_missing": [
+        3299,
+        4339
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12838,
+      "target_state": 3453,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1300,
+        32
+      ],
+      "join": 3404,
+      "lower_holes": 2,
+      "lower_missing": [
+        6350,
+        6415
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12844,
+      "target_state": 2601,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        874,
+        35
+      ],
+      "join": 3530,
+      "lower_holes": 2,
+      "lower_missing": [
+        29068,
+        31120
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12850,
+      "target_state": 1749,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        448,
+        38
+      ],
+      "join": 3672,
+      "lower_holes": 2,
+      "lower_missing": [
+        1945,
+        26392
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12856,
+      "target_state": 897,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        22,
+        41
+      ],
+      "join": 3802,
+      "lower_holes": 2,
+      "lower_missing": [
+        18033,
+        18553
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12862,
+      "target_state": 45,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5986,
+        44
+      ],
+      "join": 3929,
+      "lower_holes": 2,
+      "lower_missing": [
+        3175,
+        19591
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12868,
+      "target_state": 11973,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        305,
+        12
+      ],
+      "join": 85,
+      "lower_holes": 3,
+      "lower_missing": [
+        1635,
+        1651,
+        20066
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 611,
+      "target_state": 12804,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        731,
+        9
+      ],
+      "join": 217,
+      "lower_holes": 3,
+      "lower_missing": [
+        26153,
+        26160,
+        26416
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 1463,
+      "target_state": 12798,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1157,
+        6
+      ],
+      "join": 349,
+      "lower_holes": 3,
+      "lower_missing": [
+        25244,
+        25356,
+        29452
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 2315,
+      "target_state": 12792,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1583,
+        3
+      ],
+      "join": 481,
+      "lower_holes": 3,
+      "lower_missing": [
+        10700,
+        12492,
+        12494
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 3167,
+      "target_state": 12786,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2009,
+        0
+      ],
+      "join": 612,
+      "lower_holes": 3,
+      "lower_missing": [
+        3270,
+        3302,
+        7365
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 4019,
+      "target_state": 12780,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2435,
+        42
+      ],
+      "join": 745,
+      "lower_holes": 3,
+      "lower_missing": [
+        19539,
+        19553,
+        20065
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 4871,
+      "target_state": 12864,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2861,
+        39
+      ],
+      "join": 877,
+      "lower_holes": 3,
+      "lower_missing": [
+        17721,
+        17945,
+        26137
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 5723,
+      "target_state": 12858,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3287,
+        36
+      ],
+      "join": 1009,
+      "lower_holes": 3,
+      "lower_missing": [
+        21400,
+        24984,
+        24988
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 6575,
+      "target_state": 12852,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3713,
+        33
+      ],
+      "join": 1140,
+      "lower_holes": 3,
+      "lower_missing": [
+        6540,
+        6604,
+        14730
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 7427,
+      "target_state": 12846,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4139,
+        30
+      ],
+      "join": 1273,
+      "lower_holes": 3,
+      "lower_missing": [
+        6311,
+        6339,
+        7363
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 8279,
+      "target_state": 12840,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4565,
+        27
+      ],
+      "join": 1405,
+      "lower_holes": 3,
+      "lower_missing": [
+        2675,
+        3123,
+        19507
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 9131,
+      "target_state": 12834,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4991,
+        24
+      ],
+      "join": 1537,
+      "lower_holes": 3,
+      "lower_missing": [
+        10033,
+        17201,
+        17209
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 9983,
+      "target_state": 12828,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5417,
+        21
+      ],
+      "join": 1668,
+      "lower_holes": 3,
+      "lower_missing": [
+        13080,
+        13208,
+        29460
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 10835,
+      "target_state": 12822,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5843,
+        18
+      ],
+      "join": 1801,
+      "lower_holes": 3,
+      "lower_missing": [
+        12622,
+        12678,
+        14726
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 11687,
+      "target_state": 12816,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6269,
+        15
+      ],
+      "join": 1933,
+      "lower_holes": 3,
+      "lower_missing": [
+        5350,
+        6246,
+        6247
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12539,
+      "target_state": 12810,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2009,
+        0
+      ],
+      "join": 2005,
+      "lower_holes": 3,
+      "lower_missing": [
+        3270,
+        3302,
+        7365
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12781,
+      "target_state": 4018,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1583,
+        3
+      ],
+      "join": 2150,
+      "lower_holes": 3,
+      "lower_missing": [
+        10700,
+        12492,
+        12494
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12787,
+      "target_state": 3166,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1157,
+        6
+      ],
+      "join": 2272,
+      "lower_holes": 3,
+      "lower_missing": [
+        25244,
+        25356,
+        29452
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12793,
+      "target_state": 2314,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        731,
+        9
+      ],
+      "join": 2404,
+      "lower_holes": 3,
+      "lower_missing": [
+        26153,
+        26160,
+        26416
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12799,
+      "target_state": 1462,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        305,
+        12
+      ],
+      "join": 2535,
+      "lower_holes": 3,
+      "lower_missing": [
+        1635,
+        1651,
+        20066
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12805,
+      "target_state": 610,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6269,
+        15
+      ],
+      "join": 2678,
+      "lower_holes": 3,
+      "lower_missing": [
+        5350,
+        6246,
+        6247
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12811,
+      "target_state": 12538,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5843,
+        18
+      ],
+      "join": 2800,
+      "lower_holes": 3,
+      "lower_missing": [
+        12622,
+        12678,
+        14726
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12817,
+      "target_state": 11686,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5417,
+        21
+      ],
+      "join": 2931,
+      "lower_holes": 3,
+      "lower_missing": [
+        13080,
+        13208,
+        29460
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12823,
+      "target_state": 10834,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4991,
+        24
+      ],
+      "join": 3078,
+      "lower_holes": 3,
+      "lower_missing": [
+        10033,
+        17201,
+        17209
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12829,
+      "target_state": 9982,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4565,
+        27
+      ],
+      "join": 3206,
+      "lower_holes": 3,
+      "lower_missing": [
+        2675,
+        3123,
+        19507
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12835,
+      "target_state": 9130,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4139,
+        30
+      ],
+      "join": 3328,
+      "lower_holes": 3,
+      "lower_missing": [
+        6311,
+        6339,
+        7363
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12841,
+      "target_state": 8278,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3713,
+        33
+      ],
+      "join": 3458,
+      "lower_holes": 3,
+      "lower_missing": [
+        6540,
+        6604,
+        14730
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12847,
+      "target_state": 7426,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3287,
+        36
+      ],
+      "join": 3602,
+      "lower_holes": 3,
+      "lower_missing": [
+        21400,
+        24984,
+        24988
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12853,
+      "target_state": 6574,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2861,
+        39
+      ],
+      "join": 3728,
+      "lower_holes": 3,
+      "lower_missing": [
+        17721,
+        17945,
+        26137
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12859,
+      "target_state": 5722,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2435,
+        42
+      ],
+      "join": 3856,
+      "lower_holes": 3,
+      "lower_missing": [
+        19539,
+        19553,
+        20065
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 0,
+      "source_state": 12865,
+      "target_state": 4870,
+      "upper_fixed_width_holes": 0,
+      "upper_holes": 0,
+      "upper_missing": []
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        81,
+        43
+      ],
+      "join": 21,
+      "lower_holes": 1,
+      "lower_missing": [
+        3179
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 163,
+      "target_state": 12867,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        306,
+        41
+      ],
+      "join": 90,
+      "lower_holes": 1,
+      "lower_missing": [
+        18033
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 613,
+      "target_state": 12862,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        507,
+        40
+      ],
+      "join": 153,
+      "lower_holes": 1,
+      "lower_missing": [
+        18097
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1015,
+      "target_state": 12861,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        732,
+        38
+      ],
+      "join": 223,
+      "lower_holes": 1,
+      "lower_missing": [
+        26392
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1465,
+      "target_state": 12856,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        933,
+        37
+      ],
+      "join": 284,
+      "lower_holes": 1,
+      "lower_missing": [
+        27416
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1867,
+      "target_state": 12855,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1158,
+        35
+      ],
+      "join": 355,
+      "lower_holes": 1,
+      "lower_missing": [
+        29068
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2317,
+      "target_state": 12850,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1359,
+        34
+      ],
+      "join": 417,
+      "lower_holes": 1,
+      "lower_missing": [
+        12685
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2719,
+      "target_state": 12849,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1584,
+        32
+      ],
+      "join": 486,
+      "lower_holes": 1,
+      "lower_missing": [
+        6350
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3169,
+      "target_state": 12844,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1785,
+        31
+      ],
+      "join": 549,
+      "lower_holes": 1,
+      "lower_missing": [
+        6358
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3571,
+      "target_state": 12843,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2010,
+        29
+      ],
+      "join": 618,
+      "lower_holes": 1,
+      "lower_missing": [
+        3299
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4021,
+      "target_state": 12838,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2211,
+        28
+      ],
+      "join": 681,
+      "lower_holes": 1,
+      "lower_missing": [
+        3427
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4423,
+      "target_state": 12837,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2436,
+        26
+      ],
+      "join": 751,
+      "lower_holes": 1,
+      "lower_missing": [
+        20017
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4873,
+      "target_state": 12832,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2637,
+        25
+      ],
+      "join": 812,
+      "lower_holes": 1,
+      "lower_missing": [
+        22065
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5275,
+      "target_state": 12831,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2862,
+        23
+      ],
+      "join": 883,
+      "lower_holes": 1,
+      "lower_missing": [
+        25369
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5725,
+      "target_state": 12826,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3063,
+        22
+      ],
+      "join": 945,
+      "lower_holes": 1,
+      "lower_missing": [
+        25370
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6127,
+      "target_state": 12825,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3288,
+        20
+      ],
+      "join": 1014,
+      "lower_holes": 1,
+      "lower_missing": [
+        12700
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6577,
+      "target_state": 12820,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3489,
+        19
+      ],
+      "join": 1077,
+      "lower_holes": 1,
+      "lower_missing": [
+        12716
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6979,
+      "target_state": 12819,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3714,
+        17
+      ],
+      "join": 1146,
+      "lower_holes": 1,
+      "lower_missing": [
+        6598
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7429,
+      "target_state": 12814,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3915,
+        16
+      ],
+      "join": 1208,
+      "lower_holes": 1,
+      "lower_missing": [
+        6854
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7831,
+      "target_state": 12813,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4140,
+        14
+      ],
+      "join": 1279,
+      "lower_holes": 1,
+      "lower_missing": [
+        7267
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8281,
+      "target_state": 12808,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4341,
+        13
+      ],
+      "join": 1340,
+      "lower_holes": 1,
+      "lower_missing": [
+        11363
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8683,
+      "target_state": 12807,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4566,
+        11
+      ],
+      "join": 1411,
+      "lower_holes": 1,
+      "lower_missing": [
+        17971
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9133,
+      "target_state": 12802,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4767,
+        10
+      ],
+      "join": 1473,
+      "lower_holes": 1,
+      "lower_missing": [
+        17973
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9535,
+      "target_state": 12801,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4992,
+        8
+      ],
+      "join": 1542,
+      "lower_holes": 1,
+      "lower_missing": [
+        25400
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9985,
+      "target_state": 12796,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5193,
+        7
+      ],
+      "join": 1605,
+      "lower_holes": 1,
+      "lower_missing": [
+        25432
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10387,
+      "target_state": 12795,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5418,
+        5
+      ],
+      "join": 1674,
+      "lower_holes": 1,
+      "lower_missing": [
+        13196
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10837,
+      "target_state": 12790,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5619,
+        4
+      ],
+      "join": 1736,
+      "lower_holes": 1,
+      "lower_missing": [
+        13708
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11239,
+      "target_state": 12789,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5844,
+        2
+      ],
+      "join": 1807,
+      "lower_holes": 1,
+      "lower_missing": [
+        14534
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11689,
+      "target_state": 12784,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6045,
+        1
+      ],
+      "join": 1869,
+      "lower_holes": 1,
+      "lower_missing": [
+        22726
+      ],
+      "orientations": [
+        1,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12091,
+      "target_state": 12783,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6270,
+        44
+      ],
+      "join": 1939,
+      "lower_holes": 1,
+      "lower_missing": [
+        3175
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12541,
+      "target_state": 12868,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6045,
+        1
+      ],
+      "join": 2035,
+      "lower_holes": 1,
+      "lower_missing": [
+        22726
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12782,
+      "target_state": 12090,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5844,
+        2
+      ],
+      "join": 2105,
+      "lower_holes": 1,
+      "lower_missing": [
+        14534
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12785,
+      "target_state": 11688,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5619,
+        4
+      ],
+      "join": 2158,
+      "lower_holes": 1,
+      "lower_missing": [
+        13708
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12788,
+      "target_state": 11238,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5418,
+        5
+      ],
+      "join": 2229,
+      "lower_holes": 1,
+      "lower_missing": [
+        13196
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12791,
+      "target_state": 10836,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5193,
+        7
+      ],
+      "join": 2305,
+      "lower_holes": 1,
+      "lower_missing": [
+        25432
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12794,
+      "target_state": 10386,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4992,
+        8
+      ],
+      "join": 2374,
+      "lower_holes": 1,
+      "lower_missing": [
+        25400
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12797,
+      "target_state": 9984,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4767,
+        10
+      ],
+      "join": 2427,
+      "lower_holes": 1,
+      "lower_missing": [
+        17973
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12800,
+      "target_state": 9534,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4566,
+        11
+      ],
+      "join": 2507,
+      "lower_holes": 1,
+      "lower_missing": [
+        17971
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12803,
+      "target_state": 9132,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4341,
+        13
+      ],
+      "join": 2563,
+      "lower_holes": 1,
+      "lower_missing": [
+        11363
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12806,
+      "target_state": 8682,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4140,
+        14
+      ],
+      "join": 2633,
+      "lower_holes": 1,
+      "lower_missing": [
+        7267
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12809,
+      "target_state": 8280,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3915,
+        16
+      ],
+      "join": 2685,
+      "lower_holes": 1,
+      "lower_missing": [
+        6854
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12812,
+      "target_state": 7830,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3714,
+        17
+      ],
+      "join": 2756,
+      "lower_holes": 1,
+      "lower_missing": [
+        6598
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12815,
+      "target_state": 7428,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3489,
+        19
+      ],
+      "join": 2832,
+      "lower_holes": 1,
+      "lower_missing": [
+        12716
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12818,
+      "target_state": 6978,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3288,
+        20
+      ],
+      "join": 2902,
+      "lower_holes": 1,
+      "lower_missing": [
+        12700
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12821,
+      "target_state": 6576,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3063,
+        22
+      ],
+      "join": 2955,
+      "lower_holes": 1,
+      "lower_missing": [
+        25370
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12824,
+      "target_state": 6126,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2862,
+        23
+      ],
+      "join": 3032,
+      "lower_holes": 1,
+      "lower_missing": [
+        25369
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12827,
+      "target_state": 5724,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2637,
+        25
+      ],
+      "join": 3083,
+      "lower_holes": 1,
+      "lower_missing": [
+        22065
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12830,
+      "target_state": 5274,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2436,
+        26
+      ],
+      "join": 3161,
+      "lower_holes": 1,
+      "lower_missing": [
+        20017
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12833,
+      "target_state": 4872,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2211,
+        28
+      ],
+      "join": 3234,
+      "lower_holes": 1,
+      "lower_missing": [
+        3427
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12836,
+      "target_state": 4422,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2010,
+        29
+      ],
+      "join": 3284,
+      "lower_holes": 1,
+      "lower_missing": [
+        3299
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12839,
+      "target_state": 4020,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1785,
+        31
+      ],
+      "join": 3359,
+      "lower_holes": 1,
+      "lower_missing": [
+        6358
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12842,
+      "target_state": 3570,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1584,
+        32
+      ],
+      "join": 3429,
+      "lower_holes": 1,
+      "lower_missing": [
+        6350
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12845,
+      "target_state": 3168,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1359,
+        34
+      ],
+      "join": 3483,
+      "lower_holes": 1,
+      "lower_missing": [
+        12685
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12848,
+      "target_state": 2718,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1158,
+        35
+      ],
+      "join": 3557,
+      "lower_holes": 1,
+      "lower_missing": [
+        29068
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12851,
+      "target_state": 2316,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        933,
+        37
+      ],
+      "join": 3611,
+      "lower_holes": 1,
+      "lower_missing": [
+        27416
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12854,
+      "target_state": 1866,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        732,
+        38
+      ],
+      "join": 3685,
+      "lower_holes": 1,
+      "lower_missing": [
+        26392
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12857,
+      "target_state": 1464,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        507,
+        40
+      ],
+      "join": 3757,
+      "lower_holes": 1,
+      "lower_missing": [
+        18097
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12860,
+      "target_state": 1014,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        306,
+        41
+      ],
+      "join": 3812,
+      "lower_holes": 1,
+      "lower_missing": [
+        18033
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12863,
+      "target_state": 612,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        81,
+        43
+      ],
+      "join": 3881,
+      "lower_holes": 1,
+      "lower_missing": [
+        3179
+      ],
+      "orientations": [
+        0,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12866,
+      "target_state": 162,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6270,
+        44
+      ],
+      "join": 3959,
+      "lower_holes": 1,
+      "lower_missing": [
+        3175
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12869,
+      "target_state": 12540,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        188,
+        28
+      ],
+      "join": 40,
+      "lower_holes": 2,
+      "lower_missing": [
+        10353,
+        11377
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 376,
+      "target_state": 12837,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        200,
+        15
+      ],
+      "join": 43,
+      "lower_holes": 2,
+      "lower_missing": [
+        6221,
+        6223
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 400,
+      "target_state": 12811,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        321,
+        18
+      ],
+      "join": 93,
+      "lower_holes": 2,
+      "lower_missing": [
+        12678,
+        14726
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 642,
+      "target_state": 12817,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        321,
+        3
+      ],
+      "join": 94,
+      "lower_holes": 2,
+      "lower_missing": [
+        12492,
+        12494
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 643,
+      "target_state": 12786,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        322,
+        17
+      ],
+      "join": 95,
+      "lower_holes": 2,
+      "lower_missing": [
+        4518,
+        6598
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 644,
+      "target_state": 12815,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        12775
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        395,
+        39
+      ],
+      "join": 126,
+      "lower_holes": 2,
+      "lower_missing": [
+        18057,
+        26249
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 790,
+      "target_state": 12859,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        614,
+        25
+      ],
+      "join": 171,
+      "lower_holes": 2,
+      "lower_missing": [
+        1813,
+        18197
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1228,
+      "target_state": 12831,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        626,
+        12
+      ],
+      "join": 175,
+      "lower_holes": 2,
+      "lower_missing": [
+        1235,
+        1267
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1252,
+      "target_state": 12805,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        747,
+        15
+      ],
+      "join": 225,
+      "lower_holes": 2,
+      "lower_missing": [
+        6246,
+        6247
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1494,
+      "target_state": 12811,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        747,
+        0
+      ],
+      "join": 226,
+      "lower_holes": 2,
+      "lower_missing": [
+        3270,
+        3302
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1495,
+      "target_state": 12780,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        748,
+        14
+      ],
+      "join": 227,
+      "lower_holes": 2,
+      "lower_missing": [
+        6754,
+        7267
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1496,
+      "target_state": 12809,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7798
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        821,
+        36
+      ],
+      "join": 258,
+      "lower_holes": 2,
+      "lower_missing": [
+        26776,
+        26780
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 1642,
+      "target_state": 12853,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1040,
+        22
+      ],
+      "join": 304,
+      "lower_holes": 2,
+      "lower_missing": [
+        29008,
+        29016
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2080,
+      "target_state": 12825,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1052,
+        9
+      ],
+      "join": 307,
+      "lower_holes": 2,
+      "lower_missing": [
+        19760,
+        20272
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2104,
+      "target_state": 12799,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1173,
+        12
+      ],
+      "join": 357,
+      "lower_holes": 2,
+      "lower_missing": [
+        1635,
+        1651
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2346,
+      "target_state": 12805,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1173,
+        42
+      ],
+      "join": 358,
+      "lower_holes": 2,
+      "lower_missing": [
+        19553,
+        20065
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2347,
+      "target_state": 12864,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1174,
+        11
+      ],
+      "join": 359,
+      "lower_holes": 2,
+      "lower_missing": [
+        9763,
+        17971
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2348,
+      "target_state": 12803,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26467
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1247,
+        33
+      ],
+      "join": 390,
+      "lower_holes": 2,
+      "lower_missing": [
+        2445,
+        2509
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2494,
+      "target_state": 12847,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1466,
+        19
+      ],
+      "join": 436,
+      "lower_holes": 2,
+      "lower_missing": [
+        5390,
+        5518
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2932,
+      "target_state": 12819,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1478,
+        6
+      ],
+      "join": 439,
+      "lower_holes": 2,
+      "lower_missing": [
+        21257,
+        29449
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 2956,
+      "target_state": 12793,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1599,
+        9
+      ],
+      "join": 489,
+      "lower_holes": 2,
+      "lower_missing": [
+        26160,
+        26416
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3198,
+      "target_state": 12799,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1599,
+        39
+      ],
+      "join": 490,
+      "lower_holes": 2,
+      "lower_missing": [
+        17945,
+        26137
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3199,
+      "target_state": 12858,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1600,
+        8
+      ],
+      "join": 491,
+      "lower_holes": 2,
+      "lower_missing": [
+        25140,
+        25400
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3200,
+      "target_state": 12797,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30268
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1673,
+        30
+      ],
+      "join": 522,
+      "lower_holes": 2,
+      "lower_missing": [
+        6353,
+        7377
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3346,
+      "target_state": 12841,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1892,
+        16
+      ],
+      "join": 567,
+      "lower_holes": 2,
+      "lower_missing": [
+        20706,
+        22754
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3784,
+      "target_state": 12813,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        1904,
+        3
+      ],
+      "join": 571,
+      "lower_holes": 2,
+      "lower_missing": [
+        12442,
+        12446
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 3808,
+      "target_state": 12787,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2025,
+        6
+      ],
+      "join": 621,
+      "lower_holes": 2,
+      "lower_missing": [
+        25356,
+        29452
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4050,
+      "target_state": 12793,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2025,
+        36
+      ],
+      "join": 622,
+      "lower_holes": 2,
+      "lower_missing": [
+        24984,
+        24988
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4051,
+      "target_state": 12852,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2026,
+        5
+      ],
+      "join": 623,
+      "lower_holes": 2,
+      "lower_missing": [
+        9036,
+        13196
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4052,
+      "target_state": 12791,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        25550
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2099,
+        27
+      ],
+      "join": 654,
+      "lower_holes": 2,
+      "lower_missing": [
+        3347,
+        19731
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4198,
+      "target_state": 12835,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2318,
+        13
+      ],
+      "join": 699,
+      "lower_holes": 2,
+      "lower_missing": [
+        3626,
+        3627
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4636,
+      "target_state": 12807,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2330,
+        0
+      ],
+      "join": 703,
+      "lower_holes": 2,
+      "lower_missing": [
+        2470,
+        2534
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4660,
+      "target_state": 12781,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2451,
+        3
+      ],
+      "join": 753,
+      "lower_holes": 2,
+      "lower_missing": [
+        12492,
+        12494
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4902,
+      "target_state": 12787,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2451,
+        33
+      ],
+      "join": 754,
+      "lower_holes": 2,
+      "lower_missing": [
+        6540,
+        6604
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4903,
+      "target_state": 12846,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2452,
+        2
+      ],
+      "join": 755,
+      "lower_holes": 2,
+      "lower_missing": [
+        13508,
+        14534
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 4904,
+      "target_state": 12785,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15596
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2525,
+        24
+      ],
+      "join": 786,
+      "lower_holes": 2,
+      "lower_missing": [
+        20785,
+        20793
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5050,
+      "target_state": 12829,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2744,
+        10
+      ],
+      "join": 832,
+      "lower_holes": 2,
+      "lower_missing": [
+        25249,
+        25265
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5488,
+      "target_state": 12801,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2756,
+        42
+      ],
+      "join": 835,
+      "lower_holes": 2,
+      "lower_missing": [
+        6753,
+        7777
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5512,
+      "target_state": 12865,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2877,
+        0
+      ],
+      "join": 885,
+      "lower_holes": 2,
+      "lower_missing": [
+        3270,
+        3302
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5754,
+      "target_state": 12781,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2877,
+        30
+      ],
+      "join": 886,
+      "lower_holes": 2,
+      "lower_missing": [
+        6339,
+        7363
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5755,
+      "target_state": 12840,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2878,
+        44
+      ],
+      "join": 887,
+      "lower_holes": 2,
+      "lower_missing": [
+        3175,
+        19526
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5756,
+      "target_state": 12869,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20167
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        2951,
+        21
+      ],
+      "join": 918,
+      "lower_holes": 2,
+      "lower_missing": [
+        4890,
+        5018
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 5902,
+      "target_state": 12823,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3170,
+        7
+      ],
+      "join": 964,
+      "lower_holes": 2,
+      "lower_missing": [
+        10780,
+        11036
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6340,
+      "target_state": 12795,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3182,
+        39
+      ],
+      "join": 967,
+      "lower_holes": 2,
+      "lower_missing": [
+        9747,
+        26131
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6364,
+      "target_state": 12859,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3303,
+        42
+      ],
+      "join": 1017,
+      "lower_holes": 2,
+      "lower_missing": [
+        19553,
+        20065
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6606,
+      "target_state": 12865,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3303,
+        27
+      ],
+      "join": 1018,
+      "lower_holes": 2,
+      "lower_missing": [
+        3123,
+        19507
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6607,
+      "target_state": 12834,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3304,
+        41
+      ],
+      "join": 1019,
+      "lower_holes": 2,
+      "lower_missing": [
+        17513,
+        18033
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6608,
+      "target_state": 12863,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        27769
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3377,
+        18
+      ],
+      "join": 1050,
+      "lower_holes": 2,
+      "lower_missing": [
+        12706,
+        14754
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 6754,
+      "target_state": 12817,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3596,
+        4
+      ],
+      "join": 1095,
+      "lower_holes": 2,
+      "lower_missing": [
+        8645,
+        12741
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7192,
+      "target_state": 12789,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3608,
+        36
+      ],
+      "join": 1099,
+      "lower_holes": 2,
+      "lower_missing": [
+        24884,
+        24892
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7216,
+      "target_state": 12853,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3729,
+        39
+      ],
+      "join": 1149,
+      "lower_holes": 2,
+      "lower_missing": [
+        17945,
+        26137
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7458,
+      "target_state": 12859,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3729,
+        24
+      ],
+      "join": 1150,
+      "lower_holes": 2,
+      "lower_missing": [
+        17201,
+        17209
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7459,
+      "target_state": 12828,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3730,
+        38
+      ],
+      "join": 1151,
+      "lower_holes": 2,
+      "lower_missing": [
+        18072,
+        26392
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7460,
+      "target_state": 12857,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        18333
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        3803,
+        15
+      ],
+      "join": 1182,
+      "lower_holes": 2,
+      "lower_missing": [
+        6694,
+        6695
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 7606,
+      "target_state": 12811,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4022,
+        1
+      ],
+      "join": 1228,
+      "lower_holes": 2,
+      "lower_missing": [
+        7252,
+        7254
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8044,
+      "target_state": 12783,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4034,
+        33
+      ],
+      "join": 1231,
+      "lower_holes": 2,
+      "lower_missing": [
+        4940,
+        5068
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8068,
+      "target_state": 12847,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4155,
+        36
+      ],
+      "join": 1281,
+      "lower_holes": 2,
+      "lower_missing": [
+        24984,
+        24988
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8310,
+      "target_state": 12853,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4155,
+        21
+      ],
+      "join": 1282,
+      "lower_holes": 2,
+      "lower_missing": [
+        13080,
+        13208
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8311,
+      "target_state": 12822,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4156,
+        35
+      ],
+      "join": 1283,
+      "lower_holes": 2,
+      "lower_missing": [
+        27016,
+        29068
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8312,
+      "target_state": 12851,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31192
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4229,
+        12
+      ],
+      "join": 1314,
+      "lower_holes": 2,
+      "lower_missing": [
+        8803,
+        8819
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8458,
+      "target_state": 12805,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4448,
+        43
+      ],
+      "join": 1360,
+      "lower_holes": 2,
+      "lower_missing": [
+        17731,
+        17763
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8896,
+      "target_state": 12867,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4460,
+        30
+      ],
+      "join": 1364,
+      "lower_holes": 2,
+      "lower_missing": [
+        13506,
+        15554
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 8920,
+      "target_state": 12841,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4581,
+        33
+      ],
+      "join": 1413,
+      "lower_holes": 2,
+      "lower_missing": [
+        6540,
+        6604
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9162,
+      "target_state": 12847,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4581,
+        18
+      ],
+      "join": 1414,
+      "lower_holes": 2,
+      "lower_missing": [
+        12678,
+        14726
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9163,
+      "target_state": 12816,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4582,
+        32
+      ],
+      "join": 1415,
+      "lower_holes": 2,
+      "lower_missing": [
+        6285,
+        6350
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9164,
+      "target_state": 12845,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7567
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4655,
+        9
+      ],
+      "join": 1446,
+      "lower_holes": 2,
+      "lower_missing": [
+        9780,
+        10036
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9310,
+      "target_state": 12799,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4874,
+        40
+      ],
+      "join": 1492,
+      "lower_holes": 2,
+      "lower_missing": [
+        21560,
+        22072
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9748,
+      "target_state": 12861,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        4886,
+        27
+      ],
+      "join": 1495,
+      "lower_holes": 2,
+      "lower_missing": [
+        19494,
+        19495
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 9772,
+      "target_state": 12835,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5007,
+        30
+      ],
+      "join": 1545,
+      "lower_holes": 2,
+      "lower_missing": [
+        6339,
+        7363
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10014,
+      "target_state": 12841,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5007,
+        15
+      ],
+      "join": 1546,
+      "lower_holes": 2,
+      "lower_missing": [
+        6246,
+        6247
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10015,
+      "target_state": 12810,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5008,
+        29
+      ],
+      "join": 1547,
+      "lower_holes": 2,
+      "lower_missing": [
+        2259,
+        3299
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10016,
+      "target_state": 12839,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        22771
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5081,
+        6
+      ],
+      "join": 1578,
+      "lower_holes": 2,
+      "lower_missing": [
+        25412,
+        29508
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10162,
+      "target_state": 12793,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5300,
+        37
+      ],
+      "join": 1623,
+      "lower_holes": 2,
+      "lower_missing": [
+        17290,
+        25482
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10600,
+      "target_state": 12855,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5312,
+        24
+      ],
+      "join": 1627,
+      "lower_holes": 2,
+      "lower_missing": [
+        17001,
+        17017
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10624,
+      "target_state": 12829,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5433,
+        27
+      ],
+      "join": 1677,
+      "lower_holes": 2,
+      "lower_missing": [
+        3123,
+        19507
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10866,
+      "target_state": 12835,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5433,
+        12
+      ],
+      "join": 1678,
+      "lower_holes": 2,
+      "lower_missing": [
+        1635,
+        1651
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10867,
+      "target_state": 12804,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5434,
+        26
+      ],
+      "join": 1679,
+      "lower_holes": 2,
+      "lower_missing": [
+        3377,
+        20017
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 10868,
+      "target_state": 12833,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        3899
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5507,
+        3
+      ],
+      "join": 1710,
+      "lower_holes": 2,
+      "lower_missing": [
+        13388,
+        13390
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11014,
+      "target_state": 12787,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5726,
+        34
+      ],
+      "join": 1756,
+      "lower_holes": 2,
+      "lower_missing": [
+        14504,
+        14508
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11452,
+      "target_state": 12849,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5738,
+        21
+      ],
+      "join": 1759,
+      "lower_holes": 2,
+      "lower_missing": [
+        9880,
+        10136
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11476,
+      "target_state": 12823,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5859,
+        24
+      ],
+      "join": 1809,
+      "lower_holes": 2,
+      "lower_missing": [
+        17201,
+        17209
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11718,
+      "target_state": 12829,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5859,
+        9
+      ],
+      "join": 1810,
+      "lower_holes": 2,
+      "lower_missing": [
+        26160,
+        26416
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11719,
+      "target_state": 12798,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5860,
+        23
+      ],
+      "join": 1811,
+      "lower_holes": 2,
+      "lower_missing": [
+        21265,
+        25369
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11720,
+      "target_state": 12827,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29617
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        5933,
+        0
+      ],
+      "join": 1842,
+      "lower_holes": 2,
+      "lower_missing": [
+        17606,
+        17638
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 11866,
+      "target_state": 12781,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6152,
+        31
+      ],
+      "join": 1888,
+      "lower_holes": 2,
+      "lower_missing": [
+        2695,
+        2759
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12304,
+      "target_state": 12843,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6164,
+        18
+      ],
+      "join": 1892,
+      "lower_holes": 2,
+      "lower_missing": [
+        27012,
+        31108
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12328,
+      "target_state": 12817,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6285,
+        21
+      ],
+      "join": 1941,
+      "lower_holes": 2,
+      "lower_missing": [
+        13080,
+        13208
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12570,
+      "target_state": 12823,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6285,
+        6
+      ],
+      "join": 1942,
+      "lower_holes": 2,
+      "lower_missing": [
+        25356,
+        29452
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12571,
+      "target_state": 12792,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6286,
+        20
+      ],
+      "join": 1943,
+      "lower_holes": 2,
+      "lower_missing": [
+        12570,
+        12700
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12572,
+      "target_state": 12821,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15134
+      ]
+    },
+    {
+      "component_order": [
+        0,
+        1
+      ],
+      "cuts": [
+        6359,
+        42
+      ],
+      "join": 1974,
+      "lower_holes": 2,
+      "lower_missing": [
+        19560,
+        20072
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12718,
+      "target_state": 12865,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2330,
+        0
+      ],
+      "join": 1982,
+      "lower_holes": 2,
+      "lower_missing": [
+        2470,
+        2534
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12780,
+      "target_state": 4661,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5933,
+        0
+      ],
+      "join": 1984,
+      "lower_holes": 2,
+      "lower_missing": [
+        17606,
+        17638
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12780,
+      "target_state": 11867,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2877,
+        0
+      ],
+      "join": 1988,
+      "lower_holes": 2,
+      "lower_missing": [
+        3270,
+        3302
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12780,
+      "target_state": 5755,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        747,
+        0
+      ],
+      "join": 2021,
+      "lower_holes": 2,
+      "lower_missing": [
+        3270,
+        3302
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12781,
+      "target_state": 1494,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4022,
+        1
+      ],
+      "join": 2032,
+      "lower_holes": 2,
+      "lower_missing": [
+        7252,
+        7254
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12782,
+      "target_state": 8045,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15599
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2452,
+        2
+      ],
+      "join": 2069,
+      "lower_holes": 2,
+      "lower_missing": [
+        13508,
+        14534
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12784,
+      "target_state": 4905,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15596
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2451,
+        3
+      ],
+      "join": 2114,
+      "lower_holes": 2,
+      "lower_missing": [
+        12492,
+        12494
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12786,
+      "target_state": 4903,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1904,
+        3
+      ],
+      "join": 2133,
+      "lower_holes": 2,
+      "lower_missing": [
+        12442,
+        12446
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12786,
+      "target_state": 3809,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5507,
+        3
+      ],
+      "join": 2135,
+      "lower_holes": 2,
+      "lower_missing": [
+        13388,
+        13390
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12786,
+      "target_state": 11015,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        321,
+        3
+      ],
+      "join": 2144,
+      "lower_holes": 2,
+      "lower_missing": [
+        12492,
+        12494
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12787,
+      "target_state": 642,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3596,
+        4
+      ],
+      "join": 2155,
+      "lower_holes": 2,
+      "lower_missing": [
+        8645,
+        12741
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12788,
+      "target_state": 7193,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31694
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2026,
+        5
+      ],
+      "join": 2218,
+      "lower_holes": 2,
+      "lower_missing": [
+        9036,
+        13196
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12790,
+      "target_state": 4053,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        25550
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1478,
+        6
+      ],
+      "join": 2255,
+      "lower_holes": 2,
+      "lower_missing": [
+        21257,
+        29449
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12792,
+      "target_state": 2957,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5081,
+        6
+      ],
+      "join": 2257,
+      "lower_holes": 2,
+      "lower_missing": [
+        25412,
+        29508
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12792,
+      "target_state": 10163,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2025,
+        6
+      ],
+      "join": 2261,
+      "lower_holes": 2,
+      "lower_missing": [
+        25356,
+        29452
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12792,
+      "target_state": 4051,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6285,
+        6
+      ],
+      "join": 2283,
+      "lower_holes": 2,
+      "lower_missing": [
+        25356,
+        29452
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12793,
+      "target_state": 12570,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3170,
+        7
+      ],
+      "join": 2308,
+      "lower_holes": 2,
+      "lower_missing": [
+        10780,
+        11036
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12794,
+      "target_state": 6341,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30652
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1600,
+        8
+      ],
+      "join": 2341,
+      "lower_holes": 2,
+      "lower_missing": [
+        25140,
+        25400
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12796,
+      "target_state": 3201,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30268
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4655,
+        9
+      ],
+      "join": 2377,
+      "lower_holes": 2,
+      "lower_missing": [
+        9780,
+        10036
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12798,
+      "target_state": 9311,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1052,
+        9
+      ],
+      "join": 2380,
+      "lower_holes": 2,
+      "lower_missing": [
+        19760,
+        20272
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12798,
+      "target_state": 2105,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1599,
+        9
+      ],
+      "join": 2381,
+      "lower_holes": 2,
+      "lower_missing": [
+        26160,
+        26416
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12798,
+      "target_state": 3199,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5859,
+        9
+      ],
+      "join": 2418,
+      "lower_holes": 2,
+      "lower_missing": [
+        26160,
+        26416
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12799,
+      "target_state": 11718,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2744,
+        10
+      ],
+      "join": 2430,
+      "lower_holes": 2,
+      "lower_missing": [
+        25249,
+        25265
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12800,
+      "target_state": 5489,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26491
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1174,
+        11
+      ],
+      "join": 2466,
+      "lower_holes": 2,
+      "lower_missing": [
+        9763,
+        17971
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12802,
+      "target_state": 2349,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        26467
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1173,
+        12
+      ],
+      "join": 2511,
+      "lower_holes": 2,
+      "lower_missing": [
+        1635,
+        1651
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12804,
+      "target_state": 2347,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        626,
+        12
+      ],
+      "join": 2530,
+      "lower_holes": 2,
+      "lower_missing": [
+        1235,
+        1267
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12804,
+      "target_state": 1253,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4229,
+        12
+      ],
+      "join": 2532,
+      "lower_holes": 2,
+      "lower_missing": [
+        8803,
+        8819
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12804,
+      "target_state": 8459,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5433,
+        12
+      ],
+      "join": 2549,
+      "lower_holes": 2,
+      "lower_missing": [
+        1635,
+        1651
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12805,
+      "target_state": 10866,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2318,
+        13
+      ],
+      "join": 2560,
+      "lower_holes": 2,
+      "lower_missing": [
+        3626,
+        3627
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12806,
+      "target_state": 4637,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24183
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        748,
+        14
+      ],
+      "join": 2596,
+      "lower_holes": 2,
+      "lower_missing": [
+        6754,
+        7267
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12808,
+      "target_state": 1497,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7798
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        747,
+        15
+      ],
+      "join": 2642,
+      "lower_holes": 2,
+      "lower_missing": [
+        6246,
+        6247
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12810,
+      "target_state": 1495,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        200,
+        15
+      ],
+      "join": 2661,
+      "lower_holes": 2,
+      "lower_missing": [
+        6221,
+        6223
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12810,
+      "target_state": 401,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3803,
+        15
+      ],
+      "join": 2663,
+      "lower_holes": 2,
+      "lower_missing": [
+        6694,
+        6695
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12810,
+      "target_state": 7607,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5007,
+        15
+      ],
+      "join": 2671,
+      "lower_holes": 2,
+      "lower_missing": [
+        6246,
+        6247
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12811,
+      "target_state": 10014,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1892,
+        16
+      ],
+      "join": 2688,
+      "lower_holes": 2,
+      "lower_missing": [
+        20706,
+        22754
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12812,
+      "target_state": 3785,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15847
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        322,
+        17
+      ],
+      "join": 2745,
+      "lower_holes": 2,
+      "lower_missing": [
+        4518,
+        6598
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12814,
+      "target_state": 645,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        12775
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3377,
+        18
+      ],
+      "join": 2783,
+      "lower_holes": 2,
+      "lower_missing": [
+        12706,
+        14754
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12816,
+      "target_state": 6755,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6164,
+        18
+      ],
+      "join": 2786,
+      "lower_holes": 2,
+      "lower_missing": [
+        27012,
+        31108
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12816,
+      "target_state": 12329,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        321,
+        18
+      ],
+      "join": 2787,
+      "lower_holes": 2,
+      "lower_missing": [
+        12678,
+        14726
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12816,
+      "target_state": 643,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4581,
+        18
+      ],
+      "join": 2811,
+      "lower_holes": 2,
+      "lower_missing": [
+        12678,
+        14726
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12817,
+      "target_state": 9162,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1466,
+        19
+      ],
+      "join": 2835,
+      "lower_holes": 2,
+      "lower_missing": [
+        5390,
+        5518
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12818,
+      "target_state": 2933,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15326
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6286,
+        20
+      ],
+      "join": 2868,
+      "lower_holes": 2,
+      "lower_missing": [
+        12570,
+        12700
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12820,
+      "target_state": 12573,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        15134
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2951,
+        21
+      ],
+      "join": 2905,
+      "lower_holes": 2,
+      "lower_missing": [
+        4890,
+        5018
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12822,
+      "target_state": 5903,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5738,
+        21
+      ],
+      "join": 2908,
+      "lower_holes": 2,
+      "lower_missing": [
+        9880,
+        10136
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12822,
+      "target_state": 11477,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6285,
+        21
+      ],
+      "join": 2909,
+      "lower_holes": 2,
+      "lower_missing": [
+        13080,
+        13208
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12822,
+      "target_state": 12571,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4155,
+        21
+      ],
+      "join": 2945,
+      "lower_holes": 2,
+      "lower_missing": [
+        13080,
+        13208
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12823,
+      "target_state": 8310,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1040,
+        22
+      ],
+      "join": 2958,
+      "lower_holes": 2,
+      "lower_missing": [
+        29008,
+        29016
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12824,
+      "target_state": 2081,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29629
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5860,
+        23
+      ],
+      "join": 2994,
+      "lower_holes": 2,
+      "lower_missing": [
+        21265,
+        25369
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12826,
+      "target_state": 11721,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        29617
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5859,
+        24
+      ],
+      "join": 3039,
+      "lower_holes": 2,
+      "lower_missing": [
+        17201,
+        17209
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12828,
+      "target_state": 11719,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5312,
+        24
+      ],
+      "join": 3058,
+      "lower_holes": 2,
+      "lower_missing": [
+        17001,
+        17017
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12828,
+      "target_state": 10625,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2525,
+        24
+      ],
+      "join": 3060,
+      "lower_holes": 2,
+      "lower_missing": [
+        20785,
+        20793
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12828,
+      "target_state": 5051,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3729,
+        24
+      ],
+      "join": 3074,
+      "lower_holes": 2,
+      "lower_missing": [
+        17201,
+        17209
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12829,
+      "target_state": 7458,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        614,
+        25
+      ],
+      "join": 3080,
+      "lower_holes": 2,
+      "lower_missing": [
+        1813,
+        18197
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12830,
+      "target_state": 1229,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28475
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5434,
+        26
+      ],
+      "join": 3145,
+      "lower_holes": 2,
+      "lower_missing": [
+        3377,
+        20017
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12832,
+      "target_state": 10869,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        3899
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4886,
+        27
+      ],
+      "join": 3185,
+      "lower_holes": 2,
+      "lower_missing": [
+        19494,
+        19495
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12834,
+      "target_state": 9773,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2099,
+        27
+      ],
+      "join": 3187,
+      "lower_holes": 2,
+      "lower_missing": [
+        3347,
+        19731
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12834,
+      "target_state": 4199,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5433,
+        27
+      ],
+      "join": 3191,
+      "lower_holes": 2,
+      "lower_missing": [
+        3123,
+        19507
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12834,
+      "target_state": 10867,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3303,
+        27
+      ],
+      "join": 3199,
+      "lower_holes": 2,
+      "lower_missing": [
+        3123,
+        19507
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12835,
+      "target_state": 6606,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        188,
+        28
+      ],
+      "join": 3237,
+      "lower_holes": 2,
+      "lower_missing": [
+        10353,
+        11377
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12836,
+      "target_state": 377,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        24307
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5008,
+        29
+      ],
+      "join": 3272,
+      "lower_holes": 2,
+      "lower_missing": [
+        2259,
+        3299
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12838,
+      "target_state": 10017,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        22771
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1673,
+        30
+      ],
+      "join": 3311,
+      "lower_holes": 2,
+      "lower_missing": [
+        6353,
+        7377
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12840,
+      "target_state": 3347,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4460,
+        30
+      ],
+      "join": 3314,
+      "lower_holes": 2,
+      "lower_missing": [
+        13506,
+        15554
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12840,
+      "target_state": 8921,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5007,
+        30
+      ],
+      "join": 3315,
+      "lower_holes": 2,
+      "lower_missing": [
+        6339,
+        7363
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12840,
+      "target_state": 10015,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2877,
+        30
+      ],
+      "join": 3342,
+      "lower_holes": 2,
+      "lower_missing": [
+        6339,
+        7363
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12841,
+      "target_state": 5754,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6152,
+        31
+      ],
+      "join": 3362,
+      "lower_holes": 2,
+      "lower_missing": [
+        2695,
+        2759
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12842,
+      "target_state": 12305,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7663
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4582,
+        32
+      ],
+      "join": 3396,
+      "lower_holes": 2,
+      "lower_missing": [
+        6285,
+        6350
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12844,
+      "target_state": 9165,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        7567
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1247,
+        33
+      ],
+      "join": 3432,
+      "lower_holes": 2,
+      "lower_missing": [
+        2445,
+        2509
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12846,
+      "target_state": 2495,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4034,
+        33
+      ],
+      "join": 3435,
+      "lower_holes": 2,
+      "lower_missing": [
+        4940,
+        5068
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12846,
+      "target_state": 8069,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4581,
+        33
+      ],
+      "join": 3440,
+      "lower_holes": 2,
+      "lower_missing": [
+        6540,
+        6604
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12846,
+      "target_state": 9163,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2451,
+        33
+      ],
+      "join": 3473,
+      "lower_holes": 2,
+      "lower_missing": [
+        6540,
+        6604
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12847,
+      "target_state": 4902,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5726,
+        34
+      ],
+      "join": 3486,
+      "lower_holes": 2,
+      "lower_missing": [
+        14504,
+        14508
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12848,
+      "target_state": 11453,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31198
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4156,
+        35
+      ],
+      "join": 3522,
+      "lower_holes": 2,
+      "lower_missing": [
+        27016,
+        29068
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12850,
+      "target_state": 8313,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        31192
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4155,
+        36
+      ],
+      "join": 3567,
+      "lower_holes": 2,
+      "lower_missing": [
+        24984,
+        24988
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12852,
+      "target_state": 8311,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3608,
+        36
+      ],
+      "join": 3586,
+      "lower_holes": 2,
+      "lower_missing": [
+        24884,
+        24892
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12852,
+      "target_state": 7217,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        821,
+        36
+      ],
+      "join": 3588,
+      "lower_holes": 2,
+      "lower_missing": [
+        26776,
+        26780
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12852,
+      "target_state": 1643,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2025,
+        36
+      ],
+      "join": 3598,
+      "lower_holes": 2,
+      "lower_missing": [
+        24984,
+        24988
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12853,
+      "target_state": 4050,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        5300,
+        37
+      ],
+      "join": 3608,
+      "lower_holes": 2,
+      "lower_missing": [
+        17290,
+        25482
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12854,
+      "target_state": 10601,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        30621
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3730,
+        38
+      ],
+      "join": 3665,
+      "lower_holes": 2,
+      "lower_missing": [
+        18072,
+        26392
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12856,
+      "target_state": 7461,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        18333
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3182,
+        39
+      ],
+      "join": 3707,
+      "lower_holes": 2,
+      "lower_missing": [
+        9747,
+        26131
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12858,
+      "target_state": 6365,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        395,
+        39
+      ],
+      "join": 3709,
+      "lower_holes": 2,
+      "lower_missing": [
+        18057,
+        26249
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12858,
+      "target_state": 791,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3729,
+        39
+      ],
+      "join": 3713,
+      "lower_holes": 2,
+      "lower_missing": [
+        17945,
+        26137
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12858,
+      "target_state": 7459,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1599,
+        39
+      ],
+      "join": 3721,
+      "lower_holes": 2,
+      "lower_missing": [
+        17945,
+        26137
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12859,
+      "target_state": 3198,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4874,
+        40
+      ],
+      "join": 3760,
+      "lower_holes": 2,
+      "lower_missing": [
+        21560,
+        22072
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12860,
+      "target_state": 9749,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        28537
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3304,
+        41
+      ],
+      "join": 3793,
+      "lower_holes": 2,
+      "lower_missing": [
+        17513,
+        18033
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12862,
+      "target_state": 6609,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        27769
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        6359,
+        42
+      ],
+      "join": 3832,
+      "lower_holes": 2,
+      "lower_missing": [
+        19560,
+        20072
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12864,
+      "target_state": 12719,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2756,
+        42
+      ],
+      "join": 3835,
+      "lower_holes": 2,
+      "lower_missing": [
+        6753,
+        7777
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12864,
+      "target_state": 5513,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        3303,
+        42
+      ],
+      "join": 3836,
+      "lower_holes": 2,
+      "lower_missing": [
+        19553,
+        20065
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12864,
+      "target_state": 6607,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        1173,
+        42
+      ],
+      "join": 3870,
+      "lower_holes": 2,
+      "lower_missing": [
+        19553,
+        20065
+      ],
+      "orientations": [
+        1,
+        0
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12865,
+      "target_state": 2346,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        4448,
+        43
+      ],
+      "join": 3884,
+      "lower_holes": 2,
+      "lower_missing": [
+        17731,
+        17763
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12866,
+      "target_state": 8897,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20215
+      ]
+    },
+    {
+      "component_order": [
+        1,
+        0
+      ],
+      "cuts": [
+        2878,
+        44
+      ],
+      "join": 3921,
+      "lower_holes": 2,
+      "lower_missing": [
+        3175,
+        19526
+      ],
+      "orientations": [
+        0,
+        1
+      ],
+      "recycled_cut_colours": 1,
+      "source_state": 12868,
+      "target_state": 5757,
+      "upper_fixed_width_holes": 1,
+      "upper_holes": 1,
+      "upper_missing": [
+        20167
+      ]
+    }
+  ],
+  "best_upper_holes": 0,
+  "components": [
+    6390,
+    45
+  ],
+  "emitted_chronologies": [
+    "all_johnson_chronologies/join000004.json",
+    "all_johnson_chronologies/join000136.json",
+    "all_johnson_chronologies/join000268.json",
+    "all_johnson_chronologies/join000400.json",
+    "all_johnson_chronologies/join000532.json",
+    "all_johnson_chronologies/join000664.json",
+    "all_johnson_chronologies/join000796.json",
+    "all_johnson_chronologies/join000928.json",
+    "all_johnson_chronologies/join001060.json",
+    "all_johnson_chronologies/join001192.json",
+    "all_johnson_chronologies/join001324.json",
+    "all_johnson_chronologies/join001456.json",
+    "all_johnson_chronologies/join001588.json",
+    "all_johnson_chronologies/join001720.json",
+    "all_johnson_chronologies/join001852.json",
+    "all_johnson_chronologies/join002076.json",
+    "all_johnson_chronologies/join002226.json",
+    "all_johnson_chronologies/join002350.json",
+    "all_johnson_chronologies/join002474.json",
+    "all_johnson_chronologies/join002603.json",
+    "all_johnson_chronologies/join002754.json",
+    "all_johnson_chronologies/join002877.json",
+    "all_johnson_chronologies/join003002.json",
+    "all_johnson_chronologies/join003125.json",
+    "all_johnson_chronologies/join003281.json",
+    "all_johnson_chronologies/join003404.json",
+    "all_johnson_chronologies/join003530.json",
+    "all_johnson_chronologies/join003672.json",
+    "all_johnson_chronologies/join003802.json",
+    "all_johnson_chronologies/join003929.json",
+    "all_johnson_chronologies/join000085.json",
+    "all_johnson_chronologies/join000217.json",
+    "all_johnson_chronologies/join000349.json",
+    "all_johnson_chronologies/join000481.json",
+    "all_johnson_chronologies/join000612.json",
+    "all_johnson_chronologies/join000745.json",
+    "all_johnson_chronologies/join000877.json",
+    "all_johnson_chronologies/join001009.json",
+    "all_johnson_chronologies/join001140.json",
+    "all_johnson_chronologies/join001273.json",
+    "all_johnson_chronologies/join001405.json",
+    "all_johnson_chronologies/join001537.json",
+    "all_johnson_chronologies/join001668.json",
+    "all_johnson_chronologies/join001801.json",
+    "all_johnson_chronologies/join001933.json",
+    "all_johnson_chronologies/join002005.json",
+    "all_johnson_chronologies/join002150.json",
+    "all_johnson_chronologies/join002272.json",
+    "all_johnson_chronologies/join002404.json",
+    "all_johnson_chronologies/join002535.json",
+    "all_johnson_chronologies/join002678.json",
+    "all_johnson_chronologies/join002800.json",
+    "all_johnson_chronologies/join002931.json",
+    "all_johnson_chronologies/join003078.json",
+    "all_johnson_chronologies/join003206.json",
+    "all_johnson_chronologies/join003328.json",
+    "all_johnson_chronologies/join003458.json",
+    "all_johnson_chronologies/join003602.json",
+    "all_johnson_chronologies/join003728.json",
+    "all_johnson_chronologies/join003856.json",
+    "all_johnson_chronologies/join000021.json",
+    "all_johnson_chronologies/join000090.json",
+    "all_johnson_chronologies/join000153.json",
+    "all_johnson_chronologies/join000223.json",
+    "all_johnson_chronologies/join000284.json",
+    "all_johnson_chronologies/join000355.json",
+    "all_johnson_chronologies/join000417.json",
+    "all_johnson_chronologies/join000486.json",
+    "all_johnson_chronologies/join000549.json",
+    "all_johnson_chronologies/join000618.json",
+    "all_johnson_chronologies/join000681.json",
+    "all_johnson_chronologies/join000751.json",
+    "all_johnson_chronologies/join000812.json",
+    "all_johnson_chronologies/join000883.json",
+    "all_johnson_chronologies/join000945.json",
+    "all_johnson_chronologies/join001014.json",
+    "all_johnson_chronologies/join001077.json",
+    "all_johnson_chronologies/join001146.json",
+    "all_johnson_chronologies/join001208.json",
+    "all_johnson_chronologies/join001279.json",
+    "all_johnson_chronologies/join001340.json",
+    "all_johnson_chronologies/join001411.json",
+    "all_johnson_chronologies/join001473.json",
+    "all_johnson_chronologies/join001542.json",
+    "all_johnson_chronologies/join001605.json",
+    "all_johnson_chronologies/join001674.json",
+    "all_johnson_chronologies/join001736.json",
+    "all_johnson_chronologies/join001807.json",
+    "all_johnson_chronologies/join001869.json",
+    "all_johnson_chronologies/join001939.json",
+    "all_johnson_chronologies/join002035.json",
+    "all_johnson_chronologies/join002105.json",
+    "all_johnson_chronologies/join002158.json",
+    "all_johnson_chronologies/join002229.json",
+    "all_johnson_chronologies/join002305.json",
+    "all_johnson_chronologies/join002374.json",
+    "all_johnson_chronologies/join002427.json",
+    "all_johnson_chronologies/join002507.json",
+    "all_johnson_chronologies/join002563.json",
+    "all_johnson_chronologies/join002633.json",
+    "all_johnson_chronologies/join002685.json",
+    "all_johnson_chronologies/join002756.json",
+    "all_johnson_chronologies/join002832.json",
+    "all_johnson_chronologies/join002902.json",
+    "all_johnson_chronologies/join002955.json",
+    "all_johnson_chronologies/join003032.json",
+    "all_johnson_chronologies/join003083.json",
+    "all_johnson_chronologies/join003161.json",
+    "all_johnson_chronologies/join003234.json",
+    "all_johnson_chronologies/join003284.json",
+    "all_johnson_chronologies/join003359.json",
+    "all_johnson_chronologies/join003429.json",
+    "all_johnson_chronologies/join003483.json",
+    "all_johnson_chronologies/join003557.json",
+    "all_johnson_chronologies/join003611.json",
+    "all_johnson_chronologies/join003685.json",
+    "all_johnson_chronologies/join003757.json",
+    "all_johnson_chronologies/join003812.json",
+    "all_johnson_chronologies/join003881.json",
+    "all_johnson_chronologies/join003959.json",
+    "all_johnson_chronologies/join000040.json",
+    "all_johnson_chronologies/join000043.json",
+    "all_johnson_chronologies/join000093.json",
+    "all_johnson_chronologies/join000094.json",
+    "all_johnson_chronologies/join000095.json",
+    "all_johnson_chronologies/join000126.json",
+    "all_johnson_chronologies/join000171.json",
+    "all_johnson_chronologies/join000175.json",
+    "all_johnson_chronologies/join000225.json",
+    "all_johnson_chronologies/join000226.json",
+    "all_johnson_chronologies/join000227.json",
+    "all_johnson_chronologies/join000258.json",
+    "all_johnson_chronologies/join000304.json",
+    "all_johnson_chronologies/join000307.json",
+    "all_johnson_chronologies/join000357.json",
+    "all_johnson_chronologies/join000358.json",
+    "all_johnson_chronologies/join000359.json",
+    "all_johnson_chronologies/join000390.json",
+    "all_johnson_chronologies/join000436.json",
+    "all_johnson_chronologies/join000439.json",
+    "all_johnson_chronologies/join000489.json",
+    "all_johnson_chronologies/join000490.json",
+    "all_johnson_chronologies/join000491.json",
+    "all_johnson_chronologies/join000522.json",
+    "all_johnson_chronologies/join000567.json",
+    "all_johnson_chronologies/join000571.json",
+    "all_johnson_chronologies/join000621.json",
+    "all_johnson_chronologies/join000622.json",
+    "all_johnson_chronologies/join000623.json",
+    "all_johnson_chronologies/join000654.json",
+    "all_johnson_chronologies/join000699.json",
+    "all_johnson_chronologies/join000703.json",
+    "all_johnson_chronologies/join000753.json",
+    "all_johnson_chronologies/join000754.json",
+    "all_johnson_chronologies/join000755.json",
+    "all_johnson_chronologies/join000786.json",
+    "all_johnson_chronologies/join000832.json",
+    "all_johnson_chronologies/join000835.json",
+    "all_johnson_chronologies/join000885.json",
+    "all_johnson_chronologies/join000886.json",
+    "all_johnson_chronologies/join000887.json",
+    "all_johnson_chronologies/join000918.json",
+    "all_johnson_chronologies/join000964.json",
+    "all_johnson_chronologies/join000967.json",
+    "all_johnson_chronologies/join001017.json",
+    "all_johnson_chronologies/join001018.json",
+    "all_johnson_chronologies/join001019.json",
+    "all_johnson_chronologies/join001050.json",
+    "all_johnson_chronologies/join001095.json",
+    "all_johnson_chronologies/join001099.json",
+    "all_johnson_chronologies/join001149.json",
+    "all_johnson_chronologies/join001150.json",
+    "all_johnson_chronologies/join001151.json",
+    "all_johnson_chronologies/join001182.json",
+    "all_johnson_chronologies/join001228.json",
+    "all_johnson_chronologies/join001231.json",
+    "all_johnson_chronologies/join001281.json",
+    "all_johnson_chronologies/join001282.json",
+    "all_johnson_chronologies/join001283.json",
+    "all_johnson_chronologies/join001314.json",
+    "all_johnson_chronologies/join001360.json",
+    "all_johnson_chronologies/join001364.json",
+    "all_johnson_chronologies/join001413.json",
+    "all_johnson_chronologies/join001414.json",
+    "all_johnson_chronologies/join001415.json",
+    "all_johnson_chronologies/join001446.json",
+    "all_johnson_chronologies/join001492.json",
+    "all_johnson_chronologies/join001495.json",
+    "all_johnson_chronologies/join001545.json",
+    "all_johnson_chronologies/join001546.json",
+    "all_johnson_chronologies/join001547.json",
+    "all_johnson_chronologies/join001578.json",
+    "all_johnson_chronologies/join001623.json",
+    "all_johnson_chronologies/join001627.json",
+    "all_johnson_chronologies/join001677.json",
+    "all_johnson_chronologies/join001678.json",
+    "all_johnson_chronologies/join001679.json",
+    "all_johnson_chronologies/join001710.json",
+    "all_johnson_chronologies/join001756.json",
+    "all_johnson_chronologies/join001759.json",
+    "all_johnson_chronologies/join001809.json",
+    "all_johnson_chronologies/join001810.json",
+    "all_johnson_chronologies/join001811.json",
+    "all_johnson_chronologies/join001842.json",
+    "all_johnson_chronologies/join001888.json",
+    "all_johnson_chronologies/join001892.json",
+    "all_johnson_chronologies/join001941.json",
+    "all_johnson_chronologies/join001942.json",
+    "all_johnson_chronologies/join001943.json",
+    "all_johnson_chronologies/join001974.json",
+    "all_johnson_chronologies/join001982.json",
+    "all_johnson_chronologies/join001984.json",
+    "all_johnson_chronologies/join001988.json",
+    "all_johnson_chronologies/join002021.json",
+    "all_johnson_chronologies/join002032.json",
+    "all_johnson_chronologies/join002069.json",
+    "all_johnson_chronologies/join002114.json",
+    "all_johnson_chronologies/join002133.json",
+    "all_johnson_chronologies/join002135.json",
+    "all_johnson_chronologies/join002144.json",
+    "all_johnson_chronologies/join002155.json",
+    "all_johnson_chronologies/join002218.json",
+    "all_johnson_chronologies/join002255.json",
+    "all_johnson_chronologies/join002257.json",
+    "all_johnson_chronologies/join002261.json",
+    "all_johnson_chronologies/join002283.json",
+    "all_johnson_chronologies/join002308.json",
+    "all_johnson_chronologies/join002341.json",
+    "all_johnson_chronologies/join002377.json",
+    "all_johnson_chronologies/join002380.json",
+    "all_johnson_chronologies/join002381.json",
+    "all_johnson_chronologies/join002418.json",
+    "all_johnson_chronologies/join002430.json",
+    "all_johnson_chronologies/join002466.json",
+    "all_johnson_chronologies/join002511.json",
+    "all_johnson_chronologies/join002530.json",
+    "all_johnson_chronologies/join002532.json",
+    "all_johnson_chronologies/join002549.json",
+    "all_johnson_chronologies/join002560.json",
+    "all_johnson_chronologies/join002596.json",
+    "all_johnson_chronologies/join002642.json",
+    "all_johnson_chronologies/join002661.json",
+    "all_johnson_chronologies/join002663.json",
+    "all_johnson_chronologies/join002671.json",
+    "all_johnson_chronologies/join002688.json",
+    "all_johnson_chronologies/join002745.json",
+    "all_johnson_chronologies/join002783.json",
+    "all_johnson_chronologies/join002786.json",
+    "all_johnson_chronologies/join002787.json",
+    "all_johnson_chronologies/join002811.json",
+    "all_johnson_chronologies/join002835.json",
+    "all_johnson_chronologies/join002868.json",
+    "all_johnson_chronologies/join002905.json",
+    "all_johnson_chronologies/join002908.json",
+    "all_johnson_chronologies/join002909.json",
+    "all_johnson_chronologies/join002945.json",
+    "all_johnson_chronologies/join002958.json",
+    "all_johnson_chronologies/join002994.json",
+    "all_johnson_chronologies/join003039.json",
+    "all_johnson_chronologies/join003058.json",
+    "all_johnson_chronologies/join003060.json",
+    "all_johnson_chronologies/join003074.json",
+    "all_johnson_chronologies/join003080.json",
+    "all_johnson_chronologies/join003145.json",
+    "all_johnson_chronologies/join003185.json",
+    "all_johnson_chronologies/join003187.json",
+    "all_johnson_chronologies/join003191.json",
+    "all_johnson_chronologies/join003199.json",
+    "all_johnson_chronologies/join003237.json",
+    "all_johnson_chronologies/join003272.json",
+    "all_johnson_chronologies/join003311.json",
+    "all_johnson_chronologies/join003314.json",
+    "all_johnson_chronologies/join003315.json",
+    "all_johnson_chronologies/join003342.json",
+    "all_johnson_chronologies/join003362.json",
+    "all_johnson_chronologies/join003396.json",
+    "all_johnson_chronologies/join003432.json",
+    "all_johnson_chronologies/join003435.json",
+    "all_johnson_chronologies/join003440.json",
+    "all_johnson_chronologies/join003473.json",
+    "all_johnson_chronologies/join003486.json",
+    "all_johnson_chronologies/join003522.json",
+    "all_johnson_chronologies/join003567.json",
+    "all_johnson_chronologies/join003586.json",
+    "all_johnson_chronologies/join003588.json",
+    "all_johnson_chronologies/join003598.json",
+    "all_johnson_chronologies/join003608.json",
+    "all_johnson_chronologies/join003665.json",
+    "all_johnson_chronologies/join003707.json",
+    "all_johnson_chronologies/join003709.json",
+    "all_johnson_chronologies/join003713.json",
+    "all_johnson_chronologies/join003721.json",
+    "all_johnson_chronologies/join003760.json",
+    "all_johnson_chronologies/join003793.json",
+    "all_johnson_chronologies/join003832.json",
+    "all_johnson_chronologies/join003835.json",
+    "all_johnson_chronologies/join003836.json",
+    "all_johnson_chronologies/join003870.json",
+    "all_johnson_chronologies/join003884.json",
+    "all_johnson_chronologies/join003921.json"
+  ],
+  "factor": "/dev/shm/k15_two_cycle_openings_20260729/scratch/k15_fixed_matching_pbbs_resident_20260729/from3_markov_s7_merge.best.json",
+  "factor_sha256": "0c11aefbfe3a0661c457b48f0a7a82afacc6d02d4362e23e5d710bb799135555",
+  "histogram": {
+    "upper=0,lower=2,recycled=0": 30,
+    "upper=0,lower=3,recycled=0": 30,
+    "upper=1,lower=1,recycled=1": 60,
+    "upper=1,lower=2,recycled=0": 30,
+    "upper=1,lower=2,recycled=1": 180,
+    "upper=1,lower=3,recycled=0": 210,
+    "upper=1,lower=3,recycled=1": 120,
+    "upper=1,lower=4,recycled=0": 240,
+    "upper=1,lower=4,recycled=1": 30,
+    "upper=1,lower=5,recycled=0": 120,
+    "upper=2,lower=1,recycled=1": 60,
+    "upper=2,lower=2,recycled=0": 120,
+    "upper=2,lower=2,recycled=1": 210,
+    "upper=2,lower=3,recycled=0": 180,
+    "upper=2,lower=3,recycled=1": 270,
+    "upper=2,lower=4,recycled=0": 420,
+    "upper=2,lower=4,recycled=1": 30,
+    "upper=2,lower=5,recycled=0": 150,
+    "upper=2,lower=6,recycled=0": 30,
+    "upper=2,lower=7,recycled=0": 120,
+    "upper=3,lower=1,recycled=1": 120,
+    "upper=3,lower=2,recycled=0": 90,
+    "upper=3,lower=2,recycled=1": 120,
+    "upper=3,lower=3,recycled=0": 120,
+    "upper=3,lower=3,recycled=1": 60,
+    "upper=3,lower=4,recycled=0": 210,
+    "upper=3,lower=4,recycled=1": 30,
+    "upper=3,lower=5,recycled=0": 150,
+    "upper=3,lower=6,recycled=0": 90,
+    "upper=3,lower=7,recycled=0": 60,
+    "upper=3,lower=8,recycled=0": 30,
+    "upper=4,lower=3,recycled=0": 30,
+    "upper=4,lower=4,recycled=0": 30,
+    "upper=4,lower=6,recycled=0": 60,
+    "upper=4,lower=7,recycled=0": 60,
+    "upper=5,lower=3,recycled=0": 30,
+    "upper=5,lower=6,recycled=0": 30
+  },
+  "negative_scope": "Exact only for one residence-safe Johnson seam joining one opening of each frozen physical cycle. It does not exclude non-Johnson seams, more cuts, or edits to the frozen factor.",
+  "residence_safe_johnson_joins": 3960,
+  "schema": "k15-two-cycle-all-johnson-exhaustion-v1",
+  "states": 12870,
+  "status": "EXHAUSTED",
+  "upper_complete_by_recycling": {
+    "0": 60,
+    "1": 0,
+    "2": 0
+  },
+  "upper_complete_joins": 60,
+  "vulnerable_lower_targets": 11100,
+  "vulnerable_upper_targets": 5070
+}

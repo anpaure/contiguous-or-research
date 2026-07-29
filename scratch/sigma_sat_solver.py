@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact SAT solver for the depth-one sigma formulation.
 
-The primary mode quotients by translations of Z_k (for prime k).  A Boolean
+The primary mode quotients by translations of Z_k (for odd k).  A Boolean
 variable chooses one of C(r,2) upper extensions for every orbit of
 (r-1)-sets.  The CNF enforces
 
@@ -11,9 +11,9 @@ variable chooses one of C(r,2) upper extensions for every orbit of
   * optionally, coverage of every depth-two upper orbit.
 
 Connectedness is imposed by lazy subtour cuts.  A connected quotient cycle
-is accepted only when its voltage is non-zero, so its lift is one Hamilton
-cycle rather than k disjoint cycles.  Short-residence violations can also be
-cut lazily.
+is accepted only when its voltage is coprime to k, so its lift is one
+Hamilton cycle rather than ``gcd(voltage,k)`` physical cycles.
+Short-residence violations can also be cut lazily.
 
 The non-equivariant mode uses the same encoding without quotienting and is
 useful for validating small composite k.
@@ -180,8 +180,6 @@ class SigmaInstance:
     ):
         if k % 2 != 1 or k < 5:
             raise ValueError("k must be odd and at least 5")
-        if equivariant and not self._is_prime(k):
-            raise ValueError("translation quotient currently requires prime k")
         self.k = k
         self.r = (k + 1) // 2
         self.equivariant = equivariant
@@ -195,12 +193,55 @@ class SigmaInstance:
         self.q2 = q2
         self.lower_q2 = lower_q2
         self.lower_q3 = lower_q3
+        self.direct_connectivity = direct_connectivity
+        self.compact_connectivity = compact_connectivity
+        self.oriented_lazy_connectivity = oriented_lazy_connectivity
         self.group_order = k if equivariant else 1
         self.cnf = CNF()
 
         self.lower = orbit_representatives(k, self.r - 1, equivariant)
         self.middle = orbit_representatives(k, self.r, equivariant)
         self.upper = orbit_representatives(k, self.r + 1, equivariant)
+        if equivariant:
+            # Primal quotient degrees are sound whenever the two central
+            # layers are free.  Primality was an unnecessarily strong proxy:
+            # for k=2m+1, a nontrivial rotational stabilizer of order t|k
+            # would force t to divide m or m+1, impossible because both are
+            # coprime to k.  Shadow layers may have short orbits (notably
+            # ranks 6/9 at k=15); the cover clauses below only ask that an
+            # orbit representative be hit and do not use those orbit sizes
+            # as quotient degrees.
+            for rank, representatives in (
+                (self.r - 1, self.lower),
+                (self.r, self.middle),
+            ):
+                expected = math.comb(k, rank) // k
+                if len(representatives) != expected:
+                    raise ValueError(
+                        f"rotation action is not free on central rank {rank}: "
+                        f"got {len(representatives)} orbits, expected {expected}"
+                    )
+            # ``cap2`` historically counted selected quotient choices.  That
+            # equals physical load only on a free target orbit.  If an upper
+            # q1 orbit has size s<k, one selected edge orbit contributes k/s
+            # occurrences to *each* physical target in that orbit.  At k=15
+            # the rank-nine short orbits have s=5, so quotient cap two would
+            # accept physical load three and is not the advertised cap.
+            # Coverage remains exact with --no-cap2: one equivariant witness
+            # covers every distinct translate, regardless of orbit size.
+            cap2_is_active = cover_upper or upper_q1_hole_budget is not None
+            if cap2 and cap2_is_active:
+                short_upper = [
+                    rep
+                    for rep in self.upper
+                    if len({rotate(rep, s, k) for s in range(k)}) < k
+                ]
+                if short_upper:
+                    raise ValueError(
+                        "--no-cap2 is required: rank-(r+1) has short rotation "
+                        "orbits, so an unweighted quotient cap is not a "
+                        "physical load-at-most-two constraint"
+                    )
         if upper_q2_masks:
             requested_upper2 = []
             for mask in upper_q2_masks:
@@ -244,12 +285,24 @@ class SigmaInstance:
         self.upper3_index = {mask: i for i, mask in enumerate(self.upper3)}
         self.upper_q2_witnesses: list[list[int]] = []
         self.lower_q2_witnesses: list[list[int]] = []
+        # For the compressed lower-q2 encoding, every row records
+        # (first incidence-choice group, second incidence-choice group,
+        # selected-turn literal).  This is a compact, exact repair interface:
+        # a turn is selected iff one choice from each of the two groups is
+        # selected.  Keeping groups rather than their Cartesian products is
+        # what avoids the old ~658k pair-of-choice expansion at k=15.
+        self.lower_q2_turn_groups: list[
+            list[tuple[tuple[int, ...], tuple[int, ...], int]]
+        ] = []
 
         self.choices: list[Choice] = []
         self.choice_by_var: dict[int, Choice] = {}
         self.by_lower: list[list[int]] = [[] for _ in self.lower]
         self.by_middle: list[list[Incidence]] = [[] for _ in self.middle]
         self.by_upper: list[list[int]] = [[] for _ in self.upper]
+        self.middle_lower_edge_groups: list[
+            list[tuple[int, tuple[int, ...], int]]
+        ] = []
         self.cross_cache: dict[tuple[int, ...], list[int]] = {}
         self.and_cache: dict[tuple[int, ...], int] = {}
         self.base_clause_count = 0
@@ -264,10 +317,7 @@ class SigmaInstance:
             self._build_lower_q3_cnf()
         self.residence_clause_counts: dict[int, int] = {}
         if direct_residence:
-            self._build_residence_cnf(direct_residence)
-        self.direct_connectivity = direct_connectivity
-        self.compact_connectivity = compact_connectivity
-        self.oriented_lazy_connectivity = oriented_lazy_connectivity
+            self._build_residence_cnf(direct_residence, residence_budget)
         self.directed_arcs: list[tuple[int, int, int, int]] = []
         if direct_connectivity:
             self._build_hamilton_cnf()
@@ -363,11 +413,32 @@ class SigmaInstance:
         for vars_ in self.by_lower:
             self.cnf.exactly_one(vars_)
 
-        # Every selected quotient edge contributes one incidence at each end;
-        # a loop appears twice.  There are |V| selected edges and |V| middle
-        # vertices, so at-most-two everywhere forces degree exactly two.
+        # Compress the 56 raw choice incidences at a k=15 middle orbit into
+        # its r literal containment neighbours.  A quotient loop occurs in
+        # two distinct aligned-neighbour groups and is therefore still counted
+        # twice.  Every selected quotient edge contributes one group bit at
+        # each physical end, so at-most-two everywhere plus the global edge
+        # count forces exact degree two.
         for incidences in self.by_middle:
-            self.cnf.at_most_k([self.choices[inc.choice].var for inc in incidences], 2)
+            by_aligned_lower: dict[int, set[int]] = {}
+            for incidence in incidences:
+                by_aligned_lower.setdefault(
+                    incidence.aligned_lower, set()
+                ).add(self.choices[incidence.choice].var)
+            if len(by_aligned_lower) != self.r:
+                raise AssertionError(
+                    "middle orbit does not have exactly r lower neighbours"
+                )
+            groups = []
+            for aligned_lower, variables in sorted(by_aligned_lower.items()):
+                group = tuple(sorted(variables))
+                edge = self.cnf.var()
+                for variable in group:
+                    self.cnf.add(-variable, edge)
+                self.cnf.add(-edge, *group)
+                groups.append((aligned_lower, group, edge))
+            self.middle_lower_edge_groups.append(groups)
+            self.cnf.at_most_k([edge for _, _, edge in groups], 2)
 
         self.upper_q1_hole_vars = []
         if self.upper_q1_hole_budget is not None:
@@ -393,11 +464,18 @@ class SigmaInstance:
                 vars_ = self.by_upper[self.upper_index[mask]]
                 self.cnf.add(*vars_)
 
-        # A loop is already a whole component in a 2-regular quotient graph.
-        # Since all intended instances have more than one quotient vertex,
-        # connectedness forbids it.  Adding the unit clauses up front removes
-        # a large family of useless subtours.
-        if len(self.middle) > 1:
+        # A quotient loop contributes weighted degree two and is a legitimate
+        # component of an equivariant physical 2-factor.  It is forbidden
+        # only when connectivity is part of this CNF.  In the default lazy
+        # connectivity mode it is retained here and eliminated, if selected,
+        # by the ordinary component cut.  This distinction matters when the
+        # build-only CNF is used as the exact (possibly disconnected) factor
+        # master.
+        if len(self.middle) > 1 and (
+            self.direct_connectivity
+            or self.compact_connectivity
+            or self.oriented_lazy_connectivity
+        ):
             for choice in self.choices:
                 if choice.endpoint[0] == choice.endpoint[1]:
                     self.cnf.add(-choice.var)
@@ -419,14 +497,23 @@ class SigmaInstance:
         upper_witnesses: list[list[int]] = [[] for _ in self.upper2]
         upper_seen: list[set[tuple[int, ...]]] = [set() for _ in self.upper2]
         lower_witnesses: list[list[int]] = [[] for _ in self.lower2]
-        lower_seen: list[set[tuple[int, ...]]] = [set() for _ in self.lower2]
-        for incidences in self.by_middle:
-            for ia in range(len(incidences)):
-                for ib in range(ia + 1, len(incidences)):
-                    a = incidences[ia]
-                    b = incidences[ib]
-                    key = tuple(sorted({self.choices[a.choice].var, self.choices[b.choice].var}))
-                    if upper:
+        lower_turn_groups: list[
+            list[tuple[tuple[int, ...], tuple[int, ...], int]]
+        ] = [[] for _ in self.lower2]
+        for middle_index, incidences in enumerate(self.by_middle):
+            if upper:
+                for ia in range(len(incidences)):
+                    for ib in range(ia + 1, len(incidences)):
+                        a = incidences[ia]
+                        b = incidences[ib]
+                        key = tuple(
+                            sorted(
+                                {
+                                    self.choices[a.choice].var,
+                                    self.choices[b.choice].var,
+                                }
+                            )
+                        )
                         union = a.aligned_upper | b.aligned_upper
                         if union.bit_count() == self.r + 2:
                             rep, _ = canonical(union, self.k, self.equivariant)
@@ -436,16 +523,34 @@ class SigmaInstance:
                             if key not in upper_seen[target]:
                                 upper_seen[target].add(key)
                                 upper_witnesses[target].append(self._and_literal(key))
-                    if lower:
-                        intersection = a.aligned_lower & b.aligned_lower
-                        if intersection.bit_count() == self.r - 2:
-                            rep, _ = canonical(intersection, self.k, self.equivariant)
-                            if rep not in self.lower2_index:
-                                continue
-                            target = self.lower2_index[rep]
-                            if key not in lower_seen[target]:
-                                lower_seen[target].add(key)
-                                lower_witnesses[target].append(self._and_literal(key))
+
+            if lower:
+                # At a canonical middle vertex V, the 56 choice incidences
+                # collapse to its r literal lower neighbours V\{a}.  A group
+                # bit says that one incidence in that neighbour class was
+                # selected.  Since the core has exact weighted degree two,
+                # exactly two distinct neighbour bits are true.  Their one
+                # turn bit has colour V\{a,b}, exactly the physical lower-q2
+                # colour.  Thus this is equivalent to the expanded pair
+                # encoding, including quotient loops, but is O(r^2) per
+                # middle orbit rather than quadratic in all incidences.
+                edge_groups = self.middle_lower_edge_groups[middle_index]
+                for ia, (lower_a, group_a, edge_a) in enumerate(edge_groups):
+                    for lower_b, group_b, edge_b in edge_groups[ia + 1 :]:
+                        intersection = lower_a & lower_b
+                        if intersection.bit_count() != self.r - 2:
+                            raise AssertionError(
+                                "two distinct middle neighbours have wrong intersection"
+                            )
+                        rep, _ = canonical(intersection, self.k, self.equivariant)
+                        if rep not in self.lower2_index:
+                            continue
+                        target = self.lower2_index[rep]
+                        turn = self._and_literal((edge_a, edge_b))
+                        lower_witnesses[target].append(turn)
+                        lower_turn_groups[target].append(
+                            (group_a, group_b, turn)
+                        )
         self.upper_q2_hole_vars = []
         if upper and self.upper_q2_hole_budget is not None:
             if self.upper_q2_hole_budget < 0 or self.upper_q2_hole_budget > len(upper_witnesses):
@@ -465,6 +570,7 @@ class SigmaInstance:
             )
         self.upper_q2_witnesses = upper_witnesses
         self.lower_q2_witnesses = lower_witnesses
+        self.lower_q2_turn_groups = lower_turn_groups
 
     def _build_lower_q3_cnf(self):
         """Require every rank-(r-3) orbit in a four-middle-set intersection."""
@@ -529,7 +635,9 @@ class SigmaInstance:
                 raise RuntimeError(f"depth-three lower target {target} has no witness")
             self.cnf.add(*lits)
 
-    def _build_residence_cnf(self, depth: int):
+    def _build_residence_cnf(
+        self, depth: int, violation_budget: int | None = None
+    ):
         """Forbid every quotient path producing a one-run of length <= depth.
 
         A violation beginning on edge e_0 and ending on edge e_h is a path of
@@ -550,7 +658,9 @@ class SigmaInstance:
             arcs[u].append((ci, v, choice.voltage, choice.lower_idx))
             arcs[v].append((ci, u, (-choice.voltage) % self.k, choice.lower_idx))
 
-        clauses_by_h: list[set[tuple[int, ...]]] = [set() for _ in range(depth + 1)]
+        clauses_by_h: list[Counter[tuple[int, ...]]] = [
+            Counter() for _ in range(depth + 1)
+        ]
 
         for start_vertex in range(len(self.middle)):
             start_mask = self.middle[start_vertex]
@@ -593,7 +703,7 @@ class SigmaInstance:
                             if has_next:
                                 continue
                             key = tuple(sorted(path_vars + [self.choices[cj].var]))
-                            clauses_by_h[target_h].add(key)
+                            clauses_by_h[target_h][key] += 1
                             continue
                         if not has_next:
                             # This shorter run is handled at its own depth.
@@ -609,10 +719,28 @@ class SigmaInstance:
                 for target_h in range(1, depth + 1):
                     extend(nxt, next_phase, next_mask, 1)
 
+        weighted_bad: list[int] = []
         for h in range(1, depth + 1):
-            for key in clauses_by_h[h]:
-                self.cnf.add(*[-x for x in key])
+            if violation_budget is None:
+                for key in clauses_by_h[h]:
+                    self.cnf.add(*[-x for x in key])
+            else:
+                for key, multiplicity in clauses_by_h[h].items():
+                    bad = self._and_literal(key)
+                    weighted_bad.extend([bad] * multiplicity)
             self.residence_clause_counts[h] = len(clauses_by_h[h])
+            self.residence_clause_counts[f"{h}_weighted"] = sum(
+                clauses_by_h[h].values()
+            )
+        if violation_budget is not None:
+            if violation_budget < 0:
+                raise ValueError("residence violation budget must be nonnegative")
+            self.cnf.at_most_k(weighted_bad, violation_budget)
+            self.residence_budget_literals = weighted_bad
+            self.residence_clause_counts["direct_budget"] = violation_budget
+            self.residence_clause_counts["direct_weighted_indicators"] = len(
+                weighted_bad
+            )
 
     def _build_hamilton_cnf(self):
         """Encode one quotient Hamilton cycle with oriented edges and positions."""
@@ -1239,7 +1367,11 @@ class SigmaInstance:
         qvertices, qphases, _, voltage = self.traverse_cycle(selected)
         if not self.equivariant:
             return [self.middle[v] for v in qvertices], voltage
-        if voltage == 0:
+        # One quotient revolution changes phase by ``voltage``.  Its lift has
+        # gcd(k,voltage) physical cycles.  Primality used to make "nonzero"
+        # equivalent to "coprime"; after enabling composite odd k that test
+        # must be stated exactly or the returned list repeats vertices.
+        if math.gcd(voltage, self.k) != 1:
             return [], voltage
         result = []
         offset = 0
@@ -1248,6 +1380,154 @@ class SigmaInstance:
                 result.append(rotate(self.middle[vertex], phase + offset, self.k))
             offset = (offset + voltage) % self.k
         return result, voltage
+
+    def lift_factor_cycles(
+        self, selected: list[Choice]
+    ) -> tuple[list[list[int]], list[list[int]], list[int]]:
+        """Lift every quotient 2-factor component, including zero voltage.
+
+        Returns physical middle cycles, the corresponding quotient selected-
+        edge indices at every physical transition, and one voltage per
+        quotient component.  For voltage ``v`` there are ``gcd(k,v)`` lifted
+        cycles, each making ``k/gcd(k,v)`` quotient laps.  The formula also
+        handles ``v=0`` (k translated copies) and quotient self-loops.
+        """
+        adjacency: list[list[tuple[int, int, int]]] = [
+            [] for _ in self.middle
+        ]
+        for edge_id, choice in enumerate(selected):
+            u, v = choice.endpoint
+            adjacency[u].append((v, edge_id, choice.voltage))
+            adjacency[v].append(
+                (
+                    u,
+                    edge_id,
+                    (-choice.voltage) % self.k if self.equivariant else 0,
+                )
+            )
+
+        physical_cycles: list[list[int]] = []
+        physical_edges: list[list[int]] = []
+        voltages: list[int] = []
+        for component in self.components(selected):
+            start = min(component)
+            current = start
+            previous_edge = -1
+            phase = 0
+            vertices = []
+            phases = []
+            edge_order = []
+            for _ in range(len(component)):
+                vertices.append(current)
+                phases.append(phase)
+                options = [
+                    item for item in adjacency[current] if item[1] != previous_edge
+                ]
+                if not options:
+                    raise AssertionError("factor component traversal stuck")
+                nxt, edge_id, delta = options[0]
+                edge_order.append(edge_id)
+                phase = (phase + delta) % self.k if self.equivariant else 0
+                previous_edge = edge_id
+                current = nxt
+            if current != start or len(set(edge_order)) != len(component):
+                raise AssertionError("factor component is not one quotient cycle")
+            voltage = phase % self.k if self.equivariant else 0
+            voltages.append(voltage)
+            if not self.equivariant:
+                physical_cycles.append([self.middle[v] for v in vertices])
+                physical_edges.append(edge_order)
+                continue
+            cycle_count = math.gcd(self.k, voltage)
+            repeats = self.k // cycle_count
+            for coset in range(cycle_count):
+                cycle = []
+                edges = []
+                for lap in range(repeats):
+                    offset = (coset + lap * voltage) % self.k
+                    cycle.extend(
+                        rotate(self.middle[v], p + offset, self.k)
+                        for v, p in zip(vertices, phases)
+                    )
+                    edges.extend(edge_order)
+                physical_cycles.append(cycle)
+                physical_edges.append(edges)
+
+        flattened = [value for cycle in physical_cycles for value in cycle]
+        if len(flattened) != math.comb(self.k, self.r):
+            raise AssertionError("factor lift has the wrong physical size")
+        if len(set(flattened)) != len(flattened):
+            raise AssertionError("factor lift repeats a physical middle vertex")
+        return physical_cycles, physical_edges, voltages
+
+    def verify_factor(self, selected: list[Choice], residence: int) -> dict:
+        """Exact physical audit for a possibly disconnected selected factor."""
+        cycles, _, voltages = self.lift_factor_cycles(selected)
+        upper_q1 = set()
+        lower_q2 = set()
+        upper_q2 = set()
+        residence_bad = []
+        minimum_run = math.comb(self.k, self.r) + 1
+        for cycle_index, cycle in enumerate(cycles):
+            n = len(cycle)
+            for i in range(n):
+                previous = cycle[(i - 1) % n]
+                current = cycle[i]
+                following = cycle[(i + 1) % n]
+                upper = current | following
+                lower2 = previous & current & following
+                upper2 = previous | current | following
+                if upper.bit_count() == self.r + 1:
+                    upper_q1.add(upper)
+                if lower2.bit_count() == self.r - 2:
+                    lower_q2.add(lower2)
+                if upper2.bit_count() == self.r + 2:
+                    upper_q2.add(upper2)
+            residence_bad.extend(
+                (cycle_index, position, distance)
+                for position, distance in self.residence_violations(cycle, residence)
+            )
+            for coordinate in range(self.k):
+                bits = [bool(value & (1 << coordinate)) for value in cycle]
+                if all(bits):
+                    minimum_run = min(minimum_run, n)
+                    continue
+                zero = bits.index(False)
+                run = 0
+                for step in range(1, n + 1):
+                    if bits[(zero + step) % n]:
+                        run += 1
+                    elif run:
+                        minimum_run = min(minimum_run, run)
+                        run = 0
+        full = (1 << self.k) - 1
+        missing_upper_q2 = {
+            mask
+            for mask in range(1, full + 1)
+            if mask.bit_count() == self.r + 2 and mask not in upper_q2
+        }
+        return {
+            "physical_cycle_count": len(cycles),
+            "physical_cycle_lengths": list(map(len, cycles)),
+            "quotient_component_voltages": voltages,
+            "unique_middle": sum(map(len, cycles)),
+            "unique_upper_q1": len(upper_q1),
+            "upper_q1_target": math.comb(self.k, self.r + 1),
+            "unique_lower_q2": len(lower_q2),
+            "lower_q2_target": math.comb(self.k, self.r - 2),
+            "unique_upper_q2": len(upper_q2),
+            "upper_q2_target": math.comb(self.k, self.r + 2),
+            "missing_upper_q2_orbits": len(
+                {
+                    canonical(mask, self.k, self.equivariant)[0]
+                    for mask in missing_upper_q2
+                }
+            ),
+            "residence_depth": residence,
+            "residence_violations": len(residence_bad),
+            "residence_examples": residence_bad[:20],
+            "minimum_run": minimum_run,
+        }
 
     def residence_violations(self, middle_cycle: list[int], depth: int):
         n = len(middle_cycle)
@@ -1303,16 +1583,40 @@ class SigmaInstance:
         cycle, voltage = ([], 0)
         if len(comps) == 1:
             cycle, voltage = self.lift_middle_cycle(selected)
+        upper_orbit_sizes = [
+            len({rotate(rep, shift, self.k) for shift in range(self.k)})
+            if self.equivariant
+            else 1
+            for rep in self.upper
+        ]
+        physical_upper_load_histogram: Counter[int] = Counter()
+        for quotient_load, orbit_size in zip(upper_load, upper_orbit_sizes):
+            # A selected free lower/edge orbit has ``group_order`` physical
+            # members.  Equivariance distributes them uniformly over the
+            # ``orbit_size`` distinct upper targets.
+            physical_load = quotient_load * self.group_order // orbit_size
+            physical_upper_load_histogram[physical_load] += orbit_size
         report = {
             "selected": len(selected),
             "components": [len(c) for c in comps],
             "upper_load_histogram": {
                 str(x): upper_load.count(x) for x in sorted(set(upper_load))
             },
+            "upper_orbit_size_histogram": {
+                str(x): upper_orbit_sizes.count(x)
+                for x in sorted(set(upper_orbit_sizes))
+            },
+            "physical_upper_load_histogram": {
+                str(x): physical_upper_load_histogram[x]
+                for x in sorted(physical_upper_load_histogram)
+            },
             "middle_degree_histogram": {
                 str(x): middle_degree.count(x) for x in sorted(set(middle_degree))
             },
             "voltage": voltage,
+            "lift_cycle_count": (
+                math.gcd(voltage, self.k) if self.equivariant else 1
+            ),
             "lift_length": len(cycle),
         }
         if cycle:
@@ -1400,6 +1704,264 @@ def parse_model(text: str) -> tuple[str, set[int]]:
                 if value > 0:
                     model.add(value)
     return status, model
+
+
+def decoded_selected_keys(payload: dict) -> set[tuple[int, tuple[int, int]]]:
+    """Decode either a sigma certificate or a stable choice-snapshot row."""
+    rows = payload.get("selected_options")
+    if isinstance(rows, list) and rows:
+        return {
+            (int(item["lower"]), tuple(sorted(map(int, item["add"]))))
+            for item in rows
+        }
+    choices = payload.get("choices")
+    if isinstance(choices, list) and choices:
+        if all(isinstance(row, dict) for row in choices):
+            return {
+                (
+                    int(row["lower"]),
+                    tuple(sorted((int(row["a"]), int(row["b"])))),
+                )
+                for row in choices
+            }
+        return {
+            (int(row[0]), tuple(sorted((int(row[1]), int(row[2])))))
+            for row in choices
+        }
+    return set()
+
+
+def shadow_defect_lns_neighbourhood(
+    instance: SigmaInstance,
+    selected: list[Choice],
+    budget: int,
+    seed: int,
+    include: set[int] | None = None,
+) -> tuple[set[int], dict]:
+    """Choose a deterministic, defect-directed exact LNS neighbourhood.
+
+    The returned lower-orbit indices are the only choices left unfrozen.  For
+    every upper-q1 or lower-q2 hole in ``selected``, the routine first exposes
+    all lower variables of one complete catalogue witness.  Consequently the
+    frozen boundary does not make an *existing* hole trivially unrepairable.
+    Remaining budget is filled by shadow incidence and component-crossing
+    scores.  This is only a neighbourhood heuristic: all mathematical
+    requirements remain hard clauses in ``instance.cnf`` and every reported
+    SAT model is replayed by the ordinary exact verifier.
+    """
+    if budget <= 0:
+        raise ValueError("shadow-defect LNS requires a positive budget")
+    if not instance.cover_upper or instance.upper_q1_hole_budget is not None:
+        raise ValueError("shadow-defect LNS requires hard complete upper-q1")
+    if not instance.lower_q2:
+        raise ValueError("shadow-defect LNS requires hard complete lower-q2")
+    if len(selected) != len(instance.lower):
+        raise ValueError("shadow-defect hint does not select every lower orbit")
+
+    selected_by_lower = {choice.lower_idx: choice for choice in selected}
+    if len(selected_by_lower) != len(instance.lower):
+        raise ValueError("shadow-defect hint repeats a lower orbit")
+    selected_vars = {choice.var for choice in selected}
+    upper_load = Counter(choice.upper_idx for choice in selected)
+    missing_upper = [
+        target for target in range(len(instance.upper)) if not upper_load[target]
+    ]
+
+    # Each option is (changed lower-orbit set, intended selected variables).
+    targets: list[tuple[str, int, list[tuple[frozenset[int], tuple[int, ...]]]]] = []
+    for target in missing_upper:
+        options = []
+        for variable in instance.by_upper[target]:
+            choice = instance.choice_by_var[variable]
+            if variable in selected_vars:
+                raise AssertionError("reported upper-q1 hole has a selected witness")
+            options.append((frozenset((choice.lower_idx,)), (variable,)))
+        if not options:
+            raise ValueError(f"upper-q1 target {target} has no repair option")
+        targets.append(("upper_q1", target, options))
+
+    missing_lower = []
+    for target, turns in enumerate(instance.lower_q2_turn_groups):
+        covered = any(
+            any(variable in selected_vars for variable in first)
+            and any(variable in selected_vars for variable in second)
+            for first, second, _ in turns
+        )
+        if covered:
+            continue
+        missing_lower.append(target)
+        options_by_signature: dict[
+            tuple[frozenset[int], tuple[int, ...]],
+            tuple[frozenset[int], tuple[int, ...]],
+        ] = {}
+        for first, second, _ in turns:
+            first_candidates = [x for x in first if x in selected_vars] or list(first)
+            second_candidates = [x for x in second if x in selected_vars] or list(second)
+            for first_var in first_candidates:
+                a = instance.choice_by_var[first_var]
+                for second_var in second_candidates:
+                    b = instance.choice_by_var[second_var]
+                    if a.lower_idx == b.lower_idx and first_var != second_var:
+                        # Exactly-one at a lower orbit makes this conjunction
+                        # impossible; it is not a repair witness.
+                        continue
+                    intended = tuple(sorted(set((first_var, second_var))))
+                    changed = frozenset(
+                        instance.choice_by_var[var].lower_idx
+                        for var in intended
+                        if var not in selected_vars
+                    )
+                    if not changed:
+                        raise AssertionError(
+                            "reported lower-q2 hole has a selected turn"
+                        )
+                    signature = (changed, intended)
+                    options_by_signature[signature] = signature
+        options = list(options_by_signature.values())
+        if not options:
+            raise ValueError(f"lower-q2 target {target} has no repair option")
+        targets.append(("lower_q2", target, options))
+
+    def stable_tie(values: frozenset[int] | tuple[int, ...]) -> int:
+        value = (seed ^ 0x9E3779B9) & 0xFFFFFFFF
+        for item in sorted(values):
+            value = (value * 1664525 + item + 1013904223) & 0xFFFFFFFF
+        return value
+
+    def q1_damage(intended: tuple[int, ...]) -> int:
+        desired = {
+            instance.choice_by_var[var].lower_idx: instance.choice_by_var[var]
+            for var in intended
+        }
+        damage = 0
+        for lower_idx, replacement in desired.items():
+            current = selected_by_lower[lower_idx]
+            if (
+                upper_load[current.upper_idx] == 1
+                and replacement.upper_idx != current.upper_idx
+            ):
+                damage += 1
+        return damage
+
+    # A lower orbit shared by repair options for several holes is preferred.
+    impact = Counter()
+    for _, _, options in targets:
+        seen_here = set()
+        for changed, _ in options:
+            seen_here.update(changed)
+        for lower_idx in seen_here:
+            impact[lower_idx] += 1
+
+    free = set(include or ())
+    chosen_repair_rows = []
+    intended_frontier_vars: set[int] = set()
+    # Constrained targets first; within one target minimize marginal exposed
+    # variables, then threatened singleton q1 colours, then maximize sharing.
+    for kind, target, options in sorted(
+        targets,
+        key=lambda row: (
+            len(row[2]),
+            min(len(option[0]) for option in row[2]),
+            row[0],
+            row[1],
+        ),
+    ):
+        changed, intended = min(
+            options,
+            key=lambda option: (
+                len(option[0] - free),
+                q1_damage(option[1]),
+                -sum(impact[x] for x in option[0]),
+                stable_tie(option[0]),
+                stable_tie(option[1]),
+            ),
+        )
+        free.update(changed)
+        intended_frontier_vars.update(intended)
+        chosen_repair_rows.append(
+            {
+                "kind": kind,
+                "target": target,
+                "changed_lower_orbits": sorted(changed),
+                "intended_variables": list(intended),
+            }
+        )
+
+    # Exact degree two makes a nominal one-choice shadow repair impossible
+    # whenever both of its endpoint slots are frozen.  Expose the selected
+    # factor edges currently occupying every endpoint of the chosen witness
+    # variables.  This one-hop alternating closure is still defect-directed,
+    # but avoids the immediate unit-propagation UNSAT produced by a shadow
+    # frontier that cannot participate in any factor circuit.
+    selected_incident: list[set[int]] = [set() for _ in instance.middle]
+    for choice in selected:
+        selected_incident[choice.endpoint[0]].add(choice.lower_idx)
+        selected_incident[choice.endpoint[1]].add(choice.lower_idx)
+    factor_closure = set()
+    for variable in intended_frontier_vars:
+        choice = instance.choice_by_var[variable]
+        factor_closure.update(selected_incident[choice.endpoint[0]])
+        factor_closure.update(selected_incident[choice.endpoint[1]])
+    free.update(factor_closure)
+
+    minimum_frontier = len(free)
+    if minimum_frontier > budget:
+        raise ValueError(
+            f"shadow-defect repair frontier needs {minimum_frontier} free "
+            f"lower orbits, exceeding --lns-free={budget}"
+        )
+
+    # Score all remaining choices by their participation in any current-hole
+    # witness.  Add component-crossing capacity as a secondary score so a
+    # disconnected factor hint can be joined inside the same neighbourhood.
+    score = Counter()
+    for _, _, options in targets:
+        option_count = max(1, len(options))
+        for changed, _ in options:
+            for lower_idx in changed:
+                score[lower_idx] += max(1, 100000 // option_count // len(changed))
+
+    components = instance.components(selected)
+    component_of = {
+        vertex: ci for ci, component in enumerate(components) for vertex in component
+    }
+    crossing_count = Counter()
+    if len(components) > 1:
+        for lower_idx, variables in enumerate(instance.by_lower):
+            for variable in variables:
+                choice = instance.choice_by_var[variable]
+                if component_of[choice.endpoint[0]] != component_of[choice.endpoint[1]]:
+                    crossing_count[lower_idx] += 1
+
+    remaining = [x for x in range(len(instance.lower)) if x not in free]
+    remaining.sort(
+        key=lambda lower_idx: (
+            -score[lower_idx],
+            -crossing_count[lower_idx],
+            stable_tie(frozenset((lower_idx,))),
+            lower_idx,
+        )
+    )
+    free.update(remaining[: budget - len(free)])
+    report = {
+        "mode": "shadow_defect",
+        "seed": seed,
+        "hint_components": sorted(map(len, components), reverse=True),
+        "hint_component_count": len(components),
+        "hint_missing_upper_q1_orbits": len(missing_upper),
+        "hint_missing_lower_q2_orbits": len(missing_lower),
+        "repair_target_count": len(targets),
+        "minimum_repair_frontier": minimum_frontier,
+        "factor_closure_lower_orbits": len(factor_closure),
+        "free_lower_orbits": len(free),
+        "fixed_lower_orbits": len(instance.lower) - len(free),
+        "free_lower_indices": sorted(free),
+        "crossing_alternatives_in_free_set": sum(
+            crossing_count[x] for x in free
+        ),
+        "chosen_repair_rows": chosen_repair_rows,
+    }
+    return free, report
 
 
 def solve_once(
@@ -1572,6 +2134,14 @@ def main():
         action="store_true",
         help="orient the 2-factor for automata; impose connectivity by lazy cuts",
     )
+    parser.add_argument(
+        "--allow-disconnected-factor",
+        action="store_true",
+        help=(
+            "accept an exact shadow-complete residence-clean physical 2-factor "
+            "instead of adding lazy quotient component cuts"
+        ),
+    )
     parser.add_argument("--max-rounds", type=int, default=200)
     parser.add_argument("--time-per-round", type=int, default=120)
     parser.add_argument("--seed", type=int, default=1)
@@ -1617,6 +2187,15 @@ def main():
         help=(
             "for a disconnected hint, free every selected lower choice on a "
             "short-residence defect window before filling by component-crossing score"
+        ),
+    )
+    parser.add_argument(
+        "--lns-shadow-defect-aware",
+        action="store_true",
+        help=(
+            "accept a full exact-factor hint and free a deterministic lower-orbit "
+            "neighbourhood containing one complete repair frontier for every "
+            "current upper-q1 and lower-q2 hole"
         ),
     )
     parser.add_argument(
@@ -1749,8 +2328,12 @@ def main():
         not args.automaton_residence or args.residence < 3
     ):
         parser.error("--automaton-lower-q3 requires residence >=3 automaton mode")
-    if args.residence_budget is not None and not args.automaton_residence:
-        parser.error("--residence-budget requires --automaton-residence")
+    if args.residence_budget is not None and not (
+        args.automaton_residence or args.direct_residence
+    ):
+        parser.error(
+            "--residence-budget requires --automaton-residence or --direct-residence"
+        )
     if (args.automaton_coresidence or args.automaton_upper_q3) and (
         not (args.compact_connectivity or args.oriented_lazy_connectivity)
         or args.residence < 3
@@ -1812,10 +2395,7 @@ def main():
     lns_report = None
     if args.fix_certificate:
         fixed_hint = json.loads(args.fix_certificate.read_text())
-        fixed_keys = {
-            (item["lower"], tuple(sorted(item["add"])))
-            for item in fixed_hint.get("selected_options", [])
-        }
+        fixed_keys = decoded_selected_keys(fixed_hint)
         fixed_choices = [
             choice
             for choice in instance.choices
@@ -1833,21 +2413,36 @@ def main():
             parser.error("--lns-extra-changes must be nonnegative")
         hint = json.loads(args.hint_certificate.read_text())
         hint_status = str(hint.get("status", ""))
-        if not (
+        hint_schema = str(hint.get("schema", ""))
+        recognized_factor_hint = hint_schema in (
+            "global-rainbow-factor-candidate-v1",
+            "contiguous-or-quotient-carrier-v2",
+        )
+        if not ((
             hint_status.startswith("SAT")
             or hint_status in (
                 "AFFINE_SEED",
+                "FEASIBLE_INCUMBENT",
                 "NEAR_SAT_LOWER_Q2_MINUS_ONE_ORBIT",
                 "K13_MATERIALIZED_SELECTION",
             )
-        ) or hint.get("k", hint.get("p")) != args.k:
+            or recognized_factor_hint
+        ) and hint.get("k", hint.get("p")) == args.k):
             parser.error(
                 "hint certificate must be a decoded SAT/seed with requested k"
             )
-        selected_keys = {
-            (item["lower"], tuple(sorted(item["add"])))
-            for item in hint["selected_options"]
-        }
+        if hint_schema == "global-rainbow-factor-candidate-v1":
+            exact_audit = hint.get("exact_audit")
+            if not isinstance(exact_audit, dict) or exact_audit.get(
+                "fiber_invariant"
+            ) is not True:
+                parser.error("global-factor hint lacks its exact fiber invariant")
+            if args.lns_shadow_defect_aware and (
+                exact_audit.get("residence_bad_runs") != 0
+                or exact_audit.get("residence_shortfall") != 0
+            ):
+                parser.error("shadow-defect LNS requires a residence-clean factor hint")
+        selected_keys = decoded_selected_keys(hint)
         selected = [
             choice
             for choice in instance.choices
@@ -1892,11 +2487,6 @@ def main():
                     if args.hint_q2_near_side == "upper"
                     else instance.lower2_index
                 )
-                q2_witnesses = (
-                    instance.upper_q2_witnesses
-                    if args.hint_q2_near_side == "upper"
-                    else instance.lower_q2_witnesses
-                )
                 if representative not in q2_index:
                     parser.error(
                         "--hint-q2-near-target must also be present in the "
@@ -1905,8 +2495,27 @@ def main():
                 target = q2_index[representative]
                 allowed = []
                 incompatible = 0
-                for literal in q2_witnesses[target]:
-                    key = inverse_and.get(literal, (literal,))
+                if args.hint_q2_near_side == "upper":
+                    witness_options = {
+                        (inverse_and.get(literal, (literal,)), literal)
+                        for literal in instance.upper_q2_witnesses[target]
+                    }
+                else:
+                    # Lower-q2 is compressed through exact neighbour-group
+                    # turns.  Expand only this requested target back to
+                    # primary choice pairs for the one-change LNS ranking;
+                    # interpreting the turn AND literal itself as a primary
+                    # choice would either KeyError or silently rank nonsense.
+                    primary_keys = {
+                        tuple(sorted(set((first_var, second_var))))
+                        for first, second, _turn in instance.lower_q2_turn_groups[target]
+                        for first_var in first
+                        for second_var in second
+                    }
+                    witness_options = {
+                        (key, instance._and_literal(key)) for key in primary_keys
+                    }
+                for key, witness_literal in witness_options:
                     chosen = [var for var in key if var in selected_vars]
                     unchosen = [var for var in key if var not in selected_vars]
                     if len(chosen) != 1 or len(unchosen) != 1:
@@ -1937,10 +2546,11 @@ def main():
                         )
                         if distance > args.hint_q2_near_max_cycle_distance:
                             continue
-                    allowed.append(literal)
+                    allowed.append(witness_literal)
                 if not allowed:
                     parser.error(
-                        f"upper-q2 target {representative} has no compatible "
+                        f"{args.hint_q2_near_side}-q2 target {representative} "
+                        "has no compatible "
                         "one-flip witness around the hint"
                     )
                 instance.cnf.add(*allowed)
@@ -1961,7 +2571,27 @@ def main():
                 )
 
         components = instance.components(selected)
-        if len(components) == 1:
+        if args.lns_shadow_defect_aware:
+            if args.no_upper_q1 or args.upper_q1_hole_budget is not None:
+                parser.error(
+                    "--lns-shadow-defect-aware requires hard complete upper-q1"
+                )
+            if not args.lower_q2:
+                parser.error(
+                    "--lns-shadow-defect-aware requires --lower-q2"
+                )
+            try:
+                free_lower, lns_report = shadow_defect_lns_neighbourhood(
+                    instance,
+                    selected,
+                    args.lns_free,
+                    args.seed,
+                    set(args.lns_include_lower_index),
+                )
+            except ValueError as error:
+                parser.error(str(error))
+            lns_report["hint"] = str(args.hint_certificate)
+        elif len(components) == 1:
             if args.residence <= 0:
                 parser.error("connected hint LNS currently needs positive residence")
             hint_cycle, hint_voltage = instance.lift_middle_cycle(selected)
@@ -2017,6 +2647,7 @@ def main():
                 "hint_residence_violations": len(violations),
                 "quotient_bad_positions": len(bad_positions),
                 "free_lower_orbits": len(free_lower),
+                "free_lower_indices": sorted(free_lower),
                 "fixed_lower_orbits": len(instance.lower) - len(free_lower),
                 "max_free_distance": max(
                     (cyclic_distance(p) for p in free_positions), default=0
@@ -2171,6 +2802,7 @@ def main():
                 "defect_window_lower_orbits": len(defect_lower),
                 "defect_window_lower_orbits_freed": len(defect_lower & free_lower),
                 "free_lower_orbits": len(free_lower),
+                "free_lower_indices": sorted(free_lower),
                 "fixed_lower_orbits": len(instance.lower) - len(free_lower),
                 "total_crossing_alternatives": sum(
                     x[0] for x in scored if x[2] in free_lower
@@ -2364,6 +2996,110 @@ def main():
 
         selected = instance.selected_choices(model)
         components = instance.components(selected)
+        if len(components) > 1 and args.allow_disconnected_factor:
+            factor_cycles, factor_edge_orders, _ = instance.lift_factor_cycles(
+                selected
+            )
+            factor_bad = []
+            if (
+                args.residence
+                and not args.direct_residence
+                and not args.automaton_residence
+            ):
+                for cycle_index, cycle in enumerate(factor_cycles):
+                    for position, distance in instance.residence_violations(
+                        cycle, args.residence
+                    ):
+                        factor_bad.append((cycle_index, position, distance))
+            if factor_bad:
+                cuts = set()
+                for cycle_index, position, distance in factor_bad:
+                    edge_order = factor_edge_orders[cycle_index]
+                    key = tuple(
+                        sorted(
+                            {
+                                selected[
+                                    edge_order[(position + offset) % len(edge_order)]
+                                ].var
+                                for offset in range(distance + 1)
+                            }
+                        )
+                    )
+                    if key:
+                        cuts.add(key)
+                for key in cuts:
+                    instance.cnf.add(*[-variable for variable in key])
+                print(
+                    f"  factor_residence_violations={len(factor_bad)} "
+                    f"local_cuts_added={len(cuts)}",
+                    flush=True,
+                )
+                continue
+
+            report = instance.verify_factor(selected, args.residence)
+            if report["unique_upper_q1"] != report["upper_q1_target"]:
+                raise AssertionError("accepted factor misses a physical upper-q1 target")
+            if args.lower_q2 and (
+                report["unique_lower_q2"] != report["lower_q2_target"]
+            ):
+                raise AssertionError("accepted factor misses a physical lower-q2 target")
+            if report["residence_violations"]:
+                raise AssertionError("accepted factor is not residence-clean")
+            report.update(
+                {
+                    "status": "SAT_FACTOR",
+                    "schema": "global-rainbow-factor-candidate-v1",
+                    "k": args.k,
+                    "r": instance.r,
+                    "d": args.residence,
+                    "W": math.comb(args.k, instance.r),
+                    "N": len(instance.lower),
+                    "equivariant": equivariant,
+                    "round": round_no,
+                    "variables": instance.cnf.nvars,
+                    "clauses": len(instance.cnf.clauses),
+                    "elapsed_total": time.time() - total_started,
+                    "lns": lns_report,
+                    "exact_audit": {
+                        "fiber_invariant": True,
+                        "physical_cycle_count": report["physical_cycle_count"],
+                        "residence_bad_runs": 0,
+                        "residence_shortfall": 0,
+                        "minimum_run": report["minimum_run"],
+                        "missing_upper_q1_physical": 0,
+                        "missing_lower_q2_physical": 0,
+                        "missing_upper_q2_physical": (
+                            report["upper_q2_target"] - report["unique_upper_q2"]
+                        ),
+                        "missing_upper_q1_orbits": 0,
+                        "missing_lower_q2_orbits": 0,
+                        "missing_upper_q2_orbits": report[
+                            "missing_upper_q2_orbits"
+                        ],
+                        "quotient_loops": sum(
+                            choice.endpoint[0] == choice.endpoint[1]
+                            for choice in selected
+                        ),
+                    },
+                    "choices": [
+                        [choice.lower, choice.add_a, choice.add_b]
+                        for choice in selected
+                    ],
+                    "selected_options": [
+                        {
+                            "lower": choice.lower,
+                            "add": [choice.add_a, choice.add_b],
+                            "upper": choice.upper,
+                            "endpoints": list(choice.endpoint),
+                            "voltage": choice.voltage,
+                        }
+                        for choice in selected
+                    ],
+                }
+            )
+            cert_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+            print(json.dumps(report, sort_keys=True), flush=True)
+            return 0
         if len(components) > 1:
             # Preserve every feasible disconnected round before the next
             # solver call overwrites ``out_path``.  These models are valuable
@@ -2401,9 +3137,13 @@ def main():
             continue
 
         cycle, voltage = instance.lift_middle_cycle(selected)
-        if instance.equivariant and voltage == 0:
+        if instance.equivariant and math.gcd(voltage, instance.k) != 1:
             instance.add_zero_voltage_block(selected)
-            print("  connected quotient has voltage zero; exact assignment blocked", flush=True)
+            print(
+                "  connected quotient has non-coprime voltage "
+                f"{voltage} mod {instance.k}; exact assignment blocked",
+                flush=True,
+            )
             continue
 
         report = instance.verify(selected, args.residence)

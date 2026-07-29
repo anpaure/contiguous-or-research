@@ -198,13 +198,21 @@ depending on the endpoint flag.  The mean block length is therefore
 approximately (m+1), with an exact endpoint correction—not identically
 (m) in every coordinate.
 
-The residence criterion itself is exact:
+The coordinatewise residence criterion is exact:
 
 \[
 D^dA=T
 \quad\Longleftrightarrow\quad
 \text{every internal coordinate 1-run of (T) has length at least (d+1)}.
 \]
+
+Here the equivalence permits an empty physical letter.  In the nonzero-word
+problem one must additionally require that every physical position have a
+nonempty legal erosion envelope.  This is automatic for the resident
+Johnson carriers used in the exact constructions (their flat erosion has
+rank `r-d>0`), but it is false for an arbitrary ordering: for example,
+`T=({1},{2})` at depth one passes the internal-run test while forcing the
+middle physical letter to be empty.
 
 But wreaths are only special perfectly periodic solutions with much longer
 residence.  Periodicity of the individual coordinate traces is not sufficient

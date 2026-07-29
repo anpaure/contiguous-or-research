@@ -460,9 +460,12 @@ omit mixed-parent words and cannot be installed as globally exact rows.
 The live consumers now map every producer edge into the consumer and then
 assert equality of the two edge sets for fixed projected, fixed multi-shore,
 fixed exact, required-target, and adaptive exact rows.  A pair table remains
-valid on its own pair face.  The global position row of Sections 2--4 needs
-no motif equality assertion because it constructs every cell directly from
-the actual selected chronology.
+valid when that pair face itself is supplied as the consumer catalogue.
+Merely retaining all five sources and fixing off-face arc literals to zero
+does not change the consumer edge table and therefore does not pass this
+equality check.  The global position row of Sections 2--4 needs no motif
+equality assertion because it constructs every cell directly from the actual
+selected chronology.
 
 This resolves the former ambiguity around
 `exactdm_5cycle_boundaryupper`: its UNSAT statements concern the restricted
@@ -584,10 +587,16 @@ The new `--soft-fixed-homotopy --hint-path FILE` mode has different
 semantics.  During its warm phase, the fixed-row builders omit (8.1), create
 
 \[
- -W\le z\le W,\qquad z\le s_i(x)-t_i,                 \tag{8.3}
+ -t_{\max}\le z\le W,\qquad z\le s_i(x)-t_i,
+ \qquad t_{\max}:=\max_i t_i.                         \tag{8.3}
 \]
 
-and maximize \(z\).  A feasible soft incumbent, even one with positive
+and maximize \(z\).  Since every score is nonnegative, the displayed lower
+bound represents every possible signed margin for the supplied rows.  Literal
+shore thresholds satisfy $t_{\max}\le|\mathcal T|=16383$.
+In particular the warm phase adds no accidental condition
+\(s_i(x)\ge t_i-W\) when \(t_i>W\).
+A feasible soft incumbent, even one with positive
 margin, is only a path hint.  The code then
 
 1. writes its complete middle path to `FILE`;
@@ -639,8 +648,14 @@ For a theorem-level positive output, the following checks are mandatory.
 
 1. The selected path uses only the declared augmented branch catalogue, is
    Hamilton, residence-safe, and has every required upper target.
-2. Every preloaded or dynamically returned shore has identical position,
-   complete-carrier, and native cell lists on that selected path.
+2. Every dynamically returned DM shore has identical position,
+   complete-carrier, and native cell lists on that selected path.  For a
+   preloaded fixed shore on a later incumbent, the position and complete-
+   carrier lists are identical and their common cardinality equals the native
+   fixed-shore total; that native interface does not emit a third cell list.
+   A persisted allowance-zero DM shore additionally receives literal saved/
+   native/formula/carrier list equality on its own hashed source chronology
+   before loading.
 3. A strict H29 improvement is certified by a matching of size at least
    \(16,355\) and an equal-size cover in the **full** compiler graph.
 4. Hall zero is certified by a \(16,383\)-edge matching and an equal-size

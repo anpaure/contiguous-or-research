@@ -3,7 +3,7 @@
 This note records the current mathematical state of the problem.  It deliberately
 separates theorems, verified constructions, conjectures, and suggested next steps.
 
-## 0. Current overriding finite status (2026-07-28)
+## 0. Current overriding finite status (2026-07-29)
 
 This block supersedes obsolete numerical brackets retained in the chronological
 record below.
@@ -40,8 +40,9 @@ record below.
   `K13_K11_TRANSFER_AND_TWO_FRONT_STATUS_20260727.md`.
 
 Consequently the exact formula `nu(k)=B(k)` is now verified for every
-`0<=k<=14`.  The chronological sections below retain the former `k=13` and
-`k=14` intervals as research history; Sections 332--333 supersede all of them.
+`0<=k<=15`.  The chronological sections below retain former intervals as
+research history; this opening block and the final superseding sections are
+authoritative.
 
 * `k=14` is solved exactly:
 
@@ -54,6 +55,46 @@ Consequently the exact formula `nu(k)=B(k)` is now verified for every
   enumeration cover all `16383/16383` nonempty masks.  Full theorem and audit:
   Section 333 and `MATH_K14_EXACT_3434_CERTIFICATE_20260728.md`.  Every older
   nontrivial `k=14` interval in the chronological log is superseded.
+
+* The exact general lower bound is proved.  With
+
+      r=ceil(k/2),  W=binom(k,r),
+      Lambda=sum_(s=1)^(r-1) binom(k,s),
+      d(k)=min{d>=0: dW+binom(d+1,2)>=Lambda},
+
+  every nonzero covering word has length at least
+
+      B(k)=W+d(k).
+
+  In particular `d(k)=sqrt(pi*k/8)+O(1)`.  This is a theorem; the matching
+  all-`k` upper bound remains conjectural.
+
+* `k=15` is solved exactly:
+
+      nu(15)=6438=B(15),    N(15)=6439.
+
+  The authoritative word is `answers/k15.word`, SHA-256
+  `f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b`.
+  Fresh exhaustive replay covers all `32767/32767` nonempty masks and its
+  third OR derivative is exactly the 6,435-element rank-eight layer.
+
+  The construction starts with an independently audited resident all-depth
+  factor having two physical cycles of lengths `6390` and `45`.  Exhausting
+  all 2,300,400 directed openings found a Johnson seam which preserves the
+  complete upper tower while recycling neither removed lower-q1 colour.  The
+  two lost colours `18033,18553` are instead assigned to the two global
+  boundary cells.  An exact generalized compiler matches all 4,945 lower
+  targets and emits the retained 6,438-letter word.  Full proof and artifact
+  hashes are in
+  `K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md`.
+
+* The first unresolved finite case is now `k=16`:
+
+      W=12870,  d(16)=3,  B(16)=12873.
+
+  No length-12,873 word is claimed in this handoff.  The old Hall-29 through
+  Hall-19 `k=15` descent remains useful historical mathematics, but every old
+  numerical `k=15` interval is superseded by the exact certificate above.
 
 ## 1. Exact problem and notation
 
@@ -24471,3 +24512,9071 @@ Consequently the exact formula `nu(k)=B(k)` is now verified for every
       shared-endpoint `X/Y` chronology, and one common `(T,phi)` satisfying
       the maximal-envelope equalities.  This is the smallest exact positive
       replacement for first-occurrence selection currently available.
+
+## 337. Intersection-tableau synthesis and the exact local/global split
+
+1478. The raw optimal words through `k=14` and the best `k=15` carrier now
+      admit one common theorem-level description.  For a depth-`d` resident
+      Johnson chronology `T` with maximal erosion `P`, the interior short
+      rows are exactly
+
+          (D^(d-q) P)_(i+q) = intersection_(h=0)^q T_(i+h).
+
+      If the transition `T_i -> T_(i+1)` deletes `a_i`, residence makes the
+      deleted elements in every block of length at most `d` distinct, so
+
+          intersection_(h=0)^q T_(i+h)
+            = T_i minus {a_i,...,a_(i+q-1)}
+
+      and has rank `r-q`.  This proves the observed flat/ramp grading and the
+      forced nominal owner row.  One start position supplies a whole nested
+      deletion flag across every lower depth, explaining why the depths are
+      strongly correlated rather than independent occupancy problems.
+
+1479. For odd `k=2r-1`, a resident Hamilton middle path has `W-1`
+      immediate-lower colours on a target layer of size `W`.  If `h_1` is
+      the number of missing colours and `c_1` their repeat excess, then
+
+          h_1 = c_1 + 1.
+
+      The optimal physical row has only two additional boundary cells, so
+      any flat optimal construction must have `h_1<=2`, equivalently
+      `c_1<=1`.  The Hall-29 carrier has `(h_1,c_1)=(4,3)`: it is exactly two
+      immediate-shadow units outside the boundary capacity.
+
+1480. Given a lower interval assignment, define its pointwise owner meet
+      dimension `kappa_p` as the least number of covering target labels whose
+      intersection with the maximal erosion equals the final source letter.
+      The normalized exact words satisfy
+
+          max_p kappa_p <= 1  for 6<=k<=13,
+
+      while `k=14` has exactly five positions of dimension two and all other
+      positions of dimension at most one.  In the one-owner case the full
+      coordinate realization theorem reduces exactly to local dominance,
+      positive coverage on every assigned interval, preservation of every
+      middle window, and nonempty entries.  Thus the compiler is global in
+      where targets move but locally one/two-owner in how coordinates are
+      cut.  Ordinary Hall omits precisely this meet information.
+
+1481. The Hall-29 DM graph peels to 1,489 forced owners and a conditional
+      `35 target / 6 cell` kernel.  The kernel has 23 isolated targets and
+      six double-claims on six cells, so `29=23+6` literally.  Preserving the
+      peeled owners forces any repair to activate at least 29 distinct new
+      cells.  The exact finite transfer census rules out improvement by one
+      globally intrinsic transfer through support nine and by one
+      parent-pure transfer through support seven.  A larger root-path
+      enumerator does not give a global support lower bound because it omits
+      optional disjoint alternating cycles; the explicit omitted support-22
+      example is recorded in the nonlocal-move note.
+
+1482. The resulting positive target is a **nested-owner flag chronology**:
+      one upper-complete resident ordering of the middle layer whose nested
+      deletion-chain tableau admits an injective lower assignment of owner
+      meet dimension at most two.  Such an object directly gives a word of
+      length `B(k)` by the fixed-middle realization theorem, and the monotone
+      deadline theorem then gives equality.  Full proofs, exact scopes, and
+      the `k=15` fresh-cell/collar consequences are in
+
+          MATH_INTERSECTION_TABLEAU_AND_NESTED_OWNER_TARGET_20260728.md
+          MATH_K15_NONLOCAL_MOVE_CHARACTERIZATION_20260728.md.
+
+## 338. Pascal flag packages and the Catalan liquidity hinge
+
+1483. A lower-`d`-fresh Johnson chronology has a recursively nested flag
+      ladder.  If `T_(i+1)=T_i-a_i+b_i`, then for every `q<=d`,
+
+          L_i^(q)=intersection_(h=0)^q T_(i+h)
+                 =T_i-{a_i,...,a_(i+q-1)},
+
+      `L^(q)` is a Johnson path, and
+
+          L_i^(q+1)=L_i^(q) intersection L_(i+1)^(q).
+
+      Hence the deletion-chain tableau, the iterated lower Gray paths, and
+      the nested flags are one object.  A natural shadow pin equal to one of
+      these maximal cells is free: it removes no coordinate from the maximal
+      erosion.
+
+1484. Both lift decks are adjacent-row functors.  For odd `k=2r-1`, the
+      odd-to-even rank-`r` child deck is
+
+          T disjoint-union (z+completed L^(1)),
+
+      while the `k -> k+2` rank-`r+1` deck is
+
+          (xy+completed L^(1)), (x+T), (y+T), U^(1).
+
+      Thus the intersection lift and the four-sector diamond lift use the
+      first Pascal neighbourhood of the same parent.  A `c`-component path
+      cover has `W-cq` internal depth-`q` windows (when every component is
+      longer than `q`); joining it creates exactly `(c-1)q` seam-collar
+      windows.  Connectivity is secondary provided those collars are
+      labelled compatibly.
+
+1485. There is a scalar shadow-prefix liquidity theorem.  Let
+      `h_q,c_q` be the hole and repeat excess of the internal rank-`r-q`
+      row.  Then
+
+          c_q-h_q=W-q-C(k,r-q).
+
+      Put
+
+          S_0=0,
+          S_q=sum_(j<=q)(W+j)-sum_(j<=q)C(k,r-j).
+
+      The needed boundary count is explicit: the nominal depth-`q` interior
+      cells are `C_(q,t)=L_(t-q)^(q)`; the left boundary is
+      `L_0^(0),...,L_0^(q-1)` and the right boundary is its reversal.
+      Deeper eligible boundary cells stay on exactly `q` fixed-start and `q`
+      fixed-end inclusion chains.  A target missing from its natural
+      depth-`q` interior row must therefore use the complete top `q-1` rows
+      or one of these `2q` boundary chains.  Hence
+
+          S_q>=0,   h_q<=S_(q-1)+2q
+
+      is necessary for every flat resident optimum.  It is a prefix-capacity
+      theorem, not a sufficiency claim; containment and owners can reduce the
+      usable capacity.
+
+1486. For odd `k=2r-1`, the prefix liquidity values are
+
+          S_1=1,   S_2=C_r+3,
+
+      so every flat one-path optimum must satisfy
+
+          h_1<=2,  h_2<=5.
+
+      More precisely `h_2<=c_1+4=h_1+3`: after natural rank-`r-1`
+      occurrences are reserved, only the `c_1` duplicate internal cells and
+      four depth-two boundary chains can host a missing rank-`r-2` target.
+
+      The same `C_r=W-C(k,r-2)` is exactly the number of components left when
+      one edge of every rank-`r-2` colour is retained in the completed first
+      lower path, the bulk part of `S_2` after the three-cell boundary
+      triangle, and exactly the loss in `W^+=4W-C_r`.  Compiler prefix,
+      Catalan flag forest, and child-width loss share one rank-deficit identity.
+      At `k=15`, Hall-29 has `(h_1,h_2)=(4,21)` and clean Hall-31 has
+      `(2,22)`, so both fail these necessary prefix bounds before the full
+      owner/Hall gate.
+
+1487. The Middle Levels Theorem supplies the ideal `q=1` lower face
+      unconditionally.  More sharply, if a Middle Levels Hamilton cycle is
+      complement-half-turn invariant, then cyclic supports obey
+
+          complement(supp U_T^(q))=supp L_T^(q+1).
+
+      In particular the upward turn map `sigma` is surjective iff the dual
+      lower turn map is surjective.  Cutting an edge colour `X_*` whose
+      `sigma(X_*)` value is duplicated gives
+
+          h_1=1, upper-q1 exact, h_2<=2.
+
+      For `k=15` this is the sharp carrier target: a complement-half-turn
+      Middle Levels Hamilton cycle with surjective `sigma`, residence three,
+      the deeper dual lower-shadow support, and a repeated-`sigma` cut safe
+      for those deeper shadows.  It meets the necessary carrier prefix bounds
+      but not the residual compiler.  The smallest
+      compiler statement left by the exact data is trace-two residual
+      extension: after all free shadow pins and labelled spills are fixed,
+      assign the deep ideal so every pointwise owner meet has dimension at
+      most two and all middle/target private hits survive.  Full proofs are in
+
+          MATH_PASCAL_FLAG_PACKAGE_AND_CATALAN_LIQUIDITY_20260728.md.
+
+      Equivalently, write the alternating cycle as
+      `X_i,T_i,X_(i+1)`.  Then
+
+          T_i=X_i union X_(i+1),
+          T_i union T_(i+1)=X_i union X_(i+1) union X_(i+2),
+          T_(i-1) intersection T_i intersection T_(i+1)
+            =X_i intersection X_(i+1).
+
+      Hence the sharp odd carrier is one lower-shore Johnson cycle whose
+      consecutive unions enumerate the middle, consecutive intersections
+      are almost rainbow one rank down, and three-vertex unions are
+      surjective upward.  The middle chronology is determined by that lower
+      cycle.
+
+## 339. Exact flag transport and the odd-graph turn-colouring target
+
+1488. For every depth-resident middle chronology, the trace rows form one
+      synchronized Johnson tower.  If `T_(i+1)=T_i-a_i+b_i`, then
+
+          L_i^(q)=intersection_(j=0)^q T_(i+j)
+                 =T_i-{a_i,...,a_(i+q-1)},
+
+          L_(i+1)^(q)=L_i^(q)-a_(i+q)+b_i,
+          L_i^(q+1)=L_i^(q) intersection L_(i+1)^(q).
+
+      In particular the first shadow `X_i=T_i intersection T_(i+1)` is a
+      Johnson path, reconstructs every interior middle vertex by
+      `T_i=X_(i-1) union X_i`, and reconstructs every deeper lower row by
+      consecutive intersections.  The depths are one recursively coloured
+      path, not separate coverage experiments.
+
+1489. Let `H_q,E_q` be the hole set and repeat multidesign of the depth-`q`
+      row, and let `epsilon_(q,x)` be the two-end boundary correction.  Put
+
+          Delta=C(k-1,r-1)-C(k-1,r-2),
+          beta_q=C(k-1,r-1)-C(k-1,r-q-1)-q Delta.
+
+      Then the exact point-degree transport law is
+
+          deg E_q(x)-deg H_q(x)
+            = beta_q-q(deg H_1(x)-deg E_1(x))+epsilon_(q,x),
+
+          sum_x epsilon_(q,x)=q(q-1).
+
+      Thus a fixed first-shadow palette and fixed endpoints determine every
+      deeper defect design's point degrees.  Fixed-depth alternatives are
+      generated by symmetric two-block exchanges; the real open condition is
+      lifting compatible exchanges at all depths to one chronology.
+
+1490. This law diagnoses the frozen `k=15` Hall-29 carrier exactly.  Its
+      first-shadow holes are `5801,7267,8877,13620`, while its repeats are
+      `17140,3868,4525`.  Only `8877` is contained in the first endpoint and
+      only `7267` in the last; `5801` and `13620` are contained in neither.
+      Those two masks are therefore literal fixed-carrier boundary
+      obstructions before Dulmage--Mendelsohn analysis, and they are exactly
+      the two genuine rank-seven holes in the peeled kernel.  The remaining
+      six rank-seven survivors are collision partners.  This explains why
+      local Hall repair relocates rather than removes the defect.
+
+1491. At `k=15` the bare complement-half-turn Middle Levels carrier is not
+      open.  When `W` is odd, complement-invariant Middle Levels Hamilton
+      cycles are the bipartite double-cover lifts of Hamilton cycles
+
+          A_0,...,A_(W-1),A_0
+
+      in the odd graph `O_m=KG(2m+1,m)`.  Odd graphs are Hamiltonian for
+      `m>=3`, so the undecorated carrier exists.  With
+
+          X_i=A_(2i),  T_i=complement(A_(2i-1)),
+          C_j=A_(j-1) intersection A_(j+1),
+
+      one has
+
+          complement(sigma(X_i))=C_(2i),
+          delta(T_i)=C_(2i-1).
+
+      Hence upper-turn and next-lower coverage are the same single quotient
+      condition: the distance-two intersections `C_j` cover every
+      `(m-1)`-set.
+
+1492. Colour the odd-graph edge `A_j A_(j+1)` by the unique missing element
+      `z_j` outside its endpoints.  Then the lifted upper chronology has
+
+          T_(i+1)=T_i-z_(2i-1)+z_(2i).
+
+      Cyclic depth-`d` residence is exactly
+
+          z_j != z_(j+s) for every odd s in {1,3,...,2d-1}.
+
+      Distance one is automatic for a simple Hamilton cycle.  Therefore the
+      unresolved `k=15` carrier is now purely graph-theoretic: a Hamilton
+      cycle of `O_7` whose turns cover every 6-set and whose edge-colour word
+      avoids equality at distances three and five.  Cutting a turn in a
+      repeated upper fibre then gives `h_1=1`, complete upper `q=1`, and
+      `h_2<=2`.  The remaining independent gate is the trace-two owner
+      extension for the deep lower ideal.
+
+1493. Two prominent statistics of the exact solutions are forced already in
+      the odd-graph quotient.  In every Hamilton cycle of `O_m`, every symbol
+      occurs exactly `C_m` times in the missing-element edge-colour word
+      `z`.  Hence the lifted middle chronology has exactly `C_m` cyclic runs
+      per coordinate.  The turn-colour multiset
+
+          C_j=A_j^c-{z_(j-1),z_j}
+
+      has point degree `C(2m,m)-2C_m`; if it is surjective, its excess design
+      is automatically regular of degree
+
+          2(m-1)C_m/(m+2).
+
+      At `m=7` this is `572`, exactly the observed `k=15` depth-two
+      point-surplus constant.  Thus Catalan run counts and point marginals
+      must never again be optimized: only run lengths and turn-support shape
+      contain information.
+
+1494. The standard MSW odd-graph factor separates the two remaining carrier
+      gates cleanly.  On each base wreath cycle the edge-colour word `z` is
+      a permutation of `[k]`, so all fixed finite-memory residence exclusions
+      hold before cycles are joined.  Hamiltonization can therefore create
+      residence defects only in local join collars.  The turn colours,
+      however, are the `(m-1)`-interval shadow of the seed, where hereditary
+      concentration can remain.  This makes turn-surjectivity, rather than
+      Hamiltonicity or raw Catalan balance, the genuinely global new design
+      requirement.  Preservation of residence by the published joining
+      flips is not asserted until their local support is audited.
+
+1495. The normalized exact words sharply distinguish residence memory from
+      divisor symmetry.  Interleave a Johnson transition's insertion and
+      next deletion labels as `z_(2i)=b_i,z_(2i+1)=a_(i+1)`.  Depth `d`
+      residence is exactly exclusion of equal labels at odd distances
+      `1,3,...,2d-1`; distance one is automatic in an antipodal odd-graph
+      lift.  Direct audit gives bad-count vectors
+
+          k=9, d=2:   distance 1,3,5 = 0,0,40;
+          k=11,d=3:   distance 1,3,5,7 = 0,0,0,142;
+          k=13,d=3:   distance 1,3,5,7 = 0,0,0,429.
+
+      Hence the `k=9` certificate has exactly the single nonautomatic
+      distance-three exclusion, and all three words become non-rigid at the
+      very next odd distance.  Since `d(21)=3`, residence predicts distances
+      three and five at `k=21`, not three and seven.  Proper divisors control
+      translation-orbit sizes, a separate phenomenon which happens to
+      coincide with the memory distances at `k=15`.
+
+## 340. PBBS already supplies the all-depth flags; connectivity is a false standalone gate
+
+1496. The canonical PBBS factor is already universal at every flag depth.
+      If `g=f^2` is the step-two PBBS map and
+
+          F_q(i)=intersection_(t=0)^q g^t(B_i),
+
+      then for every `S` of rank `m-q` there is a directed `q`-edge PBBS
+      path with `F_q(i)=S`, and its correct-rank load lies between `1` and
+      `C(2q+1,q)`.  The complement-projected identities transfer the same
+      theorem to the lower owner intersections and complementary upper
+      unions.  Thus PBBS is a complete all-depth odd-graph flag factor; its
+      turn shadow is only the first nontrivial row.
+
+1497. The step-two PBBS factor has at most `Cat_m=W/(2m+1)` components.
+      Opening and cyclically collaring each component through depth `H`
+      costs at most `2H Cat_m`.  For `H=O(sqrt(m))` this is
+      `O(W/sqrt(m))=o(W)`.  Therefore connectivity is not needed for the
+      asymptotic coefficient-one construction.  Combining the all-depth
+      support theorem with the dominance-staircase seam gives the exact
+      central-band ledger
+
+          L_H <= W + 2H Cat_m + 2(5H-1) nu_H(P_m).
+
+      The critical quantity is the packing/transversal number of short
+      positive coordinate residence intervals, not the number of factor
+      components.
+
+1498. Consequently an `O(Cat_m)` PBBS Hamiltonization theorem is useful only
+      if it also improves residence or supplies a common exact owner/Hall
+      extension.  Pure merging leaves all old internal short runs in place.
+      The exact `k=15` frontier independently confirms the distinction: a
+      one-path, depth-three-resident, upper-all-depth-complete carrier already
+      exists, while its compiler Hall deficiency remains positive.  The
+      authoritative synthesis and proof interfaces are in
+
+          MATH_PBBS_FLAG_FACTOR_AND_FALSE_CONNECTOR_GATE_20260728.md.
+
+1498a. This separation is quantitatively exact.  If two owner factors differ
+       by deleting `J_-` transition slots and reconnecting the retained path
+       interiors with `J_+` new seams, then for every `H`
+
+           |nu_H(F')-nu_H(F)| <= max(J_-,J_+).
+
+       Indeed all residence intervals wholly inside retained segments are a
+       common interval family; every other old (new) interval contains a
+       deleted (inserted) seam edge, and an edge-disjoint packing can charge
+       at most one interval to each seam.  Thus `O(Cat_m)` local joining
+       changes `nu_(A sqrt(m))` by only `O(Cat_m)=o(Cat_m sqrt(m))`.
+       Critical versus subcritical residence is invariant under every such
+       Hamiltonization.
+
+## 341. Hypersimplex decomposition removes the marginal lower-shadow gate
+
+1499. If integers `d_x` satisfy `0<=d_x<=e` and
+      `sum_x d_x=s e`, then they are the point degrees of a multiset of
+      exactly `e` rank-`s` blocks.  Inductively choose an `s`-set containing
+      every coordinate of current degree `e`, decrement it, and repeat.
+      This is the integer-decomposition property of the uniform-matroid
+      hypersimplex, with a two-line elementary proof.
+
+1500. Apply this to the exact lower defect-transport vector
+
+          gamma_(q,x)=beta_q
+             -q(deg H_1(x)-deg E_1(x))+epsilon_(q,x),
+
+      with `e_q=W-q-C(k,r-q)`.  Whenever `0<=gamma_(q,x)<=e_q`, one copy
+      of every rank-`r-q` target plus an `e_q`-block excess multidesign gives
+      a hole-free depth-`q` multiset with exactly the point degrees of the
+      actual trace row.  The incidence alternating-cycle theorem then joins
+      the actual row to this hole-free row by symmetric two-block exchanges.
+
+1501. For the Hall-29 `k=15` chronology the required depth-two excess degrees
+      lie in `[568,574]` out of `e_2=1428`; the depth-three degrees lie in
+      `[1138,1147]` out of `e_3=3429`.  Hence its `21` and `4` lower holes
+      are not forced by scalar capacity, point degrees, Catalan regularity,
+      or the rankwise trade lattice.  They are purely a failure to lift the
+      separately feasible exchanges to one deletion chronology and one
+      common owner assignment.  Full proof and the exact vectors are in
+
+          MATH_HYPERSIMPLEX_MARGINAL_COMPLETION_AND_CHRONOLOGY_GATE_20260728.md.
+
+## 342. Exact PBBS connector coboundaries and the simultaneous owner lift
+
+1502. A legal directed PBBS star triangle `t_0->t_1->t_2->t_0`, switched
+      together with its complement, is exactly the odd-graph successor
+      change
+
+          g=f circle (t_0 t_1 t_2)^(-1).
+
+      When the three centres lie in distinct current `f`-cycles, it is a
+      pure three-cycle merge.  If `S_i=(f(t_i),...,t_i)` are the opened
+      segments, the complete `ell`-vertex step-two flag multiset has the
+      exact endpoint coboundary
+
+          F_ell(g)-F_ell(f)
+            =sum_(i,delta,a)
+               ([L_(i,delta)^(a) cap R_(i-1,delta)^(ell-a)]
+                -[L_(i,delta)^(a) cap R_(i,delta)^(ell-a)]),
+
+      where `delta in {0,1}` and `1<=a<ell`.  There are exactly
+      `6(ell-1)` removed and `6(ell-1)` inserted records.  Thus flag support
+      is preserved exactly when every target's initial load minus its
+      telescoped removals plus insertions remains at least one.  This is a
+      chronology statement, not a marginal one.
+
+1503. For a Johnson word `B_(i+1)=B_i-d_i+e_i`,
+
+          intersection_(h<ell) B_(i+h)
+            =B_i-{d_i,...,d_(i+ell-2)}.
+
+      Canonical rank is equivalent to `e_s!=d_t` for
+      `i<=s<t<=i+ell-2`.  With `z_(2i)=e_i,z_(2i+1)=d_(i+1)`, general
+      depth-`D` residence is the even-start law
+
+          z_(2i)!=z_(2i+2t-1),  1<=t<=D.
+
+      The all-start odd-distance formulation needs the additional odd-cycle
+      reindexing and is not valid for an arbitrary Johnson word.  One
+      oriented seam has exactly `D(D+3)/2` possible new tests when both
+      collars are long enough; a complement-paired hexagon has six seams and
+      hence at most `3D(D+3)` tests.  Every old bad short-return interval
+      inside an untouched oriented segment persists.  Therefore a useful
+      connector must hit residence witnesses, not merely merge components.
+
+1504. Exact depth-one upper ownership rules out every nontrivial loopless
+      two-successor head swap.  If old colours are
+
+          U=x union y,  V=x' union y',
+
+      preserving them after `x->y',x'->y` forces either `y=y'` or `x=x'`.
+      Adjacent cut arcs instead create a loop.  Thus the smallest independent
+      owner-balanced head-swap arity is three; the alternating hexagon has
+      that arity.  Complement-paired 3-cycle switches also preserve the
+      parity of the number of odd-graph successor cycles, an obstruction to
+      that Hamiltonization architecture only, not to coefficient one.
+
+1505. Trace-two residual extension has an exact controller-state
+      interval-union form.  Choose at every position at most two active owner
+      controllers and let `Q_p` be their meet with the fixed envelope.
+      Require nonemptiness, containment in every other active fixed owner,
+      and exact unions on all central/fixed protected windows.  Put
+
+          U_alpha(c)=union_(p in I_c) Q_p.
+
+      The old edge conditions for a target `S` and cell `c` force both
+      `U_alpha(c) subset S` and `S subset U_alpha(c)`, hence equality.  For
+      distinct Boolean-ideal targets every cell therefore has degree at most
+      one, and Hall collapses to singleton existence: an extension exists
+      iff some admissible skeleton has, for every `S`, an eligible `c` with
+
+          P_alpha(S) subset I_c,   U_alpha(c)=S.
+
+      There is no cross-target cell competition after `alpha` is fixed.  The
+      skeleton quantifier is the entire nonlinear gate.  With targets
+      `S_i={a,e_i}` and path intervals `{j-1,j}`, the base option graph is
+      complete and every meet uses at most two labels, yet all but the two
+      endpoint targets lose their private markers.  Raw normalized matching
+      is therefore insufficient.  Labelled repeated copies of one set retain
+      Hall only within that single set-value fibre; the Boolean-ideal compiler
+      has no repetitions.
+
+1506. Combining item 1505 with the hypersimplex theorem identifies the exact
+      finite gate.  There must exist hole-free representatives in every
+      feasible marginal fibre and one modified deletion word which
+      simultaneously realizes all of them, remains an exact middle-layer
+      chronology, satisfies the nested identities between consecutive trace
+      rows, preserves residence and the complete upper flag tower, and
+      admits one common controller skeleton whose eligible interval unions
+      catalogue every residual target.  This
+      simultaneous chronology-owner hypersimplex lift is unproved.  It is
+      separate from the asymptotic PBBS gate, which remains the strict
+      little-oh short-residence transversal estimate of item 1497; pure
+      Hamiltonization is unnecessary.
+
+1507. The full proofs, the legal Johnson `q=2`-but-not-`q=3` spoke, the
+      dynamic connector criterion, and the independently audited scope are
+      in
+
+          THREAD_H_PBBS_CONNECTOR_COBBOUNDARY_AND_SIMULTANEOUS_HYPERSIMPLEX_LIFT_20260728.md.
+
+1508. Cross-audit sharpened item 1505: the fixed-skeleton residual graph is
+      not a genuine global Hall problem for the Boolean ideal.  Its defining
+      containments force every incident target to equal the one cell value
+      `U_alpha(c)`, so distinct targets have disjoint cell neighbourhoods.
+      The remaining trace-two gate is purely to construct one admissible
+      skeleton word whose eligible interval-union catalogue contains every
+      residual target while retaining controller footprints and all central
+      private hits.  Any formulation retaining cross-target Hall competition
+      after fixing `alpha` is nonsharp.  Only labelled repeated copies of the
+      same underlying subset retain a separate Hall problem inside that
+      set-value fibre.
+
+## 342A. Singleton absorption is terminal only: exact flattening and the deep-ideal barrier
+
+1508a. Successive persistent singleton-absorption rounds have an exact
+      flattening theorem.  Let `C_p` be the fixed-owner core, `U` the unused
+      singleton positions, `H` the positions whose fixed meet dimension
+      exceeds two, and `phi` the union of all round assignments.  The final
+      entries are order-independent:
+
+          A_p=S  if p=phi(S),     A_p=C_p otherwise.
+
+      The rounds give a valid trace-two extension iff
+
+          S subset C_(phi(S)),
+          H subset im(phi),
+
+      and for every protected `(L,J_L)` the union of these final entries on
+      `J_L` is exactly `L`.  Equivalently one final private reserve exists.
+      Coordinatewise, if
+
+          P_(L,x)={p in J_L:x in C_p},
+
+      then the exact private-provider condition is
+
+          P_(L,x) not subset {phi(S):x notin S}.
+
+      Adaptive reserve changes therefore do not enlarge the final feasible
+      class; every successful sequence compresses to one global injection.
+
+1508b. Independent round certificates do not compose.  With two cores
+      `C_1=C_2=L={a,b,c}`, the round installing `{a}` at the first position
+      is valid alone, as is the round installing `{c}` at the second, but
+      together the final protected union is only `{a,c}`.  Correct terminal
+      weighting must use one common reserve and one fractional matching with
+      target degree exactly one, position capacity at most one, and degree
+      exactly one at every hot position.  This is an integral face of the
+      bipartite matching polytope.  Normalized rank weights compose only
+      after their actual cumulative edge loads satisfy those exact final
+      constraints; separate per-round `>=1` certificates are invalid.
+
+1508c. There is a decisive asymptotic capacity obstruction.  For odd
+      `k=2r-1`, put `W=C(k,r)`, let `d` be the exact optimal depth, and let
+
+          D_k=sum_(s=1)^(r-d-1) C(k,s)
+
+      be the residual ideal below the natural depth-`d` rows.  Then
+
+          d=sqrt(pi k/8)+O(1),
+
+          D_k=2^k(Phi(-sqrt(pi/2))+O(k^(-1/2))),
+
+          D_k/(W+d)
+             =sqrt(pi/2) Phi(-sqrt(pi/2)) sqrt(k)+O(1)
+             -> infinity.
+
+      A direct coefficient-ratio proof also gives
+      `D_k>=e^(-15) floor(sqrt(k)) W` eventually, so the impossibility does
+      not depend on the Gaussian error estimate.  A length-`W+d` word has
+      only `W+d` singleton intervals.  Hence at least `D_k-(W+d)` deep
+      targets must use intervals of length at least two, and only
+      `O(k^(-1/2))` of the deep ideal can be singleton-absorbed.  No number
+      of persistent singleton rounds evades this invariant.
+
+1508d. The exact replacement gate is a non-singleton bulk skeleton: realize a
+      `1-O(k^(-1/2))` fraction of the deep ideal on distinct eligible
+      intervals of length at least two, preserve every protected union and
+      controller footprint, and leave one common reserve on all chronology
+      positions together with a terminal family `R_term` and unused
+      singleton set `U` satisfying `|R_term|<=|U|` and the exact hot-weighted
+      certificate.  The private-reserve normalized-matching theorem is thus
+      a terminal absorber, not a bulk proof.  Full proofs and independent
+      audits are in
+
+          THREAD_H_SINGLETON_ABSORPTION_ROUND_FLATTENING_AND_DEEP_IDEAL_BARRIER_20260728.md.
+
+## 343. Coloured Euler cuts and the exact safe de-Bruijn chronology flow
+
+1509. Separate hole-free hypersimplex rows do not in general lift even one
+      adjacent level.  If an upper rank-`s` multiset has multiplicities
+      `m_A` and its intended intersection-colour row has multiplicities
+      `c_R`, then a realizing Johnson walk is exactly an Euler trail in a
+      connected multigraph on the upper set types, whose edges of colour
+      `R` join two distinct extensions of `R`.  Thus there must be endpoint
+      numbers `e_A` and nonnegative edge multiplicities `y_(R;A,B)` with
+
+          sum_(A,B) y_(R;A,B)=c_R,
+          sum_(R,B) y_(R;A,B)=2m_A-e_A,
+
+      together with connected support.  Projecting to colour half-edges is
+      an integral capacitated max-flow problem; connectivity adds the sharp
+      chronological cuts
+
+          sum_(R in C)c_R <= sum_(A in N(C))m_A-1
+
+      for every nonempty colour family `C`.
+
+1510. These cuts are independent of scalar size, point degrees, and the
+      hypersimplex box.  On six coordinates, take every rank-three set once
+      and take every rank-two set once plus three extra copies of `12` and
+      one extra copy of `34`.  Both rows are hole-free, the excess vector
+      `(3,3,1,1,0,0)` lies in `4 Delta(6,2)`, and every candidate coordinate
+      run count is positive.  Nevertheless colour `12` has load four but
+      only four available rank-three extensions, contradicting `4<=4-1`.
+      Hence no theorem can lift arbitrary independently chosen marginal
+      completions.
+
+1511. The complete simultaneous condition is one boundary-capped integer
+      flow.  Let `D_d(k,r)` have as states the two-sided safe Johnson words
+      of `d` vertices and as arcs the safe words of `d+1` vertices.  An
+      integral arc vector `z` spells one depth-`d` chronology iff it has one
+      source and sink imbalance, connected positive support, one copy of
+      every middle owner after the terminal suffix correction, and the
+      prescribed lower and upper flag-label projections at every depth.
+      Euler's theorem proves both directions.  Around a fixed chronology,
+      the linearly liftable simultaneous row changes are precisely the image
+      of integer circulations in this graph that preserve the middle-owner
+      projection; nonnegativity and connected support are the remaining
+      integral conditions.
+
+1512. Combining items 1508 and 1511 removes two misleading abstractions.
+      The finite problem is not "independent rankwise balancing plus Hall."
+      It is one ordered safe de-Bruijn flow whose induced source/controller
+      word has every required target among its eligible interval unions.
+      Once that word is fixed, distinct target labels cannot compete for a
+      cell.  The exact reductions, counterexample, private-hit barrier, and
+      singleton-reserve theorem are in
+
+          MATH_COLORED_EULER_AND_LINEAR_DEBRUIJN_CHRONOLOGY_GATE_20260728.md
+          THREAD_TRACE_TWO_HALL_COLLAPSE_AND_INTERVAL_BARRIER_20260728.md.
+
+## 344. Hyperforest cuts are not chronology, but Boolean ears complete a large adjacent-row cone
+
+1513. The coloured-Euler inequalities of item 1509 are exactly the
+      hypergraphic-matroid forest inequalities for the colour-extension
+      hypergraph.  They characterize the forest relaxation, not a Hamilton
+      chronology.  In particular, a hyperforest can have a Boolean-star
+      vertex of degree greater than two, so neither hypergraphic independence
+      nor connectedness supplies the required degree-two path condition.
+      This separates three genuinely different assertions: feasible colour
+      marginals, a connected Euler support, and one Hamilton path.
+
+1514. There is nevertheless an unconditional Boolean-ear completion
+      theorem for two adjacent rows.  Begin with a lower-complete Hamilton
+      base.  A cyclic incidence ear inserts a closed alternating block into
+      the base path, preserving every old lower colour and upper owner while
+      adding an explicitly prescribed coupled excess.  Triangle-ear
+      realizability has the exact coordinate criterion
+
+          delta=u-l,             g=(2l-u)/3,
+
+      with `delta,g` nonnegative integral, the required totals, and
+      `delta_x+g_x<=a` for every coordinate.  Sufficiency follows by pairing
+      red and blue sockets and applying Konig edge-colouring.  Thus
+      integrality is not an additional obstruction inside this cone.
+
+1515. At `k=15`, a perfectly balanced lower-complete base whose rank-five
+      edge-colour point degrees are all `1668` can be completed by two
+      length-four ears, two length-five ears, and 470 triangle ears; all
+      residual coordinate inequalities have large slack.  The remaining
+      adjacent-row target is therefore sharply conditional: construct such
+      a balanced lower-complete Hamilton base.  This would solve two rows,
+      not the common ordering of three or more rows.  The proofs and the
+      explicit mixed-ear arithmetic are in
+
+          MATH_COLORED_EULER_HYPERFOREST_AND_BOOLEAN_EAR_COMPLETION_20260728.md.
+
+## 345. Depth three is one transition system on a two-sided diamond table
+
+1516. A depth-one Johnson edge between owner types `A,B` has two forced
+      colours
+
+          R=A intersection B,        U=A union B.
+
+      Hence the correct base object is a connected two-sided diamond
+      multigraph `G` with both the prescribed lower-`R` and upper-`U` loads.
+      At each owner `A`, pair incident edge copies.  If one paired visit has
+      lower colours `A-x,A-y`, its forced depth-three label is
+      `A-{x,y}`.  The transition graph on edge copies is one path exactly
+      when these local pairings produce one common depth-one/depth-two/
+      depth-three chronology.
+
+1517. A pair-pair cross-switch at one owner merges two transition components
+      while preserving `G`, every lower and upper adjacent-row load,
+      two-sided safety, the global end stubs, and the depth-three point-degree
+      vector.  It changes exactly two depth-three occurrences.  A stub-pair
+      switch may be needed at a global end, hence at most twice.  This is a
+      genuine local component-joining theorem, unlike independent
+      rank-by-rank completions.
+
+1518. Pointwise load two is not a sufficient support theorem.  A verified
+      `k=12`, rank-four Johnson transition system has every rank-two label
+      at load at least two, yet every connected final pairing loses three
+      labels.  Thus the frozen `k=15` histogram `2^2577 3^426` is only
+      redundancy evidence; the actual remaining condition must be cut-aware
+      and track protected occurrences across the component-joining tree.
+      The exact reduction and switch audit are in
+
+          MATH_DEPTH_THREE_TRANSITION_SYSTEM_AND_COMMON_ORDER_GATE_20260728.md.
+
+## 346. PBBS is critical at zero winding, while one-mountain batching bypasses per-seam payment
+
+1519. The canonical PBBS zero-winding census has been verified exactly
+      through semilength 14.  Its first-deepest-spine sector inequalities
+      agree with literal zero winding in every tested Dyck word.  Conditional
+      on that still-unproved sector equivalence, if `2h-2=3q+rho`, the
+      fixed-height generating function is
+
+          Z_h(z)=1/(Q_(q+1)(z)^(3-rho) Q_(q+2)(z)^rho).
+
+      The resulting finite packing values satisfy
+      `P_r sqrt(r)/Cat_r` near `0.30` for `10<=r<=14`, evidence for a
+      critical `Theta(Cat_r/sqrt r)` scale rather than the desired little-oh.
+      This is evidence, not an asymptotic theorem: both the sector
+      equivalence and the required two-point overlap estimate remain open.
+
+1520. Critical seam count does not by itself refute coefficient one.  For an
+      owner block with a common core, order the entering coordinates once and
+      suppose every exit superlevel is an interval (the one-mountain
+      property).  Then one word represents every consecutive lower
+      intersection and upper union, with exact length `S+w+1`, where `S` is
+      the number of owner transitions and `w` the active width.  Globally,
+
+          L_H <= W + H R + sum_j w_j.
+
+      If short PBBS seams can be batched `b` at a time in halos of width
+      `O(H)`, this becomes
+
+          L_H <= W + O_A(H B + H nu_H/b),
+
+      which is `W+o(W)` for suitable growing `b` even when
+      `nu_H=Theta(BH)`.  Thus the active PBBS gate is structural: prove
+      one-mountain, bounded-mountain, or a broader consecutive-ones compiler
+      on canonical owner arcs.  The theorem and the carefully scoped finite
+      evidence are in
+
+          THREAD_K_PBBS_GLOBAL_SEAM_BATCHING_AND_ONE_MOUNTAIN_COMPILER_20260728.md
+          PBBS_ZERO_WINDING_SECTOR_GF_AND_PACKING_STATUS_20260728.md.
+
+## 347. The frozen seven-cut step-19 cube is exhausted
+
+1521. On `scratch/k15_dual_descent_a4_step19.segments.json`, the seven paired
+      optional cut locations are
+
+          (18/19),(45/46),(54/55),(81/82),
+          (90/91),(117/118),(126/127).
+
+      All `2^7=128` coordinated choices have now been tested by exact
+      necessary compiler prechecks.  Every choice has zero incidences for
+      items 16 and 21 and leaves depth-one upper target 2431 uncoverable;
+      none passes.  The best item-edge count is 132, attained by choices
+      `1101111` and `1111111`.
+
+1522. This is a finite no-go for that exact step-19 seven-cut cube only.  It
+      does not prove global `k=15` unsatisfiability, does not exclude other
+      parent paths or non-cut surgeries, and must not be used as such.  The
+      reproducible enumerator and compact audit are
+
+          scratch/audit_k15_step19_seven_cut_cube.py
+          scratch/k15_step19_seven_cut_cube_audit.json.
+
+## 348. Complete-support counterexample to scalar load-two joining
+
+1523. There is a connected loopless Johnson multigraph on rank-four subsets
+      of `[12]` with a safe transition system, one path component, three
+      cycle components, and every rank-two transition label at load at least
+      two, for which no connected re-pairing retains complete rank-two
+      support.  Put
+
+          p={0,1},   q={2,3},   r={4,5},
+          A=p union q,  B=p union r,  C=q union r.
+
+      Four macro components meet only in the path
+
+          C1 --A-- C2 --B-- C3 --C-- C4,
+
+      and the two labels at the three bridge owners are respectively
+
+          (p,q),  (p,r),  (q,r).
+
+      Crossing a bridge replaces both of its labels by mixed labels.  Every
+      connected final transition system must cross all three bridges, so it
+      deletes both copies of each of `p,q,r`.
+
+1524. Thirty additional safe cycles attach to `C1` through the common owner
+      `{0,1,3,8}` with identical transition label `{1,3}`.  Label-preserving
+      cross-pairings merge them into `C1`; one remaining hub pair is opened
+      to supply the two global end stubs.  The gadgets meet none of
+      `C2,C3,C4`, and whenever two first-component cycles share another
+      owner their transition labels agree.  Among all 217 owner types,
+      exactly `A,B,C` carry more than one omitted-pair type.  After opening,
+      every one of the 66 rank-two labels still has load at least two, while
+      `p,q,r` have load exactly two.
+
+1525. The verifier checks every Johnson adjacency and safe triple, the exact
+      macro intersection pattern, the complete owner pair-type census,
+      complete support after opening, and all `3^3=27` bridge states.  Since
+      every nonbridge owner has only one pair type, this exhausts the whole
+      fixed-end local-pairing fibre.  Eight bridge states are connected and
+      zero preserve support.  Therefore the next positive theorem must be a
+      labelled cut/Hall condition, not a scalar multiplicity bound.  Full
+      proof and machine evidence are in
+
+          MATH_DEPTH3_LOAD_TWO_JOINING_COUNTEREXAMPLE_20260728.md
+          scratch/depth3_load2_joining_counterexample.json
+          scratch/verify_depth3_load2_joining_counterexample.py.
+
+1526. There is a usable positive replacement.  Assign distinct transition
+      pair occurrences to the edges of a spanning tree of the component
+      contact graph.  Intersecting omitted-pair types can be joined at zero
+      label cost; a disjoint-pair join charges one unit to each deleted old
+      label.  If label `S` receives total charge at most `m_S-1`, leaf-to-root
+      contraction gives one path without holes.  This is sufficient, not
+      necessary, because earlier switches may recreate labels.  On a rigid
+      contact tree the exact condition, after choosing one cross-pairing at
+      every mandatory bridge, is
+
+          m_S - d_S + a_S >= 1       for every S,
+
+      where `d_S` and `a_S` count bridge deletions and additions.  The
+      independent theorem audit is
+
+          MATH_DEPTH3_LOAD_TWO_JOINING_COUNTEREXAMPLE_AUDIT_20260728.md.
+
+## 348. Erosion-safe turns, endpoint letters, and the fixed-z TU fibre
+
+1523. The depth-d safe-de-Bruijn theorem is exactly one ordered turn short
+      of the depth-d erosion compiler.  Safe rows through d already exclude
+
+          b_i=a_(i+t),   1<=t<d,
+
+      but do not exclude the wall return b_i=a_(i+d).  There is a local
+      d+2-owner example with that one return and every other change label
+      fresh: every lower and upper window through depth d has its intended
+      rank, while the coordinate living exactly on T_1,...,T_d cannot occur
+      in either of the two erosion letters assigned to L_1^(d-1).  Thus
+      current D_d safety alone does not imply the erosion OR identities.
+
+1524. Prescribed ordered lower/upper rows have one nonzero endpoint-capped
+      erosion realization exactly when they share a middle row, satisfy
+
+          L_i^(q+1)=L_i^q cap L_(i+1)^q,
+          U_i^(q+1)=U_i^q union U_(i+1)^q,
+
+      have all intended ranks, and obey the single deepest-row cut
+
+          |L_i^d cap L_(i+1)^d|=r-d-1.
+
+      The last condition is equivalent to b_i!=a_(i+d).  With constant
+      endpoint extension, the canonical forward erosion word has exact
+      length N+d:
+
+          E_(-d+s)=L_0^s                         (0<=s<d),
+          E_i=L_i^d                              (0<=i<N-d),
+          E_(N-d+s)=L_(N-d+s)^(d-1-s)            (0<=s<d),
+
+      and
+
+          L_i^q=union_(j=i+q-d)^i E_j,
+          U_i^q=union_(j=i-d)^(i+q) E_j.
+
+      For an arbitrary fixed ordered interval-target family, the exact
+      coordinate barrier is that every positive interval contain a position
+      outside the union of all negative intervals for that coordinate.
+      The coordinatewise maximal word realizes the family whenever this
+      holds.  The resulting fixed-order hit block is an interval matrix and
+      is TU; nonempty letters are a separate explicit pointwise condition.
+
+1525. Fix an integral safe-de-Bruijn arc vector z, first and last arc types
+      e_in,e_out, and retain all owner, lower, upper, and terminal suffix
+      projections already imposed on z.  Declare e->f allowed when the
+      de-Bruijn overlap is literal and
+
+          |lambda_d(e) cap lambda_d(f)|=r-d-1.
+
+      Then z has an erosion-compatible Euler ordering iff there are
+      nonnegative integral successor counts w_(e,f) with
+
+          sum_f w_(e,f)=z_e-1[e=e_out],
+          sum_e w_(e,f)=z_f-1[f=e_in],
+
+      and weakly connected positive turn support.  For any fixed directed
+      allowed-turn tree whose underlying edges span the positive z-types,
+      imposing lower bound one on its turns leaves a bipartite
+      transportation system.  That fixed-tree polyhedron is TU.  The
+      connected integral ordering fibre is exactly the union, over these
+      trees, of the integral points of the TU pieces; no equality of the
+      real connected-support set with that union is claimed.
+
+1526. Linear terminal corrections do not supply cyclic wrap records.  At
+      depth q, exactly q suffix-prefix windows are absent; at depth d these
+      are the d missing cyclic erosion letters.  Their exact values are the
+      meets/unions of the last t and first q+1-t owners, 1<=t<=q, and their
+      chronological order requires d+1 additional deepest-row wall cuts.  A
+      genuine cyclic circulation with a connected allowed-turn Euler circuit
+      avoids this bookkeeping.  Separately, once a trace-two controller
+      skeleton is fixed, distinct subset targets need only named eligible
+      cell occurrences with the correct interval-union value, base
+      eligibility, and same-occurrence controller footprint.  There is no
+      cross-value Hall problem.  Repeated labelled copies of one subset
+      retain Hall inside that value fibre.
+
+1527. The positive result in item 1525 does not extend to one naive TU
+      chronology matrix.  The state-incidence matrix of D_d(k,r) augmented
+      by middle-owner rows has a determinant-two erosion-admissible cycle
+      whenever
+
+          2<=d<=r-1,   k>=r+2d+1.
+
+      The construction uses the cyclic label word
+
+          a_0,...,a_(r-1), c_1,...,c_d,
+          a_0,...,a_(r-1), f_1,...,f_(d+1),
+
+      whose length-(r+d) blocks are injective and whose owner
+      {a_0,...,a_(r-1)} occurs twice.  It applies at (k,r,d)=(15,8,3).
+      Thus the exact positive hierarchy is: fixed ordered erosion supports
+      are interval-TU; the fixed-integral-z ordering fibre is a union of
+      fixed-tree TU transportation pieces; full owner/trace chronology
+      selection is not TU in general.  The complete proofs and independent
+      audits are in
+
+          THREAD_AD_EROSION_SAFE_DEBRUIJN_AND_OWNER_OCCURRENCE_FLOW_20260728.md.
+
+## 349. Full-ideal bulk capacity and the exact terminal-reserve gate
+
+1528. A trace-two residual extension is exactly one bulk-terminal controller
+      word.  For available cells `c_S` with intervals `I_(c_S)`, it consists
+      of nonempty entries `Q_p` such that every entry is generated by at most
+      two active owners, every controller is active inside its selected
+      occurrence, and
+
+          union_(p in J_L) Q_p = L,
+          union_(p in I_(c_S)) Q_p = S.
+
+      For fixed `Q`, a cell has the unique value `union_(p in I_c)Q_p`.
+      Hence distinct target values have disjoint cell neighbourhoods:
+      targetwise existence remains, but all cross-target Hall competition
+      disappears.  This is the exact right-degree-one collapse.
+
+1529. The bulk/terminal split has an exact common-reserve normal form.  For
+      prescribed non-singleton bulk cells define the exposed core
+
+          B_p=E_p cap (cap active fixed labels) cap (cap active bulk labels).
+
+      Choose one nonempty lower reserve `M_p subseteq B_p` which already
+      realizes every protected and bulk union.  A terminal target `T` may be
+      placed at an available singleton position `p` precisely when that
+      cell is base-eligible and
+
+          M_p subseteq T subseteq B_p,
+
+      with the required protected containments.  Let `H` be the positions
+      where the exposed bulk meet needs more than two generators or violates
+      a protected containment.  The terminal round exists exactly when its
+      compatibility graph has a matching saturating all terminal targets
+      and using all of `H`, equivalently, for every target shore `X`,
+
+          |N(X)| >= |X|,
+          |N(X) cap H| >= |X|+|H|-|R_term|.
+
+      The earlier weighted normalized-matching certificate proves the first
+      cut by one fractional matching; it does not in general certify the
+      compulsory-`H` cut.  At a matched position the final entry is `T` and
+      contains `M_p`; at an unmatched position it is `B_p` and contains the
+      same `M_p`.  Thus this is genuinely one terminal reserve, not separate
+      depthwise choices.
+
+1530. There is a sharp raw-cell lower bound on every *complete lower-ideal*
+      bulk/terminal package at the Pascal target length.  Put
+
+          r=ceil(k/2),  W=binom(k,r),
+          Lambda=sum_(s=1)^(r-1) binom(k,s),
+
+      and let `d` be least with
+
+          Lambda <= dW+binom(d+1,2),       P=W+d.
+
+      Any length-`P` word covering all `W` rank-`r` targets realizes every
+      lower target on an interval of length at most `d`.  With
+
+          sigma=dW+binom(d+1,2)-Lambda,
+
+      the least interval cap not excluded by cell count is
+
+          ell_cnt=d-1  if sigma>=W+1,
+                  d    if sigma<W+1.
+
+      If `n_j` selected lower witnesses have physical length `j`, then
+
+          n_j >= (P-j+1-sigma)_+.
+
+      For `k=15`, `(W,Lambda,d,P,sigma)=(6435,16383,3,6438,2928)` and
+
+          n_1>=3510,  n_2>=3509,  n_3>=3508.
+
+      Thus length two is impossible for a full length-6438 compiler.  This
+      census must not be transferred unchanged to a proper residual family
+      after cells have been reserved.
+
+1531. The frozen Hall-29 artifact gives two distinct finite obstructions.
+      After reserving the 1,489 peeled pairs, the conditional kernel has 35
+      targets and only six unreserved cells; all six have physical length
+      three and each has two nested candidates.  A fixed controller word
+      realizes at most one candidate per cell, so retaining the reservations
+      requires at least 29 additional distinct unreserved eligible
+      addresses.  Independently, before peeling the audited shore has 1,524
+      targets and a 1,495-cell neighbourhood.  Therefore even releasing the
+      reservations cannot repair the unchanged candidate graph; at least 29
+      addresses outside that old neighbourhood must become newly eligible.
+      This rules out controller/private-reserve postprocessing of this fixed
+      graph, not rethreading that changes the graph.
+
+1532. The smallest surviving constructive gate is a co-designed Pascal
+      carrier and controller word selecting all `Lambda` lower targets,
+      splitting them into non-singleton intervals of cap at most `d` and a
+      terminal singleton family, leaving one common reserve as in item 1529,
+      and satisfying every flag, spill, footprint, and compulsory-hot cut.
+      It is unproved.  No length-`P` universal word, Hall-zero `k=15`
+      compiler, or proof of `nu(k)=B(k)` follows.  The self-contained proofs,
+      exact Hall-29 table, and audit-safe scope are in
+
+          THREAD_H_SHORTEST_BULK_SKELETON_AND_K15_RESIDUAL_CERTIFICATE_20260728.md.
+
+## 350. Canonical exact conclusion and the corrected Shadow--Braid frontier
+
+1533. The current result is now stated in one self-contained note:
+
+          MATHEMATICAL_CONCLUSION_EXACT_FRONTIER_20260728.md.
+
+      The theorem is the deadline lower bound `nu(k)>=B(k)` for every `k`;
+      equality is certified through `k=14`; and the first open case is
+      `k=15`, where `(W,d,B)=(6435,3,6438)` and the authoritative frozen
+      compiler has Hall deficiency 29.  The correct asymptotic is
+
+          d(k)=sqrt(pi*k/8)+O(1).
+
+1534. The lower-bound proof requires all three deadline facts: monotonicity
+      of the first-middle endpoints, uniqueness of a middle target at a
+      common endpoint, and the resulting depth cap
+
+          f_i <= min(L-W,L-i+1).
+
+      Omitting the depth cap leaves a real gap in the displayed cell-count
+      inequality.
+
+1535. In the flat-carrier form `D^d A=T`, residence is characterized exactly
+      by internal coordinate runs of length at least `d+1`.  For a Johnson
+      carrier, every interior physical letter contains the forced pair
+
+          {alpha_j,beta_(j-d-1)}.
+
+      The pair collapses precisely at a minimum-length run.  This explains
+      why threshold residence, rather than very long residence, supplies the
+      singleton-capable compiler cells seen in the exact certificates.
+
+1536. An abstract SDR in the erosion envelopes is not by itself an upper
+      bound.  All chosen short cells must be induced simultaneously by one
+      common physical word `A` retaining `D^d A=T`.  The exact global state
+      is equivalently a next-occurrence ordered partition evolving by
+      remove-first-block and stable reinsertion.  This is the compatibility
+      absent from an arbitrary SCD or minimum monotone Venn diagram.
+
+1537. The missing sufficient theorem is therefore a cut-aware Shadow--Braid
+      theorem: one Pascal-recursive chronology must retain residence, every
+      upper target, and one physical integral lower compiler.  At component
+      joins, protected occurrences must satisfy the label budgets of item
+      1526; scalar load two is false by items 1523--1525.  Proving this
+      strengthened theorem would establish `nu(k)=B(k)`.  Its failure would
+      refute only this normal form, not the formula.
+
+1538. The peeled `k=15` Hall-29 core has an exact positive-defect UNIT-pin
+      census.  A pin `(p,x)` asks to add coordinate `x` to controller state
+      `P_p` and select it physically when exactly one of the four defining
+      middle states omits `x`.  The model contains 3,807 positive-defect
+      records; the 238 mandatory-defect records are excluded.  Service is
+      the matching number of distinct targets to distinct physical cells,
+      not raw target degree: `(3025,4)` touches three targets but all at one
+      cell, so its service is one.  There are 1,602 pin types, of which
+      1,594 have service one and exactly eight have service two.  Their
+      conflict graph is a triangle, an edge, and three isolates, so at most
+      five double services coexist.  Hence `t` pins expose at most `t+5`
+      addresses, and 29 addresses require at least 24 pins.  An explicit
+      24-pin witness is complementary to one target at each of the six old
+      cells, avoids all 1,489 reservations, and attains new-cell length
+      profile `(7,15,7)`.  This is not a legal rethreading.  The exact note
+      and verifier are
+
+          MATH_K15_HALL29_UNIT_PIN_COVER_20260728.md
+          scratch/audit_k15_hall29_unit_pin_cover.py.
+
+## 351. Exact occurrence-level joining and the degree-two separation
+
+1539. For a fixed nonadaptive catalogue of actual transition-pair
+      occurrences, component joining has an exact signed spanning-tree
+      certificate.  A contact option `e` deletes label multiplicities
+      `d_e(S)`, creates `a_e(S)`, and uses two named pair occurrences.  Binary
+      choices `y_e` must form a component spanning tree, use every occurrence
+      at most once, and satisfy
+
+          m_S + sum_e (a_e(S)-d_e(S)) y_e >= 1
+
+      for every protected lower or upper transition label.  On a rigid
+      contact tree these conditions are necessary and sufficient.  The
+      stronger destructive budget
+
+          sum_e max(d_e(S)-a_e(S),0) y_e <= m_S-1
+
+      is prefix-safe.  Because occurrence-disjoint contacts form a matching,
+      not a matroid, this is not ordinary graphic/partition matroid
+      intersection.
+
+1540. The theorem is genuinely two-sided.  An incident diamond copy has a
+      port `(x,y)` recording its lower deletion and upper insertion.  Two
+      individually safe transition pairs in the opposed `2 by 2` port
+      rectangle can have no cross-pairing safe on both shores.  Consequently
+      shared owner type and scalar label load do not imply even one legal
+      contact option; all catalogues must be built from actual four-port
+      occurrences.
+
+1541. There is a sharp degree-two separation.  In an exact owner 2-factor,
+      every owner has one forced transition pair belonging to one component.
+      Distinct components therefore have no same-owner pair occurrences and
+      the intercomponent contact catalogue is empty.  This includes the
+      canonical PBBS step-two factor.  Such components cannot be joined by
+      later local re-pairing: a physical degree-two-preserving circuit such
+      as a realized `C6` must fuse them directly, or the table must be built
+      connected from the outset.  For repeated-owner tables, every partition
+      into `b` component blocks obeys the necessary occurrence-capacity cut
+
+          b-1 <= sum_A min(floor(t_A/2), t_A-max_j t_(A,j)).
+
+      The full proof is
+
+          THREAD_A_BUDGETED_DIAMOND_TRANSITION_TREE_20260728.md.
+
+## 352. The maximal erosion is the lower Johnson controller
+
+1542. A resident rank-`r` Johnson middle carrier has a canonical lower
+      controller.  If
+
+          T_(i+1)=T_i-alpha_i+beta_i
+
+      and every internal coordinate run in `T` has length at least `d+1`,
+      put
+
+          P_j=intersection_(max(0,j-d)<=i<=min(j,W-1)) T_i.
+
+      In the flat interior `|P_j|=r-d`, consecutive `P_j` are
+      Johnson-adjacent, and the transition identities are
+
+          P_j \ P_(j+1)={alpha_j},
+          P_j \ P_(j-1)={beta_(j-d-1)}.
+
+      Thus the maximal erosion is itself one rank-`(r-d)` Johnson walk, not
+      merely a family of unrelated legal envelopes.
+
+1543. Every physical word with `D^d A=T` is a pinning of that controller:
+
+          (P_j\P_(j-1)) union (P_j\P_(j+1))
+              subseteq A_j subseteq P_j.
+
+      On an internal maximal run `[u,v]` of coordinate `x` in `P`, the
+      positions carrying `x` in `A` must include `u,v` and have consecutive
+      gaps at most `d+1`; this condition is also sufficient coordinatewise.
+      The incoming and outgoing port coordinates coincide exactly at a
+      one-vertex controller run, equivalently a minimum length-`d+1` middle
+      run.  These are the singleton-capable compiler locations.  Hence the
+      true lower freedom is the placement of extra pins between forced port
+      endpoints.
+
+1544. A from-scratch audit of `answers/k09.word` through `answers/k14.word`
+      verifies the flat controller rank, every Johnson transition identity,
+      forced-port containment, and the complete endpoint/gap pin rule.  The
+      theorem and exact verifier are
+
+          MATH_EROSION_JOHNSON_CONTROLLER_DUALITY_20260728.md
+          scratch/audit_erosion_johnson_controller.py.
+
+1545. The controller also has a coordinatewise congruence invariant.  If
+      `t_x` and `p_x` are the middle and controller incidence counts of
+      coordinate `x`, and `i_x` is its number of internal middle runs, then
+
+          p_x=t_x-d i_x.
+
+      Boundary runs lose no incidence under the clipped maximal erosion;
+      every internal run loses exactly `d`.  For an exact middle deck,
+
+          p_x = binom(k-1,r-1)  (mod d).
+
+      Hence any proposed braid realizing named new controller pins must
+      include compensating deletions so every coordinate change is a
+      multiple of `d`, besides keeping every controller state at rank
+      `r-d`.
+
+## 351. The depth-three run footprint and the thirteen-cell Hall-29 bulk tax
+
+1538. The word "singleton" in item 1535 needs a precise distinction.  Every
+      source position is a physical length-one cell, whose value may have
+      any rank.  Minimum carrier runs characterize positions capable of a
+      **one-coordinate letter**.  For a depth-three Johnson carrier
+
+          T_(i+1)=T_i-{alpha_i}+{beta_i},
+
+      put
+
+          E_j=intersection_(i=max(1,j-3))^(min(W,j)) T_i,
+
+          F_j={alpha_j if j<=W-1}
+              union {beta_(j-4) if j>=5}.
+
+      Every factor `D^3 A=T` satisfies
+
+          F_j subseteq A_j subseteq E_j.
+
+      Conversely, with all other letters equal to their maximal envelopes,
+      `A_j=S` is possible exactly when
+
+          empty != F_j subseteq S subseteq E_j.
+
+      For simultaneous prescribed positions the exact extra condition is
+      that, for every `x in T_i`, the four-position window `[i,i+3]` retain
+      an `x`-carrying envelope position.  Pairwise distance at least four is
+      a clean sufficient specialization.
+
+1539. The one-coordinate-capable positions are exactly the eight factor
+      boundaries and the factor positions indexed by terminal indices `j`
+      of internal minimum runs, equivalently
+
+          alpha_j=beta_(j-4).
+
+      Thus their number is `8+rho_4(T)`.  Universality of the 15 rank-one
+      targets forces their labels to cover all coordinates and in particular
+      `rho_4(T)>=7`.  This does not amplify via the witness-row census:
+
+          n_1>=3510,  n_2>=3509,  n_3>=3508
+
+      counts physical interval lengths, not letter ranks.  The depth-three
+      erosion-envelope ranks are
+
+          8,7,6,5,...,5,6,7,8.
+
+      Hence only six physical singleton positions can carry a target of rank
+      at least six, and only four can carry rank seven.
+
+1540. Retain the 1,489 peeled Hall-29 reservations and the six old residual
+      cells with their six displayed rank-six/rank-seven candidate pairs.
+      Any completion adding exactly 29 new cell addresses must choose one
+      old target per pair and match the remaining 29 targets bijectively to
+      29 available, base-eligible new addresses in one common trace-two
+      controller word.  This selector/controller condition is necessary and
+      sufficient for that explicitly retained architecture.  Since the
+      residual rank profile is
+
+          4^9 5^1 6^17 7^8,
+
+      25 targets have rank at least six.  The old cells cover at most six,
+      and new physical singleton cells cover at most six more.  Therefore at
+      least
+
+          25-6-6=13
+
+      of the 29 new addresses must have physical length two or three.  At
+      most 16 may be terminal singleton cells.  The bound is sharp only in
+      the rank-envelope relaxation; no common reserve or controller word
+      attaining it is known.  Independently, at least `3510-16=3494` of a
+      full compiler's selected length-one witnesses must use targets outside
+      the 35-target residual family.
+
+1541. The frozen carrier
+
+          scratch/k15_doubletrans_05_213_hall29.json
+
+      has exactly 1,145 internal minimum four-runs, hence 1,153
+      one-coordinate-capable positions and 5,285 compulsory two-coordinate
+      footprints.  Before reservations are removed, the 35 residual labels
+      have 81 singleton-cell edges on 81 distinct positions: nine rank-four
+      targets of degree nine.  All 81 positions have two-coordinate
+      footprints and all are reserved.  No residual target has an edge at
+      any of the 1,153 minimum-run/boundary one-coordinate positions.  Thus
+      the fixed-envelope, fixed-footprint minimum-run bank exposes zero
+      residual singleton edges, and the unreserved residual singleton graph
+      is empty.
+
+1542. The smallest surviving local gate is consequently mixed-row, not a
+      singleton absorber: construct one retained-architecture 29-address
+      selector with at least 13 length-two/three bulk cells, at most 16
+      terminal singleton cells, and one common reserve satisfying every
+      middle, retained-owner, protected, target-union, run-hitting, deadline,
+      and trace-two footprint condition.  It is unproved.  The full theorem,
+      proof, frozen counts, and reproducible hashes are in
+
+          THREAD_H_D3_RUN_BOUNDARY_AND_H29_MINIMAL_EXPOSURE_20260728.md.
+
+## 353. The sharp Hall-29 UNIT cover in controller-port language
+
+1546. In the frozen `k=15,d=3` architecture, the maximal erosion is the
+      lower Johnson controller.  With zero-based artifact indices, a
+      positive UNIT exposure `(p,x)` is simultaneously a demanded new
+      controller incidence and a demanded physical pin:
+
+          x in A'_p subseteq P'_p,
+
+      where the old `P_p` omits `x` because exactly one of its four defining
+      middle states omits `x`.  A physical word is not an arbitrary subset
+      of these demands.  At every controller position it contains the
+      incoming and outgoing ports, and on each internal coordinate run it
+      contains both endpoints with consecutive pin gaps at most four.  The
+      exact one-sided boundary-run conditions are recorded in the theorem
+      file.
+
+1547. Service for a fixed pin is a target/cell matching number.  The exact
+      1,602-pin census is `1594` services of size one and eight of size two;
+      no service has size three.  The eight double services have conflict
+      graph `K_3 disjoint K_2 disjoint 3K_1`, hence at most five coexist.
+      Therefore every positive-defect UNIT cover of 29 distinct targets at
+      29 distinct cells uses at least 24 serving pins.  This lower bound is
+      sharp even after requiring the six omitted targets to be selectable,
+      one each, at the six surviving old cells.  The explicit complementary
+      certificate has 24 pins, 29 unreserved new cells, and physical-length
+      profile
+
+          (n_1,n_2,n_3)=(7,15,7).
+
+      Thus it has 22 nonsingleton cells and simultaneously clears the
+      independent thirteen-nonsingleton rank tax.  The conjunction of those
+      two incidence relaxations is not the remaining obstruction.
+
+1548. Controller incidence has a global arithmetic invariant.  For every
+      coordinate `x`,
+
+          p_x = binom(14,7)-3 i_x = 3432-3 i_x,
+
+      where `i_x` is its internal middle-carrier run count.  Consequently
+      every `p_x` is divisible by three.  Relative to the frozen controller,
+      let `delta^+_(p,x),delta^-_(p,x)` mark inserted and deleted incidences.
+      Every exact rethread obeys
+
+          sum_x delta^+_(p,x) = sum_x delta^-_(p,x)       for every p,
+
+          sum_p(delta^+_(p,x)-delta^-_(p,x)) = 0 mod 3   for every x.
+
+      The displayed certificate's demanded insertion histogram is
+
+          a_0=3, a_2=1, a_3=2, a_4=4, a_5=4, a_6=1,
+          a_8=1, a_9=2, a_10=3, a_12=2, a_13=1,
+
+      with every other `a_x=0`.  Its 24 demanded positions and 24 uniquely
+      missing middle-state indices are distinct.  An exact-demanded-only
+      lift would therefore need one deletion at each demanded position and
+      deletion totals `d_x congruent a_x (mod 3)`.  This is necessary, not
+      sufficient.
+
+1549. The exact positive lift gate is one common controller `P'` and pinning
+      `A'` that satisfy simultaneously: rank-five flat states and their
+      boundary ranks; the statewise and coordinatewise compensation laws;
+      rank-eight four-window unions exhausting the middle deck; Johnson
+      chronology; every long upper window; all short target, old, reserved,
+      owner, and protected windows in `A'`; the forced controller ports;
+      the exact internal and boundary run-gap rules; all 1,489 reservations;
+      the six old cells; trace two; common reserve; and deadlines.  The old
+      atlas must be recomputed on the final `P',A'`.
+
+      A 24-pin physical lift is sufficient, but failure of every 24-pin
+      cover does not close the UNIT lane: compatibility may require 25--29
+      serving pins.  A negative theorem must exclude every admissible cover
+      size 24 through 29 or prove reduction to size 24.  Mandatory-defect,
+      non-UNIT, and outside-atlas moves remain outside this no-go scope.
+      No isolated one-middle-state edit can preserve the exact deck, because
+      its replacement rank-eight set already occurs elsewhere.  The fully
+      audited theorem, explicit certificate, and verifier are
+
+          MATH_K15_HALL29_UNIT_PIN_COVER_20260728.md
+          THREAD_H_D3_RUN_BOUNDARY_AND_H29_MINIMAL_EXPOSURE_20260728.md
+          scratch/audit_k15_hall29_unit_pin_cover.py.
+
+## 354. Canonical conclusion audit and the exact common physical compiler
+
+1550. The current concise conclusion is
+
+          MATHEMATICAL_CONCLUSION_EXACT_FRONTIER_20260728.md.
+
+      It records only the proved general lower bound, the exact certificates
+      through `k=14`, and the open `k=15` Hall-29 frontier.  The all-`k`
+      upper bound remains the corrected Shadow--Braid target, not a theorem.
+      The scalar deadline proof must include the distinct-deadline depth cap
+
+          f_i <= min(L-W,L-i+1);
+
+      monotonicity by itself does not yield the sharp count.
+
+1551. The residence statement needs one boundary qualification.  Internal
+      coordinate runs of length at least `d+1` are necessary and sufficient
+      for a coordinatewise binary preimage under `D^d`, allowing empty
+      physical letters.  In the nonzero-word problem every physical
+      position must additionally have a nonempty legal erosion envelope.
+      This is automatic for the resident Johnson carriers used in the
+      certificates because the flat erosion rank is `r-d>0`, but it is false
+      for arbitrary `T`; `T=({1},{2})` at depth one forces the middle source
+      letter empty.
+
+1552. An abstract lower-layer SDR is not the exact compiler.  For a fixed
+      physical pin system `Pi`, put
+
+          Q_x=[0,W+d-1] minus union_(c:x notin S_c) I_c.
+
+      One common nonzero word realizes all pins if and only if every positive
+      pin interval `I_c` meets `Q_x` for each `x in S_c`, and every physical
+      position belongs to at least one `Q_x`.  The maximal realization is
+      `A_p={x:p in Q_x}`.  Combined with the erosion-controller port/gap
+      theorem and `p_x=t_x-d i_x`, this is the exact lower half of the
+      corrected Shadow--Braid target.  Separate rankwise Hall matchings do
+      not imply it.
+
+## 355. Rank-eight clean-C6 Shadow--Braid and the 24-UNIT obstruction
+
+1553. Specializing the clean C6 to the physical rank-eight complement shore
+      gives, for a six-set D and indices modulo three,
+
+          X_i=D+{a_(i+2),c},
+          Y_i=D+{a_(i+1),a_(i+2)}.
+
+      The old seam is X_i->Y_i and the new seam is
+      X_i->Y_(i+1).  Their rank-seven lower intersections agree
+      pointwise:
+
+          X_i cap Y_i = X_i cap Y_(i+1) = D+{a_(i+2)}.
+
+      The three rank-nine upper unions are cyclically permuted.  Thus one
+      clean C6 preserves both complete adjacent-shadow multisets exactly,
+      although only the lower shadow is pointwise fixed.  Requiring both
+      old shadows pointwise would force the old Johnson edge and make the
+      move trivial.
+
+1554. Under canonical transport of retained fragments of length at least
+      four, write Q^-_(i,b),Q^+_(i,b) for the old/new four-owner erosion
+      masks using b=1,2,3 owners to the right of seam i.  The
+      three-left/one-right mask is fixed.  Each of the other two old/new
+      pairs lies in the same fixed seven-set above, while the old mask has
+      size at least five.  Therefore
+
+          |Q^+_(i,b) minus Q^-_(i,b)| <= 2   for b=2,3.
+
+      One seam creates at most four new erosion incidences and one clean C6
+      at most 12.  This uses only the Johnson geometry and positive
+      depth-three residence.  If full G_3 trace-rainbow safety is also
+      required, a gainable UNIT trace must be 1110; hence there is at
+      most one UNIT pin per mutable mask, two per seam, and six per C6.
+
+1555. The corrected frozen Hall-29 UNIT theorem requires at least 24 serving
+      pins for 29 distinct target/cell records, and t pins serve at most
+      t+5 disjoint records.  Consequently one transported fixed-endpoint
+      clean C6 serves at most 17 such records (at most 11 under full G_3)
+      and cannot be the whole UNIT repair.  The explicit 24-pin witness is
+      even more dispersed: its pins occupy 24 distinct positions and no two
+      are consecutive.  Under the tail-anchored transported address map, the
+      three consecutive mutable-position pairs of one C6 can therefore meet
+      at most three displayed pins.
+
+1556. For a specified audited record (T,chi,p,x), local pin gain is exact:
+      p must be one of the two mutable phases; the old four-owner window
+      must omit x once; and all four new owners must contain x.  After
+      the move, recompute the exact masks.  The record is a carrier
+      candidate precisely when
+
+          M'_chi subseteq T subseteq union_(u in I_chi) Q'_u,
+          T cap Q'_u != empty for every u in I_chi.
+
+      Every new seam must also pass the nine crossing positive-residence
+      inequalities beta_s != alpha_t for s<t, t-s<=3.  The old
+      one-defect label alone is not sufficient because the C6 can change
+      the mandatory core or another nonempty-letter hit.
+
+1557. All selected occurrences still have to live in one physical word.
+      For the final chronology define its maximal erosions Q'_p.  Given
+      every selected target/protected interval pair (I,S), put
+
+          Z_x={p:x in Q'_p}
+              minus union_((I,S):x notin S) I.
+
+      One unrestricted nonzero word with D^3 A=T', all exact interval
+      unions, and every prescribed positive pin exists if and only if:
+
+          every prescribed (p,x) has p in Z_x;
+          [i,i+3] meets Z_x for every x in T'_i;
+          I meets Z_x for every x in S and every selected (I,S);
+          union_x Z_x is the full source-position set.
+
+      The maximal witness is A_p={x:p in Z_x}.  Final adjacent lower
+      shadows must be included among the protected intervals; adjacent
+      upper shadows then follow automatically from D^3 A=T'.  In the
+      trace-two architecture one instead existentially chooses at most two
+      controller-eligible active owner labels at each position, takes their
+      meet with Q'_p, requires containment in every selected or protected
+      interval label active there, and imposes the same positive-hit
+      conditions.  Testing
+      independent rankwise rows is invalid.
+
+1558. **Corrected by Section 365.**  The former `4,5,6` / 15-cell count sees
+      only the visibly changed erosion masks and is not a safe bound for
+      exact compiler eligibility: a cell's mandatory-coordinate mask also
+      depends on carrier tuples outside its own physical interval.  At
+      `d=3`, the full row-`h` dependency is `[s-6,s+h+3]`, giving at most
+      `9,10,11` starts and 30 cells per seam per shore.  The Hall-29 shore
+      needs net Shadow current at least 29, and every
+      other Hall shore plus the full common-word/controller system must
+      survive.  Thus one actual new address is neither forced nor ruled out;
+      it has the exact criterion in items 1556--1557.  What is ruled out is
+      one C6 as a complete 24-UNIT repair.  Non-UNIT defects, endpoint-moving
+      relinearization, or correlated multi-C6 compounds remain outside this
+      no-go.  Remaining inside the complete finite carrier also requires the
+      depth-two and deeper lower/upper last-witness seam ledgers; adjacent
+      shadows and the common word do not imply those ledgers.  Full proofs
+      and caveats are in Section 10 of
+
+      THREAD_R_PBBS_DIAMOND_C6_H_SAFE_LINEARIZATION_20260728.md.
+
+## 378. Odd rainbow-necklace quotient-to-compiler theorem
+
+1692. For `k=2m+1`, rotation is free on ranks `m` and `m+1`; each quotient
+      has
+
+          N=binom(k,m+1)/k=Cat_m
+
+      vertices.  Colour a Johnson edge `AB` of rank `m+1` by `A cap B`.
+      Selecting exactly one edge orbit of every rank-`m` colour orbit gives
+      `N` quotient edges.  Weighted degree at most two (loops count twice)
+      then forces degree exactly two at every one of the `N` upper
+      necklaces.  Connectedness makes the selected quotient one multigraph
+      cycle.
+
+1693. Give each oriented quotient dart its cyclic sheet displacement.  The
+      voltage `v` around a component is gauge invariant up to sign.  A
+      quotient component of length `n` lifts to exactly `gcd(k,v)` physical
+      cycles, each of length `nk/gcd(k,v)`.  Thus one connected quotient
+      cycle has one physical Hamilton lift iff `gcd(k,v)=1`.  The colour
+      selection then makes all physical rank-`m` intersections occur exactly
+      once.  The conventions include the `k=3` one-loop quotient and the
+      `k=5` two-parallel-edge quotient.
+
+1694. This central existence problem is already solved.  The
+      Merino--Mička--Mütze rotation-symmetric middle-levels theorem
+      (arXiv:2007.07164) gives, for every odd `k` and every unit shift, a
+      `k`-fold symmetric Hamilton cycle.  Contracting its rank-`m` vertices
+      gives unconditionally a strict-spiral Johnson Hamilton cycle with
+      perfect lower-q1 rainbow and the prescribed unit voltage.  In
+      particular degree two, lower q1, quotient connectivity and voltage are
+      not open gates at `k=15` or at general odd `k`.
+
+1695. In seam gauge the carrier has
+
+          X_(i+N)=rho^v X_i,
+          T_(jN+i)=rho^(jv) X_i.
+
+      A quotient union/intersection witness for one actual necklace orbit
+      generates all of its physical rotations because `v` is a unit.  This
+      is a cyclic statement.  After a cut, the translate realizing a fixed
+      physical target can be precisely the deleted crossing window; one
+      canonical orbit witness is not a cut-survival certificate.  Off the
+      central layers, actual Burnside orbits must be used for composite `k`.
+
+1696. Cyclic `d`-residence makes every cut linearly factorable.  For the
+      maximal erosion `P` of a cut path `R`,
+
+          D^d P=R,
+          (D^(d-q)P)_(i+q)=intersection_(h=0)^q R_(i+h)
+
+      for every noncrossing `q<=d` window.  Hence the Opus q2/q3 tests are
+      exact maximal-envelope labels, not a literal compiler.  Punching one
+      common word can erase their witnesses; ranks below `r-d` are not
+      supplied; and complete intersection support is not necessary when a
+      target is compiled elsewhere.
+
+1697. Fix an injective assignment `phi` of every lower target `S` to an
+      interval of length at most `d`, and define
+
+          Z_x={p:x in P_p} minus union_(S:x notin S) phi(S).
+
+      One nonempty common word realizes `phi` and the central row iff
+
+          phi(S) cap Z_x != empty       for x in S,
+          [i,i+d] cap Z_x != empty      for x in R_i,
+          union_x Z_x = [0,W+d-1].
+
+      The maximal word is `A_p={x:p in Z_x}`.  Raw target--interval Hall is
+      only necessary.  Standard PCSH is the corresponding exact criterion
+      in its pinned/literal normal form; arbitrary interval compilation
+      requires this generalized common-`Z` formulation.
+
+1698. The exact remaining modular theorem is EXTRA-RNQC: choose one of the
+      already-existing symmetric middle-levels bases so that its projection
+      is cyclically `d(k)`-resident, has complete upper-q1 and deeper cyclic
+      union support, and has one physical cut which both retains every upper
+      target and satisfies the exact common-word compiler.  This implies a
+      literal word of length `W+d(k)` and hence `nu(k)=W+d(k)`.  The logically
+      irreducible bridge for a fixed resident upper-complete carrier is:
+
+          one cut is simultaneously upper-safe and exact-PCSH/common-A.
+
+      Cyclic residence is a stronger carrier-search gate, not logically
+      necessary after an exact compiled word has already been exhibited.
+
+1699. The Opus selector interface has a P0 bug.  `cpsat.py` omits quotient
+      self-loop choices, while `equi2.py` retains them, but `cutcompile.py`
+      decodes bare `cpsat` integer IDs using the `equi2` table.  The counts
+      are respectively `140/135` at `k=9`, `630/625` at `k=11`, and
+      `12012/11998` at `k=15`, with first divergences at zero-based IDs
+      `3,4,6`.
+      Certificates must store explicit choice tuples/directed phases plus an
+      enumeration digest.  This breaks the current ID-decoding route, not
+      the quotient theorem or an independently full-verified literal word.
+      MMM removes the need to salvage these IDs for the central base, but
+      any extra-gate witness still needs provenance-correct decoding and new
+      residence, upper-window, cut, and compiler audits.
+
+1700. Full hypotheses, proofs, the middle-levels comparison, the exact cut
+      warning, and the selector correction are in
+
+          MATH_THEOREM_ODD_RAINBOW_NECKLACE_QUOTIENT_COMPILER_20260728.md
+          MATH_MERINO_MICKA_MUTZE_STRICT_SPIRAL_PROJECTION_20260729.md
+          AUDIT_OPUS_EQUIVARIANT_QUOTIENT_CONSTRUCTION_20260728.md.
+
+1701. The fixed shift-one `k=15` cycle was independently replayed on the
+      H100 CPU, without search.  It has `W=6435`, quotient length 429, exact
+      voltage one, 429 distinct first-block orbits, and 6,435 distinct lower
+      first-shadow intersections.  Its extra-support census is
+
+          upper q1: 4455/5005, missing 550;
+          lower q2: 4455/5005, missing 550;
+          lower q3: 2475/3003, missing 528;
+          all upper ranks 9..15: 8611/9949, missing 1338.
+
+1702. Its cyclic coordinate-run minimum is two, with 1,500 length-two and
+      480 length-three runs.  At depth three these are 1,980 residence
+      defects.  One cut can make at most one cyclic run per coordinate an
+      endpoint run, so every cut retains at least 1,965 internal defects.
+      A cut also cannot create any missing cyclic upper interval.  Hence this
+      canonical strict spiral has no residence-and-upper-safe cut.  This is a
+      certificate-specific obstruction, not a no-go for all symmetric
+      Merino--Mička--Mütze cycles or all unit shifts.
+
+1703. The structural lower bound on a coordinate one-run is only two: a
+      length-one run would repeat its two incident lower colours.  The
+      audited cycle attains that sharp bound.  Its stdout was independently
+      replayed, but the dynamically downloaded `combos.org` zip and
+      normalized cycle were not retained or hashed, so the numerical replay
+      is not yet a self-contained local certificate.
+
+1704. The exact projection proof, closed/open constraint table, full
+      short-run histogram, lower-compiler scope caveat, checker hash, and
+      frozen stdout are
+
+          MATH_MERINO_MICKA_MUTZE_STRICT_SPIRAL_PROJECTION_20260729.md
+          scratch/audit_knuth_symmetric_middle_k15.py
+          scratch/audit_knuth_symmetric_middle_k15.out.
+
+1705. The `k=11` quotient overlay makes the extra-gate repair visibly
+      global.  The published MMM shift-one factor and the fresh passing
+      `equi2_k11_rnd34` factor share only one of 42 choices: 41 lower-orbit
+      choices change, and their 82-edge symmetric difference is one
+      alternating component spanning all 42 quotient vertices.  The fresh
+      factor and the carrier `D^3(sigma_sat_k11_465)` share no choice; their
+      84-edge symmetric difference is again one spanning alternating
+      component.  The second comparison was independently recomputed from
+      the frozen word and selector.  Therefore direct component switching
+      between either displayed pair is necessarily quotient-global.  This
+      does not exclude a chain of small switches through intermediate
+      factors.  The comparison tool is
+
+          scratch/compare_knuth_and_good_quotient.py.
+
+1594. Claude's external quotient-CEGAR artifacts at `k=9,11` have now been
+      replayed independently without a solver.  The new 128- and 465-letter
+      words are exact alternative witnesses for the already-established
+      equalities `nu(9)=128` and `nu(11)=465`.  Their final equivariant
+      selections lift to single directed lower-rainbow middle cycles: at
+      `k=9`, voltage `4 mod 9` and deterministic compiler cut 2; at `k=11`,
+      voltage `2 mod 11` and cut 0.  Both literal words satisfy the exact
+      erosion compiler semantics and direct all-mask verification.  Neither
+      carrier satisfies an upper-load-two hypothesis: the quotient upper-load
+      histograms are respectively `1^7 2^2 3^1` and `1^19 2^10 3^1`.
+
+      The positive certificates are exact, but the historical searches are
+      not frozen end to end: the directory lacks final CNFs/models, complete
+      lazy-cut ledgers, solver versions/hashes, dependency locks, and any
+      `k=11` log.  The separate CP-SAT rounds 0--8 are valid but incomplete
+      regression cycles, not a `PASS`.  Moreover `equi2.cover_lower_q2`
+      omits valid same-insertion motifs: final targets 37 at `k=9` and 201 at
+      `k=11` have respectively 9 and 11 valid occurrences but satisfy none of
+      the builder's 180 and 420 emitted groups.  Thus positive endpoint audits
+      remain exact, while `UNSAT` excludes only the accumulated-template
+      submodel, not even the full equivariant/rainbow geometry.  Also,
+      `k11_carrier.txt` is exactly the
+      middle row of the older repository answer and is not the new CEGAR
+      carrier.  Full hashes, constraint audit, reuse boundary, and the
+      solver-free checker are in
+
+          MATH_AUDIT_CLAUDE_QUOTIENT_CEGAR_K9_K11_20260728.md,
+          scratch/audit_claude_quotient_cegar_k9_k11.py,
+          scratch/audit_claude_quotient_cegar_k9_k11.json.
+
+## 373. Provisional H20 rooted-socket atlas and the surviving axis-13 motif
+
+1668. The frozen route through the authoritative unique minimum-compression
+      state c0575
+
+          H21/z6 --RF(1510,5017,6136)--> H21/z6
+                 --RF(885,1393,3668)--> H20/z6
+
+      is an exact outer-Hall theorem. The matching ranks are
+
+          16362 -> 16362 -> 16363,
+
+      the contracted boundary ranks are 24->24 and 17->18, and the
+      cross-state DM gap matrix is
+
+          [[21,20,20],[20,21,20],[20,20,20]].
+
+      Every carrier is a rank-eight Johnson permutation, depth-three
+      resident, has endpoints 9901,7779, and has complete upper support
+      through q=7. The lower-hole vectors are
+
+          (4,18,9,1,0,0,0),
+          (4,18,11,1,0,0,0),
+          (4,18,11,1,0,0,0);
+
+      lower depth three is not protected.
+
+1669. The neutral braid replaces the root-1920 169/168 component by a
+      root-1801 25/24 component. The improving braid removes that whole
+      component. Its restricted profile bank changes
+
+          C + {1801,1803,1833,1835}
+          ->
+          C + {1801,1833} + {1803,1835},
+
+      with 23 common profiles. This raises restricted rank 24->25, but
+      the decisive target 1801 is nonnative: among the 25 final component
+      cells there are only 24 native traces, with 1801 absent and 1833
+      duplicated. Therefore this proves the graph rank, not a global
+      common-controller lift.
+
+1670. The H20 canonical DM shore is exactly 677/657 and consists of 20
+      unit-gap components:
+
+          161/160: 960,8217,24610
+          160/159: 8218
+          5/4:     4213,7504
+          3/2:     1103,18970
+          2/1:     2420,2575,2676,9524,17683,19568
+          1/0:     5801,13616,13620,17738,21641,29776.
+
+      Every one of its 657 right cells is native, the traces are distinct
+      and componentwise equal to all targets except the intersection root,
+      and the depth census is (36,172,449). None of the 20 roots is the
+      native trace of any of all 19,311 compiler cells.
+
+1671. The complete current root-socket census has 54 cells. In the six
+      minimal 2/1 components the exact rows are
+
+          2420 -> 2932,  cell15570/start2695, axis9
+          2575 -> 2607,  cell17804/start4929, axis5
+          2676 -> 10868, cell16890/start4015, axis13
+          9524 -> 9588,  cell16892/start4017, axis6
+          17683-> 21779, cell16881/start4006, axis12
+          19568-> 27760, cell17819/start4944, axis13.
+
+      Axes are zero based. The full 54-row atlas, including all large
+      components, is in the theorem note named below.
+
+1672. The repeated zero-based axis 13, mask 8192 (one-based coordinate 14),
+      persists physically after the H20 rethreading. The two controller
+      triples are unchanged from H21 and transported by 1120 positions:
+
+          start4015: (10788,8804,8308), child10868 of root2676;
+          start4944: (10352,11360,25696), child27760 of root19568.
+
+      Simultaneously deleting 8192 from all six letters preserves every
+      four-window middle state. For an edited triple [p,p+2], every
+      affected window starts in [p-3,p+2] and contains flank p-1 or
+      p+3, both still carrying 8192.
+
+1673. Exactly three selected native cells meet the edited triples:
+
+          cell16890 [4015,4017]: 10868 -> 2676
+          cell16892 [4017,4019]:  9588 -> 9588
+          cell17819 [4944,4946]: 27760 -> 19568.
+
+      Hence the edit is an exact 657-pin common-word neutral rebase. The
+      coordinate-13 physical-word incidence is 2145->2139 and remains
+      numerically divisible by three. This is not the maximal-controller
+      congruence and supplies no rank-five certificate. It is not a descent:
+      each root replaces its child, all six edited letters have rank four,
+      and four exterior controller boundaries cease to be Johnson.
+
+1674. The fixed-shore ledger is
+
+          657 + 15706 = 16363,
+
+      where the 15,706 complement edges use cells disjoint from the reserved
+      657-cell atlas. A fixed-shore/all-native H19 step would require
+      658+15706=16364 and a gap-19 shore. This is only one architecture:
+      changed-shore compression or a nonnative common-word repair could
+      avoid a literal current-root ear. Moreover only the 657 critical pins
+      currently share one controller; the 15,706 exterior matching has not
+      been jointly lifted. Thus H20 is provisional and does not prove the
+      finite k=15 formula.
+
+1675. The proof, complete socket tables, scope audit, and hashes are in
+
+          THREAD_H_HALL20_ROOTED_SOCKET_ATLAS_AND_REPEATED_AXIS_AUDIT_20260728.md.
+
+      The fixed H20 carrier SHA-256 is
+
+          9dd192d50e2e94dccb109fdc649fa5e13d2e4f17bac687d30547bd1bb6ddfcf1.
+
+      This lane ran no duplicate H20 enumeration; it only reconstructed and
+      audited the fixed carrier and existing descent certificates.
+
+## 375. Exact packet ladder, commuting compressors, and native forests
+
+1676. The two top Hall-20 neutral compressors have one exact set-system
+      signature, not merely a common 15-state length.  For a rank-four root
+      K, base axis x, and eight free axes C, put
+
+          Sigma(K;x,C)={K+x+U: U subset C, |U|<=2}.
+
+      It has rank-(5,6,7) counts (1,8,28), hence 37 targets and a
+      36-cell native basis.  The replacement fan
+
+          Phi(K;y;h;q1,q2,q3)
+            ={K+y, K+y+h, K+y+h+q_i: 1<=i<=3}
+
+      has counts (1,1,3), hence 5 targets and 4 basis cells.  Therefore an
+      internal fixed-root replacement has exact layer delta (0,0,-7,-25)
+      and exact shore decrement
+
+          37-5=36-4=32,
+          161/160 -> 129/128.
+
+      Packet length 15 by itself implies no such decrement.
+
+1677. The two exact instances are
+
+          c0161 = FF(1784,1799,5170):
+            K=960, x=0, C={1,2,3,5,11,12,13,14},
+            y=4, h=3, {q_i}={2,5,14};
+
+          c0163 = FF(1788,1803,3103):
+            K=8217, x=1, C={2,7,8,9,10,11,12,14},
+            y=5, h=14, {q_i}={9,10,11}.
+
+      Each old/new component overlap has 124 targets, so the old-only and
+      new-only branches have sizes 37 and 5 exactly.  Every other deficient
+      component is unchanged; each one-compressor endpoint has DM shore
+      `645/625`, and Hall remains 20.
+
+1678. Each resulting 129/128 component has the stronger punctured-ideal
+      form
+
+          I_3(K,S) minus {K+tau},
+          I_3(K,S)={K+U:U subset S, |U|<=3}, |S|=9.
+
+      The exact rows are
+
+          K=960:  S={1,2,3,4,5,11,12,13,14}, tau={1,3,13};
+          K=8217: S={2,5,7,8,9,10,11,12,14}, tau={2,12,14}.
+
+      Hence the layer vector is (1,9,36,83).  A second full star exists
+      set-theoretically iff its base axis x is not in tau, giving exactly
+      six choices.  With a fresh replacement axis, one legal second packet
+      would reach 97/96 with vector (1,9,29,58).
+
+1679. The strict star-to-fan ladder has no third rung.  After a second rung,
+      the rank-six support is K_8 plus one pendant edge y-h.  Only h is
+      adjacent to all eight other axes, but a full h-star needs seven
+      triangles h-y-w and only the three h-y-q_i triangles exist.  Thus the
+      exact strict ladder stops at 97/96.  The broader nonfolding two-rail
+      theorem gives decrement 2(p+1)=32 for p=15 and would predict
+
+          161/160 -> 129/128 -> 97/96 -> 65/64 -> 33/32,
+
+      but its fresh-rail hypotheses fail for the present identical packet
+      signature after the second rung.  The 33/32 term is only the last
+      nontrivial square-capable rung of that conditional abstract rail
+      ladder; if its hypotheses held once more, it would peel to 1/0.
+
+1680. The prospective 97/96 endpoint has the pendant Boolean square
+
+          Q(K;y,h)={K,K+y,K+h,K+y+h}.
+
+      Let B be the retained bank of rank |X|-2 and Exp_2(B) the pairs left
+      unmatched by some maximum B-matching.  Abstract rank improvement has
+      a two-pair criterion: some E_old in Exp_2(B) is hit by the old column,
+      and some possibly different E_new in Exp_2(B) is matched transversely
+      by the two new fibres.  A single common exposed pair is sufficient in
+      general and necessary only when the same B-matching is retained
+      edge-for-edge.  In that rooted duplicate-child architecture the
+      canonical fixed exposed pair is
+
+          E={K,K+y+h}.
+
+      Literal sufficiency additionally requires a retained native basis on
+      X\E, a duplicate child shrinkable to K under the protected-window
+      test, a top occurrence for K+y+h, exterior matching survival, and the
+      final all-shore Hall cut.  Size 97/96 does not imply these facts.
+
+1681. The two first compressors commute through an exact overlapping-block
+      FF diamond.  Write the original word as
+
+          A P Q R S U D
+
+      with lengths
+
+          (|A|,|P|,|Q|,|R|,|S|,|U|)
+            =(1784,4,11,4,1301,2067).
+
+      The two orders are
+
+          FF(1784,1799,5170), then FF(1788,3089,5159),
+          FF(1788,1803,3103), then FF(1784,3100,5170).
+
+      Both end at
+
+          A R U P S Q D.
+
+      This word identity holds abstractly.  Physical commutation requires
+      the explicit complete-seam condition: the adjusted arrow must retain,
+      up to translation, the original Johnson boundary states, all crossing
+      residence/protected-shadow windows, and the full compiler-cell shore
+      multiset with multiplicity.  Disjoint DM support alone is insufficient.
+
+1682. The complete seam condition holds for the certified square.  Both
+      orders compress roots 960 and 8217 and have identical middle digest
+
+          5d154551043d7b7551022d07205d70eecba4ea16c546e950f3774e09d216d97c.
+
+      Their final canonical DM shore is exactly
+
+          677/657 - 2(32/32) = 613/593.
+
+1683. A connected deficient component must now be treated as a multi-root
+      native forest.  This is a connected pair (X,Y) with root set R and a
+      one-controller bijection
+
+          tau:Y -> X\R.
+
+      Its gap is g=|R|, its native atlas matches X\R and exposes exactly R,
+      and t additional distinct native root ears raise its displayed rank
+      by t.  In the pin-preserving all-native class it is perfect iff all g
+      roots receive ears.  The structural intersection cap X need not be a
+      member of R.  Neutral fusion of forests preserves the union trace
+      atlas and adds their gaps.
+
+1684. The verified route
+
+          H20/z6 --RF(180,2764,4210)--> H20/z6
+                 --FR(123,722,4710)--> H19/z6
+
+      is the first gap-two instance.  The neutral router fuses
+
+          (161/160)_8217 + (160/159)_8218
+
+      into one connected 321/319 forest with structural intersection 8216
+      and exposed roots {8217,8218}; its 319 native traces are exactly the
+      target set minus those two roots.  The splitter remotely removes the
+      separate root-24610 161/160 component.  The final matching rank is
+      16364, deficiency 19, zero count six, and canonical DM shore 516/497.
+
+1685. Full proofs, the exact conditional/proved boundary, and artifact
+      pointers are in
+
+          MATH_THEOREM_K15_PACKET_LADDER_COMMUTING_COMPRESSORS_AND_NATIVE_FOREST_20260728.md.
+
+      Only the first shave at each top root is physically certified.  A
+      legal second packet, the 97/96 exposed-diagonal splitter, and a global
+      common-Q lift of the H19 exterior matching remain open.  No local
+      Kissat, SAT, exhaustive C++/Python search, or other heavy computation
+      was run for this update.
+
+## 363. Rooted native-basis normal form at Hall 21
+
+1594. The canonical Hall-21 compiler shore is `846/825` and decomposes into
+      exactly 21 connected gap-one components.  Every component has a unique
+      root equal to the intersection of its targets, and the maximal erosion
+      traces of its right cells are pairwise distinct and equal exactly to
+      all component targets except that root.  Thus the Hall deficit is the
+      sum of 21 literal rooted native-basis circuits, not diffuse rank loss.
+
+1595. A rooted native-basis circuit `(X,Y,rho)` is discharged by a precise
+      duplicate-child operation.  If one native child `a` acquires a second
+      physical cell, one copy can be repinned to `rho` in the same controller
+      word, every other native pin survives, and the exterior matching stays
+      disjoint, then the global matching rank rises by one.  At canonical
+      H21 there are 45 safe depth-zero atom-to-root sockets and six safe
+      depth-two child-to-root sockets, but every corresponding native child
+      occurs only once.  This proves that an immediate repin only relocates
+      the exposed root; a useful neutral router must first create a duplicate
+      or replace the basis.
+
+1596. The exact theorem and audit are
+
+          MATH_ROOTED_NATIVE_BASIS_CIRCUIT_THEOREM_20260728.md
+          scratch/audit_k15_h21_dm_components.py.
+
+## 364. Prospective DM compression reaches Hall 20
+
+1597. Exhaustive enumeration gives exactly 687 nonidentity Hall-21/six-zero
+      neutral carriers.  Ranking them by exact DM-shore compression has one
+      unique extreme: candidate 0575 has shore `702/681`, compared with
+      `814/793` for the next best and `846/825` for the median/base.  Exact
+      second-neighbourhood scans of the top five compression states find an
+      H20 move only from candidate 0575.  This is the first prospective, not
+      post-hoc, validation of the compression score.
+
+1598. The exact route is
+
+          H21 -- RF(1510,5017,6136) --> H21_(702/681)
+              -- RF(885,1393,3668)  --> H20.
+
+      Matching ranks are `16362,16362,16363`; deficiencies are `21,21,20`;
+      zero counts remain `6,6,6`.  All carriers are exact middle-deck
+      permutations, Johnson paths and depth-three resident.  Every upper
+      layer is complete.  The lower-hole vectors are
+
+          (4,18,9,1,0,0,0),
+          (4,18,11,1,0,0,0),
+          (4,18,11,1,0,0,0).
+
+1599. The neutral braid replaces only the rooted `169/168` component at
+      root 1920 by a rooted `25/24` component at root 1801; the other twenty
+      components are literally unchanged.  The splitter removes the 25/24
+      component.  Its restricted Boolean square changes from
+
+          {1801,1803,1833,1835}
+
+      to the two parallel shores
+
+          {1801,1833}, {1803,1835}.
+
+      The contracted boundary ranks are again `24->24` and `17->18`.
+
+1600. The Hall unit is also literal common-Q.  The final component bank has
+      native traces equal to the 24 nonroots and one extra copy of 1833 at
+      cells 9334 and 9599.  Clearing bit 32 on either copy changes its two
+      controller letters from `(1577,809)` to `(1545,777)` and realizes root
+      1801.  Every central window, all 657 final-DM native pins, and the other
+      24 component pins survive.  Hence one word realizes 682 pins on the
+      former 702-target shore, gap 20.  This is not yet a common compiler for
+      a full 16,363-edge matching.
+
+1601. The H20 direct one-braid neighbourhood is exhausted and contains no
+      H19 endpoint.  Its best score is `(20,6)`.  The next exact experiment is
+      the same recursion: emit Hall-20-neutral states, census their DM
+      components, and scan the strongest compression routers.  Frozen proof
+      artifacts are
+
+          MATH_K15_DM_COMPRESSION_ROUTER_H20_20260728.md
+          scratch/audit_k15_h21_h20_compression_theorem.py
+          scratch/audit_k15_h21_h20_rooted_native_common_q.py.
+
+## 371. Native grading discards the depth-zero portal
+
+1656. Let `T_0,...,T_(W-1)` be a rank-`r` Johnson path with depth-`d`
+      residence, and define its clipped maximal erosion
+
+          P_j=intersection_(i=max(0,j-d))^(min(j,W-1)) T_i.
+
+      Then
+
+          |P_j|=r-d                         for d<=j<=W-1,
+          P_j-P_(j+1)={alpha_j},
+          P_(j+1)-P_j={beta_(j-d)}          for d<=j<=W-2.
+
+      If `0<=s<d` and every position `p,...,p+s` is fully interior, then
+
+          |P_p union ... union P_(p+s)|=r-d+s.                 (371.1)
+
+      The proof is exact: the `d` deletions in each carrier window are
+      distinct by residence, and the `s` controller additions are distinct
+      and absent from `P_p`.  Every physical word `A` with `D^d A=T`
+      satisfies `A_j subseteq P_j`; hence a fully interior depth-`s` cell
+      has rank at most `r-d+s`, with equality only at the native controller
+      trace.  The transition formula stops at `W-2`; `P_W` is clipped.
+
+1657. At `k=15,r=8,d=3`, fully interior native depths `0,1,2` have ranks
+      `5,6,7`.  On the six-zero Hall-22 carrier,
+
+          cell 5617: depth 0, native/envelope 2574;
+          cell 17342: depth 2, controller tuple (2601,2602,2604),
+                      native trace 2607.
+
+      Since `2575=2574 union {1}` has rank six, incidence
+      `2575--5617` is physically impossible.  The projected path
+
+          2607--17342--2575--5617
+
+      is therefore discarded, not compensated.  Boundary clipping does not
+      restore it on any fixed-endpoint segment-braid endpoint:
+
+          T_0=9901, T_(W-1)=7779,
+          mask(2575-T_0)=2050, mask(2575-T_(W-1))=12.
+
+      Any route using this exclusion must explicitly preserve these ordered
+      endpoints, equivalently the clipped endpoint collars.
+
+1658. The standard and six-zero Hall-22 ledgers must not be mixed.  The
+      standard carrier has canonical shore `1005/983`; perfecting one
+      component toward global rank 16362 needs `15378` exterior edges.  The
+      six-zero carrier has canonical shore `1006/984` and component
+
+          {2575,2607}/{17342}.
+
+      Its canonical 984-pin native basis assigns `17342->2607` and exposes
+      `2575`; an exceptional common-`Q` basis may assign `17342->2575` and
+      expose `2607`.  Within the stipulated all-native flat-interior ear
+      architecture, the exact repair is a distinct depth-one native 2575
+      cell together with the retained depth-two native 2607 cell.  Relative
+      to the exceptional basis this is the valid augmenting flip
+
+          2607--17342--2575--c,
+          c->2575, 17342->2607.
+
+      Regenerating the other 983 native shore pins then gives 985 shore pins
+      under one final controller.  The correct exterior count in this branch
+      is `16361-984=15377`; equivalently Theorem 7.1 needs 16360 edges outside
+      the selected 2/1 component, comprising 983 other shore edges and 15377
+      genuinely exterior edges.
+
+1659. This is a proved implication, not an endpoint construction.  A full
+      Hall-21 descent still needs a protected fixed-endpoint route creating
+      the depth-one native 2575 cell, retaining/regenerating the depth-two
+      native 2607 cell and the other 983 native pins, retaining or rerouting
+      the 15377-edge exterior matching, and retaining a gap-21 shore.  For a
+      literal global theorem, the complete shore-plus-exterior pin family
+      must pass the final-controller `K_p` criterion jointly; edgewise
+      feasibility is insufficient.  No such orbit hit is proved, and no
+      claim is made here against nonnative common-`Q` rebases outside the
+      stipulated native-ear architecture.  Full theorem and proof:
+
+          THREAD_H_HALL22_GRADED_NATIVE_ROUTER_SPLITTER_LEMMA_20260728.md.
+
+## 372. Hall-21 rooted native basis and variable-shore compression
+
+1660. The frozen Hall-21/six-zero carrier has canonical DM shore
+      `846/825`, split into 21 connected gap-one transversal circuits:
+
+          169/168 + 3(161/160) + 160/159
+          + 2(5/4) + 2(3/2) + 6(2/1) + 6(1/0).
+
+      In every component, the native trace map from right cells is a
+      bijection onto all component targets except one root.  Thus all 825
+      right cells have distinct native traces under one maximal controller.
+      The missing roots are
+
+          {960,1103,1920,2420,2575,2676,4213,5801,7504,8217,8218,
+           9524,13616,13620,17683,17738,18970,19568,21641,24610,29776}.
+
+      Reserving the 825 native pins leaves an exterior matching of size
+      `16383-846=15537`; hence the native basis extends combinatorially to
+      rank `825+15537=16362`.  The exterior pins are not yet a global
+      common-`Q` certificate.
+
+1661. The ten positive components of size at most `5/4` are exact rooted
+      stars, with rank-six roots
+
+          2420,2575,2676,9524,17683,19568,
+          1103,18970,4213,7504.
+
+      Each leaf `K+e` has one depth-two native cell with restricted shore
+      `{K,K+e}` and native trace `K+e`.  A distinct depth-one cell is a
+      native root ear exactly when its consecutive controller states are
+
+          K\{a}, K\{b},  a!=b.
+
+      For a fully mixed braid seam this is exactly
+
+          C0 union C1=K  or  C1 union C2=K,
+
+      with distinct rank-five states.  The five large roots have rank four
+      and cannot be native traces because every maximal-controller letter
+      has rank at least five.  Six explicit common-`Q` root/leaf pivots
+      exist, but each merely moves the exposed target; a second cell is
+      necessary for rank gain.
+
+1662. The fixed `846/825` shore size is not intrinsic.  Let a compiler
+      graph have `N` targets and a shore `X/Y` of gap `h`.  Suppose one
+      controller gives a bijective native basis
+
+          tau:Y -> X\R,  |R|=h,
+
+      and there is a disjoint exterior matching of size `N-|X|`.  If a
+      final protected edit retains or rebaselines that basis, retains the
+      exterior matching, and supplies one further distinct native cell of
+      trace `K in R`, then it has a matching of size
+
+          (N-|X|)+|Y|+1=N-h+1.
+
+      Thus its deficiency is at most `h-1`, and is exactly `h-1` if one
+      final shore has gap `h-1`.  Conversely, in the pin-preserving
+      one-ear all-native class, the rank rises iff the new trace is in `R`;
+      to perfect a named component it must be that component's exposed
+      root.  This converse does not cover exceptional nonnative common-`Q`
+      pins or interacting multi-cell rearrangements.
+
+1663. The exact dual form is an all-shore current inequality.  For portal
+      `G0`, final `G1`,
+
+          delta_i(S)=|S|-|N_Gi(S)|,
+          J(S)=|N_G1(S)|-|N_G0(S)|,
+
+      one has
+
+          h(G1)<=h-1
+
+      iff
+
+          J(S)>=delta_0(S)-(h-1)  for every target set S.
+
+      In particular every portal `h`-tight shore must receive current at
+      least one.  The rooted basis plus ear plus exterior matching is a
+      primal certificate for all these inequalities, so a hidden new shore
+      cannot defeat an actually retained matching.
+
+1664. The protected one-braid census at H21 is complete and must not be
+      rerun.  Of 7,300 fully scored descriptions, the minimum Hall value is
+      21.  There are 7,120 H21/six-zero descriptions: 6,433 identity
+      encodings and 687 nontrivial neutral endpoints.  Hence any protected
+      H21-to-H20 route uses at least a compound braid or leaves this class.
+
+1665. A new search-reported compound is the prospective second rooted
+      compression instance:
+
+          H21 -- RF(1510,5017,6136) --> H21 portal
+              -- RF(885,1393,3668) --> provisional H20/z6.
+
+      The shared report gives portal shore `702/681`, uniquely smallest
+      among the 687 nonidentity neutral descriptions.  If that portal has a
+      rooted native certificate, the arithmetic is exact:
+
+          16383-702=15681,
+          681+15681=16362,
+          682+15681=16363.
+
+      Thus one retained root ear would give the Hall-20 rank baseline
+      independently of the change from `846/825` to `702/681`.  There is
+      also an exact conservation law: at fixed `N,h`, the native and
+      exterior loads are `|X|-h` and `N-|X|`, whose sum is `N-h`.
+      Therefore this compression transfers exactly
+
+          825-681=15681-15537=144
+
+      assignments from the automatically common-`Q` native basis to the
+      still-unlifted exterior matching.  The smaller shore is not by itself
+      a literal common-`Q` saving.
+
+1666. The preceding chain is not yet an audited theorem.  Its two JSONs
+      declare only their moves, parent pathnames, scores `(21,6,4)` and
+      `(20,6,4)`, and 6,435-entry endpoint-fixed middle paths.  They contain
+      no embedded DM, matching, native-basis, residence, shadow, or
+      common-`Q` certificate.  Before calling it a second rooted compression
+      instance, independently verify both transitions; Hall ranks; the
+      `702/681` shore; a 681-cell native bijection; its final-controller
+      rebaselining; one root ear; a disjoint 15,681-edge exterior matching;
+      and a gap-20 shore or the all-shore current inequalities.  Even an
+      audited abstract Hall-20 endpoint would still require a common-`Q`
+      lift of the exterior pins for the literal compiler.
+
+1667. The exact theorem, fixed H21 component/port audits, and prospective
+      artifact hashes are in
+
+          MATH_THEOREM_K15_H21_ROOTED_NATIVE_BASIS_AND_NATIVE_EAR_20260728.md
+          scratch/audit_k15_h21_dm_components.json
+          scratch/k15_h21_component_ports_audit_20260728.json
+          scratch/k15_h21_h20_root1801_chain/router/candidate_0000.json
+          scratch/k15_h21_h20_root1801_chain/final/candidate_0000.json.
+
+      The candidate SHA-256 values are respectively
+
+          1a6985b38d9ae85f957a98a2b05d154e6c21e878a72826fec98fe2490655f394
+          0740f2a73b6bf2b01a5f30713e69c636f60bf8cf8c47c8bbb798d69787fc43be.
+
+      These hashes identify the present files; they are not audit
+      certificates.  No new exhaustive search was run in this theorem
+      update.
+
+## 370. Corrected Shadow--Braid audit and the exact Pascal seam no-go
+
+1646. The corrected flat-middle Shadow--Braid theorem is valid.  Put
+      `r=ceil(k/2)`, `W=binom(k,r)`, and let `d` be least with
+
+          sum_(s<r) binom(k,s) <= dW + binom(d+1,2).
+
+      If `T` is an exact middle permutation, every lower target is assigned
+      jointly injectively to a valid cell of depth `<d`, all mandatory pins
+      and central pins pass one common allowed-position system
+
+          Q_x=[0,W+d-1] \ union_(x notin S_c) I_c,
+
+      every physical position lies in some `Q_x`, and every upper target is
+      a consecutive union of `T`, then
+
+          A_p={x:p in Q_x}
+
+      is a literal nonzero word of length `W+d` and proves equality.  The
+      converse holds inside the flat-middle normal form: a lower target
+      cannot have depth at least `d`, and an upper witness is a consecutive
+      union of central windows.
+
+1647. For central pins alone, literal feasibility is exactly the conjunction
+
+          T_i = union_(p=i)^(i+d) E_p(T),
+          E_p(T) != empty for every p,
+
+      where `E_p` is the maximal central erosion.  Thus residence allowing
+      empty set letters and literal nonempty erosion are distinct.  With
+      extra pins, put
+
+          C_p=E_p intersect intersection_(c:p in I_c) S_c,
+          Q_x={p:x in C_p}.
+
+      The exact common-word test is:
+
+          C_p != empty for all p;                         (CQ0)
+          Q_x intersects [i,i+d] for x in T_i;            (CQ1)
+          Q_x intersects I_c for x in S_c.                (CQ2)
+
+      The maximal feasible word is `A_p=C_p`.
+
+1648. The cut-aware budget is an identity only under an exhaustive typed
+      ledger: oriented pieces form a position-disjoint partition used once;
+      old occurrence lists are exhaustive actual source intervals; supports
+      contain every cut transition, selector-deleted index, and other
+      disruption incidence; and each distinct final seam-crossing interval
+      is listed once at its actual label and depth.  Multi-seam windows get
+      one credit.  Lower occurrences are creditable only for `q<=d`.
+      Reversal preserves the set label, but a final lower middle window
+      `[i,i+q]` must be pinned at the translated child cell `[i+q,i+d]`.
+
+1649. A natural lower occurrence
+
+          S=intersection_(h=0)^q T_(i+h),  1<=q<=d,
+
+      satisfies
+
+          S=union_(p=i+q)^(i+d) E_p.
+
+      Its natural pin is therefore negative-inert relative to the central
+      erosion.  It is not positive-safe: other exceptional pins may erase
+      every allowed position of one coordinate of `S`.  Hence cut-aware
+      target survival settles the set-theoretic part of SB3 but never SB4.
+
+1650. The smallest central-collar obstruction is the actual `k=4,d=1`
+      triple
+
+          12, 23, 24.
+
+      Both transitions are Johnson and both incident erosion states are the
+      nonempty set `2`, but coordinate `3` has trace `0,1,0`; residence and
+      central CQ1 fail.  This is minimal among deck-injective local collars
+      with nonempty adjacent erosion.
+
+1651. The first resident pointwise-nonempty obstruction to sectorwise
+      compiler composition occurs at the actual `k=6,d=1` collar
+
+          136, 123, 124, 145,
+
+      whose erosion is
+
+          136, 13, 12, 14, 145.
+
+      The singleton pins `[1]->3` and `[2]->2` are each separately feasible,
+      with maximal words
+
+          (136,3,12,14,145),
+          (136,13,2,14,145).
+
+      Together they give `(136,3,2,14,145)`: every letter remains nonempty,
+      but `Q_1` misses the central interval `[1,2]` and its union is `23`,
+      not `123`.  The intended seam `123|124` still has the valid lower and
+      upper set windows `12` and `1234`.  This is the smallest actual
+      `d=1` example with two distinct singleton targets in the stated class.
+
+1652. A sharper natural-pin obstruction occurs at `d=2`, first compatible
+      with the actual parameters at `k=7`.  Take
+
+          T_0=xyza, T_1=xyzb,
+          E=(xyza,xyz,xyz,xyzb).
+
+      The natural seam target `S=xyz` has physical cell `[1,2]` and can have
+      exact new-occurrence budget zero.  Add distinct pins `[1]->y` and
+      `[2]->z`.  Each one-blocker subsystem realizes `S`; together the final
+      common letters are
+
+          (xyza,y,z,xyzb).
+
+      They are all nonempty and retain both central rows, but `Q_x` misses
+      `[1,2]`, so the natural seam pin fails.  This is minimal among
+      two-window examples with distinct nonempty targets/cells, nonempty
+      post-pin letters, and exact central rows.  It is a local seam no-go;
+      extension to a complete exact `k=7` deck is not asserted.
+
+1653. The exact recursive replacement is coordinate-protected witness
+      transport.  Every positive central or extra-pin obligation carries a
+      named witness `(obligation,x,p)` with `p in Q_x` in its actual final
+      interval, and every physical position carries a named nonempty
+      coordinate.  After cutting/reversal/reconnection, retain only witnesses
+      that survive the final erosion and all final negative pins; replace all
+      destroyed and new obligations.  This is necessary and sufficient.
+      `J` deleted and `J` inserted seams affect at most `2dJ` erosion
+      positions and at most `2qJ` depth-`q` windows, before overlaps, but
+      these bounds imply no compatibility.
+
+1654. Independently, the standard native same-parity recursion has zero
+      residual deletion link after its Catalan first-shadow base and its
+      one-representative `U` selector base; ordinary cross-sector seams have
+      the wrong extreme tags to replace the destroyed both-new lower or
+      empty-signature upper occurrence.  Raw first-shadow transport also
+      satisfies
+
+          beta_n <= beta_0 - n - (d_n-d_0) <= beta_0-n.
+
+      These close only the frozen-native-base and finite-buffer recursions.
+      Joint basis exchange, same-signature/off-spine rethreading, compatible
+      endpoint/compiler repair, and fresh child construction remain open.
+
+1655. The exact boundary is therefore:
+
+      * fixed-braid SB0--SB4 sufficiency: proved;
+      * support/count/nonempty-erosion Pascal seam implication: refuted;
+      * coordinate-witness seam interface: proved necessary and sufficient;
+      * all-`k` existence of such child witnesses: open;
+      * the conjectural formula itself: not refuted.
+
+      Full statements and proofs are in
+
+          MATH_AUDIT_CORRECTED_SHADOW_BRAID_SUFFICIENCY_AND_PASCAL_SEAM_20260728.md,
+          THREAD_R_ALLK_COMMON_Q_PASCAL_SEAM_AUDIT_20260728.md,
+          THREAD_R_ALLK_PASCAL_SEAM_COMMON_Q_AUDIT_20260728.md.
+
+## 363. Hall-22 native grading and the exact radius-two frontier
+
+1594. The authoritative six-zero carrier remains
+
+          scratch/k15_segment_braid_hall22_zero6.json
+
+      with SHA-256
+
+          bb3f8b922e7e741329c4cff551363a9bc244a4c77dcc1fd70d6accc7b8c91778.
+
+      Independent reconstruction gives matching 16361, Hall deficiency 22,
+      six zero targets, and canonical DM shore 1006/984.  It has exactly 22
+      connected DM components, each of gap one.  The smallest surviving
+      nonzero circuit is
+
+          {2575,2607}  versus the sole depth-two cell 17342,
+
+      where cell 17342 starts at 4467, has native/envelope 2607,
+      mandatory mask 519, and controller tuple (2601,2602,2604).
+
+1595. There is an exact native grading law.  For a fully interior depth-d
+      resident Johnson carrier of rank r, its maximal erosion controller P
+      is a rank-(r-d) Johnson path.  For 0<=s<d,
+
+          rank(P_j union ... union P_(j+s)) = r-d+s.              (363.1)
+
+      The deletions in every d-transition window are distinct, since a
+      repeated deletion would force an intervening positive run shorter than
+      d+1; the controller additions are distinct for the same reason.  This
+      proves (363.1).  Boundary controller cells require separate clipping.
+
+      At k=15,d=3, interior native compiler traces therefore have forced
+      ranks 5,6,7 at depths 0,1,2.  The tempting abstract extensions
+
+          depth0: 2574 -> 2575,
+          depth1: 2606 -> 2607
+
+      are physically impossible under the protected residence invariant.
+      The grade-compatible splitter must retain depth-two native trace 2607
+      and create a distinct depth-one native trace 2575.
+
+1596. The complete direct radius-two catalogue is negative.  There are 684
+      nontrivial protected-neutral first braids at (Hall,zero)=(22,6).
+      None changes the projected {2575,2607} shore and none creates a
+      candidate for any of the six zero roots.  Exactly two relocate the
+      shared physical circuit cell; their 18,194 eligible second braids
+      contain no Hall-21 or zero-five state.  Seven representative
+      distance-one creator corridors, covering the circuit and every zero
+      root, contribute another 63,783 exact second moves and again contain no
+      descent.  This closes only the direct/near-creator radius-two class.
+      A remote neutral router or a compound of at least three braids remains
+      open.  Heavy enumeration is run on the H100 CPU; the local machine is
+      used only for lightweight certificate audits.
+
+1597. Dropping Hall neutrality at the second step exposes exactly ten
+      grade-compatible portals among 6,224,656 resident/all-upper-safe second
+      braids.  Each has controller motif (2567,2574,2604) or its reversal,
+      so it really supplies depth-one native 2575 beside depth-two native
+      2607.  The old Hall shore improves from gap22 to gap21.  However every
+      portal loses q1 supports {719,2667} and q2 supports
+      {591,2603,2665}, gains q2 support2575, and creates a remote Hall25/zero8
+      shore.  Across all ten portal states, 22 nontrivial portal-preserving
+      third braids exist; none restores any fixed lost support, and their
+      best score is Hall25/zero9.  In the complete unfiltered third scans,
+      the only Hall22/zero6 output from each state is the inverse repair which
+      destroys the portal; no Hall21 endpoint occurs.  Therefore the graded
+      splitter is physically real but its signed shadow compensator is not a
+      one-braid afterthought.  The exact certificate and census are in
+
+          MATH_K15_GRADED_PORTAL_AND_FIXED_COLLATERAL_20260728.md.
+
+1598. The complete neutral-first beam nevertheless finds a different exact
+      remote descent:
+
+          (22,6) --FF(1320,5339,6194)--> (22,6)
+                 --FR(778,2292,6368)--> (21,6).
+
+      The first braid replaces the old root-449 160/159 DM component by a
+      root-458 24/23 component while preserving total rank.  The second braid
+      replaces its restricted shore {462,16846} by
+      {458,462} and {16842,16846}; together with the retained component basis
+      this raises contracted boundary rank 17->18 and discharges the whole
+      component.  Every state preserves the exact middle deck, Johnson
+      chronology, depth-three residence, all upper supports, and four
+      immediate-lower holes.  The final compiler has matching16362,
+      deficiency21, six zero roots, and canonical DM shore846/825.  All 825
+      right cells have distinct native traces under one maximal erosion word,
+      so the critical-shore native common-pin gap is exactly21.  In fact the
+      825 native pins plus all 24 targets of the discharged component give
+      849 simultaneous literal pins on the former 870-target shore: duplicate
+      native-462 cells serve 462 and, after deleting bit2 at controller
+      positions778,779, exposed root458.  The literal former-shore gap is
+      therefore also exactly21.  This still does not install one full global
+      matching into a common word.  Exact artifacts,
+      hashes, restricted shores, and the independent audit are in
+
+          MATH_K15_H22_TO_H21_REMOTE_COMPONENT_COMPRESSION_20260728.md.
+
+## 367. Hall-23 component-root diamond theorem and the exact Hall-22 target
+
+1618. Hall 23 is the authoritative braid-lane base.  Starting from the
+      audited Hall-24 carrier,
+
+          FF(212,3732,4717), FF(210,1501,4867)
+
+      gives matching ranks `16359 -> 16359 -> 16360` and deficiencies
+      `24 -> 24 -> 23`.  All three states are exact middle decks, Johnson
+      paths, depth-three resident, and complete in every upper support
+      layer `q=1,...,7`; the immediate-lower hole count remains four.  The
+      final move removes the complete `161/160` DM component rooted at mask
+      `20516` and adds no replacement deficient target.
+
+1619. Split the Hall-24 path at
+
+          210,212,515,3732,4718,4868
+
+      into forward blocks `X0,...,X6`.  The compound is exactly
+
+          X0 X1 X2 X3 X4 X5 X6 -> X0 X3 X5 X1 X4 X2 X6.
+
+      Its six deleted and six inserted seams decompose into two alternating
+      clean flag `C6` circuits.  Hence adjacent lower/upper flag
+      multiplicities cancel exactly.  This gives a concrete root-scale
+      two-circuit normal form for the neutral-portal mechanism.
+
+1620. The phrase “four lower holes” in item 1618 means only the immediate
+      lower layer.  The final braid loses lower depth-three targets `17445`
+      and `28677`, increasing that layer's holes from four to six.  Thus the
+      construction is all-upper-safe but is not an all-lower-depth support
+      theorem.
+
+1621. Let `D=G[X,Y]` be an excess-one component:
+
+          |X|=|Y|+1, nu(D)=|Y|,
+          rho(D)={x in X:nu(D-x)=|Y|}.
+
+      Adding a right cell `c` perfects `D` if and only if
+
+          N(c) intersects rho(D).
+
+      Indeed, match `c` to an exposed root and match `D-x`; conversely a
+      perfect matching must match `c` to such a root.  Relative to a fixed
+      maximum matching with unmatched left vertex `u`, `rho(D)` is exactly
+      the set of left vertices reached from `u` by alternating paths.  A
+      physical refinement therefore lowers global Hall by one whenever it
+      supplies such a cell and retains or reroutes the complement matching.
+      Without that retention hypothesis the all-shore current remains the
+      exact test.
+
+1622. The Hall-23 canonical DM shore has sizes `(1007,984)`, target-rank
+      histogram `(6,54,274,673)`, and exactly 23 connected excess-one
+      components:
+
+          169/168: root 1920;
+          161/160: roots 960,8217,24610;
+          160/159: roots 449,8218;
+          two 5/4; two 3/2; six 2/1; seven 1/0.
+
+      Exact alternating reachability gives `rho(D)=X` in every one of these
+      components.  Thus at Hall 23 every target in every deficient component
+      is a legal matching root; the remaining obstruction is physical cell
+      creation plus complement retention, not root selection.
+
+1623. The root-`20516` discharge has exact Boolean-diamond algebra.  Put
+
+          K=20516, a=1, b=8192, c=1024, d=2048, e=8,
+          Q=K+P({a,b}).
+
+      The neutral braid transfers `Q` between two coarse cells without
+      changing local rank.  The improving braid replaces
+
+          Q, (c+Q)-{K+c}, e+Q
+
+      by the lower `a`-edge, the singleton `K+a+c`, and three parallel upper
+      `a`-edges.  The component cell count becomes `160 -> 162` and rank
+      becomes `160 -> 161`.  A common old lower edge remains, so the new
+      lower-edge copy matches the formerly exposed root.
+
+1624. There is a sharp literal Hall-22 matching target at the remaining
+      `161/160` component rooted at `K=24610`.  With `a=512,b=64`, Hall 23
+      contains
+
+          E0=(depth0,start4704), Gamma(E0)={K,K+a},
+          E1=(depth1,start4655), Gamma(E1)=K+P({a,b}).
+
+      An exact rank-160 matching leaves `K` unmatched while using
+      `E0->K+a` and `E1->K+a+b`.  Therefore any carrier-safe trade which
+      duplicates the lower edge `{K,K+a}`, retains an upper child containing
+      `{K+b,K+a+b}`, and retains every other matching edge proves
+      `Hall 23 -> Hall 22`.  The start gap is 49, smaller than the analogous
+      gaps 50 and 58 at roots 960 and 8217.  Physical seam legality,
+      residence, and the all-upper ledger are not yet proved.
+
+1625. The seven zero targets are the isolated `1/0` components
+
+          2575,5801,13616,13620,17738,21641,29776.
+
+      A first cell adjacent to any one, with the old matching retained, also
+      gives Hall 22.  More generally, if one compound creates a first cell
+      for a zero component and perfects one nonzero component while losing
+      at most `ell` complement matching edges after rerouting, then
+
+          nu_new >= nu_old+2-ell,
+          Hall_new <= Hall_old-2+ell.
+
+      Hence a fused zero/diamond macro tolerates one complement loss and
+      still reaches Hall 22 with six zeros.  The separate `(25,7)->(26,6)
+      ->(25,6)` branch supplies a first cell for `2575`, but no fusion into
+      the Hall-23 carrier is proved.
+
+1626. Any continuation preserving all seven zero targets has a hard Hall
+      floor of seven, since it can discharge only the sixteen nonzero
+      components.  Preserving four immediate-lower holes forever also
+      cannot enter the necessary finite prefix corridor `h1<=2`.  Finally,
+      outer Hall zero is not yet one literal controller: all selected cells
+      must still pass the common-word realization theorem.
+
+1627. The full proofs, exact component/core atlas, profile identities,
+      carrier hashes, conditional root-`24610` certificate, and scope
+      caveats are in
+
+          THREAD_R_K15_HALL23_COMPONENT_ROOT_DIAMOND_REFINEMENT_20260728.md.
+
+## 368. Neutral legality router plus remote DM-circuit splitter
+
+1628. This section supersedes the prospective Hall-22 language in Section
+      367.  The physical carrier now reaches Hall 22 by
+
+          H23 --RF(3799,4497,6039)--> H23
+              --FR(740,4051,6137)--> H22.
+
+      Exact matching ranks are `16360 -> 16360 -> 16361`; canonical DM
+      shores are `1007/984 -> 1007/984 -> 1005/983`; the final braid removes
+      exactly targets `{4877,4909}` and adds none.  Zero count stays seven
+      and unmatched-rank profiles are `(5,18)->(5,18)->(5,17)`.
+
+1629. Splitting the old path at
+
+          0,740,3799,4497,5788,6040,6138,6435
+
+      into forward blocks `X0,...,X6`, the exact paths are
+
+          Tportal = X0 X1 reverse(X4) reverse(X3) X2 X5 X6,
+          T22     = X0 reverse(X3) X2 X5 X4 reverse(X1) X6.
+
+      All three enumerate the complete middle deck, are Johnson paths,
+      have endpoints `(9901,7779)`, and are depth-three resident.  Every
+      upper support through depth seven remains complete.  Lower-hole
+      vectors are
+
+          (4,19,6,1,0,0,0)
+          -> (4,19,6,1,0,0,0)
+          -> (4,18,6,1,0,0,0).
+
+      Only lower-depth-two target `4877` is gained.  Shadow safety here means
+      support safety, not multiplicity equality: both braids have nonzero
+      deeper multiplicity currents.
+
+1630. The two compiler effects are remote.  The neutral braid touches only
+      the `161/160` component rooted at `24610`, transferring one Boolean
+      square between two cells while keeping neighbourhood size and rank
+      `160`.  The improving braid leaves that profile multiset fixed and
+      changes only the `2/1` component `{4877,4909}`.  Its old shared
+      occurrence becomes two occurrences whose component-restricted shores
+      are
+
+          {4877,4909} -> {4877},{4909}.
+
+      Local rank is `1->2`.  Both targets retain degree one, so the gain is
+      occurrence co-incidence, invisible to support, degree, or marginal
+      data.
+
+1631. The exact binary occurrence-split theorem is the following.  In an
+      excess-one component `D=(X,Y)`, replace one right occurrence `y` by
+      `y0,y1`.  The refinement saturates `X` if and only if there are
+      distinct `x_i in Gamma(y_i) cap X` such that
+
+          X-{x0,x1} is matchable into Y-{y}.
+
+      Necessity deletes the two child edges from a perfect matching;
+      sufficiency adjoins them to the residual matching.  If the children
+      cover the old profile, rank cannot decrease and can rise by at most
+      one.  If they partition it, all target degrees are unchanged.
+
+1632. Every nontrivial connected transversal circuit is abstractly binary
+      splittable.  Leave an exposed root `x0` unmatched in a matching
+      saturating `Y`; choose a neighbour `y` of `x0`, let `y-x1` be its
+      matched edge, and split the profile of `y` so `x0,x1` lie in different
+      children.  The old matching with `y-x1` removed is the required
+      residual certificate.  Thus all Hall-22 nonzero circuits pass the
+      matching gate.  Physical child-profile realization is the remaining
+      gate; a `1/0` zero component has no occurrence to split.
+
+1633. Undecorated carrier braids form a path groupoid, not one group.
+      Matching/pin-decorated lifts form only a directed category unless an
+      inverse certificate transport is also proved; the reversibly certified
+      arrows form its subgroupoid, and only closed loops at one carrier form
+      a stabilizer group.  A
+      splitter installation must record its occurrence banks, rooted-ear
+      matching, both seam collars, support ledger, residence, and an explicit
+      common-`Q` witness.  The exact routing invariant is the connected
+      component of the resulting decorated lift graph.  A seed services a
+      circuit if and only if a vertex labelled by that rooted circuit ear is
+      in its component.  Connectedness on decorated rooted-ear ports is a
+      sufficient universal routing theorem; no such connectedness is
+      currently proved.
+
+1634. There is a fixed-endpoint turn-colour holonomy.  Colour every Johnson
+      edge by its toggled coordinate pair.  For each coordinate, the parity
+      of its total colour degree equals its endpoint membership change.
+      Hence the signed old/new seam current of every fixed-endpoint braid is
+      Eulerian modulo two.  The neutral router has zero colour current.  For
+      the splitter, cancellation of the common `{10,12}` colour leaves
+
+          +{2,6}+{6,15}-{2,14}-{14,15},
+
+      the alternating coordinate cycle `2-6-15-14-2`.  Thus the local
+      axis-6 split needs the remote second axis-6 port; an isolated one-port
+      splitter is impossible.
+
+1635. Common-`Q` does not follow from Hall neutrality.  If a selected pin
+      `(I,K)` is added while the controller and all old pins are fixed, then
+      coordinate survival sets change exactly by
+
+          Z'_a=Z_a                 for a in K,
+          Z'_a=Z_a minus I         for a not in K.
+
+      Every central hit, old positive pin, selected interval, and source
+      nonemptiness condition must be rechecked.  Segment interiors transport
+      automatically outside radius `max(H,2d)` from the seams, but all
+      crossing intervals, new pins, central seam windows, and boundary
+      positions need a fresh finite collar audit.  The Hall-22 artifacts
+      contain no selected matching/common-`Q` certificate, so they remain
+      outer compiler-Hall objects.
+
+1636. In the seven-zero Hall-22 state, the five remaining `2/1` circuits
+      have optional axes
+
+          10,14,7,13,14
+
+      at roots `2420,2676,9524,17683,19568`, respectively.  Only axis 14
+      repeats.  The two axis-14 circuits are therefore the sharp candidate
+      for a two-local-port splitter with internally closed holonomy.  Each
+      of axes 10, 7, and 13 needs a remote same-axis return port or coupling
+      to a larger component.  Parity compatibility is necessary, not a
+      physical certificate.
+
+1637. If every live circuit has a routed splitter which retains the
+      complement matching and outputs the same decorated class, Hall drops
+      by exactly one per splitter and induction reaches zero.  The seven
+      zero components require a separate first-cell ear library.  Whole-
+      component conjugacy cannot be transitive because component sizes
+      differ; the correct scalable action is on decorated rooted ears.
+
+1638. Full proofs, the exact block/seam and cell-profile audit, splitter
+      polarization criterion, lift-graph theorem, turn-colour obstruction,
+      common-`Q` collar interface, current Hall-22 axis table, hashes, and
+      caveats are in
+
+          THREAD_R_K15_NEUTRAL_ROUTER_DM_CIRCUIT_SPLITTER_20260728.md.
+
+## 369. Closed-chart routing theorem and the Hall-22 native-ear boundary
+
+1639. The Hall-23 neutral-router/Hall-22 splitter audit has now been
+      strengthened at the literal active shore.  The final depth-one cell
+      at start 740 and depth-two cell at start 739 have singleton restricted
+      shores, not singleton letters, and exact final-controller traces
+
+          P[740,741]=4877,    P[739,741]=4909.
+
+      Together with the 983 distinct native pins on the H22 canonical DM
+      shore, they give 985 simultaneous literal pins on the former
+      1007-target H23 shore.  Its projected and native common-pin defects
+      are therefore both exactly 22.  This supersedes only the claim in item
+      1635 that no selected certificate exists: no global 16,361-edge
+      maximum matching has been lifted to one word.
+
+1640. The exact simultaneous-native-ear theorem is final-controller local.
+      Let one native target/cell injection of size `|L|-d` retain matchings
+      of pairwise disjoint gap-one components minus exposed roots `x_j` and
+      retain a cell-disjoint exterior matching, with every `x_j` absent from
+      the target projection.  If the same final controller has distinct
+      unused intervals of trace `x_j`, adjoining them gives one literal
+      matching larger by their number, regardless of interval crossings.  A
+      retained shore of gap `d-t` makes the new deficiency exactly `d-t`.
+      Nativeness at an intermediate router state is not durable; all retained
+      pins must be checked against one final controller or against the full
+      common-`Q` coordinate ledger.
+
+1641. The routing object splits in two.  The weak carrier groupoid records
+      middle deck, Johnson legality, residence, protected supports, Hall
+      deficiency, and existential exterior capacity or a residual-shore
+      certificate, not fixed matching edges.  The pin-decorated lift
+      additionally records one complete target/cell injection and one word
+      realizing it, and is only a directed transition category unless inverse
+      pin transport is certified.  The exact
+      router-plus-splitter criteria for discharged data `D` and residual
+      component `C` are
+
+          Orb_{G_D^weak}(T) intersect Sigma^weak_{D,C} nonempty,
+          Reach_{C_D^pin}(T) intersect Sigma^pin_{D,C} nonempty.
+
+      In the pin-decorated version `Sigma` must include final-controller
+      realization of every retained pin.  The certified H23 route gives one
+      orbit hit in the weak groupoid plus a final shore-local native
+      certificate; it does not yet give a global pin-decorated transition.
+
+1642. There is a positive closed-chart theorem.  Suppose packets occupy a
+      host graph `H`, and for every reachable arrangement and every host edge
+      there is an exact reversible Hall-neutral macro transposing the two
+      complete decorated packets and preserving all collars, shadows,
+      compiler occupancy, and final-pin traces.  The group generated by
+      these routers is
+
+          product_{K in pi_0(H)} Sym(K).
+
+      Edge transpositions of a spanning tree generate the full symmetric
+      group on its vertices, and no generator crosses a component.  Thus
+      routing to every host is equivalent to connectedness.  The closure
+      quantifier over every reachable arrangement is essential.  The H23
+      construction certifies one edge only; its inverse is certified on the
+      H23/portal pair, not after the splitter.
+
+1643. Coordinate symmetry does not replace closed-chart connectivity.  For
+      the discharged flag
+
+          R0={0,2,3,8,9,12} subset R0+{5},
+
+      its stabilizer has four orbits on the five remaining `2/1` flags:
+
+          {2420}, {2676,9524}, {17683}, {19568}.
+
+      They are distinguished by the complete invariant
+      `(|R intersect R0|, 1_{5 in R}, class of the added bit)`.  Hence the
+      entire carrier and first splitter may be conjugated to discharge any
+      one chosen `2/1` flag; this is not routing within the fixed carrier, and
+      the same conjugacy seed cannot be accumulated hereditarily.
+      Even perfect routing of this template handles only five further
+      components, reaching at best Hall 17; ten larger nonzero components
+      and seven isolated components require other ear libraries.
+
+1644. A separate two-braid macro proves useful weak reachability:
+
+          (22,7) --FF(882,2606,3222)--> (23,6)
+                 --RF(1500,4943,6184)--> (22,6).
+
+      The first move temporarily loses lower targets `8905,713,8777`; the
+      second restores every endpoint lower support and retains complete upper
+      support.  The final canonical shore is `1006/984`, and all 984 pins are
+      native in its final maximal controller.  This is a net-neutral weak
+      macro and a final shore-local certificate, not Hall descent or global
+      fixed-pin transport.
+
+1645. The exact proved boundary is Hall 22, one remote weak-groupoid orbit
+      hit, the active-shore native common-`Q` certificate, and the closed-chart
+      implication above.  Universal decorated-chart connectivity and
+      arbitrary-exterior common-word compatibility remain unproved.  The
+      corrected theorem, exact constants, hashes, proof audit, and
+      reproduction commands are in
+
+          THREAD_AD_K15_H22_NEUTRAL_ROUTER_CIRCUIT_SPLITTER_20260728.md.
+
+      The independent lane-H proof of the abstract circuit split, direct
+      seven-block/two-C6 macro, forbidden-set coboundary, and the correction
+      from an unconditional groupoid to a directed pin-lift category is
+
+          THREAD_H_NEUTRAL_ROUTER_DM_CIRCUIT_SPLITTER_GROUPOID_20260728.md.
+
+## 366. Hall-25 strong-C8 five-segment escape theorem
+
+1612. The strict Hall-25 local minimum applies only to the complete
+      resident, upper-safe `FF/RF/FR/RR` three-cut catalogue.  For a
+      deck-exact four-cut boundary, exact adjacent lower and upper
+      multiplicities make its signed rank-(7,9) flag graph Eulerian.  After
+      cancelling unchanged flags, every simple four-positive boundary is
+      either a C6 plus one cancelled seam, one owner-exact strong C8, or two
+      flag C4 rectangles with opposite middle-owner boundary.  One isolated
+      rectangle is impossible: in its universal normal form its middle
+      boundary is
+
+          [K+a+c]+[K+b+d]-[K+a+d]-[K+b+c] != 0.
+
+1613. There is an explicit all-r strong-C8 family.  For
+      `K in binom([n],r-2)` and distinct `a0,a1,a2,a3,c` outside K, put
+
+          R_i=K+a_i,                 U_i=K+a_i+a_(i+1)+c,
+          P_i=K+a_i+a_(i+1),         F_i=K+a_i+c.
+
+      The old edges `P_i F_i` and new edges `P_i F_(i+1)` are perfect
+      matchings of the same eight middle ports.  Every U_i is fixed and the
+      R_i are cyclically permuted, so both adjacent shadow multisets and the
+      middle deck are exact.
+
+1614. If the old ports occur along one path as
+
+          F0->P0, P1->F1, P2->F2, P3->F3,
+
+      writing the five retained segments as `A|B|C|D|E`, the switch is the
+      literal common chronology
+
+          A | reverse(D) | reverse(B) | C | E.
+
+      Its new seams are `F0-P3,F2-P1,P0-F1,P2-F3`.  Hence topology and
+      endpoint Johnson legality are proved algebraically, and all four old
+      seams change, placing the move strictly outside the three-cut census.
+      This is an ambient odd-turn/flag C8, not a claim that the natural PBBS
+      M1 matching contains a C8; that matching is C8-free.
+
+1615. The complete deeper interface is finite and exact.  With separated
+      seams, depth q has exactly `4q` old and `4q` new crossing windows, so
+      upper support through q=7 needs 112 old and 112 new dependent PBBS
+      collar evaluations.  Depth-three residence needs 36 seam comparisons.
+      A row-j compiler cell depends on middle owners in `[p-6,p+j+3]`, so
+      the depth-three compiler boundary banks have at most 120 profiles per
+      side.  Internal windows/profiles cancel under translation or reversal.
+
+1616. The Hall-25 canonical DM shore has sizes `(1320,1295)` and 24
+      connected components with sizes
+
+          (165,163), 5(161,160), 2(160,159), (5,4),
+          2(3,2), 6(2,1), 7(1,0).
+
+      Its excess vector is `(2,1^23)`.  Thus every proposed descent must
+      have current at least one on the whole shore, nonnegative current
+      after omitting any unit component, and at least -1 after omitting the
+      excess-two component.  These component cuts are necessary, not
+      sufficient; the all-shore current or contracted matching rank remains
+      decisive.
+
+1617. One exact compiler incidence would already expose a Hall-24
+      augmentation, provided the old maximum matching is retained.  With
+
+          c2=(depth2,start490),  Gamma(c2)={17683,21779},
+          c1=(depth1,start490),  Gamma(c1)={17665,17667,21761,21763},
+          c*=(depth1,start2276), Gamma(c*)={1283,5379,17667,21763},
+
+      target 21779 and cell c* are unmatched, while c2-17683 and
+      c1-21763 are matched.  Adding 17683-c1 gives the literal augmenting
+      path
+
+          21779-c2-17683-c1-21763-c*.
+
+      At c1 the erosion states are `(20739,21762)`, envelope 21763, and
+      mandatory set 17665; target 17683 fails only because coordinate 5 is
+      missing from the envelope.  A direct endpoint-valid four-cut transport
+      with b=526 or 527 restores that local coordinate but is rigorously
+      rejected: it loses the unique upper-q1 witness 22411, has five
+      residence violations, and fails the central carrier condition.  The
+      exact remaining certificate is therefore a realized strong C8 whose
+      companion seams repair those collars and whose boundary retains or
+      reroutes every lost matching edge.  Full theorem and audit:
+
+          THREAD_R_K15_HALL25_STRONG_C8_FIVE_SEGMENT_BRAID_20260728.md.
+
+## 365. H25 multi-collar circulation and exact maximum-shore separator
+
+1606. Hall 25 is now the authoritative base for the braid/cross-stratum
+      lane.  Its lower-hole vector is `(4,19,4,1,0,0,0)`, not the stale
+      Hall-29 vector `(4,21,4,1,0,0,0)`.  Since every resident flat-middle
+      optimum needs `h1<=2` and `h2<=h1+3<=5`, a final compound must repair
+      at least two first-shadow and fourteen second-shadow holes in addition
+      to eliminating Hall deficiency.
+
+1607. Cut H25 into retained segments and adjoin the same formal closing seam
+      between the two prescribed path ends.  The resulting old and new
+      perfect seam matchings differ by an integral union of alternating even
+      cycles.  This is the exact multi-collar
+      circulation, but port balance is not enough: the segment-plus-seam
+      graph must be one cycle, every seam must be Johnson, and overlapping
+      dependency collars must be rematerialized as one macro.  At `d=3`, a
+      row-`h` compiler cell has full middle dependency `[s-6,s+h+3]`; an
+      isolated seam therefore affects at most `9,10,11` starts in rows
+      `0,1,2`, or 30 cells per shore.  Under full-collar disjointness the
+      signed Hall and all-depth trace columns add exactly.
+
+1608. The H25 maximum-deficiency shores are the successor-closed sets in a
+      residual-DM quotient with 9,256 optional balanced SCCs, 15,219 arcs,
+      height eight, and 5,760 sinks.  The canonical minimum has
+      `(1320,1295)` targets/cells and the canonical maximum `(10629,10604)`;
+      there are at least `2^5760` maximum shores.  For a fixed signed collar
+      bank, the minimum current over this entire lattice is one integral
+      maximum-closure/min-cut problem: old optional cells are SCC indicators
+      and each gained cell is one OR node.  The cut returns a literal
+      blocking shore.  Checking only the canonical extremes or sink
+      generators is invalid.
+
+1609. If `sigma25(X)=25-(|X|-|N_H25(X)|)` and `J(X)` is the compound signed
+      boundary current, exact one-unit descent is
+
+          J(X) >= 1-sigma25(X)  for every target shore X.
+
+      Positive current on all old maximum shores is necessary but not
+      sufficient because a near-critical shore may become the new blocker.
+      For disjoint macro-collars, each returned shore is an exact linear
+      Benders row in the integral collar variables.  The five nested shores
+      inherited from H25 through H29 are all maximum shores in H25; the
+      inverse H25-to-H26 move has currents `0,-1,-1,-1,-1` on them and `+1`
+      on the canonical maximum shore, concretely refuting an extremes-only
+      test.
+
+1610. Hall and port integrality do not supply one physical compiler.  After
+      fixing the final chronology and an injective target/cell assignment,
+      delete from each maximal controller coordinate-run every position
+      forbidden by any selected interval label.  One common word exists iff
+      the remaining positions reconstruct every central four-window, hit
+      every positive target/pin, and leave every physical letter nonempty;
+      the maximal remaining word then works.  Minimal shared interval
+      blockers have a determinant-two triangle, so the joint collar,
+      target-assignment, and common-word system is not generically TU.
+
+1611. A positive Hall-layer multi-collar is certified: the two-braid portal
+      path `H25 -> H25 -> H24` preserves the full lower-hole vector, every
+      upper layer, residence, and the deck.  Direct H25-to-H24 signature
+      cancellation leaves 58 cells per side over a common core of rank
+      16,323; contracted boundary capacity rises `35 -> 36`.  Hence the
+      compound opens every H25 maximum shore simultaneously.  The sharp
+      open object is now an integral continuation to Hall zero and the
+      prefix-hole corridor whose target assignment also passes one common
+      word.  The exact theorem and audit boundary are in
+
+          THREAD_D_H25_MULTI_COLLAR_CROSS_STRATUM_CIRCULATION_20260728.md.
+
+## 364. Tetrahedral segment braid gives the first exact Hall descent
+
+1600. A general three-cut segment braid writes a Johnson path as
+      `A|B|C|D` and replaces it by `A|orientation(C)|orientation(B)|D`.
+      The three endpoint adjacency tests are necessary and sufficient for
+      deck-exact Johnson legality.  For union or intersection traces at
+      depth q, all windows internal to the four transported segments cancel
+      as unlabelled multisets; the exact signed trace change is supported on
+      the windows crossing the three old and three new cuts.  Hence there
+      are at most `3q` deleted and `3q` inserted occurrences and L1 boundary
+      at most `6q`.  “Only three seams change” is literal only at q=1.
+
+1601. The successful RF move has a tetrahedral clean normal form.  Above one
+      fixed rank-six core K, its six boundary states are all two-subsets of
+      four coordinates.  The old/new seam `(lower,upper)` pairs are
+
+          old: (6253,7405), (6317,7343), (6191,7279),
+          new: (6253,7279), (6317,7405), (6191,7343).
+
+      Thus every immediate lower port is fixed and the three upper ports
+      cycle.  Both q1 shadow multiplicity vectors are exactly preserved,
+      while their incidence pairing changes.  This is a suspended clean-C6
+      packet with long path segments supplying the exact deck transport.
+
+1602. On the frozen carrier, `RF(a=471,u=2327,v=5456)` is exactly
+
+          A|B|C|D -> A|reverse(C)|B|D.
+
+      It remains a complete 6,435-state Johnson path, is depth-three
+      resident, and has the correct nonzero erosion rank profile.  All upper
+      rank-(8+q) supports remain complete for q=1,...,7.  The lower support
+      hole counts q=1,2,3 remain `4,21,4`; the q1 holes remain
+
+          {5801,7267,8877,13620}.
+
+      The native catalogue totals `12,013` resident and `9,243` upper-safe
+      moves, but these aggregate the degenerate RR two-cut reversals.
+      Genuine three-seam totals are `5,217` and `2,504`.
+
+1603. Exact depth-three Hall matching improves
+
+          deficiency 29 -> 28,
+
+      while the seven zero-candidate targets remain unchanged.  Cancelling
+      right cells by their complete target-neighbourhood signatures gives
+
+          G-=H disjoint_union B-,  G+=H disjoint_union B+,
+          |H|=19,274,  |B-|=|B+|=37.
+
+      The matching ranks are
+
+          nu(H)=16,336,
+          nu(H union B-)=16,354,
+          nu(H union B+)=16,355.
+
+      Thus the new boundary bank has contracted occurrence capacity 19
+      instead of 18.  This is not support creation: target 6308 has degree
+      14 on both sides, the zero set is unchanged, and the same +1 current
+      persists after deleting 6308 from the old critical shore.
+
+1604. The exact reusable dual is the signed boundary current.  For a shore
+      X put
+
+          n_F(X)=#{cells c in F : N(c) intersects X},
+          I_B(X)=n_(B+)(X)-n_(B-)(X).
+
+      If the old deficiency is d, old shore deficit is delta(X), and slack
+      is sigma(X)=d-delta(X), then the braid strictly descends exactly when
+
+          I_B(X) >= 1-sigma(X)
+
+      for every shore X.  A blocking shore has `I_B(X)<=-sigma(X)`; with
+      37-cell banks only shores of slack at most 37 can block.  For the old
+      canonical DM shore S,
+
+          |S|=1,524, n_H(S)=1,491,
+          n_(B-)(S)=4, n_(B+)(S)=5.
+
+      Its boundary degrees change `{7,4,4,4}->{4,4,4,2,2}`: neighbourhood
+      capacity rises by one even as incidence and collisions fall.
+
+1605. This is a proved one-step descent, not an iteration theorem.  The
+      exact missing lemma is that every deficient resident/all-upper-safe
+      carrier admits a tetrahedral braid satisfying the preceding current
+      inequality simultaneously on all near-critical shores while retaining
+      lower constraints.  The inverse braid preserves deck, residence, and
+      shadow supports but reverses the Hall gain, so those invariants alone
+      cannot orient descent.  The theorem, scope audit, canonical artifact,
+      and independent verifier are
+
+          THREAD_H_K15_TETRAHEDRAL_SEGMENT_BRAID_HALL_DESCENT_20260728.md
+          scratch/k15_segment_braid_hall28.json
+          scratch/audit_k15_tetrahedral_segment_braid_hall28.py.
+
+## 363. Exact conflict-circulation cuts for the three two-state exports
+
+1594. Fix a target-envelope-safe two-state block with exported deck arcs
+      a_i -> b_i, i=1,2.  After deleting every ambient UNIT operation whose
+      controller position is within seven of the block, let alpha_v count
+      block arcs leaving v and beta_v count block arcs entering v.  The
+      smallest pairing-free exact separated-closure ILP has one binary
+      variable x_e per retained ambient operation and the rows
+
+          sum_{s(e)=v} x_e + alpha_v
+            = sum_{d(e)=v} x_e + beta_v <= 1,
+
+          sum_{t <= rho(e) <= t+7} x_e <= 1.
+
+      It is exact: the selected ambient operations together with the two
+      block arcs are a vertex-disjoint union of directed cycles; deleting
+      ambient-only cycles leaves either the direct or crossed pair of paths.
+      Thus ordinary endpoint reachability is only a relaxation, while no
+      commodity labels are needed when either pairing is allowed.
+
+1595. For B1, with deck arcs 3148->685 and 3149->4452, the exact reachable
+      shore from 4452 after block-conflict deletion is
+
+          {461,1732,3153,4452,4499,4726,5100,5738,5752}.
+
+      It contains one block destination, no block source, and has no retained
+      ambient exit.  Its only exits in the full ambient catalogue are the
+      operations at controller positions 3153 and 3156, both deleted by the
+      block conflict.  Summed deck balance requires net ambient outflow one,
+      whereas the closed shore permits net outflow at most zero.  This is an
+      explicit LP/Farkas cut excluding both pairings.
+
+1596. For B2, the two block destinations 3120 and 3121 each force one
+      ambient outgoing operation.  Their complete retained candidate set
+      consists of two operations from each vertex, all at controller
+      positions in [3120,3127].  Hence balance forces total two in a
+      capacity-one window.  For B3 the identical contradiction holds for
+      destinations 2236,2237 and window [2236,2243].  Consequently all three
+      two-state blocks are infeasible already in the linear relaxation of
+      the separated 10,370-edge ambient-UNIT model.
+
+1597. The exact CNF reconstruction has respectively
+
+          B1: 10,338 variables, 157,061 clauses, 32 block deletions;
+          B2: 10,350 variables, 157,400 clauses, 20 block deletions;
+          B3: 10,348 variables, 157,377 clauses, 22 block deletions.
+
+      Kissat returns UNSAT in all three cases.  The independent verifier does
+      not invoke Kissat or trust the CNF encoder: it reconstructs all 10,370
+      ambient operations and verifies the one shore and two window cuts.
+      The machine-readable certificate, solver, and verifier are
+
+          scratch/k15_two_state_conflict_circulation_certificate.json
+          scratch/solve_k15_two_state_conflict_circulation.py
+          scratch/verify_k15_two_state_conflict_circulation_certificate.py.
+
+1598. This theorem is deliberately only a deck-closure theorem for the
+      separated isolated-UNIT catalogue.  The atomic blocks have legal
+      controller and middle Johnson chronologies, maximal erosion, and the
+      displayed singleton controller state 6308, but this is only
+      controller-envelope service.  The circulation has no physical-letter
+      variables and does not enforce the complete upper tower, exact target
+      pin, retained cells, common word, trace two, or owner skeleton.
+
+1599. The separation hypothesis is sharp.  The audited nonseparated
+      20-controller-state circuit closes B1's middle deck and retains maximal
+      erosion and literal P'3152=6308, but it loses eight rank-six lower,
+      fourteen rank-seven lower, and the rank-nine upper colours
+
+          {9661,23257,31457}.
+
+      Thus the next finite gate is not more ordinary routing: it is a
+      shadow-compatible interacting circulation (or another mechanism
+      outside the separated UNIT hypotheses), followed separately by the
+      physical-pin/common-word audit.  The complete theorem and audited
+      scope are in
+
+          MATH_K15_TWO_STATE_EXPORT_CONFLICT_CIRCULATION_CUT_CERTIFICATE_20260728.md.
+
+## 358. The compensated Hall-29 controller lift reduces to one closed deck-circuit CSP
+
+1570. The first one-deletion/demand-only lift is impossible for **every**
+      24-pin cover, not only for the displayed certificate.  Equality in
+      the 24-pin bound uses five double services.  Since their conflict graph
+      is `K_3 disjoint K_2 disjoint 3K_1`, every maximum compatible set
+      contains the isolated double pin `(6429,4)`.  Among all 1,602 UNIT
+      types, 6429 is the only pin position in the full affected controller
+      collar `[6426,6432]`.
+
+      Put `C={0,2,8,9}`.  The frozen neighbours are
+
+          P_6428=C+{13},   P_6430=C+{4}.
+
+      The only rank-five common Johnson neighbours containing 4 are
+
+          (C-{c})+{4,13},  c in C.
+
+      Each gives affected middle-window rank vector `(8,7,7,8)`.  Therefore
+      no lift changing only selected UNIT positions exists.  Every exact
+      24-pin lift must make at least one nondemanded interacting controller
+      change in `[6426,6432]`.  Together with §357, this closes both the
+      demand-only and separated-isolated collar architectures.
+
+1571. The formerly displayed old-pair-complementary witness is physically
+      impossible independently of its controller.  For selected target
+      intervals define the collar
+
+          C_p=intersection_(S,J: p in J) S.
+
+      Any physical word has `A'_p subseteq C_p`.  At position 5919 the full
+      retained/new collar is `{6,7,8}`, contradicting demanded pin
+      `(5919,0)`.  At 6110 it is `{5,6,10,14}`, contradicting `(6110,4)`.
+      These are the only two collar failures of that certificate.
+
+1572. A replacement equality certificate passes every fixed collar test.
+      It has 24 distinct UNIT pins, five double services, 29 distinct
+      unreserved new cells, and six complementary old assignments; together
+      they cover all 35 residual targets exactly once.  Its new-cell length
+      profile is
+
+          (n_1,n_2,n_3)=(6,16,7),
+
+      so 23 cells are nonsingletons.  Every demanded coordinate lies in
+      every one of the listed 1,489 retained, six old, and 29 new labels
+      crossing its position.  Additional owner or protected intervals may
+      create further collar cuts; no controller is yet constructed.
+
+1573. For exact controllers define changed controller and middle sets
+
+          C={p:P'_p != P_p},   D={i:T'_i != T_i}.
+
+      Then
+
+          D subseteq union_(p in C)[p-3,p],
+          C subseteq union_(i in D)[i,i+3],
+
+      and the changed middle values permute themselves:
+
+          {T'_i:i in D}={T_i:i in D}.
+
+      Thus they form a unique derangement of D.  For forced-coordinate sets
+      `R_i`, a proposed exact D first requires `R_i subseteq T_i` off D and
+      an off-diagonal Hall matching `i->j` on D with `R_i subseteq T_j`.
+      Chronology and erosion recovery remain additional cuts.
+
+      Taking only the 24 unique missing indices passes deck Hall for both
+      certificates, but fails frozen-neighbour chronology: the old witness
+      has 21 zero-domain positions and maximum matching 3; the collar-safe
+      witness has 23 zero-domain positions and maximum matching 1.  Hence
+      either lift needs a changed deck set strictly larger than 24.
+
+1574. The smallest exact controller/deck CSP is a permutation `sigma` of
+      the frozen complete rank-eight deck.  Put
+
+          T'_i=T_(sigma(i)),
+          P'_p=intersection_(max(0,p-3)<=i<=min(p,W-1)) T'_i.
+
+      Required and sufficient conditions are: consecutive `T'_i` are
+      Johnson-adjacent; the `P'_p` have boundary/interior rank profile
+      `8,7,6,5,...,5,6,7,8`; every four-window union of `P'` equals its
+      `T'_i`; and every demanded `(p,x)` has `x in P'_p`.  Exact deck
+      permutation implies all deck moments, while the useful compensation
+      cuts are
+
+          sum_x delta^+_(p,x)=sum_x delta^-_(p,x),
+          sum_p(delta^+_(p,x)-delta^-_(p,x))=0 mod 3.
+
+      Mod-three balance is redundant but strong; it cannot replace the
+      permutation, chronology, or erosion--dilation equations.
+
+1575. After a controller is found, one physical word is encoded by bits
+      `a_(p,x)` with `a<=P'`, nonempty letters, demanded pins equal one, and
+
+          1[x in T'_i] = OR_(p=i)^(i+3) a_(p,x).
+
+      For every selected target/cell `(S,J)`, forbid `x notin S` throughout
+      J and require a positive hit in J for every `x in S`.  These equations
+      are exactly `D^3 A'=T'`, all forced ports, the internal/boundary
+      run-gap rules, and the selected cell unions.  Target-use and cell-
+      capacity equations couple the six old choices to the 29 new choices.
+      Trace two additionally requires the realizing labels to come from the
+      actually active owner family at each position.
+
+      No `P'` or `A'` certificate is known.  The exact theorem, full
+      collar-safe certificate, and verifier are
+
+          THREAD_H_K15_COMPENSATED_CONTROLLER_CIRCUIT_GATE_20260728.md
+          scratch/audit_k15_compensated_controller_circuit_gate.py.
+
+## 356. Cut-aware tree selection, foreign-entry cuts, and Hall-29 address pins
+
+1559. Let B=(L,R;A) be the allowed-turn bipartite graph with integral
+      margins p,q, and let ell be the combined integer lower-bound vector
+      of a proposed support tree and concrete named-cell witness traversals.
+      There is an integral turn flow above ell exactly when all residual
+      source and target margins are nonnegative and, for every X subseteq L,
+
+          p(X)+ell((L minus X) x N(X)) <= q(N(X)).
+
+      The second term counts mandatory foreign entries consuming target
+      capacity in N(X) from outside X; mandatory edges from X cancel from
+      the two residual margins.  With the exact successor ledger
+
+          p_t=z_t-1[t=e_out],   q_t=z_t-1[t=e_in]
+
+      (or p=q=z cyclically) and connected mandatory support, the integral
+      flow spells one Euler chronology.
+
+1560. Tree connectivity and local capacities do not imply the preceding
+      cuts.  On two types with unit cyclic margins and allowed turns
+
+          1->1,  1->2,  2->2,
+
+      forcing 1->2 connects the underlying types and respects every local
+      margin, but for X={2} the foreign-entry cut reads 1+1<=1.
+      This is the smallest initially feasible flow-side obstruction.
+
+1561. The exact signed support ledger is not matroidal.  At one rank-four
+      owner, two occurrence-disjoint component-path switches
+
+          {12,34}->{13,24},
+          {13,24}->{12,34}
+
+      preserve four initial load-one labels together, while neither
+      singleton does.  Thus exact m_S-d_S+a_S>=1 is nonhereditary.  Even
+      after gains are ignored, a four-option rank-four catalogue whose
+      component edges already form a tree violates 2-extendibility: adding
+      one option to a feasible three-option set requires deleting two
+      port-conflicting options and a third label-conflicting option.
+      Therefore the natural destructive system is not an intersection of
+      two matroids.  Its true structure is graphic connectivity intersected
+      with a physical-port matching, a label b-matching, and the
+      foreign-entry cuts.
+
+1562. There is a positive ordinary matroid-intersection regime.  Fix all
+      address witnesses and mandatory switches first.  Suppose every
+      remaining option is a complete occurrence-faithful unit turn, and the
+      option classes defined by physical ports, unit net label losses, local
+      source/target capacities, and all foreign-entry cuts form one laminar
+      family.  These quotas define a laminar matroid M_L.  If M_G is the
+      contracted component graphic matroid, a safe tree exists exactly when
+      their common-independent-set rank reaches c_0-1, equivalently
+
+          r_(M_G)(Z)+r_(M_L)(E minus Z) >= c_0-1
+
+      for every option shore Z.  The selected common base has an integral
+      residual TU flow.  Signed gains between different optional switches
+      are not credited in this sufficient theorem.
+
+1563. The general usable composition is a faithful certificate theorem.
+      Select a spanning tree of safe pair-pair contacts on distinct named
+      occurrences; require its exact additive label ledger to remain
+      positive; delete the consumed old pairings; absorb every owner,
+      residence, lower, upper, and endpoint projection into fixed decorated
+      type counts or node-split margins; pin concrete address traversals;
+      and verify all foreign-entry cuts.  Then the residual connector
+      transport is integral and connected, and its Euler order is one
+      literal erosion/controller word.  Arbitrary owner or address colour
+      rows may not be appended to the transportation matrix.
+
+1564. For the retained peeled k=15 architecture, all 1,489 earlier
+      target-cell occurrences must remain durably pinned.  A completion is
+      certified by an injection from the 35 residual targets to named,
+      available, same-footprint cells whose decorated interval unions equal
+      their targets, together with the tree-flow conditions above.  Since
+      only six old unreserved cells survive, at least
+
+          35-6=29
+
+      selected cells are newly eligible unreserved addresses outside that
+      peeled six-cell graph.  For the unpeeled 1,524-target shore, the
+      separate stronger conclusion is at least 29 addresses outside its old
+      1,495-cell neighbourhood.  The number counts physical cell IDs, not
+      flow units; several cells may complete on one traversal.
+
+1565. No such 29-address decorated package is constructed.  The exact open
+      target is a faithful component tree plus concrete target-distinct cell
+      pins satisfying the signed label ledger and every foreign-entry cut.
+      The full proof and two independent audits are in
+
+          THREAD_AD_CUT_AWARE_TREE_TU_AND_HALL29_ADDRESS_SYNTHESIS_20260728.md.
+
+## 357. Isolated UNIT collars are acyclic; exact repair needs a closed deck circuit
+
+1566. In the frozen Hall-29 controller, an isolated flat UNIT edit replaces
+      one rank-five state by
+
+          P'_p=P_p-{y}+{x}
+
+      and leaves every other controller state fixed.  Requiring the two
+      controller adjacencies, all four affected middle unions, and all
+      affected middle Johnson adjacencies to remain legal leaves exactly
+      1,318 of the 1,602 UNIT pin types.  The other counts are 283 flat pins
+      with no such edit and one boundary pin outside the model.  Every
+      admissible edit has a unique deletion y and changes exactly one middle
+      deck state T_q to one other state T_(q').  The resulting 1,318-arc
+      digraph q->q' has 2,295 vertices and is acyclic.  Only 14 of the
+      displayed 24 witness pins admit an isolated edit.
+
+1567. No nonempty pairwise distance-at-least-eight family of those isolated
+      edits preserves the exact middle deck.  At that separation the local
+      supports are independent, so deck preservation would make the chosen
+      arcs a nonzero nonnegative circulation, hence a union of directed
+      cycles.  The replacement digraph has none.  Thus the independent
+      one-controller-collar strategy is closed at every family size, not
+      merely for the displayed witness.
+
+1568. This theorem does not rule out arbitrary separated multi-state C6
+      collars.  One complement-shore C6 already has two adjacent mutable
+      controller masks per seam and couples its three seams through one
+      exact factor trade; it is not a set of isolated graph arcs.  For an
+      interacting support J define
+
+          I(J)={i:[i,i+3] meets J},
+          T'_i=union_(p=i)^(i+3) P'_p,
+          Sigma(J,P')=sum_(i in I(J)) ([T'_i]-[T_i]).
+
+      Assuming every new union has rank eight, exact middle-deck
+      preservation is equivalent to Sigma=0 in the free abelian group on
+      rank-eight states.  Johnson adjacency, residence, all shadow ledgers,
+      Hall current, and the common physical word remain additional
+      conditions.
+
+1569. Consequently any nonempty exact repair assembled from the audited
+      flat one-state UNIT edits must leave the independent regime:
+      controller supports overlap, a packet changes several states jointly,
+      or the chronology is globally reordered.  Boundary edits, UNIT types
+      outside the audited Hall atlas, and non-UNIT moves are outside this
+      implication.  In particular the ten displayed witness pins without an
+      isolated flat edit already force a collective mechanism.  The
+      surviving lane-R target is a closed interacting deck circuit
+      satisfying Sigma=0 and then the one-word/controller conditions, not a
+      bank of separated pin collars.  The restricted finite theorem and
+      verifier are
+
+          MATH_K15_UNIT_PIN_ISOLATED_CONTROLLER_CYCLE_NOGO_20260728.md
+          scratch/audit_k15_unit_pin_isolated_cycle_nogo.py
+
+      and the C6 composition is recorded in Section 10.8 of
+
+          THREAD_R_PBBS_DIAMOND_C6_H_SAFE_LINEARIZATION_20260728.md.
+
+## 379. Decorated MMM switch space and the k=15 global-support obstruction
+
+1716. Merino--Micka--Mutze supplies the undecorated base unconditionally:
+      for every odd `k=2m+1` and every unit shift there is a `k`-fold
+      rotational Middle Levels Hamilton cycle.  Its upper projection is a
+      strict-spiral Johnson Hamilton carrier with one occurrence of every
+      lower-q1 colour and primitive quotient voltage.  Residence, lower q2,
+      upper shadows, a safe cut, and the common physical compiler remain
+      separate decorations.
+
+1717. Let `Mbar_k` be the bipartite necklace quotient, retaining parallel
+      inclusion-edge orbits and phases.  Symmetric exact owner factors are
+      precisely its spanning degree-two factors.  Relative to a fixed MMM
+      factor `F_0`, every raw owner-exact change is exactly a signed vector
+
+          z in {-1,0,1}^E,  Bz=0,
+
+      with negative support in `F_0` and positive support outside it.  Every
+      such vector decomposes into sign-compatible alternating even circuits,
+      and support-minimal vectors are simple alternating cycles (parallel
+      2-cycles allowed).  Connectivity and primitive voltage are additional
+      terminal conditions.  If the balanced red/blue support is connected,
+      its whole edge set has one alternating Euler traversal, but this does
+      not imply circuit-minimality.
+
+1718. For direct hybrids of two coloured quotient cycles, write `e_c,f_c`
+      for the old/new edge over changed lower colour `c` and
+
+          Delta_c = partial(f_c)-partial(e_c).
+
+      A subset `S` is a degree-two rainbow direct switch iff
+
+          sum_(c in S) Delta_c = 0.
+
+      Thus exact direct indivisibility is the binary-kernel statement
+      `ker_{0,1}(Delta)={0,1}`, not connectedness of the overlay.  In the
+      oriented tailwise subclass, with successors `sigma_j` and outgoing
+      colour bijections `chi_j`, allowable selections are exactly unions of
+      orbits of
+
+          Gamma=<sigma_1^{-1}sigma_0, chi_1^{-1}chi_0>.
+
+      The mixed successor must still be one cycle and its recomputed voltage
+      a unit.  Gamma transitivity is sharp only for this coherent tailwise
+      subclass; arbitrary inclusion-edge circuits can create mixed choices.
+
+1719. If two terminal Hamilton carriers differ in `b` quotient owner
+      choices, their physical common graph is exactly `kb` retained path
+      segments (isolated vertices included); at quotient scale it has `b`.
+      Every switch is therefore a cyclic permutation/reversal of these
+      segments followed by `kb` new seams.  This gives exact terminal tests:
+
+      * residence at least four iff every old short-run closed span is cut
+        and no inserted-seam collar creates a new run of length at most 3;
+      * lower q2 is complete iff every rank-`m-1` target has a retained
+        internal triple witness or a new seam-crossing triple witness;
+      * all upper shadows are complete iff every upper target occurs in the
+        exact cyclic prefix/suffix/internal-union product of the rethreaded
+        segments.
+
+      These conditions, plus quotient connectivity and unit voltage, are
+      necessary and sufficient for the requested decorated symmetric
+      carrier.  They are one common terminal test, not independent rankwise
+      choices.  Fixed-q changes are seam-local; unrestricted upper intervals
+      depend on the global segment order.
+
+1720. For the audited canonical shift-one `k=15` carrier, rank nine (and by
+      complement rank six) has exactly 333 rotation orbits of size 15 and
+      two of size 5.  The 550 missing rank-nine targets are therefore
+
+          36*15 + 2*5,
+
+      exactly 38 missing orbits.  A rank-nine interval witness exists iff an
+      adjacent Johnson edge has that union, and one inserted quotient edge
+      supplies only one target orbit.  Hence every symmetric repair with all
+      upper shadows satisfies the sharp count-only obstruction
+
+          b >= 38.
+
+      The independent residence and lower-q2 counts give only `b>=33` and
+      `b>=19`: the 1,980 short runs form 132 free orbits and one removed edge
+      orbit hits at most four closed spans; the 550 q2 holes form 38 target
+      orbits and one inserted seam orbit lies in at most two new triples.
+      Thus a successful repair changes at least 38/429 owner choices and has
+      contracted symmetric difference at least 76 edge orbits.  This rules
+      out every local or compound packet of total support at most 37, not a
+      quotient-global braid.  The numeric premise retains the documented
+      unfrozen-live-payload caveat.
+
+1721. The known good `k=11` carrier is indeed global, but the phrase "one
+      quotient-spanning alternating component" must be interpreted
+      carefully.  The stored good endpoint itself is locally certified:
+      42 quotient choices, Hamilton lift, voltage `2 mod 11`, residence at
+      least four, and no upper or lower q2/q3 holes.  Against the dynamically
+      downloaded canonical cycle it reportedly changes 41/42 owner choices;
+      the second fully local comparison changes 42/42.  Their contracted
+      exclusive supports are connected and balanced and hence admit one
+      spanning alternating Euler packet.  The first has quotient retained
+      graph one edge plus 40 isolated vertices and cyclomatic number 41; the
+      second has 42 isolated vertices and cyclomatic number 43.  The
+      comparison script computes ordinary connected support on upper
+      endpoints, not the binary kernel or the support-minimal expanded
+      circuits.  Therefore neither endpoint difference is proved atomic,
+      and chains through third factors remain possible.
+
+1722. The exact unresolved symmetric existence statement is to find one
+      sign-compatible circuit sum on `Mbar_15`, necessarily changing at
+      least 38 lower necklaces, whose terminal factor is connected, has unit
+      voltage, passes the residence-four collar test, covers every lower-q2
+      orbit, and passes the all-upper segment-union product.  Even that does
+      not by itself provide a safe linear cut or a common lower compiler
+      word.  Full proofs, the connected-versus-atomic counterexample, exact
+      quantifiers, and provenance caveats are in
+
+          MATH_THEOREM_DECORATED_MMM_ALTERNATING_SWITCH_AND_K15_SUPPORT_OBSTRUCTION_20260729.md.
+
+## 378H. Composite weighted-orbit one-core compiler and the exact C15 quotient Hall theorem
+
+1708. Fix an equivariant one-core `C` on a cyclic strict-spiral carrier and
+      retain occurrence-labelled physical source positions.  For any finite
+      cyclic action, the physical containment graph has a matching saturating
+      all flexible targets if and only if every collection `X` of target
+      orbits satisfies
+
+          sum_(O in X) |O| <= sum_(J in N_q(X)) |J|.
+
+      In the strict odd-`k` spiral, translation by `N=W/k` is free on source
+      positions, so every right orbit has size `k`.  Combining this criterion
+      with `C <= A <= P` and `DC=DP` yields a nonempty word with
+
+          DA=DP,  D^j A=D^j P  (1<=j<=d),
+
+      and complete lower coverage, provided `h=r-d>=1` and the fixed graded
+      shadow rows cover ranks `h+1,...,r`.  This is the composite
+      weighted-orbit form of the graded one-core compiler.
+
+1709. The general cyclic stabilizer census is exact.  For the subgroup of
+      order `a|k`, the number of rank-`s` subsets it fixes and the number with
+      exact stabilizer are
+
+          F_a^(k)(s) = binom(k/a,s/a) if a|s, else 0,
+          E_a^(k)(s) = sum_(a|b|k) mu(b/a) F_b^(k)(s).
+
+      Such sets have orbit size `k/a` and contribute
+      `E_a^(k)(s)/(k/a)` quotient targets, each with physical demand `k/a`.
+
+1710. At `k=15`, ranks one through five have orbit profiles
+
+          rank1: 15^1;
+          rank2: 15^7;
+          rank3: 15^30, 5^1;
+          rank4: 15^91;
+          rank5: 15^200, 3^1.
+
+      The short rank-three orbit is generated by `{0,5,10}` and has
+      stabilizer order three.  The short rank-five orbit is generated by
+      `{0,3,6,9,12}` and has stabilizer order five.  Therefore the 331-node
+      target quotient has exact weighted demand
+
+          329*15 + 5 + 3 = 4943
+
+      against `429*15=6435` physical position capacity, and its complete Hall
+      inequalities are
+
+          15 f(X) + 5 eps_3(X) + 3 eps_5(X)
+              <= 15 |N_q(X)|
+
+      for every quotient shore `X`.
+
+1711. Short orbits create no additional phase-Hall inequality.  If a target
+      `S` has stabilizer `H` and `S~i`, then `S~h i` for every `h in H`.
+      Freeness on the right makes these `|H|` positions distinct; translating
+      the complete target orbit fills the entire adjacent 15-position orbit.
+      More generally, supermodularity of
+
+          delta(A)=|A|-|N(A)|
+
+      lets one union all rotations of a maximum-deficiency shore without
+      changing its deficiency.  Hence every physical Hall obstruction has an
+      orbit-union representative, proving exact equivalence to the weighted
+      quotient inequalities.  No stabilizer divisibility or transversality
+      hypothesis is missing, but the final matching must be allowed to break
+      symmetry: a nontrivial short orbit cannot inject equivariantly into a
+      free right orbit.
+
+1712. The exact quotient implementation is a node-capacitated flow with
+      demands `15,5,3`, right capacities 15, and unbounded adjacency-edge
+      capacity.  Adjacency means containment at some relative phase, not only
+      representative-to-representative containment.  A saturated quotient
+      flow certifies physical Hall and thus existence of a physical matching,
+      but its particular aggregate allocation need not phase-lift.  Emitting
+      the word requires an ordinary phase-resolved physical matching or an
+      additional lifting theorem.  Edge-orbit multiplicities are irrelevant
+      to Hall's vertex capacities.
+
+1713. The boundary hypotheses are essential.  Residence must be genuinely
+      cyclic across index zero.  The envelope and core must obey
+
+          P_(i+N)=rho^v P_i,   C_(i+N)=rho^v C_i,
+
+      with `gcd(k,v)=1`, including the twisted seam equation
+
+          C_(N-1) union rho^v C_0
+              = P_(N-1) union rho^v P_0.
+
+      Solving only internal quotient-path core constraints does not define a
+      graph automorphism; the replicated seam-cone lemma localizes but does
+      not repair this failure.  Right resources must remain occurrence-labelled
+      positions or based `(start,length)` intervals.  Coalescing equal values
+      or forgetting starts invalidates the uniform right capacity 15.
+
+1714. The cyclic-to-linear prefix lemma is sound: append the first `d` source
+      letters as fixed copies, not new Hall resources.  Its `O(kd)` boundary
+      collar is the union of `k` seam collars, not necessarily one interval.
+      Lemma 1.2 in the source note needs `D^dA=T` explicit in the meaning of
+      “depth-`d` compiler”; then longer intervals cannot realize rank `r-1`
+      because each contains a rank-`r` central window.  The general nonempty
+      conclusion also needs `h>=1`.  These are formal scope corrections and
+      do not affect the weighted Hall theorem or the `k=15,h=5` specialization.
+
+1715. The full hand proof, Mobius census, composite compiler theorem,
+      stabilizer-edge audit, nonlifting counterexample, and exact hypothesis
+      list are in
+
+          THREAD_C15_WEIGHTED_ORBIT_QUOTIENT_HALL_AUDIT_20260729.md.
+
+      The audited source theorem
+
+          MATH_THEOREM_EQUIVARIANT_GRADED_COMPILER_QUOTIENT_HALL_20260729.md
+
+      is correct as an existential quotient-Hall reduction subject to the
+      preceding cyclic-boundary/right-label hypotheses.  It does not prove
+      the 331-by-429 inequalities for a `k=15` carrier and does not by itself
+      phase-lift a quotient flow or supply an upper-safe cut.
+
+## 378. Composite-safe strict spirals and the graded quotient compiler
+
+1594. The prime restriction in the first cyclic-quotient solver was an
+      implementation restriction, not a central-layer obstruction.  For
+      every odd `k=2m+1`, rotation acts freely on ranks `m` and `m+1`, since
+      both ranks are coprime to `k`.  Thus each central shore has exactly
+      `Cat(m)` rotation orbits even when `k` is composite.  A quotient cycle
+      of voltage `v` lifts to one physical cycle exactly when
+      `gcd(v,k)=1`; the prime-only shortcut `v!=0` is invalid at `k=15`.
+      Off-central target ranks can have short orbits and must be weighted by
+      their actual Burnside sizes.
+
+1595. The Merino--Micka--Mutze rotational Middle Levels theorem supplies,
+      unconditionally for every odd `k` and every unit shift, a strict-spiral
+      Johnson Hamilton carrier with a perfect immediate-lower rainbow.  This
+      settles the bare symmetric Hamilton/rainbow base at composite `k=15`.
+      It does not settle the decorations.  The published shift-one carrier at
+      `k=15` has 1,980 residence defects, misses 550 rank-six lower targets,
+      and misses 1,338 upper targets.  Moreover the two passing `k=11`
+      decorated carriers differ from the published cycle by one alternating
+      component spanning the whole 42-vertex quotient.  Decoration is
+      therefore global rather than a bounded local correction of the
+      canonical output.
+
+1596. There is an exact compiler collapse inside the stronger graded class
+      `DA=DP`.  Let `T` be a cyclic depth-`d` resident carrier and `P` its
+      maximal depth-`d` erosion.  A one-core is a sequence `C<=P` with
+      `DC=DP`.  Form the bipartite graph between all nonempty targets of rank
+      at most `h=r-d` and physical positions, with
+
+          S ~ i  iff  C_i <= S <= P_i.
+
+      If this graph has a target-saturating matching, put the matched target
+      literally at its matched source position and leave every other letter
+      equal to `P_i`.  Then `C<=A<=P`, so the pointwise sandwich gives
+
+          DP=DC <= DA <= DP,
+
+      hence `DA=DP` and every higher derivative row is frozen.  This is a
+      genuine common word, not the unsound independent-cell Hall relaxation
+      ruled out elsewhere in the log.
+
+1597. For a strict spiral and an equivariant one-core, physical Hall is
+      equivalent to weighted quotient Hall.  A maximum-deficiency Hall shore
+      can be unioned over rotations because deficiency is supermodular.
+      Therefore it suffices and is necessary to test every collection `X` of
+      target orbits against
+
+          sum_{O in X}|O| <= k |N_quot(X)|.
+
+      At `k=15`, the left side has 331 target orbits against 429 position
+      orbits, with exact profiles
+
+          rank 1: 15^1;       rank 2: 15^7;
+          rank 3: 15^30,5^1;  rank 4: 15^91;
+          rank 5: 15^200,3^1.
+
+      Thus composite short orbits are handled exactly rather than divided
+      uniformly by 15.
+
+1598. In this graded route lower `q=3` is not a carrier gate.  At
+      `(k,r,d,h)=(15,8,3,5)`, rank-five and all smaller targets are assigned
+      literally by the matching.  The carrier must retain only residence,
+      perfect lower `q=1` (already supplied by the symmetric Middle Levels
+      base), lower `q=2`, and all upper shadows.  After Hall, a cut whose
+      upper witnesses do not cross it and an appended three-letter prefix
+      produce a linear word of length `W+3` without losing any lower cyclic
+      cell.
+
+1599. The collapse is calibrated end to end on a fresh strict `k=11`
+      carrier.  Its canonical equivariant one-core has rank profile
+      `1^55 2^220 3^187`; weighted quotient flow and the physical matching
+      both have value `231/231`.  Direct literal assignment, cut zero, and
+      prefix closure give a new independently verified length-465 word,
+      without lower-compiler SAT.  The word SHA-256 is
+
+          b90eebd0f9f4eb50084ec3f70f333f19cadb4b0138b8cc695502e6e5b6654862.
+
+      The proof, deterministic audit, repo-owned implementation, fixture,
+      and verifier are
+
+          MATH_THEOREM_EQUIVARIANT_GRADED_COMPILER_QUOTIENT_HALL_20260729.md
+          scratch/audit_k11_equivariant_graded_quotient_hall.py
+          scratch/graded_quotient_pipeline.py
+          scratch/graded_quotient_pipeline_README.md
+          scratch/fixtures/k11_equivariant_carrier_repo_v1.json.
+
+1600. The exact strict-equivariant `k=15` residue is now three gates:
+
+      1. choose a strict spiral satisfying residence, lower `q=2`, and every
+         upper shadow;
+      2. choose a sparse equivariant one-core whose weighted `331 x 429`
+         quotient Hall flow is full; and
+      3. choose an upper-safe cut.
+
+      No `k=15` carrier or word has yet passed these gates.  The repo-owned
+      search serializes both stable IDs and explicit extension triples and
+      rejects catalogue drift.  A result is not a certificate until the
+      final exhaustive verifier reports all `32767` nonempty masks and an
+      exact rank-eight middle derivative row.
+
+## 377H. Hall-19 c0440 root migration, literal readiness, and the direct Hall-18 no-go
+
+1701. The priority profile candidate is now frozen as
+
+          scratch/k15_h19_neutral_c0440_fr3814_4556_5539.json
+
+      with SHA-256
+
+          a51f8631a9b2394405b8304c949bf9606d3b43f897f51ad9474de725df34584a.
+
+      It is exactly `FR(3814,4556,5539)` from the Hall-19 base.  It remains a
+      6,435-state rank-eight Johnson path with depth-three residence, complete
+      upper support at every q=1,...,7, Hall/zero score 19/6, and positive DM
+      shore 380/361.  Its lower-hole vector is
+
+          (4,18,13,1,0,0,0),
+
+      so the immediate-lower four-hole bound is retained but the depth-three
+      lower support loses two colours relative to the base vector
+      `(4,18,11,1,0,0,0)`.
+
+1702. The profile compression is a root migration, not a nested
+      subcomponent.  The old root-960 `161/160` component disappears and a
+      root-9104 `25/24` component appears; their target shores intersect only
+      at 13264.  On the fixed old 161-target shore, however, c0440 has 161
+      neighbours and exact induced rank 161.  The restricted star
+
+          {960,9152}
+
+      occurs once in the base, at depth-zero cell 6053, and twice in c0440,
+      at cells 4800 and 6053.  Hence its multiplicity gain is exactly one.
+
+1703. Both duplicate occurrences give literal common-controller witnesses.
+      Replacing the maximal controller value 9152 by 960 at either position
+      deletes only mask 8192, leaves the word nonempty, and preserves all
+      6,435 central four-position unions.  Under the same word all 497 native
+      target types of the former 516/497 positive DM shore survive after
+      relocation, together with root960.  Also the union of the 160 old
+      root-960 nonroots and the 361 c0440 canonical DM-native targets has 520
+      target types, all simultaneously retained; with root960 this is 521
+      distinct pins.  This is not fixed-cell preservation: only 369/497 or
+      368/497 of the former target/cell pairs survive on their original cells.
+
+1704. The root-960 witness is matching-neutral globally.  For the two frozen
+      selected injections, reserving the saturated old 161-target component
+      leaves relaxed exterior rank 16203/16222, while reserving the relocated
+      497 old basis pins plus root960 and deleting the full old 516-target
+      shore leaves rank 15866/15867.  Both totals are exactly 16364.  These
+      exterior ranks are candidate-graph incidence ranks after deleting the
+      selected cells; exterior edges are not certified under the forced word.
+      Exact equality is asserted for the frozen injections only, although the
+      global matching number 16364 supplies the same universal upper bounds
+      for any 161- or 498-pin injection on those target shores.
+
+      The migrated root-9104 component has 24 distinct native children, each
+      with one occurrence.  It has twelve raw central-safe root sockets, but
+      every socket releases its unique child.  Thus it has zero
+      duplicate-backed, all-24-native-pin-preserving root ears.  Within this
+      fixed-component strategy the next local object is a two-for-two or
+      larger controller circuit retaining all 24 children while adding 9104;
+      this is sufficient, not necessary for an arbitrary global rethreading.
+
+1705. The complete protected direct neighbourhoods of c0440 and the
+      secondary c0520 were scanned on the H100 CPU without a duplicate run.
+      The exact catalogue is every endpoint-compatible FF/RF/FR three-cut
+      braid and RR interval reversal which immediately preserves residence,
+      all upper supports q=1,...,7, and at most four immediate-lower holes.
+      The exact description counts are
+
+          c0440: 549329 Johnson, 12021 resident, 9202 upper-safe,
+                 7301 Hall-scored;
+          c0520: 548467 Johnson, 11956 resident, 9165 upper-safe,
+                 7304 Hall-scored.
+
+      Different descriptions need not materialize distinct words.  Both
+      complete score histograms have minimum Hall value 19, so neither
+      catalogue contains Hall 18 at any zero count.  This does not exclude a
+      neutral-plus-improving pair, a four-or-more-block/global rethreading, or
+      a route which temporarily violates one protected predicate.  The
+      scheduler's generic first-`BEST` parser bug is harmless here because
+      each output has one `BEST` line and the complete histogram begins at 19.
+
+1706. The secondary candidate
+
+          c0520 = RF(688,2636,2650)
+
+      has SHA-256
+
+          897ab99092552874c0b66203bc4bbe1a4e4b68e349d58521b53ebf21dd126c39.
+
+      It replaces the old root-8216 `321/319` core by canonical components
+      `129/128` rooted at 8217 and `161/160` rooted at 8218.  Their union is
+      290/288, a 31/31 contraction rather than a literal partition of the old
+      shore.  The operation is defect-neutral and the global matching number
+      remains 16364; its full positive DM shore is 485/466.
+
+1707. The full proved theorem, selected-injection scope, two independent
+      common-word audits, corrected raw-versus-duplicate socket distinction,
+      scan histograms, and exact remote provenance are in
+
+          THREAD_H_H19_C0440_ROOT_MIGRATION_READINESS_AND_DIRECT_H18_SCAN_20260728.md
+          scratch/k15_h19_c0440_c0520_freeze_manifest_20260728.json
+          scratch/k15_h19_c0440_fixed_physical_readiness_audit.json
+          scratch/audit_k15_h19_c0440_fixed_readiness_independent.py
+          scratch/audit_k15_h19_c0440_root960_common_q.py
+          scratch/audit_k15_h19_c0440_root9104.py.
+
+      A sufficient fixed-component Hall-18/common-word target is one matching
+      of size 16365 consisting of all 25 root-9104 targets plus 16340 exterior
+      targets on disjoint cells, with every edge realized by one common
+      nonempty controller word.  Other component migrations remain possible,
+      so this target is not an unrestricted necessity and gives no asymptotic
+      coefficient-one conclusion by itself.
+
+## 376. Candidate-0575 duplicate-child splitter and repeated-axis correction
+
+1686. The label `c0575` is the census index of the unique extreme
+      Hall-21-neutral compression state, not physical cell 575 and not the
+      improving braid.  It is created by
+
+          RF(1510,5017,6136)
+
+      and replaces the root-1920 `169/168` component by a root-1801
+      `25/24` rooted native basis while keeping matching rank 16362.  The
+      subsequent
+
+          RF(885,1393,3668)
+
+      is the splitter and raises the matching rank to 16363.  Its decisive
+      Boolean square uses zero-based axes alpha=1 and beta=5:
+
+          {1801,1803,1833,1835}
+            -> {1801,1833} + {1803,1835}.
+
+      Thus it does not discharge either repeated-axis-13 `2/1` component.
+
+1687. The exact fixed-basis splitter criterion is a two-provider condition.
+      If a rooted component C has target-labelled providers for
+      `C minus {rho}`, choose `t != rho`, retain providers for
+      `C minus {rho,t}`, and add distinct cells `u,v`.  This fixed local bank
+      saturates C iff the `2 x 2` graph between targets `{rho,t}` and cells
+      `{u,v}` has a perfect matching.  A global unit gain additionally
+      requires a target- and cell-disjoint exterior matching of size
+
+          n-(|C|-1),
+
+      and exact deficiency `h-1` additionally requires a final gap-`h-1`
+      shore.  In the root-1801 instance the 23 common providers cover
+      `C minus {1801,1835}`, and the two fibre cells cover 1801 and 1835.
+      The focal complement has exact rank 16338, giving
+
+          24+16338=16362,   25+16338=16363.
+
+      Separately, the full-profile common core has rank 16345 and its collar
+      rises `17->18`; these two contractions must not be conflated.
+
+1688. The unit gain is literal on the former critical shore.  The final
+      carrier has two native-1833 cells, 9334 and 9599.  Retain one and
+      shrink the other to root1801 by
+
+          (1577,809) -> (1545,777),
+
+      deleting bit32.  The bit run and all selected interval-survival tests
+      pass, so one word realizes all 25 focal targets plus all 657 final-DM
+      native pins, namely 682 distinct pins.  This is an instance of the
+      duplicate-child common-Q theorem, not a native depth-zero root ear.
+      A full 16338-edge exterior matching is not jointly realized; a full
+      extension needs 15681 further simultaneous pins.
+
+1689. For the surviving H20 components
+
+          {2676,10868}, {19568,27760},
+
+      both child-to-root bit-8192 shrinks already pass the central and
+      selected-pin survival tests.  They are rank-neutral because each pair
+      has only one child provider.  The exact missing local resource is a
+      second distinct provider for 10868 and/or 27760.  Sharing axis13
+      reduces a simultaneous shrink to one deletion mask but does not share
+      physical cells and imposes no seam-current identity.  On the canonical
+      H21 source, the exhaustive H100 one-braid audit finds no protected
+      endpoint with both native root ears.  The only one-ear endpoints have
+      scores `(H,z)=(23,9)` and `(22,8)`, so neither preserves the six-zero
+      count.  This no-go is restricted to the stronger native-ear normal
+      form and does not exclude a nonnative duplicate-child router.
+
+1690. The H21-to-H20 pair preserves the exact six singleton zeros.  Root1801
+      was a positive `25/24` circuit, not a zero target.  Hence component
+      compression plus duplicate-child splitting can continue Hall descent
+      without touching the zero floor, but gives no creator for a `1/0`
+      component.  The independently audited global frontier has since moved
+      to H19 through the separate native-forest/profile-duplication route in
+      items 1683--1685; nothing here supersedes that route.
+
+1691. The full theorem, exact quantifiers, simultaneous same-axis shrink
+      lemma, current ledgers, scope audit, and reproducible H100 census are in
+
+          THREAD_AD_K15_C0575_DUPLICATE_CHILD_SPLITTER_AND_AXIS13_COMPARISON_20260728.md
+          scratch/k15_h21_axis13_one_braid_native_ear_census.json
+          scratch/audit_k15_h21_axis13_useful_ear_census.py
+          scratch/audit_k15_h21_axis13_useful_ear_census.json.
+
+## 374. Multi-root native forests and the exact Hall-19 profile router
+
+1594. The authoritative `k=15` carrier/compiler frontier is now Hall 19,
+      still with six zero-candidate targets.  The frozen chain is
+
+          H20 --RF(180,2764,4210)--> H20
+              --FR(123,722,4710)--> H19.
+
+      Its three file SHA-256 values are respectively
+
+          9dd192d50e2e94dccb109fdc649fa5e13d2e4f17bac687d30547bd1bb6ddfcf1,
+          eabc8c63d5c8ae1b63e95118be620cb2e94507dafb1d11a1b10a46de41dc2e51,
+          86dcb9f16739b0a75eca8cde6bc9c824876453ab3b8fc70f01144da517dd4c0b.
+
+      Exact matching ranks are `16363,16363,16364`; positive DM shores are
+      `677/657`, `677/657`, and `516/497`; lower-hole vectors remain
+      `(4,18,11,1,0,0,0)`; every audited upper layer remains complete.
+
+1595. An `s`-root native forest is a target/cell pair `(X,Y)` under one
+      controller word whose physical native traces biject `Y` with
+      `X\Omega`, where `|Omega|=s` and `|X|-|Y|=s`.  Positive DM deficiency
+      is the direct sum of these component gaps.  Therefore fusing disjoint
+      native forests while preserving their total target shore, native trace
+      set, and all other component gaps is exactly matching-neutral.
+
+1596. The first braid realizes such a fusion.  It replaces the disjoint
+      rooted bases `(161/160)_8217` and `(160/159)_8218` by one connected
+      `321/319` native forest whose exposed roots are exactly `{8217,8218}`
+      and whose Boolean core is 8216.  The Hall gap stays two.  The remote
+      `(161/160)_24610` target shore and complete abstract restricted-profile
+      multiset are unchanged, although its physical chronology is rerouted.
+
+1597. The second braid discharges that remote root-24610 component.  On its
+      fixed 161-target shore, 159 profiles cancel and the exceptional surgery
+      is
+
+          {26146,26402}
+             -> {24610,25634} + {26146} + {26402}.
+
+      The final neighbourhood has 162 physical cells and rank 161, disjoint
+      from the surviving positive-DM right shore.  Hence the global rank
+      rises by one and Hall deficiency falls from 20 to 19.  This is a
+      profile-routing theorem, not a DM-compression theorem: the neutral move
+      changes physical realizability while leaving the component eventually
+      discharged abstractly unchanged.
+
+1598. The descent also has a literal shore-local common-controller witness.
+      Native target 25634 occurs at physical cells 1212 and 4713.  Shrinking
+      either copy to root 24610 preserves the other copy, every central
+      carrier window, all 497 final-shore native pins, all 160 non-root pins
+      of the discharged component, and non-emptiness.  Thus one controller
+      realizes `658=677-19` simultaneous pins on the former Hall-20 shore.
+      This is not a common-word lift of a full 16,364-edge matching and does
+      not prove `nu(15)=6438`.
+
+1599. The full direct one-braid neighbourhood of the Hall-19 carrier is
+      exhausted: 548,377 Johnson candidates, 11,957 resident candidates,
+      and 9,164 upper-safe candidates contain no Hall-18 state.  The next
+      exact finite lane is the Hall-19-neutral beam ranked jointly by
+      component compression and physical duplicate/root readiness; abstract
+      DM size alone misses the profile-router mechanism.
+
+      The theorem and three independent frozen-certificate audits are
+
+          MATH_THEOREM_K15_MULTIROOT_NATIVE_FOREST_PROFILE_ROUTER_20260728.md
+          MATH_K15_DM_PROFILE_ROUTER_H19_20260728.md
+          scratch/audit_k15_h20_h19_profile_router_theorem.py
+          scratch/audit_k15_h19_root8216_chain_independent.py
+          scratch/audit_k15_h20_h19_exposed_roots_common_q.py.
+
+## 359. First target-safe two-state export and the two-commodity conflict gate
+
+1576. Exhausting all adjacent/nearby two-controller UNIT blocks of gap at
+      most seven with at least one Hall-service demand gives 1,011,150 raw
+      choices and 27,838 fully local-legal blocks.  None is locally
+      deck-closed.  Exactly 59 retain an advertised Hall target.  Only three
+      have both exported deck arcs routable in the unconstrained ambient
+      UNIT graph, directly or after crossing the pairing:
+
+          edits (3151,+12,-13),(3152,+11,-13)
+          export 3148->685, 3149->4452;
+
+          edits (3266,+12,-6),(3267,+11,-6)
+          export 3263->3120, 3264->3121;
+
+          edits (3268,+2,-6),(3269,+12,-6)
+          export 3268->2236, 3269->2237.
+
+      In each row the displayed edited singleton controller letter is
+      literally 6308, so the maximal local word realizes that rank-five
+      value.  They are alternative local occurrences, not three additive
+      gains.  The census is restricted to pairs of distinct theoretical
+      flat UNIT-state edits of gap at most seven; it makes no claim about
+      non-UNIT or larger mechanisms.  None of the three rows is by itself a
+      deck-closed or globally common-owner physical package.
+
+1577. Let a chosen block export arcs a_1->b_1,a_2->b_2.  Label each ambient
+      auxiliary UNIT arc e by its deck endpoints and physical controller
+      position rho(e).  In the separated model, two arcs conflict when their
+      positions differ by at most seven, and an arc conflicts with the block
+      when it lies within seven of either block position.  Exact deck closure
+      is equivalent to selecting a conflict-free auxiliary set F for which
+
+          indeg_(F+block)(v)=outdeg_(F+block)(v) in {0,1}
+
+      at every deck vertex.  Equivalently, for one pairing pi in S_2 there
+      are two internally vertex-disjoint, position-compatible paths
+
+          b_i leadsto a_(pi(i)),  i=1,2,
+
+      whose internal vertices avoid the four block ports.  The identity
+      pairing gives two deck cycles; the transposition gives one cycle
+      containing both block arcs.
+
+1578. Ordinary reachability of both endpoint pairs is only the projection
+      which leaves vertex capacity and controller-position conflicts out.
+      The currently shortest closures for the three rows conflict near the
+      service block or with one another.  This rejects those path choices,
+      not the rows: a no-go must exclude every conflict-free path pair for
+      both pairings, or provide a corresponding cut certificate.  Longer
+      paths, optional auxiliary cycles, or interacting compensation blocks
+      remain possible.
+
+1579. Deck closure is not yet a Shadow--Braid.  For separated collars the
+      adjacent lower/upper signed shadow vectors are additive and must sum
+      to zero for exact multiset preservation; support-only preservation
+      uses the last-witness inequalities.  The final controller must also
+      pass ranks, maximal erosion, Johnson adjacency, residence, deeper
+      shadows, the full Hall current, all retained target/cell unions,
+      trace two, deadlines, and the one-common-word theorem.  Local service
+      only certifies the target-6308 envelope before compensation.
+
+1580. The adjacent support of each surviving block has the same two-mask
+      arity as one mutable complement-shore clean-C6 seam, but no such
+      embedding is proved.  A clean-C6 realization must additionally supply
+      the common seven-set Lambda_i, the fixed first crossing mask, two
+      other seam pairs, cyclic upper-shadow transport, and all nine
+      residence tests at every seam.  Those other seam pairs could close
+      the two exported commodities themselves, so isolated ambient paths
+      are only one compensation mechanism.  The exact finite input is in
+
+          MATH_K15_UNIT_PIN_ISOLATED_CONTROLLER_CYCLE_NOGO_20260728.md
+          scratch/audit_k15_two_state_service_export.py
+
+      and the hand circulation theorem is Section 10.9 of
+
+          THREAD_R_PBBS_DIAMOND_C6_H_SAFE_LINEARIZATION_20260728.md.
+
+## 360. Ambient UNIT compensation exists, but isolated Hall service does not
+
+1581. The service-only acyclicity theorem is not an ambient acyclicity
+      theorem.  Over all 13,122 theoretical flat UNIT pairs, exhaustive
+      recomputation leaves 10,370 locally admissible replacement arcs on
+      6,359 middle-deck vertices.  There are seven nontrivial strongly
+      connected components, of sizes
+
+          2266,5,5,3,3,3,3,
+
+      containing 3,445 cyclic arcs.  In particular the pairwise-separated
+      operations
+
+          (1058,+8,-2): 1055->3724,
+          (3724,+2,-3): 3724->6430,
+          (6430,+3,-8): 6430->1055
+
+      form an exact directed 3-cycle and preserve the complete rank-eight
+      middle deck.  Auxiliary compensation is therefore genuinely present.
+
+1582. Physical service is the missing half.  None of the 1,318 locally
+      admissible Hall-service operations retains any advertised target/cell
+      address after its forced deletion: the unique legal deleted coordinate
+      is itself needed by the target.  The explicit separated 23-cycle which
+      contains service pin `(96,7)` preserves the middle deck but loses five
+      immediate-upper colours and fails target 1920 for exactly this reason.
+      Deck circulation, shadow safety, and physical target service are three
+      distinct tests.
+
+1583. The exact current positive target is one target-safe local export
+      block closed by a controller-position-compatible auxiliary circulation,
+      followed by the complete upper-shadow and common-word audits.  The
+      two-state census in Section 359 supplies the first three projected
+      candidates but not their physical closures.  These results are
+      reproduced by
+
+          scratch/audit_k15_unit_pin_isolated_cycle_nogo.py
+          scratch/audit_k15_full_unit_compensation_cycles.py
+          scratch/audit_k15_two_state_service_export.py
+
+      and proved in
+
+          MATH_K15_UNIT_PIN_ISOLATED_CONTROLLER_CYCLE_NOGO_20260728.md.
+
+## 361. Exact two-commodity cuts and the first interacting service circuit
+
+1584. For a verified two-state block with deck arcs `s_i->t_i`, separated
+      UNIT completion is exactly a vertex-capacitated two-commodity
+      circulation: for one pairing, route `t_1,t_2` back to `s_1,s_2`, use
+      each deck vertex at most once after the block arcs are included, and
+      require every auxiliary controller position to be distance at least
+      eight from the block and from every other auxiliary position.  Exact
+      deck balance makes the union one or two directed cycles; disjoint
+      dependency collars make the literal controller, dilation, Johnson,
+      and erosion tests compose.
+
+1585. None of the three target-6308 export rows has such a separated
+      completion, at any path length.  For row A, after forbidding the local
+      collar, the exact reachable shore from 4452 is
+
+          {461,1732,3153,4452,4499,4726,5100,5738,5752};
+
+      its only ambient exits have controller positions 3153 and 3156, both
+      forbidden.  For row B, the unique arc entering 3264 has position 3124,
+      while the other required head 3120 can leave only at 3120 or 3123.
+      For row C, the two required heads can leave only at positions
+      `{2236,2239}` and `{2237,2240}`.  These are exact separating cuts, not
+      failures of the currently shortest paths.
+
+1586. The separated no-go is sharp.  Row A has an exact nonseparated
+      20-controller-state completion.  Its changed middle values form the
+      cycle
+
+          3148->685->3149->4452->4726->5100->5738->461->3153
+          ->2792->4096->901->6079->4710->3170->4359->1429
+          ->2095->3196->686->3148.
+
+      Full simultaneous recomputation—not isolated-arc addition—proves all
+      middle ranks, exact deck, middle and controller Johnson chronology,
+      maximal erosion, and `P'_3152=6308`.  Thus the literal maximal word
+      exposes the missing singleton target.  The only overlapping clusters
+      are `(686,688)` and `(3151,3152,3156)`, and both are genuinely legal.
+
+1587. This circuit is not a Hall repair.  Relative to the maximal controller
+      word it gains the rank-five singleton colour 6308 and loses no old
+      singleton colour, but loses eight rank-six lower colours, fourteen
+      rank-seven lower colours, and three rank-nine upper colours.  The
+      rank-nine losses are exactly
+
+          {9661,23257,31457}.
+
+      Since the frozen carrier had all 5,005 rank-nine colours, this already
+      fails the necessary depth-one upper condition.  The precise next gate
+      is a shadow-compatible interacting circulation retaining complete
+      rank-nine support; only after that come protected physical cells,
+      common ownership, and deeper flags.  The theorem, literal certificate,
+      all-path cuts, and verifier are
+
+          THREAD_H_K15_POSITION_CONFLICT_TWO_COMMODITY_CIRCULATION_20260728.md
+          scratch/audit_k15_position_conflict_two_commodity_cuts.py.
+
+## 362. Frozen clean-C6 embedding audit and the resident shadow obstruction
+
+1588. Each of the three target-6308 two-state blocks has exactly one changed
+      boundary transition whose rank-seven intersection is fixed, as every
+      complement-shore clean-C6 seam requires:
+
+          B1: T3147--T3148  -> T3147--T685,
+              Lambda={0,2,3,4,5,7,10}, (a0,a1,c)=(12,13,8);
+
+          B2: T3262--T3263  -> T3262--T3120,
+              Lambda={1,2,3,5,7,8,9}, (a0,a1,c)=(12,6,10);
+
+          B3: T3270--T3269  -> T3270--T2237,
+              Lambda={0,3,4,5,7,10,11}, (a0,a1,c)=(12,6,13).
+
+      The other two changed transitions in each block change their lower
+      colour, so they cannot be the anchored clean seam.
+
+1589. Fixing one displayed old/new seam leaves exactly seven clean-C6
+      completions, indexed by a2 in Lambda.  The first companion old edge is
+
+          (D+{a0,c}) -- (Lambda+{a0}),  D=Lambda-{a2}.
+
+      In the three rows, the positions of its first endpoint are respectively
+
+          B1: 2725,1452,1451,4455,5428,2724,4454; second endpoint 685;
+          B2: 1573,1072,2202,5531,1574,5677,4366; second endpoint 3120;
+          B3: 711,6420,3718,4127,361,712,1453; second endpoint 2237.
+
+      No pair is consecutive, even as an unordered edge.  Therefore none of
+      the three atomic blocks embeds in one clean C6 of the frozen middle
+      factor under the fixed-address/canonical-retained-segment
+      identification.  This is the complete seven-choice companion-edge
+      obstruction, not a generic reachability failure.
+
+1590. Pure two-mask containment is weaker and does pass.  Formal alignment
+      gives old seam orientations
+
+          B1: T3151->T3150, Lambda={2,3,5,7,11,12,13}, fixed P3153;
+          B2: T3266->T3265, Lambda={2,3,5,6,7,11,12}, fixed P3268;
+          B3: T3266->T3267, Lambda={2,5,6,7,10,11,12}, fixed P3267.
+
+      The atomic edits leave those middle seam edges unchanged and supply no
+      new end owner, so this is not an embedding without an explicit segment
+      transport.  Moreover B2+B3 is not a legal nearby compound:
+
+          P'3267=P'3268={2,5,7,11,12},
+
+      and T'3265,T'3266,T'3267 all have rank seven.  The two formal seams
+      also demand different common clean-C6 departures c=10 and c=3 from
+      the same X=T3266.  Thus they cannot be two seams of one clean C6.
+      B1+B2 and B1+B3 are separated but have nonzero, disjoint deck
+      boundaries.  No nonempty compound using only the three named blocks
+      is exact.  Appending separately exact clean C6 packets cannot help:
+      every such packet has zero middle-deck signature and leaves the
+      nonzero atomic export signature unchanged.  Since embedding the block
+      inside one clean C6 is already ruled out, every viable closure needs a
+      genuinely non-clean auxiliary deck boundary.
+
+      The smallest non-clean shadow compensator is also ruled out.  Each
+      atomic block has two gained/lost lower margins and two gained/lost
+      upper margins, so a completion with exactly two further transition
+      replacements has only one containment-valid row/column pairing.  Its
+      required old auxiliary edges are
+
+          B1: T685--T2725, T4453--T4452;
+          B2: T3120--T4366, T3121--T6279;
+          B3: T2327--T2236, T2237--T6420.
+
+      Only B1's second edge is present in the frozen factor.  Moreover each
+      atomic three-transition substitution has edge-degree boundary
+      2 Sigma_j; after the unique auxiliary shore cancels one copy of each
+      atomic port, eight distinct coefficient-one middle ports remain.
+      Thus no two-transition shadow compensator is an exact factor trade.
+      Larger non-clean alternating flag circuits remain open.
+
+1591. The exact nonseparated 20-state completion of B1 from Section 361 is
+      nevertheless depth-three resident.  If
+
+          T'_(i+1)=T'_i-alpha'_i+beta'_i,
+
+      literal checking of all 38 changed transition labels gives
+
+          beta'_i != alpha'_(i+t),  1<=t<=3,
+
+      and all unchanged endpoint pairs inherit the frozen inequality.
+      Thus the circuit simultaneously has exact middle deck, legal middle
+      and controller chronologies, maximal erosion, one literal word
+      A=P', P'3152=6308, and zero depth-three residence violations.
+
+1592. It is still not a Shadow--Braid.  Its immediate lower support omits
+
+          {3000,4796,5301,7352,10992,12476,13217,15144,19160,23065,
+           31280,31297,31304,31392},
+
+      and its immediate upper support omits
+
+          {9661,23257,31457}.
+
+      Hence even support, and therefore multiset preservation, fails.
+      Adding any number of clean C6 trades cannot repair this circuit:
+      every clean C6 has identically zero adjacent lower/upper multiset
+      boundary.  Any non-clean repair of this particular circuit needs at
+      least fourteen further transition occurrences, one for each absent
+      rank-seven lower colour.
+
+1593. The exact remaining object is consequently a non-clean interacting
+      compensator with the opposite signed lower/upper shadow vector,
+      composed with the resident 20-state B1 circuit (or a different
+      resident deck closure).  It must then retain the 1,489 frozen physical
+      occurrences, deeper flags, trace two, the common word, and the final
+      Hall matching.  The complete formulas, all 21 companion-edge checks,
+      residence label certificate, scope caveats, and corrected irreflexive
+      two-commodity conflict system are in Sections 10.9--10.12 of
+
+          THREAD_R_PBBS_DIAMOND_C6_H_SAFE_LINEARIZATION_20260728.md.
+
+## 363. Composite-quotient provenance audit and fail-closed compiler boundary
+
+1594. Claude's live quotient directory is not version-controlled and changed
+      during audit.  In particular `LEDGER.md` changed from SHA-256
+      `427d0eaa...` to `e1ad3a0b...`; the current `carrier` binary predates
+      the current `carrier.cpp`; and `k15_cegar.log` is empty.  The exact
+      observed sizes, mtimes, and hashes are frozen in
+
+          scratch/claude_quotient_hardened_20260729/
+              UPSTREAM_PROVENANCE_20260729.json.
+
+      File names or the historical ledger alone are not execution
+      provenance.
+
+1595. The `k=15` central quotient mathematics survives.  Ranks 7 and 8 each
+      have 429 free rotation orbits of size 15, and a quotient Hamilton cycle
+      of net voltage `v` lifts to exactly `gcd(v,15)` physical cycles.  Thus
+      `gcd(v,15)=1` is the exact one-cycle criterion.  Noncentral layers must
+      use actual sizes: rank 5 has `1x3+200x15`, rank 6 has
+      `2x5+333x15`, rank 9 has `2x5+333x15`, rank 10 has
+      `1x3+200x15`, and rank 12 has `1x5+30x15`.
+
+1596. The old interface is unsafe: equi2 and CP-SAT selector IDs use different
+      catalogues, directions/voltage are discarded, and the old compiler
+      walks a graph before proving degrees or physical legality.  Moreover
+      the lower-q2 lazy builders omit legal same-insertion paths, so their
+      UNSAT scope is incomplete.  Cyclic lower q3 is diagnostic only for the
+      depth-three `k=15` carrier; the exact literal compiler retains the
+      final rank-five obligation.
+
+1597. The repo-owned hardened pipeline now requires explicit canonical
+      `(lower,a,b,direction)` records, binds any legacy IDs to a declared
+      catalogue digest, expands actual physical orbits, proves the complete
+      Johnson/q1/directed cycle, recomputes coprime voltage, and verifies a
+      hashed cut before compiler import.  Its guarded compiler keeps the
+      certified middle immutable, privately hash-locks compiler and solver,
+      and independently checks `D^d(word)` and every literal interval-OR.
+      Twenty-one hermetic, solver-free regressions pass, including final
+      `k=9`, final `k=11`, and a `k=11` carrier with no required defect but
+      one missing q3 orbit (representative 81, physical mass 11).
+
+1598. This audit did not run a `k=15` search or produce a new carrier/word.
+      It proves a positive-certificate boundary, not historical solver replay:
+      frozen `compile15.py` still deletes its CNF and discards model/stdout.
+      All future heavy search and compilation must run on the H100 CPU under
+      the exact hash-addressed runbook.  Full theorem, line audit, caveats,
+      fixtures, verifier, migrator, compiler guard, and runbook are
+
+          AUDIT_CLAUDE_QUOTIENT_K15_HARDENING_20260729.md
+          scratch/claude_quotient_hardened_20260729/.
+
+## 364. Exact graded quotient compiler and compact shadow CEGAR
+
+1599. For a cyclic depth-three resident carrier `T`, let `P` be its maximal
+      erosion, so the graded rows have ranks 5,6,7,8 at `k=15`.  If an
+      equivariant one-core `C<=P` satisfies `DC=DP`, the exact lower compiler
+      graph is
+
+          S -- i  iff  C_i <= S <= P_i,       1<=|S|<=5.
+
+      A matching of all 4,943 targets emits the word directly: placing each
+      matched target at its matched position and `P_i` elsewhere gives
+
+          C <= A <= P  =>  DP=DC <= DA <= DP  =>  DA=DP.
+
+      Thus adjacent flexible letters are legal; the nonadjacency restriction
+      in the exploratory punch compiler was extra.  Rotation reduces Hall to
+      a weighted 331-by-429 quotient flow with actual orbit weights, followed
+      by an independent physical matching.
+
+1600. Rank-five support is the exact positive-degree boundary.  Since both a
+      rank-five target `S` and envelope `P_i` have size five,
+
+          S <= P_i  iff  S=P_i.
+
+      Therefore a missing cyclic lower-q3 target is not another frozen row,
+      but it is a zero-degree literal Hall vertex and must be repaired before
+      one-core search.  On the first residence-perfect `k=15` strict spiral,
+      eleven missing full rank-five orbits give exactly 165 zero-degree
+      physical targets and both quotient and physical matching size
+      4,778/4,943, independently of the sampled minimum one-core.
+
+1601. Lower and upper q2/q3 CEGAR now use one compact exact state-path
+      encoding.  Lower target `S` uses central supersets of `S`, selected
+      directed Johnson transitions, and requires every outside coordinate to
+      be absent from at least one state.  The upper dual uses central subsets
+      of `U` and requires every coordinate of `U` to occur.  Exhaustive `k=11`
+      comparison agrees exactly with the full q3 DNF oracle on all fifteen
+      target orbits.  The 86 missing constraints of the residence-perfect
+      `k=15` seed build in 6.38 seconds with 46,930 variables and 457,330
+      constraints.
+
+1602. The repo-owned deterministic calibration reconstructs a fresh `k=11`
+      strict spiral, obtains weighted and physical matching 231/231, emits a
+      length-465 word, and independently covers all 2,047 nonempty masks with
+      exact third derivative.  Its cross-machine SHA-256 is
+
+          b90eebd0f9f4eb50084ec3f70f333f19cadb4b0138b8cc695502e6e5b6654862.
+
+      The implementation, regressions, fixtures, and exact audit are
+
+          scratch/graded_quotient_pipeline.py
+          scratch/test_graded_quotient_pipeline.py
+          scratch/audit_compact_q3_equivalence.py
+          scratch/graded_quotient_pipeline_README.md
+          MATH_K15_GRADED_QUOTIENT_PIPELINE_AUDIT_20260729.md.
+
+1603. The first checked composite-safe `k=15` CP-SAT strict spiral is residence
+      perfect (626.05 seconds, eight remote CPU workers) but misses 47
+      lower-q2, eleven rank-five-positive, and 95 upper orbits.  An exact
+      choice flow repairs its 67 missing upper-q1 orbits with the minimum 67
+      replacements, yielding a stable explicit choice-level scaffold.  That
+      scaffold is not degree two: its incidence L1 distance from degree two
+      is 156, so at least 39 additional choice changes are necessary.  The
+      exact LNS option enforces overlap at least `429-R`; useful radii around
+      the resident seed/scaffold therefore begin above the proven 67/39
+      floors.  Radius zero was solver-validated on the exact `k=11` hint in
+      0.186 seconds and returned the identical passing carrier.  No `k=15`
+      word has yet passed the six-step completion standard.
+
+1604. The frozen one-core tower has an exact scalar scope.  With `h=r-d`, put
+
+          R0(k)=sum_(j=1)^h C(k,j).
+
+      If `DA=DP`, all targets of rank at most `h` must occur literally in the
+      source, so `R0(k)<=W+d` is necessary.  It fails first at
+
+          k=9,14,19,21, with deficits 1,38,1802,49210.
+
+      It passes comfortably at `k=15` (`R0=4943`, `W+d=6438`).  This is only
+      arithmetic viability: target incidence and Hall remain real.  It also
+      proves that the graded one-core route cannot by itself be the all-k
+      theorem; the already optimal `k=9,14` constructions use the needed
+      alternative, namely controlled deeper punches that modify the frozen
+      tower and place some low targets in derivative rows.
+
+1605. The minimum 67-change upper-q1 scaffold already contains selected
+      witness triples for eight of the eleven missing rank-five/q3 orbits.
+      Two additional choice replacements
+
+          5380->5389,   9314->9299
+
+      cover the remaining representatives 1349,1585,2329.  The stable joint
+      hint is therefore 69 choices from the residence-perfect seed and has
+      zero upper-q1 and zero q3-positive misses at choice level.  It is not a
+      carrier: exact degree shortage puts it at least 40 choices from degree
+      two.  This converts the next search into a bounded joint repair around
+      `scratch/fixtures/k15_joint_q1_q3_scaffold_hint_v1.json`, with first
+      meaningful radii 48,64,96, rather than independent shadow descent.
+
+1606. The old prime restriction was an implementation boundary, not a
+      mathematical obstruction at `k=15`.  For every odd `k=2m+1`, a
+      nontrivial rotation stabilizing a central rank-`m` or rank-`m+1` set
+      would have orbit length `t>1` dividing both `k` and the rank, hence
+      dividing `2 rank-k=+-1`, impossible.  Thus the central quotient is
+      free for every odd `k`, and has `Cat(m)` vertices per shore.  The old
+      `scratch/sigma_sat_solver.py` nevertheless cannot be made
+      composite-safe by deleting its prime assertion: it rejects only zero
+      voltage, whereas at `k=15` every nonunit voltage splits the lift, and
+      its unweighted optional load caps miscount periodic shadow orbits.  For
+      example, rank-nine representative `7399` has orbit size five and the
+      choice `(1255,11,12)` contributes physical load three per target while
+      the old quotient constraint counts one.  The production model requires
+      `gcd(voltage,k)=1` and sends all multiplicity-sensitive claims through
+      actual-orbit weighted flow plus physical matching.
+
+      The 69-change joint q1/q3 scaffold is already closer than those two
+      ledgers show: at choice-witness level it covers 21 of the 47 missing
+      lower-q2 orbits, 23 of the 27 missing upper-q2 orbits, and the unique
+      missing upper-q3 orbit.  Only 26 lower-q2 and four upper-q2 target
+      orbits remain before restoring degree two, circuit orientation, and
+      residence.  This is a search scaffold, not a carrier certificate.
+
+1607. Item 1601 requires an exact scope correction.  The compact state path
+      is equivalent to a prescribed q-edge lower or upper witness for every
+      fixed q.  This matches `lower_missing` at every q and matches arbitrary
+      upper intervals at q2.  It does not match arbitrary upper intervals at
+      q3: the frozen strict k15 seed has target orbits 4031, 7675, and 12155
+      with minimum witness length four edges and no three-edge witness.  Thus
+      an upper-q3 compact row is a positive-sound strengthening, but an UNSAT
+      result using it does not certify the unrestricted carrier model unless
+      that target's short-witness necessity is proved separately.  The
+      proved-valid 85-row subset of the original seed model has 46,920
+      variables and 457,320 constraints.  Final pipeline hash `5d0f0fb2...`
+      adds the exact accumulated-union boundary for the remaining upper-q3
+      target, yielding 46,920 variables and 457,321 constraints; its first
+      boundary has 3,425 arc labels.  The all-q defect-token theorem, composite
+      short-orbit tables, exact old/new model counts, and the conditional-TU
+      network formulation are independently audited in
+
+          MATH_CODE_AUDIT_AD_SHADOW_TOKEN_AND_FLOW_COMPRESSION_20260729.md
+          scratch/audit_ad_shadow_state_paths_20260729.py.
+
+1608. The residence-clean `k=15` seed now has a theorem-level statewise
+      switch description and a human/auditable explanation of the sharp
+      radius-67 `UNSAT`.  For the physical rank-eight cycle, with lower
+      owners `L_i=T_i cap T_(i+1)`, the two live shadows are one flag:
+
+          S_i=L_(i-1) cap L_i cap L_(i+1)
+             =L_i minus {beta_(i-1),alpha_(i+1)},
+          U_i=L_(i-1) cup L_i cup L_(i+1)
+             =L_i cup {alpha_i,beta_i}.
+
+      Hence `(S_i,L_i,U_i)` has ranks `(5,7,9)`.  Every fixed flag has
+      exactly four oriented local owner paths.  One inserted seam has three
+      possible q3 states whose complementary pairs form a length-two path in
+      `J(L_i,2)`; residence four is exactly the seven nonautomatic label
+      inequalities in its single-seam collar, with nearby collars checked
+      jointly.
+
+      The sharp upper-q1 budget is rigid: at Hamming radius 67 every new
+      choice must add a different missing colour, so the complete necessary
+      model has 1,646 individually q1-safe actions, one per target, at most
+      one per lower owner, and zero endpoint current.  Its 828 one-end
+      actions are excluded by the 12-vertex cut
+
+          {1823,1879,1947,1949,2895,2907,
+           3019,3495,3693,5363,5741,6773}:
+
+      no action leaves the cut and all ten actions for missing colour 6991
+      enter it.  The full one/two-end system has an exact integer Farkas
+      certificate supported on only seven positive lower-owner prices
+
+          (1749,59),(1939,57),(2873,11),(2905,18),
+          (3371,168),(3661,334),(3669,289).
+
+      A vertex potential `q` defines each target price by the minimum action
+      cost.  Exact totals are `sum y=991 > 936=sum r`, and all 1,646 action
+      slacks are nonnegative.  Summing against any fractional degree-balanced
+      selector gives the contradiction `991<=936`.  Old-colour capacities,
+      integrality, residence, connectivity, voltage, and q3 were not used.
+      Therefore every strict upper-q1-complete factor is at Hamming distance
+      at least 68 from this seed.  Mod-2 endpoint parity cannot explain the
+      full obstruction: the endpoint rank is 414 and adjoining all 67 target
+      rows raises it to 481.
+
+      The theorem, exact boundary, and remaining radius-at-least-68 compound
+      state-path gate are in
+
+          MATH_THEOREM_K15_RESIDENT_SHADOW_STATE_SWITCH_AND_RADIUS67_FLOW_OBSTRUCTION_20260729.md.
+
+      Solver-free certificates/verifiers are
+
+          scratch/k15_radius67_lower_owner_farkas_certificate.json
+          scratch/audit_k15_radius67_lower_owner_farkas.py
+          scratch/k15_radius67_parity_oneend_cut.audit.json
+          scratch/audit_k15_radius67_parity_and_oneend_cut.py.
+
+1609. A fixed degree-two upper-q1-complete cycle cover now has an exact
+      orientation/splice completion theorem.  Open every cover component to
+      a phase-labelled path forest.  A terminal completion exists precisely
+      when the following finite integral system is feasible:
+
+      * one consistent orientation, incoming seam, and outgoing seam per
+        path, with the inserted lower-colour multiset exactly the deleted
+        one;
+      * one component successor cycle and unit total voltage;
+      * the voltage-twisted cyclic residence queue through distance three,
+        including words which cross several seams when paths are short;
+      * exact fixed-window rows for upper q1, lower q2/q3, and upper q2; and
+      * for every upper-q3 target, every labelled boundary cut of the
+        accumulated-union reachability automaton.
+
+      For an integer carrier selector the last family is exact: if no target
+      witness is reachable, the set R of reachable states gives the violated
+      row
+
+          sum_(lambda in distinct labels leaving R) y_lambda >= 1.
+
+      At k15 one upper-q3 automaton has 1320 states and at most 27720 internal
+      transition copies; lazy separation adds no persistent auxiliary
+      variables.  The theorem is valid even while the master is a
+      disconnected cycle cover, because an accepting directed path remains
+      in one selected component.
+
+      Two local replacements are false.  The four-state Johnson chronology
+      12,23,34,14 has safe immediate seams and distinct first-shadow colours
+      but a delay-two residence violation.  In the frozen strict k15 carrier,
+      target orbits 4031, 7675, and 12155 need four edges and have no
+      three-edge upper-q3 witness.  Thus neither pairwise seam tables nor a
+      radius-three upper-q3 collar is a necessary completion condition.
+
+      This closes the formulation, not existence.  The 69-change joint
+      scaffold is still not degree two and is at least 40 choices from that
+      gate.  The theorem, proofs, exact CP-SAT rows, counts, and scope are in
+
+          THREAD_D_EXACT_Q1_CYCLE_COVER_SPLICE_AND_UNRESTRICTED_SHADOW_CUTS_20260729.md.
+
+## 381A. Hall-19 statewise DM port flow and the nineteen-cell obstruction
+
+1735. The authoritative Hall-19 compiler graph is the full graph on all
+      16,383 targets and all 19,311 depth-zero-through-two physical cells of
+
+          scratch/k15_h20_h19_root8216_chain/final/candidate_0000.json.
+
+      It has matching rank 16,364 and canonical DM shore 516/497.  Its
+      eighteen components have gaps `1^17,2^1`.  Six are isolated `1/0`
+      targets
+
+          {5801,13616,13620,17738,21641,29776},
+
+      of ranks `7,6,7,6,6,6`.  The phrase **thirteen congestion units**
+      means the remaining gap `510-497=13` in the twelve nontrivial
+      components, not the unrelated count of thirteen changed cell shores in
+      the earlier neutral H20 braid.
+
+1736. For any union `X_J/Y_J` of old DM components and any proposed final
+      full compiler graph `G'`, define net port gain
+
+          Phi(J)=|N_G'(X_J)-Y_J|-|Y_J-N_G'(X_J)|.
+
+      The exact identity is
+
+          |X_J|-|N_G'(X_J)| = g(J)-Phi(J).
+
+      Hence a Hall-zero state needs six jointly matchable zero candidates,
+      net port gain at least thirteen on the positive-degree union
+      `X-Z`, and net gain at least nineteen on the whole old shore.  In
+      particular at least nineteen distinct physical cell addresses acquire
+      new incidence with the old shore.  Internal component fusion or
+      compression cannot evade the union cut.
+
+1737. The 497 audited native component pins combine with an exterior
+      15,867-edge matching to give a maximum matching exposing exactly the
+      nineteen native roots.  If this matching survives a proposed final
+      state, one integral vertex-capacitated alternating flow computes the
+      exact rank increase:
+
+          nu(G') = 16364 + lambda,
+
+      where `lambda` is the maximum number of disjoint augmenting paths from
+      the nineteen roots to old free cells.  Hall zero is exactly
+      `lambda=19`.  In the general theorem every deleted old matching edge
+      lies in an alternating component; components other than the nineteen
+      augmenting paths are neutral cycles or right-to-right paths.  One
+      augmenting path discharges exactly one root; it cannot pass serially
+      through and remove all thirteen congestion units.
+
+1738. The old root-2420 local ear is the exact warning against partial Hall
+      reasoning.  It changes the restricted shore to
+
+          N(X)=Y disjoint-union {cell10221},
+
+      is resident and upper-support complete, and gives restricted gap 18.
+      But it omits middle states `{11122,19804}`, duplicates
+      `{27474,3452}`, lowers exterior matching rank by two, and has full
+      matching rank only 16,363.  A valid use of this portal must repair both
+      omitted states, both duplicate supplies, and both exterior rank losses
+      in the same state.  A literal two-for-two deck companion is one local
+      normal form, not a global necessity.
+
+1739. Every one-shot Hall-zero candidate family must be capable of three
+      simultaneous final-state signatures: a rank-six zero SDR, contracted
+      transversal-matroid increment thirteen on the nontrivial congestion,
+      and a full value-nineteen alternating linkage.  The zero and positive
+      service cells need not be disjoint.  A service-first interacting
+      multi-parent exchange, followed on that same state by Johnson,
+      depth-three residence, every upper support, endpoint, and complete
+      19,311-cell audits, is one proof-safe proposed architecture; a larger
+      single-parent/global circuit is not excluded.  No such physical macro
+      is yet constructed, and no full common-source-word lift is claimed.
+      The theorem and adversarial audit are
+
+          THREAD_A_K15_H19_STATEWISE_DM_PORT_FLOW_AND_MULTIPARENT_OBSTRUCTION_20260729.md.
+
+1610. The frozen resident-seeded shadow master at pipeline hash
+      `a364a0e4...` admits a strictly smaller, provably selector-equivalent
+      formulation.  Positive residence projects every lower depth-q token
+      block to endpoint/internal arc tables for `2<=q<=d+1`; an exact q2
+      bow-tie performs the corresponding lower or upper two-step join.  For
+      the 47 lower-q2, 11 lower-q3, and 27 upper-q2 seed blocks this changes
+
+          46,920 variables / 457,321 constraints
+          -> 46,596 variables / 457,055 constraints.
+
+      Seven same-depth/same-step arc `AllDifferent` rows and 44 exact
+      lower-q2/q3 containment-clique rows then give the equivalent stronger
+      master `46,596 / 457,106`; allowed-table entries fall
+      `723,472 -> 402,154`.  Upper q3 remains the unrestricted accumulated-
+      union reachability gate.  The all-depth novelty clauses and exact
+      choice-radius cut are complementary to, not replacements for, that
+      chronology separator.
+
+      The `331 x 429` weighted Hall gate has two exact simplifications.  Its
+      weights `15^329,5,3` are equivalent to two independent ordinary
+      `330 x 429` Hall tests.  Top-rank nodes project to disjoint group
+      capacities, saving exactly N network arcs for aggregate quotient flow;
+      this does not extend a prescribed phase matching.  Before a core is
+      fixed, the exact edgewise union is `F_i subseteq S subseteq P_i`; one
+      common core additionally needs the shared omission-independent-set
+      variables and phased K-sets.  A generic sampled-core shore is not a
+      carrier cut.
+
+      Solver-free audits pass all 45 k11 and all 74 seeded k15 q2 bow ties.
+      The k11 carrier passes Hall `231/231`.  The resident k15 seed gives
+      `4778/4943`, and both ordinary tests give `319/330`; its sole shore is
+      exactly the eleven already-known lower-q3 zero orbits, persisting in
+      the forced and envelope union graphs.  Thus the new result is exact
+      compression and propagation, not a new k15 infeasibility certificate.
+      No CP-SAT solve or search was run, and the shared pipeline was not
+      edited.  Full statements, proofs, scope corrections, and the
+      mutation-failing reproducer are in
+
+          MATH_CODE_AUDIT_AD_EXACT_SHADOW_HALL_MASTER_STRENGTHENING_20260729.md
+          scratch/audit_ad_exact_shadow_hall_master_20260729.py.
+
+## 380. Radius-61 projection, q1 circulation, and the Hamilton switch atlas
+
+1723. The 69-change joint upper-q1/lower-q3 scaffold has exact continuous
+      degree-projection distance 61.  A `1/8`-integral dual checks all 11,569
+      actions and the explicit selector `P` attains 61.  Its actual
+      `J triangle P` inclusion-incidence graph is a forest of 21 trees and
+      its 61 whole-choice current columns are independent, so no nonempty
+      direct `P/J` hybrid preserves degree two.  The projection has 21
+      physical components, 795 residence defects, 46 upper-q1 holes, and
+      lower-q2/q3 holes `(55,20)`.
+
+1724. Around `P`, every degree-two upper-q1 completion changes at least 47
+      owners.  Radius 46 is excluded by the exact four-vertex potential
+
+          pi(5549)=1,
+          pi(1781)=pi(3387)=pi(5811)=-1,
+
+      because every one of the 984 sharp safe actions has flux at least the
+      indicator of target 11627.  Around the joint scaffold, the exact
+      fractional degree-plus-q1 optimum is
+
+          1277131056929583148784443 /
+          17012931595358722031549
+          = 75.0682532149...,
+
+      hence the integral distance is at least 76.  The current explicit
+      degree/q1 intervals are
+
+          P: 47 <= rho_P <= 108,
+          J: 76 <= rho_J <= 86,
+          R: 68 <= rho_R <= 82.
+
+      The upper witnesses are feasible incumbents, not optimality
+      certificates.  The distance-86 joint-centred witness has seven
+      physical cycles; the distance-82 resident-centred witness has fifteen.
+
+1725. The supplied q1-complete Hamilton factor `H` has exact distances
+
+          d(J,H)=93, d(P,H)=114, d(R,H)=126,
+
+      strict voltage 8, and 1,050 residence defects.  The 114 `P -> H`
+      whole-choice currents have exact rank 112 and two neutral support
+      blocks of sizes 111 and 3.  The large-block hybrid leaves exactly q1
+      holes `{3515,5499}`; the three-owner current triangle
+
+          {1339,1465,4775}
+
+      closes both.  Thus `H` is the unique q1-complete binary `P/H` hybrid.
+      The full phase overlay has `(E,V,c,dimension)=(310,264,2,48)`.  A legal
+      five-coordinate switch cube of lengths `(272,14,10,8,6)` has canonical
+      prefix hole counts
+
+          46 -> 11 -> 7 -> 5 -> 2 -> 0,
+
+      and only the all-five mask is q1 complete.  This is a basis for that
+      compound switch, not for the full 48-dimensional cycle space.
+
+1726. The preceding q1-complete factor `Q` has one quotient 429-cycle of
+      voltage 10 and therefore five physical 1,287-cycles.  Its 15-owner
+      difference from `H` splits into four disjoint whole-choice current
+      blocks
+
+          C6a={747,875,1239},
+          C6b={4699,4715,4813},
+          C8 ={1211,1465,4775,4837},
+          C10={1583,1615,2365,2887,3373}.
+
+      All sixteen block subsets are degree two.  The exact q1 coupling is
+      `C6b => C10`: `C6b` deletes the unique witness of colour 6779 and
+      `C10` restores it.  Mask 10, `Q+C6b+C10`, is q1 complete and Hamilton
+      at the same `(d_R,d_J,d_P)=(126,93,114)`.  Its full lower hole vector is
+      `(56,21,5,1,0,0)` and upper vector `(0,15,0,0,0,0,0)`, versus `H`
+      lower `(56,22,4,1,0,0)` and upper `(0,16,1,0,0,0,0)`.  This is only an
+      aggregate-count tradeoff: lower target sets swap and lower q4 worsens.
+
+1727. A still finer one-owner phase switch
+
+          (4699,8,13) -> (4699,7,8)
+
+      preserves the quotient endpoint pair and q1 completeness but changes
+      `Q`'s voltage from 10 to 13, fusing its five physical cycles into one.
+      Hence Hamilton topology is locally cheap in this atlas.  The exact
+      remaining decorated gate is residence plus the complete deeper-shadow
+      tower, followed by safe cut, owner Hall, and one common physical
+      compiler.  Neither the radius-93 Hamilton factors nor the distance-86
+      degree/q1 factor is a literal contiguous-OR word.
+
+      Full proofs, exact caveats, and machine-checkable signatures are in
+
+          MATH_THEOREM_K15_R61_PROJECTION_ALTERNATING_FOREST_AND_Q1_RADIUS47_CUT_20260729.md
+          scratch/audit_k15_joint_scaffold_degreeonly_r61_overlay.py
+          scratch/audit_k15_joint_q1ham_d93_overlay.py
+          scratch/audit_k15_q1ham_d94_d93_four_circuit_cube.py.
+
+## 381L. Full physical unit circuits and shadow-safe chronology ears
+
+1728. The weighted `331 x 429` quotient obstruction and the authoritative
+      endpoint-conditioned Hall-19 graph must not be conflated.  The latter
+      has all `16,383` nonempty rank-one-through-seven targets and all
+      `19,311=6438+6437+6436` occurrence-labelled depth-zero-through-two
+      cells.  Its edges are witnessed existentially, possibly by different
+      controller words.  In any unit-capacity bipartite graph, an
+      inclusion-minimal positive-degree deficient target shore is connected,
+      has no private right cell, and has defect exactly one.  The exact
+      deletion identity is
+
+          delta(X-{x})=delta(X)-1+p_x,
+
+      where `p_x` counts right cells private to `x`.  Thus, after physical
+      unfolding, every inclusion-minimal refinement of a quotient defect is
+      a unit circuit; the quotient values `15,5,3` are not canonical H19
+      component gaps.
+
+1729. At arbitrary residence depth `d`, if
+
+          T_(i+1)=T_i-{alpha_i}+{beta_i},
+          P_i=intersection_(j=i-d)^i T_j,
+
+      then the exact same-row chronology is
+
+          P_i-P_(i-1)={beta_(i-d-1)},
+          P_i-P_(i+1)={alpha_i}.
+
+      Hence a singleton forced port is exactly the return
+      `beta_(i-d-1)=alpha_i`, equivalently a minimum `(d+1)`-state run in
+      `T` and a singleton run in `P`.  For `d>=2`, its fresh local normal
+      form is
+
+          A+a, A+c, A+b
+
+      with `a,b,c` distinct; there are exactly `k-h-1` portal labels.
+
+1730. A clean one-portal switch `c->c'` changes the middle point margin by
+
+          (d+1)(e_(c')-e_c),
+
+      so it cannot preserve an exact middle deck.  The exact stronger
+      condition is the punctured-fan identity in the free abelian group on
+      subsets: at every declared row `ell`, the signed sum of the
+      `ell+1` changed window sets must vanish.  Taking
+      `ell=d,d+1,...,d+q` is exactly simultaneous middle/all-upper multiset
+      preservation.  Balanced coordinate flow is necessary but not
+      sufficient.  A one-core transports through a clean portal by
+      replacing the same forced label and still satisfies `DC'=DP'`.
+
+1731. The all-odd private-ear sufficient theorem is now exact.  Assign each
+      target orbit injectively to a distinct forced-port-eligible position
+      orbit.  Orbit-close all mandatory omissions `P_i-S`, require that this
+      closure deletes no coordinate of an assigned target, and require that
+      no coordinate has two adjacent omitted supported positions, including
+      the cyclic wrap edge.  Deleting exactly those incidences gives one
+      equivariant nonempty core `C` with `DC=DP`, and
+      every assigned target is one literal source letter under that same
+      core.  Thus recursively peelable private ears exclude every minimal
+      quotient circuit and give an integral common-core lift.  This is a
+      sufficient chronology/shadow theorem, not a claim that every exact
+      factor has the required ears.
+
+1732. For every odd `k>=5`, let `E` be a short rank-`h` controller orbit of
+      weight `s=k/a<k`, and let `O` be a full target orbit.  Their positive
+      forced-port shore is a one-block circuit exactly when
+
+          B_O=E_blocks={J_*},
+
+      with demand `k+s` on capacity `k`.  It is cleared exactly at the
+      two-orbit level when `|B_O union E_blocks|>=2`: assign the full orbit
+      to one block and the short envelope orbit to the other.  The omissions
+      of the full-orbit edge are self-compatible because its copies are
+      `Cat_m>1` positions apart; the short top-rank assignments omit nothing.
+      Hence one common core repairs the circuit without changing residence
+      or any upper shadow.  At `k=15`, `s=3`, giving the audited `18/15`
+      exceptional circuit.
+
+1733. The authoritative H19 state has rank `16,364`, DM shore `516/497`,
+      and the exact split
+
+          19 = 6 isolated zeros + 13 positive-degree units.
+
+      The positive shore is `510/497` in twelve components: eleven gap-one
+      components and one `321/319` gap-two component.  The zero set is
+
+          {5801,13616,13620,17738,21641,29776}.
+
+      Every positive component has an exposed-root native basis, but all 45
+      current root sockets consume a child of native multiplicity one and
+      every exposed root has native multiplicity zero.  Thus no immediate
+      duplicate-backed native ear exists.  The exceptional rank-five orbit
+      `{4681,9362,18724}` contains none of the nineteen exposed roots.
+
+1734. The already-audited `H20 -> H20 -> H19` pair is an explicit
+      bounded-seam unit absorber: it preserves the exact middle deck,
+      residence, every upper layer, and creates two depth-zero occurrences
+      of child `25634`; shrinking either one to root `24610` supplies one
+      literal unit while retaining 657 other pins.  At H19 itself, the
+      root-2420 facet rotation creates a genuine `516/498` critical-shore
+      ear and preserves residence/all upper layers, but omits middle states
+      `{11122,19804}`, duplicates `{27474,3452}`, creates exterior zeros
+      `{10610,19796}`, and loses two exterior rank units.  The exact remaining
+      local gate is therefore a deck-balanced two-for-two companion which
+      retains the exact `516/498` shore profile, restores exterior rank
+      `15,867`, and passes one
+      simultaneous common-controller test.  No H18 carrier or full H19
+      common-word matching is claimed.  Full theorem and audit:
+
+          MATH_ATTACK_L_FULL_PHYSICAL_HALL_EARS_AND_SHADOW_SAFE_ABSORBER_20260729.md.
+
+## 381M. Exact common-word compiler and the explicit `k=15` length-6458 bound
+
+1735. The authoritative Hall-19 graph is an outer, one-target-at-a-time
+      relaxation and does not itself yield a length-6457 word.  The exact
+      negative-window compiler has now been solved on that fixed carrier.
+      It selects physical target intervals jointly, reconstructs the unique
+      entrywise-maximal common word, enforces `D^3 A=T` and nonzero letters,
+      and maximizes realized lower targets.  Its dimensions are
+
+          16,383 targets, 19,311 cells, 133,852 outer edges,
+          32,202 source incidences.
+
+      CP-SAT returns objective 16,362 and status OPTIMAL.  The resulting
+      6,438-entry prefix misses exactly 21 masks; appending those masks gives
+      a length-6,459 word.  The residual identity
+
+          9524 OR 13616 = 13620
+
+      compresses those three singleton witnesses to two letters, giving a
+      length-6,458 word.  A solver-independent verifier exhausts all 32,767
+      nonempty masks, checks that the appended suffix is exactly the prefix
+      residual, and verifies `D^3` of the prefix equals the certified H19
+      carrier.  Therefore the current rigorous interval is
+
+          6438 <= nu(15) <= 6458.
+
+      The explicit word SHA-256 is
+
+          c4300f7d6ec4f618ead87bb15ca3b831803f0c3296e3c5274f4ecd91fb029598.
+
+      This exposes a two-unit common-word compatibility tax on the fixed
+      carrier: outer deficiency 19 versus exact realizable prefix deficit
+      21.  The upper-bound theorem does not rely on trusting the solver's
+      optimality status; it follows from the stored word and exhaustive
+      verification.  Authoritative artifacts:
+
+          MATH_CERTIFICATE_K15_EXPLICIT_6458_UPPER_BOUND_20260729.md
+          scratch/optimize_k15_exact_compiler_maxcoverage.py
+          scratch/k15_h19_exact_compiler_union_suffix_6458.word
+          scratch/k15_h19_exact_compiler_union_suffix_6458.verify.json
+          scratch/verify_k15_nearoptimal_upper_bound.py.
+
+## 381N. Exact q1-factor splice/compiler postprocessor
+
+1736. The q1 cycle-cover splice theorem now has a literal two-stage
+      postprocessor in
+
+          scratch/threadD_k15_splice_compiler_postprocessor.py.
+
+      The outer master chooses one choice per lower owner, directs the
+      retained and replacement choices with `AddCircuit`, imposes unit
+      voltage, exact residence, and q1, and separates lower q2/q3 and upper
+      q2 by exact state paths.  Every upper depth q>=3 is handled only by the
+      unrestricted accumulated-union reachability boundary; no fixed-q-edge
+      upper witness remains.  The inner model opens a passing physical
+      carrier at an upper-safe edge, forms its length-`W+3` maximal linear
+      antecedent, and eliminates the one-core variables to exact adjacent-
+      omission rows.  It includes every rank-at-most-five target plus every
+      rank-six/seven target absent from the fixed positive derivative rows.
+      This last graded endpoint family is necessary.
+
+      Exact audit rejects all five supplied selectors without owner
+      replacement: d83/d86/d92/d93/d94 have respectively
+
+          physical cycles 15,7,4,1,5;
+          residence defects 765,1125,1080,1050,1050;
+          (L2,L3,U2,U3) holes
+          (52,19,18,2), (53,25,18,2), (57,20,16,1),
+          (56,22,16,1), (57,21,16,1).
+
+      A positive H100 k11 regression solves the corrected 3,378-variable
+      compiler in 0.096 seconds and independently verifies a length-465
+      word with SHA-256 `137973ee...`.  A one-round d93 radius-120 H100
+      construction smoke builds `46,292/456,763` variables/constraints and
+      returns `UNKNOWN` after 10.430 solver seconds; it is not an
+      infeasibility result.  No k15 length-6438 word is claimed.  Fixed-
+      selector certificates, radius-search certificates, and fixed-opening
+      Hall/compiler certificates remain explicitly separate.  Full theorem,
+      artifact hashes, and runbook:
+
+          THREAD_D_K15_Q1FACTOR_SPLICE_COMPILER_POSTPROCESSOR_20260729.md.
+
+## 382. Semilength-raising Catalan leave and the exact correction-flow boundary
+
+1740. The literal four-sector semilength raise is now separated into an
+      activation and a correction problem.  For a parent factor on
+      `|Omega|=2r-1`, choose one occurrence `i` of every old upper target
+      `V_i=T_i union T_(i+1)`, then choose two distinct
+      `(r-2)`-ports `Z,Z' subset C_i=T_i intersect T_(i+1)`.  The resulting
+      coloured pair-SDR is exact: one state is chosen in each `V`-fibre and
+      every `Z` has degree two.  It is equivalent to the cap-two auxiliary
+      factor `K`, and it activates the exact four-sector child factor with
+      forced leave
+
+          b = W - binom(2r-1,r+1) = Cat_r.
+
+      The preceding lift report proves the sector construction, exact leave,
+      new-label gap rule, and seam ledger.  It does not prove that the
+      Catalan occurrence atlas contains a passing activation.
+
+1741. For a fixed occurrence transversal `I`, the `K`-gate is one integral
+      cap-two flow and is feasible exactly when
+
+          sum_(i in I) min(2,deg_A(i)) >= 2|A|
+
+      for every port family `A`.  Under minimum left degree two, the first
+      Boolean failure occurs only for `r>=4`: three facets of one common
+      cofacet, each with one private cofacet, have capacity `5<6`.  Joint
+      occurrence/port choice is not TU.  The regular four-colour system
+
+          A:12,34; B:13,24; C:14,23; D:12,34
+
+      is fractionally exact and maximally endpoint-expanding but has no
+      integral pair-SDR; it is minimal in the equal colour/resource
+      cap-two abstraction.  Thus biregularity and ordinary expansion alone
+      cannot prove Catalan activation.
+
+1742. The correction layer has an exact necessary-and-sufficient integral
+      theorem.  In the physical rank-`r`/rank-`r+1` Boolean incidence
+      graph, let `F` be protected incidences, put
+
+          b(v)=2-deg_F(v),  E_f=A-F,
+          d_X(Q)=|{(R,Q) in E_f:R in X}|.
+
+      A degree-two completion inside the allowed atlas exists exactly when
+      `deg_F<=2` and, for every lower family `X`,
+
+          sum_(R in X)b(R)
+             <= sum_Q min(b(Q),d_X(Q)).
+
+      This is max-flow/min-cut with unit middle arcs.  Min-cost completion is
+      integral, including the fixed cost of forced nonbaseline incidences.
+      Any completion and the activated baseline differ by alternating
+      incidence cycles, so the flow is a sequence of literal exact-factor
+      switches.
+
+1743. Shadow, residence, and compiler constraints remain separate shared
+      couplings.  Protecting one simple `q`-edge path for every lower
+      `q=2,3` target and every target at every required fixed upper depth is
+      sufficient and necessary precisely when their incidence union has
+      degree at most two and passes the residual cut above.  Arbitrary-length
+      upper intervals are only a weaker variant.  Final depth-`d`
+      residence, for integer `d>=1`, is the positive-run DFA
+
+          beta_i != alpha_(i+t),  1<=t<=d,
+
+      equivalently exclusion of every bracketed trace `0 1^ell 0` with
+      `ell<=d`.  For the uncorrected baseline, new-label residence is the
+      one-per-fibre vertex-cover condition in the looped distance-`<d`
+      conflict graph; loops exactly exclude a sole leave on a component
+      shorter than `d`.  Final one-core plus Hall eliminates to one
+      nearest-neighbour SDR: assign `S subset P_i`, put `L_i=S` at used
+      positions and `L_i=P_i` otherwise, and require
+
+          L_i union L_(i+1) = P_i union P_(i+1)
+
+      on every cyclic adjacency.
+
+1744. The ledgers do not compose automatically.  A forced Boolean incidence
+      `C6` can pass all cap-two cuts but contract to trace `110`, violating
+      depth-two residence.  A second `C6` is the smallest
+      degree-preserving shadow-polarity atom: conditional on a common full
+      factor completion, its two shores can place lower and upper
+      `q=2,3` witnesses on opposite choices.  Two adjacent compiler
+      assignments omitting one envelope coordinate are the first
+      variable-core/static-Hall mismatch.  For leave gaps `g_j`,
+
+          h_t=sum_j min(t,g_j)
+
+      is the exact number of `t`-blocks meeting the leave.  Pure
+      `X,Y,U` start losses are `2h_q+h_(q+1)`, at most `7 Cat_r` for
+      `q=2` and `10 Cat_r` for `q=3`; the sector-interface count is
+      `2 Cat_r+h_2=4 Cat_r` when the baseline new labels are depth-two
+      resident.  These are window starts, not distinct holes.
+
+1745. The final equivalence is the simultaneous finite system `F0--F4`:
+      activated pair-SDR baseline contained in the atlas; one common
+      fixed-depth shadow section; residual integral completion; residence on
+      the final post-join chronology; and the final constrained one-core
+      SDR.  Initial baseline spacing is optional unless the architecture
+      explicitly demands a resident baseline.  The audited `k=11 -> 13`
+      carrier is boundary data only: its `115/132`, `133`, `225`, and
+      `6->1` discrepancies describe that raw child versus natural
+      inheritance and do not prove a general movement lower bound.  The
+      exact missing lemma is a Catalan-geometry theorem producing one common
+      pair-SDR/shadow/residence/core certificate.  No all-odd recursion or
+      coefficient-one conclusion is claimed.  Full reports:
+
+          THREAD_K_SEMILENGTH_RAISING_CATALAN_LEAVE_LIFT_AND_ECO_OBSTRUCTION_20260729.md
+          THREAD_K_CATALAN_LEAVE_CORRECTION_FLOW_SDR_AND_MINIMAL_OBSTRUCTIONS_20260729.md.
+
+## 383. Exact residual OR--Pascal atlas and the six-cell terminal-collar no-go
+
+1746. Fixed-prefix append completion has an exact compatible-chain theorem.
+      If `P=(p_1,...,p_n)` is fixed, `X=(x_1,...,x_q)` is appended,
+      `U_ij=OR_(h=i)^j x_h`, and `S_a=OR_(h=a)^n p_h`, then all new masks at
+      appended endpoint `j` are exactly
+
+          {U_ij:1<=i<=j} union {S_a OR U_1j:1<=a<=n}.
+
+      This is one inclusion chain.  Hence every append has length at least
+      the inclusion width of the prefix residual, with no exclusion of
+      seam-crossing intervals.  Exact compatibility is the OR--Pascal law
+
+          U_ij = U_i,j-1 OR U_i+1,j,
+
+      with nonzero diagonal; a q-letter completion is equivalent to a
+      q-column OR--Pascal triangle whose internal and seam entries cover the
+      residual.  A bare Dilworth chain cover remains only necessary.
+
+1747. The 6,438-prefix residual has 21 masks.  Its only strict containments
+      are
+
+          9524 < 13620,  13616 < 13620,
+
+      and `9524 OR 13616=13620`; deleting `13620` gives the unique
+      20-antichain.  Therefore 20 appended letters are unconditionally
+      optimal for the unchanged prefix.  For a same-length surgery with
+      gains `G` and losses `L`, the exact new residual is
+
+          (R-G) disjoint-union L.
+
+      A 19-letter repair requires residual width at most 19 and a
+      19-column OR--Pascal atlas.  A clean sufficient 6,457 absorber is a
+      nonzero `D^3`-preserving surgery which loses no old mask and gains one
+      of the 18 residual masks outside the union diamond; append the other
+      17 literally and finish with `9524,13616`.
+
+1748. The user's final-cell audit is correct.  The last-window equations
+      leave exactly 128 replacements.  Only the original `7682` has residual
+      size/width `(21,20)`.  Replacing it by `7267` gains `7267` but loses
+      `7682,7683`, giving 22 masks of width 20.  The audited source is
+
+          scratch/search_k15_tail_cell_replacements.cpp
+
+      with SHA-256
+      `d79c16a079ac634a62229c3b237fe155070105a73f4972ca41fc3981c46ccec3`.
+
+1749. Coordinatewise factorization of every affected four-window equation
+      gives a permanent exact terminal-collar verifier.  On the H100 CPU it
+      exhausts all carrier-preserving replacements of the final `r` source
+      cells for `1<=r<=6`.  The legal-state counts are
+
+          128, 8,192, 147,456, 2,257,920, 21,798,720, 337,182,720,
+
+      totalling `361,395,136` tagged evaluations across six nested fibres
+      (the union has `337,182,720` distinct six-cell tails).  In every state
+      the residual has at least 21 masks and inclusion width at least 20.
+      Thus no same-length replacement confined to the last six source cells
+      can yield 6,457, even through cross-boundary witnesses.  Seven terminal
+      cells and separated bounded collars remain open; no `nu(15)>=6458`
+      claim follows.  Full theorem, verifier, and certificate:
+
+          MATH_ATTACK_L_K15_RESIDUAL_OR_PASCAL_AND_TERMINAL_COLLAR_AUDIT_20260729.md
+          scratch/audit_k15_terminal_collar_width.cpp
+          scratch/k15_terminal_collar_width_r1_r6.certificate.json.
+
+## 384. Exact suffix-aware common compiler and phase-guarded carrier Benders
+
+1750. Fix a linear rank-eight carrier prefix `T` of length `W=6435`, put
+      `B=W+3=6438`, and append `s` free nonzero letters.  The exact lower
+      witness family has the 19,311 prefix intervals of lengths one through
+      three plus
+
+          sum_(j=0)^(s-1)(j+4)=s(s+7)/2
+
+      suffix-ending intervals.  Any omitted interval would contain four
+      consecutive prefix letters and hence a rank-eight `D^3` window.  At
+      `s=19` the tail family is exactly 190 suffix-only plus 57 crossing
+      intervals, total 247.  Extending the erosion envelope by `[15]` on
+      suffix positions and applying one common negative-window closure gives
+      an iff model for a universal length `6438+s` word in the fixed-prefix,
+      upper-perfect carrier architecture.  Its source conditions are exactly
+      target-bit hits, every middle-bit four-window hit, and nonempty letters.
+
+1751. Outer Hall is only presolve.  Two exact inner representations are now
+      proved: one interval choice per lower target with complete
+      positive/middle/nonempty blocker-cover no-goods, or the smaller-start
+      literal-word master with lazy exact OR-occurrence rows for each
+      verifier-missing target.  For a future unit-voltage quotient carrier,
+      add one of 429 opening classes.  A conclusively infeasible compiler for
+      directed circuit `C` and opening `u` gives only the guarded pair cut
+
+          c_u + sum_(e in C) a_e <= 429.
+
+      Cuts separated by 429 physical positions are coordinate-permutation
+      equivalent.  `UNKNOWN`, one Hall shore, or one unguarded compiler core
+      gives no cut.  At suffix length zero, corrected unrestricted upper
+      failure is fatal for the opening.  At positive suffix length, a suffix
+      may repair an upper carrier hole; either declare the upper-perfect
+      subclass or send that high target to an exact whole-word clean-run
+      automaton.  H19 is a linear noncyclic braid path and is a fixed-carrier
+      regression, not an incumbent of this quotient master.  No global
+      normalization of all length-6457 words to this architecture is known.
+
+1752. The user's first H100 pool-34/suffix-19 regression is positive-sound:
+      `ClearObjective` really removes the prefix objective, all 16,349
+      outside-pool targets are forced to prefix witnesses, suffix interval OR
+      bits are exact, and every emitted word is exhaustively checked.  The
+      launched SHA `2d5ed368...` models 190 suffix-only intervals and 6,460
+      witness bits; any UNSAT excludes only that fixed pool, the default
+      `explicit>=16362`, and suffix-only allocation.  Current source SHA
+      `163f09fe...` adds all 57 crossing shapes but is still negative-
+      incomplete: crossing witnesses were added after the prefix survivor
+      equivalence, so a crossing omission requires an unrelated prefix
+      blocker.  This can cause false UNSAT but never false SAT.  The exact
+      crossing model must rebuild the blocker equivalence or use direct
+      discretionary letter bits.  The current structural audit passes with
+      `178,203` variables and `1,180,817` constraints; suffix-19 was still
+      running and no status was inferred.  Full theorem, versioned audit,
+      exact scope, and solver-free checker:
+
+          MATH_CODE_AUDIT_AD_EXACT_NEGATIVE_WINDOW_SUFFIX_BENDERS_20260729.md
+          scratch/audit_ad_k15_suffix_benders_regression_20260729.py.
+
+## 384A. Hall-19 common-compiler DM--Benders tax and bounded collar recourse
+
+1753. For the authoritative Hall-19 carrier, eliminating the source
+      incidences from the exact common compiler gives a complete
+      logic-Benders projection.  If an outer pin `e=(S,c)` forbids the
+      incidence set `B_e`, every selected target-bit, middle-bit, and
+      row-nonempty obligation must avoid a selected minimal blocker cover.
+      The corresponding anchored and unanchored inequalities are
+
+          y_e + sum_(b in H)y_b <= |H|,
+          sum_(b in H)y_b <= |H|-1.
+
+      Together with ordinary target/cell matching constraints these cuts are
+      necessary and sufficient; the surviving incidences give the unique
+      entrywise-maximal common word.  At depth three every minimal circuit
+      has rank at most eight and position span at most eight.
+
+1754. Let `tau(T)` be the maximum number of distinct rank-one-through-seven
+      short-cell traces of one nonempty word with the fixed middle row, and
+      let `kappa=16364-tau(T)`.  Relative to any outer maximum matching,
+      `kappa` is exactly the minimum number of outer-matching-excess-one
+      alternating paths needed to reach a Benders-feasible matching.  The
+      stored word proves `tau>=16362`.  The exact fixed-carrier cut
+
+          u_685 + u_1581 <= 1
+
+      handles the branch omitting `7267`.  On the three branches selecting
+      `7267` at cells `6437,12874,19310`, explicit pair-Benders-conditioned
+      shores have sizes
+
+          683/662, 683/662, 689/667,
+
+      hence gaps `21,21,22`.  Their lifted inequalities are
+
+          sum_(S in H_e)(1-u_S) >= (|H_e|-|N_e|) y_e.
+
+      If `7267` is omitted, the old `516/497` shore, the `685/1581` cut,
+      and the omitted target give `19+1+1=21` misses.  If it is covered, one
+      conditional inequality gives at least 21 misses.  Therefore the
+      solver-independent exact theorem is
+
+          tau(T)=16362,  kappa(T)=2.
+
+      The static certificate checks 439 bad pairs and every conditional
+      neighborhood inclusion with no matching/SAT/CP-SAT call; certificate
+      SHA is `e4312b83...ccc`, verifier SHA `91953e13...763`.
+
+1755. The old positive DM shore has size `516/497`.  Since targets
+      `685,1581,7267` lie outside it, every hypothetical residual-20 common
+      compiler must cover `7267` and exactly one of `685,1581`.  For the
+      canonical stored 16,362-trace matching, `7267` has only endpoint cells
+      `6437,12874,19310`.  The two minimal common-word branches delete
+
+          7682@6437, 7683@12874
+
+      and insert `7267` at cell `6437` or `12874`.  Both branches are exactly
+      feasible, have size 16,361, and have endpoint tails respectively
+
+          (17937,1585,1571,1603,3651,7267),
+          (17937,1585,1571,1603,3139,7267).
+
+      Their last three middle masks are `(18035,3699,7779)`.  Thus the
+      sharpest bounded branch from this stored matching is two
+      vertex-disjoint Benders-safe augmenting paths rehousing targets
+      `7682,7683`, with only cycles and cell-to-cell balanced paths as neutral
+      companions.  Completing them would give 16,363 common traces and
+      residual twenty, but the conditional shores now prove that this is
+      impossible without changing the carrier.  The free triple cell
+      `7267@19310` costs four immediate relocations and is locally nonminimal,
+      but remains a distinct global branch because no Benders-feasibility-
+      preserving dominance map to the two-path branches is proved; its own
+      conditional shore has gap 22.
+
+1756. A depth-`d` three-seam braid exchanging two blocks of length at least
+      `d`, with optional reversals, has an exact core-preserving transport.
+      Every short cell disjoint from the old/new seam gaps transports with
+      the same trace.  At `d=3` its core-preserving common-word recourse is
+      confined to at most nine source letters, 36 short cells, and 18 middle
+      windows.  If `R` is the old trace set whose every witness meets an old
+      gap and `L` is the new
+      exceptional trace set, exact coverage is
+
+          (C_old - R) union L,
+
+      so the literal common residual falls iff
+
+          |L - (C_old-R)| > |R|.
+
+      The maximal gap letters are the new envelopes intersected with all
+      selected exceptional labels; nonemptiness, exact selected ORs, and
+      exact affected middle windows are necessary and sufficient inside the
+      frozen-core transport class.  Frozen-core no-goods are not silently
+      identified with unrestricted Benders cuts unless their core incidences
+      are explicitly protected.
+
+1757. No physical braid satisfying the positive-surplus inequality is
+      certified.  The fixed H19 common-compiler optimum is now closed
+      exactly, so any `21 -> 20` repair must change the carrier and break at
+      least one certified conditional shore.  The sharp bounded targets are:
+      open Benders-safe sockets
+      for both `7682,7683` while retaining the endpoint `7267` service; or
+      create an interior `685/1581` socket escaping their universal
+      position-one conflict.  The root-2420 ear is only a desired signature,
+      not itself a deck-exact block braid, and trace `18708` must remain in
+      the last-witness test.  A precise separated absorber theorem now says:
+      an internal braid which transports the specific maximal word `A(M0)`,
+      protects its selected `M0` witness bank outside `7682,7683`, and
+      creates durable nonterminal copies of both targets composes with either
+      audited endpoint tail to add `7267`; no short cell or four-window may
+      meet both collars.  Overlapping collars require one joint `Q` table.
+      Full theorem and audit:
+
+          THREAD_A_K15_H19_COMMON_COMPILER_DM_BENDERS_AND_BOUNDED_COLLAR_EXCHANGE_20260729.md
+          scratch/k15_h19_7267_pair_benders_shore_certificate_20260729.json
+          scratch/verify_k15_h19_7267_pair_benders_shore_certificate_20260729.py.
+
+## 382. Audit of Claude's newest equivariant-construction claim
+
+1758. The newest mutable snapshot in
+
+          /Users/amir.nuriyev/Downloads/opusproblem/work
+
+      was frozen and audited through `punchdeep.py` at mtime
+      `2026-07-29 03:01:01`.  Four positive components survive independent
+      checking: the central rotation action is free for every odd `k`, not
+      only prime `k`; the Merino--Micka--Mutze theorem supplies an
+      undecorated strict voltage spiral with perfect lower q1 rainbow for
+      every odd `k` and unit voltage; the corrected q2/q3 motif catalogues
+      agree with exhaustive small-k enumeration; and Claude's fresh quotient
+      CEGAR plus the repo exact compiler produces a second fully verified
+      length-465 word at `k=11`.
+
+1759. The claimed compiler endpoint in `ready15.py` is not exact.  It uses
+
+          M_i=(P_i-P_{i-1}) union (P_i-P_{i+1})
+
+      as though `M` were a one-core, but the graded compiler requires a fixed
+      `C<=P` with `DC=DP`.  On Claude's own fresh passing `k=11` carrier,
+      `ready15.py` prints `READY` while an independent literal audit gives
+      `DM!=DP` on 330 of 462 cyclic edges.  Thus its quotient Hall test is an
+      outer screen only, not a sufficient word certificate.  The remaining
+      odd-k object is a compiler-ready decorated pair `(T,C)` satisfying
+      residence/shadows, exact one-core, weighted quotient Hall, physical
+      matching, and a safe cut.  Decoration alone is not the sole gap.
+
+1760. Further boundaries: Claude's `k13_flat.word` has an exact rank-seven
+      `D^3` row but one cyclic seam of symmetric-difference four, so no strict
+      decorated k13 spiral is certified; `construct.py` has exponential
+      recursive backtracking despite its polynomial/deterministic headline;
+      `punchdeep.py` is a one-shot prototype and returns `deep CSP: UNSAT` on
+      its motivating stored k9 carrier; and `PASS/FULLPASS` means shadow-pass,
+      not an emitted fully verified word.  The notes' 6459 upper bound is
+      stale.  No Claude run changed the rigorous frontier
+
+          6438 <= nu(15) <= 6458.
+
+      Complete hashes, line audit, positive regressions, and integration
+      decision:
+
+          MATH_AUDIT_CLAUDE_RECENT_EQUIVARIANT_CONSTRUCTION_20260729.md.
+
+## 383. Exact common-colour Pascal lift from k=14 to k=15
+
+1761. Let `T_0,...,T_{W-1}` be a rank-r Johnson path on `[2r]`, with
+      transition colours
+
+          X_i=T_i intersection T_{i+1},
+          U_i=T_i union T_{i+1}.
+
+      Build the bipartite occurrence graph having one edge `X_i--U_i` per
+      transition.  A matching saturating both colour layers selects one
+      common set `K` of `N=C(2r,r-1)` transitions on which both shadows are
+      rainbows.  Deleting the other transitions cuts `T` into
+      `W-N=Cat(r)` paths.  Every nonsingleton component `T_a,...,T_b` lifts
+      to the rank-(r+1) Johnson cycle on `[2r+1]`
+
+          zT_a,...,zT_b,U_{b-1},...,U_a.
+
+      These cycles jointly enumerate the entire new middle layer exactly
+      once, and their intersections enumerate the entire lower first shadow
+      exactly once.  This is a direct theorem: the z-sector colours are
+      `z+X_i`, while the two cross edges and reversed-U edges enumerate each
+      old middle `T_i` once.
+
+1762. The condition is an ordinary polynomial-time bipartite matching, not
+      SAT.  On the exact k14 carrier its maximum is only `2578/3003`; over
+      all 135 distinct saved complete k14 Johnson paths the best initial
+      value is `2739/3003`.  Exact dynamic 2-opt and connected 3-opt then
+      raise it to `2918/3003`; the independently audited result is
+      `scratch/k14_common_colour_3opt_best_20260729.json`.  Hence none of the
+      current paths admits this direct lift; the exact local-optimum common-
+      occurrence deficiency is 85, not a global lower bound.  The theorem
+      explains why separate
+      perfect lower and upper shadows at k14 are insufficient: their chosen
+      occurrences must coincide.  It supplies a new exact search objective,
+      but residence, deeper shadows, and compiler compatibility remain after
+      it.
+
+      Full proof and solver-free checker:
+
+          MATH_THEOREM_EVEN_TO_ODD_COMMON_COLOUR_PASCAL_LIFT_20260729.md
+          scratch/audit_even_to_odd_common_colour_lift.py
+          scratch/k14_optimal_common_colour_lift_audit.json
+          scratch/k14_best_common_colour_lift_audit.json.
+
+## 385. Hall-19 exact common-compiler portfolio and exterior tax
+
+1763. A frozen portfolio of seven distinct Hall-19 carriers was audited:
+      authoritative, c0440, c0520, c0668, c0530, c0526, and c0434.  All have
+      outer matching `16364/16383` but exact common-word compiler optimum and
+      bound `16362`, hence prefix deficit 21 and compatibility tax two.  The
+      outer-edge counts range from 133848 to 133914 and the deficient DM
+      shore from `516/497` to `330/311`, so neither statistic predicts the
+      common optimum.  This is a census of these seven frozen carriers, not a
+      classification of the wider neutral family.
+
+1764. The exact invariant is a colored forbidden-circuit clutter.  For the
+      maximal erosion incidence set `Omega`, each selected target/cell action
+      deletes its negative incidences.  One common word exists iff every
+      middle-bit support, source-position nonzero support, and selected
+      target-positive support survives.  Inclusion-minimal blocker covers are
+      therefore the exact forbidden circuits; at `k=15,d=3` their rank is at
+      most eight, and the middle and anchored-positive ranks are at most four.
+      The exact DM identity
+
+          |R|-h = |R\D_L| + sum_j (|R intersect L_j|-g_j)
+
+      localizes the observed tax: every stored optimum loses exactly each DM
+      gap, and both extra misses are exterior.  A normalization lemma closes
+      the literal interface: every lower target occurrence has length at most
+      three, and any literal 16362-target optimum maximalizes without changing
+      its residual.
+
+1765. The first exterior unit has a solver-free rank-two boundary circuit.
+      Target 685 has only cell `[1,1]`, while every candidate of 1581 contains
+      position 1; bit 128 belongs to `685\1581`, so they cannot coexist.  The
+      second unit is 7267.  Its only three cells end at position 6437, and in
+      every stored optimum they conflict with the unique final witness of
+      7683.  Replacing only the last letter by 7267 preserves the carrier but
+      changes 21 misses to 22.  More strongly, seven exact forced-7267 runs
+      all ended `OPTIMAL` at 16361, so 7267 is absent from every exact optimum
+      on these seven carriers.  This last universal-face statement retains
+      CP-SAT solver-status scope because no standalone proof log was emitted.
+
+1766. Every stored 21-mask residual has inclusion width 20 and the same sole
+      nontrivial OR triple
+
+          9524 | 13616 = 13620.
+
+      Any `q` appended letters cover the old residual by at most `q` endpoint
+      chains, including seam-crossing intervals, so every fixed-prefix suffix
+      has length at least 20.  Appending the other 18 masks followed by
+      `9524,13616` attains 20.  Thus all seven completed words have length
+      6458; each was exhaustively checked over all 32767 nonempty masks, and
+      its first 6438 letters have `D^3` equal to the advertised carrier.
+
+1767. The requested new carriers do not break the residual geometry within
+      the frozen 41-mask union.  DM-budget arithmetic leaves only the two
+      shared-endpoint inclusion arcs above for c0526 and c0530 (and c0520).
+      For c0434, its gap-two root-8216 component leaves eight additional
+      candidate arcs; forcing the two endpoints of each arc actually absent
+      gives exact optimum 16361 and 22 misses in all eight cases.  Therefore
+      every exact-optimal c0434/c0526/c0530 residual contained in that union
+      has width at least 20; the same conditional theorem holds for c0520.
+      This does not exclude an optimum outside the 41-mask pool or a
+      lower-coverage prefix with a shorter total completion.  Full report and
+      independently reproducible audits:
+
+          MATH_THEOREM_K15_H19_COMMON_COMPILER_PORTFOLIO_EXTERIOR_TAX_20260729.md
+          scratch/k15_h19_common_compiler_portfolio_20260729/portfolio_audit_dm.json
+          scratch/k15_h19_common_compiler_portfolio_20260729/boundary_tax_audit.json
+          scratch/k15_h19_common_compiler_portfolio_20260729/forced7267_portfolio_audit.json
+          scratch/k15_h19_common_compiler_portfolio_20260729/residual_pool_width_budget_audit.json
+          scratch/k15_h19_common_compiler_portfolio_20260729/c0434_comparable_pair_faces_audit.json.
+
+## 385. Exact radius-seven terminal-collar antichain certificate
+
+1768. Let `P` be the verified 6,438-prefix and replace its final seven
+      nonzero source cells subject to `D^3 P'=D^3 P`.  The fibre factors
+      coordinatewise into pattern counts
+
+          108,8,1,1,4,15,4,1,1,108,56,2,1,1,1,
+
+      whose product is `2,508,226,560`.  The forced cell masks are
+
+          1028,16384,48,2,64,2048,4096,
+
+      so every product state is automatically nonzero.  The unchanged
+      6,431-head has 42 missing masks and eleven suffix-OR states; these
+      determine all 28 internal and 77 seam interval types exactly.
+
+1769. The old residual minus `13620` is the unique 20-antichain `A`.  For
+      every one of the 105 affected interval types, coordinatewise lower and
+      upper envelopes `L_I,U_I` give the exact realizability test
+
+          target g occurs at I iff L_I subset g subset U_I.
+
+      Across the `105*20` tests against `A`, the only hits are
+
+          (7267,[6,6],4096,7779),
+          (7267,[5,6],6144,7779),
+          (7267,[4,6],6208,7779).
+
+      Thus a width-at-most-19 tail would have to gain `7267` on one of these
+      three terminal intervals.  This is a tiny exact certificate, not a
+      probabilistic or signed relaxation.
+
+1770. Every such gain forces `7682` missing.  The fixed head already misses
+      it; every seam interval contains final head letter `789`, hence bit 0,
+      which `7682` forbids.  Bit 12 has the unique legal tail pattern `{6}`,
+      so an internal `7682` witness must end at 6.  Starting inside the
+      `7267` interval lacks required bit 9; starting earlier contains the
+      forbidden bit 0 of `7267`.  Therefore
+
+          (A minus {7267}) union {7682}
+
+      is an explicit 20-antichain in the new residual.  Every radius-seven
+      tail has width at least 20; the original tail attains 20.  Hence no
+      19-letter literal suffix and no length-6,457 word exists in this entire
+      move class.  Radius eight and separated multi-cell collars remain open.
+
+1771. An independent H100-CPU traversal of all `2,508,226,560` states found
+      171 residual families, minimum width 20, and exactly `142,560` width-20
+      states with 21 misses plus `2,753,240` with 22 misses.  The complete
+      histogram, hashes, compact proof, and verifier are in
+
+          MATH_ATTACK_L_K15_TERMINAL_RADIUS7_ANTICHAIN_CERTIFICATE_20260729.md
+          scratch/audit_k15_terminal_r7_antichain_certificate.cpp
+          scratch/k15_terminal_r7_antichain_certificate.json
+          scratch/k15_terminal_r7_audit_manifest.json.
+
+## 386. Exact crossing-survivor rebuild and suffix-19 H100 portfolio
+
+1772. The negative-incomplete seam bug in handoff item 1752 is now closed in
+      source SHA
+
+          f93b4066efb27afe24c09604d57650b01c054b70873e9ffecb061fe7bb1ebe10.
+
+      For supported prefix incidence `(p,a)`, the exact blocker family is the
+      union of selected prefix occurrences covering `p` and selected
+      crossing occurrences whose prefix part covers `p`, in both cases with
+      `a` outside the labelled target.  The survivor lower row is imposed
+      once after both selector families exist.  Prefix negative implications
+      remain explicit.  Crossing negative implications need not be repeated:
+      `w => exact crossing OR` already gives them through the bitwise exact
+      `AddMaxEquality` recurrence.  The old prefix-only survivor lower row is
+      absent.  Maximal-closure proves completeness within the fixed carrier,
+      pool, and minimum-explicit scope; every selected witness is a literal
+      interval in the decoded word.
+
+1773. A solver-free unit fixture isolates the repaired direction.  The last
+      erosion envelope is `7779=7267 union {bit 9}`.  Clearing only bit 9 at
+      prefix position 6437 and appending letter 1 leaves every one of the
+      6435 carrier windows exact, while crossing interval `c_2_3` has OR
+      7267.  Its witness is the sole selected blocker of `(6437,9)`.  The old
+      lower row rejected `z=0`; the rebuilt row `z+w>=1` accepts it.  The
+      complete solver-free suffix-20 regression reconstructs one selector for
+      each of 16362 prefix targets, covers all 2879 deleted prefix incidences,
+      and gives unique suffix witnesses for the 21 residual masks.  The
+      selector-map SHA is `fa7d4494...7f88`; the suffix-witness-map SHA is
+      `761ddeb2...978`.  Two independent physical verifiers also pass the
+      length-6458 word SHA `b34c5770...8e6c`.
+
+1774. Only 21 existing survivor rows receive seam literals.  Exact
+      solver-free formulas and actual H100 dry builds agree:
+
+          union34/s19: 178203 variables, 1180817 constraints,
+                       16758 crossing literals;
+          union41/s19: 179932 variables, 1206752 constraints,
+                       20919 crossing literals;
+          union34/s20: 179330 variables, 1192901 constraints;
+          union41/s20: 181220 variables, 1221251 constraints.
+
+      The fixed carrier SHA is `86dcb9f1...c0b`; pool SHAs are
+      `4fbddba3...5c2` and `6b7e2ef5...fe0`.  `ClearObjective` is explicit,
+      every nonpool target is prefix-owned, at least 16362 total targets are
+      prefix-owned, and pool targets may be prefix-, suffix-, or
+      crossing-owned.  A verified SAT word is unconditional.  INFEASIBLE is
+      only a certificate for that exact carrier/pool/suffix-19/threshold
+      scope; UNKNOWN proves nothing.  Union41 is the broader negative screen
+      under otherwise identical assumptions.
+
+1775. The manifest-frozen H100-CPU bundle is
+
+          /home/amodo/or15/k15_suffix_cross_exact_f93b4066_20260729.
+
+      Its manifest passed remotely.  After the obsolete pre-fix jobs were
+      terminated, corrected union34 seed 2101 and union41 seed 2102 launched
+      at `2026-07-28T22:45:03Z`, pinned to CPUs 0--7 and 8--15.  Each has a
+      3600-second CP-SAT limit and 3900-second external bound.  Both emitted
+      their exact `MODEL_BUILT` records; final statuses are pending.  Full
+      theorem, audit, manifest, and runner:
+
+          MATH_CODE_AUDIT_AD_CROSSING_SURVIVOR_REBUILD_AND_SUFFIX19_PORTFOLIO_20260729.md
+          scratch/audit_k15_exact_compiler_suffix_rebuild_20260729.py
+          scratch/k15_suffix_cross_exact_f93b4066_20260729.sha256
+          scratch/run_k15_suffix19_exactcross_f93b4066_h100.sh.
+
+## 387. Exact radius-eight terminal suffix-exchange theorem
+
+1776. Let `P=B X` be the verified 6,438-prefix with `|B|=6430` and an
+      eight-cell terminal tail.  The exact `D^3` fibre factors over
+      coordinates with pattern counts
+
+          208,8,2,1,4,15,4,1,1,208,56,2,1,1,1,
+
+      whose product is `18,606,981,120`.  Its forced cell masks are
+
+          272,1028,16384,48,2,64,2048,4096,
+
+      so every Cartesian state is nonzero.  The fixed head has 47 missing
+      masks and eleven suffix-OR states, giving exactly 36 internal and 88
+      seam interval types.
+
+1777. The reusable terminal suffix-exchange lemma is as follows.  In a
+      coordinate-product tail fibre with nonzero forced cells, suppose the
+      complete envelope relation says the only member `g` of an old
+      `w`-antichain which can be gained is realized only by a terminal suffix.
+      If a head-missing mask `h` has a terminal-unique required coordinate,
+      every head suffix contains `alpha in g\h`, `h` has some
+      `beta in h\g`, and replacing `g` by `h` preserves an antichain of size
+      `w`, then every tail residual has width at least `w`.  A gain of `g`
+      makes any internal `h` witness either miss `beta` or contain `alpha`,
+      while the seam contains `alpha`; without the gain the old antichain
+      remains.
+
+1778. For radius eight the old 20-antichain envelope comparison has exactly
+      three hits:
+
+          (7267,[7,7],4096,7779),
+          (7267,[6,7],6144,7779),
+          (7267,[5,7],6208,7779).
+
+      There is no seam hit and no other old-antichain gain.  Instantiate the
+      lemma with `g=7267`, `h=7682`, `alpha=bit 0`, `beta=bit 9`, and the
+      terminal-unique `gamma=bit 12`.  The fixed head ends in `781`, so every
+      seam has bit 0.  Therefore gaining `7267` forces losing `7682`, and
+
+          (A minus {7267}) union {7682}
+
+      is an explicit replacement 20-antichain.  Every radius-eight residual
+      has width at least 20; the original tail attains 20.  Thus no 19-letter
+      suffix and no length-6,457 word exists in this whole move class.
+
+1779. The proof checks only `15*256` coordinate patterns and `124*20`
+      envelopes.  The logically redundant 18.6-billion-state traversal was
+      not run.  The first unclosed terminal radius is nine; separated
+      multi-cell collars remain distinct.  Hash-bound theorem and artifacts:
+
+          MATH_ATTACK_L_K15_TERMINAL_RADIUS8_ANTICHAIN_CERTIFICATE_20260729.md
+          scratch/scan_k15_terminal_antichain_envelopes.cpp
+          scratch/k15_terminal_r8_antichain_certificate.json
+          scratch/k15_terminal_r8_audit_manifest.json.
+
+1780. Two `D^3`-separated collars `I=[a,b]`, `J=[c,d]` with `c-b>=4`
+      have an exact Cartesian carrier fibre.  Their deck is the union of the
+      avoid-both deck, the two one-collar decks, and
+
+          {u OR H OR v:
+             u is a segment OR ending at b,
+             v is a segment OR starting at c},
+
+      where `H=OR_(b<t<c) w_t`.  If `H=FULL`, cross intervals contribute
+      only `FULL`; after absorbing this into the fixed deck, the residual is
+
+          Z minus (C_I(x) union C_J(y)).
+
+      A radius-at-most-four local signature uses at most 394 interval types
+      at `k=15`.  Thus exact pair auditing deduplicates the two local coverage
+      signature families and checks their unions; independent gain/loss lists
+      do not compose because the other collar may recycle a lost witness.
+      For the verified 6,438-letter prefix, pair a nonterminal collar with the
+      final eight-cell collar and suppose the intervening gap OR is full.  The
+      avoid-both deck misses `A union {7682}`.  Intervals meeting only the
+      terminal collar retain the audited stronger dichotomy: their only
+      possible gain from `A` is `7267`, and such a gain forces `7682` missing;
+      intervals meeting both collars are full.  Hence any width-19 pair
+      forces the nonterminal collar to realize a portal in
+      `A union {7682}`.  Absence of all `394*21` coordinate-envelope hits is
+      a rigorous one-sided rejection certificate.  A hit need not be
+      realizable because cell nonemptiness couples coordinate choices, unless
+      every local cell has a forced nonzero coordinate or exact joint
+      feasibility is checked.  This is not itself a no-go for all collar
+      placements.
+
+## 388. Claude compact quotient to exact core/Hall Benders boundary
+
+1780. `scratch/threadD_claude_exact_benders_adapter.py` is now the fail-closed
+      bridge from Claude's compact quotient selector to the repository's
+      exact compiler.  It pins the current foreign source SHA
+      `fed3719c...19726f0`, independently compares every ordered choice-table
+      entry, rejects unpinned bare IDs and conflicting cycle aliases, and
+      reconstructs/validates the full unit-voltage physical cycle.  Digest
+      fields pin the ID interpretation, not generator provenance.  No
+      `ready15` forced-port mask is used.
+
+1781. For a fixed carrier the compiler quantifies over every cyclic
+      equivariant one-core and every physical target injection.  Its omission
+      variables are exactly the stable coordinate-zero trace choices, and
+      equivariance transports coordinate `x` at position `i` to
+      `i-N*x*v^{-1} mod W`.  Target assignment forces every coordinate of
+      `P_i\S` omitted.  Thus the CP-SAT solutions are exactly common one-cores
+      plus saturating physical matchings.  A core-free weighted quotient Hall
+      failure rejects all cores; a positive solve is replayed through actual-
+      core weighted Hall, a fresh physical matching, all safe cuts, exhaustive
+      interval OR coverage, and `verify_exact_or_word.py`.  The complete proof
+      and scope are in
+
+          THREAD_D_CLAUDE_COMPACT_QUOTIENT_EXACT_CORE_HALL_BENDERS_20260729.md.
+
+1782. The current-source H100 calibration is positive at `k=11`.  The live
+      master re-solved the hinted undirected selector in 0.440 seconds; the
+      repository reconstructed voltage 6 and solved a 3696-variable,
+      5355-constraint exact core model in 0.074 seconds.  Both quotient Hall
+      ledgers are `231/231`.  The retained length-465 word SHA is
+      `0b526c51...716e6`; independent H100 and local checks cover all 2047
+      masks and reproduce the exact middle row.  A second selector has a
+      core-free Hall deficit `220/231` and emits the exact selector row
+      `sum_F x_e <= 41`, cut SHA `0b92ec15...d0e509`; the one-round
+      `MAX_ROUNDS` wrapper is not UNSAT.  The bounded `k=15` H100 run built
+      11998 choices/23996 arcs and returned `UNKNOWN` after 10.477 solver
+      seconds, with no selector, cut, core, or word.
+
+1783. The installed negative interface is only the complete-selector no-good
+      `threadD-claude-selector-benders-cut-v1`.  The stronger exact row from
+      `MATH_THEOREM_COMPILER_READY_DECORATED_PAIR_ROOT_ARC_CEGAR_20260729.md`
+      is exposed separately as
+      `threadD-claude-shore-state-additive-cut-v1`, status
+      `SHORE_CUT_INTERFACE_ONLY_NOT_INSTALLED`.  It is an interface contract,
+      not an implemented row materializer.  It requires an exact combined
+      six-state/five-directed-arc collar and 8/16-state omission literal
+      registry, including one-hot, stable transitions, and the twisted seam.
+      Claude's current master has only undirected choice literals, so directly
+      projecting this additive shore row to choices is unproved and is not
+      done.  All audits retain source/table/adapter/runtime parameters and the
+      exact positive or negative normalized geometry.
+
+## 389. Compiler-ready MMM pairs and the common-colour Pascal recursion
+
+1784. In a depth-`d` resident Johnson chronology
+
+          T_(i+1)=T_i-{alpha_i}+{beta_i},
+
+      the ordered last-`d` insertion queue is contained in `T_i`, has no
+      repetitions, and determines the maximal erosion exactly:
+
+          P_i=T_i\{beta_(i-d),...,beta_(i-1)},
+          P_(i+1)=P_i-{alpha_i}+{beta_(i-d)}.
+
+      Hence `P` is itself a Johnson chronology.  The one-core equation on
+      `(P_i,P_(i+1))` is a transition of this same residence automaton.  At
+      `d=3`, its union is exactly
+
+          P_i union P_(i+1)=T_(i-2) intersect T_(i-1) intersect T_i,
+
+      the lower-q2 root.  Residence, q2, erosion, and compiler core therefore
+      cannot be decorated independently.
+
+1785. For a unit-voltage odd-composite quotient, central positions are free
+      although deep target orbits may be short.  If `R(X)` is the number of
+      quotient port columns adjacent to a target-orbit family `X`, physical
+      Hall is equivalent to the exact weighted inequalities
+
+          sum_(O in X)|O| <= k R(X).
+
+      Maximum-deficiency symmetrization proves sufficiency without requiring
+      the final matching to be equivariant.  Endpoint core masks together
+      with the full vector `R` form an associative concatenation/reversal/
+      rotation transfer algebra.  Core and Hall close on one twisted quotient
+      lap; residence and unrestricted upper intervals are evaluated on the
+      literal `k`-fold semidirect power.
+
+1786. Every genuine nonexceptional MMM gluing pair is an `F`-alternating
+      Boolean incidence hexagon.  Toggling it preserves both central shores
+      and, after contraction, replaces exactly three Johnson seams: a literal
+      three-head transfer.  Fixed-q shadow loads change only in the old/new
+      collars (`<=3q` starts per side), residence is an exact closed-span plus
+      multi-seam queue test, and a transported fixed core changes each Hall
+      shore count by at most `3d`.  A complete marked-fragment signature must
+      retain incoming-to-outgoing queues, both `H`-owner boundaries, based
+      witness spans, the endpoint port relation, voltage, and the actual six-
+      port pairing.  Within any fixed compatible MMM gluing library this is a
+      necessary-and-sufficient bottom-up certificate for a compiler-ready
+      decorated pair; it is not an all-semilength existence theorem.
+
+1787. For an even rank-`r` Hamilton path, the Pascal lift requires one common
+      perfect matching in the transition occurrence graph `X_i--U_i`, not
+      separate lower and upper rainbows.  Depth-`d` spacing is exact: the
+      first and last `d` transitions are selected and at least `d` selected
+      transitions separate consecutive deletions.  The resulting
+      `Cat_r` components have lengths `L_j` with
+
+          sum_j L_j=(r+1)Cat_r,
+          sum_j(L_j-d-1)=(r-d)Cat_r.
+
+      An acyclic interval-block graph, augmented by physical residence,
+      shadow, core, and matchable-target profiles, is a necessary-and-
+      sufficient finite recursion for a compiler-ready disjoint odd cycle
+      factor in any declared SCD/Catalan path library.  It does not yet join
+      the cycles into one literal word.  The 135 saved `k=14` paths have
+      common-matching maximum `2739/3003`, deficiency `264`, so that finite
+      library fails before spacing or ports; this is not a universal no-go.
+
+1788. The Pascal recursion has a sharper joint gate.  If the raw child is
+      fully depth-`d` resident, a child target `{z} union A` of erosion rank
+      has positive compiler degree iff `A` occurs as a parent depth-`d`
+      intersection whose `d` transitions all belong to the same common
+      matching.  Thus every target needs a matching-protected witness; no
+      one-core choice repairs a missing one.  The `z` erosion-column count is
+      exactly `(r+1-d)Cat_r`, yielding literal Hall shores (9.19)--(9.21).
+      On every selected reverse `U` arm, upper-rainbow distinctness forbids
+      both possible immediate return terms, so every internal lower-q2 triple
+      is exactly `X_(i-1)`; only the two arm collars remain to be audited.
+
+1789. The Pascal child factor is radius one in the matching indicator:
+      changing occurrence set `S` changes at most `3|S|` old and new child
+      edges, `3q|S|` fixed-q windows, `3d|S|` erosion columns, and
+      `3(d+1)|S|` core equations per side.  This gives a bounded compound
+      child trade, but not automatically a dynamic decomposition into MMM
+      hexagons.  Common-matching repair is exact Hall either in the residual
+      exposed graph (frozen exterior) or the full allowed graph (reroutable
+      exterior).  A literal upper-safe cut additionally retains each based
+      witness edge span; since `D^d A=T`, appending the first `d` letters
+      converts every chosen nonwrapping carrier interval into a literal word
+      interval.
+
+1790. The natural published MMM gluing-tree/parallel-label family is already
+      exactly empty at `k=11` for residence + lower-q2 + upper-q1, so no
+      recursion confined to that family can work.  The unrestricted
+      alternating-circuit class and the protected-Pascal-matching lemma remain
+      open; neither finite obstruction is promoted to a cardinality or
+      entropy impossibility.  The complete theorem, proofs, and scope audit
+      are in
+
+      THREAD_K_MMM_COMPILER_READY_DECORATED_PAIR_AND_PASCAL_DIAMOND_RECURSION_20260729.md.
+
+1793. The generalized two-sector braid has now been instantiated as one
+      fail-closed `k=15` 0--1 model on a fixed `k=14` Hamilton path.  If
+      `x_e` selects AA path edges, `z_(T,U)` selects cross containments, and
+      `y_(T;U_1,U_2)` selects labelled BB edges, the exact equations are:
+
+          sum_(intersection(e)=X) x_e = 1,
+          d_A(T)+sum_(U superset T) z_(T,U)=2,
+          sum_U z_(T,U)+sum_(U_1 intersection U_2=T)y_(T;U_1,U_2)=1,
+          deg_cross(U)+deg_BB(U)=2,
+          sum_(union(e)=U)x_e+deg_cross(U)>=1,
+          sum_(U_1 union U_2=V)y_(T;U_1,U_2)>=1.
+
+      These equations are sufficient for an owner-exact degree-two factor
+      with exact lower q1 and complete upper q1.  Combining the second and
+      third equations forces `d_A(T)` to be 1 or 2 and forces exactly
+      `Cat_7=429` AA paths.  The initial implementation has 99,527 Boolean
+      variables.  On the current best `k=14` path, the lower-rainbow
+      degree-two system is SAT in 12.2 seconds and remains SAT after adding
+      the z-upper channel; requiring every AA path to have at least four
+      vertices is UNSAT in presolve.  The latter is scoped to this fixed
+      path and proves that the even chronology and residence must be moved
+      jointly.  Exact optimization sharpens the fixed-path obstruction to
+      precisely 17 short AA components: 13 of length two and four of length
+      three, with solver optimum and lower bound both 17 after 62.6 seconds.
+      A separate exact run simultaneously realizes both lower decks and all
+      `3003+2002` upper colours in a degree-two nine-component factor after
+      61.6 seconds.  This factor has 1,527 depth-three residence defects (97
+      at the distinguished coordinate), so q1 compatibility is proved
+      feasible while chronology and protected deeper/compiler windows remain
+      open.
+      Exact theorem, model, and status are in
+
+          MATH_THEOREM_GENERALIZED_PASCAL_BRAID_LINEAR_MODEL_20260729.md,
+          scratch/solve_k15_generalized_pascal_braid.py.
+
+1791. The verified k=13 optimum is not a hidden strict common-colour Pascal
+      lift.  Splitting its exact two-cycle factor at any coordinate gives
+      decks `A=C(12,6)` and `B=C(12,7)`, exactly 132 alternating A-runs, and
+
+          AA=792, AB+BA=264, BB=660.
+
+      The AA intersections are the exact 792 rank-5 colours, but the AA
+      unions have only 645 distinct rank-7 colours (exact common-matching
+      deficiency 147), and none of the 132 following B-runs is the reversed
+      adjacent-union sequence of its A-run.  Nevertheless AA+cross unions
+      cover all 792 z-upper colours, BB unions cover all 495 no-z upper
+      colours, and cross+BB intersections enumerate all 924 no-z lower
+      colours exactly.  Thus the source is a genuine generalized two-sector
+      braid; the final optimal splice changes only BB edges.  For 14->15 the
+      faithful forced channel counts are A=3432, B=3003, R=429, AA=3003,
+      cross=858, BB=2574.  A perfect 3003 common matching is sufficient but
+      not necessary.  The theorem and reproducer are
+
+          MATH_AUDIT_K13_GENERALIZED_PASCAL_BRAID_20260729.md,
+          scratch/audit_k13_pascal_braid.py.
+
+1792. The generalized braid has an exact endpoint-completion theorem.  Fix
+      an `AA` lower-rainbow path forest with endpoint set `E`, nonendpoint
+      lower labels `I`, and AA-union multiplicities `lambda_U`.  Binary cross
+      variables `x_(T,U)` and labelled BB variables `y_(T;a,b)` extend it to
+      an owner-exact degree-two factor with exact lower q1 and complete upper
+      q1 iff equations (9.30a)--(9.30e) hold: one cross per A endpoint, one BB
+      edge per nonendpoint lower label, degree two at every B owner,
+      `lambda_U+deg_cross(U)>=1`, and complete BB-union coverage.  The B shore
+      is a Catalan path system exactly when the selected BB graph also obeys
+      the forest inequalities (9.31).
+
+      Conditional on a BB skeleton, put `b_U=2-deg_BB(U)` and let `H` be the
+      missing AA-union colours.  Cross completion is now an ordinary
+      capacitated endpoint matching: `b_U>=1` on `H` and
+
+          |S| <= sum_(U in N(S)) b_U                 (S subseteq E).
+
+      Since `sum b_U=2 Cat_r=|E|`, any such flow fills every residual degree
+      exactly and repairs every AA hole.  This is the proved inductive
+      endpoint theorem.  The still-open semilength step is to construct the
+      lower-rainbow AA forest and labelled BB skeleton satisfying this Hall
+      test, no-z upper coverage, forest chronology, and one simultaneous
+      residence/all-shadow/compiler root signature.  The exact theorem and
+      k13 hash-bound calibration are in
+
+          THREAD_K_MMM_COMPILER_READY_DECORATED_PAIR_AND_PASCAL_DIAMOND_RECURSION_20260729.md.
+
+## 393. Generalized-Pascal audit and exact 305-segment chronology LNS
+
+1804. The six generalized-braid equations are correct, but the original
+      theorem statement assigned different ranks to the z and no-z sectors.
+      Both lower families are rank `m`, namely
+
+          z+C([2m],m-1) and C([2m],m),
+
+      and both upper families are rank `m+2`, namely
+
+          z+C([2m],m+1) and C([2m],m+2).
+
+      The statement is corrected.  Eliminating the controller at fixed AA
+      selection gives an exact singleton/pair system: AA endpoints choose one
+      cross extension, AA interiors choose one BB extension pair, and every
+      rank-eight B owner has total incidence two.  The z and no-z upper
+      channels couple only through this B-capacity ledger.
+
+1805. There is no fixed-path q1 channel obstruction.  The factor SHA
+      `e8092469...f29` independently reconstructs as nine degree-two cycles,
+      exact lower q1, and zero holes in all `3003+2002` upper colours.  Its
+      generating run had hard no-z upper coverage and maximized z-upper
+      distinct coverage to `3003`, with `OPTIMAL` objective/bound `3003`.
+      It still has 97 short z-runs and 1527 total residence defects.  Hard
+      z-residence is already INFEASIBLE when both upper families are skipped,
+      so residence failure is not a z/no-z interaction.
+
+1806. On the frozen path, exact short-run indicators give
+
+          min D = 17 = 13 length-two + 4 length-three components
+
+      for equations (2.1)--(2.4), with both upper families skipped.  The log
+      SHA `5399609f...836` records `OPTIMAL`, objective 17, bound 17, and
+      fingerprint `0x1f36fd04ef9d386c`.  This is a trusted-solver optimum;
+      no independently checkable `D<=16` UNSAT core was exported.  The 17
+      displayed locations are one optimum, not individually forced motifs.
+
+1807. Their bracket/internal support has 55 cuts and 278 legal targeted
+      same-endpoint 2-opt partners.  The resulting 304-cut palette splits the
+      path into 305 intact segments.  The exact variable-path model has 512
+      orientation states, 6359 active directed segment arcs, 3204 physical
+      seam edges, 3127 internal edges, 6331 candidate AA edges, and 50977
+      wedges.  One orientation per segment, exact predecessor/successor flow,
+      and all-different consecutive order variables give iff one literal
+      endpoint-preserving Johnson Hamilton path.  The edge/wedge objective
+      counts every two- or three-vertex AA component exactly once.  The model
+      jointly reoptimizes chronology, AA, cross, and BB choices and can impose
+      either upper family or hard residence.  It is H100 guarded and
+      fail-closed; no worker was launched while H100 was saturated.  Full
+      proof, source, and byte-identical normal/`-O` solver-free audit:
+
+          MATH_CODE_AUDIT_AD_GENERALIZED_PASCAL_BRAID_SEGMENT_LNS_20260729.md
+          scratch/solve_k15_generalized_pascal_segment_lns_ad.py
+          scratch/audit_ad_generalized_pascal_braid_and_segment_lns_20260729.py.
+
+1808. Claude's c-space collapse is exact only for odd cyclic voltage spirals:
+      one binary trace gives all coordinate traces by shifts, so class sums,
+      local XOR counts, and forbidden runs encode rank, Johnson legality, and
+      residence.  Those symmetry reductions do not transfer to an arbitrary
+      even k14 Hamilton path or the segment LNS.  The only generic exact
+      devices are forbidden-run clauses after chronology is fixed, explicitly
+      scoped Hamming-radius bounds, and ORs of complete fixed-window selector
+      conjunctions.  The segment model already has the stronger physical
+      seam radius and exact edge/wedge residence equations.  The c-space
+      upper code uses a selected finite width list and is not an all-interval
+      theorem; its annealer contributes no exact constraint.  No c-space
+      symmetry restriction was imported.  Audited source SHA is
+      `0ef27d86...3ab4`.
+
+1794. Generalized braiding does not remove the compiler provenance gate.  In
+      any fully depth-`d` resident completion, the erosion envelopes containing
+      the distinguished coordinate are exactly
+
+          {z} union intersection_(s=0)^d T_(i+s)
+
+      wholly inside the AA paths.  A crossing window meets a B owner and
+      omits `z`.  Hence a rank-`r+1-d` target `{z} union S` has positive port
+      degree iff it is literally one of those protected AA-path windows; equal
+      ranks force envelope equality, so no core choice repairs its absence.
+      Their exact total is
+
+          W-d Cat_r = (r+1-d) Cat_r.
+
+      Thus the inductive object must satisfy both endpoint Hall and protected
+      AA-window coverage in the same forest, then pass the full physical
+      queue/shadow/core/port product after its `2 Cat_r` cross seams are
+      inserted.  Raw endpoint capacity alone is automatic by biregularity;
+      the obstruction is the correlation of BB residual degrees, AA holes,
+      protected windows, and endpoint locations.
+
+## 390. H19 generalized-`A/B` three-seam collar obstruction
+
+1795. For the authoritative H19 path and distinguished coordinate `z=14`,
+      both endpoints are in sector B.  The correct open generalized-braid
+      target is therefore
+
+          (AA,AB,BA,BB)=(3003,429,429,2573),
+
+      whereas the current path has `(3004,428,428,2574)`.  The required
+      current is `(-1,+1,+1,-1)`.  This is the open-path correction to the
+      cyclic `BB=2574` count.
+
+1796. The complete lower-defect support is tiny.  The AA reduced lower deck
+      is `1^3002 2^1`, with duplicate label 756 on edge starts 2582 and
+      5917.  The BB lower deck is `1^2572 2^1`, with duplicate label 12685
+      on starts 840 and 5046.  The remaining non-AA duplicate is the
+      cross--BB overlap 3868, on BB start 2553 and cross start 5549.  The
+      four lower holes are `{5801,7267,8877,13620}`.  The BB skeleton has
+      2574 edges, all 2002 no-z upper colours, B-degree histogram
+      `2^2152 1^844 0^7`, and exactly 858 cross slots.
+
+1797. A three-edge exchange reducing four holes to the unavoidable one must
+      delete one 756 occurrence, one 12685 occurrence, and either occurrence
+      of 3868; its new lower labels must be three distinct old holes.  This
+      gives exactly eight old cut triples.  Deleting the three edges leaves
+      four intact path components.  Of the eight endpoint-preserving internal
+      component modes, four change at most two seam colours; all 32 tests of
+      the four genuine three-seam modes against the eight forced cut triples
+      fail Johnson adjacency, with every displayed bad distance in
+      `{6,8,10,12}`.  Thus an exact repair must change an internal owner
+      adjacency or owner placement, not merely reorder/reverse intact path
+      components.
+
+1798. The authenticated native physical catalogue has 9164
+      Johnson/resident/all-upper FF/RF/FR exchanges and RR reversals.  Its
+      lower-hole histogram is
+
+          4^7303 5^339 6^1361 7^161.
+
+      Exactly 51 rows have sector current `(-1,+2,-1)` in the collapsed
+      `(AA,cross,BB)` ledger, 24 with both exchanged blocks of length at least
+      three, but none has one lower hole.  No row makes the BB lower labels
+      injective while retaining the full 2002-colour BB upper deck.  This is
+      a solver-free seam-delta audit of the full supplied catalogue, not a
+      no-go for arbitrary generalized 429-run rewiring.
+
+1799. The common compiler is also closed for the endpoint-separated,
+      depth-three-block-length, fixed-`A(M0)` native
+      FF/RF/FR-plus-ordinary-RR collar class.  Use the exact branch-conditioned
+      service bank
+
+          R_eta(m)={S in C0: no S-occurrence after endpoint tail eta
+                            avoids the old collar}.
+
+      Any joint fill injects this bank into the at-most-36 exceptional cells,
+      and every selected pair must be an edge of the unary maximal-Q graph.
+      Of 1948 separated physical moves, 714 fail the maximal fixed-core
+      middle equations.  The remaining 1234 give 2468 endpoint branches;
+      per tail, 78 fail capacity, 1153 have a zero-degree service, and three
+      have Hall gaps 2,2,3.  There are zero survivors, so no SAT phase was
+      needed.  The 3182-row certificate rebuilt byte-for-byte on H100 CPU.
+      Exact theorem, hashes, and artifacts:
+
+          THREAD_A_K15_H19_GENERALIZED_AB_THREE_SEAM_COLLAR_NOGO_20260729.md,
+          scratch/thread_a_k15_h19_generalized_ab_segment_nogo_20260729.json,
+          scratch/verify_thread_a_k15_h19_generalized_ab_segment_nogo_20260729.py,
+          scratch/thread_a_k15_h19_segment_collar_nogo_certificate_20260729.json,
+          scratch/thread_a_search_k15_h19_adaptive_compound_collar_20260729.py,
+          scratch/verify_thread_a_k15_h19_segment_collar_nogo_certificate_20260729.py.
+
+## 391. Two tight bands and the exact GMM endpoint-braid reduction
+
+1800. Put `C=Cat_m`, `W=(m+1)C`, `N=mC`, and
+
+          N2 = m(m-1)/(m+2) C,
+          D  = N-N2 = 3m/(m+2) C,
+          t  = D-C = 2(m-1)/(m+2) C.
+
+      Projecting a tight enumeration of levels `m-1,m` in `Q_(2m)` gives a
+      rank-`m` Johnson Hamilton cycle with `N` mediated edges whose
+      intersections are the complete rank-`m-1` deck and `C` direct jumps.
+      Deleting the direct jumps gives a `C`-component lower-rainbow forest,
+      but it may have isolates.  The literal tight `m=2` listing
+
+          12,1,13,3,23,34,14,4,24,2,(12)
+
+      has consecutive jumps `23--34--14` and isolates `34`.  Such an AA
+      isolate cannot be q1-completed because its two cross edges repeat its
+      lower colour.  Bare tightness therefore does not give a valid AA base.
+      The independently audited GMM--dummy augmentation does unconditionally
+      give a spanning nontrivial lower-rainbow forest with exactly `C` paths
+      for every `m>=2`, but supplies no protected spacing or residence.
+
+1801. Projecting a tight enumeration of levels `m+1,m+2` gives a Hamilton
+      cycle on the `N` B owners with `N2` mediated edges covering every
+      rank-`m+2` union exactly and `D` direct jumps.  Deleting all jumps gives
+      `D` paths; the deleted jumps form the component cycle.  Restoring any
+      `t=D-C` of them leaves a spanning B forest with exactly `C` components
+      and `N-C` edges, while the full no-z upper cover persists.  This
+      component arithmetic is unconditional.  Opposite lower colours are
+      not: an explicit tight `m=3` upper enumeration has all six rank-five
+      unions once but two protected edges of intersection colour `123`, so
+      no augmentation can make its BB lower deck exact.
+
+1802. The exact direct-cycle selection criterion is now theorem-level.  Let
+      `E_A` be the `2C` AA endpoint labels, `I_A=C([2m],m) minus E_A`, `E0`
+      the protected upper-colour edges, and `J` the direct B jumps.  A subset
+      of `t` direct jumps produces the exact BB lower deck `I_A` iff the
+      labels of `E0` are injective and contained in `I_A`, and every label of
+      `I_A minus labels(E0)` occurs on a direct jump.  Equivalently, if `O`
+      is the set of omitted direct edges,
+
+          a_T+r_T-sum_(e in J_T)o_e = 1_(T notin E_A)
+
+      for every rank-`m` colour.  These equations force `|O|=C`.  The B-port
+      capacity is exactly cut incidence `b_O(U)=deg_O(U)`.  Full generalized
+      q1 completion is then equivalent to every AA upper hole having
+      positive `b_O`, together with
+
+      |X| <= sum_(U in N(X)) b_O(U)       (X subseteq E_A).
+
+      Tight enumeration proves the owner/component and one-sided colour
+      ledgers, but not these opposite-label, hole-exposure, or Hall clauses.
+      For an oriented nontrivial AA path forest define
+
+          omega_d(S)=sum_P #{i: intersection_(j=0)^d T_(i+j)=S}.
+
+      Under local depth-H residence, the exact z-protected-window condition
+      is `omega_d(S)>=1` for every `d<=H` and every rank-`m-d` target `S`.
+      Thus after a coloured cut is fixed, the complete remaining endpoint
+      feasibility condition is precisely the capacitated Hall family above;
+      no irredundancy claim is made, and scalar port balance is insufficient.
+      Old-coordinate residence, no-z deeper
+      shadows, voltage/core closure, and compiler Hall remain the exact
+      decorated induction.  Full proof and the positive fixed-path q1
+      calibration are in
+
+          THREAD_K_MMM_COMPILER_READY_DECORATED_PAIR_AND_PASCAL_DIAMOND_RECURSION_20260729.md.
+
+## 392. Port-splice equivalence and the H19 AA-support distance
+
+1803. For any fixed lower-rainbow A path forest with `C=Cat_m` components
+      and fixed upper-rainbow B path forest with
+      `D=3m/(m+2) Cat_m` components, the remaining generalized braid is
+      exactly a component-port problem.  A connected cyclic completion uses
+      every port, hence exactly `2C` cross edges and `D-C` B--B joins.  A
+      connected open B-to-B Hamilton path leaves two B ports unused, hence
+      uses `2C` crosses and `D-C-1` B--B joins.  Pairwise distinct no-z
+      lower labels give respectively the complete lower deck or its unique
+      open-path hole; the protected B forest already covers the no-z upper
+      deck, while AA unions plus cross endpoints must cover the z-upper deck.
+      The z-runs are literally the A paths, so depth-`d` residence is
+      equivalent to every A path having at least `d+1` vertices.  For a
+      fixed GMM B cycle the B joins may be restricted to its `D` direct
+      jumps, reducing the cyclic choice to retaining `D-C` jumps (or
+      `D-C-1` in the open form).
+
+      The authoritative H19 B sector realizes the numerical decomposition:
+      one edge per rank-nine union gives a 2002-edge/1001-component protected
+      forest, and its remaining 572 edges merge it to 429 components.  But
+      its old AA support admits only two exact lower-rainbow subsets.
+      Deleting duplicate edge 2582 splits its z-run `2+2`; deleting edge
+      5917 splits it `3+5`.  Thus arbitrary BB/cross port rethreading cannot
+      repair H19 at depth three while retaining the current AA support.  Any
+      resident exact AA repair must delete at least two old AA edges and add
+      at least one new AA edge, giving AA symmetric-difference distance at
+      least three.  This is independent of upper shadows and compiler Hall.
+
+      The saved full-q1 factor confirms that q1 feasibility itself is
+      closed—both lower decks exact, both upper decks complete—but has nine
+      cycles and 1527 residence defects, 97 at z.  The exact theorem and
+      lightweight hash-bound audit are
+
+          MATH_THEOREM_GMM_TWO_FOREST_PORT_SPLICE_AND_H19_RESIDENCE_OBSTRUCTION_20260729.md,
+          scratch/audit_k15_gmm_port_h19_residence_obstruction.py,
+          scratch/k15_gmm_port_h19_residence_obstruction.audit.json.
+
+1804. Every unit-voltage equivariant odd middle carrier has an exact binary
+      trace normal form.  With `N=W/k` and coordinates in `Z_k`, a cyclic
+      word `c in {0,1}^W` encodes
+
+          T_i={x:c_(i-xN)=1}.
+
+      The `N` residue-class sums equal the middle rank; Johnson adjacency is
+      exactly two XOR changes per quotient seam; distinct central and first-
+      shadow necklace columns are exactly Hamilton ownership and q1 rainbow;
+      and every coordinate residence trace is a shift of `c`.  Window
+      intersections/unions are literal AND/OR windows of shifted `c`.
+      This makes Claude's c-space representation mathematically exact even
+      for composite odd `k`.
+
+      The current implementation is not a complete obstruction engine:
+      forbidding only one member of a colliding pair overcuts, and forcing a
+      missing upper mask at only near-minimal widths excludes valid carriers
+      whose witness has a long contained detour.  Exact CEGAR must use joint
+      collision nogoods and either arbitrary-width separation or a full-state
+      nogood.  A positive decorated trace is still not a word until an exact
+      one-core `C<=P`, `DC=DP`, weighted quotient Hall, physical matching,
+      safe cut, and literal verification pass.  The exact theorem is in
+
+          MATH_THEOREM_BINARY_TRACE_SPIRAL_NORMAL_FORM_20260729.md.
+
+1805. Claude's new unrestricted depth-two `sandwich.py` compiler was run on
+      the saved exact `k=14` carrier and independently reproduced a distinct
+      optimal word.  A second literal verifier enumerated 687,700 intervals
+      up to first full union, covered all 16,383 nonempty masks, and confirmed
+      the exact rank-seven `D^2` row of length 3,432.  The frozen artifact is
+
+          scratch/claude_k14_sandwich_3434.word
+
+      with SHA-256
+
+          41e69f1322e761c044902bf8efce60cd4f462670b1728e7b0914c119ea378884,
+
+      and the independent report is
+
+          scratch/claude_k14_sandwich_3434.audit.json.
+
+      This validates the flexible `d=2` row-zero/row-one compiler model and
+      the existing equality at `k=14`; it supplies neither a `d=3` compiler
+      theorem nor a new `k=15` bound.
+
+1806. A generalized Pascal `q=1` skeleton is exactly a quarantined tight
+      enumeration of four consecutive levels.  On `Q_(2m)` take levels
+      `m-1,m,m+1,m+2`.  The larger parity shore is the union of levels
+      `m-1` and `m+1`, and its exact imbalance is
+
+          t=2*binom(2m,m+1)-binom(2m,m)-binom(2m,m+2)
+           =2(m-1)/(m+2) Cat_m,
+
+      which is precisely the required B-merge count.  If every distance-two
+      defect step of a tight enumeration is quarantined inside level `m+1`,
+      suppressing levels `m-1,m+2` gives one Hamilton middle chronology with
+
+          AA=m Cat_m, protected BB=binom(2m,m+2),
+          merge BB=t, cross=2 Cat_m.
+
+      The AA intersections and protected BB unions are automatically exact.
+      Conversely, expanding those exact AA/BB colours in any Hamilton
+      generalized skeleton gives a tight four-level enumeration with exactly
+      that quarantine.  Hence the independent two-forest synchronization is
+      a cut-open form of one global tight-enumeration object.
+
+      Tightness itself has a three-parameter transition simplex.  If `u,v,w`
+      count distance-two steps of types `(m-1,m-1)`, `(m-1,m+1)`, and
+      `(m+1,m+1)`, then
+
+          u+v+w=t,
+          e_(m-1,m)=2N-2u-v,
+          e_(m,m+1)=2C+2u+v,
+          e_(m+1,m+2)=2N2.
+
+      Quarantine is exactly the extra equality `u=v=0`, equivalently
+      `e_(m-1,m)=2N`.  The GMM Corollary states no such rank localization;
+      its proof delegates this noncentral case without carrying a defect-rank
+      parameter.  Explicit `m=2` tight listings realize each of low-low,
+      low-high, and high-high as the unique defect step, so bare tightness
+      cannot force the desired corner, although counts do not obstruct it.
+
+      Arbitrary tight enumeration does not imply quarantine, and quarantine
+      does not imply opposite lower-label injectivity, z-upper cover,
+      residence, deeper shadows, or compiler Hall.  The exact equivalence and
+      remaining decorated target are in
+
+          d_cross^A(T)+mu_B(T)=1,
+          lambda_U+d_cross^B(U)>=1,
+
+      plus endpoint Hall/subtour if the cross seams are re-paired and the
+      pointwise protected-window inequalities.  The quarantined `m=2`
+      example repeats lower colour `14`, misses `24`, and has AA path lengths
+      `2,4`.
+
+      There is a clean converse escape from all fixed-port gates.  Any
+      Hamilton cycle on the child rank-`m+1` deck whose lower q1 intersections
+      are exact and whose adjacent unions cover every rank-`m+2` target has
+      forced counts
+
+          AA=mC, cross=2C, BB=(m-1)C.
+
+      Every no-z upper target is witnessed by a BB edge.  Choosing one BB
+      edge per such target gives `N2` distinct protected edges and leaves
+      exactly `t` merges, so expansion gives a q1-decorated quarantined tight
+      enumeration.  Its actual cross seams automatically witness the
+      opposite-colour quotas, upper-hole exposure, endpoint Hall, and
+      connected monodromy.  This uses adjacent two-owner unions only and
+      gives no q>=2 upper shadow, residence, protected-window, core, or
+      compiler conclusion.  Full proofs are in
+
+          MATH_THEOREM_QUARANTINED_FOUR_LEVEL_TIGHT_ENUMERATION_BRAID_20260729.md.
+
+1807. Two exact integrated suffix-19 models on the authoritative H19 carrier
+      completed their 3,600-second limits with status `UNKNOWN`.  They include
+      prefix, suffix, and all crossing intervals exactly, require at least
+      16,362 prefix-owned targets, and use respectively the frozen 34-mask and
+      41-mask residual pools.  Neither emitted a word, and neither proves
+      suffix 19 infeasible.  Thus they do not improve or narrow
+
+          6438 <= nu(15) <= 6458.
+
+      Frozen result and full solver logs are in
+
+          scratch/k15_suffix19_crossing_20260729/.
+
+      The JSON SHA-256 values are `ba0304b0...` (union 34) and `bd8bdc68...`
+      (union 41).  Any continuation should use those exact models or a proved
+      strengthening; rerunning the same fixed-carrier instances without a new
+      cut or decomposition is not evidence.
+
+1808. The binary c-space lane now has a proof-safe implementation:
+
+          scratch/sound_cword_cegar.py
+          scratch/SOUND_CWORD_CEGAR_AUDIT_20260729.md.
+
+      It replaces one-column pattern bans by exact joint rotation-relation
+      inequalities for middle and q1 objects; replaces bounded-width upper
+      cuts by the exact cyclic recurrence
+
+          q_(i,x)=not b_i OR (q_(i-1,x) AND not[x in T_i]);
+
+      and sends a passing carrier to the repository's exact search over all
+      equivariant one-cores plus weighted quotient Hall, physical matching,
+      safe cut, and literal verification.  Exact fixed-carrier failures may
+      reject only that c-assignment; UNKNOWN never cuts.
+
+      Exhaustion of all 100 rank-correct k=5 traces verifies the upper
+      recurrence and 500 middle plus 500 q1 relational comparisons.  A
+      radius-zero k=11 replay solved in 0.16 seconds, had exact Hall 231/231,
+      and emitted a fresh length-465 word covering all 2,047 masks with exact
+      D^3 middle row.  Its SHA-256 is
+
+          0f80c3295248a862b0fd5ad6a594a4162c346e0d9e404d351e9a28dbdcba38a0.
+
+      Global UNSAT in this model concerns strict unit-voltage c-space only;
+      fixed-carrier compiler UNSAT concerns equivariant one-cores only.  A
+      seeded k=15 run of the corrected model is active at
+
+          /home/amodo/or15/sound_cword_cegar_20260729.
+
+1809. The four-level chronology source has been compared exactly with the
+      authoritative H19 carrier.  A B-quarantined tight enumeration of
+      levels `{m-1,m,m+1,m+2}` contracts to the generalized braid counts
+
+          (AA, protected BB, direct BB, cross)
+          =(L,U,D-C,2C).
+
+      At `m=7` these are `(3003,2002,572,858)`.  H19 instead has path counts
+      `(AA,BB,cross)=(3004,2574,856)`, so a BB-cut repair has exact current
+
+          Delta(AA,BB,cross)=(-1,-1,+2).
+
+      H19 is not itself such a contraction.  Its endpoints 9901 and 7779
+      differ in eight coordinates, whereas a one-edge cut of the contracted
+      cycle has Johnson-adjacent endpoints; endpoint/collar geometry must
+      therefore move as well.
+
+      Using the global trace-quarantine collapse, the exact repair interface
+      is now only: a Hamilton middle path whose q1 intersections are distinct
+      with one no-z hole `h`, whose B endpoints are Johnson adjacent with
+      intersection `h`, and whose unions plus that closure union cover upper
+      q1.  Closing the edge gives a q1-perfect cycle and automatically the
+      decorated quarantined four-level enumeration; preselected GMM forests
+      and a separate port-Hall proof are unnecessary.
+
+      Independently rebuilding all 81,080 off-support AA edges and 162,134
+      minimum resident repairs gives exactly 17 residence-safe exact AA
+      forests at AA symmetric-difference distance three.  Every one deletes
+      duplicate edge 5917; none deletes only edge 2582.  The six best lower-
+      ledger rows need four BB retirements and three insertions.  Unique
+      upper colours at old lower labels 1012 and 3868 force two more relays;
+      only rows 2, 7, and 13 attain the resulting incidence bound `6 -> 5`.
+
+      A complete 11,784-case port audit of those three minimum architectures
+      finds no hole-labelled Johnson edge on the released B-port set.  Thus
+      no degree-balanced minimum BB augmentation exists with all 856 old
+      cross edges retained, only the two forced cross additions, and the old
+      physical endpoint degree vector.  A second audit allows both old B
+      endpoints as free positive-degree ports and arbitrary new endpoints.
+      The human-readable cut certificate is
+
+          f_v=o_v+r_v-s_v-x_v.
+
+      Every inserted BB endpoint must therefore lie in the removed-port set
+      or at an old endpoint.  No required hole edge lies wholly in the
+      removed-port set, while each old endpoint can absorb at most one new BB
+      incidence; three hole edges cannot be installed through two ports.
+      Of 23,568 base/relay combinations, 22,128 overload immediately; among
+      the 1,440 degree-feasible cases, 1,080 support none of the three needed
+      hole labels and 360 support only 8877.  Hence endpoint relocation does
+      not realize distance 16 either when the open path itself must retain
+      every no-z upper-q1 colour.  Parity raises the exact lower bound to 18
+      in that strong scope.  This does not close the weaker marked-cycle
+      interface: a non-old-hole closure can itself restore one of the two
+      unique lost upper colours, a class omitted by the saved audit.  The
+      later unbranched marked-cycle model in item 1827 closes that omitted
+      class.  Larger strong-scope circulations must reroute an old cross, add
+      a BB return pair, or use a larger AA exchange.
+      The theorem, explicit
+      incidence-tight relay witness, and scoped boundary are in the report.
+
+      With old endpoints/crosses retained, every such repair has an exact
+      alternating-trail normal form: the AA difference is an alternating
+      trail between the two new A ports, the BB difference is an alternating
+      trail between the two new B ports, and the two cross additions close
+      them to a full-deck alternating circuit, modulo independent alternating
+      cycles.  At AA distance three the AA trail is `old-new-old`; with fixed
+      endpoints the first possible BB trail system has support at least 13
+      after the length-11 no-go.  Details and artifacts are in
+
+          MATH_THEOREM_GMM_TWO_FOREST_PORT_SPLICE_AND_H19_RESIDENCE_OBSTRUCTION_20260729.md,
+          scratch/audit_k15_h19_minimal_resident_aa_exchanges.py,
+          scratch/k15_h19_minimal_resident_aa_exchanges.audit.json,
+          scratch/search_k15_h19_minimal_coupled_sector_circuits.py,
+          scratch/k15_h19_minimal_coupled_sector_circuits.audit.json,
+          scratch/audit_k15_h19_distance16_endpoint_relocation.py,
+          scratch/k15_h19_distance16_endpoint_relocation.audit.json.
+
+1810. For a fixed pair of projected GMM tight enumerations in the
+      direct-jump specialization, the splice problem has an exact ordered
+      criterion.  If `p_t` and `j_t` count protected and direct B edges of
+      lower colour `t`, and `P_A` is the A-port support, then the deleted
+      direct B edges must satisfy, pointwise,
+
+          |R cap lambda^(-1)(t)|
+            = p_t+j_t-(1-1_{t in P_A}).
+
+      Missing z-upper targets must additionally be exposed as B ports.
+      Only after those two requirements is the remaining completion exactly
+      a perfect matching in the containment port graph, equivalently its
+      Hall inequalities.  A balanced degree certificate
+
+          min(deg on P_A) >= s >= max(deg on P_B)
+
+      is sufficient, with the natural critical value `s=2`; under an
+      unrelated relabelling the expected port degree is exactly two, so no
+      expansion margin is available for free.
+
+      Explicit valid tight enumerations at `m=3` and `m=2` respectively
+      repeat a protected lower colour and produce A-component sizes `5,1`.
+      Hence arbitrary GMM tightness implies neither the second rainbow nor
+      residence/port distinctness.  The two enumerations must be selected
+      jointly; path orientation acts only after the colour, exposure, and
+      Hall gates.  The theorem and counterexamples are in
+
+          MATH_THEOREM_GMM_FIXED_FOREST_EXACT_PORT_CRITERION_AND_COUNTEREXAMPLES_20260729.md.
+
+1811. The GMM lower-rainbow A-forest residence question has an exact
+      coloured-cut and dummy-incidence normal form.  On the projected owner
+      Hamilton cycle, exact lower ownership chooses one surviving edge from
+      every intersection-colour fibre; the `C=Cat_m` omitted edges give
+      component lengths at least `d+1` exactly when no cyclic block of
+      `d+1` edge positions contains two omissions.  Thus a retained direct
+      jump must relocate, not remove, the cut of its colour.  At `d=m` the
+      cuts must be one residue class modulo `m+1`.
+
+      For the GMM dummy augmentation, a fixed alternating side is precisely
+      a `d`-spaced facet SDR.  More generally, vertex-disjoint left/right
+      incidence choices give an exact mixed-side extension: if selected
+      lower sites have gaps `q_j` and side bits `b_j`, then
+
+          L_j=q_j+1+b_j-b_(j+1),
+
+      so depth `d` is equivalent to
+
+          q_j+b_j-b_(j+1) >= d
+
+      for every gap.  Ordinary Boolean-shadow Hall proves only `d=1`; no
+      general oriented spaced-SDR theorem is currently known.
+
+      Every nontrivial exact lower-rainbow `C`-path forest has exactly
+
+          I_2=(m-1)C
+
+      genuine protected q2 windows, with target multiplicity at most `m+1`.
+      Against `N_2=m(m-1)C/(m+2)` targets, its collision/hole identity is
+
+          c_2-h_2=2(m-1)C/(m+2).
+
+      These scalar and spacing facts do not imply support.  An explicit
+      `m=3` tight enumeration partitions all twenty owners into five paths
+      of the maximal length four, has every rank-two lower colour exactly
+      once and correct local rank drops through depth three, yet its ten q2
+      labels load points `1,...,5` twice and omit point `6`.  Hence the
+      minimum remaining theorem is simultaneous oriented spacing, delayed-
+      return control, and pointwise protected-window coverage—not another
+      component or port-count estimate.  Full proofs and the audited example
+      are in
+
+          THREAD_A_GMM_SPACED_DUMMY_FOREST_AND_PROTECTED_PORT_OBSTRUCTION_20260729.md.
+
+1812. On the frozen `k=14` parent path, the generalized-braid AA projection
+      is exactly a coloured cut transversal: retain one occurrence of every
+      rank-six seam colour, retain both boundary edges, and omit no adjacent
+      pair of path edges.  Successive cut distances are precisely the
+      distinguished-coordinate run lengths, so depth-three residence is
+      equivalent to every gap being at least four.
+
+      Four disjoint explicit fibre-implication gadgets prove, without a
+      solver or either upper channel, that every selection has at least four
+      short components.  The trusted optimum 17 decomposes as those four
+      defects across sixty small constraint components plus thirteen in one
+      611-position/300-fibre component.  A solver-free lower bound thirteen
+      on that giant component is the exact missing combinatorial lemma.
+
+      If a same-endpoint chronology replaces `s` old edges and globally
+      reroutes `u` otherwise unchanged seam-colour fibres relative to the
+      displayed optimum, then
+
+          D_new >= 17-4s-u.
+
+      Consequently a hard-resident replacement must change at least three
+      old edges, and a repair confined to its changed seam colours needs at
+      least five.  Literal legal 2-edge and 3-edge rethreadings establish the
+      support-level escape thresholds, but neither supplies a common B-owner
+      controller or full `q1`.  The fixed-path bracket remains
+      `17 <= D_full_q1 <= 33`.  Proofs and witnesses are in
+
+          THREAD_H_FIXED_K14_AA_COLORED_CUT_AND_ESCAPE_20260729.md.
+
+## 394. Exact arbitrary-width upper cuts in binary c-space
+
+1813. The physical upper audit in the current external `cword.py` is exact,
+      but its persistent lazy row is not.  For a rank-`r+q` target, the
+      caller offers widths `q,q+1,q+2` and the rank guard deletes `q`, so
+      only `q+1,q+2` remain.  A literal `k=9,r=5,q=3` Johnson run
+
+          abcgh, bcdgh, bcegh, cdegh, bdegh, befgh
+
+      bounded by `zbcgh,zefgh` first covers its rank-eight target at width
+      six: the first five omit `f`, the last five omit `a`.  Thus old short-
+      width upper rows must be deleted before any unrestricted-upper UNSAT.
+
+1814. For fixed upper `S`, let `b_i=[T_i subset S]` and
+      `O_i=S minus T_i` on good positions.  Then `S` is covered iff some
+      maximal cyclic good run has empty intersection of its `O_i`.  Empty
+      intersection of `q`-sets has sharp Helly number `q+1`, but the
+      chronological hull of those landmarks is unbounded.  The prompt's
+      cyclic omitted-core recurrence is exact:
+
+          q_(i,x)=not b_i OR (q_(i-1,x) AND not [x in T_i]).
+
+      Class sums force every coordinate to occur, so every proper target has
+      a bad reset and the cyclic state is unique.  Coverage is exactly one
+      good endpoint with all `q_(i,x)=0`.  One target has a pure-CNF block of
+      `W(|S|+2)` auxiliaries and `W(k+4|S|+1)+1` clauses; the report gives all
+      four necessary transition clauses and the exact containment clauses.
+
+1815. There is a sharper arbitrary-width flag description.  Let
+
+          d(p)=first e>=0 with c_(p+e)=1,
+          delta_i(x)=d(i-xN).
+
+      Then an interval starting at `i` unions to proper `S` iff
+
+          max_(x in S) delta_i(x) < min_(y notin S) delta_i(y).
+
+      Under the Johnson rows, the positive first-arrival times are distinct,
+      so every start gives one saturated flag from `T_i` to `FULL`; waiting
+      changes widths but not the flag.  Equivariance reduces the audit to
+      `N(k-r)` canonical flag nodes, exactly `429*7=3003` at `k=15`.  The
+      upper target orbit counts at ranks 9 through 15 are
+      `335,201,91,31,7,1,1`.  With straightforward canonicalization, a
+      complete incumbent atlas costs `O(Wk)` after target representatives
+      are tabulated; generating those representatives costs
+      `O(k 2^k)=O(k^2 W)` once.  A shared exact CP-SAT alternative uses cyclic
+      next-one distance integers and one start/Element/max/min block per
+      target.
+
+1816. Every missing-target incumbent also has a zero-auxiliary partial
+      no-good of at most `W` literals.  Keep one chosen outside `1` at every
+      old bad position and one chosen blocker coordinate at `0` throughout
+      each old maximal good run.  If all those literals persist, old bad
+      positions still separate the runs and every run still misses its
+      blocker.  Therefore every covering word satisfies the resulting
+      clause, while the incumbent violates it.  This is a complete
+      polynomial integral separation oracle, though the number of CEGAR
+      rounds is not claimed polynomial.  Exact theorem, source audit,
+      implementation, and exhaustive tiny regression:
+
+          MATH_THEOREM_BINARY_CSPACE_EXACT_UPPER_INTERVAL_ORACLE_20260729.md
+          scratch/cword_exact_upper_oracle_20260729.py.
+
+      The regression checks all 100 `k=5` class-sum words and globally
+      validates 75 blocker clauses.  Exact upper cuts do not close residence,
+      lower shadows, the one-core/Hall gate, a safe cut, or the literal
+      compiler; radius-restricted UNSAT remains radius-restricted.
+
+1817. The four-level quarantine, fixed-forest port quotas, and port Hall
+      conditions collapse once one works with a single global q1-perfect
+      carrier.  Let `k=2m+1` and let a Hamilton Johnson cycle on all
+      rank-`m+1` owners have the exact rank-`m` intersection deck.  For any
+      distinguished coordinate `z`, its sector counts are forced:
+
+          AA=m Cat_m,  AB=2 Cat_m,  BB=(m-1) Cat_m,
+
+      and its `z` trace has exactly `Cat_m` one-runs.  AA intersections are
+      exactly the z-containing lower deck; cross plus BB intersections are
+      exactly the opposite lower deck.  If adjacent unions cover all
+      rank-`m+2` targets, choose one BB occurrence for every no-z target and
+      expand it, while expanding every AA edge through its intersection.
+      This is automatically a decorated B-quarantined tight enumeration,
+      with
+
+          protected BB=m(m-1)/(m+2) Cat_m,
+          merge BB=2(m-1)/(m+2) Cat_m.
+
+      Upper multiplicity is harmless; completeness suffices.  The actual
+      cross chronology itself witnesses the port perfect matching, so the
+      fixed-forest deletion equations, upper-hole exposure, Hall, and
+      connectivity are automatic in this global chart.  The construction
+      works for every choice of `z` simultaneously.  In strict c-space the
+      coordinate traces are translates, explaining why all-coordinate
+      residence reduces to one run condition.
+
+      A rank-`r+1` target occurs as the union of a nontrivial carrier block
+      iff it occurs on an adjacent edge; this shortcut is false for deeper
+      upper ranks.  Thus the remaining object is one coordinate-compatible
+      decorated-quarantine cycle, followed by deeper shadows and the exact
+      compiler—not independently chosen GMM forests.  Full proof:
+
+          MATH_THEOREM_TRACE_QUARANTINE_COLLAPSE_20260729.md.
+
+1818. In the unit-voltage binary-trace subclass, plain complement coherence
+      has an exact scalar form.  With `W=2s+1`,
+
+          1-c_p = c_(p+s)c_(p+s+1)
+
+      for every cyclic position `p`.  Put `t=s+1=2^(-1) mod W` and
+      `d_j=c_(tj)`.  The same identity becomes
+
+          d_(j+1)=NAND(d_j,d_(j+2)),
+
+      which is equivalent to forbidding `00` and `111` in `d`.  Thus zeros
+      are isolated and every d-one-run has length one or two.  The middle
+      class sums force, at `k=15`, exactly 3003 zeros, 429 length-two
+      one-runs, and 2574 singleton one-runs in this permuted order.
+
+      Since `c_p=d_(2p)`, physical `1 -> 0` transitions of c are exactly
+      the `110` patterns of d, one per length-two d-run.  Hence the NAND law
+      plus class sums already forces exactly 429 physical c-runs.  Lower-q1
+      exactness must still make their associated rank-six labels distinct.
+
+      There is a further eager collapse.  List the `m Cat_m` zeros of d in
+      cyclic order; their gaps are two or three.  Exactly `Cat_m` gaps have
+      length three.  The middle class sums and every Johnson seam equation
+      hold iff the starting residues of those long gaps are every class
+      modulo `Cat_m`, once each.  The proof is the exact balance recurrence
+
+          n_b=n_(b-2)-s_(b-2)+s_(b-3).
+
+      With one long gap per residue, all zero loads are `m`, and consecutive
+      absent-coordinate columns share `m-1` entries and exchange the unique
+      special exit for the unique special entrance.  Distinct middle/q1
+      orbits, c-residence, and deeper shadows remain nonautomatic.
+
+      This normal form has a deterministic resident `k=15` eager seed.
+      Order the long-gap residues by multiplication by seven modulo 429;
+      use lifted increment 7 on 425 intervals and 865 on four intervals.
+      The resulting trace has no complement, class-sum, Johnson, or
+      residence defect, with c-run histogram `4^425 433^4`.  It is highly
+      non-Hamiltonian—only 26 of 429 middle/q1 orbits are distinct—and is
+      therefore a search regression/hint, not a word.  Frozen artifacts:
+
+          scratch/generate_k15_complement_nand_seed.py,
+          scratch/k15_complement_nand_eager_seed.cw,
+          scratch/k15_complement_nand_eager_seed.audit.json.
+
+      The c-word SHA-256 is
+
+          9164047a2b7c8a17e626c1589c58965738472bfd2c6c5d220a121bd959eaa71b.
+
+      This local d-run statement is not the physical residence condition:
+      residence is still minimum run four in the original c order.  What
+      complement coherence buys is the exact all-depth duality
+
+          complement(upper depth q) = lower depth q+1,
+
+      while strict c-space makes every coordinate residence trace a
+      translate of c.  The resulting finite target is therefore class
+      sums, Johnson seams, middle/q1 bijections, the NAND law, c-residence,
+      one protected lower flag tower, and the exact compiler.  UNSAT would
+      concern only this symmetric intersection, not arbitrary carriers.
+      Full normal form:
+
+          MATH_THEOREM_COMPLEMENT_COHERENT_CSPACE_NAND_NORMAL_FORM_20260729.md.
+
+## 395. Fail-closed binary c-space compiler Benders
+
+1819. `scratch/threadD_cspace_compiler_benders.py` now accepts only a pinned
+      dense-c v1 schema (or an explicitly audited legacy wrapper), reconstructs
+      `T_i(x)=c_(i-xN)` in voltage-one gauge, and regenerates all quotient
+      choices/arcs from the literal chronology.  Collision separation is the
+      joint rotated relation, never a one-column pattern ban.  Lower target
+      rows are exact through `q=d`; the terminal row is explicitly a compiler
+      presolve because rank-`h` zero-core adjacency forces `S=P_i`.  Upper
+      `q1` uses the exact cyclic adjacent-union theorem, while every deeper
+      upper target retains the arbitrary-width contained-suffix automaton.
+
+1820. Every equivariant Johnson chronology has exactly `N` cyclic `01`
+      transitions in chronological `c` order: all `k` coordinate traces are
+      translates and the `W` edges add one coordinate each.  This redundant
+      equality is now eagerly and exactly reified.  The optional
+      `--complement-coherent` flag, available only for odd `W`, adds
+
+          1-c_p=c_(p+s)c_(p+s+1),  s=(W-1)/2.
+
+      Under `d_i=c_((W+1)i/2)` this is the cyclic NAND recurrence.  At k15 it
+      forces 3003 isolated d-zeros, 2574 singleton d-one-runs, and 429
+      length-two d-one-runs; these are not chronological residence runs.
+      Complement plus completed lower q2 implies upper q1, but deeper upper
+      automata and final literal verification remain.  Exhaustive small
+      regression gives `(NAND,rank-correct,owner-perfect)=(3,3,3)` at k3 and
+      `(18807,217,0)` at k7.
+
+1821. The exact compiler boundary ranges over all equivariant one-cores for
+      the fixed carrier, weighted quotient Hall, physical matching, and all
+      upper-safe cuts.  Only exact fixed-c failures generate a full-c no-good;
+      UNKNOWN/timeouts do not.  Positive status requires a newly retained
+      word whose SHA matches the compiler and passes the independently hashed
+      exhaustive verifier, so stale output paths cannot certify a run.  Master
+      UNSAT is scoped to the printed c-space/radius/optional symmetry and this
+      compiler architecture, not unrestricted coefficient one.
+
+1822. Current k11 ledgers are exact: the positive fixture has envelope Hall
+      231/231; the terminal-depth negative fixture has 220/231 with eleven
+      zero-degree rotations; the retained exact carrier compiles with 3696
+      variables, 5355 constraints, physical Hall 231, and 242 safe cuts to
+      the independently reverified length-465 word of SHA
+      `0f80c3295248a862b0fd5ad6a594a4162c346e0d9e404d351e9a28dbdcba38a0`.
+      The frozen k15 complement seed (SHA `9164047...`) now passes every eager
+      scalar/set/class/Johnson/residence row and has c-run histogram
+      `4^425 433^4`, but only 26/429 middle and q1 orbits, with 312 lower-q2,
+      178 terminal-q3, and 608 upper holes.  It is wired only as an audited
+      `--seed-cw` hint for complement mode, never as a carrier certificate.
+      H100 was still oversubscribed, so no new k15 worker or complement-mode
+      claim was made.  Full theorem, scope, provenance, and runbook:
+
+          THREAD_D_SOUND_BINARY_CSPACE_COMPILER_BENDERS_20260729.md.
+
+1823. The first H19 distance-18 endpoint-moving exchange has an exact
+      marked-cycle circulation normal form.  Mark one new BB closure `c` and
+      compare the remaining Hamilton path with H19.  At every A owner the
+      AA+cross current is zero; at every B owner
+
+          delta_B(v)+delta_X(v)+1_[v in c]=1_[v in {7779,9901}].
+
+      The closed graph must have each lower-q1 colour exactly once, every
+      upper-q1 colour at least once, and one connected degree-two component.
+      At distance 18 the sector removals/additions are
+
+          AA: i+1/i,  BB: j+1/j,  X: k/k+2,
+          i+j+k=7,  1<=i<=6.
+
+      Hence the complete sector table includes dAA=3,5,7,9,11,13; a search
+      over the 17 minimum-AA rows is not globally complete.  If E is the
+      final 858-label A-endpoint set, h is the closure lower label,
+      R=E0\E, P=E\E0, t=|R|, g=3868, and H is the four old-hole set, the
+      forced BB insertion count is exactly
+
+          a=t+4-|R cap {g,h}|-|P cap H|-1_[h in H],
+
+      with distance budget `i+a+b+t+c=7` for BB-neutral relays b and
+      cross reroutes c.  The dAA=5 branch has exactly nine signed AA
+      component types; t=4 is impossible at distance18, and the two new AA
+      edges determine all three deletions.
+
+      A branch-free exact model uses one final-path variable per middle
+      Johnson edge and one marked-closure variable per BB edge, nine old
+      deletions/nine nonold additions, exact lower rows, upper inequalities,
+      degree equations, subtour cuts, and decoded residence cuts.  This is a
+      sound complete q1/residence search across every sector branch.
+
+      Scope correction: the old distance16 artifact closes the strong target
+      where the open path itself retains all upper-q1 colours.  It does not
+      close the weaker four-band marked-cycle target, because a non-old-hole
+      closure can supply one unique lost upper colour while the sole neutral
+      BB relay supplies the other.  That finite class remains unaudited.
+      Full proof and exact search specification:
+
+          MATH_THEOREM_H19_DISTANCE18_MARKED_CYCLE_CIRCULATION_NORMAL_FORM_20260729.md.
+
+1824. The complement-antipodal `O_7` route now has an exact direct-quotient
+      formulation and a sharply finite PBBS splice theorem.  For an
+      `O_7` Hamilton cycle `(A_j)`, put
+
+          z_j=[15] minus (A_j union A_(j+1)),
+          chi_j=A_(j-1) intersection A_(j+1).
+
+      The lift `T_i=complement(A_(2i-1))` is automatically lower-q1 exact.
+      It is q1-perfect exactly when the `chi_j` cover every six-set, and it
+      is depth-three resident exactly when
+
+          z_j != z_(j+3),  z_j != z_(j+5)
+
+      cyclically.  Trace quarantine then gives, intrinsically for every
+      distinguished coordinate,
+
+          (AA,AB,BB)=(3003,858,2574),
+
+      with 2002 selectable protected and 572 merge BB occurrences.  This
+      does not imply compatibility with preselected GMM forests or the exact
+      common compiler.
+
+      For the PBBS successor `f`, cut tails `R`, let `rho` record the next
+      cut tail along each native segment, and permute old heads by `theta`:
+
+          f_theta(x)=f(theta x)  for x in R.
+
+      This is odd-graph legal iff `x cap f(theta x)=empty` for every cut
+      tail, and it is Hamilton iff `rho theta` is one cycle.  A nontrivial
+      two-tail move would create a `C4` in `O_7`, so the first coherent local
+      move has three tails.  The exact depth-q load change is confined to at
+      most `2q|R|` starts and has an explicit subtract-old/add-new formula;
+      targetwise positivity, not scalar excess, is the support criterion.
+
+      PBBS has no label-gap-three defect and exactly 90 gap-five blocks.
+      Every native-order splice must cut all of them, so `|R|>=15`; after
+      that, only ten cyclic label comparisons per new seam remain.  The
+      protected cut-and-witness subsystem has 5005 rows at q1 and 9949 for
+      the full flag tower, and if feasible has a solution with at most
+      `Cat_7+90=519` cuts.  Connector Hamiltonicity is not proved to survive
+      this shrinking.  Fusing downstairs in `O_7` automatically lifts with
+      complement coherence; fixed-one-shore paired-C6 switches cannot do so
+      nontrivially.  The audited MNW base join also fails the required
+      collar, creating seven distance-three and three distance-five
+      equalities.  Thus no unconditional decorated `O_7` Hamilton cycle is
+      claimed.  The theorem, finite certificate, and scoped obstructions are
+      in
+
+          THREAD_A_O7_TRACE_QUARANTINE_AND_PROTECTED_PBBS_SPLICE_20260729.md.
+
+1825. The fixed `k=14` parent chronology now has a stronger simultaneous-
+      `q1` incumbent.  The frozen s15106 run returned raw CP-SAT `FEASIBLE`
+      after 3600.17 seconds with distinguished-`z` short-run objective 29
+      and best bound 17; it was not optimal.  Independent literal replay
+      verifies 3,003 AA, 858 cross, and 2,574 BB edges, exact physical lower
+      `q1`, both complete upper-`q1` sectors, and a degree-two factor with
+      eight cycles of lengths
+
+          3831,1010,820,618,136,11,5,4.
+
+      The distinguished-`z` defect histogram is `18 x 2 + 11 x 3=29`.
+      Across all fifteen coordinates there are 1,415 defects,
+      `578 x 2 + 837 x 3`; the objective did not minimize this larger
+      statistic.  Thus the fixed-path full-`q1` bracket improves to
+
+          17 <= D_fixed,full-q1 <= 29.
+
+      This is one frozen-path incumbent, not an optimum, Hamilton factor,
+      variable-path obstruction, or deeper-shadow certificate.  Frozen
+      artifact hashes are JSON `2248e5ff...148cf` and log
+      `d8e96c9c...761cc`; the solver-free audit is
+
+          scratch/audit_k15_generalized_pascal_fixedpath_minz_s15106_20260729.py.
+
+1826. The frozen parent path has a new solver-free chronology-radius
+      obstruction.  Four pairwise-disjoint old-edge closures
+
+          G1={708,...,711},
+          G2={1940,...,1942},
+          G3={2219,2220,2221,2521,2522},
+          G4={179,...,181,1364,1365,1773,...,1775,
+              1836,...,1838,2723,...,2726}
+
+      have the following property.  Any same-endpoint chronology carrying
+      one AA edge per rank-six colour, AA degree one or two at every owner,
+      and no AA component of size two or three must delete at least one old
+      edge from every `Gj`.  Added occurrences of the used colours cannot
+      escape the proof: each surviving adjacent old pair already forces its
+      unique selected occurrence, and the nonlocal chain propagates the
+      same conclusion.  A complete abstract-new-occurrence truth table has
+      respectively `9,4,12,324` assignments and zero escape in every gadget.
+
+      At edit distance four this leaves exactly `4*3*5*15=900` cut
+      quadruples.  Two independent literal route enumerators prove that the
+      only Johnson-compatible five-block assembly for each quadruple is the
+      original forward path restoring all four cuts.  There are zero actual
+      distance-four routes; the ledger SHA is
+      `ceedb841...1801`.  Therefore every such hard-resident exact-lower
+      chronology satisfies
+
+          |E(P)\E(P')| >= 5,  |E(P) triangle E(P')| >= 10.
+
+      The first radius-complete successor is an edit-five full-Johnson
+      master: endpoint degrees one/two and exactly five nonbase edges give
+      one source-sink path plus cycles; valid endpoint-free boundary cuts
+      `sum_(e in delta(S)) h_e>=2` eliminate every cycle by finite CEGAR.
+      AA colour/degree equations, the compact internal-AA-edge witness,
+      the common cross/BB controller, and both upper sectors are exact.
+      The all-scope base model has 351,780 variables and 448,596 constraints;
+      after explicit resource authorization, one disjoint `outside-live`
+      run was launched with 16 CPU workers, seed 15501, and a 7,200-second
+      cap.  Its extra `eta>=1` row raises the count to 448,597 constraints
+      and makes its chronology domain disjoint from the 305-segment `eta=0`
+      job.  That original job has now terminated raw `UNKNOWN` after
+      7,214.8 solver seconds: no witness, no infeasibility proof, and no
+      mathematical conclusion.  Its frozen JSON/log hashes are
+      `962be430...aa85` / `abcf3a2b...b032`; an independent zero-search proto
+      rebuild reproduces `f0eaf89a...c7a5`, and the solver-free terminal
+      audit passes.  The disjoint edit-five run also terminated `UNKNOWN`
+      after one 7,201.8-second master iteration.  It decoded no incumbent,
+      added zero connectivity cuts, and has null certificate status.  Its
+      JSON/log hashes are `eda3638e...d00e` / `02013897...fb8`; an independent
+      0.001-second rebuild reproduces proto `f8105131...a51`.  Therefore both
+      disjoint radius-five halves remain open and no SAT/UNSAT conclusion
+      follows.  Full proofs, scopes, and sources are in
+
+          MATH_CODE_AUDIT_AD_PASCAL_LIVE305_AND_EDIT5_CEGAR_20260729.md,
+          MATH_CODE_AUDIT_AD_EDIT5_CEGAR_FOURCUT_ADVERSARIAL_20260729.md,
+          scratch/solve_k15_pascal_edit5_connectivity_cegar_ad_20260729.py.
+
+1827. The H19 marked-cycle distance-18 circulation is now exhausted exactly
+      at q1.  The complete normal form marks one BB closure `c`; the closed
+      graph obeys exact lower rows, complete upper rows, and degree two.  At
+      physical distance18 its sector changes are
+
+          AA i+1/i, BB j+1/j, X k/k+2, i+j+k=7,
+
+      with residence forcing `1<=i<=6`.  Thus every candidate lies in one of
+      the six AA-distance branches `3,5,7,9,11,13`; no minimum-AA-only
+      inference is used.  For final A-endpoint set E and closure lower label
+      `h notin E`, the exact forced BB insertion count is
+
+          a=t+4-|R cap {3868,h}|-|P cap H|-1_[h in H],
+
+      where `R=E0\E`, `P=E\E0`, `t=|R|`, and H is the four old-hole set.
+      The full budget is `i+a+b+t+c=7`.
+
+      The branch-free integral model has 180,180 physical edge variables and
+      72,072 marked-BB variables.  All six branch runs returned INFEASIBLE,
+      each before any subtour or residence cut.  Wall times for AA distances
+      `3,5,7,9,11,13` were respectively about
+
+          16.13,14.58,17.02,13.65,12.15,7.24 seconds.
+
+      An independent unbranched replay also returned INFEASIBLE with zero
+      lazy cuts in 21.16 seconds.  Therefore fixed H19 admits no support-
+      distance18 q1-perfect marked 2-factor, a stronger obstruction than
+      failure of Hamiltonicity or residence.  This does not rule out distance
+      at least20, another carrier, or a literal compiler.
+
+      Scope correction and resolution: the earlier distance16 audit closed
+      only the strong open-path-upper class.  The same unbranched marked-cycle
+      model was therefore run at distance16; it returned INFEASIBLE with zero
+      lazy cuts in 18.48 seconds.  This closes the non-old-hole closure gap
+      and proves that the first fixed-H19 marked-q1 repair, if any, has
+      support distance at least20.  Exact theorem/model/results:
+
+          MATH_THEOREM_H19_DISTANCE18_MARKED_CYCLE_CIRCULATION_NORMAL_FORM_20260729.md,
+          scratch/search_k15_h19_marked_cycle_distance_exact_cpsat.py,
+          scratch/audit_k15_h19_distance18_marked_cycle_exhaustion.py,
+          scratch/k15_h19_distance18_marked_cycle_exhaustion.audit.json,
+          scratch/d16_cycle_all_s16043.json,
+          scratch/d16_cycle_all_s16043.log,
+          scratch/d18_cycle_all_s18042.json,
+          scratch/d18_cycle_all_s18042.log.
+
+1828. The binary `c`-space master now has an exact run-transversal Johnson
+      normal form and a fail-closed compiler-ready predicate.  For
+      `T_i(x)=c_(i-xN)`, let `S_a,E_a` count `01,10` edge tails in residue
+      `a mod N`.  The literal seam identities are
+
+          |T_(i+1)\T_i|=S_i,  |T_i\T_(i+1)|=E_i.
+
+      Under the rank class sums, Johnson adjacency is therefore equivalent
+      to `S_a=E_a=1` for every residue.  This gives exactly `N` one-runs and
+      replaces the old seam-XOR auxiliaries by exact start/end transversal
+      rows.
+
+      With minimum run length `d+1`, the backward erosions
+
+          P_i^(q)=intersection_(a=0)^q T_(i-a)
+
+      have pointwise rank `r-q`, are Johnson at every `q<=d`, and satisfy
+
+          D P^(q+1)=P^q  (q<d).
+
+      Hence the terminal envelope is exactly the compiler's maximal erosion;
+      lower cover rows need only require containment of a rank-`r-q` target,
+      with no rank/outside auxiliaries.  Upper q1 uses adjacent unions;
+      deeper upper separation now uses the exact next-occurrence oracle and
+      globally valid maximal-good-run blocker no-goods.  The arbitrary-width
+      contained-suffix recurrence remains as an independently tested
+      fallback.  Claude's three-width rows and forced-port READY are absent.
+
+      Solver-free regression gives: `k=5`, 35/100 rank-correct traces satisfy
+      both Johnson and run-transversality, with zero mismatch; `k=9` is a
+      perfect carrier but the cyclic one-core architecture has exact Hall
+      `126/129`, so it returns
+      `COMPILER_ARCHITECTURE_UNSUPPORTED_NO_CUT` rather than a carrier
+      no-good, while the retained length-128 word still verifies all 511
+      masks.  The positive gate recomputes the forced target count, compiler
+      dimensions, both Hall totals, physical matching size, and the complete
+      safe-cut list; it rejects self-consistent zero-total spoof ledgers.
+      `k=11` passes the versioned compiler-ready gate with envelope
+      and selected Hall `231/231`, 231 physical matches, 242 safe cuts, 3,696
+      variables, 5,355 constraints, and retained word SHA
+      `0f80c329...38a0`.  The stale declared cycle hash in the old carrier is
+      never trusted; the physical cycle is recomputed (`fa7d678b...f0b2`).
+
+      The 12-seed, 4.499B-proposal two-run endpoint-swap portfolio is retained
+      only as a scoped negative experiment and is excluded from this search
+      neighborhood.  Future `k=15` work must use global/multi-run CP motion
+      or exact compiler-derived cuts.  No new H100 job was launched.  Proof,
+      implementation, tests, and exact regression ledger:
+
+          THREAD_D_RUN_TRANSVERSAL_CSPACE_BENDERS_20260729.md,
+          scratch/threadD_cspace_compiler_benders.py,
+          scratch/test_threadD_cspace_compiler_benders.py,
+          scratch/audit_threadD_cspace_run_transversal_regressions.py,
+          scratch/threadD_cspace_run_transversal_regression_20260729.audit.json.
+
+## 396. Complement-coherent Euler height fibres and bounded-defect no-go
+
+1829. Class-balanced complement-coherent NAND traces have an exact marked
+      height-fibre normal form.  If
+
+          H_j={h in Z_k : d_(j+hC)=0}
+
+      and lambda_j is the height of the unique gap-three departure in
+      residue j, then
+
+          H_(j+2)=(H_j minus {lambda_j}) union {lambda_(j-1)}.
+
+      With phi(h)=-2^(-1)h, the physical rows are exactly
+
+          T_i                         = complement(phi(H_(2i))),
+          T_i cap T_(i+1)             = phi(H_(2i+1)),
+          T_i cap T_(i+1) cap T_(i+2) = phi(H_(2i+1) minus {lambda_(2i+1)}).
+
+      Hence middle and lower q1 have the same exact nonlinear objective
+      Phi, the number of rotation classes of H_v; middle Hamiltonicity is
+      Phi=C.  The lower-q2 objective is the marked-deletion class count Psi,
+      but physical q2 coverage must weight occupied short orbits by their
+      rotation sizes.
+
+      Listing special zeros L_a gives a complete residue-permutation
+      recursion.  For the positive residue difference delta_a and
+      epsilon_a=[delta_a even], every lift is
+
+          Delta_a=delta_a+C epsilon_a+2C b_a,
+
+      with exact budget
+
+          w(pi)+e(pi)+2 sum b_a=k.
+
+      The marked-height carry and every unmarked fibre height have closed
+      formulas, so this is the correct nonlinear replacement for local gap
+      scores.
+
+      The independently verified k15 candidate
+      `scratch/k15_nand_gap_adj2_best_42.cw` is exactly two adjacent swaps in
+      the long-residue order, has no NAND/class/Johnson/residence defect, and
+      scores `(middle,q1,q2,minrun)=(42,42,42,4)`.  Its 21 singleton middle
+      classes occupy residues 120 through 140; all 42 occupied q2 orbits have
+      size 15, covering 630/5005 physical targets.
+
+      This portfolio is now closed as a full-transversal route.  If d has J
+      arcs each agreeing with a p-periodic word, then
+
+          Phi <= gcd(p,C)+pJ-1.
+
+      Every two-adjacent-defect word has at most six non-7 blocks and hence
+      a 14-periodic partition with J<=18, so Phi<=252<429 throughout that
+      exact portfolio.  Full transversality needs at least 31 such
+      phase arcs and a genuinely nonperiodic low-winding odd-difference
+      permutation.  Proof and lightweight exact verifier:
+
+          MATH_THEOREM_CSPACE_NAND_EULER_OWNER_TRANSFER_20260729.md,
+          scratch/audit_cspace_nand_euler_transfer_20260729.py.
+
+## 397. MMM parallel switches are exact multi-run `c`-space shears
+
+1830. A parallel MMM switch of signed shift `delta` has an exact binary-trace
+      action.  Write a strict spiral as
+
+          T_(j+tN)=rho^(s_j+tv) U_j,
+
+      let `h_j(t)=c_(j+tN)`, and put
+
+          q=delta/v,  a=(v+delta)/v=1+q  (mod k).
+
+      If the switched quotient edge separates a prefix from a suffix, then
+
+          h'_j(t)=h_j(a t+b_j),
+
+      where `b_j=0` on the prefix and `b_j=q` on the suffix.  Equivalently,
+      cutting the `k` lifts of that edge gives `k` retained one-lap paths;
+      the old cycle joins sheet `t` to `t+v`, while the new cycle joins it to
+      `t+v+delta`.  Thus a published switch is a global multi-run block
+      rethread, not a local bit or two-run move.  It preserves class sums,
+      the start/end transversals, middle Hamiltonicity, and exact lower q1
+      whenever both voltages are units.  Upper q1 changes one edge orbit and
+      lower q2 only the two triple windows meeting that edge; unrestricted
+      upper intervals can change globally.
+
+      On the exact residence-perfect k15 fixture, selector change
+
+          (1807,7,12) -> (1807,11,12)
+
+      is a shift-seven MMM switch.  It changes voltage `1 -> 8`, keeps all
+      6,435 middle and lower-q1 colours distinct, keeps residence zero and
+      the same 47 lower-q2 holes, and improves exact all-width upper holes
+      `95 -> 94`, filling rank-nine representative 1951 and losing none.
+      Terminal lower-q3 positive-degree holes worsen `11 -> 12`, creating
+      representative 1159, so this is not a carrier solution.  The move
+      changes 3,092 trace bits and replaces 406 run starts and 406 run ends.
+      The literal shear has multiplier 8 and unique offset word
+      `0^381 7^48`.  Hence it is an exact escape from the exhausted two-run
+      endpoint-swap neighborhood: the current width-eight score changes
+      `(middle,q1,q2,upper,E)=(0,0,47,95,661)` to
+      `(0,0,47,94,658)`.  Its short-width support gains 81 orbit
+      representatives and loses 80, while exact all-width upper support
+      gains 1951 and loses none.
+
+      The run-parameter correction is also exact: run-start and run-end
+      **residues** are permutations of `Z_N`; the inserted/deleted-coordinate
+      maps are functions `Z_N -> Z_k`, not permutations.  A complete state
+      needs lifted cyclic starts, lengths, and positive gaps satisfying both
+      residue transversals.  It is not a free pair of permutations plus a
+      composition.
+
+      Proof, exact replay, and frozen summary:
+
+          MATH_THEOREM_MMM_PARALLEL_SWITCH_CSPACE_SHEAR_AND_K15_ESCAPE_20260729.md,
+          scratch/audit_k15_mmm_parallel_switch_cspace_escape_20260729.py,
+          scratch/k15_mmm_parallel_switch_cspace_escape.audit.json.
+
+1831. The run-transversal `c`-space now has a complete exact structural and
+      move normal form.  For start/end counts `a_j,b_j` and class weights
+      `h_j`, the literal seam identities are
+
+          |T_i minus T_(i-1)|=a_j,
+          |T_(i-1) minus T_i|=b_(j-1),
+          h_j-h_(j-1)=a_j-b_(j-1).
+
+      Thus rank `r` plus Johnson is exactly one start and one end per residue
+      modulo `N`; conversely those two transversals plus total weight `rN`
+      force every class sum.  The exact rooted data are a cyclic phase,
+      chronological start/end residue permutations, positive gaps, and
+      congruent run/gap lifts.  In a fixed permutation chamber,
+
+          ell_i=L_i+N p_i,  g_i=G_i+N q_i,
+
+      and the complete Markov basis is the two independent transportation
+      bases `p+=e_a-e_b` and `q+=e_a-e_b`.
+
+      Every same-run-order legal trade is exactly a coupled displacement
+
+          S'_i=S_i+u_i,  E'_i=E_i+v_i
+
+      satisfying run/gap lower bounds, `sum(v-u)=0`, and start/end residue
+      transversality.  Separate start/end swaps are not a global legal
+      Markov basis: a small explicit tight-run fiber requires the simultaneous
+      displacement `u=v=(0,-1,-2)`.  The active frozen `anneal3.cpp` swaps
+      also preserve the endpoint barycentre modulo `k`, producing literal
+      phase sectors.  Its parser does not validate binary input, total/rank,
+      or the initial minimum run; its advertised transfer is unsampled and
+      no slide exists.
+
+      Residence has a stronger exact consequence.  For
+
+          P_i^(q)=intersection_(t=0)^q T_(i-t),  q<=d,
+
+      every run `[S,E]` becomes `[S+q,E]`; hence `P^(q)` is a strict
+      equivariant rank-`r-q` Johnson walk and
+
+          D P^(q+1)=P^q  (q<d).
+
+      This supplies the whole structural compiler tower but no occurrence
+      distinctness or Hall ports.
+
+      On a middle/q1-perfect seed, the useful moves are exactly simultaneous
+      two-deck kernel elements.  If `A={j:T'_j!=T_j}` and
+      `partial A=A union (A-1)`, preservation is equivalent to the two
+      localized signed orbit equations
+
+          sum_(j in A)(e_[T'_j]-e_[T_j])=0,
+          sum_(j in partial A)(f_[X'_j]-f_[X_j])=0.
+
+      Their matching overlays are coupled alternating cycles.  The smallest
+      possible middle-color-reassigning primitive, when one exists, is a
+      legal two-column rectangle,
+      but a one-column phase diamond can preserve both orbit decks locally;
+      therefore support at least three is only seed/atlas specific.  Exact
+      `k=7` enumeration gives 6,797 legal states, 70 joint-perfect states,
+      no perfect-to-perfect single swap, and minimum actual column support
+      three.
+
+      For the pinned `k=15` seed, a new 2.7-second solver-free census
+      exhausts all 1,805 legal active single swaps.  Every one leaves the
+      middle permutation fiber; only two retain q1, neither retains both.
+      The seed is an exact strict one-step local minimum: energy `661`, best
+      neighbor `671`.  Thus any direct joint-fiber-preserving or nonworsening
+      escape requires at least two active swaps or a different larger legal
+      displacement.  This is not a two-swap or compiler obstruction.  The
+      former 4.499-billion H100 portfolio is now corroborative only.
+
+      Full proofs, scoped counterexamples, source audit, and artifacts:
+
+          MATH_THEOREM_RUN_TRANSVERSAL_CSPACE_MARKOV_BASIS_AND_TWO_DECK_TRADES_20260729.md,
+          scratch/anneal3_sha83d5_audit.cpp,
+          scratch/audit_run_gap_markov_tiny.py,
+          scratch/audit_k7_perfect_run_trades.py,
+          scratch/audit_k15_runtrans_single_swap_neighbors_20260729.py,
+          scratch/k15_runtrans_single_swap_neighbors_20260729.audit.json.
+
+1832. Complement coherence gives an exact occurrence-wise reconciliation of
+      the c-space upper oracle with the lower deletion tower.  If
+
+          T_(i+1)=T_i-{e_i}+{a_i},
+          X_i=T_i cap T_(i+1),
+          complement(T_i)=X_(i+s),  W=2s+1,
+
+      then
+
+          e_i=a_(i+s),  a_i=e_(i+s+1),
+
+      and for every width `w>=1`,
+
+          complement(union_(h=0)^(w-1) T_(i+h))
+            = intersection_(h=0)^w T_(i+s+h).
+
+      Thus upper depth `q` is lower depth `q+1`, with exact load equality
+      and backward-erosion terminal `i+s+q+1`.  In scalar c-space the
+      next-one clock is exactly the shifted next adjacent-pair-failure
+      clock, so the insertion-prefix max/min inequality is literally a
+      lower deletion-window inequality.  Long first-arrival spans remain
+      long after dualization; they do not collapse to residence or to a
+      same-depth row.
+
+      The PBBS consequence is exact but scoped: one protected lower flag
+      bank supplies the complementary upper bank as cyclic set support.
+      A linear opening must avoid both a witness interval and its deck mate;
+      residence, ports, pins, and common-owner Hall are not halved.
+
+      The odd/even lift boundary is also complete.  An odd odd-graph cycle
+      has one internally antipodal Middle Levels lift.  An even cycle has
+      two lifts exchanged by complement; the explicit O_2 cycle
+
+          12,34,15,23,14,35
+
+      gives upper lifts `(124,125,145)` and `(345,234,235)` and refutes
+      same-component halving.  A rotation-equivariant quotient cycle of
+      unit voltage transports to a run-transversal c-carrier after gauge;
+      at k=15 the full quotient length `Cat_7=429` has the required odd
+      parity.  Arbitrary PBBS fusion need not preserve this equivariance.
+      Finally, inverse-two NAND reindexing is not a physical lift: its word
+      has `m Cat_m` one-runs, versus `Cat_m` in the physical run-transversal
+      chronology.  The minimum surviving construction hypothesis is an
+      equivariant unit-voltage PBBS fusion preserving one lower witness bank
+      and every new-seam short-return exclusion.
+
+      Full proof and independent audit boundary:
+
+          THREAD_A_COMPLEMENT_CSPACE_GAP_DUALITY_AND_PBBS_LIFT_20260729.md.
+
+## 398-L. NAND/Euler marked shadows and the parity-rotor escape from 42
+
+1833-L. The run-transversal gap algebra and the marked Euler-height algebra
+      now have one exact common normal form.  With
+
+          H_j={h:d_(j+hC)=0},  lambda_j=the gap-three height,
+          phi(h)=-(2^(-1) mod k)h,
+
+      the physical seam labels are
+
+          alpha_i=phi(lambda_(2i-1)),
+          beta_i=phi(lambda_(2i)),
+
+      so the run start in residue `j` is `beta_(j-1)` and the run end is
+      `alpha_j`; the two generic endpoint functions are not independent.
+      For `G_i=H_(2i+1)`,
+
+          G_(i+1)=G_i-{lambda_(2i+1)}+{lambda_(2i)},
+          G_(i+(C+1)/2)+1=complement(G_i union G_(i+1)),
+
+      and, for every width `w>=1`,
+
+          J_(i,w)=intersection_(a=0)^(w-1) G_(i+a)
+                 =G_i\{lambda_(2i+1),...,lambda_(2i+2w-3)},
+
+          intersection_(a=0)^w T_(i+a)=phi(J_(i,w)),
+          complement(union_(a=0)^(w-1) T_(i+a))
+                 =phi(J_(i+(W-1)/2,w)).
+
+      This is all-width exact, but repeated/outside deletion labels mean no
+      unqualified large-width rank drop.
+
+      The marked word is also a complete literal Euler coordinate.  Put its
+      special zero of residue `j` at `L_j=j+lambda_j C` modulo `W` and sort
+      these `C` placements cyclically.  A unique class-balanced NAND trace
+      with those marks exists iff every consecutive lifted gap is odd and
+      at least three; minimum physical run `h` is equivalent to every gap
+      being at least `2h-1`.  Each block is forced to have zero offsets
+      `0,3,5,...`, and its paired physical run has length `(Delta+1)/2`.
+
+      Analytically, for every odd `k=2m+1`, the quotient inclusion graph
+      from rank-`m-1` cyclic necklaces to rank-`m` necklaces has a matching
+      saturating the lower side.  If a test family has `a` free and `b`
+      stabilizer-three lower necklaces, its quotient neighborhood obeys
+
+          |N| >= (m+2)/m (a+b/3),
+          |N| >= (m+2)b/3;
+
+      splitting at `a=(m-1)b/3` proves Hall.  Hence a complete middle
+      transversal can be marked to cover every lower-q2/upper-q1 necklace
+      statically.  At k15, exact successive quotient matchings additionally
+      give 429 saturated chains whose support contains all 1,096 necklaces
+      of ranks zero through seven.  Neither result supplies their common
+      Euler chronology.
+
+      A new deterministic k15 height-sorted parity rotor is explicit.  Its
+      special-zero gap histogram is
+
+          7^4,13^57,15^308,17^54,19,21^4,25,
+
+      so its physical run histogram is
+
+          4^4,7^57,8^308,9^54,10,11^4,13.
+
+      It satisfies NAND, all 429 class sums, every Johnson seam, both
+      endpoint transversals, and all controller identities, and has exact
+      score `(middle,q1,q2,minrun)=(82,82,80,4)`.  Its all-width upper
+      orbit counts in ranks 9 through 15 are
+
+          80,69,53,30,7,1,1;
+
+      it misses only canonical mask 14303 at rank 12 and is complete at
+      ranks 13--15, but still covers only 80/335 first upper/lower-q2
+      orbits.  Thus top-shadow completeness does not force the punctured
+      deck.
+
+      The old 42 is exactly candidate-specific phase geometry.  Along the
+      coprime `+14` residue cycle, both the H and punctured-K label words
+      have exactly 42 changing edges; deleting them gives 42 constant
+      components with pairwise distinct labels, including 21 singletons.
+      It is 42/429 only for middle/q1; q2 is 42/335=630/5005.  The new rotor
+      disproves any NAND/winding cap at 42.  Conversely its minimum number
+      of changing edges over every coprime phase is 405 for H and 401 for K,
+      while it has only 82 and 80 labels.  Dense phase cuts are therefore
+      necessary but not sufficient.  The surviving gate is a
+      chronology-preserving lift of the static marked chain assignment
+      through the nonlinear one-delete/one-insert recurrence.
+
+      Proof, exact construction, scoped counterexamples, and the permanent
+      solver-free verifier:
+
+          MATH_THEOREM_NAND_EULER_RUNTRANS_MARKED_SHADOW_PARITY_ROTOR_20260729.md,
+          scratch/audit_nand_euler_runtrans_parity_rotor_20260729.py.
+
+## 398. Weighted c-space hole circulation and pure boundary-cycle obstruction
+
+1835. For the frozen resident strict spiral, the lower `q2` and terminal
+      `q3` occurrence ledgers are one common object.  With
+
+          Y_i=P_i^(3),  Z_i=P_i^(2),
+
+      depth-three residence gives the literal derivative identity
+
+          Z_i=Y_i union Y_(i+1).
+
+      Thus `q3` targets are the vertex colours of one rank-five Johnson
+      circulation and `q2` targets are its adjacent-union edge colours; they
+      cannot be routed independently.
+
+      For a target rotation orbit O, let `w_O=|O|` and let `n_q(O)` be its
+      quotient occurrence count.  At any unit voltage, every physical target
+      in O has load `15 n_q(O)/w_O`.  Consequently the quotient and physical
+      collision excesses satisfy the exact identities
+
+          e_q=sum_O (n_q(O)-1)_+ = N-M_q+h_q,
+          C_q=sum_O w_O(lambda_q(O)-1)_+
+             = W-binom(15,8-q)+H_q.
+
+      At the seed the normalized spectra are
+
+          q2: 0^47 1^165 2^105 3^18,
+          q3: 0^11 1^54 2^62 3^49 4^21 5^4.
+
+      The two short rank-six orbits (sizes five, representatives 3171 and
+      5285) are both missing, so the 47 q2 orbit holes have physical weight
+      `685` and collision excess `2115`.  The unique short rank-five orbit
+      (size three, representative 4681) is occupied once quotientwise; all
+      eleven q3 holes are full orbits, giving exactly `165` terminal
+      zero-degree compiler targets and collision excess `3597`.  The exact
+      combined physical last-witness potential is therefore `850`.
+
+      For any legal move, if `G_q` and `L_q` are respectively first-witness
+      orbits gained and last-witness orbits lost, then
+
+          Delta(C_2+C_3)
+            =sum_(q,O in L_q) w_O-sum_(q,O in G_q) w_O.
+
+      This is the exact monotone-augmentation ledger.  For an additive bank
+      of physically compatible bundles, simultaneous support completion is
+      exactly the integral system
+
+          n_q(O)+sum_b x_b delta_(b,q,O) >= 1
+
+      at both depths.  Only an elementary independently installable
+      unit-transfer bank reduces to ordinary capacitated Hall.  A displayed
+      two-hole/two-q2-donor/two-q3-donor parity gadget has determinant two,
+      proving that separate depthwise Hall and the fractional relaxation are
+      insufficient in general.
+
+      The five selected parallel MMM menus are now closed exactly.  Their
+      32 assignments have 15 unit-voltage states and only two that are also
+      depth-three resident.  Their lower hole vectors are `(47,11)` and
+      `(47,12)`.  The second leaves the whole q2 missing family unchanged,
+      fills no q3 hole, and destroys the last witness of full orbit 1159, so
+      physical potential worsens `850 -> 865`.  One parallel seam can alter
+      at most two q2 quotient cells, giving the separate all-hole Hall cut
+      `h'_2>=47-2s`; any parallel-seam completion needs at least 24 seams.
+
+      Pure boundary 3-cycles are also closed on this seed.  For
+
+          A_s(c)=sum_p c_p c_(p-sN),
+
+      middle-deck exactness forces `A_s=binom(13,6)=1716`.  An independent
+      exact H100-CPU audit enumerates every legal pure three-end cycle (4078)
+      and pure three-start cycle (4037).  Every one violates one of the first
+      five moments; the first-failure histograms are
+
+          ends:   3601,412,56,7,2,
+          starts: 3612,366,55,4.
+
+      The persistent trace and MMM-fixture trace obey
+
+          c_run(p)=c_MMM(-p),  T_run(j)=-T_MMM(-j),
+
+      so this is the same carrier up to chronology reversal and coordinate
+      inversion, which exchange start/end moves.  The theorem does not rule
+      out coupled start/end circulations, composites of individually
+      defective cycles, four-or-more boundary cycles, other MMM menus, or
+      gluing-tree changes.  The separate arity-four theorem below rules out
+      additive sums of at most three moves in the 4037-move pure-end
+      catalogue, but not nonlinear overlaps or the other boundary class.
+      The smallest remaining move lemma is an exact
+      middle/q1-kernel coupled-boundary bundle selection satisfying the
+      common two-depth inequalities above; full owner/compiler Hall remains
+      downstream even if support is completed.
+
+      The theorem package and audited artifacts are:
+
+          THREAD_H_CSPACE_WEIGHTED_HOLE_CIRCULATION_AND_MMM_CUBE_OBSTRUCTION_20260729.md,
+          scratch/audit_k15_cspace_weighted_hole_mmm_cube_20260729.py,
+          scratch/audit_k15_cspace_pure_boundary_3cycles_20260729.py,
+          scratch/k15_cspace_pure_boundary_3cycles_20260729.audit.json,
+          scratch/k15_runtrans_seed_3eac_20260729.cw.
+
+1833. Every cyclic Johnson walk has an exact deletion/insertion event-stream
+      shadow algebra, and its rank errors are coefficient-exact run
+      functionals.  If
+
+          T_(i+1)=T_i-{alpha_i}+{beta_i},
+
+      then for every transition depth q,
+
+          intersection_(a=0)^q T_(i+a)
+            = T_i minus {alpha_i,...,alpha_(i+q-1)},
+          union_(a=0)^q T_(i+a)
+            = T_i union {beta_i,...,beta_(i+q-1)}.
+
+      More strongly, if R_x^+(s),R_x^-(s) count coordinate one- and
+      zero-runs of length s, then for `1<=q<=L`
+
+          sum_i (|cap_(a=0)^q T_(i+a)|-(r-q))
+            = sum_(x,s) (q-s)^+ R_x^+(s),
+          sum_i ((r+q)-|cup_(a=0)^q T_(i+a)|)
+            = sum_(x,s) (q-s)^+ R_x^-(s).
+
+      Thus residence controls lower native-rank capacity and dual residence
+      controls upper native-rank capacity exactly.  In strict c-space every
+      coordinate trace is a translate of c, so both right sides are k times
+      scalar run-histogram functionals.
+
+      On the verified k15 MMM shear `(1807,7,12)->(1807,11,12)`, the scalar
+      number of zero-runs of length one drops `71->70`.  Across transition
+      depths 1..7, the exact physical upper-rank-deficit changes by
+
+          0,-15,-30,-45,-45,-30,-15,
+
+      removing 180 physical / 12 quotient units while exact upper holes
+      improve `95->94` and no upper hole is created.  This supplies a
+      proof-safe cheap search potential for global MMM/overlay moves; it is
+      a relaxation, not a substitute for exact orbit coverage.
+
+      Proof and frozen audit:
+
+          MATH_THEOREM_JOHNSON_EVENT_STREAM_RUN_DEFICIT_AND_MMM_POTENTIAL_20260729.md,
+          scratch/audit_k15_event_stream_rank_deficit_20260729.py,
+          scratch/k15_event_stream_rank_deficit_20260729.audit.json.
+
+1834. The complete catalogue of 4,037 legal k15 three-run end-cycle moves
+      has no additive middle/q1-neutral combination of arity at most three.
+      A frozen C++ meet-in-the-middle checked all 8,146,666 unordered pairs:
+
+          zero-signature singles = 0,
+          zero-signature pairs = 0,
+          pair signatures matching a negative singleton = 0.
+
+      Hence zero-signature triples are also absent, even before applying
+      support-disjointness.  Any additive support-disjoint repair from this
+      move catalogue needs at least four three-run cycles.  Overlapping
+      sequential moves remain nonlinear and are not excluded.
+
+      Proof and frozen audit:
+
+          MATH_THEOREM_K15_THREE_CYCLE_SIGNATURE_ARITY_FOUR_20260729.md,
+          scratch/k15_three_cycle_signature_mitm_20260729.cpp,
+          scratch/k15_three_cycle_mitm_remote_20260729/k15_three_cycle_signature_mitm.result.json.
+
+1835. Thread D now has a proof-safe finite-state c-space/Benders integration
+      of the MMM parallel-edge and run-end three-cycle move classes.  Every
+      unit MMM assignment is reconstructed as a full physical factor and
+      then normalized from its coordinate-zero trace into voltage-one
+      c-space; the switch is never encoded as a local bit edit.  The master
+      uses one-hot state variables, literal c-bit linkage, and all 858 exact
+      middle/q1 orbit-histogram equations.
+
+      Lower and upper rows are derived from the physical event streams
+
+          T_(i+1)=T_i-{alpha_i}+{beta_i},
+
+      using deletion and insertion prefixes.  The coefficient-exact
+      one-/zero-run deficit equations are retained as master ledgers, and no
+      Z_N -> Z_k map is assumed injective or bijective.  Arbitrary-width
+      insertion prefixes supply the exact upper oracle.  The one-core,
+      weighted Hall, physical matching, safe cut, and literal compiler remain
+      an exact fail-closed Benders subproblem.
+
+      The forward deletion prefix and the compiler's backward erosion are
+      aligned positionwise by
+
+          F_i^(q)=P_(i+q)^(q).
+
+      The retained payload checks this shift at every position/depth.  The
+      executable `install_portfolio_cp_sat_rows()` hook performs a mandatory
+      deep replay and then adds 15 state variables, one one-hot row, 6435
+      literal c-link rows, and all 858 signature rows to the existing c-space
+      model.  The H100 OR-Tools smoke has 6450 variables and 7294 constraints.
+
+      For the complete five binary MMM menus there are 32 assignments and 15
+      unit states.  Only two are resident:
+
+          00101: (q2,q3,upper)=(47,11,95),
+          01101: (q2,q3,upper)=(47,12,94).
+
+      Thus the switch is a weak q2-neutral upper improvement with a q3
+      counterterm; it is not a strict joint q2/upper descent, and no state
+      reaches the compiler gate.  Its exact physical upper-rank-deficit delta
+      through depths 1..7 is
+
+          0,-15,-30,-45,-45,-30,-15
+
+      for total -180.
+
+      The exact three-cycle signature census has 4,037 nonzero distinct
+      signed types.  The separate meet-in-the-middle theorem excludes every
+      additive zero-signature composition of one, two, or three distinct
+      catalogue moves.  This forces arity at least four only in the commuting,
+      pairwise-q1-support-disjoint submaster; overlapping sequential moves
+      remain nonlinear and open.
+
+      Theorem note, source, tests, and retained payload:
+
+          THREAD_D_MMM_GLOBAL_SWITCH_CSPACE_BENDERS_20260729.md,
+          scratch/threadD_mmm_switch_cspace_benders.py,
+          scratch/test_threadD_mmm_switch_cspace_benders.py,
+          scratch/threadD_mmm_switch_cspace_benders_20260729.audit.json,
+          scratch/audit_threadD_mmm_portfolio_cp_sat_hook.py,
+          scratch/threadD_mmm_portfolio_cp_sat_hook_20260729.audit.json.
+
+      Final retained source/payload SHA-256 values are
+
+          e0df0c4435c22960503dd5b29986bb1793fe7e721cf60ae488f11af16e0d70f4,
+          31ec15e992385dc02809e55afcad112d13bc01d04f31e831372dc8afe5d63670.
+
+1836. The coupled run-boundary perfect-face neighborhood is now closed
+      exactly through support three on the authoritative resident k15 seed.
+      For a displacement
+
+          S'_i=S_i+u_i,  E'_i=E_i+v_i,
+
+      let `B={i:(u_i,v_i)!=(0,0)}`.  Fixed outside endpoints force the new
+      start/end residues on B to be permutations of their old residue sets.
+      Every cyclic component of B has exterior collar width at most
+      `63,88,111` for component sizes `1,2,3`, all below `N=429`; hence each
+      assigned residue has at most one chronological lift and no hidden
+      N-slide exists.  The exact finite template count is
+
+          3 C(429,2)+26 C(429,3)=340,018,822.
+
+      H100-CPU enumeration retains exactly 46,928 structurally legal
+      nonzero states.  In the explicit-fixture orientation their categories
+      are
+
+          start2 907, end2 898, coupled rectangle 1045,
+          start3 4078, end3 4037,
+          coupled 22/23/32/33 = 9370/9700/9821/7072.
+
+      Every category has zero middle-perfect states; only one start2 and one
+      end2 state retain q1, so the joint count is zero.  Therefore every
+      same-run-order resident middle/q1-perfect trade from this seed has
+      boundary support at least four.  This is seed-specific: k7 has an
+      exact joint-perfect support-two rectangle with
+      `u=(0,3,0,0,2), v=(0,2,0,0,3)`.
+
+      The boundary/event translation is exact:
+
+          beta_(S_j+xN-1)=x,  alpha_(E_j+xN)=x,
+          ell'_j=ell_j+v_j-u_j,
+          g'_j=g_j+u_(j+1)-v_j.
+
+      Thus the short-zero potential has the exact displacement law
+
+          Delta Z_H=sum_j[Phi_H(g_j+u_(j+1)-v_j)-Phi_H(g_j)],
+          Phi_H(t)=C((H-t+1)^+,2).
+
+      A potential-improving perfect-face move is exactly a legal boundary
+      circulation with zero middle signature, zero q1 signature, and this
+      displayed quantity negative.  The support-three closure forces such
+      a move to support at least four.  The verified MMM shear is an
+      extensive positive capacity witness with `Z_7:2973->2961` and upper
+      holes `95->94`, but it worsens terminal protected rank-five zero-degree
+      targets `165->180`.  Full compiler Hall was not invoked because both
+      states retain 47 lower-q2 holes, so no Hall-deficiency delta is proved.
+
+      Proof, independent audit, and complete candidate artifact:
+
+          MATH_THEOREM_COUPLED_RUN_SUPPORT_THREE_TWO_DECK_GIRTH_20260729.md,
+          scratch/audit_k15_coupled_run_support3_atlas_20260729.cpp,
+          scratch/k15_coupled_run_support3_atlas_20260729.tsv,
+          scratch/k15_coupled_run_support3_atlas_20260729.summary.txt.
+
+1837. Thread R has completed the exact resident--MMM parallel/alternating
+      portfolio with the Johnson upper run-deficit used only as a secondary
+      lexicographic potential.  Multi-parallel switches have an additive
+      voltage/prefix cocycle (with the terminal- and intermediate-unit
+      qualifications stated explicitly), and deterministic red/blue
+      incidence pairing gives a sound alternating-circuit cube whose every
+      terminal is lifted and audited physically.
+
+      Selector 175 is the parallel quotient digon
+
+          (1807,7,12) -> (1807,11,12).
+
+      Its relative voltage seven lifts to one physical alternating 30-cycle;
+      the terminal factor is one 6,435-cycle, residence-clean, exact on
+      middle and lower q1, and has the resident lower-q2 hole set with zero
+      lower-q2 orbit and physical collision change.  It fills upper orbit
+      1951 without losing an upper orbit, so upper holes improve 95->94.  Its
+      exact upper native-rank deficit change through depths 1..7 is
+
+          0,-15,-30,-45,-45,-30,-15
+
+      (total -180).  The unavoidable debt in this portfolio is lower q3:
+      orbit 1159 is lost, holes become 11->12, and orbit/physical collision
+      changes are +2/+30.
+
+      The complete remote CPU artifact contains 36 endpoint occurrences:
+      the frozen published MMM endpoint, 34 potential-arborescence endpoints,
+      and the selector calibration.  Their paired cubes contain 11,650 raw
+      states and 9,264 distinct labelled quotient factors.  Re-parsing every
+      state gives 37 collision-neutral occurrences but exactly two distinct
+      neutral factors: 36 representations of the resident and one selector
+      factor.  Their exact score vectors
+
+          (sum E_q^+, upper holes, lower-q3 holes,
+           lower-q3 physical collision)
+
+      are respectively
+
+          resident     (44595,95,11,5655),
+          selector175  (44415,94,12,5685).
+
+      Thus selector 175 is the unique lexicographic optimum and the unique
+      Pareto factor in
+
+          (lower-q2 holes, sum E_q^+, upper holes)=(47,44415,94).
+
+      There are only two distinct residence-clean Hamilton terminals with
+      nonworsening lower-q2 hole count, no state in the entire paired
+      portfolio has zero lower-q2 holes, and no eligible state has zero upper
+      holes.  No collision-neutral upper improvement is lower-q3
+      nonworsening.  These are exact conclusions only for the displayed
+      lexicographic pairings and selected MMM endpoints; other incidence
+      pairings, dynamically enabled circuits, compiler compatibility, and a
+      literal contiguous-OR word remain open.
+
+      Theorem, enumerator, and complete artifact:
+
+          MATH_THEOREM_MMM_RESIDENT_PARALLEL_ALTERNATING_PORTFOLIO_20260729.md,
+          scratch/search_k15_mmm_overlay_circuit_cube_20260729.py,
+          scratch/k15_mmm_overlay_circuit_cube_20260729.audit.json.
+
+      Enumerator/output SHA-256 values are
+
+          65b311f1e3c3b5629164ceddce000ec533955c34dd527c569862ff4537a5f529,
+          1d780b778bac390f01a1764696de34042641e651102fbcaa6bdf56fd76f0a731.
+
+1838. The strict binary-c-space spiral now has an exact event-stream and
+      lifetime normal form.  Normalize `T_(i+N)=rho T_i` and write
+
+          T_(i+1)=T_i-{alpha_i}+{beta_i}.
+
+      The quotient labels `alpha,beta:Z_N->Z_k` determine coordinate-zero
+      insertion and deletion seams
+
+          s_j=j-N beta_j,  e_j=j-N alpha_j (mod W).
+
+      They realize a rank-r strict Johnson trace iff the seam sets strictly
+      alternate, pairing each insertion to the next deletion, and the
+      resulting positive lifetimes sum to `rN`.  The matching is forced,
+      not an additional permutation.  The complement swaps deletion and
+      insertion, so zero gaps are exactly dual to positive residence.
+
+      In cyclic run order this becomes the compact master
+
+          life[t]>=d+1, gap[t]>=1,
+          sum life=rN, sum gap=(k-r)N,
+          AllDifferent(pos[t] mod N),
+          AllDifferent((pos[t]+life[t]) mod N).
+
+      At k=15 this is 429 lifetimes and 429 gaps.  A frozen replay
+      reconstructs the resident 6,435-state seed bit-for-bit; it has
+      lifetime range 4..32, gap range 1..44, and 112 minimum lifetimes.
+      The exact theorem and replay are in
+
+          MATH_THEOREM_STRICT_SPIRAL_EVENT_STREAM_LIFETIME_AND_DUAL_RESIDENCE_20260729.md,
+          MATH_DESIGN_K15_ALPHA_BETA_LIFETIME_BENDERS_20260729.md,
+          scratch/audit_k15_alpha_beta_lifetimes_20260729.py,
+          scratch/k15_alpha_beta_lifetime_audit_20260729.json.
+
+1839. The newest Claude `opusproblem/work` delta was audited separately in
+      `CLAUDE_WORK_DELTA_AUDIT_20260729.md`.  Its single-trace reduction and
+      run-transversal eager normal form are genuine and agree with item 1838,
+      but it contains no new k15 certificate.  The live seed remains at 47
+      lower-q2 and 95 upper missing orbits and the current searches have not
+      improved it.  Soundness boundaries that must not be blurred are:
+
+      * capped/near-width cover clauses make cover-bearing UNSAT incomplete;
+      * zero-q2 and cyclic-residence requirements describe a strict
+        sufficient class, not every optimal linear word;
+      * `sandwich2.py` yields sound SAT words but restricts higher-row hosts
+        to envelope rank minus at most two, so its UNSAT is not universal;
+      * `ready15.py` is a sufficient forced-core screen rather than an exact
+        compiler criterion; and
+      * the markdown bound 6459 is stale: the rigorous upper bound is 6458.
+
+      The correct integration is therefore compact lifetime/gap master,
+      exact physical shadow oracle, proof-safe Benders cuts, exact
+      fixed-carrier compiler/Hall oracle, and final literal OR verification.
+
+1840. Thread D now implements the compact lifetime/gap postprocessor and
+      exact fixed-carrier compiler boundary requested in item 1839.  The new
+      fail-closed schema stores ordered positive lifetimes and following zero
+      gaps with insertion-seam origin zero.  It enforces the two mass sums,
+      minimum lifetime/gap bounds, and the start/end seam-residue permutations.
+
+      It reconstructs
+
+          beta_(p_t mod N)=-floor(p_t/N) mod k,
+          alpha_((p_t+life_t) mod N)
+            =-floor((p_t+life_t)/N) mod k,
+
+      expands the physical event streams, and replays every Johnson edge and
+      every carrier state.  Alpha and beta are treated as repeated-value maps
+      Z_N -> Z_k, never as permutations.  The only permutations are the start
+      and end residues modulo N.
+
+      Exact q2 separation uses
+
+          T_i minus {alpha_i,alpha_(i+1)},
+
+      while exact upper separation uses arbitrary-width insertion prefixes
+
+          T_i union {beta_i,...,beta_(i+w-2)}.
+
+      Both are cross-checked against the retained literal physical oracles.
+      Middle/q1 ownership, residence, erosion, all required lower depths
+      q=2..d-1, and every upper rank must pass before compiler invocation.
+      Terminal depth d remains part of the compiler/Hall interface.
+
+      The downstream solver is the exact fixed-carrier equivariant cyclic
+      one-core model with weighted quotient Hall, a fresh physical target
+      matching, exact safe-cut enumeration, and independent literal word
+      verification.  Negative scope is explicitly limited to that compiler
+      architecture.  A conclusive guarded failure pulls back to the full
+      life/gap assignment no-good; UNKNOWN, timeout, sampled-core failure,
+      malformed metadata, sandwich2 UNSAT, and ready15 emit no cut.
+
+      Three calibrations are frozen:
+
+      * k11 positive: q2/terminal/upper all zero, Hall 231/231, 242 safe
+        cuts, 3696 variables/5355 constraints, and a new independently
+        verified optimal length-465 word with SHA
+        2713ef237d315f07a4cf7311ff6313b7855f24f9e1c4537aecf41efbd84d3eb3;
+      * k11 compiler failure: carrier gate passes, terminal depth has one
+        missing orbit, envelope Hall is 220/231 with deficiency 11, and the
+        exact compiler failure becomes a 42-life/42-gap no-good;
+      * resident k15: ownership and residence pass, but q2=47 and all-width
+        upper=95, so the core solver is not invoked; the full schedule no-good
+        carries 142 exact target certificates.
+
+      Theorem note and artifacts:
+
+          THREAD_D_LIFETIME_GAP_EXACT_POSTPROCESSOR_BENDERS_20260729.md,
+          scratch/threadD_lifetime_gap_exact_postprocessor.py,
+          scratch/test_threadD_lifetime_gap_exact_postprocessor.py,
+          scratch/threadD_lifetime_gap_k11_exact_postprocess.audit.json,
+          scratch/threadD_lifetime_gap_k11_corefail_postprocess.audit.json,
+          scratch/threadD_lifetime_gap_k15_resident_postprocess.audit.json.
+
+      Six solver-free regressions now re-read the retained positive word,
+      positive audit/no-cut, k11 Hall-failure audit/cut, and k15 audit/cut;
+      they recompute embedded digests and rerun the literal positive verifier,
+      so stale retained certificates fail the suite.
+
+      Final source SHA is
+
+          b909e6eb9df33b1be83ceb51bdcf371912657419d4aed191dbb31fb632fecf64.
+
+1840. The middle/q1-perfect existence problem has an exact one-cycle and
+      global-factor formulation.  If
+
+          X_i=T_i cap T_(i+1),
+
+      then `T` is middle-perfect with an exact first lower rainbow iff `X`
+      is a Hamilton cycle of `J(2m+1,m)` and its edge unions are pairwise
+      distinct, with
+
+          T_(i+1)=X_i union X_(i+1).
+
+      Every remaining carrier shadow is a window of this same cycle:
+
+          I_i^(q)=intersection_(a=0)^(q-1) X_(i+a),
+          U_i^(q)=union_(a=-1)^q X_(i+a).
+
+      Thus lower q2 is the edge-intersection palette of `X`, upper q1 is
+      its three-consecutive-vertex union palette, and residence `d+1` for
+      `T` is residence `d` for `X`.
+
+      This identifies the first joint gate with the conjunction of two
+      known one-sided results: Middle Levels supplies a rank-m Hamilton
+      cycle with perfect rank-(m+1) edge unions, while GMM tight enumeration
+      supplies one with complete rank-(m-1) edge intersections.  The desired
+      carrier needs both palettes on the same cycle, i.e. a doubly-rainbow
+      Johnson cycle, before imposing residence and higher windows.
+
+      Equivalently, on `J(k,m+1)` choose one edge of every intersection
+      colour and degree two at every middle vertex.  The binary solutions
+      are exactly first-rainbow spanning 2-factors; upper-q1 loads are
+      linear in their edge-union colours.  The integer kernel of this
+      colour/degree matrix, or its Graver basis, is a complete proof-safe
+      global move space preserving middle and q1.  No bounded move support,
+      connectivity, residence, q2, or compiler preservation is claimed.
+
+      The most tempting explicit run schedule is now ruled out sharply.
+      For a unit `a mod N`, the scalar runs `[ta,ta+r-1]` have exact rank,
+      Johnson seams, lifetime `r`, and large dual residence, but the quotient
+      column `T_j` depends only on `j mod a`.  It has at most `a<=k` literal
+      columns, hence is non-Hamilton whenever `N>k` (in particular at
+      `k=9,11,15`).  This proves that the observed non-affine endpoint
+      permutations and long spines do real deck-separation work.
+
+      Two further necessary conditions were proved.  If `k>2d+2`, any exact
+      compiler covering all singletons forces at least one quotient lifetime
+      exactly `d+1`; without one, all but `2d+2` source positions have a
+      forced port of size at least two.  If the upper depth-q layer is
+      covered, its zero-gap deficit obeys
+
+          E_q^+ <= q(W-C(k,r+q));
+
+      under rank exactness, `k*#{g=q} <= W-C(k,r+q)`.  In particular upper
+      q1 bounds the number of unit zero gaps.  The retained k7/k9/k11/k15
+      traces satisfy these inequalities; k15 is closest to the q1 capacity
+      wall, but its 95 upper holes are not forced by the gap histogram.
+
+      Full proofs and the audited histogram reconciliation are in
+
+          MATH_THEOREM_Q1_RAINBOW_CYCLE_AFFINE_NO_GO_AND_GLOBAL_FACTOR_FIBER_20260729.md.
+
+1841. The compact lifetime/gap formulation now has an exact, search-ready
+      C++ implementation:
+
+          scratch/search_k15_lifetime_gap_lns_20260729.cpp,
+          scratch/export_k15_lifetime_gap_seed_20260729.py,
+          scratch/k15_lifetime_gap_seed_20260729.txt,
+          scratch/K15_LIFETIME_GAP_SEARCH_20260729.md.
+
+      Its state consists of 429 positive lifetimes and 429 following gaps.
+      Two-, three-, and four-cycle exchanges of the modular start/end
+      permutations preserve residence, both fixed sums, alternation, and
+      both residue transversals exactly.  The hot evaluator reconstructs
+      alpha, beta, the scalar trace, and all 6435 middle masks, then counts
+      exact missing rotation orbits in the middle, q1, q2, and the complete
+      arbitrary-width upper tower.
+
+      The authoritative fixture replays bit for bit:
+
+          carrier_exact=1, alpha_exact=1, beta_exact=1,
+          sum(life)=3432, sum(gap)=3003,
+          min/max life=4/32, min/max gap=1/44,
+          (middle,q1,q2,upper)=(0,0,47,95).
+
+      The exact evaluator runs at about 12,900 states/sec on the local test
+      CPU and 5,000 states/sec on one H100 CPU core.  Exhausting all 1,800
+      legal pure start-only/end-only residue cycles through arity six found
+      no improvement.  The exact legal-state counts for arities 2 through 6
+      are `1,800`, `8,083`, `42,173`, `233,387`, and `1,325,512`.  The
+      exact Cartesian product of the 898 legal end-pair swaps and 902 legal
+      start-pair swaps contributes another 808,084 valid mixed states, also
+      with no improvement.  The resident seed is therefore locally optimal
+      for this entire neighborhood under the exact weighted orbit objective.
+      This is a finite neighborhood statement only; larger mixed moves,
+      pure arity at least seven, and nonlinear overlapping moves remain open,
+      and no compiler feasibility claim follows.
+
+1842. The complete class-balanced NAND/Euler face now has an exact mixed-step
+      implementation and an exact zero-certificate objective.  With 429
+      middle labels in 429 bins and 429 q2 labels in 335 bins, write phi,psi
+      for occupied-bin counts and P_phi,P_psi for colliding-pair counts.  Then
+
+          Xi = P_phi + P_psi - 94
+             >= (429-phi) + (335-psi),
+
+      so Xi=0 implies `(phi,psi)=(429,335)`.  The converse requires a
+      floor-balanced q2 profile: complete decks with triple loads can have
+      Xi>0.  The potential remains a useful smooth sufficient target, not an
+      equivalent reformulation of coverage.
+
+      More importantly, the first mixed-step portfolio found and independently
+      replayed a trace with
+
+          (phi,psi,psi_physical,min_run)=(367,335,5005,4),
+
+      and zero class-sum, NAND, Johnson, or residence defects.  Its c-word
+      SHA-256 is
+
+          de3786f9b6b3f3b211e991fbf9f38a2f0a5026b6d63eee07810439c2746d3936.
+
+      This is the first exact complete lower-q2 / dual-upper-q1 deck in the
+      complement-coherent face.  It is not a carrier or OR-word certificate:
+      the middle/q1 palette still occupies only 367 of 429 necklace classes.
+      It nevertheless removes standalone q2 feasibility as an obstruction;
+      simultaneous middle squarefreeness is now the precise gate.
+
+1843. The exact quotient factor master does not require prime `k`.  For
+      `k=2m+1`, any nontrivial rotational stabilizer on rank `m` or `m+1`
+      would have order dividing both `k` and that rank, impossible since
+      both central ranks are coprime to `k`.  Shadow ranks may have short
+      orbits, but representative coverage remains sound; only quotient load
+      caps must not be read as physical multiplicities.
+
+      The prime guard was removed from `scratch/sigma_sat_solver.py` and
+      replaced by an explicit central-freeness check.  With one pair choice
+      per lower orbit and weighted degree two per middle orbit, the model is
+      exactly an equivariant middle/lower-q1-perfect 2-factor.  Rank-(m+2)
+      choice coverage is upper q1; paired incidences at a middle vertex give
+      lower q2.
+
+      Composite `k=9` calibrated end to end in 0.05 seconds with all 126
+      middle/lower-q1, all 84 upper-q1/lower-q2 targets, one component, and
+      voltage 5 mod 9.  The full `k=15` factor CNF has 670,511 variables,
+      2,067,129 clauses, size 38 MB, and is now running on eight remote CPU
+      seeds.  It does not yet impose residence, connectivity, deeper shadows,
+      or the compiler, so even a SAT factor remains an intermediate object.
+
+1844. Thread A now closes the pure arithmetic part of the strict-spiral
+      lifetime/gap problem for every odd `k=2m+1`.  With `N=Cat_m`, fixing
+      every zero gap to `m` is exactly equivalent to choosing a directed
+      Hamilton cycle `P` on `Z_N` with positive edge lifts `h_x`,
+
+          h_x = P(x)-x (mod N),   sum_x h_x = kN,   h_x >= m+1,
+
+      and lifetime `ell_x=h_x-m`.  Starting from translation by `k`, let
+      `g=gcd(k,N)` and perform `g-1` explicitly disjoint adjacent successor
+      swaps.  This merges its `g` residue cycles and yields
+
+          ell: m^(g-1) (m+1)^(N-2g+2) (m+2)^(g-1),
+          gaps: m^N.
+
+      Thus start and end residues are both permutations, and residence is
+      `(m-1,m-1)` (or `(m,m-1)` when `g=1`).  The latter maximal residence
+      is possible iff `gcd(k,N)=1`.
+
+      This does not solve the decorated carrier.  For any middle-Hamilton
+      scalar trace and any nonzero shift `t`, the defect set
+
+          D_t={p:c_(p+t)!=c_p}
+
+      has size at least `N`.  The paired-splice schedule instead has
+      `|D_k|<=4(g-1)(k+1)`; at `k=15` this is at most `128<429`, so it is
+      rigorously non-Hamilton.  Conversely, the audited MMM projection gives
+      an exact middle/lower-q1-perfect strict schedule for every odd `k`, but
+      only the forced minimum lifetime two and no deeper support guarantee.
+
+      The exact remaining conjecture `DLS(k,d)` asks for one schedule with
+      minimum lifetime `d+1`, squarefree middle and lower-q1 necklace decks,
+      every required lower orbit at every depth `2<=q<=d`, and every upper
+      insertion-prefix target orbit.  The frozen `k=7,9,11` schedules verify
+      this finite condition but all have minimum gap one; `k=15` remains
+      open.  Complete proofs, the complement-coherent special collapse, the
+      small-certificate reconciliation, and independent audit boundaries are
+      in
+
+          THREAD_A_STRICT_SPIRAL_LIFETIME_EXISTENCE_AND_DENSE_SHADOW_GATE_20260729.md.
+
+1845. The NAND/Euler search space itself is now completely parameterized,
+      rather than sampled through the old affine step-seven family.  Up to
+      cyclic origin, every class-balanced complement-coherent `k=15` trace
+      of residence at least four is uniquely specified by
+
+          Delta_a=7+2*y_a, y_a>=0, sum_a y_a=1716,
+
+      with the 429 prefix sums of the `Delta_a` forming a permutation modulo
+      429.  Zeros occur at offsets `0,3,5,...,Delta_a-2` in block `a`.
+      Conversely these conditions give the exact Euler multigraph with six
+      `+2` arcs and one `+3` arc per residue, hence NAND, every class sum,
+      every Johnson seam, and residence four.  This is Theorem 1 of
+      `MATH_THEOREM_K15_NAND_EULER_ODD_COMPOSITION_AND_XI_SEARCH_20260729.md`.
+
+      `scratch/k15_nand_euler_mixed_step_search.cpp` searches this complete
+      coordinate space fail-closed.  It now has exact `2C` lift transfers,
+      residue-permutation swaps/cycles, steepest exact two-vertex scans,
+      hard phi/psi floors, Xi-first phases, and an exact two-parent marked-
+      height crossover.  Every output is independently replayed by
+      `scratch/verify_k15_nand_euler_mixed_candidate.py`; `PASS` is structural,
+      while `joint_target` is a separate field and is still false.
+
+      The retained Xi-first point is
+
+          (phi,psi,P_phi,P_psi,Xi)=(404,328,25,101,32),
+
+      so both load profiles already attain their integer floors and the
+      remaining Xi is exactly the `25+7` missing-orbit count.  Its word is
+      `scratch/k15_nand_euler_mixed_pairs_xi32.cw`, SHA-256
+
+          f6bcb3a50771f92157cb429b60a20310bf053b688462d91b36fd8ef8afbed543.
+
+      Holding the complete punctured deck hard gives a retained point
+
+          (phi,psi,psi_physical,Xi)=(378,335,5005,53)
+
+      at `scratch/k15_nand_euler_mixed_q2full_phi378.cw`.  Thus the new lane
+      is within 32 exact collision units of its simultaneous finite target,
+      but has not reached it and has not audited deeper shadows or the lower
+      compiler.  No `k=15` OR-word claim follows.
+
+## 399-L. Compact two-`AllDifferent` Markov basis and the first support-four portals
+
+1846-L. Lane L has separated the formal toric lattice from the actual
+      chronological/perfect-deck fibre.  For inclusive runs `[S_i,E_i]`, a
+      same-order move `S_i'=S_i+u_i`, `E_i'=E_i+v_i` is uniquely described by
+      endpoint permutations `sigma,tau` and integer lifts
+
+          u_i=pi_bar_(sigma(i))-pi_bar_i+N*A_i,
+          v_i=rho_bar_(tau(i))-rho_bar_i+N*B_i.
+
+      It is legal exactly when
+
+          sum A_i=sum B_i,
+          u_i-(ell_i-h) <= v_i <= u_(i+1)+(g_i-1)
+
+      at every run.  Cycle sums of the lifts are the exact start/end winding
+      packets, and total start winding must equal total end winding.  After
+      positivity is deleted, the expanded endpoint-assignment lattice is
+      generated by Birkhoff rectangles, within-shore lift transfers, and one
+      paired phase lift, all of boundary support at most two.  Thus the proved
+      support-at-most-three no-go is not toric torsion; it is caused by
+      chronology and the middle/q1-perfect face.  Conversely, an explicit
+      cyclic interval-domain face has two `N`-state lift chambers, and every
+      bridge between them changes all `N` start residues.  Hence nonnegative
+      Markov degree is not uniformly bounded on arbitrary structural-zero
+      faces, although no unrestricted central-`k=15` obstruction follows.
+
+      On a fixed four-run support, joint start/end permutation skeletons with
+      no common fixed point number exactly
+
+          sum_(j=0)^4 (-1)^j C(4,j)((4-j)!)^2 = 453.
+
+      They have 32 simultaneous-conjugacy templates, 26 connected and six
+      disconnected.  Every resident component collar has length at most 143,
+      below `N=429`, so every skeleton has at most one chronological lift.
+      A disjoint start-transposition/end-transposition quartet has common
+      winding zero; only cross-adjacent gap cancellation or exact two-deck
+      signature cancellation can make it new.
+
+      Direct compact edits obey
+
+          u_i=sum_(j<i)(Delta ell_j+Delta g_j),
+          v_i=u_i+Delta ell_i.
+
+      A single gap transfer translates one cyclic run interval and is legal
+      iff that interval's start- and end-residue images are both invariant
+      under the translation; the lifetime analogue shifts the two adjacent
+      intervals.  For `N=429`, donor bounds force a nonzero life portal to
+      contain at least 33 runs and a gap portal at least 11.  A two-gap-pulse
+      move has an exact four-atom translated-partition criterion on both
+      endpoint shores, equivalently an all-character cut identity.
+
+      Five deterministic, solver-free finite audits were run only on an H100
+      CPU core and frozen.  They prove:
+
+      * all `429*453=194,337` skeletons on four consecutive run slots are
+        structurally trivial;
+      * all 46,928 support-at-most-three states have distinct nonzero signed
+        middle/q1 signatures, with no opposite commuting pair;
+      * no nonzero single compact life or gap transfer is structurally legal;
+      * the fixed-cut separated two-gap-pulse join has 157 structural states,
+        72 with `Delta Z_7<0`, but none middle-perfect or q1-perfect; its best
+        near portal is pulses `(48,49,+1),(224,225,-1)`, with
+        `(Delta Z_7, middle holes, q1 holes)=(-12,2,1)`;
+      * among all `C(157,2)=12,246` distinct pair composites, 12,056 are
+        structural and 5,196 improve `Z_7`, but none is jointly middle/q1
+        perfect (the marginal minima are three holes each).
+
+      The unique genuinely seam-support-four member of the 157-state bank is
+      the legal resident move `(101,103,+22),(374,376,-22)`.  It has
+      `(Delta Z_7,middle holes,q1 holes)=(+15,16,11)`: support four is
+      structurally real, but this portal moves away from every protected
+      objective.
+
+      Among the move families audited here, the extensive MMM selector remains
+      the only proved connection from the resident seed to a better
+      middle/q1-perfect state: it sends
+      `(Z_7,upper holes,q2 holes,q3 holes)` from `(2973,95,47,11)` to
+      `(2961,94,47,12)`.  Thus one nonlocal middle/q1-perfect connection is
+      proved, but no q2 improvement is known.  The first exact open classes
+      are adjacent and
+      wrapping two-pulses, overlapping four-atom pulses, simultaneous
+      life-gap transfers, and the full nonconsecutive 453-skeleton support-four
+      seam atlas.  Complete statements, hashes, scopes, and permanent audit
+      scripts are in
+
+          MATH_THEOREM_COMPACT_TWO_ALLDIFFERENT_MARKOV_AND_K15_MOVE_ATLAS_20260729.md.
+
+1846. An independent physical-orbit audit of item 1843 is now complete in
+      `AUDIT_SIGMA_COMPOSITE_QUOTIENT_SOUNDNESS_20260729.md`.  The central
+      factor and Boolean short-shadow coverage claims are sound: at `k=15`
+      ranks seven/eight are `429 x 15`, while ranks six/nine are
+      `333 x 15 + 2 x 5`; every short-target witness covers all five masks,
+      each with physical multiplicity three.  The grouped-neighbour lower-q2
+      turn catalogue is exact, including the two distinct neighbour groups
+      activated by a quotient loop.
+
+      The audit found two residual prime-only bugs and fixed them fail-closed.
+      First, a connected quotient cycle lifts to `gcd(v,k)` physical cycles,
+      so the acceptance condition is `gcd(v,k)=1`, not merely `v!=0`.
+      Second, quotient cap two is not physical cap two on a short target;
+      full `k=15` coverage already forces load at least three there.  The
+      constructor now requires `--no-cap2` in this case and reports actual
+      physical upper-load histograms.
+
+      Quotient loops are valid weighted-degree-two factor components and are
+      retained in the disconnected build-only master; connectivity encodings
+      or lazy component cuts remove them when a single quotient cycle is
+      requested.  The corrected full upper-q1/lower-q2 factor CNF now uses an
+      exact grouped-neighbour turn encoding and has `36,465` variables and
+      `243,913` clauses (3.9 MB), replacing item 1843's 670,511-variable
+      expanded pair catalogue.
+
+      A fresh CPU-only H100 calibration at composite `k=9` found a connected
+      quotient cycle of voltage `4 mod 9` in 0.082 seconds.  Independent replay
+      proves all `126` middle/lower-q1, all `84` upper-q1/lower-q2 targets,
+      and one physical cycle.  The retained certificate is
+      `scratch/k9_composite_quotient_audit_20260729.certificate.json`, SHA-256
+      `2f4040031a442b3234d4e0b92ef5b157058a293eaf38425ef99a88a9a290bb3c`.
+      A second `--allow-disconnected-factor` calibration returns four physical
+      cycles of lengths `72,18,27,9`, complete q1/q2 shadows, and one quotient
+      loop; its retained certificate SHA-256 is
+      `d73f1ed34c20b6fec57def086c7f7d12b07c597832e547a27d0c7ee91944802f`.
+      Eight solver-free regressions in
+      `scratch/test_sigma_composite_quotient_soundness.py` expand all relevant
+      physical orbits and pass in under one second.  The two optional
+      lower-q2 LNS/portfolio consumers were also adapted from expanded AND
+      literals to grouped turns and replay on `k=13` (1,008 primary pairs, 92
+      one-change routes for target 405).  Section 9 of the audit proves that
+      Claude's new single-trace c-space theorem is the connected unit-voltage
+      coordinate chart of this same sigma factor master; its short-orbit
+      coverage is sound.  The only mathematical scope correction is that
+      voltage gauging requires `gcd(v,k)=1`; selector caps/radius/short width
+      lists affect negative completeness only.  No `k=15` factor or word was
+      produced by this audit.
+
+1847. Lane AD has recast the odd/even Pascal recursion and the frozen
+      `k=13 -> 14` splice in exact lifetime/gap/event-stream coordinates.
+      For every strict Johnson chronology
+
+          T_(i+1)=T_i-alpha_i+beta_i,
+
+      the facet and union rows have events
+
+          partial: (alpha_(i+1),beta_i),
+          nabla:   (alpha_i,beta_(i+1)),
+
+      and transform a one-run/following-gap pair by
+
+          partial: (ell,g)->(ell-1,g+1),
+          nabla:   (ell,g)->(ell+1,g-1).
+
+      Under the corresponding no-singleton-return hypotheses they are
+      inverse up to shift and transport the complete lower/upper flag towers:
+
+          L_q(partial T)_i=L_(q+1)(T)_i              (q>=0),
+          U_q(partial T)_i=U_(q-1)(T)_(i+1)          (q>=1),
+          U_q(nabla T)_i=U_(q+1)(T)_i                (q>=0),
+          L_q(nabla T)_i=L_(q-1)(T)_(i+1)            (q>=1).
+
+      With the backward compiler envelope convention, the exact Pascal
+      shifts are
+
+          P_d(B)_i={z} union P_(d+1)(T)_(i+1)
+
+      on the odd-to-even facet shore and
+
+          P_d^(rev U)(U_i)=P_(d-1)(T)_(i+d)
+
+      on a reversed even-to-odd union arm.  The latter requires `d>=1`,
+      interval length `L>=2`, and `beta_i!=alpha_(i-1)`.  A common base which
+      must support `T`, `partial T`, and `nabla T` through `(d,u)` has the
+      sharp bulk requirement
+
+          min ell >= d+2,   min g >= u+2.
+
+      The direct `k -> k+2` Catalan-leave ribbon is one finite all-depth
+      gadget.  For a leave gap `g`, both new labels have lifetime `g+1` and
+      gap marginal `2g-1`; the exact joint pairing is shifted by one leave
+      gap for the second label.  It is biresident through `(d,u)` exactly
+      when every leave gap satisfies
+
+          g>=d,   g>=ceil((u+2)/2).
+
+      The protected-braid theorem now has an exact compiler/Hall policy.  For
+      `s` seams, recompute the depth-`d` erosion halo and promote it plus one
+      unchanged boundary column on each side.  The promoted set `R` and its
+      incident core equations obey
+
+          |R|<=s(d+2),   incident equations<=s(d+3).
+
+      Discard all old matches on `R`, retain all transported matches outside
+      it, and match their displaced targets `D` into the actually free
+      post-promotion ports.  This is necessary and sufficient for extending
+      that retained partial matching with the promoted core; failure does not
+      exclude a global rematching outside `R`.  The result is cyclic
+      compiler-ready; a literal linear word still needs an independently
+      checked safe opening and endpoint/suffix equations.
+
+      Frozen validation is exact.  The `k=13` splice is a common-deletion
+      portal with events `(7,3),(5,8)->(7,2)` and literal terminal restitution
+      of mask 2135.  The `k=13 -> 14` six-piece braid has seam events
+      `(0,13),(13,3),(12,13),(13,2),(11,13)`, all named q2/q3 seam-exclusive
+      targets are restored, and `answers/k14.word` is literal-universal.  It
+      does not preserve dual-gap residence.  Exact interval transversals of
+      the inherited zero-gaps of length at most two are
+
+          tau(k=13)=260,   tau(k=14)=351,
+
+      so any pure piece rethreading which removes all those gaps needs at
+      least that many old cuts; this is necessary, not sufficient.  In the
+      restricted three-intact-sheet `k=11 -> 13` model, the exact run-pair
+      `L1` minimum is 146, so at most 56 of 126 parent `(ell,g)` labels can be
+      retained and at least 70 fail to coincide.  This is not a physical-edge
+      or cut lower bound.
+
+      Full statements, caveats, and the solver-free normal/`-O` byte-identical
+      replay are in
+
+          MATH_THEOREM_AD_PASCAL_EVENT_STREAM_BRAID_AND_DUAL_GAP_20260729.md,
+          scratch/audit_ad_pascal_event_stream_braid_20260729.py,
+          scratch/ad_pascal_event_stream_braid_20260729.audit.json.
+
+      This does not prove an accepting recursion in every dimension.  The
+      exact remaining gate is a nonlocal event refresh whose collars preserve
+      both flag towers and whose promoted-core residual Hall instance passes,
+      together with a safe literal opening.
+
+1848. Thread A has closed the loop-allowing composite-odd raw factor master
+      for every odd `k=2m+1`.  Let `f` be the canonical PBBS permutation on
+      rank-`m` sets and define two incidence perfect matchings
+
+          M+(A)=f(A)^c,   M-(A)=f^(-1)(A)^c,
+          theta(A)=f^(-1)(A) intersect f(A).
+
+      They are edge-disjoint, and their union is a spanning degree-two
+      middle-levels factor with lower-shore monodromy `f^2`.  The local pair
+      identities are exact:
+
+          upper-q1 at A     = theta(A)^c,
+          lower-q2 at A^c   = theta(A).
+
+      The audited PBBS first-shadow theorem gives
+
+          1 <= #{A:theta(A)=S} <= 3
+
+      for every rank-`(m-1)` target `S`.  Hence both palettes are physically
+      complete and have identical complementary load profiles.  PBBS
+      rotation equivariance and central freeness descend the two matchings to
+      a binary solution of all four quotient-master constraints for every
+      odd composite `k`.  Shadow stabilizers have order only one or three;
+      every short target orbit consequently has physical load three and
+      quotient load one.
+
+      The construction is stronger than the requested q1/q2 theorem.  Write
+      a component of `g=f^2` as `B_i` and put
+
+          T_i=f(B_i)^c=B_i union B_(i+1).
+
+      Every correct PBBS q-edge path with
+
+          intersection_(a=0)^q B_(i+a)=S
+
+      gives simultaneously
+
+          intersection_(a=-1)^q T_(i+a)=S
+
+      at carrier lower depth `q+1`, and
+
+          union_(a=0)^q B_(i+a)^c=S^c
+
+      at carrier upper depth `q`.  Thus the same factor has complete
+      correct-window support at every lower and upper rank, with complementary
+      loads bounded by `C(2q+1,q)`.  PBBS homomesy also sharpens the component
+      bound to at most `Cat_m`.
+
+      At `k=15`, both quotient target histograms are exactly
+
+          load 1^244, load 2^88, load 3^3.
+
+      The explicit PBBS point uses two of the fourteen quotient loops and is
+      disconnected/nonresident.  Therefore raw shadow feasibility and the
+      full ambient all-depth support problem are solved, while the exact
+      remaining intersection is loop-free connected coprime-voltage topology,
+      residence, a safe opening, and compiler compatibility.  The proof and
+      audits are in
+
+          THREAD_A_COMPOSITE_ODD_PBBS_TWO_MATCHING_SHADOW_FACTOR_20260729.md.
+
+1849. Lane R has implemented and independently audited the exact compact
+      `Z_15` pair-cover master.  In the quotient inclusion multigraph between
+      ranks seven and eight there are exactly 429 vertices per shore, 3,432
+      voltage-labelled edge orbits, and degree eight at every vertex.  The
+      3,432 edges lie on 3,418 endpoint pairs: 3,404 simple and 14 doubled.
+      The doubled voltage edges must not be collapsed; they account for the
+      14 projected Johnson-loop choices omitted by the older 11,998-choice
+      pipeline table.
+
+      With one binary `x_e` per incidence edge orbit and one binary
+      `y_(v,p)` for each of the 28 unordered incident-edge pairs at each of
+      the 858 vertices, the exact equations are
+
+          sum_p y_(v,p)=1,
+          x_e=sum_(p containing e)y_(v,p)
+
+      at both endpoints.  Their binary points are exactly the equivariant
+      spanning physical 2-factors, so middle ownership and lower q1 are
+      squarefree by construction.  At a rank-eight vertex the selected pair
+      has its literal rank-six intersection colour; at rank seven it has its
+      literal rank-nine union colour.  Thus q2 and upper q1 are ordinary OR
+      rows on 335 colours each, not chronology automata.  There are 24,024
+      pair variables.  For each shore, 333 full target orbits have 36
+      candidate pairs and the two size-five orbits have 12.
+
+      The quotient-normalized collision-zero refinement is also linear.  If
+      `n_C` is the rank-six pair load, then complete q2 gives `n_C>=1` and
+
+          Xi_Q=sum_C binom(n_C,2)-94=0
+
+      iff every `n_C<=2`, with load distribution `1^241 2^94`.  This is the
+      orbit-occurrence Xi used by the NAND palette; it is not a physical cap
+      two on the two short orbits, whose selected witnesses have physical
+      multiplicity three.
+
+      Complement gives an additional exact restricted submaster.  The 3,432
+      edge orbits split into 1,716 fixed-point-free complement pairs, and the
+      24,024 local pairs split into 12,012 lower/upper pairs.  Under
+      `x_e=x_(bar e)`, q2 and upper-q1 load vectors are complementary copies,
+      so either cover (and either quotient cap two) implies the other.  This
+      is a sufficient symmetry restriction, not a without-loss-of-generality
+      symmetrization theorem.
+
+      A positive exact factor has already been retained and independently
+      replayed:
+
+          scratch/k15_global_pair_cover_q2complete_raw_20260729.json,
+          scratch/k15_global_pair_cover_q2complete_20260729.audit.json.
+
+      It has all 6,435 middle owners and all 6,435 lower-q1 colours exactly
+      once, and all 5,005 physical q2 targets.  Its rank-six orbit loads are
+
+          1^249 2^78 3^8,
+
+      hence `(P_Psi,Xi_Q)=(102,8)`.  It still has 72 upper-q1 orbit holes,
+      two quotient components of rank-eight sizes 324 and 105 with oriented
+      voltage classes `{2,13}` and `{1,14}`, physical cycle lengths 4,860 and 1,575, minimum
+      residence two, and 1,215 bad residence runs.  Raw/audit SHA-256 values
+      are respectively
+
+          59fb88bd84180d16348e0b86f234362d0df490cefa160977fe939e1f837f5dc1,
+          d49297b7f2af18d740186367eefd1f57f8bdcf732c07de23c46c89fa6e43e549.
+
+      Urgent soundness reconciliation has now rerun the exact raw artifact
+      through a new no-import grouped-sigma-style physical lift.  It rebuilds
+      all 3,432 voltage-labelled edges and the 14 doubled endpoint pairs,
+      then checks the short rank-six orbits physically.  Status is
+      `PASS_CLAIM_SCOPE`: all five members of each size-five orbit have load
+      three, all 5,005 q2 targets occur, and the explicit choices equal the
+      selected-ID set.  The stronger resident double-shadow sigma auditor
+      rejects this same point for the expected reasons--1,060 physical
+      upper-q1 holes and minimum run two--not for an encoding error.  The
+      reconciliation artifacts are
+
+          MATH_AUDIT_K15_PAIRCOVER_Q2_SOUNDNESS_RECONCILIATION_20260729.md,
+          scratch/audit_k15_paircover_q2_claim_reconciliation_20260729.py,
+          scratch/k15_paircover_q2_claim_reconciliation_20260729.audit.json.
+
+      The NAND complete-q2 trace is not a feasible master hint because it
+      visits only 367/429 vertices on each central shore; it is used only for
+      modal/frequency pair guidance.  All superseded pair-cover H100 jobs
+      found during the reconciliation were stopped.  Connectivity, unit
+      voltage, residence, q3/deeper shadows,
+      safe cutting, and the literal compiler all remain separate gates.
+
+      Full theorem, implementation, hashes, and adversarial re-audit are in
+
+          MATH_THEOREM_K15_Z15_QUOTIENT_PAIR_COVER_MASTER_AND_Q2_FACTOR_20260729.md,
+          scratch/search_k15_quotient_pair_cover_cpsat_20260729.py.
+
+1850. The exact fixed-perfect-matching fibre now contains two independently
+      certified `k=15` factors with both immediate shadow decks complete.
+      Fixing one perfect matching `M0` reduces the second matching to a
+      3,002-variable (respectively 2,999-variable) SAT instance with exact
+      degree-one constraints at both shores and literal upper-q1/lower-q2
+      cover clauses.  Physical replay gives:
+
+          parent          components   upper-q1 holes   lower-q2 holes
+          strict seed          20              0               0
+          phase-2 seed         11              0               0
+
+      Their collision data are `(P+,P-,Xi)=(101,105,18)` and
+      `(108,108,28)`.  The exact identity, for 429 labels loaded into 335
+      targets on each shore, is
+
+          Xi = h+ + h-
+               + sum_A binom(load_A^+-1,2)
+               + sum_A binom(load_A^--1,2).
+
+      Thus `Xi` is exactly holes plus triple-and-higher overload.  Complete
+      decks need not have `Xi=0`; `Xi=0` is equivalent to complete decks
+      together with load cap two.
+
+      These two factors do not yet yield a word.  Their minimum coordinate
+      run is two and their residence bad-run/shortfall counts are
+      `1425/1875` and `1110/1425`.  Exhausting the ten- and five-component
+      alternating-difference cubes (`2^10+2^5=1056` states) found only the
+      original parent resident in each cube, so direct endpoint interpolation
+      cannot repair residence.
+
+      The strongest independently audited connected resident factor now has
+      one physical 6,435-cycle, minimum run four, voltage two, and
+
+          (upper-q1,lower-q2,upper-q2) quotient holes=(24,12,21),
+          (P+,P-,Xi)=(126,109,47).
+
+      This proves that the two active endpoints are complementary: exact
+      double shadows are feasible in the ambient factor fibre, and connected
+      residence is feasible, but their intersection remains open.  Sound
+      width-at-most-four motif CEGAR is now searching that intersection.
+      The frozen certificates, CNFs, transcripts, hashes, and independent
+      replay commands are in
+
+          K15_FIXED_MATCHING_DOUBLE_SHADOW_SAT_CERTIFICATES_20260729.md,
+          K15_GLOBAL_RAINBOW_FACTOR_FIBER_ENGINE_20260729.md,
+          scratch/audit_k15_global_rainbow_factor_candidate_20260729.py.
+
+      Fresh replay reproduced the retained audit hashes exactly.  No compiler
+      is run on these nonresident factors and the rigorous bound remains
+      `6438 <= nu(15) <= 6458`.
+
+1851. Residence on the nonloop fixed-`M0` double-shadow fibre has collapsed
+      to an exact width-two/three negative arc ideal.  Write
+
+          tau=M0^(-1) P,   L_(i+1)=tau(L_i),
+          T_(i+1)=L_i union L_(i+1),
+
+      and label a rank-exact lower arc `e_i=(L_i,L_(i+1))` by its inserted
+      and deleted coordinates `ins(e_i),del(e_i)`.  A one-zero lower trace
+      `101` would force `P(L)=M0(L)` and is excluded on the nonloop face.
+      Hence dilation from the lower trace to the middle trace cannot merge
+      runs, and a lower positive run of length `a` becomes a middle run of
+      length `a+1`.  Therefore depth-three residence is equivalent to
+
+          ins(e_i) != del(e_(i+1)),
+          ins(e_i) != del(e_(i+2))
+
+      for every directed factor arc.  These are respectively binary and
+      ternary negative clauses in the selected second-matching variables.
+      No chronology automaton or unbounded lazy hierarchy remains.
+
+      Independent generation gives, for the phase-2 fixed matching,
+
+          2,999 live variables,
+          2,990 binary + 17,963 ternary residence clauses,
+          19,498 base double-shadow clauses,
+          40,451 clauses total.
+
+      The retained nonresident SAT endpoint violates exactly 74 minimal
+      clauses (`21` binary, `53` ternary), while physical expansion reports
+      1,110 bad runs; the zero/nonzero equivalence passes.  The strict fixed
+      matching analog has `20,991` minimal clauses and 95 violated motifs,
+      matching 1,425 physical bad runs.  The exact proof, compiler, and
+      replay are in
+
+          K15_FIXED_M0_RESIDENCE_AS_WIDTH_TWO_THREE_ARC_IDEAL_20260729.md,
+          scratch/k15_fixed_matching_minimal_residence_motifs_20260729.py.
+
+      SAT of the complete eager CNF would prove an exact double-shadow
+      resident factor in that fixed fibre; UNSAT would prove only a
+      fixed-`M0` obstruction.  Components, deeper upper shadows, safe opening,
+      and the lower compiler remain separate after SAT.
+
+1851. The exact 56-to-8-to-28 local compression of the \(\mathbb Z_{15}\)
+      quotient factor master has been formalized and independently audited.
+      At each rank-eight orbit, the 56 old choice incidences are seven copies
+      of each of eight aligned lower neighbours.  One exactly-one row on the
+      28 unordered neighbour pairs, together with
+
+          e_a = sum_(b != a) y_ab,
+
+      is exactly the binary relation `y_ab=e_a AND e_b` with exactly two
+      edge bits selected.  The same construction at rank seven gives the
+      upper-q1 pair.  Globally, 3,432 shared voltage-labelled edge bits and
+      24,024 shore-pair bits give 27,456 meaningful variables; eliminating
+      the edge bits leaves an equivalent 24,024-variable pair-only master.
+      Its binary points are exactly the equivariant spanning physical
+      2-factors, so middle and lower q1 are squarefree automatically.
+
+      Lower q2 and upper q1 are ordinary OR rows on 335 target orbits each.
+      The atlas fibre histogram on either shore is
+
+          36^333 12^2,
+
+      with the two exceptional size-five orbits handled by literal physical
+      multiplicity three.  Complement pairs the 3,432 edges into 1,716
+      two-cycles and identifies the two immediate-shadow load vectors on the
+      complement-symmetric subface.
+
+      A retained complement-symmetric certificate closes the simultaneous
+      static pair-cover gate positively:
+
+          middle / lower q1       6435 / 6435, squarefree
+          lower q2                5005 / 5005
+          upper q1                5005 / 5005
+          loads on each shore     1^259 2^59 3^16 4^1
+          collision sum / excess  113 / 19 on each shore.
+
+      Direct replay confirms the physical load histogram
+
+          1^3870 2^870 3^245 4^15 6^5
+
+      on each deck.  The solver imposed q2 plus complement symmetry and
+      omitted the redundant upper rows; an independent physical audit
+      checked all upper targets directly.  One selected local pair on each
+      shore uses the same quotient endpoints with two different voltages
+      (edges 3229/3230).  This is a legitimate physical 15-cycle, not a
+      loop, and proves that retaining the 14 parallel-edge choices is
+      necessary.
+
+      The certificate is not a carrier.  Its seven quotient components have
+      (shore mass,voltage)
+
+          (195,2)^2, (17,3)^2, (2,4)^2, (1,11),
+
+      lifting to 11 physical cycles.  Residence has minimum two with
+      `2^600 3^750`, hence 1,350 bad runs and shortfall 1,950.  It has 303
+      lower-q3 holes, 303 upper-q2 holes, and 75 upper-q3 holes; the
+      compiler is not evaluated.  Thus static simultaneous pair cover is
+      solved, while collision floor, one unit-voltage component, residence,
+      deeper shadows, safe opening, and common-Q remain simultaneous gates.
+
+      The theorem report and frozen exact evidence are
+
+          THREAD_K_GLOBAL_PAIR_COVER_COMPRESSION_AND_Q2_COMPLETE_FACTOR_20260729.md,
+          MATH_THEOREM_K15_Z15_QUOTIENT_PAIR_COVER_MASTER_AND_Q2_FACTOR_20260729.md,
+          scratch/k15_global_pair_cover_simultaneous_raw_20260729.json,
+          scratch/k15_global_pair_cover_simultaneous_20260729.audit.json.
+
+      Raw/audit SHA-256 values are respectively
+
+          38690ae7288da3f27e772af08e3022edfc3956903f29d4e311d50b3fb60e1783,
+          dedac1b8d3ea409a86f812e66dd82a4de8a32027892a2c5a91c657fe09938545.
+
+1852. Residence on the non-loop fixed-`M0` factor fibre has an exact minimal
+      local description.  Put `tau=M0^{-1}P` on physical rank-seven states,
+      write `e_i=(L_i,L_(i+1))`, and label an arc by
+
+          ins(e_i)=L_(i+1)\\L_i,   del(e_i)=L_i\\L_(i+1).
+
+      Since a lower trace `101` would force `P(L)=M0(L)`, one-zero gaps are
+      impossible.  The middle trace is the one-step Boolean dilation of the
+      lower trace, without run coalescence.  Consequently middle residence
+      at least four is equivalent to
+
+          ins(e_i) != del(e_(i+1)) and del(e_(i+2))  for every i.
+
+      In quotient variables these are exact all-negative width-two and
+      width-three clauses.  For the phase-two fixed matching the irredundant
+      catalogue has 2,990 width-two and 17,963 width-three clauses, 20,953
+      total.  The saved exact-shadow assignment violates 74 such clauses
+      exactly when the physical audit reports 1,110 short runs.  A second
+      collision-401 fibre gives 20,971 clauses and the same zero/nonzero
+      agreement (`80` violated versus `1,200` physical bad runs).
+
+      This is a complete finite reduction of the residence/deck intersection,
+      not an existence result.  The theorem and solver-free compiler are
+
+          K15_FIXED_M0_RESIDENCE_AS_WIDTH_TWO_THREE_ARC_IDEAL_20260729.md,
+          scratch/k15_fixed_matching_minimal_residence_motifs_20260729.py.
+
+1853. The fixed-`M0` residence/shadow intersection has now been solved
+      positively at every carrier depth.  The retained factor
+
+          scratch/k15_fixed_matching_pbbs_resident_20260729/
+              u2u3l3_s801.engine.json
+
+      has 6,435 distinct middle vertices, exact lower q1, cyclic minimum run
+      four, complete lower q2 and q3, and complete upper coverage at every
+      rank.  It has nine physical components of lengths
+
+          1890, 774^5, 555, 75, 45
+
+      and `Xi=9`.  Independent factor and global-rainbow audits both pass.
+      This is not yet a word certificate.
+
+      Opening `c` exact-q1 cycles removes `c` distinct rank-`r-1` colours.
+      Row `D^(d-1)` has only `W+1` cells: after the `W-c` retained internal
+      colours, only `c-1` seam cells and two boundary cells remain.  The cut
+      colours must have an SDR into these `c+1` special capacities.  A seam
+      can host a rank-`r-1` target only when its endpoints are Johnson
+      adjacent, in which case their intersection is forced.  Thus for the
+      nine-factor at least seven of eight seams must be useful Johnson seams.
+      This pinched-row statement is independent of the much larger scalar
+      slack `2928` at k=15.
+
+      Exact seam residence is a three-vertex collar test; all lower/upper
+      target witnesses must also survive the chosen cuts or be recreated
+      across seams.  The complete reduction and retained hashes are in
+
+          K15_NINE_CYCLE_ALL_SHADOW_FACTOR_OPENING_SEAM_THEOREM_20260729.md.
+
+      The next valid claim requires a seam portfolio passing those tests,
+      followed by the exact depth-three compiler and literal OR verification.
+
+1853. Urgent soundness reconciliation of item 1849 is complete: no
+      retraction is required.  A new auditor which imports neither pair-cover
+      implementation nor the sigma generator rebuilt the exact promoted
+      artifact
+
+          scratch/k15_global_pair_cover_q2complete_raw_20260729.json
+
+      from its 429 literal `[lower,a,b]` rows.  It reconstructed all 3,432
+      voltage-labelled incidences, including the fourteen doubled endpoint
+      pairs.  The artifact selects exactly one edge in three doubled pairs,
+      none in eleven, and never both; its selected-ID list and explicit
+      choice rows have empty symmetric difference.
+
+      Literal physical expansion gives two cycles of lengths 4,860 and
+      1,575, all 6,435 middle states, squarefree lower q1, and all 5,005
+      lower-q2 targets.  The physical q2 load histogram is
+
+          1^3705 2^1170 3^130,
+
+      while the quotient-occurrence histogram is `1^249 2^78 3^8`.
+      Each member of each short rank-six orbit (representatives 3171 and
+      5285) has physical load three and quotient-occurrence load one.
+
+      The apparent failure under the factor-SAT/LNS auditor is a scope
+      mismatch.  That verifier requires a resident **double-shadow** factor,
+      whereas the item-1849 artifact is explicitly q2-only.  Fresh replay
+      reproduces its advertised nonclaims: only 3,945/5,005 upper-q1 targets
+      and minimum residence two (1,215 bad runs).  The trusted grouped
+      `SigmaInstance.verify_factor` independently returns the same numbers.
+      Hence there is no doubled-edge, voltage, or short-orbit encoding bug in
+      the promoted q2 claim.
+
+      The frozen reconciliation is
+
+          MATH_AUDIT_K15_PAIRCOVER_Q2_SOUNDNESS_RECONCILIATION_20260729.md,
+          scratch/audit_k15_paircover_q2_claim_reconciliation_20260729.py,
+          scratch/k15_paircover_q2_claim_reconciliation_20260729.audit.json.
+
+      Audit source/output SHA-256 values are
+
+          4addba9f5287c298cefb69719f59e172dad02eb89ce8494e0efb392009867435,
+          34df852f95c59c318e05ee8f4faea5910d07efd8b0d086083adfb72f04d12e1e.
+
+      All superseded pair-cover H100 processes found during this
+      reconciliation were stopped.
+
+1854. The PBBS-derived fixed-`M0` fibre satisfies the complete eager
+      residence-plus-double-shadow CNF.  All four tested matching
+      orientations were SAT in round zero, each in under 1.6 seconds.  Two
+      retained factors were expanded to all 6,435 physical middle sets and
+      independently replayed byte-for-byte.
+
+      The strongest topology endpoint (`seed0`) has
+
+          physical components             13,
+          minimum coordinate run           4,
+          residence bad/shortfall         0/0,
+          upper-q1 holes                    0,
+          lower-q2 holes                    0,
+          upper-q2 holes             8 orbits / 108 physical,
+          (P+,P-,Xi)             (103,101,16).
+
+      Its full graded audit has six missing lower-q3 orbits, eight missing
+      rank-ten upper orbits, three missing rank-eleven upper orbits, and no
+      holes at deeper upper ranks.  A second endpoint (`seed3`) has 27
+      physical components, zero residence/immediate-shadow defects, nine
+      missing upper-q2 orbits, four lower-q3 holes, and one upper-q3 hole.
+
+      This closes the former residence-versus-shadow intersection gate.  The
+      exact finite endgame is now either to add exact witnesses for the
+      remaining upper-q2/q3 targets in the same fixed-matching SAT fibre, or
+      to open the 13 resident cycles and use 12 residence-safe seams to
+      recycle the 12 cut lower-q1 colours while restoring the 11 missing
+      upper targets.  The numerical `12 seams / 11 upper holes` match is not
+      itself a proof: portals, component topology, and lower Hall must be
+      solved jointly.
+
+      Authoritative artifacts are
+
+          scratch/k15_fixed_matching_pbbs_resident_20260729/seed0.engine.json,
+          scratch/k15_fixed_matching_pbbs_resident_20260729/seed0.audit.json,
+          scratch/k15_fixed_matching_pbbs_resident_20260729/seed3.engine.json,
+          scratch/k15_fixed_matching_pbbs_resident_20260729/seed3.audit.json.
+
+      Independent replay reproduced audit SHA-256 values
+
+          6d6528ebc088b42dd47d6b321a335836ed0b4c6ecab65fbbb5dce6d062f643b4,
+          e5a0ee71e9db23b6aea1b1ce7d810025988697ca1dbb99521ce169d9f17063c4.
+
+      No linear word has yet been compiled, so the rigorous bound remains
+      `6438 <= nu(15) <= 6458`.
+
+1855. The fixed-`M0` PBBS fibre now contains a resident all-depth-complete
+      factor.  Eager width-two/three residence clauses were combined with
+      existential geodesic path witnesses for upper q2, lower q3, and upper
+      q3.  The resulting exact extension had 2,999 base variables, 1,069,003
+      path auxiliaries, and 4,191,754 clauses.  Kissat seed 801 returned SAT
+      in 20.49 process-seconds.
+
+      Independent physical replay gives
+
+          physical cycles             9
+          lengths                     1890, 774^5, 555, 75, 45
+          minimum run                 4
+          residence bad runs          0
+          upper q1 / lower q2 holes   0 / 0
+          upper q2 holes              0
+          lower q3 holes              0
+          upper holes at every rank   0
+          collision-floor excess      9.
+
+      Thus `validate_cycle_cover` returns
+      `carrier_pass_ignoring_connectivity=true`; only connectivity remains
+      at the factor level.  This is stronger than the preceding 13-cycle
+      endpoint, whose 17 residual q2/q3 orbit holes have all disappeared.
+      The exact proof, sources, hashes, and scope are frozen in
+
+          K15_PBBS_FIXED_M0_RESIDENT_ALL_DEPTH_FACTOR_20260729.md,
+          scratch/k15_fixed_matching_pbbs_resident_20260729/
+              u2u3l3_s801.engine.json,
+              u2u3l3_s801.audit.json,
+              u2u3l3_s801.fixture.txt,
+              u2u3l3_s801.kissat.out.
+
+      This is not yet a word certificate.  Opening and concatenating the
+      nine cycles costs eight seams, and the resulting linear carrier still
+      needs an exact lower Hall compilation.  The rigorous numerical bound
+      therefore remains `6438 <= nu(15) <= 6458`.
+
+1856. The resident all-depth factor of item 1855 has now been independently
+      cross-audited at the literal physical-window level.  Fresh quotient
+      expansion gives five quotient components with oriented
+      `(length,voltage)` data
+
+          (258,5), (126,4), (37,1), (5,4), (3,11),
+
+      zero loops, and nine physical cycles of lengths
+      `774^5,1890,555,75,45`.  The independent factor audit regenerates
+      byte-for-byte.  Direct enumeration of every cyclic `(q+1)`-window for
+      `q=1,...,7` gives complete lower and upper support at every rank, and
+      the unrestricted upper oracle has no hole.  Engine, selected-ID, and
+      physical-cycle digests are respectively
+
+          886877094a3eaba8950136728d131782141a4b6f882d570ecb3791827da98f83,
+          f69024ab9f58a807c4d340e2d87322def1dde851311539fffeebc7ba9411592a,
+          bc033cd5da8c2c1d9876ffc3a1f725dd03f52319324ecf94cb0f92617c69cd30.
+
+      The solver-free physical splice catalogue has 12,870 cut/orientation
+      states and 96,150 residence-safe Johnson seam arcs; every ordered pair
+      of distinct physical components has support.  This removes a coarse
+      component-topology obstruction but is not a splice certificate.  An
+      explicit eight-seam chain with distinct recycled cut colours is
+      Johnson, linearly resident, and structurally exact, yet loses upper
+      support by depth vector `(1,3,1,0,0,0,0)` and lower support by
+      `(1,3,2,0,0,0,0)`.  Thus cyclic all-depth completeness does not survive
+      an arbitrary legal opening.
+
+      The exact remaining interface is now only:
+
+      1. choose one cut/orientation per physical cycle and eight compatible
+         seams whose 6,435-state linear chronology retains unrestricted
+         upper support and exact structural residence;
+      2. find one common nonzero 6,438-letter source word `A` with
+         `D^3 A=T` covering every lower target; and
+      3. pass `verify_exact_or_word.py --k 15 --require-middle-row` on the
+         retained word.
+
+      The current q1-recycling seam rule, which leaves exactly one removed
+      lower colour for the boundary compiler, is a useful sufficient search
+      normalization, not a logically necessary word condition.  The proof,
+      exact counterexample, and scope audit are in
+
+          MATH_AUDIT_K15_PBBS_RESIDENT_ALL_DEPTH_FACTOR_AND_ENDGAME_20260729.md,
+          scratch/k15_fixed_matching_pbbs_resident_20260729/
+              u2u3l3_s801.seam_catalogue.audit.json,
+          scratch/threadD_seed0_component_seam_endgame_20260729.py.
+
+      No 6,438-letter word has been retained or verified.  Therefore the
+      rigorous numerical bound remains `6438 <= nu(15) <= 6458`.
+
+1857. Item 1856 was superseded within the same search session by exact
+      all-depth-preserving alternating switches.  The resident factor was
+      reduced through physical component counts
+
+          9 -> 4 -> 3 -> 2,
+
+      without losing residence or any lower/upper shadow at depths
+      `q=1,...,7`.  The final factor has physical cycle lengths `6390,45`.
+      Its candidate and independent-audit SHA-256 values are
+
+          0c11aefbfe3a0661c457b48f0a7a82afacc6d02d4362e23e5d710bb799135555,
+          c5f700aef824b93e257957c313a7395eb3d2512c773e6d434f08934ba93ac6f4.
+
+      They are retained as
+
+          scratch/k15_fixed_matching_pbbs_resident_20260729/
+              from3_markov_s7_merge.best.json,
+              from3_markov_s7_merge.independent.audit.json.
+
+      Thus the finite endgame became one opening on each component and one
+      seam, rather than an eight-seam chronology.
+
+1858. The `k=15` case is solved exactly.  An exhaustive census of all
+      2,300,400 directed two-component openings found
+
+          residence-safe pairs                 34,740
+          arbitrary-upper-safe pairs              480
+          boundary/compiler candidates             60.
+
+      The earlier 1,290-arc rule required the seam to recycle one removed
+      q1 colour and has no upper-complete member.  The winning seam instead
+      recycles neither colour.  It uses states `44 -> 12863`, component order
+      `(0,1)`, cuts `(22,41)`, orientations `(0,1)`, and has symmetric
+      difference two.  Every upper target survives and every lower target at
+      depth at least two survives; the two lost q1 colours `18033,18553` are
+      placed in the two global boundary cells.
+
+      The generalized depth-three compiler matches all 4,945 residual lower
+      targets using 200,192 assignment variables and 50,011 constraints and
+      emits a word of length 6,438.  Fresh root-level exhaustive replay gives
+
+          covered nonempty masks        32767 / 32767
+          missing masks                 0
+          D^3 length                    6435
+          D^3 distinct rank-8 masks     6435
+          word SHA-256                  f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b.
+
+      The word is `answers/k15.word`; the full certificate is
+      `K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md`.
+      Combining it with the
+      monotone-deadline lower bound proves
+
+          nu(15)=6438=B(15),    N(15)=6439.
+
+      The reusable correction is the **two-boundary seam principle**:
+      removed first-shadow colours need not be recycled by seams when the
+      compiler's global boundary cells can host them separately.  Every old
+      nontrivial interval for `nu(15)` is now historical.
+
+1859. Task D independently reproduced item 1858 with a separate owned
+      all-Johnson one-seam enumerator and a fresh one-worker compiler run.
+      The same nonrecycling seam, states `44 -> 12863`, cuts `(22,41)`, and
+      seam colour `17017` produced a second literal optimal word
+
+          scratch/threadD_k15_exact_6438_owned_20260729.word
+
+      with SHA-256
+
+          a37a9c82e8e57c22a78c349fcce4edb1932dee8dbdde651001cb30ebcf699585.
+
+      Its generalized compiler has exact Hall `4945/4945`, 200,192
+      assignment variables, 50,011 constraints, and 38,628 adjacent-omission
+      rows.  Independent local interval enumeration again covers
+      `32767/32767` masks and reconstructs the exact 6,435-state rank-eight
+      third derivative.  The source factor, word, middle chronology, seam,
+      all-depth shadows, and derivative chain are frozen in
+
+          K15_EXACT_6438_TWO_CYCLE_SEAM_CERTIFICATE_20260729.md,
+          scratch/threadD_k15_exact_6438_owned_broad_endgame_20260729.audit.json,
+          scratch/threadD_k15_exact_6438_owned_independent_verify_20260729.json,
+          scratch/threadD_k15_exact_6438_owned_reconstruction_20260729.audit.json.
+
+      The note also gives the reusable exact algorithm: enumerate all cut,
+      orientation, and seam choices; replay unrestricted upper intervals;
+      apply the `2d`-boundary SDR; solve the integral `DA=DP` compiler; and
+      accept only after literal verification.  Its abstract lifting lemma is:
+      a depth-`d` resident Johnson owner path `T` with complete upper intervals
+      and a lower-universal nonzero compiler `A` satisfying `DA=DP` yields
+      `D^dA=T`, hence a universal word of length `W+d`.  Connectivity of the
+      starting factor is not required.

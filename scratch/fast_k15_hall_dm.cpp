@@ -67,6 +67,14 @@ struct Audit {
   std::vector<char> dm_right;
 };
 
+struct DMComponent {
+  int core = 0;
+  int left = 0;
+  int right = 0;
+  std::array<int, 16> target_ranks{};
+  std::array<int, 9> cell_depths{};
+};
+
 std::string read_file(const std::string& path) {
   std::ifstream input(path, std::ios::binary);
   if (!input) throw std::runtime_error("cannot open " + path);
@@ -333,6 +341,62 @@ Audit audit(const std::vector<int>& middle) {
   return result;
 }
 
+std::vector<DMComponent> dm_components(const Audit& audit) {
+  const Graph& graph = audit.graph;
+  std::vector<std::vector<int>> inverse(graph.cells.size());
+  for (int left = 0; left < static_cast<int>(graph.adjacency.size()); ++left) {
+    if (!audit.dm_left[left]) continue;
+    for (int right : graph.adjacency[left]) {
+      if (audit.dm_right[right]) inverse[right].push_back(left);
+    }
+  }
+
+  std::vector<char> seen_left(audit.dm_left.size(), 0);
+  std::vector<char> seen_right(audit.dm_right.size(), 0);
+  std::vector<DMComponent> result;
+  for (int seed = 0; seed < static_cast<int>(audit.dm_left.size()); ++seed) {
+    if (!audit.dm_left[seed] || seen_left[seed]) continue;
+    DMComponent component;
+    component.core = (1 << g_k) - 1;
+    std::deque<std::pair<int, int>> queue;
+    seen_left[seed] = 1;
+    queue.emplace_back(0, seed);
+    while (!queue.empty()) {
+      const auto [side, index] = queue.front();
+      queue.pop_front();
+      if (side == 0) {
+        ++component.left;
+        const int target = graph.targets[index];
+        component.core &= target;
+        ++component.target_ranks[std::popcount(static_cast<unsigned>(target))];
+        for (int right : graph.adjacency[index]) {
+          if (audit.dm_right[right] && !seen_right[right]) {
+            seen_right[right] = 1;
+            queue.emplace_back(1, right);
+          }
+        }
+      } else {
+        ++component.right;
+        ++component.cell_depths[graph.cells[index].depth];
+        for (int left : inverse[index]) {
+          if (!seen_left[left]) {
+            seen_left[left] = 1;
+            queue.emplace_back(0, left);
+          }
+        }
+      }
+    }
+    result.push_back(component);
+  }
+  std::sort(result.begin(), result.end(), [](const DMComponent& a,
+                                             const DMComponent& b) {
+    if (a.left != b.left) return a.left > b.left;
+    if (a.right != b.right) return a.right > b.right;
+    return a.core < b.core;
+  });
+  return result;
+}
+
 template <typename T>
 void json_array(std::ostream& out, const std::vector<T>& values) {
   out << '[';
@@ -421,6 +485,7 @@ void emit(const std::string& source, const Audit& result,
     dm_cell_depths.push_back(result.graph.cells[index].depth);
     dm_cell_envelope_ranks.push_back(std::popcount(static_cast<unsigned>(result.graph.cells[index].envelope)));
   }
+  const auto components = dm_components(result);
   std::cout << ",\"status\":\""
             << (unmatched.empty() ? "PASS" : "HALL_DEFICIENT") << "\""
             << ",\"targets\":" << result.graph.targets.size()
@@ -444,6 +509,38 @@ void emit(const std::string& source, const Audit& result,
   json_histogram(std::cout, dm_cell_depths);
   std::cout << ",\"dm_cell_envelope_rank_histogram\":";
   json_histogram(std::cout, dm_cell_envelope_ranks);
+  std::cout << ",\"dm_component_count\":" << components.size()
+            << ",\"dm_components\":[";
+  for (size_t ci = 0; ci < components.size(); ++ci) {
+    if (ci) std::cout << ',';
+    const auto& component = components[ci];
+    std::cout << "{\"core\":" << component.core
+              << ",\"core_rank\":"
+              << std::popcount(static_cast<unsigned>(component.core))
+              << ",\"left\":" << component.left
+              << ",\"right\":" << component.right
+              << ",\"gap\":" << component.left - component.right
+              << ",\"target_rank_histogram\":{";
+    bool first = true;
+    for (int rank = 0; rank < static_cast<int>(component.target_ranks.size());
+         ++rank) {
+      if (!component.target_ranks[rank]) continue;
+      if (!first) std::cout << ',';
+      first = false;
+      std::cout << '\"' << rank << "\":" << component.target_ranks[rank];
+    }
+    std::cout << "},\"cell_depth_histogram\":{";
+    first = true;
+    for (int depth = 0; depth < static_cast<int>(component.cell_depths.size());
+         ++depth) {
+      if (!component.cell_depths[depth]) continue;
+      if (!first) std::cout << ',';
+      first = false;
+      std::cout << '\"' << depth << "\":" << component.cell_depths[depth];
+    }
+    std::cout << "}}";
+  }
+  std::cout << ']';
   if (certificate) {
     std::cout << ",\"matching_edges\":[";
     bool first_edge = true;

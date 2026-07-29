@@ -1,4 +1,4 @@
-# Exact answers through `k=14`
+# Exact answers through `k=15`
 
 Each `kNN.word` file is a whitespace-separated optimal nonzero word.  Every
 contiguous-subarray OR is computed over ordinary integer bitmasks.
@@ -19,6 +19,7 @@ contiguous-subarray OR is computed over ordinary integer bitmasks.
 | 12 | 926 | `6d598c62f5925d1d2dfce8279eea82069318bd93ff66d0b204c639cf06297851` |
 | 13 | 1719 | `8d202e793d3317d2c3db76fef51f9d20d0e4e09fa2899a9686285cc01f4577d0` |
 | 14 | 3434 | `7d94117099bbb46402e8f4edda718dae7eb10e2e5e34e9b588e08a198b43db17` |
+| 15 | 6438 | `f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b` |
 
 The empty word is optimal for the nonzero `k=0` problem, so no `k00.word`
 file is needed.  Prepending `0` to any listed word gives an optimal word for
@@ -27,7 +28,18 @@ the version that also requires the zero mask.
 Verify all files with:
 
 ```sh
-for k in $(seq 1 14); do
+for k in $(seq 1 15); do
   python3 verify_word.py --k "$k" "answers/k$(printf '%02d' "$k").word"
 done
 ```
+
+## Exact `k=15` certificate
+
+The monotone-deadline lower bound and the retained word give
+
+\[
+                         \nu(15)=6438.
+\]
+
+The construction and independent exhaustive verification are recorded in
+[`K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md`](../K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md).

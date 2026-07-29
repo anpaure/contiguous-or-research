@@ -43,8 +43,8 @@ The conjecture is that this lower bound is always exact:
 \boxed{\nu(k)=B(k)}.
 \]
 
-It is proved by explicit, machine-verified constructions through `k=14`.
-For `k=15,...,20`, the numbers below are therefore **proved lower bounds and
+It is proved by explicit, machine-verified constructions through `k=15`.
+For `k=16,...,20`, the numbers below are therefore **proved lower bounds and
 conjectured optimal values**, not claimed solutions.
 
 | `k` | `r` | `W=binom(k,r)` | `Lambda` | `d(k)` | `B(k)` / conjectured `nu(k)` | status |
@@ -64,7 +64,7 @@ conjectured optimal values**, not claimed solutions.
 | 12 | 6 | 924 | 1585 | 2 | **926** | exact |
 | 13 | 7 | 1716 | 4095 | 3 | **1719** | exact |
 | 14 | 7 | 3432 | 6475 | 2 | **3434** | exact |
-| 15 | 8 | 6435 | 16383 | 3 | **6438** | open target |
+| 15 | 8 | 6435 | 16383 | 3 | **6438** | exact |
 | 16 | 8 | 12870 | 26332 | 3 | **12873** | open target |
 | 17 | 9 | 24310 | 65535 | 3 | **24313** | open target |
 | 18 | 9 | 48620 | 106761 | 3 | **48623** | open target |
@@ -82,8 +82,20 @@ python3 verify_word.py --k 14 answers/k14.word
 
 to verify universal coverage and the matching lower-bound length.
 
-The first open case is `k=15`, where `B(15)=6438`.  The best current carrier
-has exact compiler Hall deficiency 29; no length-6438 word is claimed.
+The formerly open `k=15` case is now exact:
+
+\[
+                         \boxed{\nu(15)=6438}.
+\]
+
+The retained word is [`answers/k15.word`](answers/k15.word), with SHA-256
+`f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b`.
+It was independently replayed over all 32,767 nonempty masks and its third
+OR derivative is exactly the full rank-eight layer.  The construction,
+two-cycle seam census, exact lower compiler, hashes, and proof scope are in
+[`K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md`](K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md).
+The first unresolved finite case is therefore `k=16`, with conjectured value
+`B(16)=12873`.
 
 ## Research record
 
