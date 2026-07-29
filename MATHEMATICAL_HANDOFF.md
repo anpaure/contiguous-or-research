@@ -33580,3 +33580,257 @@ authoritative.
       and a lower-universal nonzero compiler `A` satisfying `DA=DP` yields
       `D^dA=T`, hence a universal word of length `W+d`.  Connectivity of the
       starting factor is not required.
+
+1860. The exact `k=15` endpoint mechanism has been extracted as a formal
+      arbitrary-odd-dimension theorem in
+
+          THREAD_A_ODD_K_TWO_BOUNDARY_SEAM_COMPILER_THEOREM_20260729.md.
+
+      Put `k=2m+1`, `r=m+1`, `W=binom(k,r)`, and let `d=d(k)` be the
+      monotone-deadline depth.  For a strongly `d`-resident linear Johnson
+      chronology `T` of all rank-`r` owners, its maximal erosion
+
+          P_j = intersection_{max(0,j-d)<=i<=min(W-1,j)} T_i
+
+      has exact rank profile
+
+          r,r-1,...,r-d+1,(r-d)^(W-d),r-d+1,...,r
+
+      and satisfies `D^d P=T`.  Let `R(P)` be every lower target absent from
+      the fixed positive rows `DP,...,D^(d-1)P`.  An injection of `R(P)` into
+      containing erosion cells, with all unused cells left maximal, is an
+      exact compiler iff every adjacent union remains `P_p union P_(p+1)`;
+      equivalently its coordinatewise adjacent-omission inequalities hold.
+      If the resulting middle chronology also covers every upper target by
+      an arbitrary-width interval, the compiled word has length `W+d` and
+      proves `nu(k)=B(k)`.
+
+      The new two-boundary lemma is exact.  In a q1-rainbow two-cycle factor,
+      cutting one edge per cycle deletes two distinct `(r-1)`-facets.  A
+      Johnson seam may recycle neither.  Each deleted facet is nevertheless
+      locally compatible with its own outer rank-`r` erosion cell because it
+      and the retained endpoint-edge facet are distinct facets whose union is
+      the endpoint owner.  Both pins must still participate in the same
+      integral omission compiler; endpoint containment alone is not enough.
+
+      PBBS supplies exact owner factorization and the complete cyclic flag
+      tower.  Exact q1 rainbowness is an additional property of the
+      complement-projected/fixed-matching factor used at `k=15`, not of the
+      raw PBBS `m`-set `f^2` factor.  PBBS does not uniformly supply a
+      two-component reduction, a post-cut `d(k)`-resident arbitrary-upper-safe
+      seam, or the common integral compiler.  Those are the precise remaining
+      hypotheses for an all-odd theorem.  No all-`k` equality is claimed.
+
+1861. Lane L has extracted the exact fixed-matching component calculus and
+      independently frozen the complete `k=15` switch chain.  If
+
+          sigma=M0^{-1}P,   Q=P pi,
+
+      and `rho` sends every marked row to the next marked row on its old
+      `sigma`-component, then
+
+          c(sigma pi)=c(sigma)-c(rho)+c(pi rho).
+
+      Thus `c(rho)` is the number of touched old components and the cycles
+      of `pi rho` are exactly the new components made from their fragments.
+      Touching several components is not enough; the cyclic interleaving
+      encoded by `pi rho` is the decisive invariant.
+
+      In the fixed PBBS `M0` fibre, three connected alternating exchanges of
+      quotient supports `4,6,4` give
+
+          9 -> 4 -> 3 -> 2
+
+      physical components with lengths
+
+          1890,774^5,555,75,45
+          -> 5715,600,75,45
+          -> 5790,600,45
+          -> 6390,45.
+
+      Every switch has identically zero upper-q1 and lower-q2 load
+      derivative.  Independent physical replay retains minimum run four,
+      fixed lower q2/q3, geodesic upper q2, arbitrary-width upper coverage,
+      and every bilateral interval layer `q=1,...,7`.
+
+      The permanent replay is
+
+          MATH_THEOREM_L_PBBS_COMPONENT_REDUCTION_AND_BOUNDARY_CAPACITY_20260729.md,
+          scratch/audit_k15_pbbs_component_reduction_chain_20260729.py,
+          scratch/k15_fixed_matching_pbbs_resident_20260729/
+              pbbs_component_reduction_chain.audit.json.
+
+      Their last two SHA-256 values are
+
+          802b4d81d6e5c44d9fd090e1f1be25cac2ae33fa8a953455762aed7d79e554f3,
+          cdd8bd2539e0bd5428e0762cecff9fe705e277db7c64588009de6fb03bbb8bec.
+
+      The final two-cycle factor has an exact bounded-switch separation: all
+      11,518 deck-safe connected alternating cycles through support eight
+      fail the quotient-voltage `2 -> 1` test.  Among 52,998,660 packets of
+      two row-disjoint primitives of individual support at most six, only
+      eight cross the component cut and satisfy the summed deck inequalities;
+      all eight remain disconnected.  Ten two-component all-depth neutral
+      routers through support five were each tested through support six with
+      no connected successor.  These are finite move-class negatives only;
+      the now-stale support-ten job was stopped when item 1858 solved `k=15`.
+
+1862. The exact general lesson is a two-boundary theorem, not a universal
+      Hamiltonization theorem.  If `R` is the set of cut q1 colours and `Q`
+      the set restored by seams, the natural q1 hole set is
+
+          H=R\Q.
+
+      A depth-`d` linear source has exactly two rank-`r-1` boundary channels,
+      independent of `d`; hence `|H|<=2` is necessary.  If `H` has an exact
+      endpoint SDR and the common omission compiler plus arbitrary-upper
+      gates pass, connectedness is unnecessary.  For a q1-rainbow two-cycle
+      factor, the two deleted cut facets are automatically locally eligible
+      at their own opposite global ends, even when the one seam recycles
+      neither colour.  This is the mechanism of item 1858.
+
+      Therefore `O(d)` components alone do **not** imply boundary
+      absorbability: at least `c-2` distinct cut colours must be restored by
+      seams when `c>2`.  The universal claim that every resident all-depth
+      PBBS factor can be reduced to `O(d)` (or two) components remains open.
+      Its exact monotone gate is the positive-cut property
+
+          exists pi: c(pi rho)<c(rho)
+
+      inside the integral deck-, residence-, and chronology-preserving
+      exchange fibre at every state above two components.  PBBS all-depth
+      support does not imply that exchange property, and no asymptotic PBBS
+      obstruction to it is known.
+
+      A concrete sufficient form is an ordered loose ternary fusion forest:
+      every admissible physical C6 whose three negative edges lie in three
+      current components and whose cut-join product is one cycle lowers the
+      count by two.  A loose spanning tree ends at one component for odd
+      initial parity; a loose two-tree forest ends at two for even parity.
+      The missing all-odd PBBS theorem is availability of such an ordered
+      forest with all deeper collars surviving, not the component arithmetic.
+
+1863. The live Claude `movecover.py` disjoint-surgery `OPTIMUM=0` claim is
+      not proof-safe.  Its upper recomputation uses the number of union-growth
+      events (`10`) as a chronological reach, while the frozen seed has
+      first-full spans up to `44`; the legal move
+
+          S(a=7,delta=3,partner=327)
+
+      changes the rank-13 upper flag at start 116 from `14335` to `16255`
+      outside the recomputed window.  The code also double-counts `FULL`,
+      prunes deck-repair catalysts with no direct missing-orbit gain, omits
+      combined run/gap legality, and enumerates only individually legal
+      active singles.
+
+      The corrected additive theorem requires commuting literal effects,
+      pairwise-disjoint q1 halos, the combined normal-form inequalities, and
+      zero summed middle/q1 signature.  Arbitrary-width upper coverage is
+      still nonlinear even under q1-halo disjointness and must use the exact
+      contained-run recurrence or valid lazy run-blocker cuts.  Existing
+      negatives force only the recorded low-arity bounds; the corrected
+      high-arity master remains potentially nonempty.  Full audit:
+
+          MATH_AUDIT_L_DISJOINT_SURGERY_SETCOVER_ILP_20260729.md.
+
+1864. Lane K has reduced the post-`k=15` odd-dimension programme to one exact
+      uniform lemma, while removing an overly strong compiler hypothesis.
+      For `k=2m+1`, let `Gamma_k` be the rank-`m`/rank-`m+1` inclusion graph.
+      A lower-q1-rainbow Johnson factor is exactly a spanning 2-factor of
+      `Gamma_k`.  The symmetric difference of any two such factors decomposes
+      into alternating even circuits, so these circuits are an algebraically
+      complete Markov basis.  Moreover, an alternating `2t`-cycle whose
+      selected edges lie in `t` distinct factor components merges those
+      components into one.  Since `Gamma_k` has no 4-cycle, a transversal
+      `C6` is the first automatic merge and two components are the natural
+      stopping scale.
+
+      For a fixed middle path `T`, the note gives the exact unrestricted
+      depth-`d` compiler.  With
+
+          P_p = intersection_{max(0,p-d)<=i<=min(p,W-1)} T_i,
+
+      source bits `a_(p,x)` satisfy `D^d A=T` iff `A_p subseteq P_p` and
+      every coordinate of each `T_i` occurs in its source window
+      `[i,i+d]`.  Every lower target must and may be witnessed by an interval
+      of at most `d` source letters; adding literal interval-OR variables gives
+      the necessary-and-sufficient Boolean system `COMP_d(T)`.  An
+      arbitrary-upper-safe `T` plus feasible `COMP_d(T)` proves `nu(k)=W+d`.
+
+      This full compiler is necessary for the uniform statement.  The
+      retained `k=11,13,15` optimal words have respectively `5,209,0` cells
+      where `DA` differs from the maximal-envelope row `DP`; hence `DA=DP`
+      is an audited `k=15` specialization, not a demonstrated all-odd normal
+      form.  The three calibrated protected factors have component lengths
+
+          k=11: 462,
+          k=13: 1547,169,
+          k=15: 6390,45,
+
+      zero linear residence defects, complete upper intervals, and lower-hole
+      depth vectors `(1,1,0,0,0)`, `(1,0,0,0,0,0)`, and
+      `(2,0,0,0,0,0,0)`.  Their q1 boundary residues are `155`, `2135`, and
+      `18553,18033`.
+
+      The exact missing lemma `UPMBC(m)` is now: the PBBS all-depth factor has
+      an alternating-circuit endpoint with at most two protected components,
+      an upper-safe resident opening outside every cut-kernel forbidden set,
+      and a feasible full `COMP_d(T)` with the at most two unrecycled cut
+      colours assigned to opposite boundary halos.  This lemma implies the
+      odd-`k` formula but is open uniformly; all current calibrations have
+      `d=3` and do not establish growing residence.  Full proofs and scope:
+
+          MATH_THEOREM_K_ALL_ODD_PBBS_MARKOV_BOUNDARY_COMPILER_REDUCTION_20260729.md.
+
+1865. Lane AD has removed the last ambiguity in the exact `k=15` trust
+      boundary and generalized the boundary mechanism by lower depth.  A new
+      standard-library auditor imports neither retained verifier, hash-pins
+      the factor/components/compiler/word, reconstructs the `6390+45`
+      opening at states `44 -> 12863`, checks `DA=DP`, the exact rank-eight
+      third derivative, residence and every fixed shadow, and directly
+      enumerates all literal interval ORs.  It returns PASS at
+      `32767/32767`; the canonical word remains
+
+          answers/k15.word
+
+      with SHA-256
+
+          f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b.
+
+      Hence CP-SAT, the factor search and the seam census are provenance, not
+      proof dependencies: the deadline theorem plus the literal word alone
+      prove `nu(15)=6438`.
+
+      For a depth-`d` resident Johnson path, the maximal erosion has exactly
+      `2d` nonbulk cells of ranks
+
+          r,r-1,...,r-d+1 | r-d+1,...,r-1,r.
+
+      A genuinely boundary-forced rank-`r-q` residual can use only the first
+      `q` cells at either end.  If `U_q` is the set of such residuals, then
+
+          sum_(s<=q) |U_s| <= 2q       (1<=q<=d).
+
+      These are only scalar shadows.  The exact condition chooses a core
+      `C<=P` with `DC=DP` and requires Hall in the graph
+
+          S ~ p  iff  C_p <= S <= P_p.
+
+      Thus `|union_(S in X) N_C(S)|>=|X|` for every residual family `X` is
+      necessary and sufficient for the integral one-core lower compiler.
+      In the q1-rainbow specialization the hole set is `H=R\Q`, only the two
+      outer endpoints are eligible, and exact endpoint Hall gives
+
+          |H|<=2,   |R intersect Q|>=c-2.
+
+      The theorem, proof scopes, the `1290` first-failure census
+      `(840,90,360)`, and frozen replay are in
+
+          MATH_AUDIT_AD_K15_CERTIFICATE_AND_C_COMPONENT_BOUNDARY_HALL_20260729.md,
+          scratch/audit_ad_k15_exact_6438_certificate_scope_20260729.py,
+          scratch/ad_k15_exact_6438_certificate_scope_20260729.audit.json.
+
+      Audit source/output SHA-256 values are respectively
+
+          0ea3eb504d0e5d6bce20f2ef6d98cab76625d5b4d347f90fd78ffd1a107e8cba,
+          c1bb8a369fb05df7c9c59948df38cd1a6778355ffc95162dcceaa8f595a5e721.

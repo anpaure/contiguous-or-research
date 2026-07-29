@@ -1,0 +1,512 @@
+{
+  "exchanges": [
+    {
+      "added_variables": [
+        17,
+        277,
+        1016,
+        597
+      ],
+      "colour_delta": {
+        "lower_q2": {},
+        "upper_q1": {}
+      },
+      "cycle_order": [
+        2,
+        39,
+        145,
+        85
+      ],
+      "removed_variables": [
+        18,
+        274,
+        1018,
+        599
+      ],
+      "rows_sorted": [
+        2,
+        39,
+        85,
+        145
+      ],
+      "support": 4
+    },
+    {
+      "added_variables": [
+        628,
+        2184,
+        1038,
+        1012,
+        1249,
+        793
+      ],
+      "colour_delta": {
+        "lower_q2": {},
+        "upper_q1": {}
+      },
+      "cycle_order": [
+        89,
+        311,
+        148,
+        144,
+        178,
+        113
+      ],
+      "removed_variables": [
+        626,
+        2181,
+        1041,
+        1010,
+        1248,
+        795
+      ],
+      "rows_sorted": [
+        89,
+        113,
+        144,
+        148,
+        178,
+        311
+      ],
+      "support": 6
+    },
+    {
+      "added_variables": [
+        52,
+        354,
+        1226,
+        736
+      ],
+      "colour_delta": {
+        "lower_q2": {},
+        "upper_q1": {}
+      },
+      "cycle_order": [
+        7,
+        50,
+        175,
+        105
+      ],
+      "removed_variables": [
+        53,
+        351,
+        1227,
+        739
+      ],
+      "rows_sorted": [
+        7,
+        50,
+        105,
+        175
+      ],
+      "support": 4
+    }
+  ],
+  "final_support_at_most_8_separation": {
+    "audit_sha256": "0d0419dfa6cc1fc1d111e90fe09df50783fb99f52b2e0aee482952b35d71d2f7",
+    "deck_safe_cycle_histogram": {
+      "3": 69,
+      "4": 67,
+      "5": 243,
+      "6": 765,
+      "7": 2356,
+      "8": 8018
+    },
+    "deck_safe_cycles": 11518,
+    "raw_cycle_histogram": {
+      "1": 2,
+      "2": 4,
+      "3": 202,
+      "4": 363,
+      "5": 1793,
+      "6": 7932,
+      "7": 38769,
+      "8": 198004
+    },
+    "topology_rejected_cycles": 11518
+  },
+  "mapping": "/Users/amir.nuriyev/Documents/problem/scratch/k15_fixed_matching_pbbs_resident_20260729/seed0.mapping.json",
+  "mapping_sha256": "2350beb3c4bed89fb56a5a698e124f094ef59da375932511b667dc7483a46bb9",
+  "neutral_router_support5_then_support6": {
+    "status": "PASS_NO_CONNECTED_SUCCESSOR",
+    "summary": "/Users/amir.nuriyev/Documents/problem/scratch/k15_fixed_matching_pbbs_resident_20260729/routed_s6.summary.json",
+    "summary_sha256": "46dfd27fceee8d987872bd636ec226e04be03f5d0c500a14855d7a2a24631755",
+    "two_component_sources": 10
+  },
+  "schema": "k15-pbbs-fixed-m0-component-reduction-chain-audit-v1",
+  "scope": "PASS proves the explicit fixed-M0 9->4->3->2 chain and the listed finite separation classes at its final state. It does not exclude larger/overlapping compound switches and does not itself compile a literal OR word.",
+  "stages": [
+    {
+      "bilateral_all_depth_holes_physical": 0,
+      "carrier_gates": {
+        "lower_q1_rainbow": true,
+        "lower_q2_missing_representatives": [],
+        "lower_q3_positive_degree_missing_representatives": [],
+        "pass_ignoring_connectivity": true,
+        "upper_arbitrary_width_missing_orbits": 0,
+        "upper_q2_geodesic_missing_orbits": 0,
+        "upper_q2_geodesic_missing_physical": 0
+      },
+      "collision_floor_excess": 9,
+      "file": "/Users/amir.nuriyev/Documents/problem/scratch/k15_fixed_matching_pbbs_resident_20260729/u2u3l3_s801.engine.json",
+      "fixed_window_tower": {
+        "1": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "2": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "3": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "4": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "5": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "6": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "7": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        }
+      },
+      "physical_component_lengths": [
+        1890,
+        774,
+        774,
+        774,
+        774,
+        774,
+        555,
+        75,
+        45
+      ],
+      "quotient_lift_profile": {
+        "physical_component_lengths": [
+          1890,
+          774,
+          774,
+          774,
+          774,
+          774,
+          555,
+          75,
+          45
+        ],
+        "physical_components": 9,
+        "quotient_components": 5,
+        "quotient_rows": [
+          {
+            "lift_cycles": 5,
+            "physical_length": 774,
+            "quotient_length": 258,
+            "voltage": 10
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 1890,
+            "quotient_length": 126,
+            "voltage": 4
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 555,
+            "quotient_length": 37,
+            "voltage": 1
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 75,
+            "quotient_length": 5,
+            "voltage": 11
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 45,
+            "quotient_length": 3,
+            "voltage": 4
+          }
+        ]
+      },
+      "residence": {
+        "minimum_run": 4,
+        "residence_bad_runs": 0,
+        "residence_shortfall": 0
+      },
+      "sha256": "886877094a3eaba8950136728d131782141a4b6f882d570ecb3791827da98f83"
+    },
+    {
+      "bilateral_all_depth_holes_physical": 0,
+      "carrier_gates": {
+        "lower_q1_rainbow": true,
+        "lower_q2_missing_representatives": [],
+        "lower_q3_positive_degree_missing_representatives": [],
+        "pass_ignoring_connectivity": true,
+        "upper_arbitrary_width_missing_orbits": 0,
+        "upper_q2_geodesic_missing_orbits": 0,
+        "upper_q2_geodesic_missing_physical": 0
+      },
+      "collision_floor_excess": 9,
+      "file": "/Users/amir.nuriyev/Documents/problem/scratch/k15_fixed_matching_pbbs_resident_20260729/s801_markov_s5.best.json",
+      "fixed_window_tower": {
+        "1": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "2": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "3": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "4": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "5": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "6": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "7": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        }
+      },
+      "physical_component_lengths": [
+        5715,
+        600,
+        75,
+        45
+      ],
+      "quotient_lift_profile": {
+        "physical_component_lengths": [
+          5715,
+          600,
+          75,
+          45
+        ],
+        "physical_components": 4,
+        "quotient_components": 4,
+        "quotient_rows": [
+          {
+            "lift_cycles": 1,
+            "physical_length": 5715,
+            "quotient_length": 381,
+            "voltage": 11
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 600,
+            "quotient_length": 40,
+            "voltage": 4
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 75,
+            "quotient_length": 5,
+            "voltage": 11
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 45,
+            "quotient_length": 3,
+            "voltage": 4
+          }
+        ]
+      },
+      "residence": {
+        "minimum_run": 4,
+        "residence_bad_runs": 0,
+        "residence_shortfall": 0
+      },
+      "sha256": "8e1af84ce459f825f6c4f41fcb8dce00bc40d8b40c1515dfef4741ac9668240d"
+    },
+    {
+      "bilateral_all_depth_holes_physical": 0,
+      "carrier_gates": {
+        "lower_q1_rainbow": true,
+        "lower_q2_missing_representatives": [],
+        "lower_q3_positive_degree_missing_representatives": [],
+        "pass_ignoring_connectivity": true,
+        "upper_arbitrary_width_missing_orbits": 0,
+        "upper_q2_geodesic_missing_orbits": 0,
+        "upper_q2_geodesic_missing_physical": 0
+      },
+      "collision_floor_excess": 9,
+      "file": "/Users/amir.nuriyev/Documents/problem/scratch/k15_fixed_matching_pbbs_resident_20260729/from4_markov_s7_merge.best.json",
+      "fixed_window_tower": {
+        "1": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "2": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "3": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "4": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "5": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "6": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "7": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        }
+      },
+      "physical_component_lengths": [
+        5790,
+        600,
+        45
+      ],
+      "quotient_lift_profile": {
+        "physical_component_lengths": [
+          5790,
+          600,
+          45
+        ],
+        "physical_components": 3,
+        "quotient_components": 3,
+        "quotient_rows": [
+          {
+            "lift_cycles": 1,
+            "physical_length": 5790,
+            "quotient_length": 386,
+            "voltage": 7
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 600,
+            "quotient_length": 40,
+            "voltage": 4
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 45,
+            "quotient_length": 3,
+            "voltage": 4
+          }
+        ]
+      },
+      "residence": {
+        "minimum_run": 4,
+        "residence_bad_runs": 0,
+        "residence_shortfall": 0
+      },
+      "sha256": "ad4cada7a193acaf275349ec90ab264178cb9106277b29e5a3d38c4b658e5b3d"
+    },
+    {
+      "bilateral_all_depth_holes_physical": 0,
+      "carrier_gates": {
+        "lower_q1_rainbow": true,
+        "lower_q2_missing_representatives": [],
+        "lower_q3_positive_degree_missing_representatives": [],
+        "pass_ignoring_connectivity": true,
+        "upper_arbitrary_width_missing_orbits": 0,
+        "upper_q2_geodesic_missing_orbits": 0,
+        "upper_q2_geodesic_missing_physical": 0
+      },
+      "collision_floor_excess": 9,
+      "file": "/Users/amir.nuriyev/Documents/problem/scratch/k15_fixed_matching_pbbs_resident_20260729/from3_markov_s7_merge.best.json",
+      "fixed_window_tower": {
+        "1": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "2": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "3": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "4": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "5": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "6": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        },
+        "7": {
+          "lower_missing_physical": 0,
+          "upper_missing_physical": 0
+        }
+      },
+      "physical_component_lengths": [
+        6390,
+        45
+      ],
+      "quotient_lift_profile": {
+        "physical_component_lengths": [
+          6390,
+          45
+        ],
+        "physical_components": 2,
+        "quotient_components": 2,
+        "quotient_rows": [
+          {
+            "lift_cycles": 1,
+            "physical_length": 6390,
+            "quotient_length": 426,
+            "voltage": 11
+          },
+          {
+            "lift_cycles": 1,
+            "physical_length": 45,
+            "quotient_length": 3,
+            "voltage": 4
+          }
+        ]
+      },
+      "residence": {
+        "minimum_run": 4,
+        "residence_bad_runs": 0,
+        "residence_shortfall": 0
+      },
+      "sha256": "0c11aefbfe3a0661c457b48f0a7a82afacc6d02d4362e23e5d710bb799135555"
+    }
+  ],
+  "status": "PASS",
+  "two_packet_support_at_most_6_separation": {
+    "audit_sha256": "b6aacf3bc9f40e842efe485b6576c5ec06e83cca4fdbb50e1b8064431dde44f6",
+    "counters": {
+      "deck_rejected": 3003555,
+      "deck_safe": 8,
+      "interaction_disconnected_rejected": 46751201,
+      "overlap_rejected": 3243896,
+      "pairs": 52998660,
+      "topology_rejected": 8
+    }
+  }
+}

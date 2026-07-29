@@ -1,0 +1,77 @@
+{
+  "DA_equals_DP": true,
+  "audit_sha256": "6f14769bbfa22e3a566046200ae664012fe385d6cef74ed5f2462dedb06c649b",
+  "boundary_pins": [
+    {
+      "position": 0,
+      "target": 18553
+    },
+    {
+      "position": 6437,
+      "target": 18033
+    }
+  ],
+  "compiler_audit_sha256": "5eeb04a61d8a085e89b05db9ca1075cfd64e5f95a9a35bcbb80711617579d125",
+  "component_lengths": [
+    6390,
+    45
+  ],
+  "components_sha256": "f765d52aa68810af0e4897c6881f46ecf016b86394341a97f894dc6b53058151",
+  "covered_nonempty_masks": 32767,
+  "cut_colours": [
+    18553,
+    18033
+  ],
+  "cuts": [
+    22,
+    41
+  ],
+  "deadline_lower_bound": {
+    "B": 6438,
+    "depth": 3,
+    "depth_capacity": 19311,
+    "depth_minus_one_capacity": 12873,
+    "lower_ideal": 16383,
+    "rank": 8,
+    "width": 6435
+  },
+  "enumerated_intervals_until_full": 122031,
+  "factor_audit_sha256": "c5f700aef824b93e257957c313a7395eb3d2512c773e6d434f08934ba93ac6f4",
+  "factor_sha256": "0c11aefbfe3a0661c457b48f0a7a82afacc6d02d4362e23e5d710bb799135555",
+  "k": 15,
+  "lower_holes": {
+    "1": 2,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0
+  },
+  "middle_layer_exact": true,
+  "middle_residence_violations": 0,
+  "middle_sha256": "bb453b77d4eb8d9b8199a3db9bec6d873367b23e9e1a8beb6a87b16a5ded4eb6",
+  "middle_width": 6435,
+  "missing_masks": 0,
+  "orientations": [
+    0,
+    1
+  ],
+  "proof_scope": "The equality nu(15)=6438 uses only the proved deadline lower bound and the literal word check. Factor, seam-census, and CP-SAT artifacts are independently replayed provenance, not trusted proof dependencies.",
+  "schema": "ad-k15-exact-6438-certificate-scope-audit-v1",
+  "seam_colour": 17017,
+  "seam_recycles_cut_colour": false,
+  "status": "PASS",
+  "upper_holes": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0
+  },
+  "word": "answers/k15.word",
+  "word_length": 6438,
+  "word_sha256": "f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b"
+}

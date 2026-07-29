@@ -25,6 +25,40 @@
   minimal resident-factor/compiler lemma.  This is corroboration and a
   general reduction, not a competing numerical claim.
 
+- [`MATH_AUDIT_AD_K15_CERTIFICATE_AND_C_COMPONENT_BOUNDARY_HALL_20260729.md`](MATH_AUDIT_AD_K15_CERTIFICATE_AND_C_COMPONENT_BOUNDARY_HALL_20260729.md)
+  gives the standard-library end-to-end trust audit and the exact
+  `c`-component opening theorem.  It separates the genuine no-go for all
+  1,290 recycled-colour seams from the recycled-colour overconstraint,
+  freezes a third independent replay of the canonical word, and proves the
+  depth-filtered boundary capacities `sum_(s<=q)|U_s|<=2q`.  The exact
+  replacement for scalar capacity is core-conditioned Hall:
+  `S~p iff C_p subseteq S subseteq P_p`, with `DC=DP`.  At q1 this reduces
+  to two endpoint channels and forces at least `c-2` distinct restored cut
+  colours.
+
+- [`THREAD_A_ODD_K_TWO_BOUNDARY_SEAM_COMPILER_THEOREM_20260729.md`](THREAD_A_ODD_K_TWO_BOUNDARY_SEAM_COMPILER_THEOREM_20260729.md)
+  extracts the dimension-independent theorem behind the exact `k=15`
+  certificate.  For odd `k`, a depth-`d(k)` resident two-cycle middle factor,
+  one arbitrary-width-upper-safe Johnson seam, and one integral
+  maximal-default compiler satisfying the adjacent omission equations imply
+  `nu(k)=B(k)`.  The note proves that a non-recycling seam has no intrinsic
+  q1 obstruction: the two deleted facets fit at the two outer erosion cells.
+  It also isolates the exact all-odd gap—post-cut residence/upper safety and
+  the common integral compiler are not supplied by cyclic PBBS support alone.
+
+- [`MATH_THEOREM_K_ALL_ODD_PBBS_MARKOV_BOUNDARY_COMPILER_REDUCTION_20260729.md`](MATH_THEOREM_K_ALL_ODD_PBBS_MARKOV_BOUNDARY_COMPILER_REDUCTION_20260729.md)
+  gives the sharper all-odd reduction using the full depth-`d` antecedent
+  system.  It proves that alternating circuits form a complete Markov basis
+  for q1-exact factors, that a transversal alternating `2t`-cycle merges
+  `t` factor components, gives the exact cut-kernel criterion for an
+  upper-safe one/two-cycle opening, and proves a necessary-and-sufficient
+  Boolean compiler `COMP_d(T)` without imposing `DA=DP`.  The resulting
+  uniform PBBS--Markov boundary-compiler lemma would prove `nu(2m+1)=B(2m+1)`.
+  It is audited positively at `k=11,13,15`, but remains unproved uniformly.
+  The distinction from the maximal-default theorem is material: the retained
+  `k=11` and `k=13` optimal words have respectively 5 and 209 cells where
+  `DA` differs from the maximal `DP`, while the `k=15` word has none.
+
 - [`K15_PBBS_FIXED_M0_RESIDENT_ALL_DEPTH_FACTOR_20260729.md`](K15_PBBS_FIXED_M0_RESIDENT_ALL_DEPTH_FACTOR_20260729.md)
   freezes the first resident all-depth-complete `k=15` factor.  The exact
   fixed-matching SAT extension has a nine-cycle physical factor, minimum run
@@ -1143,6 +1177,23 @@ Selected machine evidence includes:
   one legal end-pair swap also contain no improvement; the live CPU-only
   portfolio therefore uses longer composite trajectories to cross this
   certified basin.
+- [`MATH_THEOREM_L_PBBS_COMPONENT_REDUCTION_AND_BOUNDARY_CAPACITY_20260729.md`](MATH_THEOREM_L_PBBS_COMPONENT_REDUCTION_AND_BOUNDARY_CAPACITY_20260729.md)
+  proves the exact fixed-matching cut--join identity
+  `c(sigma pi)=c(sigma)-c(rho)+c(pi rho)`, freezes the all-depth
+  `k=15` component chain `9 -> 4 -> 3 -> 2`, and gives the exact
+  connectivity-free boundary criterion `|R\Q|<=2`.  It also records the
+  sharp correction that `O(d)` components alone are not enough: the
+  rank-`r-1` source boundary has capacity exactly two, independent of `d`.
+  The permanent replay is
+  `scratch/audit_k15_pbbs_component_reduction_chain_20260729.py` with audit
+  `scratch/k15_fixed_matching_pbbs_resident_20260729/pbbs_component_reduction_chain.audit.json`.
+- [`MATH_AUDIT_L_DISJOINT_SURGERY_SETCOVER_ILP_20260729.md`](MATH_AUDIT_L_DISJOINT_SURGERY_SETCOVER_ILP_20260729.md)
+  invalidates Claude's current disjoint-surgery set-cover `OPTIMUM=0` as a
+  proof certificate.  Its chronological upper reach is truncated, catalysts
+  are pruned, simultaneous run/gap legality is absent, and arbitrary-width
+  upper effects remain nonlinear even for q1-halo-disjoint surgeries.  The
+  note gives the corrected zero-signature high-arity master and scopes every
+  surviving finite negative exactly.
 
 ## Reproducibility boundary
 
