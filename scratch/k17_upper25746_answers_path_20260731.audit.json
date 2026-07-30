@@ -1,0 +1,49 @@
+{
+  "covered_nonempty_masks": 131071,
+  "enumerated_intervals_until_full": 103732303,
+  "k": 17,
+  "length": 25746,
+  "lower_bound_B": 24313,
+  "lower_bound_depth": 3,
+  "middle_rank": 9,
+  "middle_row_exact": false,
+  "middle_width": 24310,
+  "missing_masks": 0,
+  "row_rank_histograms": [
+    {
+      "1": 18,
+      "2": 144,
+      "3": 731,
+      "4": 2641,
+      "5": 8861,
+      "6": 10084,
+      "7": 3263,
+      "8": 4
+    },
+    {
+      "3": 4,
+      "4": 49,
+      "5": 405,
+      "6": 7051,
+      "7": 12461,
+      "8": 5773,
+      "9": 2
+    },
+    {
+      "7": 6483,
+      "8": 12871,
+      "9": 6389,
+      "11": 1
+    },
+    {
+      "8": 6484,
+      "9": 12871,
+      "10": 6386,
+      "11": 1,
+      "12": 1
+    }
+  ],
+  "status": "VERIFIED_UNIVERSAL_UPPER_BOUND",
+  "word": "answers/k17_upper25746.word",
+  "word_sha256": "f8ea81ab1f8f1280f638e7e607b32a7dd53fc541b30fe1005db8aae692be031b"
+}

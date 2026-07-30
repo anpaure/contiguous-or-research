@@ -1,0 +1,43 @@
+{
+  "interval_extension_steps": 103732303,
+  "k": 17,
+  "length": 25746,
+  "missing": [],
+  "nonempty_target_universe": 131071,
+  "nonempty_targets_covered": 131071,
+  "payload_sha256": "15cea3d8801631b98da308a6eca32e7d154057b4f2cc51ad613eeb5c0d7b35c6",
+  "scope": "all ordinary contiguous intervals of the literal 25746-cell word",
+  "spot_witnesses_zero_based_inclusive": {
+    "0x00001": [
+      10153,
+      10153
+    ],
+    "0x00002": [
+      9977,
+      9977
+    ],
+    "0x00003": [
+      6328,
+      6328
+    ],
+    "0x00079": [
+      9385,
+      9385
+    ],
+    "0x10000": [
+      12873,
+      12873
+    ],
+    "0x10079": [
+      22259,
+      22259
+    ],
+    "0x1ffff": [
+      0,
+      12873
+    ]
+  },
+  "status": "PASS_LITERAL_UNIVERSAL_WORD",
+  "word": "scratch/k17_explicit_upper25746_from_k16_20260731.word",
+  "word_sha256": "f8ea81ab1f8f1280f638e7e607b32a7dd53fc541b30fe1005db8aae692be031b"
+}

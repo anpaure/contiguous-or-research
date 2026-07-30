@@ -1,0 +1,30 @@
+{
+  "claim": "nu(17) <= 25746",
+  "construction": "X + [z] + ((X without its last cell) OR z)",
+  "covered": 131071,
+  "letter_rank_histogram": {
+    "1": 18,
+    "2": 144,
+    "3": 731,
+    "4": 2641,
+    "5": 8861,
+    "6": 10084,
+    "7": 3263,
+    "8": 4
+  },
+  "maximum_suffix_frontier": 12,
+  "missing": [],
+  "payload_sha256": "0c008401a19ad4dad8e475eb1fc6db1bbb77b8c08194c7c7db6f9dbd4ca827c7",
+  "required": 131071,
+  "scope": "explicit upper bound only; does not claim the conjectured optimum B(17)=24313",
+  "source": "scratch/k16_optimal_12873_20260731.word",
+  "source_covered": 65535,
+  "source_length": 12873,
+  "source_maximum_suffix_frontier": 12,
+  "source_required": 65535,
+  "source_sha256": "890ac346ce142f5f9ed564d487ff3e2fb99aea93ae2c104ec13765fa5d3814fe",
+  "status": "PASS_LITERAL_UNIVERSAL_WORD",
+  "word": "scratch/k17_explicit_upper25746_from_k16_20260731.word",
+  "word_length": 25746,
+  "word_sha256": "f8ea81ab1f8f1280f638e7e607b32a7dd53fc541b30fe1005db8aae692be031b"
+}

@@ -66,7 +66,7 @@ conjectured optimal values**, not claimed solutions.
 | 14 | 7 | 3432 | 6475 | 2 | **3434** | exact |
 | 15 | 8 | 6435 | 16383 | 3 | **6438** | exact |
 | 16 | 8 | 12870 | 26332 | 3 | **12873** | exact |
-| 17 | 9 | 24310 | 65535 | 3 | **24313** | open target |
+| 17 | 9 | 24310 | 65535 | 3 | **24313** | `24313 <= nu(17) <= 25746` |
 | 18 | 9 | 48620 | 106761 | 3 | **48623** | open target |
 | 19 | 10 | 92378 | 262143 | 3 | **92381** | open target |
 | 20 | 10 | 184756 | 431909 | 3 | **184759** | open target |
@@ -97,6 +97,26 @@ proof scope are in
 The first unresolved finite case is therefore `k=17`, with conjectured value
 `B(17)=24313`.  The former length-`12874`, length-`12875`, and standard
 trimmed-lift `k=16` certificates remain historical checkpoints.
+
+There is now also a literal certified upper bound
+
+\[
+                    24313\le\nu(17)\le25746.
+\]
+
+If `X` is the verified `k=16` optimum and `z` is the new coordinate, the
+word
+
+```text
+X, {z}, (X without its last cell, with z added to every cell)
+```
+
+has length `2*12873=25746` and is universal on 17 coordinates.  The retained
+word is [`answers/k17_upper25746.word`](answers/k17_upper25746.word), SHA-256
+`f8ea81ab1f8f1280f638e7e607b32a7dd53fc541b30fe1005db8aae692be031b`.
+Two independent literal scans cover all `131,071` nonempty masks.  This is an
+upper bound only; the active construction still targets the lower-bound
+length `24313`.
 
 ## Research record
 
