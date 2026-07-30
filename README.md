@@ -43,8 +43,8 @@ The conjecture is that this lower bound is always exact:
 \boxed{\nu(k)=B(k)}.
 \]
 
-It is proved by explicit, machine-verified constructions through `k=15`.
-For `k=16,...,20`, the numbers below are therefore **proved lower bounds and
+It is proved by explicit, machine-verified constructions through `k=16`.
+For `k=17,...,20`, the numbers below are therefore **proved lower bounds and
 conjectured optimal values**, not claimed solutions.
 
 | `k` | `r` | `W=binom(k,r)` | `Lambda` | `d(k)` | `B(k)` / conjectured `nu(k)` | status |
@@ -65,7 +65,7 @@ conjectured optimal values**, not claimed solutions.
 | 13 | 7 | 1716 | 4095 | 3 | **1719** | exact |
 | 14 | 7 | 3432 | 6475 | 2 | **3434** | exact |
 | 15 | 8 | 6435 | 16383 | 3 | **6438** | exact |
-| 16 | 8 | 12870 | 26332 | 3 | **12873** | open target |
+| 16 | 8 | 12870 | 26332 | 3 | **12873** | exact |
 | 17 | 9 | 24310 | 65535 | 3 | **24313** | open target |
 | 18 | 9 | 48620 | 106761 | 3 | **48623** | open target |
 | 19 | 10 | 92378 | 262143 | 3 | **92381** | open target |
@@ -77,25 +77,26 @@ For the version that also requires the zero mask, the corresponding value is
 Machine-checkable optimal words are in [`answers/`](answers/).  Run
 
 ```sh
-python3 verify_word.py --k 14 answers/k14.word
+python3 verify_word.py --k 16 answers/k16.word
 ```
 
 to verify universal coverage and the matching lower-bound length.
 
-The formerly open `k=15` case is now exact:
+The formerly open `k=16` case is now exact:
 
 \[
-                         \boxed{\nu(15)=6438}.
+                         \boxed{\nu(16)=12873}.
 \]
 
-The retained word is [`answers/k15.word`](answers/k15.word), with SHA-256
-`f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b`.
-It was independently replayed over all 32,767 nonempty masks and its third
-OR derivative is exactly the full rank-eight layer.  The construction,
-two-cycle seam census, exact lower compiler, hashes, and proof scope are in
-[`K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md`](K15_OPTIMAL_6438_TWO_CYCLE_ARBITRARY_SEAM_CERTIFICATE_20260729.md).
-The first unresolved finite case is therefore `k=16`, with conjectured value
-`B(16)=12873`.
+The retained word is [`answers/k16.word`](answers/k16.word), with SHA-256
+`890ac346ce142f5f9ed564d487ff3e2fb99aea93ae2c104ec13765fa5d3814fe`.
+Four independent replay paths cover all `65,535` nonempty masks.  The exact
+common-cap matching construction, generated-model provenance, hashes, and
+proof scope are in
+[`MATH_CERTIFICATE_K16_OPTIMAL_12873_TRUEFF_COMMONCAP_20260731.md`](MATH_CERTIFICATE_K16_OPTIMAL_12873_TRUEFF_COMMONCAP_20260731.md).
+The first unresolved finite case is therefore `k=17`, with conjectured value
+`B(17)=24313`.  The former length-`12874`, length-`12875`, and standard
+trimmed-lift `k=16` certificates remain historical checkpoints.
 
 ## Research record
 
@@ -104,7 +105,7 @@ The first unresolved finite case is therefore `k=16`, with conjectured value
   superseding sections are authoritative; older failed conjectures and stale
   numerical intervals are intentionally retained as history.
 - [`RESEARCH_INDEX.md`](RESEARCH_INDEX.md) indexes the principal proofs,
-  exact certificates, and the current `k=15` frontier.
+  exact certificates, and current frontier.
 - [`MONOTONE_DEADLINE_LOWER_BOUND_AND_EQUALITY_AUDIT_20260727.md`](MONOTONE_DEADLINE_LOWER_BOUND_AND_EQUALITY_AUDIT_20260727.md)
   records the general lower bound.
 

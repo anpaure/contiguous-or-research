@@ -1,0 +1,54 @@
+{
+  "checker_sha256": "97a118075fb71c31208b8738f17002b29ae061538ce3ef1da52fea0b0b7f745d",
+  "payload_sha256": "486395df465f157540612468f3eef0a3aed9f7f0b2213d400b3291c40935240e",
+  "pin": {
+    "position": 6389,
+    "value": 32768,
+    "value_hex": "0x8000"
+  },
+  "replay": {
+    "all_nonzero_masks_covered": 65535,
+    "middle_rows_exact": 12870,
+    "missing": [],
+    "short_lower_targets_covered": 26332
+  },
+  "schedule": {
+    "deadline_holes": [
+      0,
+      1,
+      6388
+    ],
+    "physical_short_cells": 32230,
+    "selected_area": 32224,
+    "start_holes": [
+      12870,
+      12871,
+      12872
+    ]
+  },
+  "schema": "k16-trueff-reroot-joint-commonq-decoder-audit-v1",
+  "scope": [
+    "Positive witness audit only; an UNSAT/UNKNOWN solver result proves nothing here.",
+    "No Hall matching or selector metadata is trusted for final acceptance.",
+    "All 65,535 masks are independently replayed from the decoded source word."
+  ],
+  "source": {
+    "length": 12873,
+    "outside_envelope": 0,
+    "rank_histogram": {
+      "1": 17,
+      "2": 127,
+      "3": 604,
+      "4": 2037,
+      "5": 6824,
+      "6": 3260,
+      "7": 3,
+      "8": 1
+    },
+    "sha256": "890ac346ce142f5f9ed564d487ff3e2fb99aea93ae2c104ec13765fa5d3814fe",
+    "zero_cells": 0
+  },
+  "status": "PASS_LITERAL_UNIVERSAL_WORD",
+  "target": "scratch/k16_true_fourfilter_endpoint_reroot_targets_20260731.word",
+  "target_sha256": "c7beccc38489ad0ce4f203fa11e348a9fb04a18418cdc8ac9dce038ddde06906"
+}

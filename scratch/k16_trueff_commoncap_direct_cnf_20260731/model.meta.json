@@ -1,0 +1,15 @@
+{
+  "schema": "k16.trueff.commoncap-direct-cnf.v1",
+  "target": "k16_true_fourfilter_endpoint_reroot_targets_20260731.word",
+  "target_sha256": "c7beccc38489ad0ce4f203fa11e348a9fb04a18418cdc8ac9dce038ddde06906",
+  "variables": 1055230,
+  "clauses": 4513893,
+  "incidence_variables": 347677,
+  "letter_bit_variables": 70759,
+  "remaining_lower_targets": 26331,
+  "physical_cells": 32230,
+  "reserved_singleton": {"target": 32768, "position": 6389, "cell": 12781},
+  "start_holes": [12870,12871,12872],
+  "deadline_holes": [0,1,6388],
+  "selected_area": 32224
+}
