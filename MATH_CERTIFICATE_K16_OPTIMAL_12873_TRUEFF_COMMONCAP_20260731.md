@@ -145,6 +145,18 @@ A minimal independent C++ interval enumerator is also retained as
 `scratch/verify_k16_optimal_12873_independent.cpp`; it reports
 `PASS length=12873 covered=65535/65535`.
 
+The retained fail-closed lineage audit
+`scratch/audit_lane_k16_c7be_commonq_chain_20260731.py` (SHA-256
+`8892cae1ab199eada719b9f993698145ce798d34cd4979c6fb404bdba807cca8`)
+independently hashes the input chronology before model replay, checks all
+`4,513,893` clauses and `418,436` map rows, reconstructs the byte-identical
+word, and performs the full mask replay.  The retained result is
+`scratch/k16_c7be_commonq_chain_independent_20260731.audit.json`; its
+SHA-256 is
+`d451c9b3ef40d62c54cec9139b1a969d21c1952283ba82f037f122b58d42735d`
+and its normalized payload SHA-256 is
+`80a94b84551c6c04a6c9a44d29e9615553ef721bb1409e700f65a933a9c030d2`.
+
 ## Why the simple even splice did not settle this case
 
 The closed-form splice

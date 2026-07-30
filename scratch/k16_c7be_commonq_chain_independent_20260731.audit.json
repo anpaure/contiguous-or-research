@@ -1,0 +1,215 @@
+{
+  "authenticated_prior_audits": {
+    "capacity_audit": "scratch/r_k16_true_fourfilter_reroot_pin8000_capacity_20260731.audit.json",
+    "capacity_audit_sha256": "0f75bca6cadef6b243e11c78a320c59bb8b2b29414eb2519b1d57c49fc0661f1",
+    "hall_audit": "scratch/r_k16_true_fourfilter_reroot_pin8000_hall_20260731.audit.json",
+    "hall_audit_sha256": "7dc309006db70c84be5e2065f38045863cefe54270d26c300ad03fa05f79dc15",
+    "note": "Hashes only; every carrier/schedule/Hall fact above was recomputed."
+  },
+  "checker_sha256": "8892cae1ab199eada719b9f993698145ce798d34cd4979c6fb404bdba807cca8",
+  "common_q_model": {
+    "artifact_compatibility": {
+      "corrected_source_residual_y_count": 347677,
+      "decoder_asserted_y_count": 347677,
+      "decoder_compatible_with_corrected_map": true
+    },
+    "builder_source": "scratch/k16_trueff_commoncap_direct_cnf_20260731/build_k16_trueff_commoncap_matching_cnf_20260731.cpp",
+    "builder_source_sha256": "1cc95858620183305e5b58bf158795ea5174cf22ca0fc9fb2a0cd555aeb2aa7e",
+    "decoded_model": {
+      "letter_rank_histogram": {
+        "1": 17,
+        "2": 127,
+        "3": 604,
+        "4": 2037,
+        "5": 6824,
+        "6": 3260,
+        "7": 3,
+        "8": 1
+      },
+      "literal_nonempty_masks_covered": 65535,
+      "literal_word_length": 12873,
+      "missing_masks": 0,
+      "model": "scratch/k16_trueff_commoncap_direct_cnf_20260731/solver.out",
+      "model_sha256": "2efa5c7b3a73f53d913127e4c6620c56e7828f02fa04a87ae5e5e59242796165",
+      "selected_lower_incidences": 26331,
+      "word_output": null,
+      "word_sha256": "890ac346ce142f5f9ed564d487ff3e2fb99aea93ae2c104ec13765fa5d3814fe"
+    },
+    "decoder_source": "scratch/k16_trueff_commoncap_direct_cnf_20260731/decode_verify_k16_trueff_commoncap_matching_20260731.py",
+    "decoder_source_sha256": "6395121fca6bbd7a9466ef9e035db5258f4ead7a419ebade011b89a07898a94b",
+    "generated_output": {
+      "all_clauses_exact": true,
+      "all_map_rows_exact": true,
+      "clauses": 4513893,
+      "cnf_sha256": "7fc512869e0c525183c4796b746da87a1eb4f7652eebfc6465b839218b7e6e0c",
+      "map_rows": 418436,
+      "map_sha256": "abd76cf89a1b80123e46be3067de8fffa7173710dee2bcc3e39cccd8c398849d",
+      "meta_sha256": "8f67b41a1ac7ee2c582e3927624489351b7289add665d1a1837d68ad7700aab2",
+      "prefix": "scratch/k16_trueff_commoncap_direct_cnf_20260731/model",
+      "variables": 1055230
+    },
+    "independent_counts": {
+      "blocker_occurrences": 941437,
+      "clauses": 4513893,
+      "incidence_variables": 347677,
+      "letter_bit_variables": 70759,
+      "variables": 1055230
+    },
+    "landed_builder_binary": "scratch/k16_trueff_commoncap_direct_cnf_20260731/build",
+    "landed_builder_binary_sha256": "68976fdc15bfd3bedad8030f0271ddb2db9e193c033f9a93899093e8ca38c946",
+    "literal_decoded_word": {
+      "canonical_bytes": true,
+      "letter_rank_histogram": {
+        "1": 17,
+        "2": 127,
+        "3": 604,
+        "4": 2037,
+        "5": 6824,
+        "6": 3260,
+        "7": 3,
+        "8": 1
+      },
+      "letters_outside_pinned_envelope": 0,
+      "middle_replay_failures": 0,
+      "missing_masks": 0,
+      "nonempty_interval_or_masks_covered": 65535,
+      "nonempty_letters": 12873,
+      "physical_short_cell_lower_masks_covered": 26332,
+      "word": "scratch/k16_trueff_commoncap_direct_cnf_20260731/k16_optimal_12873.word",
+      "word_length": 12873,
+      "word_sha256": "890ac346ce142f5f9ed564d487ff3e2fb99aea93ae2c104ec13765fa5d3814fe"
+    },
+    "model_semantics": {
+      "at_most_one_target_per_cell": true,
+      "every_middle_bit_supplied": true,
+      "every_selected_lower_bit_supplied": true,
+      "exactly_one_cell_per_lower_target": true,
+      "letter_bit_iff_no_selected_blocker": true,
+      "nonempty_physical_letters": true
+    },
+    "reference_decode_audit": "scratch/k16_trueff_commoncap_direct_cnf_20260731/decode.audit.json",
+    "reference_decode_audit_sha256": "a7fdc56461c1d25d496853740143badf9a88f06fba0b064d1de2185325c3a700",
+    "source_authentication_gap": "The C++ source prints the constant expected carrier SHA into metadata but does not compute the input file SHA; this audit computes it first."
+  },
+  "independent_marginal_hall": {
+    "allowed_rank_histogram": {
+      "1": 1,
+      "5": 6480,
+      "6": 12870,
+      "7": 12873,
+      "8": 6
+    },
+    "deficiency": 0,
+    "mandatory_rank_histogram": {
+      "1": 2857,
+      "2": 10531,
+      "3": 6919,
+      "4": 7197,
+      "5": 3782,
+      "6": 942,
+      "7": 2
+    },
+    "matching_pairs_sha256": "7bb9086c5168a29f74560d3846cbd1579a6273874f39f13145214341eb6c36c0",
+    "matching_size": 26331,
+    "post_pin_incidences_before_singleton_reservation": 347678,
+    "remaining_target_count": 26331,
+    "residual_incidence_count": 347677,
+    "zero_host_count": 0
+  },
+  "lineage_and_literal_carrier": {
+    "all_rank_ge_8_interval_or_masks_covered": 39203,
+    "carrier": "scratch/k16_true_fourfilter_two_reroot_uppercomplete_targets_20260731.word",
+    "carrier_alias": "scratch/k16_true_fourfilter_endpoint_reroot_targets_20260731.word",
+    "carrier_sha256": "c7beccc38489ad0ce4f203fa11e348a9fb04a18418cdc8ac9dce038ddde06906",
+    "d2_unique_exception": {
+      "index": 6390,
+      "value": "0x13c8"
+    },
+    "direction": "fwd",
+    "fixed_depth_decks": {
+      "lower_distinct": {
+        "1": 11440,
+        "2": 8008,
+        "3": 4368,
+        "4": 1820,
+        "5": 560,
+        "6": 120,
+        "7": 16,
+        "8": 1
+      },
+      "upper_distinct": {
+        "1": 11440,
+        "2": 8008,
+        "3": 4368,
+        "4": 1820,
+        "5": 560,
+        "6": 120,
+        "7": 16,
+        "8": 1
+      }
+    },
+    "formula": "reverse(0x8000|D2[:6390]) + D3 + reverse(0x8000|D2[6391:6436])",
+    "middle_count": 12870,
+    "middle_universe_missing": 0,
+    "natural": "scratch/k16_true_fourfilter_natural_targets_20260731.word",
+    "natural_sha256": "0f6d64e9311ef634169964350baa8f817b17b9d1619970c881f87e7346550a5c",
+    "opening": [
+      5134,
+      0,
+      5,
+      1,
+      0
+    ],
+    "parent": "scratch/K15_FOURFILTER_SEED.word",
+    "parent_metadata": "scratch/K15_FOURFILTER_SEED.meta.json",
+    "parent_metadata_sha256": "d1006c375c2cb69f595e7d56ffd0e585d4741ae3d4562bfd9e3d1141f223fea7",
+    "parent_sha256": "51f57125ea3e145e08ed9d5f8816d22313a010907588457260c824c6f40217f4",
+    "q1_universe_covered": 11440,
+    "reroot_operations_zero_based_inclusive": [
+      [
+        0,
+        6388
+      ],
+      [
+        12826,
+        12869
+      ]
+    ]
+  },
+  "payload_sha256": "80a94b84551c6c04a6c9a44d29e9615553ef721bb1409e700f65a933a9c030d2",
+  "pinned_schedule": {
+    "after_pin": "0x8000",
+    "before_pin": "0xc304",
+    "deadline_holes": [
+      0,
+      1,
+      6388
+    ],
+    "envelope_rank_histogram": {
+      "1": 1,
+      "5": 6480,
+      "6": 6388,
+      "7": 2,
+      "8": 2
+    },
+    "middle_replay_failures": 0,
+    "physical_cells": 32230,
+    "pin_position": 6389,
+    "pin_target": "0x8000",
+    "reserved_cell": 12781,
+    "selected_area": 32224,
+    "start_holes": [
+      12870,
+      12871,
+      12872
+    ]
+  },
+  "schema": "k16.c7be.commonq-chain-independent.v1",
+  "scope": [
+    "No artifact status field is used as evidence.",
+    "No SAT solver or carrier search is launched.",
+    "The decoded word is checked directly against the pinned envelope, physical lower cells, middle schedule, and all 65,535 interval-OR masks.",
+    "When a SAT model is supplied, every variable and every CNF clause are additionally checked and the independently reconstructed model word must equal the decoded word."
+  ],
+  "status": "PASS_LITERAL_UNIVERSAL_WORD"
+}
