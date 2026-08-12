@@ -3,6 +3,91 @@
 This note records the current mathematical state of the problem.  It deliberately
 separates theorems, verified constructions, conjectures, and suggested next steps.
 
+## 0A. Current overriding all-`k` frontier (2026-08-12)
+
+This block supersedes the August 7 proof-strategy summary, but not the exact
+finite certificates recorded below.
+
+The exact status is unchanged:
+
+    nu(k)=B(k) for 0<=k<=16,
+    24313=B(17)<=nu(17)<=25746.
+
+No `B(k)+O(1)`, eventual-equality, or all-`k` equality theorem is claimed.
+Topology defect is counted in excess of one: defect `C` means at most `C+1`
+Euler components.  The optimal Ferrers deletion has size
+`h=(Lambda-dW)_+`; at `k=17`, `h=0`, while the short-window scalar slack is
+`7401`.
+
+The generic fractional-to-integral implication is false.  Determinant-two
+owner/target/history boxes can have exact fractional marginals and no bounded-
+defect integral realization.  This is a necessary warning, not yet an
+obstruction in the literal closed-rail family.  The actual nonmaximal pure-rail
+owner columns generate
+
+    Z^{binom([k],R)}.
+
+Genuinely optional lower marks, and genuinely optional upper-witness
+annotations, split off by literal unit column differences; every whole rail
+has trace boundary zero integrally.  Hence the actual owner/lower/closed-trace
+projection has lattice
+
+    Z^{binom([k],R)} direct-sum Z^{L_residual} direct-sum {0}.
+
+This is a signed projection theorem only.  It does not imply a nonnegative,
+owner-disjoint factor, and it does not saturate compulsory palette, residence,
+phase/socket, nonoptional upper-ticket, or typed-cap coordinates.  The
+proof-safe synthesis is
+`MATH_SYNTHESIS_AUG12_INTEGRAL_LATTICE_REBASE_20260812.md`.
+
+The first positive owner step is now explicit.  For every named owner `H`, a
+conformal insertion/role macro has genuine owner-matchings on both signs and
+leaves exactly
+
+    Z_H=B^+-B^-,
+
+where `B^+` and `B^-` are simple equal-size owner matchings with the same point
+degrees.  The remaining owner-only theorem is a conformal closed-rail lift of
+this special zero-point pair, or an equivalent reserve/compound trade.  A
+generic duplicate-avoiding sequence of 2-switches cannot prove it: uniform
+hypergraph degree fibres may have no proper `i`-switch for any `i<R`.
+Moreover a fixed-core positive factor is sometimes arithmetically impossible:
+every toggle degree is divisible by `q=d+1`, so a complete core fibre would
+require `q | binom(M-1,q-1)`.  At `k=17`, `q=4`, `M=12`, and
+`binom(11,3)=165`.  A successful positive factor must therefore allocate
+owners across overlapping cores before forming cyclic decks.
+
+On the upper/topology side, a bounded protected phased bank extends to an
+ordered two-SDR.  Exact circuit signs show that a `C6` action is even and a
+one-phase `C8` action is odd.  An independently audited explicit collar now
+makes the required common-mate odd actuator transparent at every window width,
+while retaining the literal crossed two-socket action.  Appending one explicit
+owner to each collar path closes four protected cycles with `8m+24`
+incidences and exposure at most four on both shores.  Protected-Ore
+localization plus sharp partial-shadow bounds prove that this closed bank
+extends to a spanning ordered two-SDR for every `m>=12`.  Independent audit is
+PASS.  Thus local all-width current, parity, and the large phased host are
+closed.  Residence, inherited recursive-terminal identification,
+bounded-component fusion of the surrounding factor, and the common-cap
+interface remain subsequent joint rows.
+
+The endpoint analytic route has also been reduced exactly.  Every physical
+row `q` is the odd tropical `(2q+1)`-fold convolution of one head staircase,
+including finite shoulders.  Thus the full physical Bellman functional is one
+integer-staircase covariance problem.  Its sign is still open and, by itself,
+would not prove protected integral rail normality.
+
+The shortest honest remaining chain is therefore:
+
+1. conformally lift the special zero-point owner residue and align the literal
+   lower flags in an overlapping-core protected nonnegative rail factor;
+2. coinstantiate the proved all-width phased host with the recursive
+   residence/socket interface and bounded-component fusion; and
+3. plant the private common-cap prefixes in that same occurrence state.
+
+The August 12 theorem, audit, obstruction, reduction, and synthesis files are
+indexed at the beginning of `RESEARCH_INDEX.md`.
+
 ## 0. Current overriding finite status (2026-07-31)
 
 This block supersedes obsolete numerical brackets retained in the chronological

@@ -1,5 +1,119 @@
 # Research index
 
+## 2026-08-12: signed lattice closed in projection; positive rail and large-host gates isolated
+
+- [MATH_SYNTHESIS_AUG12_INTEGRAL_LATTICE_REBASE_20260812.md](MATH_SYNTHESIS_AUG12_INTEGRAL_LATTICE_REBASE_20260812.md),
+  SHA `d37ab10addabc4eeeea88a2982fd81822788659d3981616aecc5aedf0e7f589d`,
+  is the proof-safe superseding synthesis.  Generic determinant-two parity
+  boxes refute a bare fractional-to-integral inference, but they do not
+  automatically embed into the literal closed-rail columns.  Optional marks
+  split off globally, whole-rail trace boundary is identically zero, and owner
+  saturation is proved only after rigid protected rows are projected away.
+
+- [MATH_THEOREM_PURE_RAIL_FULL_OWNER_LATTICE_AND_DESIGNS_II_DIAGONAL_BARRIER_20260812.md](MATH_THEOREM_PURE_RAIL_FULL_OWNER_LATTICE_AND_DESIGNS_II_DIAGONAL_BARRIER_20260812.md),
+  SHA `363c8eda697eb04e45649d5d2a430fedaf74e6acf2fb375c9bdfcfb5bd696054`,
+  proves that the named-owner columns of the nonmaximal pure rails generate
+  the full lattice `Z^{binom([k],R)}`.  Together with
+  [MATH_THEOREM_RAIL_PACKET_OPTIONAL_MARKS_KILL_LOWER_TORSION_20260812.md](MATH_THEOREM_RAIL_PACKET_OPTIONAL_MARKS_KILL_LOWER_TORSION_20260812.md),
+  SHA `a6c8d72fce0fd5ca8b0fa512838ae01b8a04e24da4d8711142b0541fe44b607a`,
+  it eliminates owner/lower/open-history modular obstructions in the stated
+  projection.  Independent PASS audit:
+  [MATH_AUDIT_PURE_RAIL_FULL_OWNER_LATTICE_AND_DESIGNS_II_DIAGONAL_BARRIER_20260812.md](MATH_AUDIT_PURE_RAIL_FULL_OWNER_LATTICE_AND_DESIGNS_II_DIAGONAL_BARRIER_20260812.md),
+  SHA `f38845c644d9c7c3aa54ebe6b909a51045a1ec1052050c55cbf5b82e3b9e57c3`.
+  Positive semigroup membership and every compulsory rigid correlation remain
+  open.
+
+- [MATH_THEOREM_PURE_RAIL_ONE_OWNER_SIGNED_MACRO_AND_CONFORMAL_ABSORBER_GATE_20260812.md](MATH_THEOREM_PURE_RAIL_ONE_OWNER_SIGNED_MACRO_AND_CONFORMAL_ABSORBER_GATE_20260812.md),
+  SHA `82b1d3589f645b2e4ef0dbb70f5ca6c63b35ba50e9108a78eb99f6637e927b01`,
+  constructs a polynomial-support signed macro for every owner and makes the
+  complete insertion/point-correction star conformal.  Its exact residue is a
+  difference of two simple equal-size owner matchings with identical point
+  degrees.  The remaining owner gate is a compound/reserve lift of this
+  special zero-point pair.  A cited uniform-hypergraph obstruction rules out
+  a generic simple 2-switch serialization argument.
+
+- [MATH_THEOREM_CENTRAL_ODD_CYCLES_WREATHS_AND_FIXED_CORE_RAIL_SEMIGROUP_BOUNDARY_20260812.md](MATH_THEOREM_CENTRAL_ODD_CYCLES_WREATHS_AND_FIXED_CORE_RAIL_SEMIGROUP_BOUNDARY_20260812.md),
+  SHA `f39f1f5f6da882a2113447bbe0d20fa63126b00b78576867ea80ef0a3fd3bf2b`,
+  proves that every minimum odd-graph cycle is exactly a central wreath and
+  separates that valid boundary theorem from the open growing-parameter
+  wreath problem.  More importantly for positivity, any independent
+  fixed-core rail factor requires
+
+  \[
+  q\mid{M-1\choose q-1}.
+  \]
+
+  At `k=17`, `q=4`, `M=12`, and `4` does not divide `165`, so no choice of
+  legal periods can factor a complete fixed-core fibre.  This is an actual
+  positive-semigroup obstruction to the fixed-core strategy, not to the
+  global mixed-core problem; overlapping-core allocation is essential.
+
+- [MATH_THEOREM_SMALL_PROTECTED_FORBIDDEN_FACTOR_AND_PHASED_LOCAL_TWO_SDR_20260812.md](MATH_THEOREM_SMALL_PROTECTED_FORBIDDEN_FACTOR_AND_PHASED_LOCAL_TWO_SDR_20260812.md),
+  SHA `a7a42c142fc8f4d10aa03d6f330ab7b6d36f44acd1ad8101b40dc2022dd80b3b`,
+  proves exact extension of every bounded phased protected/forbidden bank to
+  an ordered two-SDR.  The circuit-sign theorem
+  [MATH_THEOREM_ORDERED_TWO_SDR_CIRCUIT_SIGN_AND_COMMON_MATE_PARITY_GATE_20260812.md](MATH_THEOREM_ORDERED_TWO_SDR_CIRCUIT_SIGN_AND_COMMON_MATE_PARITY_GATE_20260812.md),
+  SHA `f2921a33a1d105ec852cce5621ad0d9513af70926d859919a2d6bc38debba284`,
+  proves `C6` even and `C8` odd and identifies the crossed endpoint-relocation
+  parity requirement.
+
+- [MATH_OBSTRUCTION_COMMON_MATE_C8_ONE_STEP_Q3_TRANSPARENCY_20260812.md](MATH_OBSTRUCTION_COMMON_MATE_C8_ONE_STEP_Q3_TRANSPARENCY_20260812.md),
+  SHA `8bbc7ab8cada4b40a7ce64a050d5908ac0b949866ad15573241b59661068104d`,
+  proves that a fixed immediate continuation cannot make the isolated
+  common-mate `C8` q3-transparent.  The coherent transported collar in
+  [MATH_THEOREM_COMMON_MATE_C8_ONE_STEP_COLLAR_Q2_Q3_ZERO_ODD_SOCKET_20260812.md](MATH_THEOREM_COMMON_MATE_C8_ONE_STEP_COLLAR_Q2_Q3_ZERO_ODD_SOCKET_20260812.md),
+  SHA `d6432ea7934c9d0cf268b059358a61c4245cdf509901294d8c27871e3b25acfc`,
+  avoids that premise and gives exact all-width current zero, an odd
+  four-socket action, and a literal crossed two-socket first return.  PASS
+  audit:
+  [MATH_AUDIT_COMMON_MATE_C8_DEPTH_AND_ALL_WIDTH_COLLAR_20260812.md](MATH_AUDIT_COMMON_MATE_C8_DEPTH_AND_ALL_WIDTH_COLLAR_20260812.md),
+  SHA `fdb2984d0ee6a3b29bb5f027d90381a8b8276e519626ee3cb45c0ea2336d3b5c`.
+
+- The open all-width collar has `8m+8` protected incidences and is therefore
+  outside the small-bank theorem.  Its direct Ore gate is recorded in
+  [MATH_REDUCTION_COMMON_MATE_C8_ALLWIDTH_COLLAR_EXACT_ORE_GATE_AND_SELF_AUDIT_20260812.md](MATH_REDUCTION_COMMON_MATE_C8_ALLWIDTH_COLLAR_EXACT_ORE_GATE_AND_SELF_AUDIT_20260812.md),
+  SHA `d54d9578940692355183b68a0dcfd44f86b805089bea2e941e4f8b20ff6577d1`,
+  to
+
+  \[
+  \Omega_P(A)\le S_2(A)-2|A|\qquad(A\subseteq\mathcal L\setminus X).
+  \]
+
+  The local all-width algebra passes independently.  More strongly,
+  [MATH_THEOREM_COMMON_MATE_C8_ALLWIDTH_COLLAR_SPANNING_PHASED_HOST_20260812.md](MATH_THEOREM_COMMON_MATE_C8_ALLWIDTH_COLLAR_SPANNING_PHASED_HOST_20260812.md),
+  SHA `1c625076ac21b591a1ced44b19979e566071180c26c899f8a9aa61e6e6316e3f`,
+  appends one explicit owner to each path, closes four protected cycles,
+  proves exposure at most four on both shores, and uses protected-Ore
+  localization plus sharp partial shadows to produce a spanning ordered
+  two-SDR for every `m>=12`.  Independent PASS audit:
+  [MATH_AUDIT_COMMON_MATE_C8_ALLWIDTH_SPANNING_PHASED_HOST_20260812.md](MATH_AUDIT_COMMON_MATE_C8_ALLWIDTH_SPANNING_PHASED_HOST_20260812.md),
+  SHA `1a9209071c9818549a5e477b2c6486459ba81d1b392d50d50545fffc4e5d37f0`.
+  The remaining topology rows are recursive/residence/interface correlation
+  and bounded-component fusion of the surrounding factor, not large-bank
+  host existence.
+
+- [MATH_THEOREM_ENDPOINT_CRITICAL_FIRST_ROW_TROPICAL_CUBIC_AND_LATE_STAIRCASE_SATURATION_20260812.md](MATH_THEOREM_ENDPOINT_CRITICAL_FIRST_ROW_TROPICAL_CUBIC_AND_LATE_STAIRCASE_SATURATION_20260812.md),
+  SHA `dfe8e5e6293879e4c8480305976a26cad68b2ce3ddc59a7a5b6db7054539406c`,
+  and its audit
+  [MATH_AUDIT_ENDPOINT_CRITICAL_FIRST_ROW_TROPICAL_CUBIC_20260812.md](MATH_AUDIT_ENDPOINT_CRITICAL_FIRST_ROW_TROPICAL_CUBIC_20260812.md),
+  SHA `223b03fc0c5d2184a16e4fadcfedb6463ae150a655aa017b751cc4b9212c07c2`,
+  establish the first-row tropical cubic.  The superseding all-row theorem
+  [MATH_THEOREM_ENDPOINT_CRITICAL_ALL_ROW_ODD_TROPICAL_HIERARCHY_20260812.md](MATH_THEOREM_ENDPOINT_CRITICAL_ALL_ROW_ODD_TROPICAL_HIERARCHY_20260812.md),
+  SHA `6cf6456b55007435cc0e8d0701b3cd39a5658ab04ea97a7c513ecdc00e77763c`,
+  proves that row `q` is the exact odd tropical `(2q+1)`-fold convolution of
+  one head staircase and rewrites the complete physical functional in that
+  one profile.  PASS audit:
+  [MATH_AUDIT_ENDPOINT_CRITICAL_ALL_ROW_ODD_TROPICAL_HIERARCHY_20260812.md](MATH_AUDIT_ENDPOINT_CRITICAL_ALL_ROW_ODD_TROPICAL_HIERARCHY_20260812.md),
+  SHA `a3112a6d481f407d139a171e6e992b916297b0ccf8c43cb6b06e36700c3ae2fa`.  The final
+  covariance sign remains open.
+
+The principal mathematical gate is now overlapping-core protected
+nonnegative rail normality/flag alignment for the special zero-point owner
+residue.  The proved all-width collar host must then be co-instantiated with
+the recursive residence/socket interface, bounded-component fusion, and
+private common-cap prefixes in the same occurrence object.  No
+additive-constant theorem is currently claimed.
+
 ## 2026-08-07: superseding all-`k` frontier and proof-safe remaining gate
 
 - The exact finite status is unchanged:
