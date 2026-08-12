@@ -1,0 +1,29 @@
+length=3434 covered=15445 required=16383
+rank 1: length1=14
+rank 2: length1=91
+rank 3: length1=359 length2=5
+rank 4: length1=983 length2=18
+rank 5: length1=1879 length2=123
+rank 6: length2=3003
+rank 7: length2=1 length3=3431
+rank 8: length4=2478
+rank 9: length5=1658
+rank 10: length6=908 length7=22 length8=3
+rank 11: length7=355 length8=6 length9=1 length10=1
+rank 12: length8=91
+rank 13: length9=14
+rank 14: length10=1
+windows 1: rank1=14 rank2=91 rank3=359 rank4=983 rank5=1879
+windows 2: rank3=6 rank4=20 rank5=141 rank6=3003 rank7=1
+windows 3: rank7=3432
+windows 4: rank8=2478
+windows 5: rank8=330 rank9=1658
+windows 6: rank8=33 rank9=791 rank10=908
+windows 7: rank8=4 rank9=215 rank10=761 rank11=355
+windows 8: rank9=51 rank10=463 rank11=359 rank12=91
+windows 9: rank9=10 rank10=236 rank11=334 rank12=91 rank13=14
+windows 10: rank9=2 rank10=105 rank11=295 rank12=91 rank13=14 rank14=1
+windows 11: rank9=1 rank10=36 rank11=231 rank12=91 rank13=14 rank14=1
+windows 12: rank9=1 rank10=15 rank11=165 rank12=91 rank13=14 rank14=1
+windows 13: rank10=7 rank11=97 rank12=91 rank13=14 rank14=1
+windows 14: rank10=2 rank11=54 rank12=91 rank13=14 rank14=1

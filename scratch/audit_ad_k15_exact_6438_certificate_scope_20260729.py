@@ -226,9 +226,20 @@ def main() -> None:
     if (
         winner.get("source_state"),
         winner.get("target_state"),
+        winner.get("component_order"),
+        winner.get("cuts"),
+        winner.get("orientations"),
         compiler.get("status"),
         compiler.get("output_sha256"),
-    ) != (44, 12863, "VERIFIED_OPTIMAL", EXPECTED[WORD]):
+    ) != (
+        44,
+        12863,
+        [0, 1],
+        [22, 41],
+        [0, 1],
+        "VERIFIED_OPTIMAL",
+        EXPECTED[WORD],
+    ):
         raise AssertionError("compiler provenance does not identify the canonical word")
 
     middle_payload = " ".join(map(str, middle)).encode() + b"\n"
@@ -274,9 +285,10 @@ def main() -> None:
         ],
         "proof_scope": (
             "The equality nu(15)=6438 uses only the proved deadline lower "
-            "bound and the literal word check. Factor, seam-census, and "
-            "CP-SAT artifacts are independently replayed provenance, not "
-            "trusted proof dependencies."
+            "bound and the literal word check. This audit hash-pins the "
+            "factor and compiler provenance and independently reconstructs "
+            "the winning chronology, but does not rerun their searches; "
+            "none is a trusted proof dependency."
         ),
     }
     result["audit_sha256"] = sha256(

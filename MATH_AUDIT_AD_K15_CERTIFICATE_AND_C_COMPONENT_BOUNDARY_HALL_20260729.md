@@ -62,7 +62,7 @@ scratch/audit_ad_k15_exact_6438_certificate_scope_20260729.py
 with SHA-256
 
 ```text
-0ea3eb504d0e5d6bce20f2ef6d98cab76625d5b4d347f90fd78ffd1a107e8cba.
+2480631de4806dc5c347f83ff9c08d8b84d07fcc2f8c2fa2d04df28ee47b19c3.
 ```
 
 Its retained output is
@@ -74,17 +74,21 @@ scratch/ad_k15_exact_6438_certificate_scope_20260729.audit.json
 with file SHA-256
 
 ```text
-c1bb8a369fb05df7c9c59948df38cd1a6778355ffc95162dcceaa8f595a5e721
+3b0db74d8d50731ceb7c708a6c7bb66e5be6c80e9139e558231bf27622d96f90
 ```
 
-and internal semantic digest
+and internal semantic digest (the canonical payload hash before inserting
+the `audit_sha256` field)
 
 ```text
-6f14769bbfa22e3a566046200ae664012fe385d6cef74ed5f2462dedb06c649b.
+c946caa64b6ce0360dfb630017f10a431b61f7df736008304aa64b068d6974a6.
 ```
 
-The auditor imports neither retained verifier.  It checks the following
-chain from raw JSON and word bytes.
+The auditor imports neither retained verifier.  It hash-pins the search
+provenance, independently reconstructs the winning chronology, and checks
+the following chain from raw JSON and word bytes.  It does not rerun the
+factor search, the 2,300,400-pair census, or CP-SAT; those are deliberately
+outside the proof trust boundary.
 
 | object | SHA-256 |
 |---|---|
@@ -126,7 +130,10 @@ and the separately written verifier `scratch/verify_exact_or_word.py`
 (SHA-256
 `9d3498964c5b2eb83dcf6e36727e9b0e30cc2e17bac2db7ef057138cef1dd26d`)
 also pass.  Their agreement is corroborating evidence; the new replay above
-is an independent third implementation.
+is an independent third implementation.  A fourth, compiled C++ verifier
+(`verify_or_array.cpp`, SHA-256
+`2ef221f819cc6df5eea81aebcb194a1ff76bf0229c47333b3caa367c01df80c4`)
+independently returns `length=6438 covered=32767 required=32767`.
 
 ## 3. Exact scope of the one-seam census
 
@@ -200,7 +207,13 @@ colour rule, rather than one-seam topology, was the decisive overconstraint.
 
 ## 4. General component-opening notation
 
-Fix integers `r>=1`, `d>=1`, and let
+Fix a finite ground set `[k]` and integers
+
+\[
+                    1\le d<r,\qquad W\ge d,
+\]
+
+and let
 
 \[
  T=(T_0,\ldots,T_{W-1})
@@ -266,8 +279,12 @@ Thus there are exactly `2d` nonbulk source cells, with ranks
 **Proof.**  In any block of at most `d` Johnson transitions, the deleted
 coordinates are distinct.  Repeating a deletion would require reinsertion
 and a new internal positive run of length at most `d`, contrary to
-residence.  Therefore each additional transition lowers the block
-intersection rank by exactly one, proving (5.1).  Coordinatewise, a middle
+residence.  Moreover, no deleted coordinate can have been inserted earlier
+in the same block: its insertion-to-deletion trace would itself be a short
+internal positive run.  Thus every transition deletes a previously
+undeleted member of the block's first state, and each additional transition
+lowers the block intersection rank by exactly one, proving (5.1).
+Coordinatewise, a middle
 one in an internal run belongs to some length-`d+1` subwindow contained in
 that run.  If its run meets a global end, use instead the corresponding
 truncated erosion window ending at that middle position (at the left) or
@@ -325,10 +342,20 @@ then `p in B_q`.  Consequently, for every `1<=q<=d`,
 **Proof.**  Outside `B_q`, equation (5.1) gives `|P_p|<r-q`, except for the
 two cells of rank exactly `r-q` at boundary depth `q`.  Containment in an
 equal-rank cell would force `S=P_p`.  For `q<d`, that cell also occurs in
-the fixed row `D^(d-q)P`, contradicting `S in F(P)`.  For `q=d`, equality is
-excluded explicitly by (5.6).  Hence every eligible position lies in
-`B_q`.  The banks are nested and one source position cannot carry two
-distinct targets, proving (5.7).  QED.
+the fixed row `D^(d-q)P`: the two exact identities are
+
+\[
+ P_q=(D^{d-q}P)_q,
+ \qquad
+ P_{W+d-q-1}=(D^{d-q}P)_{W-1}.
+\]
+
+They follow because the erosion cells are nested toward each outer end, so
+the indicated adjacent union equals its largest end cell.  Thus equality
+would contradict `S in F(P)`.  For `q=d`, equality is excluded explicitly
+by (5.6).  Hence every eligible position lies in `B_q`.  The banks are
+nested and one source position cannot carry two distinct targets, proving
+(5.7).  QED.
 
 The inequalities (5.7) are necessary capacity tests, not sufficient ones.
 Two targets may have the same sole endpoint, and assignments in adjacent
@@ -366,8 +393,19 @@ there is a core `C` satisfying (6.1) and
         \quad\text{for every }X\subseteq\mathcal F(P).}     \tag{6.3}
 \]
 
-Prescribed endpoint or boundary pins are enforced by fixing their matching
-edges before applying (6.3) to the remaining targets and positions.
+Prescribed endpoint or boundary pins require the following contracted Hall
+test.  For every pin `S@p`, first require
+
+\[
+                         C_p\subseteq S\subseteq P_p.       \tag{6.3a}
+\]
+
+Pinned positions must be distinct (after identifying duplicate identical
+pins).  Remove **every** pinned position, including a pin whose target is not
+in `F(P)`, and remove from `F(P)` every target already supplied by a pin.
+Then apply (6.3) to the remaining targets with all pinned positions deleted
+from their neighbourhoods.  This contracted condition is necessary and
+sufficient for the fixed core `C`.
 
 **Proof.**  Given `C` and a matching saturating `F(P)`, put `A_p=S` at the
 position matched to `S`, and put `A_p=P_p` at every unmatched position.
@@ -377,15 +415,19 @@ Then
  C\subseteq A\subseteq P,
 \]
 
-so (6.1) sandwiches every adjacent union and gives `DA=DP`.  The matched
+so (6.1) sandwiches every adjacent union and gives `DA=DP`.  Equation (5.1)
+and `d<r` make every `P_p` nonempty; matched targets are nonempty as well.
+The matched
 letters supply all targets in `F(P)`; every other lower target already occurs
 in a fixed positive derivative row.
 
-Conversely, if `DA=DP`, then `A_p subseteq P_p`.  A target in `F(P)` cannot
-be represented by an interval of length at least two, by the observation
-after (5.4), so it has a distinct literal source position.  Taking `C=A`
-gives (6.1), and those literal occurrences give a matching.  Hall's theorem
-is exactly (6.3).  QED.
+Conversely, `DA=DP` and Lemma 5.1 give `D^dA=T`.  Hence `A_p` is contained
+in every middle window `T_i` whose source interval contains position `p`, so
+`A_p subseteq P_p` by (4.1).  A target in `F(P)` cannot be represented by an
+interval of length at least two, by the observation after (5.4), so it has a
+distinct literal source position.  Taking `C=A` gives (6.1), and those
+literal occurrences give a matching.  Hall's theorem is exactly (6.3).
+QED.
 
 For boundary-forced targets, (6.3) restricts to
 
@@ -395,8 +437,10 @@ For boundary-forced targets, (6.3) restricts to
  (X\subseteq\mathcal U_1\cup\cdots\cup\mathcal U_q).       \tag{6.4}
 \]
 
-This is the requested exact endpoint Hall condition.  The scalar bounds
-(5.7) are only its cardinality shadows.
+This is the exact restriction of Hall to the shallow boundary subfamilies.
+It is not a replacement for (6.3): mixed families containing deeper targets
+may compete for the same boundary positions.  The scalar bounds (5.7) are
+only cardinality shadows.
 
 ## 7. The sharp lower-`q1` specialization
 
@@ -455,38 +499,77 @@ fail Hall.  If the two unrecycled colours belong to the components placed at
 the global left and right ends, their endpoint eligibility is automatic from
 rainbow uniqueness, and the two-endpoint matching succeeds.
 
-For deeper lower shadows, let `H_q` be the hole set obtained from the exact
-load formula (4.2), and retain only the genuinely boundary-forced part
+For deeper lower shadows, let `H_q` be the complete rank-`r-q` hole set of
+the opened path's `(q+1)`-window intersection deck, computed by (4.2).  Under
+the resident linear tower used here,
 
 \[
- \widehat H_q=H_q\cap\mathcal U_q.                           \tag{7.7}
+                            H_q=\mathcal U_q
+                            \qquad(1\le q\le d).             \tag{7.7}
 \]
 
-Then the exact quantitative consequence is
+Indeed, the natural depth-`q` intersection row is exactly
+`D^(d-q)P`.  A cell of any other positive row having rank `r-q` can occur
+only in an endpoint ramp, where the two identities displayed in Lemma 5.2
+show that it is already a cell of `D^(d-q)P`; at `q=d`, the natural row is
+`P` itself.  Hence absence from the natural deck is exactly the definition
+of `U_q` in (5.5)--(5.6).  The quantitative consequence is therefore
 
 \[
- \boxed{\sum_{s=1}^q|\widehat H_s|\le2q
+ \boxed{\sum_{s=1}^q|H_s|\le2q
         \quad(1\le q\le d),}                               \tag{7.8}
 \]
 
-together with the full Hall cuts (6.4).  Targets already present in another
-fixed derivative row are not counted in `widehat H_q`; calling every missing
-minimum-width q-window a boundary demand would be an overcount.
+together with the global fixed-core Hall inequalities (6.3), including
+mixed shallow/deep subsets.  Equation (6.4) is only their shallow
+restriction.
+
+### Proposition 7.1 (the two q1 channels do not require `DA=DP`)
+
+Let `A` be any nonempty source word with `D^dA=T`, where `T` is the resident
+Johnson path above.  Among rank-`r-1` targets absent from the internal
+Johnson intersection palette, at most two can have source-interval witnesses
+in `A`: one through position `0` and one through position `W+d-1`.  If `A`
+is lower-complete, the internal palette consequently has at most two holes.
+
+**Proof.**  A rank-`r-1` witness has length at most `d`, since a longer
+interval contains a complete `(d+1)`-window with rank-`r` union.  Any such
+interval `I=[a,b]` avoiding both extreme source positions has
+`1<=a<=b<=W+d-2`.  Choose
+
+\[
+ \max(0,b-d)\le i\le\min(W-2,a-1);
+\]
+
+this integer interval is nonempty because `b-a+1<=d`, `a>=1`, and
+`b<=W+d-2`.  Then `I` is contained in the overlap `[i+1,i+d]` of the two
+consecutive source windows `[i,i+d]` and `[i+1,i+d+1]`.  Its union is
+therefore contained in (T_i\cap T_{i+1}).  Both sets have rank `r-1`, so
+equality holds and the target is an internal Johnson colour.  The only
+remaining witnesses are prefixes through position `0` and suffixes through
+position `W+d-1`.
+Prefix unions are nested, as are suffix unions; two distinct nested sets
+cannot both have rank `r-1`.  Thus each end supplies at most one
+palette-absent witnessed colour.  Under lower completeness every palette
+hole is witnessed.  QED.
 
 ## 8. Complete `c`-component opening theorem
 
-### Theorem 8.1 (resident component-factor to optimal literal word)
+### Theorem 8.1 (resident component-factor to a universal literal word)
 
-Let a rank-`r` factor on all `W` middle sets be opened once in each of its
+Fix `[k]`, put `W=binom(k,r)`, and let a rank-`r` factor on all `W` middle
+sets, with `1<=d<r` and `W>=d`, be opened once in each of its
 `c` components and concatenated into a `d`-resident Johnson path `T`.  Let
-`P` be (4.1).  Within the exact one-core architecture `DA=DP`, an optimal
+`P` be (4.1).  Within the exact one-core architecture `DA=DP`, a universal
 literal word of length `W+d` exists if and only if:
 
 1. every rank greater than `r` target is the union of an interval of `T`;
-2. there is a core `C` satisfying (6.1) and all Hall inequalities (6.3); and
-3. every constructed source letter is nonempty.
+2. there is a core `C` satisfying (6.1) and all Hall inequalities (6.3).
 
-If the original factor is q1-rainbow, condition 2 implies the sharper seam
+All constructed letters are nonempty because (5.1) and `d<r` make every
+default `P_p` nonempty and every matched target is nonempty.  If, separately,
+`d=d(k)` and the imported deadline theorem gives the lower bound `W+d`, this
+universal word is optimal.  If the original factor is q1-rainbow, condition 2 implies the sharper seam
 condition (7.6) and the endpoint Hall test (7.3)--(7.4).
 
 **Proof.**  Lemma 5.1 gives `D^dP=T`; (6.1)--(6.3) give a nonempty `A` with

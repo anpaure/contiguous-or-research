@@ -15,3 +15,22 @@ __pycache__/
 *.status
 *.tgz
 tmp/
+
+# Runtime/search products are not publication artifacts.  Compact replay
+# inputs under scratch/ must be added deliberately with `git add -f`.
+scratch/**
+*.stdout
+*.stderr
+*.time
+*.resource
+*.stats
+*.pid
+*.exit
+*.dratb
+*.proof
+*.cnfpart
+*.map
+
+# Finder/copy collision suffixes; keep one canonical path.
+* 2
+* 2.*

@@ -1,0 +1,505 @@
+# K16 five-lock automaton: integral floor 106 and the count-106 normal form
+
+Date: 2026-07-30  
+Status: **proved for the frozen source-relative seam catalogue**
+
+## 1. Result
+
+Let `E` be the 211,604 direction-coherent seams of the frozen K16
+length-eight source.  For each seam `e:u->v`, let `H(e)` be its Boolean set of
+serviced lower-q2 and upper-q3 source defects.  Suppose
+
+\[
+ x\in\mathbb Z_{\ge0}^{E},\qquad
+ \sum_{e\in\delta^+(v)}x_e=\sum_{e\in\delta^-(v)}x_e
+ \quad(v),
+\]
+
+and every one of the 93 fixed defects is serviced at least once.  Then
+
+\[
+                         C:=\sum_e x_e\ge \boxed{106}.       \tag{1.1}
+\]
+
+The theorem allows unrestricted **integral** seam multiplicity, so it applies
+a fortiori to a binary separated-port selection.  It does not apply to an
+arbitrary real or fractional circulation.
+
+The five-lock obstruction is sharp at the next face.  At `C=106`, exactly
+1,024 of the 94,032 target-labeled repetition ledgers survive the lock
+abstraction.  They have a simple `4^5` normal form.  This is not a circulation
+witness or physical lift, so the result proves floor 106 but not floor 107.
+
+## 2. Exact scale-two identity
+
+The authenticated direct dual assigns prices
+
+```text
+b_t in {1,2,4},
+15 price-one targets, 60 price-two targets, 18 price-four targets,
+sum_t b_t = 207,
+```
+
+and an integer potential `y_v` such that every seam has exact nonnegative
+slack
+
+\[
+ s(e)=2+y_v-y_u-\sum_{t\in H(e)}b_t\ge0.                  \tag{2.1}
+\]
+
+Exact replay checks all 211,604 inequalities.  The slack histogram is
+
+```text
+s       0      1      2      3      4      5     6   7
+count 41491  33388  74860  29927  30191   1568  178  1
+```
+
+Put
+
+\[
+ m_t=\sum_{e:t\in H(e)}x_e,
+ \qquad
+ Q=\sum_t b_t(m_t-1),
+ \qquad
+ R=\sum_e s(e)x_e.                                      \tag{2.2}
+\]
+
+Here `Q` is weighted repeated service and `R` is total seam slack.  Endpoint
+balance cancels the potential terms in (2.1), giving the exact identity
+
+\[
+                         2C=207+Q+R.                    \tag{2.3}
+\]
+
+No inequality or floating-point tolerance enters (2.3).
+
+## 3. The five locks and the directed automaton
+
+The fifteen price-one targets split into five disjoint triples:
+
+\[
+\begin{aligned}
+T_1&=\{35044,36935,40066\},&
+T_2&=\{37320,41102,47364\},\\
+T_3&=\{33906,36417,51235\},&
+T_4&=\{33337,50976,58385\},\\
+T_5&=\{41872,49436,61960\}.&&
+\end{aligned}                                           \tag{3.1}
+\]
+
+For an integral circulation define its five-bit service syndrome
+
+\[
+ \sigma_i(x)=\sum_{t\in T_i}m_t\pmod2.                  \tag{3.2}
+\]
+
+The exact automaton proves that a directed closed walk of total slack `R`
+has the following possible syndromes.  The same sets result after XOR closure
+over an arbitrary finite multiset of closed walks.
+
+| `R` | attainable Hamming weights | number of masks |
+|---:|---|---:|
+| 0 | 0 | 1 |
+| 1 | 1 | 5 |
+| 2 | 0, 2 | 11 |
+| 3 | 1, 3 | 15 |
+| 4 | 0, 2, 4 | 16 |
+| 5 | 1, 3, 5 | 16 |
+| 6 | 0, 2, 4 | 16 |
+| 7 | 1, 3, 5 | 16 |
+
+### 3.1 Exact graph reduction
+
+The slack-zero seam graph has 11,612 strongly connected components, six of
+them nontrivial.  Inside each tight SCC, the five-bit seam label is an exact
+GF(2) coboundary.  Gauging it away contracts the graph to
+
+```text
+38,261 deduplicated labeled tight-DAG transitions,
+161,906 deduplicated positive transitions of slack at most seven.
+```
+
+The product states are `(tight SCC, five-bit syndrome, accumulated slack)`.
+All 11,612 possible source SCCs are propagated in twelve exact bitset batches.
+Diagonal source/terminal reachability gives the closed-walk table above.
+XOR convolution gives the arbitrary-split table.  This is a deterministic
+SCC/reachability computation; it uses no LP, CP, SAT or floating point.
+
+### 3.2 All-slack theorem
+
+The computation through slack three already implies the global bound
+
+\[
+                         \operatorname{wt}(\sigma(x))\le R              \tag{3.3}
+\]
+
+for every nonnegative integral balanced seam multiset.
+
+Indeed, reducing (2.3) modulo two leaves only the price-one service terms:
+
+\[
+ \operatorname{wt}(\sigma(x))\equiv R\pmod2.             \tag{3.4}
+\]
+
+The automaton proves (3.3) for `R=0,1,2,3`.  If `R=4`, (3.4) forces an even
+five-bit mask, whose weight is at most four.  If `R>=5`, the five-bit bound is
+automatic.  Thus (3.3) holds for every `R`.
+
+The split-circulation shell is exactly
+
+\[
+ \{a\in\mathbb F_2^5:
+       \operatorname{wt}(a)\le R,
+       \operatorname{wt}(a)\equiv R\pmod2\}.             \tag{3.5}
+\]
+
+For the reverse inclusion, the slack-one closed-walk shell contains every
+unit vector.  Use one such cycle for each set bit and add paired copies of any
+unit cycle to increase slack by two without changing XOR.  This argument is
+why unrestricted integral multiplicity is explicit in the theorem scope.
+
+### 3.3 The five locks are the complete tight-cycle parity quotient
+
+Let \(\mathcal T_0\subseteq\mathbb F_2^{94}\) be the code generated by all
+tight directed cycles, in the 93 target-service parity coordinates followed
+by seam-count parity.  The exact tight-layer saturation audit gives
+
+\[
+                         \dim \mathcal T_0=89.             \tag{3.6}
+\]
+
+The five independent lock forms in (3.1), each with count coefficient zero,
+annihilate \(\mathcal T_0\).  Their common kernel also has dimension
+\(94-5=89\).  Hence
+
+\[
+ \boxed{\mathcal T_0=\bigcap_{i=1}^5\ker L_i},\qquad
+ \mathbb F_2^{94}/\mathcal T_0\cong\mathbb F_2^5.         \tag{3.7}
+\]
+
+Thus there is no hidden sixth GF(2) invariant after arbitrary tight-cycle
+correction.  More concretely, a C106 normal ledger with slack \(R\) has a
+required lock mask of weight exactly \(R\).  The split shell (3.5) supplies a
+closed-walk collection of total slack \(R\) with that mask.  Its full
+94-coordinate parity vector differs from the ledger vector by an element of
+\(\mathcal T_0\), which a tight-cycle combination corrects.  Therefore every
+C106 normal signature is feasible in this complete parity quotient:
+
+| `R` | normal signatures | full-parity survivors |
+|---:|---:|---:|
+| 0 | 243 | 243 |
+| 1 | 405 | 405 |
+| 2 | 270 | 270 |
+| 3 | 90 | 90 |
+| 4 | 15 | 15 |
+| 5 | 1 | 1 |
+
+This is only a signed mod-two lift.  It does not supply exact integer target
+multiplicities, exact count 106 over the integers, nonnegative cycles, port
+capacity, or a physical selection.  Any further signature elimination must
+use information beyond tight-cycle GF(2) parity.
+
+## 4. Small human proof of floor 106
+
+Write `r_t=m_t-1`.  Let
+
+```text
+a = sum of r_t over the fifteen price-one targets,
+p_i = sum of r_t over T_i modulo two,
+h = wt(p).
+```
+
+Exact-once service has syndrome `11111`, so
+
+\[
+ \sigma=11111\oplus p,
+ \qquad \operatorname{wt}(\sigma)=5-h.                  \tag{4.1}
+\]
+
+Each price-one repeat can toggle at most one lock bit, and every non-price-one
+repeat contributes at least two to `Q`.  Hence
+
+\[
+                         h\le a\le Q.                    \tag{4.2}
+\]
+
+Combine (3.3), (4.1) and (4.2):
+
+\[
+                 5-Q\le5-a\le5-h
+                    =\operatorname{wt}(\sigma)\le R.    \tag{4.3}
+\]
+
+Therefore `Q+R>=5`.  Equation (2.3) gives
+
+\[
+                         2C-207=Q+R\ge5,
+\]
+
+which proves `C>=106`.  This proof is independent of the explicit equality
+branch enumeration below.
+
+## 5. Exhaustive count-105 audit
+
+At `C=105`, equation (2.3) says `Q+R=3`.  The six aggregate faces and all
+target-labeled subtypes are:
+
+| `Q` | `R` | repetition subtype | labeled ledgers | slack partitions |
+|---:|---:|---|---:|---|
+| 0 | 3 | exact service | 1 | `3`, `2+1`, `1+1+1` |
+| 1 | 2 | one price-one extra | 15 | `2`, `1+1` |
+| 2 | 1 | one price-two extra | 60 | `1` |
+| 2 | 1 | two price-one extras on one target | 15 | `1` |
+| 2 | 1 | two distinct price-one extras | 105 | `1` |
+| 3 | 0 | one price-two plus one price-one extra | 900 | tight |
+| 3 | 0 | three extras on one price-one target | 15 | tight |
+| 3 | 0 | two extras on one price-one target plus another | 210 | tight |
+| 3 | 0 | three distinct price-one extras | 455 | tight |
+
+There are `1,776` target-labeled ledgers.  The automaton rejects every one.
+It also rejects all `16` equality ledgers at `C=104`.  These explicit counts
+cross-check the shorter inequality (4.3).
+
+The signed cycle-lattice calculation alone does not see this obstruction.
+For the slack-at-most-one, -two and -three layers, exact 94 by 94 minors have
+determinant `+/-1`; the projected signed lattices are `Z^94` with all Smith
+factors one.  Direction and nonnegative cycle decomposition are essential.
+
+## 6. Count 106 survives: the `4^5` normal form
+
+At `C=106`, `Q+R=5`.  Equality must hold throughout (4.3).  Consequently:
+
+1. all repeated service is on price-one targets;
+2. exactly `Q` distinct lock triples receive one extra occurrence;
+3. no lock triple receives two extra occurrences;
+4. each repeated triple independently chooses one of its three targets;
+5. `R=5-Q`.
+
+The full target-labeled census is:
+
+| `Q` | `R` | all repetition ledgers | lock survivors |
+|---:|---:|---:|---:|
+| 0 | 5 | 1 | 1 |
+| 1 | 4 | 15 | 15 |
+| 2 | 3 | 180 | 90 |
+| 3 | 2 | 1,580 | 270 |
+| 4 | 1 | 12,108 | 405 |
+| 5 | 0 | 80,148 | 243 |
+| **total** |  | **94,032** | **1,024** |
+
+For fixed `Q`, the survivor count is
+
+\[
+                         \binom5Q3^Q.
+\]
+
+Equivalently, each of the five triples independently receives the symbol
+`S` (no repeated target in that triple; equivalently, its bit remains in the
+required `R`-bit slack syndrome) or one of its three target labels (that target
+is repeated).  Thus
+
+\[
+                         \sum_{Q=0}^5\binom5Q3^Q=4^5=1024.             \tag{6.1}
+\]
+
+These are exactly the ledgers that survive the five-lock necessary test.
+They are **not** target-by-target circulation witnesses, port-capacity
+assignments, or physical lifts.  A constructive `C=106` master should branch
+only over this normal form, but none was launched in this lane.
+
+## 7. Count-107 corroboration
+
+The same exact repeat-vector dynamic program gives:
+
+| `Q` | `R=7-Q` | all repetition ledgers | lock survivors |
+|---:|---:|---:|---:|
+| 0 | 7 | 1 | 1 |
+| 1 | 6 | 15 | 15 |
+| 2 | 5 | 180 | 180 |
+| 3 | 4 | 1,580 | 1,580 |
+| 4 | 3 | 12,108 | 8,025 |
+| 5 | 2 | 80,148 | 22,383 |
+| 6 | 1 | 483,020 | 32,130 |
+| 7 | 0 | 2,654,100 | 18,630 |
+| **total** |  | **3,231,152** | **82,944** |
+
+The survivor generating polynomial, with `z` marking `Q`, is
+
+\[
+ (1+3z)^5+60z^2(1+3z)^5
+   +5(6z^2+10z^3)(1+3z)^4.                              \tag{7.1}
+\]
+
+Its coefficient sum is 82,944.  This count is corroborative only; count 106
+already survives the lock abstraction.
+
+## 8. The tempting edge-local inequality is false
+
+After the internal tight-SCC gauge, the proposed seamwise inequality
+
+\[
+          \operatorname{wt}(\ell(e))\le s(e)              \tag{8.1}
+\]
+
+fails on exactly 343 original seams.  Every failure is a slack-zero
+cross-SCC tight-DAG seam with adjusted-label weight one.  The exact original
+cross-SCC tight-seam adjusted-label histogram is
+
+```text
+label       0     1   2   4   8  16
+count   39218    67  64  57  83  72
+```
+
+All internal tight edges gauge to zero, and the exact per-seam parity
+coboundary identity has zero violations.  Thus the Hamming theorem is a
+closed-walk/global-parity result, not an edge-local potential inequality.
+
+## 9. No-capacity LP stratification
+
+The requested six aggregate `C=105` faces were run at the no-capacity LP
+stage before any further integer search.
+
+| face | status | positive support | artifact SHA-256 |
+|---|---|---:|---|
+| `R=3`, exact service | `OPTIMAL` | 695 | `a36d9f8fa65571c934397851c2b30356955a477eaa3bc7ba586196b2d44fb8e4` |
+| `R=2`, one price-one extra | `OPTIMAL` | 599 | `da21fa9dd37c2bee650f4841e30e2bf1363468fda7b4e854e733cbf796692ed3` |
+| `R=1`, two price-one extras | `OPTIMAL` | 508 | `6a187aad3aa570d0fa7f451d010fd528cbdd7d804589e86ea12ac48a40c19fd3` |
+| `R=1`, one price-two extra | `OPTIMAL` | 669 | `7f0ef92ba70263d895873b1d523d38e6538d1819c5ce10e28f633f6588a11a63` |
+| `R=0`, price-one plus price-two extra | `OPTIMAL` | 619 | `01ecd0c5965147e250b4c49439ffb24a8c61d277c37d3e9d9339037d1cd98120` |
+| `R=0`, three price-one extras | `INFEASIBLE` | - | `b07b9881609924d9b015a49944192caa06e4de398713535f27b7b38da27c6f66` |
+
+The five feasible supports replay endpoint balance to residual at most
+`4.72e-14`; the largest residual over balance, service, count, group and slack
+rows is `9.95e-14`, and the largest stored-versus-replay difference is
+`3.42e-13`.  They remain floating witnesses, not exact rational certificates.
+The requested backend is recorded as `HIGHS`, while
+the OR-Tools version string says `PDLP Solver`, so no backend-name inference is
+used.  The infeasible face has an exact no-capacity rational Farkas
+certificate: every combined column is nonnegative and the combined right
+side is `-999963/1000000`.
+
+Thus floor 106 is an **integral directed-cycle parity obstruction**, not a
+port-capacity obstruction and not a continuous aggregate LP floor.
+
+## 10. Scope
+
+This theorem uses only:
+
+- the frozen 211,604-seam direction-coherent q<=3/upper-width-four catalogue;
+- exact endpoint balance;
+- integral seam multiplicity;
+- service of the 93 fixed lower-q2/upper-q3 defects.
+
+It omits port capacity, edge binarity, cut separation, reverse-edge, q1,
+survivor, residence and deeper-shadow rows.  It neither constructs a K16 word nor rules out a
+different carrier, a non-separated transformation, WIDTH45 seams, or an
+unrestricted K16 rethread.
+
+## 11. Frozen artifacts
+
+### Core inputs
+
+```text
+scratch/k16_len8_source_seam_ledger_20260730.bin
+  SHA-256 832ddd883452e73c0f2462f8550e900d8ffcf01f7397f17b980dd552853b6657
+
+scratch/k16_direct_cycle_dual_exact_20260730.audit.json
+  SHA-256 29b4aae4bc889e07261725b275455a58583d949932a0eeabf65eae33eb7c460d
+```
+
+### Authenticated automaton through slack seven
+
+```text
+scratch/threadB_audit_k16_c106_c107_r7_batched_automaton_20260730.cpp
+  SHA-256 bfb354ffbc8bc874c2433cfb56f17175b34355f46344705e89eb54295baffd42
+
+scratch/threadB_k16_c106_c107_r7_batched_automaton_20260730.audit.json
+  SHA-256 305e3f26b2991ca8fef1c93209b92769ff3d04040ad946db9f047c6865190f9a
+
+scratch/threadB_verify_k16_c106_c107_r7_batched_automaton_20260730.py
+  SHA-256 11f5ee9dea7c629805fc9ae575a9fd0d7c4abe9e1ba39483c8b7551e50f1bd39
+
+scratch/threadB_k16_c106_c107_r7_authenticated_20260730.audit.json
+  SHA-256 4f6118b019bd1cc2cbbcdebb1c6edee80b2c3250e5d2205b7a13aa64227caff8
+  payload da09567383937424cc22a0f52eed2e365d417c06bf2b13b4fbc03ce287e319a4
+
+scratch/threadB_k16_c106_c107_r7_authenticated_20260730.resource.txt
+  SHA-256 5e6b7b8b183327c4f22e7595b0ea8158e60bb4e6e82b9b8ae1c67fec9d139971
+```
+
+The authenticated wrapper recompiles the frozen C++ source and reproduces
+the raw JSON byte-for-byte.  Its capped H100 run used one CPU, a 2 GiB
+address-space limit, 14.26 seconds wall time and 395,608 KiB maximum RSS.
+
+### Independent ledgers and edge-local audit
+
+```text
+scratch/provider56_verify_k16_c106_c107_repeat_ledger_20260730.py
+  SHA-256 0d46e5e80afcd3a63ac93e7fa0aa30e0d2d09d2c7666aa15cf0d06fc62fc256a
+
+scratch/provider56_k16_c106_c107_repeat_ledger_20260730.audit.json
+  SHA-256 56ef8d1f22189eecbf3e30b57afaa2f3c9c8e5b4555c84fdb0fb6149a44b717c
+  payload 18e5f754798b75e728161155d383779f6b9c6135a29fb889c405eb0bf231bc72
+
+scratch/provider56_audit_k16_postgauge_edge_local_20260730.py
+  SHA-256 ed132500f5926985db6a6bb36b0bcbb3efbc88853ac6c1e3883e0a7c5c281165
+
+scratch/provider56_k16_postgauge_edge_local_v2_20260730.audit.json
+  SHA-256 766f9298c61ffee36cfd1ccf1f2372d41ca380f2260d02090bb8a3b8986cab87
+  payload c0d8af5d2d8620aa88b02427b706a1f2a285696c5d5d133200fd7c4b5c325274
+```
+
+### Independent count-106 normal-form replay
+
+```text
+scratch/verify_k16_c106_lock_normal_form_20260730.py
+  SHA-256 321a4fc6ffd2df88f16aea7184718c701bfa0b23f8b5177ece9471d3cd98198c
+
+scratch/k16_c106_lock_normal_form_20260730.audit.json
+  SHA-256 975f8847ecedb0c40ac5ba92aea03dab814cf004490bbf0fb6dc092f5bc3e2bb
+  payload 4c0368b65adabbda3441dea02ecc2ef92cc5284b06701c53acb3a07111e5fdbf
+```
+
+### No-capacity LP replay and exact exceptional Farkas certificate
+
+```text
+scratch/audit_k16_floor105_nocap_lp_portfolio_20260730.py
+  SHA-256 0257342f3854fcfa903ab69c55f6bc3b2fbf3995a4ecf58febd88c6b46b03424
+
+scratch/k16_floor105_nocap_lp_portfolio.independent.audit.json
+  SHA-256 8ab37326e72abb75e451bbc1e2033fb730d5032bf94c5a0c50a1708948ec417f
+  payload bd8ed858373baad63f71b5dfde34f0c92d7fb2d0bb6085ba9ec629321ba54313
+
+scratch/ad_k16_c105_s0_repeat1x3_farkas_20260730.certificate.json
+  SHA-256 3a8f9d1fa506b56ff2ae5d3a4463a647bfbdf4773ea5df961a3483299da2d582
+
+scratch/ad_k16_c105_s0_repeat1x3_farkas_rawstream_20260730.audit.json
+  SHA-256 3117bd8d0084337a1e854edd2f1536bea0a81991c5ebc6d1c0df116a012ab1b3
+```
+
+### Signed cycle-lattice saturation cross-check
+
+```text
+scratch/threadB_audit_k16_c105_cycle_lattice_20260730.cpp
+  SHA-256 5d06690bfb4d8b737d4692dc8cbcabe569728773d0fdc04f3a490cb673817bc4
+
+scratch/threadB_verify_k16_c105_cycle_lattice_saturation_20260730.py
+  SHA-256 c9c5a00a489563c7b65f7535a22e0b87aa64f59c92587a98a7911f900e040e5d
+
+scratch/threadB_k16_c105_cycle_lattice_saturation_20260730.audit.json
+  SHA-256 3ff88496ef87935dfa4716c582c4185359e224f35bbccd0c07c4fa309e585a88
+  payload 01e3475d8d43c67fd9ee52d49826d9ca3d52a02453dc2458ad1a3c3c5a260d93
+```
+
+### Frozen original floor-106 source lineage
+
+The exact source used by the first authenticated `R<=3` replay is preserved
+separately from later extensions:
+
+```text
+scratch/threadB_audit_k16_floor106_r03_batched_automaton_frozen_20260730.cpp
+  SHA-256 ed27cc92e6662754016e0e872b3a741c0f801261e5cc2e43c81419444fd49455
+
+scratch/threadB_verify_k16_floor106_r03_batched_automaton_frozen_20260730.py
+  SHA-256 59991d8befd070a4d6c38054e2a7a5220709650a1a944053ef5f290909bf12fe
+```

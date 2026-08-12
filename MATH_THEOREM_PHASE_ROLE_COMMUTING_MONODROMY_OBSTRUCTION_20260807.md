@@ -1,0 +1,303 @@
+# Commuting phase monodromy obstructs all-depth rectangle-transplant closure
+
+**Date:** 2026-08-07  
+**Method:** two tail-offset identities in the phase-matching permutation group  
+**Status:** theorem.  Every coherent owner-disjoint all-depth role matching at
+depth \(D\ge4\) must have genuinely noncommuting positive and transported
+negative phase rotations.  In particular, the canonical cyclic/abelian Latin
+square constructions cannot close the remaining rectangle-transplant gate.
+
+## 1. Phase-matching permutations
+
+Let \(E_+\) and \(E_-\) be equally large sets of positive and negative role
+phase occurrences.  Let
+
+\[
+                         L:E_+\longrightarrow E_-    \tag{1.1}
+\]
+
+be a bijection pairing opposite proper-target chains.
+
+Advancing one phase in every positive role defines a permutation
+
+\[
+                         P\in\operatorname{Sym}(E_+),
+\]
+
+whose cycles are the positive role cycles.  Advancing one phase in every
+negative role similarly defines
+
+\[
+                         N\in\operatorname{Sym}(E_-).
+\]
+
+Pull the latter back through the matching:
+
+\[
+                         R=L^{-1}NL
+                         \in\operatorname{Sym}(E_+). \tag{1.2}
+\]
+
+Let
+
+\[
+ \alpha:E_+\to[n],
+ \qquad
+ \beta:E_-\to[n]                                     \tag{1.3}
+\]
+
+record the first leaf coordinate at each phase occurrence.  The leaf word
+seen from phase \(e\) on the positive shore is
+
+\[
+                         \alpha(e),\alpha(Pe),
+                         \alpha(P^2e),\ldots,
+\]
+
+and similarly on the negative shore.
+
+By the forced rank-two transplant normal form, if \(e\) is paired with
+\(Le\), all coordinates after the exchanged first pair agree positionwise.
+At depth \(D\ge4\), in particular,
+
+\[
+ \alpha(P^t e)=\beta(N^tLe)
+ \qquad(e\in E_+,\ t=2,3).                           \tag{1.4}
+\]
+
+## 2. Exact obstruction
+
+### Theorem 2.1 (commuting-monodromy no-go)
+
+Assume (1.4) and
+
+\[
+                         PR=RP.                      \tag{2.1}
+\]
+
+Then every paired phase has the same first coordinate on the two shores:
+
+\[
+ \boxed{
+                         \alpha(e)=\beta(Le)
+                         \qquad(e\in E_+).}          \tag{2.2}
+\]
+
+Consequently no such matching can be an owner-disjoint all-depth
+rectangle-transplant matching.
+
+#### Proof
+
+For \(t=2,3\), define the bijection
+
+\[
+ M_t=N^tLP^{-t}:E_+\longrightarrow E_-.             \tag{2.3}
+\]
+
+After replacing \(e\) in (1.4) by \(P^{-t}f\), the two tail identities say
+
+\[
+                         \alpha(f)=\beta(M_tf)
+ \qquad(t=2,3).                                      \tag{2.4}
+\]
+
+The \(t=2\) identity determines \(\beta\):
+
+\[
+                         \beta(g)=\alpha(M_2^{-1}g).
+                                                               \tag{2.5}
+\]
+
+Substitute (2.5) into the \(t=3\) identity.  Then \(\alpha\) is invariant
+under
+
+\[
+ \begin{aligned}
+ Q:=M_2^{-1}M_3
+   &=P^2L^{-1}N^{-2}N^3LP^{-3}\\
+   &=P^2RP^{-3}.                                    \tag{2.6}
+ \end{aligned}
+\]
+
+Under (2.1),
+
+\[
+                         Q=RP^{-1}.                  \tag{2.7}
+\]
+
+On the other hand,
+
+\[
+                         M_2^{-1}L=P^2R^{-2}=Q^{-2}, \tag{2.8}
+\]
+
+again by commutativity.  Hence (2.5), (2.8), and \(Q\)-invariance give
+
+\[
+                         \beta(Le)
+   =\alpha(M_2^{-1}Le)
+   =\alpha(Q^{-2}e)
+   =\alpha(e),                                       \tag{2.9}
+\]
+
+proving (2.2).
+
+For an owner-disjoint all-depth matched pair, the normal-form theorem gives
+
+\[
+ \{\alpha(e),\alpha(Pe)\}=H-G,
+ \qquad
+ \{\beta(Le),\beta(NLe)\}=G-H,                      \tag{2.10}
+\]
+
+for two distance-two centers \(G,H\).  The two difference sets in (2.10)
+are disjoint, whereas (2.2) puts one coordinate in both.  This is impossible.
+\(\square\)
+
+## 3. Cyclic Latin squares are inside the obstruction
+
+Every standard abelian phase construction has the following form: phase
+occurrences are coordinatized by an abelian group, positive rotation is a
+translation, and the negative rotation transported through the Latin
+matching is another translation.  Translations commute, so (2.1) holds.
+
+This includes:
+
+* direct cyclic shifts on a rectangular array;
+* affine Latin-square matchings over a cyclic or abelian group;
+* product constructions in which both phase successors act coordinatewise;
+  and
+* any disjoint union of such components.
+
+Therefore none of these can label the abstract two-size phase-role factor at
+depth \(D\ge4\).  The failure is stronger than a bad choice of modular slope:
+the offset-two and offset-three equations force offset zero inside every
+commuting phase fibre.
+
+## 4. Exact surviving possibility
+
+The theorem does not obstruct a phase factor with
+
+\[
+                         [P,R]\ne1.                  \tag{4.1}
+\]
+
+Indeed, without commutativity,
+
+\[
+ M_2^{-1}L=P^2R^{-2}
+\]
+
+need not lie in the cyclic group generated by
+
+\[
+                         Q=P^2RP^{-3},
+\]
+
+so the tail equations need not identify the first coordinates.
+
+The exact remaining combinatorial target is consequently:
+
+> construct the two-size degree factor with a nonabelian rotation system
+> \((P,R)\) such that every \(Q\)-orbit is transversal to each role cycle,
+> \(P^2R^{-2}e\) lies outside the \(Q\)-orbit of \(e\), and the resulting
+> coordinate classes admit the rank-two center/owner labeling.
+
+This is a monodromy problem, not a divisibility or ordinary Latin-square
+problem.  Any future cyclic ansatz must first exhibit noncommuting transported
+rotation; otherwise Theorem 2.1 closes it immediately.
+
+## 5. Exact center-voltage criterion after monodromy
+
+Noncommuting leaf monodromy is not yet enough.  The exchanged first pairs
+must integrate to actual fixed centers on the role graph.  This has an exact
+graph-cohomological criterion.
+
+Let \(\Gamma=(V_+\mathbin{\dot\cup}V_-,E)\) be a connected simple phase-role
+factor, with every edge oriented from \(V_+\) to \(V_-\).  For each edge
+\(e=uv\), prescribe disjoint two-sets
+
+\[
+                         X_e,Y_e\subseteq[n],         \tag{5.1}
+\]
+
+where \(X_e\) is to be removed from the positive center and \(Y_e\) added.
+Put
+
+\[
+                         \delta_e={\mathbf 1}_{Y_e}-{\mathbf 1}_{X_e}
+                         \in\mathbb Z^{[n]}.          \tag{5.2}
+\]
+
+### Theorem 5.1 (binary center-voltage integration)
+
+There are rank-\(k\) centers \(G_v\subseteq[n]\), \(v\in V(\Gamma)\), such
+that
+
+\[
+                         {\mathbf 1}_{G_v}-{\mathbf 1}_{G_u}=\delta_e
+ \qquad(e=uv),                                       \tag{5.3}
+\]
+
+if and only if the following conditions hold.
+
+1. For every coordinate \(c\), the scalar edge voltage
+   \(\delta^c_e:=\delta_e(c)\) has zero signed sum around every cycle of
+   \(\Gamma\).
+2. Let \(h_v(c)\) be the resulting integral vertex potential normalized by
+   \(h_{v_0}(c)=0\).  Then
+
+   \[
+                         \max_vh_v(c)-\min_vh_v(c)\le1             \tag{5.4}
+   \]
+
+   for every \(c\).
+3. After the forced choices on coordinates with range one, the constant
+   coordinates can be chosen so that
+
+   \[
+                         \sum_c{\mathbf 1}_{G_{v_0}}(c)=k.         \tag{5.5}
+   \]
+
+When these conditions hold, (5.3) automatically implies
+
+\[
+ X_e\subseteq G_u,
+ \qquad
+ Y_e\cap G_u=\varnothing,
+ \qquad
+ G_v=G_u-X_e+Y_e.                                    \tag{5.6}
+\]
+
+#### Proof
+
+If centers exist, their coordinate indicators are vertex potentials for
+\(\delta^c\), so every cycle sum vanishes.  Their values lie in \(\{0,1\}\),
+which gives (5.4), and their common cardinality gives (5.5).
+
+Conversely, the cycle condition makes \(h_v(c)\) path-independent.  For a
+coordinate with range one, there is a unique additive constant
+\(a_c\in\mathbb Z\) such that
+
+\[
+                         a_c+h_v(c)\in\{0,1\}
+                         \quad\hbox{for every }v.     \tag{5.7}
+\]
+
+For a constant potential, choose either zero or one.  Condition (5.5) chooses
+these free constants so the base center has size \(k\).  Define
+
+\[
+                         {\mathbf 1}_{G_v}(c)=a_c+h_v(c).           \tag{5.8}
+\]
+
+Every edge voltage has coordinate sum zero because \(|X_e|=|Y_e|=2\), so
+all \(G_v\)'s have the same size.  Finally, a \(-1\) coordinate on an edge
+can only move from one to zero, and a \(+1\) coordinate only from zero to
+one.  This proves (5.6). \(\square\)
+
+Thus the exact post-monodromy problem is a bounded binary voltage design:
+construct noncommuting rotations whose exchanged-pair voltages are
+cycle-exact and whose coordinate potentials never leave a two-level strip.
+The theorem separates this center gate from the later requirement that role
+centers group into common-core rectangles.

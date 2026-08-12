@@ -426,6 +426,17 @@ Define the positive-cut property
 c(\pi\rho_F(\pi))<c(\rho_F(\pi)).                           \tag{7.2}
 \]
 
+**Quantifier correction (2026-07-29).**  Because `A(F)` here contains all
+protected rematchings, not only one connected alternating circuit, (7.2) is
+equivalent to saying that `F` is not a global component-count minimizer in
+the fixed protected fibre.  Its all-state form above two components is
+equivalent to existence of a protected at-most-two-component factor; it is
+not a local-minimum theorem.  The genuinely local version restricts `pi` to
+one nontrivial cycle.  Its exact ribbon criterion, a smallest nonloop generic
+protected local minimum, and the additional extraction hypotheses are proved
+in
+`MATH_THEOREM_L_PBBS_PROTECTED_RIBBON_POSITIVE_CUT_AND_PACKET_LOCK_20260729.md`.
+
 ### Theorem 7.2 (conditional monotone PBBS descent)
 
 If every reachable resident all-depth PBBS factor with more than two
@@ -441,12 +452,13 @@ All defining carrier properties are retained by membership in `A(F)`.
 Iteration must stop, and the hypothesis prevents stopping above two.
 `square`
 
-This is the exact local-minimum/positive-cut theorem needed for a universal
-PBBS reduction.  It is **not** a consequence of all-depth support alone:
-support completeness says that every target has at least one witness, while
-(7.2) requires a component-crossing alternating circuit whose deletions can
-all be compensated simultaneously and whose new chronology passes every
-collar.
+As written, this is an exact global-fibre criterion, not a local-minimum
+theorem.  The genuinely local reduction replaces `A(F)` by the protected
+one-cycle neighbours.  Neither version is a consequence of all-depth support
+alone: support completeness says that every target has at least one witness,
+whereas a local positive cut requires a component-crossing alternating
+circuit whose deletions can all be compensated simultaneously and whose new
+chronology passes every collar.
 
 The existing PBBS theory proves neither (7.2) nor its failure.  In
 particular:
