@@ -169,18 +169,16 @@ a \((2q+1,q)\)-wreath. Their cycle factor therefore decomposes
 
 into central wreaths.
 
-This corollary concerns the unrestricted owner deck. The protected
-pure-rail catalogue currently requires
-
-\[
- N\ge2(q+1)=2q+2,
-\tag{2.7}
-\]
-
-for its two-sided residence margin. Hence the period \(N=2q+1\) central
-wreath is one position too short to be an admissible resident rail in that
-catalogue. It is nevertheless an exact owner-factor theorem and a useful
-boundary case.
+This corollary concerns the unrestricted owner deck. For \(q\ge2\), a
+later exact residence audit corrected the catalogue boundary: period
+\(N=2q+1\) is already a legal biresident pure rail. Its toggle traces are
+cyclic shifts of \(1^q0^{q+1}\), so both run lengths meet the depth-\(d\)
+threshold \(D=d+1=q\); its immediate palettes and every proper interval
+row are simple. Thus, in that range, the factor above is an exact factor
+by legal resident rails, not merely an unrestricted owner factor. The stronger hypothesis
+\(N\ge2q+2\) remains useful for later local ports requiring two exterior
+toggle labels, but is not a residence axiom.  See
+`MATH_THEOREM_PERIOD_2Q_PLUS_1_PURE_RAIL_RESIDENCE_AND_CENTRAL_WREATH_FACTOR_20260813.md`.
 
 ## 3. Exact relation between maximal pure rails and wreaths
 
@@ -202,7 +200,7 @@ via
 A period-\(N\) pure rail with this core chooses
 
 \[
- T\in{X\choose N},\qquad 2(q+1)\le N\le M,
+ T\in{X\choose N},\qquad 2q\le N\le M,
 \tag{3.3}
 \]
 
@@ -262,8 +260,8 @@ If the complete fixed-core owner fibre
 \tag{4.1}
 \]
 
-can be partitioned into pure rails of arbitrary legal periods
-\(2(q+1)\le N\le M\), then necessarily
+can be partitioned into pure rails of arbitrary unprotected resident periods
+\(2q\le N\le M\), then necessarily
 
 \[
  \boxed{q\mid{M-1\choose q-1}.}
@@ -298,7 +296,7 @@ For \(k=17\),
  R=9,\qquad d=3,\qquad q=4,\qquad c=5,\qquad M=12.
 \]
 
-The legal periods are \(10,11,12\), but
+The unprotected resident periods are \(8,9,10,11,12\), but
 
 \[
  {M-1\choose q-1}={11\choose3}=165\not\equiv0\pmod4.
