@@ -1,0 +1,23 @@
+	Command being timed: "python3 verify_t2_suffix_d4_spanning_actuator_certificate_20260813.py search_t2_suffix_d4_spanning_actuator_sat_20260813.h100.out"
+	User time (seconds): 108.63
+	System time (seconds): 2.62
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:51.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 742364
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1466105
+	Voluntary context switches: 1
+	Involuntary context switches: 240
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

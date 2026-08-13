@@ -1,0 +1,194 @@
+{
+  "exact_minimum_histogram": {
+    "16": 3,
+    "18": 1
+  },
+  "m": 9,
+  "selected_edges": [
+    {
+      "exact_allprefix_internal_owner_minimum": 16,
+      "prefixes": [
+        {
+          "directed_distance_incidence_bound": 20,
+          "prefix": "101010001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "100011001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "100010001111",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 20,
+          "prefix": "101011000101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "101001010101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "101001001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        }
+      ],
+      "suffix_edge": [
+        "111000",
+        "101100"
+      ],
+      "witness_prefix": "101001010101"
+    },
+    {
+      "exact_allprefix_internal_owner_minimum": 16,
+      "prefixes": [
+        {
+          "directed_distance_incidence_bound": 18,
+          "prefix": "101010001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 14,
+          "prefix": "100011001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 14,
+          "prefix": "100010001111",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 18,
+          "prefix": "101011000101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 14,
+          "prefix": "101001010101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 14,
+          "prefix": "101001001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        }
+      ],
+      "suffix_edge": [
+        "111000",
+        "101010"
+      ],
+      "witness_prefix": "101001001101"
+    },
+    {
+      "exact_allprefix_internal_owner_minimum": 18,
+      "prefixes": [
+        {
+          "directed_distance_incidence_bound": 24,
+          "prefix": "101010001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 18,
+          "prefix": "100011001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 18,
+          "prefix": "100010001111",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 22,
+          "prefix": "101011000101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 18,
+          "prefix": "101001010101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 18,
+          "prefix": "101001001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        }
+      ],
+      "suffix_edge": [
+        "110100",
+        "110010"
+      ],
+      "witness_prefix": "101001010101"
+    },
+    {
+      "exact_allprefix_internal_owner_minimum": 16,
+      "prefixes": [
+        {
+          "directed_distance_incidence_bound": 20,
+          "prefix": "101010001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "100011001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "100010001111",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 20,
+          "prefix": "101011000101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "101001010101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        },
+        {
+          "directed_distance_incidence_bound": 16,
+          "prefix": "101001001101",
+          "shorter_label_simple_cycles_checked": 0,
+          "shorter_q2_safe_incidence_length": null
+        }
+      ],
+      "suffix_edge": [
+        "110100",
+        "101100"
+      ],
+      "witness_prefix": "101001001101"
+    }
+  ],
+  "status": "PASS"
+}

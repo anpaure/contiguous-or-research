@@ -1,0 +1,360 @@
+{
+  "base_components_met": 82,
+  "certificate": "search_t2_suffix_d4_spanning_actuator_sat_20260813.h100.out",
+  "certificate_sha256": "7545a319867dd3c7f32a13158dad41d2860d7e69a356858bbf1dd96e5160db06",
+  "incidence_length_histogram": {
+    "14": 1,
+    "16": 6,
+    "18": 5,
+    "20": 1
+  },
+  "individual_actuators": [
+    {
+      "component_arity": 9,
+      "component_reduction": 8,
+      "incidence_length": 18,
+      "lower_bad_2_collars": 4,
+      "lower_common_intersection_rank": 5,
+      "lower_palette_losses": 6,
+      "old_component_owner_length_histogram": {
+        "21": 7,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        357
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11110000",
+        "10111000"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        357
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 4,
+      "upper_common_intersection_rank": 7
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 16,
+      "lower_bad_2_collars": 2,
+      "lower_common_intersection_rank": 2,
+      "lower_palette_losses": 8,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11110000",
+        "10110010"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 1,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 16,
+      "lower_bad_2_collars": 4,
+      "lower_common_intersection_rank": 4,
+      "lower_palette_losses": 6,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11101000",
+        "10101100"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 5,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 16,
+      "lower_bad_2_collars": 2,
+      "lower_common_intersection_rank": 3,
+      "lower_palette_losses": 8,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11101000",
+        "10101010"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 2,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 18,
+      "lower_bad_2_collars": 5,
+      "lower_common_intersection_rank": 5,
+      "lower_palette_losses": 6,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11100100",
+        "11100010"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 6,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 16,
+      "lower_bad_2_collars": 1,
+      "lower_common_intersection_rank": 2,
+      "lower_palette_losses": 7,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11100100",
+        "10101100"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 2,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 18,
+      "lower_bad_2_collars": 4,
+      "lower_common_intersection_rank": 4,
+      "lower_palette_losses": 6,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11011000",
+        "11001100"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 6,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 16,
+      "lower_bad_2_collars": 2,
+      "lower_common_intersection_rank": 2,
+      "lower_palette_losses": 7,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11011000",
+        "10111000"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 3,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 18,
+      "lower_bad_2_collars": 5,
+      "lower_common_intersection_rank": 5,
+      "lower_palette_losses": 6,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11010100",
+        "11010010"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 6,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 8,
+      "component_reduction": 7,
+      "incidence_length": 16,
+      "lower_bad_2_collars": 0,
+      "lower_common_intersection_rank": 3,
+      "lower_palette_losses": 7,
+      "old_component_owner_length_histogram": {
+        "21": 6,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        336
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11010100",
+        "10110100"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        336
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 3,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 9,
+      "component_reduction": 8,
+      "incidence_length": 18,
+      "lower_bad_2_collars": 1,
+      "lower_common_intersection_rank": 3,
+      "lower_palette_losses": 8,
+      "old_component_owner_length_histogram": {
+        "21": 7,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        357
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "11010010",
+        "11001010"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        357
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 1,
+      "upper_common_intersection_rank": 7
+    },
+    {
+      "component_arity": 6,
+      "component_reduction": 4,
+      "incidence_length": 14,
+      "lower_bad_2_collars": 4,
+      "lower_common_intersection_rank": 6,
+      "lower_palette_losses": 5,
+      "old_component_owner_length_histogram": {
+        "21": 4,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        146,
+        148
+      ],
+      "output_components_on_touched_set": 2,
+      "suffix_edge": [
+        "11001010",
+        "10101010"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        146,
+        148
+      ],
+      "suffix_endpoint_representatives_joined": false,
+      "upper_bad_2_collars": 3,
+      "upper_common_intersection_rank": 8
+    },
+    {
+      "component_arity": 10,
+      "component_reduction": 9,
+      "incidence_length": 20,
+      "lower_bad_2_collars": 4,
+      "lower_common_intersection_rank": 3,
+      "lower_palette_losses": 6,
+      "old_component_owner_length_histogram": {
+        "21": 8,
+        "105": 2
+      },
+      "output_component_owner_lengths": [
+        378
+      ],
+      "output_components_on_touched_set": 1,
+      "suffix_edge": [
+        "10110100",
+        "10110010"
+      ],
+      "suffix_endpoint_output_component_owner_lengths": [
+        378
+      ],
+      "suffix_endpoint_representatives_joined": true,
+      "upper_bad_2_collars": 5,
+      "upper_common_intersection_rank": 7
+    }
+  ],
+  "lower_bad_2_collars": 40,
+  "output_component_owner_length": 2898,
+  "output_components": 1,
+  "q2_support_losses": 0,
+  "status": "PASS",
+  "suffix_tree_edges": 13,
+  "upper_bad_2_collars": 51
+}
