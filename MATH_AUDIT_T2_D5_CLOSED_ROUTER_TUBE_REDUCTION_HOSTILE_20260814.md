@@ -226,8 +226,8 @@ scratch/audit_t2_d5_closed_router_tube_reduction_20260814.py
 and ran only on H100.  Its source/output SHA-256 values are
 
 ```text
-e7a277d633e31abcb4d01ca91ff9eaafefa92e964625598126eb481a7dd980c9
-9198f9c1470c31717f4f1cffa43eef100900de2ee178b9def0e00d95463c7a33.
+bbb1fd5236cd9e0e8b67b7b756dfcd55b94281656aef8bdd36435a77a732d44e
+5ea04cc7d43220b96c315d754f49151a9cf4a2cd472a0b28b792ce53e20b4d73.
 ```
 
 The audited reduction was not assigned a frozen SHA because its central

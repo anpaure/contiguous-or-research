@@ -9,9 +9,12 @@ monodromies, internal q=2 residence, and linear upper/lower q2 supports.
 
 from __future__ import annotations
 
+import argparse
+import hashlib
 import json
 from collections import Counter
 from functools import reduce
+from pathlib import Path
 
 
 def union(*sets):
@@ -179,6 +182,9 @@ def build():
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--d5-selection")
+    args = parser.parse_args()
     omega, stages, packets = build()
     old_x, old_y = packets["old"]
     new_x, new_y = packets["new"]
@@ -257,6 +263,82 @@ def main():
     assert all(action != outer_actions["new"]
                for action in required_d5_actions.values())
 
+    stage_reports = []
+    for s, stage in enumerate(stages):
+        eps = (1, -1)[s]
+        old_paths = [
+            [stage["E"][i], stage["Z"][i], stage["W"][i],
+             stage["R"][i], stage["Ep"][i]]
+            for i in range(3)
+        ]
+        new_paths = [
+            [stage["E"][(i + eps) % 3], stage["Z"][i],
+             stage["W"][i], stage["R"][i], stage["Ep"][i]]
+            for i in range(3)
+        ]
+        old_tickets = counts(
+            path[i] & path[i + 1] for path in old_paths for i in range(4)
+        )
+        new_tickets = counts(
+            path[i] & path[i + 1] for path in new_paths for i in range(4)
+        )
+        assert old_tickets == new_tickets
+        old_lq2 = [
+            and_all(path[i:i + 3]) for path in old_paths for i in range(3)
+        ]
+        new_lq2 = [
+            and_all(path[i:i + 3]) for path in new_paths for i in range(3)
+        ]
+        old_uq2 = [
+            or_all(path[i:i + 3]) for path in old_paths for i in range(3)
+        ]
+        new_uq2 = [
+            or_all(path[i:i + 3]) for path in new_paths for i in range(3)
+        ]
+        stage_reports.append({
+            "stage": s,
+            "derived_lower_tickets": {
+                "occurrences": sum(old_tickets.values()),
+                "support": len(old_tickets),
+                "simple": max(old_tickets.values()) == 1,
+                "multiplicity_histogram": dict(sorted(Counter(
+                    old_tickets.values()
+                ).items())),
+                "old_new_equal": old_tickets == new_tickets,
+            },
+            "linear_lower_q2_current": support_report(old_lq2, new_lq2),
+            "linear_upper_q2_current": support_report(old_uq2, new_uq2),
+        })
+
+    global_d5_parity = None
+    if args.d5_selection:
+        raw = Path(args.d5_selection).read_bytes()
+        selection = json.loads(raw)
+        lengths = [
+            len(item["candidate"]["owners"])
+            for item in selection["selection"]
+        ]
+        exponent = sum(length - 1 for length in lengths)
+        global_d5_parity = {
+            "selection_sha256": hashlib.sha256(raw).hexdigest(),
+            "circuit_cycles": len(lengths),
+            "changed_rows": sum(lengths),
+            "owner_cycle_length_histogram": dict(sorted(Counter(
+                lengths
+            ).items())),
+            "odd_permutation_circuits": sum(
+                1 for length in lengths if length % 2 == 0
+            ),
+            "sign_exponent": exponent,
+            "sign": 1 if exponent % 2 == 0 else -1,
+            "global_all_C6_parity_obstruction": exponent % 2 == 1,
+        }
+        assert global_d5_parity["selection_sha256"] == (
+            "94deb656dac1d8955b20d851e92600156d703842d6de169d4b6bea356fa3ec32"
+        )
+        assert len(lengths) == 41 and sum(lengths) == 477
+        assert exponent == 436
+
     report = {
         "status": "REDUCTION_FAIL",
         "carrier_finite_replay": "PASS",
@@ -284,8 +366,10 @@ def main():
             "duplicates": duplicate_tickets,
         },
         "stage_actions": stage_actions,
+        "individual_stage_replays": stage_reports,
         "outer_actions": outer_actions,
         "required_d5_tail_fixed_transpositions": required_d5_actions,
+        "global_d5_matching_parity": global_d5_parity,
         "outer_action_matches_any_required_reset": False,
         "permutation_parity_obstruction": (
             "C6 stage actions lie in A3; each D5 tail-fixed reset is odd"

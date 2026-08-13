@@ -47,6 +47,25 @@
     "simple": false,
     "support": 26
   },
+  "global_d5_matching_parity": {
+    "changed_rows": 477,
+    "circuit_cycles": 41,
+    "global_all_C6_parity_obstruction": false,
+    "odd_permutation_circuits": 16,
+    "owner_cycle_length_histogram": {
+      "9": 6,
+      "10": 6,
+      "11": 11,
+      "12": 6,
+      "13": 4,
+      "14": 3,
+      "15": 4,
+      "16": 1
+    },
+    "selection_sha256": "94deb656dac1d8955b20d851e92600156d703842d6de169d4b6bea356fa3ec32",
+    "sign": 1,
+    "sign_exponent": 436
+  },
   "ground_size": 20,
   "immediate_upper_bank": {
     "occurrences": 30,
@@ -54,6 +73,74 @@
     "simple": true,
     "support": 30
   },
+  "individual_stage_replays": [
+    {
+      "derived_lower_tickets": {
+        "multiplicity_histogram": {
+          "1": 9,
+          "3": 1
+        },
+        "occurrences": 12,
+        "old_new_equal": true,
+        "simple": false,
+        "support": 10
+      },
+      "linear_lower_q2_current": {
+        "load_decrease_occurrences": 3,
+        "load_decrease_targets": 3,
+        "lost_occurrences": 3,
+        "new_occurrences": 9,
+        "new_support": 9,
+        "old_occurrences": 9,
+        "old_support": 9,
+        "support_losses": 3
+      },
+      "linear_upper_q2_current": {
+        "load_decrease_occurrences": 0,
+        "load_decrease_targets": 0,
+        "lost_occurrences": 0,
+        "new_occurrences": 9,
+        "new_support": 7,
+        "old_occurrences": 9,
+        "old_support": 7,
+        "support_losses": 0
+      },
+      "stage": 0
+    },
+    {
+      "derived_lower_tickets": {
+        "multiplicity_histogram": {
+          "1": 9,
+          "3": 1
+        },
+        "occurrences": 12,
+        "old_new_equal": true,
+        "simple": false,
+        "support": 10
+      },
+      "linear_lower_q2_current": {
+        "load_decrease_occurrences": 3,
+        "load_decrease_targets": 3,
+        "lost_occurrences": 3,
+        "new_occurrences": 9,
+        "new_support": 9,
+        "old_occurrences": 9,
+        "old_support": 9,
+        "support_losses": 3
+      },
+      "linear_upper_q2_current": {
+        "load_decrease_occurrences": 0,
+        "load_decrease_targets": 0,
+        "lost_occurrences": 0,
+        "new_occurrences": 9,
+        "new_support": 7,
+        "old_occurrences": 9,
+        "old_support": 7,
+        "support_losses": 0
+      },
+      "stage": 1
+    }
+  ],
   "internal_residence_excluding_terminal_crossings": {
     "new": {
       "lower_q2": true,
