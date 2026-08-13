@@ -1,0 +1,38 @@
+c 0/15 child_D3 1100111000 1100101100 bound=C22 solution=22
+c 1/15 child_D3 1111000010 1101100010 bound=C22 solution=22
+c 2/15 child_D3 1100111000 1100101010 bound=C22 solution=22
+c 3/15 child_D3 1111000010 1101010010 bound=C22 solution=22
+c 4/15 child_D3 1100110100 1100110010 bound=C22 solution=22
+c 5/15 child_D3 1110100010 1110010010 bound=C16 solution=18
+c 6/15 child_D3 1100110100 1100101100 bound=C20 solution=20
+c 7/15 child_D3 1110100010 1101100010 bound=C20 solution=20
+c 8/15 child_D2 1110001100 1101001100 bound=C20 solution=22
+c 9/15 child_D2 1110001010 1101001010 bound=C20 solution=22
+c 10/15 child_D2 1110001100 1110001010 bound=C22 solution=22
+c 11/15 split_bridge 1010101010 1100101010 bound=C14 solution=14
+c 12/15 split_bridge 1100101010 1101001010 bound=C18 solution=18
+c 13/15 split_bridge 1101001010 1101010010 bound=C18 solution=18
+c 14/15 split_bridge 1101010010 1101010100 bound=C18 solution=18
+	Command being timed: "python3 search_t2_suffix_d5_split_tree_missing_minima_20260814.py build_t2_suffix_d5_first_return_split_tree_20260814.h100.out --maximum-owner-length 15"
+	User time (seconds): 764.89
+	System time (seconds): 2.70
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:47.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1944728
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 919375
+	Voluntary context switches: 1
+	Involuntary context switches: 1621
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

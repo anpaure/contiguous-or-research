@@ -1,0 +1,175 @@
+{
+  "aggregate_q2_support_encoded": false,
+  "candidate_count_histogram": {
+    "12": 2,
+    "24": 1,
+    "28": 2,
+    "32": 1,
+    "36": 2,
+    "44": 1,
+    "56": 1,
+    "68": 1,
+    "72": 1,
+    "76": 1,
+    "84": 2,
+    "88": 1,
+    "94": 1,
+    "100": 1,
+    "128": 1,
+    "172": 1,
+    "196": 1,
+    "204": 1,
+    "220": 2,
+    "274": 1,
+    "304": 1,
+    "312": 1,
+    "364": 1,
+    "384": 1,
+    "420": 1,
+    "445": 1,
+    "518": 1,
+    "520": 1,
+    "524": 1,
+    "544": 1,
+    "610": 1,
+    "896": 1,
+    "1096": 1,
+    "1174": 1,
+    "1352": 1,
+    "5484": 1
+  },
+  "cnf": {
+    "clauses": 1427287,
+    "extension_edges": 41,
+    "q2_targets": 0,
+    "variables": 490991
+  },
+  "core_role_histogram": {
+    "child_D4": 4
+  },
+  "core_split_histogram": {
+    "[[0, 4], [0, 4]]": 1,
+    "[[4, 0], [4, 0]]": 3
+  },
+  "edges": 41,
+  "minimal_unsat_core": [
+    {
+      "candidate_count": 24,
+      "candidate_prefix_histogram": {
+        "101001001101": 8,
+        "101001010101": 8,
+        "101010001101": 8
+      },
+      "edge": {
+        "child": "wrap",
+        "role": "child_D4",
+        "split_pair": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "suffix_edge": [
+          "1111100000",
+          "1101110000"
+        ]
+      },
+      "edge_index": 1,
+      "minimum_incidence_length": 22
+    },
+    {
+      "candidate_count": 12,
+      "candidate_prefix_histogram": {
+        "101001001101": 4,
+        "101001010101": 4,
+        "101010001101": 4
+      },
+      "edge": {
+        "child": "wrap",
+        "role": "child_D4",
+        "split_pair": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "suffix_edge": [
+          "1110101000",
+          "1110100100"
+        ]
+      },
+      "edge_index": 17,
+      "minimum_incidence_length": 18
+    },
+    {
+      "candidate_count": 32,
+      "candidate_prefix_histogram": {
+        "101001001101": 8,
+        "101001010101": 8,
+        "101010001101": 16
+      },
+      "edge": {
+        "child": "10",
+        "role": "child_D4",
+        "split_pair": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "suffix_edge": [
+          "1011010100",
+          "1010110100"
+        ]
+      },
+      "edge_index": 18,
+      "minimum_incidence_length": 18
+    },
+    {
+      "candidate_count": 36,
+      "candidate_prefix_histogram": {
+        "101001001101": 12,
+        "101001010101": 12,
+        "101010001101": 12
+      },
+      "edge": {
+        "child": "wrap",
+        "role": "child_D4",
+        "split_pair": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "suffix_edge": [
+          "1110100100",
+          "1110010100"
+        ]
+      },
+      "edge_index": 21,
+      "minimum_incidence_length": 18
+    }
+  ],
+  "minimum_extension_overhead_owner_steps": null,
+  "minimum_extension_uses": null,
+  "selection": null,
+  "status": "UNSAT",
+  "total_candidates": 17335,
+  "unsat_core_inclusion_minimal": true
+}
