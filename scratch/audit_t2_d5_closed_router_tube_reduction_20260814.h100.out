@@ -1,0 +1,147 @@
+{
+  "carrier_finite_replay": "PASS",
+  "conclusions": {
+    "closed_tube_realizes_D5_reset": false,
+    "common_X_Y_and_lower_ticket_bank": true,
+    "identity_outer_monodromy_both_states": true,
+    "support_monotonicity_follows_from_nonzero_current": false,
+    "terminal_crossing_residence_audited": false
+  },
+  "derived_immediate_lower_ticket_bank": {
+    "duplicates": {
+      "a00+a01+a02+a10+a11+a12+b0+b1+h": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "a00+a01+a02+b0+h+k1+t10+t11+t12": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "multiplicity_histogram": {
+      "1": 24,
+      "3": 2
+    },
+    "occurrences": 30,
+    "old_new_equal": true,
+    "simple": false,
+    "support": 26
+  },
+  "ground_size": 20,
+  "immediate_upper_bank": {
+    "occurrences": 30,
+    "old_new_equal": true,
+    "simple": true,
+    "support": 30
+  },
+  "internal_residence_excluding_terminal_crossings": {
+    "new": {
+      "lower_q2": true,
+      "upper_q2": true
+    },
+    "old": {
+      "lower_q2": true,
+      "upper_q2": true
+    }
+  },
+  "linear_lower_q2_current": {
+    "load_decrease_occurrences": 6,
+    "load_decrease_targets": 6,
+    "lost_occurrences": 6,
+    "new_occurrences": 27,
+    "new_support": 25,
+    "old_occurrences": 27,
+    "old_support": 25,
+    "support_losses": 6
+  },
+  "linear_upper_q2_current": {
+    "load_decrease_occurrences": 3,
+    "load_decrease_targets": 3,
+    "lost_occurrences": 3,
+    "new_occurrences": 27,
+    "new_support": 21,
+    "old_occurrences": 27,
+    "old_support": 21,
+    "support_losses": 3
+  },
+  "outer_action_matches_any_required_reset": false,
+  "outer_actions": {
+    "new": [
+      0,
+      1,
+      2
+    ],
+    "old": [
+      0,
+      1,
+      2
+    ]
+  },
+  "owner_bank": {
+    "occurrences": 33,
+    "old_new_equal": true,
+    "simple": true,
+    "support": 33
+  },
+  "permutation_parity_obstruction": "C6 stage actions lie in A3; each D5 tail-fixed reset is odd",
+  "required_d5_tail_fixed_transpositions": {
+    "tail_0": [
+      0,
+      2,
+      1
+    ],
+    "tail_1": [
+      2,
+      1,
+      0
+    ],
+    "tail_2": [
+      1,
+      0,
+      2
+    ]
+  },
+  "stage_actions": {
+    "new_stage_0": [
+      2,
+      0,
+      1
+    ],
+    "new_stage_1": [
+      1,
+      2,
+      0
+    ],
+    "old_stage_0": [
+      0,
+      1,
+      2
+    ],
+    "old_stage_1": [
+      0,
+      1,
+      2
+    ]
+  },
+  "status": "REDUCTION_FAIL"
+}
