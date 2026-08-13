@@ -104,6 +104,36 @@ endpoint sequences, `ell_i=i+alpha_i`, `r_i=i+beta_i`,
    bounded-gap A-ledger; derivation incomplete; uniqueness
    uncertified).  The open fork Q3 stands as the working target, with
    its premises correspondingly conditional.
+13. [Proved and independently hostile-audited, 2026-08-14]
+   **Thirteen-port MSW serialization theorem.**  For
+   `n=2m+1>=13(d+1)`, the case-selected highest-valley arborescence admits
+   one simultaneous coalesced common-history realization using thirteen
+   fixed source starts.  It fuses every native tight MSW circuit into one
+   cyclic source word and preserves the complete occurrence-labelled deck
+   through width `d+1`.  This closes owner/strict-lower chronology in the
+   target regime `d=O(sqrt(m))`, but not proper-upper completion.
+14. [Proved finite theorem, 2026-08-14; not an asymptotic extrapolation]
+   The split-aware `D_5` T2 bank has 41 pairwise owner/q1-disjoint circuits,
+   preserves aggregate q2 support, and sends all 42 suffix roots and 372
+   touched components to one component.  Its undilated chronology has 181
+   upper and 151 lower bad q2 collars, so symbolic residence dilation and
+   an all-suffix grammar remain open.
+15. [Proved, 2026-08-14]
+   **Canonical two-step GK selector fiber theorem.**  Deleting the first
+   two free ones gives an injective upper-to-lower map, but the associated
+   head map has exact fiber law
+   `#{B: fibre(B)=k}=binom(2m-k,m-k)`.  Hence its distinct-head deficit is
+   `binom(2m,m-2)=((m-1)/(2m+1))binom(2m+1,m+2)`, asymptotically one half.
+   The direct two-step-chain shortcut therefore requires a macroscopic,
+   not sparse, repair.
+16. [Exact reduction plus finite obstruction, 2026-08-14]
+   Restricting fixed-GK leaf choices to `q>p` makes every selected owner
+   edge descend the coordinate-sum potential, so any simultaneous
+   lower/head SDR is automatically a Catalan linear forest.  The inverse
+   host has exactly three head charts.  All two-chart subhosts fail in
+   finite cases, and the full leaf-right head projection first has a Hall
+   defect at `m=7`; an all-parameter adaptive reset theorem is now the
+   precise selector gate.
 
 ## 2. Theorem A: subquadratic aggregation relaxation
 
