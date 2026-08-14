@@ -1,0 +1,85 @@
+{
+  "added_cable_router_owners": 24,
+  "ambient_exterior_owners": 12,
+  "cut_open_context_substitution_verified": false,
+  "ingredient_run_minima": [
+    [
+      3,
+      3,
+      4,
+      2
+    ],
+    [
+      3,
+      3,
+      4,
+      2
+    ],
+    [
+      3,
+      3,
+      4,
+      2
+    ],
+    [
+      3,
+      3,
+      4,
+      2
+    ],
+    [
+      3,
+      3,
+      4,
+      2
+    ],
+    [
+      3,
+      3,
+      4,
+      2
+    ]
+  ],
+  "lifted_signature": [
+    1,
+    1,
+    1,
+    10,
+    13
+  ],
+  "marked_action": "(B U C)",
+  "new_component_lengths": [
+    36
+  ],
+  "old_component_lengths": [
+    6,
+    12,
+    18
+  ],
+  "old_new_run_minima": [
+    3,
+    3,
+    4,
+    2
+  ],
+  "owners_distinct": 36,
+  "status": "PASS",
+  "suppressed_action": "(B C)",
+  "tail_distinct_from_bank": true,
+  "terminal_signature": [
+    1,
+    1,
+    1,
+    6,
+    9
+  ],
+  "typed_deck_distinct_counts": {
+    "lower_q1": 36,
+    "lower_q2": 36,
+    "owner": 36,
+    "upper_q1": 36,
+    "upper_q2": 36
+  },
+  "typed_decks_equal": true,
+  "variant": "adjacent"
+}
