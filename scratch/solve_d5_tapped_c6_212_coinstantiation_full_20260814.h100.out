@@ -1,0 +1,6224 @@
+{
+  "certificate_sha256": "05552624784b67253b9f7d07b3e37c63cb25254d9b80872835952c38ba9605c1",
+  "chosen": [],
+  "collar_infeasible_rows": 164,
+  "collar_mode": "full",
+  "diagnostics": [
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 0,
+      "source_row": 1
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 1,
+      "source_row": 2
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 2,
+      "source_row": 7
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 3,
+      "source_row": 9
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 4,
+      "source_row": 10
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 5,
+      "source_row": 12
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 6,
+      "source_row": 14
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 7,
+      "source_row": 24
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 8,
+      "source_row": 28
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            2
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            2
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 9,
+      "source_row": 29
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 10,
+      "source_row": 30
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 11,
+      "source_row": 31
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 12,
+      "source_row": 35
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 13,
+      "source_row": 36
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1523,
+        "protected_lower_q1": 22,
+        "protected_owner": 55
+      },
+      "row": 14
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1525,
+        "protected_lower_q1": 27,
+        "protected_owner": 48
+      },
+      "row": 15
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1468,
+        "protected_lower_q1": 29,
+        "protected_owner": 103
+      },
+      "row": 16
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 17,
+      "source_row": 47
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 18,
+      "source_row": 48
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 19,
+      "source_row": 49
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 20,
+      "source_row": 53
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1574,
+        "protected_lower_q1": 11,
+        "protected_owner": 15
+      },
+      "row": 21
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 22,
+      "source_row": 55
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 23,
+      "source_row": 56
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1477,
+        "protected_lower_q1": 8,
+        "protected_owner": 115
+      },
+      "row": 24
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 25,
+      "source_row": 61
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1527,
+        "protected_lower_q1": 13,
+        "protected_owner": 60
+      },
+      "row": 26
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 27,
+      "source_row": 63
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1484,
+        "protected_lower_q1": 31,
+        "protected_owner": 85
+      },
+      "row": 28
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1423,
+        "protected_lower_q1": 25,
+        "protected_owner": 152
+      },
+      "row": 29
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 30,
+      "source_row": 67
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 31,
+      "source_row": 69
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 32,
+      "source_row": 70
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 33,
+      "source_row": 71
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            2
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            2
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 34,
+      "source_row": 72
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1573,
+        "protected_lower_q1": 13,
+        "protected_owner": 14
+      },
+      "row": 35
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 36,
+      "source_row": 74
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1515,
+        "protected_lower_q1": 30,
+        "protected_owner": 55
+      },
+      "row": 37
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            9
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            9
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 38,
+      "source_row": 76
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 39,
+      "source_row": 82
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1552,
+        "protected_lower_q1": 14,
+        "protected_owner": 34
+      },
+      "row": 40
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 41,
+      "source_row": 85
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 42,
+      "source_row": 86
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 43,
+      "source_row": 87
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 44,
+      "source_row": 92
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1484,
+        "protected_lower_q1": 36,
+        "protected_owner": 80
+      },
+      "row": 45
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 46,
+      "source_row": 95
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 47,
+      "source_row": 101
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 48,
+      "source_row": 102
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1482,
+        "protected_lower_q1": 57,
+        "protected_owner": 61
+      },
+      "row": 49
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 50,
+      "source_row": 104
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 51,
+      "source_row": 106
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1473,
+        "protected_lower_q1": 5,
+        "protected_owner": 122
+      },
+      "row": 52
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 53,
+      "source_row": 109
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 54,
+      "source_row": 110
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1510,
+        "protected_lower_q1": 13,
+        "protected_owner": 77
+      },
+      "row": 55
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 56,
+      "source_row": 114
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 57,
+      "source_row": 118
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 58,
+      "source_row": 119
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1367,
+        "protected_lower_q1": 94,
+        "protected_owner": 139
+      },
+      "row": 59
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 60,
+      "source_row": 121
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1476,
+        "protected_lower_q1": 8,
+        "protected_owner": 116
+      },
+      "row": 61
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 62,
+      "source_row": 125
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1557,
+        "protected_lower_q1": 19,
+        "protected_owner": 24
+      },
+      "row": 63
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 64,
+      "source_row": 131
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1558,
+        "protected_lower_q1": 13,
+        "protected_owner": 29
+      },
+      "row": 65
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1533,
+        "protected_lower_q1": 33,
+        "protected_owner": 34
+      },
+      "row": 66
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            9
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            9
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 67,
+      "source_row": 140
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 68,
+      "source_row": 149
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 69,
+      "source_row": 152
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 70,
+      "source_row": 160
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 71,
+      "source_row": 161
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 72,
+      "source_row": 162
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 73,
+      "source_row": 166
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 74,
+      "source_row": 167
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 75,
+      "source_row": 168
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 76,
+      "source_row": 172
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 77,
+      "source_row": 173
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 78,
+      "source_row": 174
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 79,
+      "source_row": 176
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 80,
+      "source_row": 182
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 81,
+      "source_row": 183
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1501,
+        "protected_lower_q1": 37,
+        "protected_owner": 62
+      },
+      "row": 82
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 83,
+      "source_row": 185
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1431,
+        "protected_lower_q1": 14,
+        "protected_owner": 155
+      },
+      "row": 84
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 85,
+      "source_row": 187
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 86,
+      "source_row": 191
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1483,
+        "protected_lower_q1": 63,
+        "protected_owner": 54
+      },
+      "row": 87
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 88,
+      "source_row": 193
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 89,
+      "source_row": 195
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 90,
+      "source_row": 203
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 91,
+      "source_row": 204
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 92,
+      "source_row": 205
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 93,
+      "source_row": 209
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1573,
+        "protected_lower_q1": 12,
+        "protected_owner": 15
+      },
+      "row": 94
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 95,
+      "source_row": 213
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            1
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            1
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 96,
+      "source_row": 214
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 97,
+      "source_row": 217
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 98,
+      "source_row": 218
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1566,
+        "protected_lower_q1": 8,
+        "protected_owner": 26
+      },
+      "row": 99
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 100,
+      "source_row": 223
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1415,
+        "protected_lower_q1": 45,
+        "protected_owner": 140
+      },
+      "row": 101
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 102,
+      "source_row": 231
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            2
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            2
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 103,
+      "source_row": 232
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 104,
+      "source_row": 233
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 105,
+      "source_row": 242
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 106,
+      "source_row": 243
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 107,
+      "source_row": 245
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 108,
+      "source_row": 247
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 109,
+      "source_row": 248
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 110,
+      "source_row": 252
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1581,
+        "protected_lower_q1": 2,
+        "protected_owner": 17
+      },
+      "row": 111
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 112,
+      "source_row": 255
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 113,
+      "source_row": 257
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 114,
+      "source_row": 261
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1520,
+        "protected_lower_q1": 30,
+        "protected_owner": 50
+      },
+      "row": 115
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 116,
+      "source_row": 269
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 117,
+      "source_row": 270
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 118,
+      "source_row": 271
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 119,
+      "source_row": 275
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 120,
+      "source_row": 276
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1508,
+        "protected_lower_q1": 31,
+        "protected_owner": 61
+      },
+      "row": 121
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 122,
+      "source_row": 283
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 123,
+      "source_row": 284
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 124,
+      "source_row": 285
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 125,
+      "source_row": 287
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 126,
+      "source_row": 288
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 127,
+      "source_row": 289
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 128,
+      "source_row": 292
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 129,
+      "source_row": 293
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 130,
+      "source_row": 294
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1597,
+        "protected_lower_q1": 2,
+        "protected_owner": 1
+      },
+      "row": 131
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 132,
+      "source_row": 299
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 133,
+      "source_row": 304
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 134,
+      "source_row": 305
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1517,
+        "protected_lower_q1": 25,
+        "protected_owner": 58
+      },
+      "row": 135
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 136,
+      "source_row": 307
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 137,
+      "source_row": 311
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 138,
+      "source_row": 313
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1519,
+        "protected_lower_q1": 12,
+        "protected_owner": 69
+      },
+      "row": 139
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 140,
+      "source_row": 316
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1427,
+        "protected_lower_q1": 14,
+        "protected_owner": 159
+      },
+      "row": 141
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 142,
+      "source_row": 322
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 143,
+      "source_row": 323
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 144,
+      "source_row": 324
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 145,
+      "source_row": 325
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            1
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            1
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 146,
+      "source_row": 327
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 147,
+      "source_row": 332
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 148,
+      "source_row": 334
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 149,
+      "source_row": 336
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 150,
+      "source_row": 340
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 151,
+      "source_row": 341
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1567,
+        "protected_lower_q1": 18,
+        "protected_owner": 15
+      },
+      "row": 152
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 153,
+      "source_row": 344
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 154,
+      "source_row": 345
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            9
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            9
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 155,
+      "source_row": 346
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1541,
+        "protected_lower_q1": 19,
+        "protected_owner": 40
+      },
+      "row": 156
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1516,
+        "protected_lower_q1": 48,
+        "protected_owner": 36
+      },
+      "row": 157
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            9
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            9
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 158,
+      "source_row": 353
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 159,
+      "source_row": 355
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 160,
+      "source_row": 356
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 161,
+      "source_row": 357
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1532,
+        "protected_lower_q1": 41,
+        "protected_owner": 27
+      },
+      "row": 162
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 163,
+      "source_row": 359
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1481,
+        "protected_lower_q1": 74,
+        "protected_owner": 45
+      },
+      "row": 164
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 165,
+      "source_row": 365
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 166,
+      "source_row": 377
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1431,
+        "protected_lower_q1": 37,
+        "protected_owner": 132
+      },
+      "row": 167
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 168,
+      "source_row": 380
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 169,
+      "source_row": 384
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 170,
+      "source_row": 385
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 171,
+      "source_row": 386
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            19
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            19
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 172,
+      "source_row": 388
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1351,
+        "protected_lower_q1": 52,
+        "protected_owner": 197
+      },
+      "row": 173
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1521,
+        "protected_lower_q1": 34,
+        "protected_owner": 45
+      },
+      "row": 174
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1476,
+        "protected_lower_q1": 34,
+        "protected_owner": 90
+      },
+      "row": 175
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            7
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            7
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 176,
+      "source_row": 400
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 177,
+      "source_row": 401
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 178,
+      "source_row": 402
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1349,
+        "protected_lower_q1": 56,
+        "protected_owner": 195
+      },
+      "row": 179
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 180,
+      "source_row": 406
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 181,
+      "source_row": 408
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 182,
+      "source_row": 409
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1498,
+        "protected_lower_q1": 33,
+        "protected_owner": 69
+      },
+      "row": 183
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 184,
+      "source_row": 411
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 185,
+      "source_row": 413
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1334,
+        "protected_lower_q1": 81,
+        "protected_owner": 185
+      },
+      "row": 186
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 187,
+      "source_row": 417
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 188,
+      "source_row": 422
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 189,
+      "source_row": 423
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            2
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            2
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 190,
+      "source_row": 424
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 191,
+      "source_row": 425
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 192,
+      "source_row": 430
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1412,
+        "protected_lower_q1": 76,
+        "protected_owner": 112
+      },
+      "row": 193
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            4
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            4
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 194,
+      "source_row": 434
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 195,
+      "source_row": 435
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 196,
+      "source_row": 436
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            15
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            15
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 197,
+      "source_row": 438
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            13
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            13
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 198,
+      "source_row": 439
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            14
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            14
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 199,
+      "source_row": 440
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1573,
+        "protected_lower_q1": 8,
+        "protected_owner": 19
+      },
+      "row": 200
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 201,
+      "source_row": 449
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            12
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            12
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 202,
+      "source_row": 450
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            12
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            12
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            17
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            17
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 203,
+      "source_row": 457
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            12
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            12
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 204,
+      "source_row": 458
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 205,
+      "source_row": 459
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            3
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            3
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            18
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            18
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 206,
+      "source_row": 462
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            16
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            16
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 207,
+      "source_row": 465
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            21
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            21
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 208,
+      "source_row": 469
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            20
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            20
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            6
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            6
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 209,
+      "source_row": 470
+    },
+    {
+      "accepted": 0,
+      "attempts": 1600,
+      "collar_deficits": [],
+      "kind": "adjacent",
+      "rejections": {
+        "collar_clock": 1430,
+        "protected_lower_q1": 43,
+        "protected_owner": 127
+      },
+      "row": 210
+    },
+    {
+      "accepted": 0,
+      "attempts": 0,
+      "collar_deficits": [
+        {
+          "all_cell_coordinates": [
+            10
+          ],
+          "available_coordinates": [],
+          "cell": "010",
+          "guarded_coordinates": [
+            10
+          ],
+          "required_clock_roles": 1
+        },
+        {
+          "all_cell_coordinates": [
+            0
+          ],
+          "available_coordinates": [],
+          "cell": "001",
+          "guarded_coordinates": [
+            0
+          ],
+          "required_clock_roles": 1
+        }
+      ],
+      "kind": "distance_two",
+      "rejections": {
+        "exact_collar_capacity": 1
+      },
+      "row": 211,
+      "source_row": 472
+    }
+  ],
+  "greedy_trials": 0,
+  "menu_size_histogram": {
+    "0": 212
+  },
+  "menu_size_requested": 16,
+  "protected": {
+    "collar_guard_size_histogram": {
+      "10": 4,
+      "11": 15,
+      "12": 29,
+      "13": 35,
+      "14": 57,
+      "15": 30,
+      "16": 27,
+      "17": 12,
+      "18": 3
+    },
+    "lower_q1": 2287,
+    "lower_q2": 2747,
+    "owner_radius_two_halo": 1859,
+    "terminals": 510,
+    "upper_q1": 2239,
+    "upper_q2": 2530
+  },
+  "row_kind_histogram": {
+    "adjacent": 48,
+    "distance_two": 164
+  },
+  "rows_assigned": 0,
+  "scope": "literal coordinate relabelings of tapped rank-11 C6 boxes; radius-two old/new D5 socket halo protected; intended T/B/C owner sockets exempt; exposed graft collars not constructed",
+  "seed": 20260814,
+  "selected_resource_counts": null,
+  "selection_sha256": "94deb656dac1d8955b20d851e92600156d703842d6de169d4b6bea356fa3ec32",
+  "smallest_exact_unsat_core": {
+    "deficits": [
+      {
+        "all_cell_coordinates": [
+          0
+        ],
+        "available_coordinates": [],
+        "cell": "010",
+        "guarded_coordinates": [
+          0
+        ],
+        "required_clock_roles": 1
+      },
+      {
+        "all_cell_coordinates": [
+          13
+        ],
+        "available_coordinates": [],
+        "cell": "001",
+        "guarded_coordinates": [
+          13
+        ],
+        "required_clock_roles": 1
+      }
+    ],
+    "kind": "distance_two",
+    "row": 0,
+    "rows": 1,
+    "source_row": 1
+  },
+  "status": "UNSAT_COLLAR"
+}
