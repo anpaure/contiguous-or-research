@@ -1,0 +1,138 @@
+{
+  "degree_two_upper_target_capacity_bounds": {
+    "router_packages_only": 16272,
+    "router_packages_plus_all_collar_owners": 22060
+  },
+  "first_catalan_hole_excess": {
+    "router_packages_only": {
+      "hole_family_size": 16796,
+      "m": 16,
+      "preceding_hole_family_size": 4862,
+      "preceding_m": 15
+    },
+    "router_packages_plus_all_collar_owners": {
+      "hole_family_size": 58786,
+      "m": 17,
+      "preceding_hole_family_size": 16796,
+      "preceding_m": 16
+    }
+  },
+  "flat_certificate_sha256": "2b7bc68cb4559696c0dcf6bc0f7464c8dbe0d7d398dfab2b0996282a7f419dcc",
+  "maximum_bipartite_degree": 3,
+  "owner_budgets_if_all_collar_owners_are_exceptional": {
+    "226_times_36_router_package_owners": 8136,
+    "461_times_6_plus_16_times_8_collar_owners": 2894,
+    "total": 11030
+  },
+  "proposed_token_collar_counts": {
+    "C6_for_degree_1_or_2": 461,
+    "C8_for_degree_3": 16,
+    "dummy_identity_cuts_for_degree_1": 292
+  },
+  "router_degree_histogram": {
+    "3": 226
+  },
+  "router_nodes": 226,
+  "router_token_incidences": 678,
+  "sample_scale_rows": [
+    {
+      "catalan_holes": 132,
+      "constant_226_plus_collars_capacity_sufficient": true,
+      "constant_226_router_only_capacity_sufficient": true,
+      "m": 12,
+      "minimum_36_owner_packages_from_degree_two_bound": 2
+    },
+    {
+      "catalan_holes": 429,
+      "constant_226_plus_collars_capacity_sufficient": true,
+      "constant_226_router_only_capacity_sufficient": true,
+      "m": 13,
+      "minimum_36_owner_packages_from_degree_two_bound": 6
+    },
+    {
+      "catalan_holes": 1430,
+      "constant_226_plus_collars_capacity_sufficient": true,
+      "constant_226_router_only_capacity_sufficient": true,
+      "m": 14,
+      "minimum_36_owner_packages_from_degree_two_bound": 20
+    },
+    {
+      "catalan_holes": 4862,
+      "constant_226_plus_collars_capacity_sufficient": true,
+      "constant_226_router_only_capacity_sufficient": true,
+      "m": 15,
+      "minimum_36_owner_packages_from_degree_two_bound": 68
+    },
+    {
+      "catalan_holes": 16796,
+      "constant_226_plus_collars_capacity_sufficient": true,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 16,
+      "minimum_36_owner_packages_from_degree_two_bound": 234
+    },
+    {
+      "catalan_holes": 58786,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 17,
+      "minimum_36_owner_packages_from_degree_two_bound": 817
+    },
+    {
+      "catalan_holes": 208012,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 18,
+      "minimum_36_owner_packages_from_degree_two_bound": 2890
+    },
+    {
+      "catalan_holes": 742900,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 19,
+      "minimum_36_owner_packages_from_degree_two_bound": 10319
+    },
+    {
+      "catalan_holes": 2674440,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 20,
+      "minimum_36_owner_packages_from_degree_two_bound": 37145
+    },
+    {
+      "catalan_holes": 9694845,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 21,
+      "minimum_36_owner_packages_from_degree_two_bound": 134651
+    },
+    {
+      "catalan_holes": 35357670,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 22,
+      "minimum_36_owner_packages_from_degree_two_bound": 491079
+    },
+    {
+      "catalan_holes": 129644790,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 23,
+      "minimum_36_owner_packages_from_degree_two_bound": 1800623
+    },
+    {
+      "catalan_holes": 477638700,
+      "constant_226_plus_collars_capacity_sufficient": false,
+      "constant_226_router_only_capacity_sufficient": false,
+      "m": 24,
+      "minimum_36_owner_packages_from_degree_two_bound": 6633871
+    }
+  ],
+  "status": "PASS",
+  "symbolic_bound": "P disjoint 36-owner packages touch at most 36P owner occurrences and hence at most 72P final degree-two edges; Cat_(m-6) distinct holes require P >= ceil(Cat_(m-6)/72)",
+  "token_degree_histogram": {
+    "1": 292,
+    "2": 169,
+    "3": 16
+  },
+  "token_nodes": 477
+}
