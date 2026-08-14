@@ -49,6 +49,10 @@ cost is eight, the only possible `a` profile is `(2,-1,-1,-1)` on the
 targets and zero outside.  The remaining `b` mass is three in \(\ell^1\),
 with sum one.  The local equation forces `b=-1` at the `a=2` target and
 nonnegative `b` elsewhere, of total two.  This is exactly Proposition 4.1.
+At an exterior coordinate the same local equation permits only
+`b in {-1,0,1}`.  Hence the two positive long centres cannot repeat at one
+exterior: `b=2` would force `t=-6`, outside `|t|<=4`.  The patched source
+now states explicitly that repetition is possible only at a target.
 
 ## 4. Verifier scope
 
@@ -86,7 +90,8 @@ one-way scope explicit, PASS.
 
 ## 6. Frozen provenance
 
-Source SHA-256: `54d2477fb1b7d90a8ffbaafb05dd603f3c6a6e3c9ebe3edb51b1f3b23a0f243b`  
+Source SHA-256: `4351d8320508338a7c24f04e1c26efd71ae32180b24c85db468555e526639d09`
+
 Verifier: `scratch/verify_q3_near_c_centre_support_hole_20260814.py`  
 Verifier SHA-256:
 `a8ce9583f1f00ede02f3237db6f808a4e38c977d9b5039849adf9b8e0dcb6a8b`  

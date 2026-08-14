@@ -3,8 +3,9 @@
 **Date:** 2026-08-14  
 **Status:** exact named-owner obstruction.  It rules out every three-rail
 per shore realization of the sharp q=3 centre-character bound, including
-all placements of the one positive long rail.  It does not classify larger
-q=3 profiles or construct the next atom.
+all placements of the one positive long rail.  A later companion theorem,
+`MATH_THEOREM_Q3_FOUR_BY_FOUR_NEAR_C_ATOM_ON_ELEVEN_LABELS_20260814.md`,
+constructs the sharp next atom.
 
 ## 0. Outcome
 
@@ -246,9 +247,12 @@ Every possible four-rail q=3 trade has the following centre multiset:
 * negative: one period-nine rail at `z_0` and one period-eight rail at
   each of `z_1,z_2,z_3`.
 
-The two positive long centres may be target or exterior labels.  This is
-only a necessary centre/point-degree shape; cyclic-window owner equality
-remains open.
+The two positive long centres may be target or exterior labels, but a
+repeated centre can only be a target.  Indeed, two positive long rails at
+one exterior `x` would have `a_x=0,b_x=2`, forcing `t_x=-6` in `(4.1)` and
+contradicting `(4.2)`.  This is only a necessary centre/point-degree shape;
+cyclic-window owner equality is supplied separately by the companion
+eleven-label theorem.
 
 ### Corollary 4.2 (the minimal ten-label ground is impossible)
 
@@ -276,7 +280,7 @@ reduced labels.  Every possible four-by-four realization needs at least
 eleven reduced labels and, more precisely, at least one of its two positive
 period-nine toggle supports must omit `z_0`.
 
-## 5. Corrected next gate
+## 5. Corrected next gate (subsequently resolved at the owner level)
 
 The next q=3 search must change the centre support before choosing cyclic
 orders.  At least one of the following is necessary:
@@ -293,6 +297,8 @@ The centre congruences remain necessary, but they are not sufficient even
 at their sharp \(\ell^1\) value.  The first additional feasibility test for
 any proposed profile is therefore the binary centre-support incidence
 test furnished by Lemma 1.1, before any cyclic-order exact cover is run.
+The companion eleven-label theorem passes both tests for two distinct
+target centres and gives a simple exact 34-versus-33 owner certificate.
 
 ## 6. Independent finite replay
 
