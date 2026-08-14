@@ -1,0 +1,10 @@
+{
+  "all_certificates_cover_every_vertex_exactly_once": true,
+  "fixed_vertices": 70,
+  "method": "independent literal validation of every perfect-matching certificate; no matching algorithm used",
+  "nondihedral_edges": 8,
+  "reported_histograms_recomputed_exactly": true,
+  "status": "PASS",
+  "strong_edges": 1260,
+  "subsets_checked": 256
+}
