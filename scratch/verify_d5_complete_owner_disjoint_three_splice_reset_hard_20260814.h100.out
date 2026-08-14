@@ -1,0 +1,42 @@
+{
+  "added_cross_edges_each_phase": 6,
+  "added_router_cable_owners": 24,
+  "ambient_exterior_owners": 12,
+  "external_tail_is_distinct_unmodified_owner": true,
+  "ground": 13,
+  "hidden_auxiliary_quotient_transposition": true,
+  "lower_upper_q2_occurrence_current_zero": true,
+  "new_component_lengths": [
+    36
+  ],
+  "new_full_marked_return_three_cycle": true,
+  "old_component_lengths": [
+    6,
+    12,
+    18
+  ],
+  "old_marked_return_identity": true,
+  "old_new_minima": [
+    3,
+    3,
+    4,
+    2
+  ],
+  "owner_rank": 7,
+  "physical_owners": 36,
+  "q1_simple": true,
+  "q2_distinct_values": [
+    36,
+    36
+  ],
+  "removed_edges_each_phase": 6,
+  "status": "PASS",
+  "terminal_signature": [
+    1,
+    1,
+    2,
+    5,
+    9
+  ],
+  "witness_sha256": "dda4a8f5fd4b05ae31e19b00ebbbe61fb11f92738e30fdc394cb5ae8ae06ebb4"
+}
