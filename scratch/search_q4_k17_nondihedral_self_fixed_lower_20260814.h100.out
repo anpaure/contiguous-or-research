@@ -1,0 +1,341 @@
+{
+  "counts": {
+    "compatible_constraint_pairs": 58936,
+    "completed_orders": 72639808,
+    "completed_orders_with_incident_mates": 72639808,
+    "deduplicated_compatible_tails": 72639808,
+    "fixed_lower_boundary_seeds": 241920,
+    "lower_nonsimple": 11864,
+    "owner_nonsimple": 3627836,
+    "owner_not_self": 69000100,
+    "owner_self": 8,
+    "seeds_with_two_target_windows": 40912
+  },
+  "examples": [
+    {
+      "constant_owner_translation": false,
+      "core": [
+        3,
+        4,
+        5,
+        13,
+        14
+      ],
+      "fixed_lower_rows": 2,
+      "fixed_owner_rows": 2,
+      "lower_action": null,
+      "lower_orbits": [
+        3687,
+        14621,
+        13085,
+        7961,
+        6927,
+        6687,
+        3359,
+        3979,
+        7051,
+        10007
+      ],
+      "lower_permutation": null,
+      "order": [
+        16,
+        8,
+        12,
+        9,
+        1,
+        10,
+        2,
+        11,
+        6,
+        7
+      ],
+      "owner_action": "nondihedral",
+      "owner_orbits": [
+        11879,
+        14749,
+        14907,
+        13087,
+        7963,
+        6943,
+        6719,
+        11551,
+        8075,
+        11831
+      ],
+      "owner_permutation": [
+        1,
+        0,
+        9,
+        3,
+        5,
+        4,
+        8,
+        7,
+        6,
+        2
+      ],
+      "owner_translation_twist": [
+        0,
+        0,
+        0,
+        6,
+        7,
+        7,
+        10,
+        10,
+        10,
+        0
+      ]
+    },
+    {
+      "constant_owner_translation": false,
+      "core": [
+        3,
+        4,
+        12,
+        13,
+        14
+      ],
+      "fixed_lower_rows": 2,
+      "fixed_owner_rows": 2,
+      "lower_action": null,
+      "lower_orbits": [
+        3687,
+        14621,
+        6715,
+        3359,
+        3979,
+        5663,
+        6927,
+        4895,
+        11827,
+        10007
+      ],
+      "lower_permutation": null,
+      "order": [
+        16,
+        8,
+        5,
+        9,
+        1,
+        10,
+        11,
+        6,
+        15,
+        7
+      ],
+      "owner_action": "nondihedral",
+      "owner_orbits": [
+        11879,
+        14749,
+        14907,
+        6719,
+        11551,
+        8075,
+        7963,
+        6943,
+        13087,
+        11831
+      ],
+      "owner_permutation": [
+        1,
+        0,
+        9,
+        5,
+        4,
+        3,
+        7,
+        6,
+        8,
+        2
+      ],
+      "owner_translation_twist": [
+        0,
+        0,
+        0,
+        7,
+        7,
+        7,
+        10,
+        10,
+        11,
+        0
+      ]
+    },
+    {
+      "constant_owner_translation": false,
+      "core": [
+        3,
+        5,
+        8,
+        11,
+        14
+      ],
+      "fixed_lower_rows": 2,
+      "fixed_owner_rows": 2,
+      "lower_action": null,
+      "lower_orbits": [
+        2925,
+        7013,
+        19099,
+        18779,
+        18859,
+        18869,
+        3509,
+        6987,
+        6747,
+        4827
+      ],
+      "lower_permutation": null,
+      "order": [
+        2,
+        6,
+        9,
+        12,
+        15,
+        1,
+        0,
+        7,
+        10,
+        13
+      ],
+      "owner_action": "nondihedral",
+      "owner_orbits": [
+        5851,
+        7021,
+        21723,
+        19163,
+        19803,
+        19883,
+        19893,
+        7019,
+        7003,
+        6875
+      ],
+      "owner_permutation": [
+        1,
+        0,
+        2,
+        6,
+        5,
+        4,
+        3,
+        9,
+        8,
+        7
+      ],
+      "owner_translation_twist": [
+        0,
+        0,
+        6,
+        8,
+        8,
+        8,
+        8,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "constant_owner_translation": false,
+      "core": [
+        3,
+        6,
+        9,
+        12,
+        14
+      ],
+      "fixed_lower_rows": 2,
+      "fixed_owner_rows": 2,
+      "lower_action": null,
+      "lower_orbits": [
+        2925,
+        7017,
+        6987,
+        6747,
+        2779,
+        18779,
+        18859,
+        18869,
+        19861,
+        5339
+      ],
+      "lower_permutation": null,
+      "order": [
+        2,
+        5,
+        8,
+        11,
+        15,
+        4,
+        7,
+        10,
+        0,
+        16
+      ],
+      "owner_action": "nondihedral",
+      "owner_orbits": [
+        5851,
+        7021,
+        7019,
+        7003,
+        6875,
+        19163,
+        19803,
+        19883,
+        19893,
+        21723
+      ],
+      "owner_permutation": [
+        1,
+        0,
+        4,
+        3,
+        2,
+        8,
+        7,
+        6,
+        5,
+        9
+      ],
+      "owner_translation_twist": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        9,
+        9,
+        9,
+        9,
+        11
+      ]
+    }
+  ],
+  "fixed_row_owner_action_signature": {
+    "2,2,nondihedral": 4
+  },
+  "multiplier_normalization": {
+    "all_fixed_lower_masks": 70,
+    "completeness": "multiplication by every nonzero element of Z_17 commutes with reflection x->-x and preserves translation necklaces, cyclic-window incidence, quotient simplicity, and all fixed-row signatures; hence one fixed-lower representative per multiplier orbit is exhaustive",
+    "multiplier_orbits": 10,
+    "orbit_sizes": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      2,
+      8,
+      4
+    ],
+    "representative_tasks": 560,
+    "unreduced_tasks": 3920
+  },
+  "scope": "all period-10 q4 columns with at least one fixed rank-eight lower bracelet, normalized to lower edge0 and literal reflection; full owner quotient-self test with no assumed induced involution",
+  "status": "PASS",
+  "unique_quotient_self_columns": 4
+}
