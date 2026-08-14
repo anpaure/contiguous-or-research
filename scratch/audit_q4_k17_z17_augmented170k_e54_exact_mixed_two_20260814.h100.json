@@ -1,0 +1,26 @@
+{
+  "best_exchange": null,
+  "elapsed_seconds": 1.9831516742706299,
+  "instance": "/dev/shm/q4z17_reflect_sample0_augmented170k.dat",
+  "mixed_exact_tests": 0,
+  "mixed_face_audit": [],
+  "mixed_outgoing_faces": 1890,
+  "mixed_surviving_faces": 0,
+  "output_histogram": null,
+  "output_state": null,
+  "pair_options": 189462,
+  "scope": "complete pair+self and self+self two-exchange oracle in the finite face",
+  "self_exact_tests": 0,
+  "self_face_audit": [],
+  "self_options": 3749,
+  "self_outgoing_faces": 595,
+  "self_surviving_faces": 0,
+  "source_energy": 54,
+  "source_histogram": {
+    "0": 27,
+    "1": 626,
+    "2": 27
+  },
+  "source_state": "/dev/shm/q4z17_reflect_sample0_augmented170k.e54.steepest1.solution.json",
+  "status": "NO_NEGATIVE_MIXED_TWO_EXCHANGE"
+}

@@ -4,10 +4,10 @@
 
 **Verdict:** **PASS**.  On the frozen 189,462-reflected-pair finite
 instance, one exact three-pair exchange takes the audited E58 state to
-E56.  On the later E54 state, no negative replacement of three selected
-pairs by three distinct unselected pairs exists.  Self lifts remain fixed.
-This does not claim completeness of the finite column catalogue or rule
-out mixed pair/self moves.
+E56, and one exact two-pair exchange then takes E56 to E54.  At E54 there
+is no negative one-exchange of a pair or self lift, no negative two-
+exchange of types pair+pair, pair+self, or self+self, and no negative
+three-pair exchange.  Mixed three-exchanges remain open.
 
 ## 1. Audited implementation
 
@@ -57,16 +57,57 @@ E56 output state sha256
 fde908fb2648e62b94fd0fa8bf7a98fb5703945b180507de0553c4c3ef4880b2
 ```
 
-## 3. Exact E54 three-pair boundary
+## 3. E56 to E54 and the exact E54 local boundary
 
-At the later E54 state, 250 outgoing faces survive, retaining 3,872
+The E56 state after the one-exchange check has SHA
+`fa81218ff5a68d8e15594e6044c37412e988c3a5b3c0fc158126a24c84015b7a`.
+The exact two-pair oracle tests 77 retained incoming pairs and finds
+
+```text
+remove 7814,179488
+add    161828,179569
+Delta  -2.                                                     (3.1)
+```
+
+```text
+scratch/audit_q4_k17_z17_augmented170k_e56_exact_pair_two_20260814.h100.json
+sha256 5e04f92d15274753ca6176de7480f1c95cae74285c467bca7978acebb1ff8cfd
+
+E54 emitted state sha256
+b67887c6305db81ebb5af29b33a1b4773ecc74460a45195f2b1c72f2afb39e86
+```
+
+The subsequent exact one-exchange pass performs no move.  Its best pair
+replacement and best same-group self replacement both have value zero:
+
+```text
+pair: old 152016, new 184472, Delta 0
+self: old   1039, new   1040, Delta 0.                        (3.2)
+
+scratch/audit_q4_k17_z17_augmented170k_e54_steepest1_20260814.h100.out
+sha256 4e5c040f6a4c2b5615c66dc4cd6242dac7804e4d683ec498045bf91ea90e0eda
+```
+
+At the same authoritative E54 state, the pair-pair two-exchange oracle has
+24 surviving faces and tests 333 incoming pairs; its best value is zero.
+The pair+self and self+self face cuts leave no surviving face.
+
+```text
+scratch/audit_q4_k17_z17_augmented170k_e54_exact_pair_two_20260814.h100.json
+sha256 256939094f9ab9fd5e02f984fa14e1f9586580e934f09d1f37fe4b528aeb085d
+
+scratch/audit_q4_k17_z17_augmented170k_e54_exact_mixed_two_20260814.h100.json
+sha256 1ffad74fbca340653e3bbcac9f5333fda30c4c3cbf4082b7cff5c61fa5ae3f24
+```
+
+For three-pair exchanges, 250 outgoing faces survive, retaining 3,872
 candidate incidences and generating 303,716 pair tests.  All 424 exact
-incoming triples are evaluated.  The best is neutral:
+incoming triples are evaluated.  The best is again neutral:
 
 ```text
 remove 11131,157012,161711
 add    158938,165436,167607
-Delta   0.                                                      (3.1)
+Delta   0.                                                      (3.3)
 ```
 
 Thus the finite face has no negative three-pair exchange at E54.
@@ -82,9 +123,9 @@ finite instance sha256
 af928d3e2ad164b8f24e92d5cf0e219fdd43027249c68e5279e66d7d6e55fe31
 ```
 
-The intervening E56-to-E54 descent is outside this audit unless its
-separate two-exchange certificate is staged with it; the E54 state and its
-literal load vector are nevertheless replayed here.
+Together these checks prove the stated one/two and three-pair local
+boundary.  They do not cover pair+pair+self, pair+self+self, or three-self
+moves.
 
 ## 4. Independent full replay
 
@@ -95,19 +136,26 @@ sha256 565b74053a33f20da29c2bd99f5e521ce671db7f86aace29fce8d42ed23e490e
 scratch/audit_q4_k17_z17_finite_pool_three_pair_exchange_e58_e54_20260814.h100.out
 sha256 09251ceff035a3a98eed4beafdc1acf804d3b9dec9da54d153250507a12ec686
 status PASS
+
+scratch/audit_q4_k17_z17_e56_to_e54_and_joint_one_two_local_boundary_20260814.py
+sha256 eca5c0d592906b22419867cfd75a50b6cac4b0587cb1cd9f7bb9b631b1ccd309
+
+scratch/audit_q4_k17_z17_e56_to_e54_and_joint_one_two_local_boundary_20260814.h100.out
+sha256 00116dc6d01e1e6cf6b8d66a66b5fa39b7d5be6463d0d31875e39dbff9f570d1
+status PASS
 ```
 
 The independent audit reconstructs both load vectors, recomputes every
 one of the 49,608 outgoing-face minima and exact exclusion thresholds,
 checks every retained pair and triple, verifies both global best values,
-and replays the E56 output state.
+and replays the E56 output state.  The second replay independently checks
+the E56-to-E54 descent and every final one- and two-exchange menu.
 
 ## 5. Scope boundary
 
-The E54 no-go is only a three-reflected-pair local statement for this
-finite 189,462-option instance and fixed self selection.  It does not rule
-out absent columns, a neutral pivot followed by descent, four-or-more
-configurations, changing the fixed matching, mixed self/pair moves, or an
-owner/lower-ticket exact cover.
+The E54 no-go is only a local statement for this finite 189,462-pair/
+3,749-self instance.  It does not rule out absent columns, a neutral pivot
+followed by descent, mixed three-exchanges, four-or-more configurations,
+changing the fixed matching, or an owner/lower-ticket exact cover.
 
 All computation, replay, and hashing ran on H100.
