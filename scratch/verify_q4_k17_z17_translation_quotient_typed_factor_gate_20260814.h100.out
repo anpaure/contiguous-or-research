@@ -1,1 +1,1 @@
-PASS k=17 q=4 period=10 owner_orbits=1430 ticket_formulas=all_wraps orbit_counts=r5..15 rank15_hist=170x1+180x7
+PASS k=17 q=4 period=10 owner_orbits=1430 ticket_formulas=period10+11_all_wraps orbit_counts=r5..15 rank15_hist=170x1+180x7 mixed_scalar_faces=14

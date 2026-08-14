@@ -133,6 +133,36 @@ def main() -> None:
     omitted = frozenset(range(K)) - upper_full[0]
     assert len(omitted) == 2
 
+    # The same literal formulas through q3 hold on a period-11 rail.
+    order11 = tuple(range(5, 16))
+    deck11 = tuple(
+        CORE
+        | frozenset(order11[(i + t) % len(order11)] for t in range(Q))
+        for i in range(len(order11))
+    )
+    assert len(deck11) == 11 and len(set(deck11)) == 11
+    for i in range(11):
+        assert len(deck11[i] ^ deck11[(i + 1) % 11]) == 2
+        for span in range(1, 5):
+            lower = intersection_ticket(deck11, i, span)
+            upper = union_ticket(deck11, i, span)
+            expected_l = CORE | frozenset(
+                order11[(i + t) % 11] for t in range(span - 1, Q)
+            )
+            expected_u = CORE | frozenset(
+                order11[(i + t) % 11] for t in range(Q + span - 1)
+            )
+            assert lower == expected_l and len(lower) == 10 - span
+            assert upper == expected_u and len(upper) == 8 + span
+
+    scalar_solutions = [
+        (143 - 11 * t, 10 * t)
+        for t in range(14)
+    ]
+    assert all(10 * a + 11 * b == 1430 for a, b in scalar_solutions)
+    assert scalar_solutions[0] == (143, 0)
+    assert scalar_solutions[-1] == (0, 130)
+
     check_hist(1430, 1144, 1, 2, 858, 286)
     check_hist(1430, 728, 1, 2, 26, 702)
     check_hist(1430, 364, 3, 4, 26, 338)
@@ -150,8 +180,8 @@ def main() -> None:
 
     print(
         "PASS k=17 q=4 period=10 owner_orbits=1430 "
-        "ticket_formulas=all_wraps orbit_counts=r5..15 "
-        "rank15_hist=170x1+180x7"
+        "ticket_formulas=period10+11_all_wraps orbit_counts=r5..15 "
+        "rank15_hist=170x1+180x7 mixed_scalar_faces=14"
     )
 
 

@@ -285,18 +285,56 @@ histogram in `(4.2)--(4.3)`.  It does not search for a cover.
 
 ```text
 scratch/verify_q4_k17_z17_translation_quotient_typed_factor_gate_20260814.py
-SHA-256 186f01e3c8158ef854fac3bf4c5f2a2d532cc211bf9abe57657f772890c6694a
+SHA-256 d3122e75c5cf3e754a57545ddcc69840b21817a20b4c7795dd4d17e3e09ee4e5
 
 H100 output
 scratch/verify_q4_k17_z17_translation_quotient_typed_factor_gate_20260814.h100.out
-SHA-256 82b173f584825e54b170aa5a2b7f8d093e0ca5b031c6a5e96fd437241910187d
+SHA-256 b70b8ff6605fd5aff4b5416a9bee8ee8e605d1469189f31b1f7e9b2ad4281b5c
 ```
 
 Exact output:
 
 ```text
-PASS k=17 q=4 period=10 owner_orbits=1430 ticket_formulas=all_wraps orbit_counts=r5..15 rank15_hist=170x1+180x7
+PASS k=17 q=4 period=10 owner_orbits=1430 ticket_formulas=period10+11_all_wraps orbit_counts=r5..15 rank15_hist=170x1+180x7 mixed_scalar_faces=14
 ```
 
 All enumeration, execution, and hashing ran through SSH on H100.  The local
 Mac was used only for reading, editing, transfer, and Git.
+
+## 8. Mixed period `10/11` extension through `q3`
+
+The owner and ticket reductions through `(4.2)` do not require every rail
+to have period ten.  Allow quotient-simple period-eleven columns with the
+same `q=4,c=5`; their support has eleven labels and leaves one ambient label
+unused.  Formulas `(1.2)` and `(1.4)` are unchanged for `1<=j<=4`, with
+indices now read modulo eleven.
+
+If `a` period-ten and `b` period-eleven quotient columns cover the 1,430
+owner orbits, then necessarily and sufficiently at the scalar level
+
+\[
+                       10a+11b=1430.                \tag{8.1}
+\]
+
+Consequently
+
+\[
+              b=10t,\qquad a=143-11t,qquad 0\le t\le13.       \tag{8.2}
+\]
+
+The developed factor then has `17(a+b)=17(143-t)` initial rail components.
+For every value of `t`, each internal depth through `q3` still has exactly
+1,430 quotient occurrences.  Therefore Theorems 2.1--3.1, the exact
+lower-`q1` rows, the upper-`q1` support rows, and every forced histogram in
+`(4.2)` carry over verbatim to the mixed-period master.
+
+The rank-fifteen coefficient-ten refinement does **not** carry over
+verbatim.  A period-eleven rail has eleven distinct ten-active-label
+windows at span seven, rather than ten copies of one full support.  Thus
+the distance-class description following `(4.3)` is specifically the
+period-ten face `t=0`.  This distinction is beyond `q3` and does not affect
+the owner/lower-`q1` search.
+
+In particular, `t=13` is a period-eleven-only master with 130 quotient
+columns and 2,210 developed rails.  It is an exact alternative search face,
+not an inference of feasibility.
