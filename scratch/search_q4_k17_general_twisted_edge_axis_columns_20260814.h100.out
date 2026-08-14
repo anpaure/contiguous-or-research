@@ -1,0 +1,16 @@
+{
+  "canonical_core_necklaces": 364,
+  "counts": {
+    "boundary_words": 188160,
+    "disjoint_boundary_pairs": 2115072,
+    "owner_nonsimple": 173440,
+    "owner_not_self": 1941632
+  },
+  "examples": [],
+  "scope": "all translation-normalized quotient-simple q4 period-10 columns whose owner reflection action is the edge axis i->1-i; filters to ten distinct lower bracelets, lower-set reflection invariance, and exactly two fixed lower bracelets; owner translations vary by row",
+  "status": "PASS",
+  "unique_fixed_lower_position_histogram": {},
+  "unique_joint_owner_lower_columns": 0,
+  "unique_lower_action_histogram": {},
+  "unique_owner_twist_distinct_shift_histogram": {}
+}
