@@ -1,0 +1,21 @@
+{
+  "c8_c6_counts": {
+    "all_q3_support_safe": 0,
+    "creates_q3_target": 0,
+    "nonpath_factors": 10,
+    "owner_disjoint_tested": 24641,
+    "typed_q2_safe": 0
+  },
+  "c8_c6_solutions": [],
+  "counts": {
+    "all_q3_support_safe": 0,
+    "alternating_c8": 2274,
+    "creates_q3_target": 0,
+    "nonpath_factors": 2,
+    "owner_disjoint_tested": 2208,
+    "raw_creates_q3_target": 31,
+    "typed_q2_safe": 198
+  },
+  "solutions": [],
+  "status": "PASS"
+}

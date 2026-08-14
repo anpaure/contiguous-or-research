@@ -1,0 +1,331 @@
+{
+  "counts": {
+    "all_q3_support_safe": 0,
+    "distinct_cycles": 12524,
+    "nonpath_factors": 15,
+    "owner_disjoint_cycles": 11789,
+    "raw_creates_q3_target": 1578,
+    "target_relevant_start_arcs": 360,
+    "typed_q2_safe": 1
+  },
+  "cycle_length": 12,
+  "near_misses": [
+    {
+      "colours": [
+        "110100001111",
+        "110000101111",
+        "110100101101",
+        "110100100111",
+        "110001100111",
+        "110101000111"
+      ],
+      "owners": [
+        "110100000111",
+        "110000001111",
+        "110000101101",
+        "110100100101",
+        "110000100111",
+        "110001000111"
+      ],
+      "q3_casualties": [
+        "110101101111"
+      ],
+      "q3_current": [
+        {
+          "delta": 1,
+          "new_load": 1,
+          "old_load": 0,
+          "value": "100011111110"
+        },
+        {
+          "delta": 1,
+          "new_load": 1,
+          "old_load": 0,
+          "value": "110111101101"
+        },
+        {
+          "delta": -1,
+          "new_load": 1,
+          "old_load": 2,
+          "value": "110101111101"
+        },
+        {
+          "delta": -1,
+          "new_load": 3,
+          "old_load": 4,
+          "value": "111110100111"
+        },
+        {
+          "delta": 1,
+          "new_load": 2,
+          "old_load": 1,
+          "value": "111011100111"
+        },
+        {
+          "delta": -2,
+          "new_load": 1,
+          "old_load": 3,
+          "value": "110111100111"
+        },
+        {
+          "delta": 1,
+          "new_load": 1,
+          "old_load": 0,
+          "value": "110110010111"
+        },
+        {
+          "delta": -1,
+          "new_load": 3,
+          "old_load": 4,
+          "value": "111110010111"
+        },
+        {
+          "delta": 1,
+          "new_load": 2,
+          "old_load": 1,
+          "value": "110101110111"
+        },
+        {
+          "delta": -1,
+          "new_load": 2,
+          "old_load": 3,
+          "value": "111110001111"
+        },
+        {
+          "delta": 1,
+          "new_load": 2,
+          "old_load": 1,
+          "value": "110111001111"
+        },
+        {
+          "delta": 1,
+          "new_load": 1,
+          "old_load": 0,
+          "value": "110100101111"
+        },
+        {
+          "delta": 1,
+          "new_load": 3,
+          "old_load": 2,
+          "value": "111010101111"
+        },
+        {
+          "delta": -1,
+          "new_load": 0,
+          "old_load": 1,
+          "value": "110101101111"
+        },
+        {
+          "delta": 1,
+          "new_load": 4,
+          "old_load": 3,
+          "value": "110110011111"
+        },
+        {
+          "delta": 1,
+          "new_load": 1,
+          "old_load": 0,
+          "value": "100011011111"
+        },
+        {
+          "delta": 1,
+          "new_load": 1,
+          "old_load": 0,
+          "value": "101011011111"
+        },
+        {
+          "delta": -3,
+          "new_load": 2,
+          "old_load": 5,
+          "value": "100011111111"
+        }
+      ],
+      "q3_target_load": 2,
+      "topology_residence": {
+        "6": {
+          "components": 125,
+          "owner_runs": {
+            "0": 2,
+            "1": 1
+          },
+          "upper_runs": {
+            "0": 1,
+            "1": 2
+          }
+        },
+        "7": {
+          "components": 125,
+          "owner_runs": {
+            "0": 1,
+            "1": 2
+          },
+          "upper_runs": {
+            "0": 1,
+            "1": 3
+          }
+        }
+      },
+      "typed_currents": {
+        "lower_q1": [
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "000011110100"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "100011000110"
+          },
+          {
+            "delta": 1,
+            "new_load": 1,
+            "old_load": 0,
+            "value": "000011100110"
+          },
+          {
+            "delta": 1,
+            "new_load": 1,
+            "old_load": 0,
+            "value": "100010010110"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "110011000001"
+          },
+          {
+            "delta": 1,
+            "new_load": 3,
+            "old_load": 2,
+            "value": "100011010001"
+          },
+          {
+            "delta": 2,
+            "new_load": 3,
+            "old_load": 1,
+            "value": "110001000101"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "100000101101"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "110000000111"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "100001000111"
+          },
+          {
+            "delta": 1,
+            "new_load": 3,
+            "old_load": 2,
+            "value": "100000100111"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "100000010111"
+          },
+          {
+            "delta": 1,
+            "new_load": 3,
+            "old_load": 2,
+            "value": "100000001111"
+          }
+        ],
+        "lower_q2": [],
+        "owner": [],
+        "upper_q1": [],
+        "upper_q2": [
+          {
+            "delta": 1,
+            "new_load": 1,
+            "old_load": 0,
+            "value": "110110101101"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "110100111101"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "110110100111"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "110101100111"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "111010010111"
+          },
+          {
+            "delta": 1,
+            "new_load": 3,
+            "old_load": 2,
+            "value": "110110010111"
+          },
+          {
+            "delta": 1,
+            "new_load": 1,
+            "old_load": 0,
+            "value": "101011010111"
+          },
+          {
+            "delta": 1,
+            "new_load": 1,
+            "old_load": 0,
+            "value": "110100110111"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "110110001111"
+          },
+          {
+            "delta": 1,
+            "new_load": 1,
+            "old_load": 0,
+            "value": "110011001111"
+          },
+          {
+            "delta": 1,
+            "new_load": 2,
+            "old_load": 1,
+            "value": "110100101111"
+          },
+          {
+            "delta": -1,
+            "new_load": 1,
+            "old_load": 2,
+            "value": "000011111111"
+          }
+        ]
+      }
+    }
+  ],
+  "solutions": [],
+  "status": "PASS"
+}
