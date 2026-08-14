@@ -403,10 +403,12 @@ A=100011010111[G],   B=100010011111[G]
 differ by one Johnson exchange (prefix label `5` is replaced by label
 `8`).  Candidate 4's two targets differ by two exchanges.  The following
 adjacent-window normal form therefore applies to candidate 5.  Write
-`A=H+a`, `B=H+b`.  Choose distinct `h1,h2,h3` in `H`, put
+`A=H+a`, `B=H+b`.  Here the owners have rank `R`, while
+`|H|=R+2`; at the first bad suffix, `R=9` and `|H|=11`.  Choose four
+distinct elements `h1,h2,h3,h4` of `H`, and put
 
 ```text
-O1=H-h1,   O2=H-h2,   O3=H-h3,
+O1=H-{h1,h2}, O2=H-{h2,h3}, O3=H-{h3,h4},
 O0=O1-u+a, O4=O3-v+b,
 ```
 
@@ -418,13 +420,38 @@ O0 union O1 union O2 union O3 = A,
 O1 union O2 union O3 union O4 = B.                  (6.2)
 ```
 
+The rank-correctness is essential: the three middle owners have rank
+`R`, their union is all of `H`, and the endpoints add `a` and `b`.
+For the literal first bad targets, one H100-checked witness is
+
+```text
+O0  000001000111110111
+O1  000000010111110111
+O2  000010000111110111
+O3  100000000111110111
+O4  000000001111110111.
+```
+
+Its four consecutive upper colours are
+
+```text
+000001010111110111
+000010010111110111
+100010000111110111
+100000001111110111,
+```
+
+which are pairwise distinct.  Their first and last four-owner unions are
+the two rank-twelve targets `A` and `B`.
+
 Thus five owners are enough, and are minimal within the consecutive
 four-owner-window architecture, to create both missing `q3` targets.
-The suffix mark must choose `h1,u,v` as a function of the injective
-`c0(V)`, not merely of the collapsed value `G2(V)`.  Equation `(6.2)` is
-only the open rail.  Closing it to an alternating native `C6/C8` or marked
-resident packet while making every typed current through `q2` vanish is
-the remaining local gate.
+The suffix mark must choose the omission chain
+`(h1,h2,h3,h4)` and `u,v` as a function of the injective `c0(V)`, not
+merely of the collapsed value `G2(V)`.  Equation `(6.2)` is only the open
+rail.  Closing it to an alternating native `C6/C8` or marked resident
+packet while making every typed current through `q2` vanish is the
+remaining local gate.
 
 ## 7. Verification scope
 

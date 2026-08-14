@@ -103,11 +103,17 @@ target-relevant paired menu removes the singleton gate.
 
 ## 5. Adjacent-window reduction audit
 
-For candidate 5 the two negative prefixes differ by one exchange.  In the
-source notation, consecutive sets `O0,...,O4` differ by one exchange, and
-the union of the first four is `H+a` while the union of the last four is
-`H+b`: the three middle sets omit three distinct elements of `H`, so their
-union is all of `H`; the endpoints add only `a` and `b`, respectively.
+For candidate 5 the two negative prefixes differ by one exchange.  The
+rank-correct normal form has owner rank `R` and `|H|=R+2`.  Its middle
+owners omit `{h1,h2}`, `{h2,h3}`, and `{h3,h4}`.  Consecutive omissions
+meet in one element, so consecutive owners are Johnson-adjacent; the
+triple intersection of the omissions is empty, so the three owners union
+to all of `H`.  The endpoints exchange one element for `a` and `b`, giving
+the required first and last four-owner unions `H+a` and `H+b`.  The two
+internal upper colours omit `h2` and `h3`, respectively, so they are
+distinct; the endpoint colours contain `a` or `b`.  The displayed literal
+rank-nine witness has four distinct colours and unions to the two
+rank-twelve targets under direct replay.
 Five owners are necessary inside this consecutive four-window model
 because two distinct length-four windows offset by one have a five-position
 union.  This validates the open-rail reduction only.  Alternating closure,
@@ -140,7 +146,7 @@ operations.
 Binding SHA-256 values:
 
 ```text
-50b9daa88064abd2e9932d9cfc8357d88b8f4c4717599035c322e6a9b32fa63d  source note
+2c7d536c7aa85a9760e5aa8489b6720770fe1d9bf8dd0848401f3febceab254b  source note
 
 8d839947322f47d5df82949218423a8cdf9cfc2c6f316d10d73e538a53b0460a  long-cycle parallel search
 089951fc8c02305bc3dd7cbde7929d7d0fc26efbaf0c3be9ae51d0eb62f8f6a7  C16 atlas output
