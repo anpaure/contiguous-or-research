@@ -1,0 +1,32 @@
+{
+  "least_tested_leaf": {
+    "add": [
+      204462,
+      219234,
+      1675
+    ],
+    "delta": 2,
+    "kind": "PPS",
+    "remove": [
+      16092,
+      18997,
+      1674
+    ]
+  },
+  "method": "independent replay of all 88760 PPS/PSS/SSS face cuts, typed group menus, retained leaves, and direct load deltas",
+  "outgoing_faces": 88760,
+  "pair_options": 223564,
+  "pps_faces": 50085,
+  "pps_survivors": 76,
+  "pps_tests": 11,
+  "pss_faces": 32130,
+  "pss_survivors": 9,
+  "pss_tests": 5,
+  "scope": "finite 223564-pair/3749-self snapshot only",
+  "self_options": 3749,
+  "source_energy": 46,
+  "sss_faces": 6545,
+  "sss_survivors": 0,
+  "sss_tests": 0,
+  "status": "PASS"
+}
