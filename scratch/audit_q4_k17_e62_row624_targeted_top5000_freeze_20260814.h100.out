@@ -1,0 +1,30 @@
+{
+  "best_delta": 0,
+  "best_hole_change": 0,
+  "best_new_energy": 62,
+  "best_outgoing_pair_index": 7814,
+  "best_rows": [
+    11,
+    51,
+    114,
+    124,
+    188,
+    319,
+    512,
+    624,
+    627,
+    659
+  ],
+  "incumbent_energy": 62,
+  "minimum_reservoir_hole_degree": 128,
+  "physical_witnesses_replayed": 7062,
+  "reservoir_holes_covered": 31,
+  "reservoir_records_replayed": 2062,
+  "reservoir_unique_masks": 2062,
+  "scope": "full independent replay of every emitted physical witness and all 54 outgoing swaps; global top-K completeness follows from the separately audited bounded-shard theorem",
+  "status": "PASS",
+  "target_row": 624,
+  "top_records_replayed": 5000,
+  "top_reservoir_overlap": 2010,
+  "top_unique_masks": 5000
+}
