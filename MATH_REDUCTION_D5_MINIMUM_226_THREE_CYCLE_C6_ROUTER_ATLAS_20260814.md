@@ -39,16 +39,28 @@ An odd cycle of length `l` is a product of `(l-1)/2` three-cycles.  The 25
 odd cycles contribute 131 factors.  Pair the 16 even cycles.  Factoring each
 even cycle down to one residual transposition and replacing two disjoint
 residual transpositions by two three-cycles contributes another 95 factors.
+With rightmost factors acting first, the identities used by the constructor
+are
+
+```text
+(a b)(a c) = (a c b),
+(a b)(c d) = (a c b)(a c d)
+```
+
+for distinct `a,b,c,d`.  Thus the residual transpositions from each paired
+even-cycle pair are composed in the same convention as the odd-cycle
+factors.
 The frozen certificate therefore gives
 
 ```text
 131 + 95 = 226 three-cycles.
 ```
 
-This is minimum.  The identity on 477 points has 477 odd cycles, while the
-target has 25; multiplication by one three-cycle can increase the number of
-odd cycles by at most two.  Hence every three-cycle factorization has at
-least
+This is minimum.  Start at the target and multiply by the inverse factors
+to return to the identity.  The target has 25 odd cycles on its 477-point
+support, while the identity has 477; multiplication by one three-cycle can
+increase the number of odd cycles by at most two.  Hence every three-cycle
+factorization has at least
 
 ```text
 (477 - 25)/2 = 226
@@ -77,20 +89,24 @@ splices.  Across the atlas this requires
 
 when counting both the router and strand edge removed by each splice.
 
-Order the attachment sites along each logical token strand in the factor
-product order.  Suppressing the router interiors makes every old box the
-identity wire and every new box its listed three-cycle.  Therefore the
-suppressed new atlas has monodromy
+Fix the traversal direction on every logical strand.  Because the
+certificate writes the product with the rightmost factor acting first, put
+the attachment sites encountered by a traveller in decreasing certificate
+index, `gamma_226,...,gamma_1` (omitting factors not incident with that
+strand).  Suppressing the router interiors makes every old box the identity
+wire and every new box its listed three-cycle.  Therefore the suppressed new
+atlas has monodromy
 
 ```text
 gamma_1 gamma_2 ... gamma_226,
 ```
 
-with the spatial order chosen to match the certificate convention.  If the
-cut-open strands and final closure are the literal frozen-D5 darts, this
-recovers the exact frozen head permutation.
+in the certificate's rightmost-first convention.  If the cut-open strands
+and final closure are the literal frozen-D5 darts, this recovers the exact
+frozen head permutation.
 
-The local owner cost and internal typed-bank budget are
+The local owner cost and **closed-router** typed-bank budget before the
+three cuts are
 
 ```text
 18*226 = 4068 owners,
@@ -100,10 +116,12 @@ The local owner cost and internal typed-bank budget are
 18*226 = 4068 upper-q2 occurrences.
 ```
 
-Each router has zero old/new q2 occurrence current and exact residence
-minima `(3,3)` on owners and `(4,2)` on immediate-upper traces.  These facts
-are internal.  Pairwise simplicity of the 226 relabelled banks and all 678
-crossing collars remain to be selected.
+Each closed router has zero old/new q2 occurrence current and exact
+residence minima `(3,3)` on owners and `(4,2)` on immediate-upper traces.
+These facts are internal: after the cuts, the deleted internal windows and
+all crossing q1/q2 windows belong to the open collar audit.  Pairwise
+simplicity of the 226 relabelled banks and all 678 crossing collars remain
+to be selected.
 
 ## 3. Logical tokens are not single physical occurrences
 
@@ -173,9 +191,9 @@ certificate SHA-256
   scratch/build_t2_suffix_d5_global_c6_decomposition_20260814.h100.out
 
 independent replay SHA-256
-339f01c7e2eba9a987d1fb6980b76ce9927010b1b877f29c5987e26242aee23b
+0b41e3c50680d001dca1edbc2ad0e892f5cd7655110141d60cef22bd66f9fd81
   scratch/audit_t2_suffix_d5_global_c6_decomposition_independent_20260814.py
-2a01944f7a1e8dcc239c91ea8229c9f72774a89255663acbf415b3db919bed5a
+20713675439b3d4d17df698a1c5ad14c7e853e8bdc05000a2e3af6b7cb6f4540
   scratch/audit_t2_suffix_d5_global_c6_decomposition_independent_20260814.h100.out
 ```
 

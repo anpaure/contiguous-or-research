@@ -19,6 +19,7 @@
     "16": 1
   },
   "decomposition_sha256": "66a0e8eb4ee478108ce7a7638a3ee2bb8380db0119942b64366b933542efc4a4",
+  "each_provenance_product_verified": true,
   "extra_port_appearances": 201,
   "factor_count": 226,
   "maximum_appearances": 9,
@@ -33,6 +34,7 @@
     "even_cycle_pair": 95,
     "odd_cycle": 131
   },
+  "provenance_partition_verified": true,
   "selection_sha256": "94deb656dac1d8955b20d851e92600156d703842d6de169d4b6bea356fa3ec32",
   "status": "PASS",
   "target_cycles": 41,
