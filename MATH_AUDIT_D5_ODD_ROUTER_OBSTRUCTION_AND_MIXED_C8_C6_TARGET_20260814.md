@@ -1,18 +1,18 @@
-# Independent audit: odd-router obstruction is exact only for row-private reset boxes
+# Independent audit: odd-router obstruction for clean full-port reset boxes
 
-**Date:** 2026-08-14  
+**Date:** 2026-08-14
 **Audited note:**
-`MATH_OBSTRUCTION_D5_THREE_STATE_RESET_NEEDS_AN_ODD_ROUTER_NOT_A_CLOSED_C6_TUBE_20260814.md`  
-**Verdict:** **FAIL as currently worded; PASS after four explicit scope and
-composition repairs below.**  The row-local parity obstruction and the
-displayed `S_4` factorization are correct.  They do not rule out a global
+`MATH_OBSTRUCTION_D5_THREE_STATE_RESET_NEEDS_AN_ODD_ROUTER_NOT_A_CLOSED_C6_TUBE_20260814.md`
+**Verdict:** **PASS after the scope and composition repairs recorded below.**
+The clean full-port parity obstruction and displayed `S_4` factorization
+are correct.  They do not rule out a marked-socket C6 quotient or a global
 all-C6 realization of the complete even D5 matching permutation.
 
 ## 1. What passes unchanged
 
-### 1.1 Row-local parity
+### 1.1 Clean full-port parity
 
-In the private three-terminal switchbox architecture, a nontrivial D5 row
+In the clean full-port private switchbox architecture, a nontrivial D5 row
 has a tail state `a` and old/new head states `b,c`.  Encapsulating that row
 while fixing the tail port asks for `(bc)`, an odd permutation.
 
@@ -21,11 +21,13 @@ of sign `(-1)^(h-1)`.  Every C6 strand action is therefore a three-cycle and
 is even.  Products, inverses, and conjugates remain even.  This proves:
 
 \[
- \boxed{\text{a row-private tail-fixed reset box cannot be composed only
- from C6 routers}.}                                    \tag{1.1}
+ \boxed{\text{a clean full-port tail-fixed reset box cannot be composed
+ only from C6 routers}.}                               \tag{1.1}
 \]
 
-The known two-stage physical C6 carrier is the sharp immediate example: its
+The qualifier is essential: the even three-cycle `(b u c)` has marked
+first-return quotient `(b c)` on `{b,c}`.  The known two-stage physical C6
+carrier is nevertheless ruled out sharply: its
 new stage actions are `tau^(-1),tau`, so its complete new action, like its old
 action, is identity.
 
@@ -150,7 +152,7 @@ a global network of open C6 routers realizing the whole D5 permutation.
 Literal resource geometry may still obstruct such a network, but Theorem
 1.1 does not.
 
-Accordingly the following phrases need a `row-private` qualifier:
+Accordingly the original phrases required a `clean full-port` qualifier:
 
 ```text
 The D5 reset needs an odd router.
@@ -160,33 +162,32 @@ A future construction must introduce an odd router.      (5.3)
 
 A proof-safe replacement is:
 
-> A row-private tail-fixed three-state reset box needs an odd router, and
-> the smallest serial simple-cycle-router target for such a box is a C6
-> followed by a C8 under the displayed convention.  A global open-C6 atlas
-> remains algebraically possible because the complete D5 permutation is
-> even.
+> A clean full-port tail-fixed reset box needs odd full-port action, and the
+> smallest serial simple-cycle-router target for such a box is a C6 followed
+> by a C8 under the displayed convention.  Marked-socket C6 quotients and a
+> global open-C6 atlas remain algebraically possible.
 
 This is a scope repair, not a challenge to the local transposition theorem.
 
 ## 6. Exact surviving conclusion
 
-After the four repairs, the note proves the useful dichotomy
+After the repairs, the note proves the useful dichotomy
 
 \[
 \boxed{
 \begin{array}{l}
-\text{row-private reset: mixed odd/even router required;}\\
-\text{global reset atlas: all-C6 parity remains open.}
+\text{clean full-port reset: mixed odd/even router required;}\\
+\text{marked quotient or global atlas: all-C6 parity remains open.}
 \end{array}}
 \tag{6.1}
 \]
 
-The mixed C8--C6 target is still conditional on one state-independent simple
-owner/lower/upper bank, internal and terminal q2 residence, and
-support-monotone lower/upper currents.  No existing C8 resident tensor cited
-in the repository automatically supplies the needed open four-strand
-monodromy: the known coatom path tensors close to common endpoints and would
-need a new open-router interface.
+The mixed C8--C6 full-port target is still conditional on one
+state-independent simple owner/lower/upper bank, internal and terminal q2
+residence, and support-monotone lower/upper currents.  Separately, the
+existing complementary-square C8 and four heptagonal backups do supply a
+closed marked-socket quotient with the internal rows proved; prescribed D5
+terminal grafts remain outside that theorem.
 
 ## 7. H100 binding
 
@@ -205,5 +206,6 @@ bbb1fd5236cd9e0e8b67b7b756dfcd55b94281656aef8bdd36435a77a732d44e
 5ea04cc7d43220b96c315d754f49151a9cf4a2cd472a0b28b792ce53e20b4d73.
 ```
 
-No PASS digest is assigned to the audited note until the four wording and
-scope repairs are applied.
+The audited source was rebound only after the full-port, factor-order,
+architecture-relative minimality, marked-quotient, and global-parity scope
+repairs were applied.
