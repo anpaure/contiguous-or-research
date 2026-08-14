@@ -3,10 +3,11 @@
 **Date:** 2026-08-14
 **Audited note:**
 `MATH_OBSTRUCTION_D5_THREE_STATE_RESET_NEEDS_AN_ODD_ROUTER_NOT_A_CLOSED_C6_TUBE_20260814.md`
-**Verdict:** **PASS after the scope and composition repairs recorded below.**
-The clean full-port parity obstruction and displayed `S_4` factorization
-are correct.  They do not rule out a marked-socket C6 quotient or a global
-all-C6 realization of the complete even D5 matching permutation.
+**Verdict:** **PASS.**  The current audited bytes contain all scope and
+composition repairs recorded below.  The clean full-port parity obstruction
+and displayed `S_4` factorization are correct.  They do not rule out a
+marked-socket C6 quotient or a global all-C6 realization of the complete
+even D5 matching permutation.
 
 ## 1. What passes unchanged
 
@@ -73,26 +74,19 @@ targets.  Thus the note's warning that a future C6 half needs ticket
 desingularization and q2 repair is supported directly, not merely inferred
 from the two-stage total.
 
-## 2. First required repair: “odd-action,” not “available”
+## 2. First applied repair: “odd-action,” not “available”
 
-The owner/lower containment graph has C6 alternating cycles.  Therefore the
-sentence
-
-```text
-the smallest incidence geometry available ... is a C8
-```
-
-is false literally.  What is true is:
+The owner/lower containment graph has C6 alternating cycles.  The corrected
+source therefore uses the proof-safe statement:
 
 > The containment graph is C4-free; C6 is the first alternating geometry
 > but has even port action.  Hence C8 is the smallest available
 > **odd-action simple alternating-cycle router**.
 
-The final sentence must likewise say “C8 is the first possible
-**odd-action** alternating incidence cycle,” not the first possible
-alternating incidence cycle.
+It likewise calls C8 the first possible **odd-action** alternating incidence
+cycle, not the first possible alternating incidence cycle.
 
-## 3. Second required repair: order of the factors
+## 3. Second applied repair: order of the factors
 
 Under the note's explicit right-factor-first convention, `rho tau` means
 
@@ -100,11 +94,10 @@ Under the note's explicit right-factor-first convention, `rho tau` means
 C6 tau, followed by C8 rho.                              (3.1)
 ```
 
-The prose currently says “a C8 router followed by a C6 router.”  Reverse
-that prose, or provide a new factorization in the desired operational order.
-The abstract phrase “mixed C8--C6” is order-neutral and needs no change.
+The corrected prose states exactly this operational order.  The abstract
+phrase “mixed C8--C6” remains order-neutral.
 
-## 4. Third required repair: minimality is architecture-relative
+## 4. Third applied repair: minimality is architecture-relative
 
 A single C4 would have the desired transposition action, but C4 is forbidden
 by the containment geometry.  A single C6 is even; a single C8 is a 4-cycle,
@@ -112,22 +105,11 @@ not a transposition.  Thus C6 plus C8 is the smallest serial product of
 simple alternating-cycle routers that can realize `(bc)` on four terminals.
 
 This does not prove absolute minimality among tapped, overlapping,
-multi-boundary, or nonserial packets.  Replace
+multi-boundary, or nonserial packets.  The source now confines the claim to
+the serial full-port model, so the target remains a sufficient constant
+local packet without an absolute-minimality overclaim.
 
-```text
-the correct smallest topology target
-```
-
-by
-
-```text
-the smallest serial simple-cycle-router target.          (4.1)
-```
-
-The target remains a sufficient constant local packet after this
-qualification.
-
-## 5. Fourth and load-bearing repair: local versus global parity
+## 5. Fourth applied and load-bearing repair: local versus global parity
 
 The three-colouring makes `(bc)` the action of the chosen **row-private
 encapsulation**.  It does not prove that every D5 architecture must
@@ -152,22 +134,15 @@ a global network of open C6 routers realizing the whole D5 permutation.
 Literal resource geometry may still obstruct such a network, but Theorem
 1.1 does not.
 
-Accordingly the original phrases required a `clean full-port` qualifier:
-
-```text
-The D5 reset needs an odd router.
-Theorem 1.1 rules out all-C6 topology.
-A future construction must introduce an odd router.      (5.3)
-```
-
-A proof-safe replacement is:
+The current source uses the proof-safe replacement:
 
 > A clean full-port tail-fixed reset box needs odd full-port action, and the
 > smallest serial simple-cycle-router target for such a box is a C6 followed
 > by a C8 under the displayed convention.  Marked-socket C6 quotients and a
 > global open-C6 atlas remain algebraically possible.
 
-This is a scope repair, not a challenge to the local transposition theorem.
+This is the necessary scope distinction, not a challenge to the local
+transposition theorem.
 
 ## 6. Exact surviving conclusion
 
@@ -206,6 +181,12 @@ bbb1fd5236cd9e0e8b67b7b756dfcd55b94281656aef8bdd36435a77a732d44e
 5ea04cc7d43220b96c315d754f49151a9cf4a2cd472a0b28b792ce53e20b4d73.
 ```
 
-The audited source was rebound only after the full-port, factor-order,
+The audited source SHA-256 is
+
+```text
+d8e1e8c36b577d2b8fbdb375e90bb4c789b3bc217de50081d1885a35fc0264cc.
+```
+
+It was rebound only after the full-port, factor-order,
 architecture-relative minimality, marked-quotient, and global-parity scope
 repairs were applied.
