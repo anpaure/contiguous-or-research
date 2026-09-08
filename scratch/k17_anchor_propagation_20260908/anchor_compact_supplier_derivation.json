@@ -1,0 +1,2371 @@
+{
+  "scope": "Supplier-row expansion of the already certified deterministic trace; no new search or decision.",
+  "initial_unique_rank7_dependencies": [
+    [
+      127,
+      2
+    ],
+    [
+      223,
+      37
+    ],
+    [
+      247,
+      32
+    ],
+    [
+      253,
+      27
+    ],
+    [
+      319,
+      42
+    ],
+    [
+      431,
+      106
+    ],
+    [
+      439,
+      168
+    ],
+    [
+      1087,
+      47
+    ],
+    [
+      1149,
+      437
+    ],
+    [
+      1591,
+      903
+    ],
+    [
+      2173,
+      375
+    ],
+    [
+      2223,
+      1399
+    ],
+    [
+      2231,
+      1450
+    ],
+    [
+      2359,
+      1297
+    ],
+    [
+      2615,
+      657
+    ],
+    [
+      4159,
+      52
+    ],
+    [
+      4221,
+      313
+    ],
+    [
+      8287,
+      429
+    ],
+    [
+      8317,
+      251
+    ],
+    [
+      8375,
+      1750
+    ],
+    [
+      10295,
+      1668
+    ],
+    [
+      16447,
+      57
+    ],
+    [
+      16509,
+      189
+    ],
+    [
+      18487,
+      1617
+    ],
+    [
+      20535,
+      1566
+    ],
+    [
+      32893,
+      127
+    ],
+    [
+      34871,
+      1515
+    ],
+    [
+      36919,
+      1464
+    ],
+    [
+      41015,
+      1413
+    ],
+    [
+      67639,
+      425
+    ]
+  ],
+  "initial_dependency_uniqueness_independently_checked": true,
+  "steps": [
+    {
+      "target": 63,
+      "forced_block": 2,
+      "all_original_providers": [
+        {
+          "block": 2,
+          "mandatory_before": [
+            127
+          ],
+          "remaining_options": 108,
+          "target_options": 16
+        },
+        {
+          "block": 42,
+          "mandatory_before": [
+            319
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 47,
+          "mandatory_before": [
+            1087
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 52,
+          "mandatory_before": [
+            4159
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 57,
+          "mandatory_before": [
+            16447
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        }
+      ]
+    },
+    {
+      "target": 95,
+      "forced_block": 37,
+      "all_original_providers": [
+        {
+          "block": 37,
+          "mandatory_before": [
+            223
+          ],
+          "remaining_options": 108,
+          "target_options": 16
+        },
+        {
+          "block": 429,
+          "mandatory_before": [
+            8287
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        }
+      ]
+    },
+    {
+      "target": 119,
+      "forced_block": 32,
+      "all_original_providers": [
+        {
+          "block": 2,
+          "mandatory_before": [
+            63,
+            127
+          ],
+          "remaining_options": 16,
+          "target_options": 0
+        },
+        {
+          "block": 32,
+          "mandatory_before": [
+            247
+          ],
+          "remaining_options": 108,
+          "target_options": 16
+        }
+      ]
+    },
+    {
+      "target": 125,
+      "forced_block": 27,
+      "all_original_providers": [
+        {
+          "block": 27,
+          "mandatory_before": [
+            253
+          ],
+          "remaining_options": 108,
+          "target_options": 16
+        },
+        {
+          "block": 127,
+          "mandatory_before": [
+            32893
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 189,
+          "mandatory_before": [
+            16509
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 251,
+          "mandatory_before": [
+            8317
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 313,
+          "mandatory_before": [
+            4221
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 375,
+          "mandatory_before": [
+            2173
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 437,
+          "mandatory_before": [
+            1149
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        }
+      ]
+    },
+    {
+      "target": 126,
+      "forced_block": 2,
+      "all_original_providers": [
+        {
+          "block": 2,
+          "mandatory_before": [
+            63,
+            127
+          ],
+          "remaining_options": 16,
+          "target_options": 1
+        }
+      ]
+    },
+    {
+      "target": 175,
+      "forced_block": 106,
+      "all_original_providers": [
+        {
+          "block": 106,
+          "mandatory_before": [
+            431
+          ],
+          "remaining_options": 108,
+          "target_options": 16
+        },
+        {
+          "block": 1399,
+          "mandatory_before": [
+            2223
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        }
+      ]
+    },
+    {
+      "target": 183,
+      "forced_block": 168,
+      "all_original_providers": [
+        {
+          "block": 168,
+          "mandatory_before": [
+            439
+          ],
+          "remaining_options": 108,
+          "target_options": 16
+        },
+        {
+          "block": 1450,
+          "mandatory_before": [
+            2231
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1750,
+          "mandatory_before": [
+            8375
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        }
+      ]
+    },
+    {
+      "target": 55,
+      "forced_block": 425,
+      "all_original_providers": [
+        {
+          "block": 2,
+          "mandatory_before": [
+            63,
+            126,
+            127
+          ],
+          "remaining_options": 1,
+          "target_options": 0
+        },
+        {
+          "block": 42,
+          "mandatory_before": [
+            319
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 47,
+          "mandatory_before": [
+            1087
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 52,
+          "mandatory_before": [
+            4159
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 57,
+          "mandatory_before": [
+            16447
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 168,
+          "mandatory_before": [
+            183,
+            439
+          ],
+          "remaining_options": 16,
+          "target_options": 0
+        },
+        {
+          "block": 425,
+          "mandatory_before": [
+            67639
+          ],
+          "remaining_options": 108,
+          "target_options": 8
+        },
+        {
+          "block": 657,
+          "mandatory_before": [
+            2615
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 903,
+          "mandatory_before": [
+            1591
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1297,
+          "mandatory_before": [
+            2359
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1413,
+          "mandatory_before": [
+            41015
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1450,
+          "mandatory_before": [
+            2231
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1464,
+          "mandatory_before": [
+            36919
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1515,
+          "mandatory_before": [
+            34871
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1566,
+          "mandatory_before": [
+            20535
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1617,
+          "mandatory_before": [
+            18487
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1668,
+          "mandatory_before": [
+            10295
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        },
+        {
+          "block": 1750,
+          "mandatory_before": [
+            8375
+          ],
+          "remaining_options": 108,
+          "target_options": 0
+        }
+      ]
+    }
+  ],
+  "final_zero_target": 2103,
+  "final_zero_target_original_providers": [
+    {
+      "block": 425,
+      "mandatory_before": [
+        55,
+        67639
+      ],
+      "remaining_options": 8,
+      "target_options": 0
+    },
+    {
+      "block": 657,
+      "mandatory_before": [
+        2615
+      ],
+      "remaining_options": 108,
+      "target_options": 0
+    },
+    {
+      "block": 1297,
+      "mandatory_before": [
+        2359
+      ],
+      "remaining_options": 108,
+      "target_options": 0
+    },
+    {
+      "block": 1450,
+      "mandatory_before": [
+        2231
+      ],
+      "remaining_options": 108,
+      "target_options": 0
+    },
+    {
+      "block": 1515,
+      "mandatory_before": [
+        34871
+      ],
+      "remaining_options": 108,
+      "target_options": 0
+    },
+    {
+      "block": 1617,
+      "mandatory_before": [
+        18487
+      ],
+      "remaining_options": 108,
+      "target_options": 0
+    },
+    {
+      "block": 1668,
+      "mandatory_before": [
+        10295
+      ],
+      "remaining_options": 108,
+      "target_options": 0
+    }
+  ],
+  "source_blocks": [
+    {
+      "block": 2,
+      "cycle": 0,
+      "positions": [
+        7,
+        8
+      ],
+      "original_letters": [
+        126,
+        63
+      ],
+      "pins": [
+        66,
+        33
+      ],
+      "letter_menus": [
+        [
+          66,
+          70,
+          74,
+          78,
+          82,
+          86,
+          90,
+          94,
+          98,
+          102,
+          106,
+          110,
+          114,
+          118,
+          122,
+          126
+        ],
+        [
+          33,
+          35,
+          37,
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59,
+          61,
+          63
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        127
+      ],
+      "final_mandatory_targets": [
+        63,
+        126,
+        127
+      ]
+    },
+    {
+      "block": 27,
+      "cycle": 1,
+      "positions": [
+        64,
+        65
+      ],
+      "original_letters": [
+        249,
+        125
+      ],
+      "pins": [
+        136,
+        68
+      ],
+      "letter_menus": [
+        [
+          136,
+          137,
+          152,
+          153,
+          168,
+          169,
+          184,
+          185,
+          200,
+          201,
+          216,
+          217,
+          232,
+          233,
+          248,
+          249
+        ],
+        [
+          68,
+          69,
+          76,
+          77,
+          84,
+          85,
+          92,
+          93,
+          100,
+          101,
+          108,
+          109,
+          116,
+          117,
+          124,
+          125
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        253
+      ],
+      "final_mandatory_targets": [
+        125,
+        253
+      ]
+    },
+    {
+      "block": 32,
+      "cycle": 1,
+      "positions": [
+        79,
+        80
+      ],
+      "original_letters": [
+        246,
+        119
+      ],
+      "pins": [
+        130,
+        65
+      ],
+      "letter_menus": [
+        [
+          130,
+          134,
+          146,
+          150,
+          162,
+          166,
+          178,
+          182,
+          194,
+          198,
+          210,
+          214,
+          226,
+          230,
+          242,
+          246
+        ],
+        [
+          65,
+          67,
+          69,
+          71,
+          81,
+          83,
+          85,
+          87,
+          97,
+          99,
+          101,
+          103,
+          113,
+          115,
+          117,
+          119
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        247
+      ],
+      "final_mandatory_targets": [
+        119,
+        247
+      ]
+    },
+    {
+      "block": 37,
+      "cycle": 1,
+      "positions": [
+        94,
+        95
+      ],
+      "original_letters": [
+        222,
+        95
+      ],
+      "pins": [
+        130,
+        17
+      ],
+      "letter_menus": [
+        [
+          130,
+          134,
+          138,
+          142,
+          146,
+          150,
+          154,
+          158,
+          194,
+          198,
+          202,
+          206,
+          210,
+          214,
+          218,
+          222
+        ],
+        [
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        223
+      ],
+      "final_mandatory_targets": [
+        95,
+        223
+      ]
+    },
+    {
+      "block": 42,
+      "cycle": 1,
+      "positions": [
+        109,
+        110
+      ],
+      "original_letters": [
+        318,
+        287
+      ],
+      "pins": [
+        34,
+        17
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          290,
+          294,
+          298,
+          302,
+          306,
+          310,
+          314,
+          318
+        ],
+        [
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          273,
+          275,
+          277,
+          279,
+          281,
+          283,
+          285,
+          287
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        319
+      ],
+      "final_mandatory_targets": [
+        319
+      ]
+    },
+    {
+      "block": 47,
+      "cycle": 1,
+      "positions": [
+        124,
+        125
+      ],
+      "original_letters": [
+        1086,
+        1055
+      ],
+      "pins": [
+        34,
+        17
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          1058,
+          1062,
+          1066,
+          1070,
+          1074,
+          1078,
+          1082,
+          1086
+        ],
+        [
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          1041,
+          1043,
+          1045,
+          1047,
+          1049,
+          1051,
+          1053,
+          1055
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        1087
+      ],
+      "final_mandatory_targets": [
+        1087
+      ]
+    },
+    {
+      "block": 52,
+      "cycle": 1,
+      "positions": [
+        139,
+        140
+      ],
+      "original_letters": [
+        4158,
+        4127
+      ],
+      "pins": [
+        34,
+        17
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          4130,
+          4134,
+          4138,
+          4142,
+          4146,
+          4150,
+          4154,
+          4158
+        ],
+        [
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          4113,
+          4115,
+          4117,
+          4119,
+          4121,
+          4123,
+          4125,
+          4127
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        4159
+      ],
+      "final_mandatory_targets": [
+        4159
+      ]
+    },
+    {
+      "block": 57,
+      "cycle": 1,
+      "positions": [
+        154,
+        155
+      ],
+      "original_letters": [
+        16446,
+        16415
+      ],
+      "pins": [
+        34,
+        17
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          16418,
+          16422,
+          16426,
+          16430,
+          16434,
+          16438,
+          16442,
+          16446
+        ],
+        [
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31,
+          16401,
+          16403,
+          16405,
+          16407,
+          16409,
+          16411,
+          16413,
+          16415
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        16447
+      ],
+      "final_mandatory_targets": [
+        16447
+      ]
+    },
+    {
+      "block": 106,
+      "cycle": 2,
+      "positions": [
+        79,
+        80
+      ],
+      "original_letters": [
+        430,
+        175
+      ],
+      "pins": [
+        258,
+        9
+      ],
+      "letter_menus": [
+        [
+          258,
+          262,
+          266,
+          270,
+          290,
+          294,
+          298,
+          302,
+          386,
+          390,
+          394,
+          398,
+          418,
+          422,
+          426,
+          430
+        ],
+        [
+          9,
+          11,
+          13,
+          15,
+          41,
+          43,
+          45,
+          47,
+          137,
+          139,
+          141,
+          143,
+          169,
+          171,
+          173,
+          175
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        431
+      ],
+      "final_mandatory_targets": [
+        175,
+        431
+      ]
+    },
+    {
+      "block": 127,
+      "cycle": 2,
+      "positions": [
+        142,
+        143
+      ],
+      "original_letters": [
+        32889,
+        32829
+      ],
+      "pins": [
+        72,
+        36
+      ],
+      "letter_menus": [
+        [
+          72,
+          73,
+          88,
+          89,
+          104,
+          105,
+          120,
+          121,
+          32840,
+          32841,
+          32856,
+          32857,
+          32872,
+          32873,
+          32888,
+          32889
+        ],
+        [
+          36,
+          37,
+          44,
+          45,
+          52,
+          53,
+          60,
+          61,
+          32804,
+          32805,
+          32812,
+          32813,
+          32820,
+          32821,
+          32828,
+          32829
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        32893
+      ],
+      "final_mandatory_targets": [
+        32893
+      ]
+    },
+    {
+      "block": 168,
+      "cycle": 3,
+      "positions": [
+        79,
+        80
+      ],
+      "original_letters": [
+        438,
+        183
+      ],
+      "pins": [
+        258,
+        33
+      ],
+      "letter_menus": [
+        [
+          258,
+          262,
+          274,
+          278,
+          290,
+          294,
+          306,
+          310,
+          386,
+          390,
+          402,
+          406,
+          418,
+          422,
+          434,
+          438
+        ],
+        [
+          33,
+          35,
+          37,
+          39,
+          49,
+          51,
+          53,
+          55,
+          161,
+          163,
+          165,
+          167,
+          177,
+          179,
+          181,
+          183
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        439
+      ],
+      "final_mandatory_targets": [
+        183,
+        439
+      ]
+    },
+    {
+      "block": 189,
+      "cycle": 3,
+      "positions": [
+        142,
+        143
+      ],
+      "original_letters": [
+        16505,
+        16445
+      ],
+      "pins": [
+        72,
+        36
+      ],
+      "letter_menus": [
+        [
+          72,
+          73,
+          88,
+          89,
+          104,
+          105,
+          120,
+          121,
+          16456,
+          16457,
+          16472,
+          16473,
+          16488,
+          16489,
+          16504,
+          16505
+        ],
+        [
+          36,
+          37,
+          44,
+          45,
+          52,
+          53,
+          60,
+          61,
+          16420,
+          16421,
+          16428,
+          16429,
+          16436,
+          16437,
+          16444,
+          16445
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        16509
+      ],
+      "final_mandatory_targets": [
+        16509
+      ]
+    },
+    {
+      "block": 251,
+      "cycle": 4,
+      "positions": [
+        142,
+        143
+      ],
+      "original_letters": [
+        8313,
+        8253
+      ],
+      "pins": [
+        72,
+        36
+      ],
+      "letter_menus": [
+        [
+          72,
+          73,
+          88,
+          89,
+          104,
+          105,
+          120,
+          121,
+          8264,
+          8265,
+          8280,
+          8281,
+          8296,
+          8297,
+          8312,
+          8313
+        ],
+        [
+          36,
+          37,
+          44,
+          45,
+          52,
+          53,
+          60,
+          61,
+          8228,
+          8229,
+          8236,
+          8237,
+          8244,
+          8245,
+          8252,
+          8253
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        8317
+      ],
+      "final_mandatory_targets": [
+        8317
+      ]
+    },
+    {
+      "block": 313,
+      "cycle": 5,
+      "positions": [
+        142,
+        143
+      ],
+      "original_letters": [
+        4217,
+        4157
+      ],
+      "pins": [
+        72,
+        36
+      ],
+      "letter_menus": [
+        [
+          72,
+          73,
+          88,
+          89,
+          104,
+          105,
+          120,
+          121,
+          4168,
+          4169,
+          4184,
+          4185,
+          4200,
+          4201,
+          4216,
+          4217
+        ],
+        [
+          36,
+          37,
+          44,
+          45,
+          52,
+          53,
+          60,
+          61,
+          4132,
+          4133,
+          4140,
+          4141,
+          4148,
+          4149,
+          4156,
+          4157
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        4221
+      ],
+      "final_mandatory_targets": [
+        4221
+      ]
+    },
+    {
+      "block": 375,
+      "cycle": 6,
+      "positions": [
+        142,
+        143
+      ],
+      "original_letters": [
+        2169,
+        2109
+      ],
+      "pins": [
+        72,
+        36
+      ],
+      "letter_menus": [
+        [
+          72,
+          73,
+          88,
+          89,
+          104,
+          105,
+          120,
+          121,
+          2120,
+          2121,
+          2136,
+          2137,
+          2152,
+          2153,
+          2168,
+          2169
+        ],
+        [
+          36,
+          37,
+          44,
+          45,
+          52,
+          53,
+          60,
+          61,
+          2084,
+          2085,
+          2092,
+          2093,
+          2100,
+          2101,
+          2108,
+          2109
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        2173
+      ],
+      "final_mandatory_targets": [
+        2173
+      ]
+    },
+    {
+      "block": 425,
+      "cycle": 7,
+      "positions": [
+        106,
+        107
+      ],
+      "original_letters": [
+        2103,
+        67607
+      ],
+      "pins": [
+        33,
+        65540
+      ],
+      "letter_menus": [
+        [
+          33,
+          35,
+          37,
+          39,
+          49,
+          51,
+          53,
+          55,
+          2081,
+          2083,
+          2085,
+          2087,
+          2097,
+          2099,
+          2101,
+          2103
+        ],
+        [
+          65540,
+          65541,
+          65542,
+          65543,
+          65556,
+          65557,
+          65558,
+          65559,
+          67588,
+          67589,
+          67590,
+          67591,
+          67604,
+          67605,
+          67606,
+          67607
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        67639
+      ],
+      "final_mandatory_targets": [
+        55,
+        67639
+      ]
+    },
+    {
+      "block": 429,
+      "cycle": 7,
+      "positions": [
+        118,
+        119
+      ],
+      "original_letters": [
+        8286,
+        8271
+      ],
+      "pins": [
+        18,
+        9
+      ],
+      "letter_menus": [
+        [
+          18,
+          22,
+          26,
+          30,
+          82,
+          86,
+          90,
+          94,
+          8210,
+          8214,
+          8218,
+          8222,
+          8274,
+          8278,
+          8282,
+          8286
+        ],
+        [
+          9,
+          11,
+          13,
+          15,
+          73,
+          75,
+          77,
+          79,
+          8201,
+          8203,
+          8205,
+          8207,
+          8265,
+          8267,
+          8269,
+          8271
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        8287
+      ],
+      "final_mandatory_targets": [
+        8287
+      ]
+    },
+    {
+      "block": 437,
+      "cycle": 7,
+      "positions": [
+        142,
+        143
+      ],
+      "original_letters": [
+        1145,
+        1085
+      ],
+      "pins": [
+        72,
+        36
+      ],
+      "letter_menus": [
+        [
+          72,
+          73,
+          88,
+          89,
+          104,
+          105,
+          120,
+          121,
+          1096,
+          1097,
+          1112,
+          1113,
+          1128,
+          1129,
+          1144,
+          1145
+        ],
+        [
+          36,
+          37,
+          44,
+          45,
+          52,
+          53,
+          60,
+          61,
+          1060,
+          1061,
+          1068,
+          1069,
+          1076,
+          1077,
+          1084,
+          1085
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        1149
+      ],
+      "final_mandatory_targets": [
+        1149
+      ]
+    },
+    {
+      "block": 657,
+      "cycle": 12,
+      "positions": [
+        4,
+        5
+      ],
+      "original_letters": [
+        2614,
+        2583
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          546,
+          550,
+          562,
+          566,
+          2082,
+          2086,
+          2098,
+          2102,
+          2594,
+          2598,
+          2610,
+          2614
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          517,
+          519,
+          533,
+          535,
+          2053,
+          2055,
+          2069,
+          2071,
+          2565,
+          2567,
+          2581,
+          2583
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        2615
+      ],
+      "final_mandatory_targets": [
+        2615
+      ]
+    },
+    {
+      "block": 903,
+      "cycle": 14,
+      "positions": [
+        436,
+        437
+      ],
+      "original_letters": [
+        1590,
+        1559
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          546,
+          550,
+          562,
+          566,
+          1058,
+          1062,
+          1074,
+          1078,
+          1570,
+          1574,
+          1586,
+          1590
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          517,
+          519,
+          533,
+          535,
+          1029,
+          1031,
+          1045,
+          1047,
+          1541,
+          1543,
+          1557,
+          1559
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        1591
+      ],
+      "final_mandatory_targets": [
+        1591
+      ]
+    },
+    {
+      "block": 1297,
+      "cycle": 17,
+      "positions": [
+        4,
+        5
+      ],
+      "original_letters": [
+        2358,
+        2327
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          290,
+          294,
+          306,
+          310,
+          2082,
+          2086,
+          2098,
+          2102,
+          2338,
+          2342,
+          2354,
+          2358
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          261,
+          263,
+          277,
+          279,
+          2053,
+          2055,
+          2069,
+          2071,
+          2309,
+          2311,
+          2325,
+          2327
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        2359
+      ],
+      "final_mandatory_targets": [
+        2359
+      ]
+    },
+    {
+      "block": 1399,
+      "cycle": 19,
+      "positions": [
+        4,
+        5
+      ],
+      "original_letters": [
+        2222,
+        2215
+      ],
+      "pins": [
+        10,
+        5
+      ],
+      "letter_menus": [
+        [
+          10,
+          14,
+          42,
+          46,
+          138,
+          142,
+          170,
+          174,
+          2058,
+          2062,
+          2090,
+          2094,
+          2186,
+          2190,
+          2218,
+          2222
+        ],
+        [
+          5,
+          7,
+          37,
+          39,
+          133,
+          135,
+          165,
+          167,
+          2053,
+          2055,
+          2085,
+          2087,
+          2181,
+          2183,
+          2213,
+          2215
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        2223
+      ],
+      "final_mandatory_targets": [
+        2223
+      ]
+    },
+    {
+      "block": 1413,
+      "cycle": 19,
+      "positions": [
+        46,
+        47
+      ],
+      "original_letters": [
+        41014,
+        40983
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          8226,
+          8230,
+          8242,
+          8246,
+          32802,
+          32806,
+          32818,
+          32822,
+          40994,
+          40998,
+          41010,
+          41014
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          8197,
+          8199,
+          8213,
+          8215,
+          32773,
+          32775,
+          32789,
+          32791,
+          40965,
+          40967,
+          40981,
+          40983
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        41015
+      ],
+      "final_mandatory_targets": [
+        41015
+      ]
+    },
+    {
+      "block": 1450,
+      "cycle": 20,
+      "positions": [
+        4,
+        5
+      ],
+      "original_letters": [
+        2230,
+        2199
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          162,
+          166,
+          178,
+          182,
+          2082,
+          2086,
+          2098,
+          2102,
+          2210,
+          2214,
+          2226,
+          2230
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          133,
+          135,
+          149,
+          151,
+          2053,
+          2055,
+          2069,
+          2071,
+          2181,
+          2183,
+          2197,
+          2199
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        2231
+      ],
+      "final_mandatory_targets": [
+        2231
+      ]
+    },
+    {
+      "block": 1464,
+      "cycle": 20,
+      "positions": [
+        46,
+        47
+      ],
+      "original_letters": [
+        36918,
+        36887
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          4130,
+          4134,
+          4146,
+          4150,
+          32802,
+          32806,
+          32818,
+          32822,
+          36898,
+          36902,
+          36914,
+          36918
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          4101,
+          4103,
+          4117,
+          4119,
+          32773,
+          32775,
+          32789,
+          32791,
+          36869,
+          36871,
+          36885,
+          36887
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        36919
+      ],
+      "final_mandatory_targets": [
+        36919
+      ]
+    },
+    {
+      "block": 1515,
+      "cycle": 21,
+      "positions": [
+        46,
+        47
+      ],
+      "original_letters": [
+        34870,
+        34839
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          2082,
+          2086,
+          2098,
+          2102,
+          32802,
+          32806,
+          32818,
+          32822,
+          34850,
+          34854,
+          34866,
+          34870
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          2053,
+          2055,
+          2069,
+          2071,
+          32773,
+          32775,
+          32789,
+          32791,
+          34821,
+          34823,
+          34837,
+          34839
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        34871
+      ],
+      "final_mandatory_targets": [
+        34871
+      ]
+    },
+    {
+      "block": 1566,
+      "cycle": 22,
+      "positions": [
+        46,
+        47
+      ],
+      "original_letters": [
+        20534,
+        20503
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          4130,
+          4134,
+          4146,
+          4150,
+          16418,
+          16422,
+          16434,
+          16438,
+          20514,
+          20518,
+          20530,
+          20534
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          4101,
+          4103,
+          4117,
+          4119,
+          16389,
+          16391,
+          16405,
+          16407,
+          20485,
+          20487,
+          20501,
+          20503
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        20535
+      ],
+      "final_mandatory_targets": [
+        20535
+      ]
+    },
+    {
+      "block": 1617,
+      "cycle": 23,
+      "positions": [
+        46,
+        47
+      ],
+      "original_letters": [
+        18486,
+        18455
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          2082,
+          2086,
+          2098,
+          2102,
+          16418,
+          16422,
+          16434,
+          16438,
+          18466,
+          18470,
+          18482,
+          18486
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          2053,
+          2055,
+          2069,
+          2071,
+          16389,
+          16391,
+          16405,
+          16407,
+          18437,
+          18439,
+          18453,
+          18455
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        18487
+      ],
+      "final_mandatory_targets": [
+        18487
+      ]
+    },
+    {
+      "block": 1668,
+      "cycle": 24,
+      "positions": [
+        46,
+        47
+      ],
+      "original_letters": [
+        10294,
+        10263
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          2082,
+          2086,
+          2098,
+          2102,
+          8226,
+          8230,
+          8242,
+          8246,
+          10274,
+          10278,
+          10290,
+          10294
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          2053,
+          2055,
+          2069,
+          2071,
+          8197,
+          8199,
+          8213,
+          8215,
+          10245,
+          10247,
+          10261,
+          10263
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        10295
+      ],
+      "final_mandatory_targets": [
+        10295
+      ]
+    },
+    {
+      "block": 1750,
+      "cycle": 26,
+      "positions": [
+        55,
+        56
+      ],
+      "original_letters": [
+        8374,
+        8343
+      ],
+      "pins": [
+        34,
+        5
+      ],
+      "letter_menus": [
+        [
+          34,
+          38,
+          50,
+          54,
+          162,
+          166,
+          178,
+          182,
+          8226,
+          8230,
+          8242,
+          8246,
+          8354,
+          8358,
+          8370,
+          8374
+        ],
+        [
+          5,
+          7,
+          21,
+          23,
+          133,
+          135,
+          149,
+          151,
+          8197,
+          8199,
+          8213,
+          8215,
+          8325,
+          8327,
+          8341,
+          8343
+        ]
+      ],
+      "initial_mandatory_rank7": [
+        8375
+      ],
+      "final_mandatory_targets": [
+        8375
+      ]
+    }
+  ]
+}

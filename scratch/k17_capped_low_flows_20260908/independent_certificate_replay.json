@@ -1,0 +1,28 @@
+{
+  "status": "PASS_INDEPENDENT_CERTIFICATE_REPLAY",
+  "input_sha256": "fed20c313c639740b089428c1d2b8b572fc7138de4c11c2203be554e4acfa2a3",
+  "verified_matching_lower_bound": 8245,
+  "verified_hall_upper_bound": 8245,
+  "exact_unrestricted_maximum": 8245,
+  "hall_target_count": 1768,
+  "hall_neighbor_positions": 6256,
+  "hall_capacity": 612,
+  "hall_target_rank_counts": {
+    "3": 17,
+    "4": 238,
+    "5": 1513
+  },
+  "hall_group_count": 5661,
+  "hall_groups_with_zero_capacity": 5066,
+  "hall_group_usable_capacity_histogram": {
+    "0": 5066,
+    "1": 578,
+    "2": 17
+  },
+  "canonical_frame_editable_positions": 11009,
+  "canonical_frame_capacity": 7013,
+  "canonical_frame_scalar_deficiency": 2388,
+  "no_optimization_run": true,
+  "elapsed_seconds": 3.4496534261852503,
+  "script_sha256": "40109d61911f29111cf0762b4e4660baf0a77082e1da8bd8f0d6e88b42d097ed"
+}

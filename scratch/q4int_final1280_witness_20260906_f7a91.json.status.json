@@ -1,0 +1,12 @@
+{
+  "solver": "cp-sat",
+  "status": "FEASIBLE",
+  "target": 1280,
+  "symmetry": "baseline",
+  "raw_columns": 162142,
+  "bundles": 100336,
+  "point_orbits": 2048,
+  "walltime": 306.073659,
+  "verified_cost": 1280,
+  "reported_bound": 1248.0
+}

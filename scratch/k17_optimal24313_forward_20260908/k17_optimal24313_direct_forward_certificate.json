@@ -1,0 +1,326 @@
+{
+  "status": "PASS",
+  "scope": "Direct ordinary forward OR scans of the supplied literal word; no search, quotient-certificate assumption, suffix recurrence, or segment-tree algorithm used in this independent audit.",
+  "length": 24313,
+  "input_sha256": "7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9",
+  "all_letters_nonempty": true,
+  "all_letters_in_17_cube": true,
+  "all_nonempty_targets": 131071,
+  "missing_targets": [],
+  "direct_forward_intervals": 552396,
+  "global_target_rank_counts": {
+    "1": 17,
+    "2": 136,
+    "3": 680,
+    "4": 2380,
+    "5": 6188,
+    "6": 12376,
+    "7": 19448,
+    "8": 24310,
+    "9": 24310,
+    "10": 19448,
+    "11": 12376,
+    "12": 6188,
+    "13": 2380,
+    "14": 680,
+    "15": 136,
+    "16": 17,
+    "17": 1
+  },
+  "all_stored_witnesses_nonwrapping": true,
+  "lower_bound": {
+    "W": 24310,
+    "lower_rank_target_count": 65535,
+    "two_extra_positions_capacity": 48623,
+    "three_extra_positions_capacity": 72936,
+    "endpoint_delay": 3,
+    "B17": 24313
+  },
+  "exact_optimal_length": 24313,
+  "linear_blocks": {
+    "V": {
+      "length": 86,
+      "targets": 639,
+      "forward_intervals": 1911,
+      "target_rank_counts": {
+        "4": 17,
+        "5": 34,
+        "6": 34,
+        "7": 85,
+        "8": 84,
+        "9": 83,
+        "10": 82,
+        "11": 81,
+        "12": 80,
+        "13": 16,
+        "14": 15,
+        "15": 14,
+        "16": 13,
+        "17": 1
+      }
+    },
+    "Z": {
+      "length": 24227,
+      "targets": 130747,
+      "forward_intervals": 549866,
+      "target_rank_counts": {
+        "1": 17,
+        "2": 136,
+        "3": 680,
+        "4": 2363,
+        "5": 6154,
+        "6": 12359,
+        "7": 19397,
+        "8": 24225,
+        "9": 24224,
+        "10": 19414,
+        "11": 12376,
+        "12": 6188,
+        "13": 2380,
+        "14": 680,
+        "15": 136,
+        "16": 17,
+        "17": 1
+      }
+    },
+    "internal_union_count": 131066,
+    "missing_internal_targets": [
+      27299,
+      27303,
+      27315,
+      27319,
+      29363
+    ]
+  },
+  "seam_letters": [
+    19076,
+    19106,
+    8834,
+    25249,
+    689,
+    12849
+  ],
+  "seam_witnesses": [
+    {
+      "target": 27299,
+      "rank": 8,
+      "local_one_based": [
+        2,
+        4
+      ],
+      "global_zero_based_inclusive": [
+        84,
+        86
+      ],
+      "global_one_based_inclusive": [
+        85,
+        87
+      ],
+      "direct_or": 27299
+    },
+    {
+      "target": 27303,
+      "rank": 9,
+      "local_one_based": [
+        1,
+        4
+      ],
+      "global_zero_based_inclusive": [
+        83,
+        86
+      ],
+      "global_one_based_inclusive": [
+        84,
+        87
+      ],
+      "direct_or": 27303
+    },
+    {
+      "target": 27315,
+      "rank": 9,
+      "local_one_based": [
+        2,
+        5
+      ],
+      "global_zero_based_inclusive": [
+        84,
+        87
+      ],
+      "global_one_based_inclusive": [
+        85,
+        88
+      ],
+      "direct_or": 27315
+    },
+    {
+      "target": 27319,
+      "rank": 10,
+      "local_one_based": [
+        1,
+        5
+      ],
+      "global_zero_based_inclusive": [
+        83,
+        87
+      ],
+      "global_one_based_inclusive": [
+        84,
+        88
+      ],
+      "direct_or": 27319
+    },
+    {
+      "target": 29363,
+      "rank": 9,
+      "local_one_based": [
+        3,
+        6
+      ],
+      "global_zero_based_inclusive": [
+        85,
+        88
+      ],
+      "global_one_based_inclusive": [
+        86,
+        89
+      ],
+      "direct_or": 29363
+    }
+  ],
+  "short_windows": [
+    {
+      "width": 1,
+      "window_count": 24313,
+      "rank_occurrence_counts": {
+        "1": 17,
+        "2": 136,
+        "3": 680,
+        "4": 2381,
+        "5": 6189,
+        "6": 14910
+      },
+      "distinct_targets": 21777,
+      "distinct_target_rank_counts": {
+        "1": 17,
+        "2": 136,
+        "3": 680,
+        "4": 2380,
+        "5": 6188,
+        "6": 12376
+      }
+    },
+    {
+      "width": 2,
+      "window_count": 24312,
+      "rank_occurrence_counts": {
+        "7": 24312
+      },
+      "distinct_targets": 19448,
+      "distinct_target_rank_counts": {
+        "7": 19448
+      }
+    },
+    {
+      "width": 3,
+      "window_count": 24311,
+      "rank_occurrence_counts": {
+        "8": 24311
+      },
+      "distinct_targets": 24310,
+      "distinct_target_rank_counts": {
+        "8": 24310
+      }
+    },
+    {
+      "width": 4,
+      "window_count": 24310,
+      "rank_occurrence_counts": {
+        "9": 24310
+      },
+      "distinct_targets": 24310,
+      "distinct_target_rank_counts": {
+        "9": 24310
+      }
+    },
+    {
+      "width": 5,
+      "window_count": 24309,
+      "rank_occurrence_counts": {
+        "10": 24309
+      },
+      "distinct_targets": 19448,
+      "distinct_target_rank_counts": {
+        "10": 19448
+      }
+    }
+  ],
+  "two_cycle_decomposition": {
+    "Q_length": 85,
+    "R_length": 24225,
+    "copied_Q_letter_matches": true,
+    "copied_R_two_letters_match": true,
+    "Q_cyclic_targets": 664,
+    "R_cyclic_targets": 130748,
+    "cyclic_union_targets": 131071,
+    "Q_cyclic_forward_intervals": 2210,
+    "R_cyclic_forward_intervals": 550409,
+    "Q_cyclic_rank_counts": {
+      "4": 17,
+      "5": 34,
+      "6": 34,
+      "7": 85,
+      "8": 85,
+      "9": 85,
+      "10": 85,
+      "11": 85,
+      "12": 85,
+      "13": 17,
+      "14": 17,
+      "15": 17,
+      "16": 17,
+      "17": 1
+    },
+    "R_cyclic_rank_counts": {
+      "1": 17,
+      "2": 136,
+      "3": 680,
+      "4": 2363,
+      "5": 6154,
+      "6": 12359,
+      "7": 19397,
+      "8": 24225,
+      "9": 24225,
+      "10": 19414,
+      "11": 12376,
+      "12": 6188,
+      "13": 2380,
+      "14": 680,
+      "15": 136,
+      "16": 17,
+      "17": 1
+    },
+    "middle_windows": [
+      {
+        "width": 3,
+        "rank": 8,
+        "total_windows": 24310,
+        "distinct_targets": 24310,
+        "every_target_occurs_once": true
+      },
+      {
+        "width": 4,
+        "rank": 9,
+        "total_windows": 24310,
+        "distinct_targets": 24310,
+        "every_target_occurs_once": true
+      }
+    ]
+  },
+  "unverified_scope": "Original quotient-row generator, temporal transition certificate, and reported search/regeneration history were not supplied and are not premises of the literal optimality proof.",
+  "resource_caps": {
+    "cpu_seconds": 30,
+    "wall_seconds": 45,
+    "address_space_bytes": 1073741824
+  },
+  "elapsed_seconds": 0.40623011300340295
+}

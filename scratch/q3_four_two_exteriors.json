@@ -1,0 +1,17 @@
+{
+  "branches": 1332,
+  "candidate_counts": {
+    "N_0_9": 18000,
+    "N_1_8": 20520,
+    "N_2_8": 20520,
+    "N_3_8": 20520,
+    "P_0_8": 22680,
+    "P_4_9": 20160,
+    "P_5_9": 20160
+  },
+  "conflicts": 0,
+  "placement": "two_exteriors",
+  "selected": [],
+  "status": "INFEASIBLE",
+  "wall_time": 8.266558042
+}

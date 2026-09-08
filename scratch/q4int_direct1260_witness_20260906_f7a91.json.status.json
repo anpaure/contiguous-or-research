@@ -1,0 +1,12 @@
+{
+  "solver": "cp-sat",
+  "status": "UNKNOWN",
+  "target": 1260,
+  "symmetry": "none",
+  "raw_columns": 162142,
+  "bundles": 162142,
+  "point_orbits": 4096,
+  "walltime": 241.150706,
+  "verified_cost": null,
+  "reported_bound": 1248.0
+}

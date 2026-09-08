@@ -1,5 +1,1045 @@
 # Research index
 
+## Latest 2026-09-09: exact 19 and 20; universal width-length 19 cycle
+
+- [The supplied words attain both exact optima](K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md):
+  nu(19)=B(19)=92,381 and nu(20)=B(20)=184,759. Independent forward
+  first-occurrence and suffix enumerations cover all524,287 and1,048,575
+  targets, and separate range-OR queries verify every saved witness.
+  The analytic endpoint lower bounds match. Both additive gaps are zero.
+- The first92,378 letters form a universal cycle: all checked ordinary
+  witnesses have length at most29 and reduce to cyclic witnesses. The
+  cyclic endpoint bound proves mu(19)=92,378. The literal19 word is this
+  cycle plus its firstthree letters. The20 word regenerates byte for byte
+  by the periodic-core lift, and also passes its own full literal checks.
+- Actual carrier reconstruction retains all92,378 canonical outgoing
+  PBBS matching edges while changing70,452 incoming incidences. One
+  physical cycle replaces the native360 components. Triple preservation
+  permits12,654 pair unions to change; literal/pair masks cover every
+  target of ranks1–8. All4,862 rotation-quotient rows are recovered.
+  The unprovided compact generator and construction search were not replayed.
+- The general periodic initialized-state and set-turnover proofs pass.
+  The first unsettled case is now21, with B(21)=352,719; B(22)=705,435.
+  The earlier paired-endpoint theorem requires16,793 entrances and exits
+  per coordinate at exact21, stronger than the user's5,599 consequence.
+  These are necessary conditions, not an all-dimensional construction.
+- [Uniform cyclic-window capacity](scratch/UNIFORM_CYCLIC_MIDDLE_WINDOW_CAPACITY_AND_OPENING_OBSTRUCTION_20260909.md)
+  requires qM>=4^r-1 and opening d>=q when every q-window of a
+  width-M cyclic universal core has rank r. Thus q must grow at least
+  on the square-root scale. This specializes the retained endpoint
+  argument and explains why a fixed triple compiler is not an all-k proof.
+- [The bounded-height spectral barrier](scratch/PBBS_BOUNDED_HEIGHT_SPECTRAL_CONSTRUCTOR_BARRIER_INDEPENDENT_AUDIT_20260909.md)
+  improves the native constructor's subexponential overhead penalty to
+  order(n(log n)^2)^(1/3), with leading constant3 pi^(2/3)/2, and gives
+  an explicit height-two collar lower bound. The leading exponential
+  additive barrier was already known and never constrained unrestrictednu.
+- Master9.31–9.32, GateD, AppendixB, the finite comparison, answers index,
+  and [checkpoint](scratch/EXACT_B_GOAL_CHECKPOINT_20260909.md) record the update.
+  The all-k goal remains ACTIVE. All mathematical execution was onh100;
+  no new search or GitHub push was made. Internal reviews are not formal
+  or external certification. These supplied constructions predate this audit.
+
+## Earlier 2026-09-09: height-moment first pair; fixed matching; stronger interleaving
+
+The numerical19/20 frontier in this earlier entry is superseded above.
+
+- [Height-moment prefix accounting](HEIGHT_ADAPTIVE_MOMENT_PREFIX_CERTIFICATE_METHOD_20260909.md)
+  passes two independent proof audits. A new exact implementation and
+  complete priority-free replay certify the pair137/138 at less than
+  ten parts per million: U/Cat68<0.000009984725125072396316850761.
+  All162refinements and2409leaves are checked, including2388unfinished
+  families. The height table,23713Dyck roots,125475middle bridges and
+  small period/height comparisons also pass. No enormous word was emitted.
+- The supplied moment proof/log claim a3356-case band for uniform10ppm
+  from137. The actual programs, transcripts and135/136lower certificate
+  were not supplied. The method and finite-to-infinite reasoning pass;
+  the full band has not been independently replayed. Previously verified
+  uniform thresholds remain29/327/1483/6849, with the new137/138pair
+  recorded separately. The older713-case57/87claim also awaits its package.
+- [The exact frontier record](EXACT_EQUALITY_FIXED_MATCHING_AND_RUN_CONSTRAINTS_20260909.md)
+  proves a stronger general paired-endpoint inequality:
+  represented old rank-s targets plus marked rank-(s+1)targets<=N+R,
+  for either exits or entrances. Thus an exact19word needs4859transitions
+  in EACH direction for EVERY coordinate, strengthening541. The complete
+  small-word diagnostic passes137256words and1647072family checks.
+- A complete comparison shows that the supplied optimal17carrier retains
+  the canonical outgoing PBBS matching on all24310labels. Its incoming
+  matching changes17578incidences, including a single16167alternating
+  circuit. All1430canonical quotient rows are recovered. This is a
+  verified fixed-matching instance, not an all-dimensional constructor.
+- Every48622internal gap of the supplied optimal18trace is forbidden to
+  marked insertion if its old targets must survive. The new paired-run
+  theorem then forces at least97239positions for this fixed-trace lift.
+  At exact19, a48623-letter unmarked trace needs4856literalnine-set run
+  starts and ends; a trace without nine-set literals needs length53479.
+  These restrictions do not exclude unrestricted exact19constructions.
+- The exact multi-run recency cursor and protected-witness tag compiler
+  are proved. A separate proper-pair reservation flow remains a conditional
+  subproblem: its fixed-literal overlap/duplicate credit and residual
+  common allocation must be charged. No pair-flow or new word search ran.
+- Equality remains proved through18. The first unsettled case is19:
+  92381<=nu19<=94161;184759<=nu20<=188322. The all-k goal remains ACTIVE.
+  Master9.29–9.30 and [the fresh checkpoint](scratch/EXACT_B_GOAL_CHECKPOINT_20260909.md)
+  record the completed work and the missing certificate boundary.
+  All mathematical execution was onh100; no new GitHub push was made.
+
+## Earlier 2026-09-08: exact optimum at18; initialized lifting; prefix-certificate method
+
+- **[nu(18)=B(18)=48,623 is independently verified](K18_OPTIMAL48623_VERIFIED_20260908.md).**
+  The supplied literal covers all262143targets by ordinary intervals.
+  Complete suffix enumeration, every separate range-OR witness query and
+  the independently implemented607684-event first-occurrence census pass.
+  The internal endpoint bound excludes every shorter word. Equality is
+  known through18; the first unsettled dimension is19.
+  SHA:6b191b447231c665bb1288cdc7ebdea5c73fd79502ef47015ee3d98fcf685be5.
+- [Initialized-state lifting](scratch/INITIALIZED_RECENCY_EXTENSION_INTERLEAVING_AND_K18_LOWER_BOUND_AUDIT_20260908.md)
+  has the exact general identity Ext_z(A)=1+lambda_k(P_A). The same audit
+  proves the run inequality and reconfirms the previously known541entrances
+  and541exits per coordinate required atB(19). A simple all-marked extension
+  cannot attain the next odd-dimensional target.
+- [The initialized traversal and byte regeneration also pass](scratch/K18_OPTIMAL_INITIALIZED_TWO_CYCLE_STRUCTURE_AND_BYTE_REGENERATION_20260908.md):
+  lambda17(P)=24309 exactly, allsevenjoinholes covered, all131071marked
+  witnesses replayed, and the18word reproduced from the supplied17literal.
+  All48620nine-sets occur once after exactlythree initialization endpoints.
+- [Current numerical bounds](FINITE_BOUNDS_K18_K19_K20_20260908.md):
+  exact18=48623;92381<=nu19<=94161;184759<=nu20<=188322.
+- [Forward prefix bounds](HEIGHT_ADAPTIVE_FORWARD_PREFIX_CERTIFICATE_METHOD_20260908.md)
+  pass a proof audit: every unfinished branch has exact completion mass,
+  a valid period divisor and a height cap. The user-reported713certificates
+  needed for uniform0.1%from57 and0.01%from87 were not supplied and have
+  not been independently replayed. Previously verified uniform thresholds
+  remain29/327/1483/6849; the claimed improvements are recorded separately.
+  An independent bounded engine and complete replay now certify the
+  isolated pair327/328 at less than0.01%, after395mass-preserving splits.
+  Fully refined r1–8cases also match the earlier exact census.
+- The all-k equality goal remains active. All mathematical execution is
+  restricted to h100; no new GitHub push was made. Master9.27–9.28,
+  the finite table, GateD, AppendixB and checkpoint record this progress.
+
+## Earlier 2026-09-08: exact optimum at17 and its first18 lift
+
+- **[nu(17)=B(17)=24,313 is now established](K17_OPTIMAL24313_VERIFIED_20260908.md).**
+  The actual supplied word passes complete ending-OR enumeration, all
+  131,071 independent range-OR witness checks, and a separately implemented
+  direct forward scan of 552,396 intervals. The standalone endpoint proof
+  excludes every shorter word. This finite equality needs no PBBS premise.
+  Word SHA:7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9.
+- [The opening mechanism also passed](scratch/K17_OPTIMAL24313_DIRECT_FORWARD_AND_TWO_CYCLE_SEAM_CERTIFICATE_20260908.md):
+  actual cycles of lengths 85 and 24,225 form an exact-width cyclic cover;
+  one and two copied letters open them. Their single join supplies the five
+  otherwise missing targets. All short-window rank counts and cyclic middle
+  multiplicities were checked from the literal. The unprovided quotient
+  generator and search history are not needed or represented as replayed.
+- [The exact lift at18](scratch/K18_VERIFIED_48626_TRIMMED_LIFT_FROM_OPTIMAL_K17_20260908.md)
+  gives the actual verified word48626:48623<=nu18<=48626, gap three.
+  All262143witnesses pass independent range checks. This earlier gap at18
+  is now closed by the supplied48623-word above.
+- [Uniform finite thresholds](HEIGHT_ADAPTIVE_UNIFORM_FINITE_THRESHOLDS_20260908.md)
+  now hold for every subsequent dimension:1%from29,0.1%from327,
+  0.01%from1483,and0.001%from6849. Two proof audits establish the
+  reciprocal-particle envelope and its monotonicity; a new exact rational
+  run checks allfourthresholds and31finitebandcases against the priorcensus.
+  These retain the stated finite PBBS support premises and do not improve
+  the strongest eventual exponent.
+- Earlier-in-turn fixed-bank work is retained as scoped research evidence:
+  [the full aperture-capped recency inventory cannot be rerouted](scratch/PBBS_FULL_CAPPED_RECENCY_AND_MATCHING_GRAPH_OBSTRUCTION_20260908.md),
+  and [the unrestricted triple-cap CNF has a checked UNSAT proof](scratch/K17_UNRESTRICTED_TRIPLE_CAPS_INDEPENDENT_DRAT_CERTIFICATE_20260908.md).
+  These fix a different chronology/inventory and do not contradict the
+  supplied optimal word. They are no longer obstacles to settling17.
+
+Master Sections9.25–9.26, the finite table, GateD, AppendixB and the active
+checkpoint have been updated. All mathematical execution was onh100;
+no new GitHub push was made. Earlier entries below are historical.
+
+## Earlier 2026-09-08: exact periods, construction census through101, and native-state barriers
+
+- [Exact rotation-period and finite census record](HEIGHT_ADAPTIVE_EXACT_ROTATION_PERIOD_AND_FINITE_CENSUS_20260908.md):
+  the translated-return equivalence gives the exact f/f²period
+  lcm_j den(e_(j-1)*sigma_j), including nonprimitive rows. Independent
+  proof audits cover sufficiency, rotation signs, the symmetry-loss
+  divisor and the exact root/state multiplicity.
+- [The independently implemented census](scratch/PBBS_EXACT_ROTATION_PERIOD_PARTITION_CENSUS_THROUGH101_CERTIFICATE_20260908.md)
+  checks every odd dimension3–101:1,295,970partitions and1,702,866
+  signatures. All quoted integer bounds pass, including
+  nu101<=199805614710856411551021117606<1.000006W101.
+  The native overhead is5.9422parts per million, but N101−B101 is
+  1187277484185535019897543. Every case in the1%,0.1%,0.01%finite
+  ranges29–102,57–102,87–102 passes, with even lifts. No enormous
+  literal word was generated; these use the retained finite support proof.
+- [The corner-period barrier](scratch/PBBS_CORNER_PERIOD_UPPER_BOUND_AND_EXPONENTIAL_COLLAR_BARRIER_AUDIT_20260908.md)
+  proves the unchanged word has actual additive overhead at least
+  exp(n log2−O(sqrt(n)log n)). It cannot attain B(n) merely through
+  better period estimates. This is not a lower bound on nu−W.
+- [The complete native recency graph at17](scratch/PBBS_NATIVE_RECENCY_ROUTING_OBSTRUCTION_COMPLETE_AUDIT_20260908.md)
+  has24,310native edges,24,310self-loops,and17extra edges, allfrom
+  canonical83to103(height3,period153to85). Its component quotient
+  is acyclic, minimumcyclicroutingcount146, and the native routing
+  is uniquely loop-free. Every neutral candidate was tested; the
+  exclusion of cross-height cycles has a separate proof.
+- Exact-goal continuation: [all lower targets have individual hosts in the triple-preserving frame](scratch/K17_TRIPLE_PRESERVING_SHORT_HOSTS_AND_CANONICAL_ANCHOR_MENU_CERTIFICATE_20260908.md),
+  but [eight exact implications refute the canonical every-third-anchor frame](scratch/K17_CANONICAL_W3_ANCHOR_EIGHT_STEP_PROPAGATION_OBSTRUCTION_20260908.md).
+  The [general local menu and compact SAT formulation](scratch/PBBS_TRIPLE_PRESERVING_BLOCK_MENUS_AND_COMPACT_SAT_20260908.md)
+  remain valid; no SAT was run after the exact contradiction.
+  [A conditional capped-context fusion theorem](scratch/PBBS_CAPPED_EQUAL_CONTEXT_DIRECTED_PORT_FUSION_LEMMA_20260908.md)
+  is correct, but its [fixed-bank census](scratch/K17_CAPPED_RANK6_CONTEXT_PORT_CENSUS_20260908.md)
+  finds no directed cycle among74,562eligible ports. These are
+  specific architecture restrictions, not an obstruction to unrestricted
+  exact equality or every possible changed state inventory.
+
+Master Section9.24 records this continuation. The strongest asymptotic
+rate below and verified17word24658 remain unchanged. All new mathematical
+execution was onh100 under explicit bounds; all jobs have exited.
+Internal reviews are not external or formal certification. No push was made.
+
+## Earlier 2026-09-08: harmonic-period coefficient0.93, finite certificates and verified24658
+
+- [The harmonic-period proof](HEIGHT_ADAPTIVE_HARMONIC_PERIOD_RATE_20260908.md)
+  gives the strongest internally reviewed error
+  exp[-.93(k(log k)^2)^(1/5)] for every k>=2^131073+1.
+  It keeps the reciprocal period in the exact collar cost, replacing
+  an exponential candidate count by a harmonic factor. The explicit
+  finite formula uses integer prime cutoff z. Three specified rows
+  were independently checked on h100 with exact outward arithmetic:
+  relative errors below10^-330,10^-950,10^-2600 at dimensions
+  2·10^12+1/+2,2·10^14+1/+2,2·10^16+1/+2. These are specific pairs,
+  not thresholds for all larger dimensions. No enormous words were generated.
+- [The depth-product proof](HEIGHT_ADAPTIVE_DEPTH_PRODUCT_RATE_20260908.md)
+  gives coefficient3/5 on the same scale and same explicit onset.
+  Its sharp residue/NB bounds and integral certificate were audited,
+  including the finite shifted-Riemann correction. It is now intermediate.
+  [Fresh primes](HEIGHT_ADAPTIVE_FRESH_PRIME_RATE_20260908.md) give the
+  weaker error exp(-k^(1/5)/128) at the smaller onset2^2048+1.
+  [Stopped LCM](HEIGHT_ADAPTIVE_STOPPED_LCM_RATE_20260908.md) gives every
+  eventual c<1/3 on the logarithmic-gcd scale as a separate valid route.
+  All retain their stated finite PBBS premises; no internal review is
+  represented as external or formal certification.
+- [The actual24658word](K17_UPPER24658_VERIFIED_20260908.md) passed all131071
+  targets and independent range-OR witness checks. Current finite result:
+  **24313<=nu(17)<=24658**, gap345. SHA
+  24f7f831b7446e942cc0927472296b2d20069f694b8bbad6374e65cc07b6f7fb.
+  Its exact lift also passed at18: **48623<=nu(18)<=49316**, gap693.
+  The [finite18–20 comparison](FINITE_BOUNDS_K18_K19_K20_20260908.md)
+  retains verified upper bounds94161 at19 and188322 at20.
+- Exact-goal progress: [all65535 lower targets have individual short cap hosts](scratch/K17_CAPPED_PBBS_ALL_LOWER_TARGETS_INDIVIDUAL_HOST_CERTIFICATE_20260908.md)
+  in the fixed24310-position capped bank. But [the exact simultaneous flow](scratch/K17_CAPPED_LOW_TARGET_FLOW_HALL_OBSTRUCTION_20260908.md)
+  has optimum8245/9401 when literal rank6 occurrences must be reserved.
+  A1768-target Hall set has only612 usable slots, deficit1156. This
+  rules out retaining every native H3 pair while H1/H2 stay frozen;
+  it does not rule out general short-interval caps or exact equality.
+  The next construction must allow some native pair occurrences to change
+  and recover their targets elsewhere. All jobs were bounded and deterministic.
+
+Master Sections9.20–9.23 and AppendixB record the new results. The exact
+all-k goal remains active. All mathematical execution occurred only onh100;
+no new GitHub push was made. Earlier entries below retain historical claims.
+
+## Earlier 2026-09-08: explicit logarithmic-gcd rate and verified 24,668 at 17
+
+- [The logarithmic-gcd proof](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_LOG_GCD_RATE_20260908.md) gives the strongest current internally reviewed bound: nu(k)/W(k)<=1+exp[-(k(log k)²)^(1/5)/128] for every k>=ceil(exp(exp(2^21))). The endpoint bound1+exp[-k^(1/5)] holds on the same explicit range. The full reverse geometric-row law controls primitivity, an explicit log-gcd inequality with constant20 gives a half-pass probability, and successive reverse conditioning replaces profile independence. All fixed-size costs and parity constants are retained. This gains a factorlogk in the exponent over the preceding result; no new finite word is claimed.
+- [The preceding reverse-profile proof](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_REVERSE_PROFILE_RATE_20260908.md) also completed internal proof review and root reading. It gives nu(k)/W(k)<=1+exp[-2^-330 k^(1/5)/(log k)^(3/5)] on the same threshold. Its negative-binomial tails, fixed-size transfer, existence-only local smoothing and first-moment sieve remain valid intermediate results. All constants and sufficient thresholds are conservative, not externally or formally certified.
+- [The exact one-seventh profile sieve](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_PROFILE_SIEVE_RATE_20260908.md) is also fully reviewed, with explicit c=2^-50 and the same sufficient dimension threshold. It remains a valid intermediate result. [The earlier period estimates](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_PERIOD_BOUNDS_20260908.md) include exp[-2^-32(log k)^(6/5)] above ceil(exp(exp256)), and the fully rational one-row finite bound giving factors1.01 above5643 and1.001 above6255.
+- [The alternative multilevel joint-profile proof](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_MULTILEVEL_PROFILE_BOUND_20260908.md) gives exp[-c log k loglog k] for every c<1/(2log2), with an explicit finite error expression. It also proves that the full-profile lcm is always a physical return time and equals the period when every row is primitive. All physical f and f² periods are odd and equal.
+- [The fractional-LCM proof](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_FRACTIONAL_LCM_BOUND_20260908.md) gives exp[-c(log k)²] for every c<1/(6144e²), including c=1/65536, eventually. Its uniform finite Euler-product bound and profile application pass internal review. This improves the multilevel logarithmic route but is weaker than the one-seventh and one-fifth rates. No numerical starting dimension is recorded for this alternative.
+- The supplied [24,668-letter word](/Users/amir.nuriyev/Documents/problem/answers/k17_upper24668.word) PASSED one bounded h100 replay: all131071 nonempty targets, nonempty letters, and all target witnesses independently rechecked by segment-tree OR. [The full certificate](/Users/amir.nuriyev/Documents/problem/K17_UPPER24668_VERIFIED_20260908.md) records SHA22af061610f9c6cb4708ccca77c8d8008f251a1cc40f92858ca79bf7ad2ffff6. The current finite result is **24313<=nu(17)<=24668**, gap355. The earlier supplied24715word also passed and remains retained; the user's rewrite sources were not supplied or reproduced.
+- The user's later24660claim has only a sandbox link. The exact expected local file was absent, so its claimed347gap is not recorded as independently verified. No broad file search or construction search was performed.
+- The independent24947forest word is retained as an intermediate construction. Its118-leaf repair is optimal within the specified128-hole binary-forest model. [Capped-aperture and pin constraints](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_CAPPED_APERTURE_EXACT_MIDDLE_AND_LOWER_PIN_INTERFACE_20260908.md) and [literal-overlap/graft obstructions](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_HEIGHT_ADAPTIVE_COLLAR_OVERLAP_AND_COMMON_CONTEXT_GRAFT_OBSTRUCTIONS_20260908.md) provide new exact-construction interfaces and limitations; they are not lower bounds on unrestricted words.
+
+The master handoff now records these results in9.14–9.19 and retains the
+earlier proofs as history. Exact equality nu(k)=B(k) remains open. All
+mathematical execution occurred only onh100; no new GitHub push was made.
+
+## Earlier 2026-09-08: height-adaptive polynomial rate and verified24957 at17
+
+- [The height-adaptive finite construction](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_PBBS_CONSTRUCTION_20260908.md) has complete internal proof review on the retained finite matching/corridor identities. For odd n>=3 it gives nu(n)<=W(n)+floor((2^(n+1)-3W(n))/n); the exact even lift gives relative error sqrt(2pi/k)+O(1/k). Exact integer comparisons and a monotonicity proof certify factors1.1 for every k>=569 and1.01 for every k>=62233. The strict-height corridor h>=q+1 and equality of the interleaved height are checked explicitly. No clock, renewal or asymptotic-diagonal input is used.
+- The same fixed canonical recipe materialized a25202 universal word and a24829 word with128 exact holes. Appending those masks gives the new verified finite bound **24313<=nu(17)<=24957**, with644 positions left to the lower bound. [The actual word](/Users/amir.nuriyev/Documents/problem/answers/k17_upper24957.word), [root's separate executed certificate](/Users/amir.nuriyev/Documents/problem/witnesses/k17_upper24957/literal24957_verification.json), and all131071 ordinary target witnesses are retained. Construction and independent literal checking ran only onh100; no cut/order search was used. The user's different24969-word was not supplied; the stated fixed convention achieved12 fewer letters.
+- The earlier [25374 user word](/Users/amir.nuriyev/Documents/problem/K17_UPPER25374_VERIFIED_20260908.md) was also supplied and independently verified before this improvement. Its certificate and the earlier25745/25746 witnesses remain available for provenance.
+- The immediately preceding [inverse-logarithmic proof](/Users/amir.nuriyev/Documents/problem/COEFFICIENT_ONE_INVERSE_LOG_RATE_20260908.md) was fully audited on its larger finite PBBS dependency chain, with C=2^400000 and k*=ceil(exp(exp(4194304))). It remains a valid historical quantitative result, superseded by the new polynomial-rate route.
+- The separate [native311 partial word](/Users/amir.nuriyev/Documents/problem/scratch/NATIVE291_TO311_OPTIMAL_SINGLETON_EXTENSION_20260908.md) introduces all missing singletons in the minimum20 appended letters under its rank-eight triple condition. Its complete1979-target family has exact minimum311. This remains a partial-family construction, not a full-cube optimum.
+
+The active all-dimensional exact goal nu(k)=B(k) remains open. All older
+finite17 comparisons in this older section are historical; the current
+upper bound is24658, as recorded at the top of this index.
+
+## 2026-09-08: bounded short-clock mass and actual early-sector packing
+
+- [Only top-gap zero is needed for all-short overlap](scratch/PBBS_TOP_ZERO_ALL_SHORT_OVERLAP_REDUCTION_20260908.md) passes complete independent root-helper and task05 full-file audits. The S=1 early-triangle estimate discards top-gap-positive short births at raw cost O_c(1/r). Retaining GOOD,T<=c sqrt(r),Z00=0 requires NO deeper triangle or residual budget floor, and has incidence normalizer Theta_c(1). Its exact hypergeometric law shows that the WHOLE fixed-Gaussian occupied support is o(W) if and only if the actual eligible distinct-label count k0 tends to infinity in incidence probability. Section5 bounds ALL original gaps through the random safe depth by O(log r), outside arbitrarily polynomially small ACTUAL incidence mass; Section6 retains a subGaussian profile-envelope tail under that same law. Shifted-triangle gates and the vanishing-normalizer issue are removed. Physical label divergence remains UNPROVED; no compiler or coefficient-one conclusion is inferred.
+- [Occupied support now suffices for short-trace packing](scratch/PBBS_OCCUPIED_SUPPORT_TO_PACKING_20260908.md) passes full root, root-helper and task05 audits. For ANY retained family with T<=c sqrt(r), occupied support o(W) implies edge-disjoint packing o(W/sqrt(r)); no logarithmic convergence rate or budget-floor division is needed. More precisely, with u=|U_F|/W, packing is at most C_c(W/sqrt(r))u sqrt(log(e/u)). The audited [clean hypergeometric law](</Users/amir.nuriyev/.codex/worktrees/e333/problem/research_round1/pbbs_clean_triangle_hypergeometric_reciprocal.md>) reduces vanishing clean support to mu_clean Pr_inc(k<=M)->0 for EVERY FIXED M, where k counts actual eligible distinct labels with all shifted tests. That abundance condition and the complete compiler remain UNPROVED.
+- [Joint115-fiber prefix repair](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round21_constructive_joint_prefix_repair.md>) passes complete root and independent audits. With one changed physical M footprint and explicit full-source reassignment, it attains Boolean64/64, paired-orbit coverages59/60 and57/60, and all44 necessary prefix orbit budgets simultaneously; core/positive packing is preserved. This supersedes the earlier one-move-only partial coverage below. The materialized original-source certificate now also passes BOTH independent checkers in one bounded ssh h100 check-only run: [terminal verification record](</Users/amir.nuriyev/.codex/worktrees/aa30/problem/research_round1/round15_h100_joint_check_115_Pa484E/result/run.json>). Root read the reviewed programs and result/hash bindings;735 distinct total targets and all advertised prefix counts are confirmed. This is not a full4096-point cover.
+- The symbolic finite prefix now extends115 to147, with complete root reads and independent full audits: [three B fibers](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round22_three_B_full_fiber_extension.md>) and [three A fibers](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round23_three_A_extension_and_central_interface.md>) complete both paired families at121; a [twenty-fiber C4 construction](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round24_c4_0330_class_extension.md>) completes the entire0330 class at141; [six actual201 connectors](</Users/amir.nuriyev/.codex/worktrees/aa30/problem/research_round1/ROUND16_147_PREFIX_COMPOSITION.md>) give147. Every full source map, constrained collateral point, source quota and all44 necessary budgets are retained. Totals are380 core,348 positive,449 union,102 distinct middle targets/137 middle incidences;480 remaining central fibers face478 holes, with one excess each in0411 and2112. The six0240 boundary holes are NOT filled by the201 connectors. These are proof-audited symbolic extensions, not additions to the H100-checked115 artifact or a full cover.
+- The [finite-layer original incidence fibre](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_finite_layer_zero_triangle_incidence_fibre.md>) passes full root and independent clock/probability audit. On the safe base zero triangle, the exact chronological clock word is C^S T; profile, deeper original rows and offset determine the entire base-lifetime test. All remaining entries of each row s<S are independent uniform compositions into p_s-s-1 free parts. The restriction has actual F0 incidence probability1-O_c(S^2/r)-O_c(exp(-b_c r/S^2)) for every S=o(sqrt r), using the newly audited actual profile-tail bound in the top-zero note Section6. No free-row product law at a shifted or reached root is inferred.
+- [Recurrent original-array cones under actual short incidence](scratch/PBBS_ORIGINAL_ARRAY_CONE_RENEWAL_20260908.md) passes full independent root-helper and task03 audits. Finite original free coordinates converge stably to independent geometrics with positive probability1/(s+2)^2 in row s. Shifted cone intersections have exact limiting gap product u(g,S)=[(S+2)/(S+1)]^g/(g+1) for g<=S; infinite-depth indicators form a proper recurrent renewal process with mass1/(d+1). Consequently arbitrarily many ORIGINAL-INDEX cones occur in actual incidence probability in the proved iterated limit/slow diagonal. Array offsets are NOT identified with physical births. The missing clock alignment and short-endpoint test prevent inferring k0 divergence or occupied support o(W).
+- [Initial uninterrupted P-runs diverge under actual short incidence](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_initial_p_run_incidence_divergence.md>) passes root and independent full structural/coefficient audit. Uniformly in integer m>=0, the original-root bound is Pr(p0<=m)<=min(1,C(m+1)^2/r), giving actual F0 incidence probability at most C_c(m+1)^2/sqrt(r). Thus every m=o(r^(1/4)) is exceeded with high probability. This controls the original first interruption, not the lifetimes or abundance of shifted partners.
+- The [top-zero virtual-interval dictionary](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_top_zero_virtual_interval_dictionary.md>) passes full root and independent audits. Zero-gap virtual lifetimes automatically satisfy T0>=h; original eligibility is exactly the short virtual intervals covering the sampled edge. Birth-to-endpoint is a bijection, and untruncated congestion is exactly2r1-r2+2 at every edge, with at most one doubled boundary label. None of these identities proves that many intervals survive the short cutoff.
+- [Logarithmic-gap adjacent amplification](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/PBBS_LOG_GAP_ONE_LEVEL_AMPLIFIER_EXISTENCE.md>) and its [exact clock audit](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/PBBS_ROW_ONE_MINUS_TWO_CLOCK_AMPLIFICATION_AUDIT.md>) pass full root and independent helper audits. On the SAME GOOD profile and all-safe-gap domain, legal original-array edits preserve a Gaussian zero-budget base but make its adjacent virtual/actual lifetime at least h+m(2h-3), m=Theta(log r). The receiving row-one slot is -2, not protected -1. Thus uniform deterministic one-step Gaussian-scale stability is false even after the maximum-gap restriction. No frequency estimate for these edited roots, no many-label obstruction and no counterexample to k0 divergence is supplied.
+- [Original two-forward-bank literal coalescence](</Users/amir.nuriyev/.codex/worktrees/c3da/problem/research_round2/ORIGINAL_TWO_FORWARD_BANK_LITERAL_COALESCENCE.md>) passes full root and independent actual-support audits. It preserves the ENTIRE original H=0 bank support at exact length R+23, with R=12(h+1) distinct middle targets, and gains4(k-1)(h-k) upper targets under the stated purity hypothesis. It has no lower-rank gain at H=0 and does not preserve all gains of the different retimed bank. Global placement and gain surviving outside the local bank remain open.
+- The [general-H coalescence and six-path interface](</Users/amir.nuriyev/.codex/worktrees/c3da/problem/research_round2/ORIGINAL_COALESCENCE_GENERAL_H_AND_SIX_PATH_INTERFACE.md>) now pass complete root and independent root-helper audit too. Entire ORIGINAL actual support survives at length R+12H+21 for1<=H<=h, with named upper gain4(k-1)(h-k) and lower gain4F(H). The exact endpoint-role FAMILY is preserved, but the end map changes and negative constant-tag arms are cross-paired; this is not an already-proved ordinary tensor compiler. Global composition and placement remain separate.
+- Its [exact actual central census](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/ORIGINAL_COALESCENCE_EXACT_CENTRAL_CENSUS.md>) also passes full root and independent root-helper audit, including source-cut and incidental-target exclusions. In the pure band, f_s=8(h+3-s)_+ +4(h+1-s)_+ -8*1[s=k+1]-6C_2(s-2), with the stated extra H=0 debit. Consequently f_s/R=1+O((s+1)/h) uniformly for s=o(h). This reaches ordinary intensity one; the named local fresh family must not be added a second time to claim higher total intensity. Global placement and surviving gain are not established by this census.
+- [Global six-path tensor composition and actual fresh profile](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND20_COALESCED_TENSOR_ACTUAL_FRESH_PROFILE.md>) now pass full root and separate actual-source/selection audits. One shared central matching and compatible marks produce a literal near-W word preserving the old bank's ENTIRE support after a charged common extreme repair. A fixed Gaussian annulus has an explicit positive aggregate fresh fraction even after outside overlaps are counted. The old comparison word is longer by an unbounded tensor factor: this is NOT an equal-cost near-W improvement. New total intensity and coverage remain the ordinary Poisson baseline. The separate deep estimate also prevents importing a short-arm all-depth conclusion; no improved full-cube coefficient follows.
+- [Bounded Gaussian-short PBBS incidence](scratch/PBBS_BOUNDED_GAUSSIAN_SHORT_INCIDENCE_20260908.md) is PROVED after complete root, two root-helper and task05 audits. Fixed-count coupling and slice concentration, a reciprocal-depth envelope, and a profile-measurable safe clock depth remove the logarithmic loss: for every fixed c>0, Pr(T<=c sqrt r)=Theta_c(r^(-1/2)) and E[(T+2)1_{T<=c sqrt r}]=Theta_c(1). The lower orders use the separately accepted zero-budget band bound. Task05 also supplied an independent coarse-profile energy/dyadic proof. No fresh reached-root law, growing-c uniformity, overlap theorem or coefficient-one result is asserted.
+- The same note, Sections9-10, proves an ACTUAL handled trajectory sector, strengthening task08's early-branch estimate. For every deterministic1<=S<=sqrt r, Gaussian-short births with a positive entry in their original inverse-pruning triangle through S have probability O_c(S^2/r^(3/2)), raw incidence O_c(S^2/r), and physical packing at most O_c((W/sqrt r)(S^2/r)). Hence EVERY prescribed S=o(sqrt r) makes this sector's packing o(W/sqrt r). Under both the actual all-short newborn and all-short incidence laws, the complementary triangle is all zero with probability1-O_c(S^2/r). Nearby SHIFTED lifetimes and overlap remain unproved; restricted residual normalizers are not silently replaced by the all-short one.
+- [Exact eight-target Hall certificate](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round20_eight_target_fixed_footprint_hall_certificate.md>) passes full root and independent root-helper audit. The frozen115 typed-footprint geometry can supply at most four of eight displayed1104 targets, with only three remaining source incidences:8<=4+3 is impossible. This replaces ROUND13's backend diagnosis by a solver-independent finite proof, not a no1252 theorem for other placements. A [literal one-fiber relocation](</Users/amir.nuriyev/.codex/worktrees/aa30/problem/research_round1/ROUND14_SINGLE_M_CUT_CROSSING.md>) crosses that cut with the minimum one changed physical fiber, preserving finer quotas/core-positive packing and improving paired coverages49->50 and43->44. Boolean coverage remains60/64 and paired/Boolean deficits remain; it is not an extension certificate.
+- Task07's [matching-compatible partial exchange](</Users/amir.nuriyev/.codex/worktrees/d22d/problem/research_round1/round15_pbbs_compatible_balanced_state_trade.md>) has correct internal middle edges, history balances and local ports, but its OLD configuration is now [proved nonextendible](</Users/amir.nuriyev/.codex/worktrees/d22d/problem/research_round1/round16_old_trade_extension_hall_obstruction.md>). Root read both complete proofs. Four old states force two heads to share at most one predecessor; no exterior completion with unique lower owners can fix this, even without natural PBBS or upper exactness. The partial algebra is not an actual factor surgery or construction.
+- The [bounded actual-parent interval diagnostic](</Users/amir.nuriyev/.codex/worktrees/d22d/problem/research_round1/round17_actual_interval_trade_result.md>) completed one authorized H100 run: all679 windows and950754 lower-color permutations exhausted, with no nonidentity replacement. Scope is the specified k7/q3-7 and k9/q4-7 neighborhoods with both exterior full histories fixed and both removed middle decks preserved. Root reviewed the complete reduction, programs, terminal reports and integrity bindings. The independent checker validated metadata and parents but did not repeat the enumeration; the finite negative rests on the audited complete producer. No larger or multi-interval impossibility is claimed; no job remains active.
+
+The full-cube coefficient remains1.180703803847..., and coefficient one and exact equality remain open. The master handoff is untouched; new results are recorded here with their exact scope.
+
+## 2026-09-07: eight-chat constructive synthesis and audits
+
+- [Exact all-depth pruning census](scratch/PBBS_EXACT_ALL_DEPTH_PRUNING_CENSUS_20260907.md) passes complete root and independent audits. For odd cyclic iid binary words, E N_s=n/(s+1) sum_{j=0}^s cos^(n-1)(pi*j/(s+1)) for EVERY depth. Equality pruning is nonexpansive under insertion/deletion, so N_s has a depth-uniform two-bit Lipschitz bound. Conditioning to Dyck supplies quantitative simultaneous ORIGINAL-profile concentration without asserting fresh reached arrays. This is an exact finite identity, not an experimental fit.
+- [Square-root-logarithmic Gaussian-short raw incidence](scratch/PBBS_SQRTLOG_GAUSSIAN_SHORT_INCIDENCE_20260907.md) passes complete root and independent written-file audits: for each FIXED c, H=floor(c sqrt(r)) gives E[(T+2)1_{T<=H}]=O_c(sqrt(log r)). The exact all-depth census gives uniform absolute profile errors O(sqrt(r log r)); weighted summation by parts extends the clock depth to Theta(sqrt(r/log r)) without losing the leading logarithm. This strengthens task05's separately accepted O_c((log r)^2) theorem, preserving its exact original-row path sum and inverse-height integration. The [score-to-packing reduction](scratch/PBBS_SQRTLOG_SCORE_TO_PACKING_REDUCTION_20260907.md) also passes a full independent audit: the UNPROVED raw low-score estimate nu_low(log^(3/2)r)=o(log^(-1/2)r) would imply the fixed-Gaussian packing bound o(W/sqrt r). No vanishing raw mass, sufficient overlap, complete compiler or coefficient-one theorem is asserted.
+- [Same-particle short-trace multiplicity](scratch/PBBS_SAME_PARTICLE_SHORT_TRACE_MULTIPLICITY_20260907.md) passes full root/task08 audit. An original particle with incoming gap z contributes at most z+2 short repair traces at any edge (z+1 away from its own birth edges), using exact signed-time endpoint brackets. Outside negligible invariant exceptional components, every such multiplicity is O(log r). This is an UPPER bound and does not supply the missing large-overlap theorem.
+- [Two-forward-packet partial-body splice](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/TWO_FORWARD_PACKET_PARTIAL_BODY_SPLICE.md>) and its [short compiler](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/TWO_FORWARD_PACKET_SHORT_SERIALIZATION.md>) pass complete root and independent actual-support audits. Every old target survives at exact length16h+16H+55 for every0<=H<h+3: source windows stay fixed or move one position earlier, never wrapping. For H>=1 the strict fresh upper family has6(k-1)(h-k) targets absent from BOTH predecessors; lower gain is4F(H)+2F(H-2), so short compilers do not keep the full two-sided gain for free. H=0 loses only3(k-1)1[p>=1] of that upper family. Fixed-H literal length/owned-middle support now tends to4/3, removing the earlier serialization factor of two; the central overlap and global placement problem remain. No full-cube coefficient improvement follows.
+- [Original PBBS profile concentration](scratch/PBBS_ORIGINAL_PROFILE_CONCENTRATION_20260907.md) passes full root and independent root/task05/task08 audits. An exact iid cyclic-bit equality-edge census and a two-edit bounded-difference proof, conditioned to a uniform Dyck root, give exceptional probability at most4/(n+1)^10 for first-two-pruning deviations sqrt(24n log(n+1)). Thus p/n->1/2 and ell/p->1/3 uniformly outside that exceptional set. Its short-repair support costs at most2W/(n+1)^9, WITHOUT division by an unknown incidence normalizer. Profile invariance also preserves congestion on every retained good component. This removes the regular ORIGINAL-profile qualification from the finite-slot kernel up to negligible occupied support; deeper-array, visit-count and weighted-reciprocal control remain open.
+- [Higher-tag lossless phase trade](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/HIGHER_TAG_PHASE_TRADE.md>) and its complete same-window compiler pass full root and independent audits. Even-forward/odd-backward predecessor rows can all become forward rows without losing ANY actual interval union or adding length; strict phase zones yield order2^d h^2 fresh local targets per sign. The [exact terminal census](scratch/RECURSIVE_TAG_BANK_EXACT_RANK_CENSUS_20260907.md), independently derived and audited, gives f_q=2*2^d[ell-q-(d-q/K)1_{K divides q}] for1<=q<=dK/2, K=L+1, ell=(d+1)K; f_0=R=2*2^d(h+1). Under compiler purity these are exact ACTUAL counts. H+d=o(h) makes f_q/R->1 uniformly, reproducing the ordinary terminal-bank intensity if a suitable global placement is separately supplied. No placement, new Poisson law or improved full-cube coefficient is inferred.
+- [Four-tag actual-word trade](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/FOUR_TAG_RECTANGLE_TRADE.md>) passes full root reading and independent audit. Two explicit four-block words have exactly the same length16h+35; every old ACTUAL interval union survives, with no insurance or target patch. When the two tag events are separated by k~h/2 body steps, the new word gains (1+o(1))h^2 distinct targets on EACH side of the middle within its own packet. The stronger feature relative to earlier tensor trades is same-position/source-length preservation of all actual witnesses without insurance, not quadratic gain alone. Exterior coverage can absorb every local gain; global fresh placement, repeatable improvement and a better full-cube coefficient remain unproved.
+- [Explicit antipodal tag cycles](scratch/ANTIPODAL_TAG_CYCLES_INJECTIVE_SHADOWS_20260907.md) pass a separate full proof audit. For every power-of-two d, a recursive permutation of binary d-tags has cycles of length2d, antipodal d-step paths, and injective lower/upper endpoint shadows at every distance1<=s<=d/2. It yields a literal short-row family with2^d distinct windows per rank throughout that depth range, but its middle sets are only transversals of d fixed coordinate pairs. It is not a full-middle-layer or full-cube construction. The separate lossless predecessor comparison is now proved above; it is not comparison to an arbitrary fixed-coordinate-order schedule.
+- [Near-Gaussian-budget shared repair](scratch/PBBS_NEAR_GAUSSIAN_BUDGET_SHARED_REPAIR_20260907.md) is PROVED after full root reading and separate structural, history-counting and spectral/physical audits. The new pointwise [positive-budget height gap](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_positive_budget_linear_height_gap.md>) gives B>0 => h<=7rho+sigma<=(7/2)B, using an actual protected prefix, a reached-state P-run barrier and exact defect charging. Root's finite spectral synthesis supplies an explicit integer J_r=Theta(sqrt(r/log r)) for which positive births have density at most2(r+1)^(-62). Combining their raw repairs with zero-budget sharing gives ALL-HEIGHT occupied support o(W), packing o(W/sqrt(r)), o(W) affected owners and negligible cut charge for ALL B<=J_r. This supersedes the earlier subquartic cutoff; B>J_r remains unresolved. Neither the stronger candidate h<=2B nor the full coefficient-one theorem is claimed.
+- [Subquartic-budget shared repair](scratch/PBBS_SUBQUARTIC_BUDGET_SHARED_REPAIR_20260907.md) combines the accepted all-height zero-budget packing with a new weighted use of the uniform positive census: E[(T+2)1_{0<B<=J}]<=C(J+1)^2/sqrt(r). The complete root proof and weighted extension pass independent audits. For EVERY prescribed J_r=o(r^(1/4)), ALL runs with B<=J_r have occupied-edge union o(W), packing o(W/sqrt(r)), and o(W) distinct affected owners, without any lifetime cutoff. A finite computable H_r/sqrt(r)->infinity, H_r=o(r), gives an explicit transversal with o(W) total O(H_r)-per-cut charge. The remaining sector is B>J_r; no full compiler or coefficient-one conclusion is asserted. Separately, [first positive-budget height truncation](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_first_positive_budget_height_truncation.md>) passed full root and independent audit: 0<B<=3 forces h<=6,T<=9, with sharp h=6,B=3 example M5 M6, so those positive sectors have exponentially small counts and raw repair costs.
+- [All-depth actual tensor gain](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round14_all_depth_actual_gain.md>) passes full root and independent audit. On one fixed short-local-arm/long-row sequence, whole-packet selection and a finite Cauchy bound give two equal-length (1+o(1))W, middle-complete words with nested ENTIRE actual supports. The initial support is deterministically o(4^b); one good realization gains at least (c_*-o(1))4^b, where c_*=(2/sqrt(pi))*integral_0^infinity 1/(1+exp(x^2))dx>3/5+1/73920. This uses no Poisson theorem or independent holes. [Terminal Poisson calibration](</Users/amir.nuriyev/.codex/worktrees/e333/problem/research_round1/terminal_tensor_poisson_calibration.md>) also passes full root and a separate adaptive-kernel/process audit: its rank profile and total-density L2 limit equal the PREVIOUS ordinary-bank benchmark, not a new best coverage profile. The precise lossless gain is from the sparse initial tensor. The isolated-cylinder formula evaluated at that profile exceeds1.3 even with an ideal fiber coefficient1; this is a formula limitation, not an actual completion-cost lower bound. Neither result improves the full-cube coefficient.
+- [All-height zero-budget PBBS packing](scratch/PBBS_ZERO_BUDGET_RENEWAL_CLUSTER_PACKING_20260907.md) is now PROVED after separate exact-product, renewal, physical-incidence and two-tail audits. A new multipoint original-forest product gives a limiting Palm renewal law with renewal mass1/(d+1). Its proper recurrence forces incidence-biased overlap to diverge in probability; the reciprocal size-bias identity then gives an o(W) union of occupied edges. Uniform low/high tails extend this to ALL zero-budget returns T=height, whose actual maximum edge-disjoint packing is o(W/sqrt(r)), despite raw length incidence Theta(W). Distinct affected owners are o(W) as well. Some H_r/sqrt(r)->infinity with H_r=o(r) makes their O(H_r)-per-cut charge o(W). This resolves the ZERO-BUDGET contribution, not positive-budget returns or coefficient one.
+- [Exact cyclic width in nine coordinates](MATH_CERTIFICATE_CYCLIC_MU9_WIDTH126_20260907.md) proves **mu(9)=126=W(9)**. A fourteen-letter seed developed under coordinate rotation supplies all 511 nonempty targets; the complete 59-orbit certificate and fixed-start lower bound are embedded in that one file. The search and independent verification ran only on H100. A third, root-owned suffix-union verifier also passed: [verification record](scratch/cyclic9_root_verification_jt6XOE.json). This closes the earlier twelve-hole cyclic example, not a new linear record: nu(9)=128 and the full-cube coefficient remain unchanged.
+- [PBBS original-clock genealogy](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_gaussian_clock_genealogy_structural_audit.md>) and [Gaussian lifetime transfer](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_gaussian_clock_analytic_transfer.md>) passed full root reading and separate structural and analytic root-agent audits. Together with the previously accepted exact renormalization and fibre facts, they prove Pr(T(D)<=c sqrt(r))->0 for uniform newborn Dyck_r and every fixed c>0, with T including the consuming update. The proof uses original fixed pruning coordinates, not resampling at reached states. This strengthens the earlier sub-Gaussian budget result; it does not yet establish a run-weighted packing theorem, a growing-c rate, or coefficient one.
+- [Paired reservations with actual aggregate gain](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round11_paired_reservation_actual_gain.md>) passed full root reading and an independent root-agent audit. Its finite union ledger pays both old-bank interference and repeated new targets under the accepted central selection law. The H=1 compiler gives two equal-length (1+o(1))W middle-complete words with nested FULL actual supports and Omega(W sqrt(b)) genuinely new upper-Gaussian targets. The common extreme repair and middle completion are fully charged. Both words still omit the lower Gaussian annulus; this is a constructive monotone gain, not an all-rank coefficient improvement.
+- [Long tensor two-sided quantitative gain](scratch/LONG_TENSOR_QUANTITATIVE_GAIN_20260907.md) combines the endpoint-role tensor geometry with the accepted actual-union lemma; full root and independent geometry, census, compiler and quantitative audits pass. For every sufficiently large b, two equal-length (1+o(1))W, middle-complete words have nested ENTIRE actual supports and at least 4^b/2000 genuinely new targets on EACH side of the middle, in a fixed Gaussian annulus. The whole packet is matched as one unit; common-cap parameter a=4mh is corrected. A shared exact-support extreme repair pays every incidental loss. Optional general far repair can consume gains, but only o(4^b); it is not falsely assumed disjoint. This proves a positive constant-density lossless augmentation at near-width cost, not a repeatable route to full coverage or a smaller full-cube coefficient.
+- [Graph-arm productive stages](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/GRAPH_ARM_SELECTED_PRODUCTIVE_STAGES.md>) passes full root reading and independent geometry/selection/stage audits. On one fixed selected bank, K=m*binom(r,2) graph-edge/module choices give at least floor(3K/512) successive lossless updates, each with Wh/(1024K) new targets per sign, all at the same near-width length. The exact controlled-band union identity includes cross-packet duplicates. This partitions ONE finite terminal gain; it does not replenish it. [Terminal fixed-arm saturation](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/FINAL_FOUR_PATH_TENSOR_SATURATION.md>) also passes root/independent audit: context-dependent directed rethreading cannot add targets after saturation. Its stronger unoriented lock needs internally supplied depth-two certificates. New states, induced Johnson edges, cross-packet connections and externally supplied certificates lie outside that obstruction.
+- [True PBBS Gaussian raw-census obstruction](scratch/PBBS_TRUE_GAUSSIAN_RAW_CENSUS_OBSTRUCTION_20260907.md): a full root read and separate analytic audit pass the zero-budget Gaussian-band local limit; an elementary positive-coefficient argument already proves the required lower bounds. Short-run count is Omega(W/sqrt(r)), raw length incidence Omega(W), and quadratic incidence Omega(W sqrt(r)). This VALID new argument refutes the historical stronger raw target (9.1), whose status has been corrected without reviving Q6. It does not refute physical packing or shared target repair. The separately audited age/target ledgers retain the exact T,T+1,T+2 conventions and actual-missing <= all-intended-failed <= sum F/mu; the path-count upper bound is explicitly for an optimal or constructed transversal, not arbitrary cuts.
+- [Coordination ledger](scratch/EIGHT_CHAT_COORDINATION_20260907.md) records the eight Astra/Ultra tasks, reviewed cross-updates, proof scopes, prior-art corrections, and terminal h100 diagnostics. Full coefficient one and exact equality remain open; the unconditional coefficient is still 1.180703803847....
+- [Integral long-trace packing](scratch/QARY_HISTOGRAM_INTEGRAL_LONG_TRACE_PACKING_20260907.md), especially Section6, proves adaptive packing on the entire central q-ary rank, without histogram confinement: average induced degree at density rho is at least n^2*rho/4-n; fresh-coordinate traces give logarithmic fragmentation and near-optimal central cost. Actual noncentral distinct coverage is not proved.
+- [Recomposition gain budget](scratch/SEAM_GAIN_BUDGET_FOR_GEODESIC_RECOMPOSITION_20260907.md) proves at most2qj new designated targets per rank after j new joins. Negligible individually paid collar protection cannot change cube density by a constant, even iteratively. The audited canonical-compiler refinement also bounds its incidental witnesses; arbitrary serializers are outside that extension.
+- [PBBS Q6 retraction](scratch/PBBS_Q6_RETRACTION_AND_FIXED_HEIGHT_COUNTERFAMILY_20260907.md): `D_q=1(1100)^q0` is primitive of height3 but has exact planted lifetime3q. Q6 is false; its fast-run-density and canonical-route-closure deductions are unsupported, not independently disproved. Q4's consuming-step convention is also corrected. The q=2 quotient example was already in the July25 counteraudit. Source and directly inspected dependent status notices are corrected; the independent upper bound is unaffected.
+- The [many-root grid](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/MANY_ROOT_CROSSED_RAIL_GRID.md>) passed independent proof audit. Reusable crossed backups protect simultaneous switches; adding one full-universe separator between derivative blocks makes the exact h-band gains literal word gains at cost M+2Ht+(t-1). Dense coordinate-diverse placement and global hole coverage are still open.
+- [Anchored grid catalogue](scratch/ANCHORED_GRID_CATALOGUE_AND_INDEPENDENT_RESIDUAL_CALIBRATION_20260907.md) gives the audited K/log(b) parameter limitation for wholly retained copies in an independent residual, not for structured placement. [Connected signature codegrees](scratch/CONNECTED_SIGNATURE_CODEGREES_FOR_COORDINATE_ORBITS_20260907.md) gives an independently audited rooted higher-order counting bound and connected-overlap sum, with folded degree and coherent lifts explicit. That note does not supply disconnected overlap control or a rounding theorem.
+- [Full rooted grid overlap kernel](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/FULL_ROOTED_GRID_OVERLAP_KERNEL.md>) now handles disconnected subsets too and passed independent root audit. For h=Theta(sqrt(b)) and K(1+log(1/rho))=o(log b), independent retention of complement-paired middle targets leaves almost every retained target in (1+o(1))D rho^(r-1) complete grids, with relative degree variance at most b^(-1+o(1)). Example: K~log log b, rho=1/log b. This is actual independent-residual availability, not a near-perfect matching or a statement about the dependent residual left by selecting grids.
+- [Sharper full-kernel synthesis](scratch/SHARP_FULL_GRID_KERNEL_AND_SMALL_STEP_BOUND_20260907.md) combines the independent metric-tree and four-prefix signature approaches, retains a small-step factor at zero deletion rate, and records an explicit first Poisson-proposal comparison. Independent root-agent and peer audits passed the complete small-step/one-proposal proof. No maintained multi-round law is asserted.
+- [Aggregate pair-tail bound](scratch/AGGREGATE_PAIR_TAIL_FROM_ROOTED_OVERLAPS_20260907.md), independently audited, controls the total edge mass incident to overlarge pairs through one-root raw overlap moments. It avoids a separate kernel at every pair distance and admits a termwise transfer under an explicitly proved dependent survival upper law. A stopping-time pruning ledger is a separate obligation.
+- [Higher centered moments](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/ROOTED_MACRO_HIGHER_MOMENTS.md>) and [current-state Poisson concentration](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/POISSON_DELETION_CONDITIONAL_MOMENTS.md>) passed full root and independent root-agent audits. The first concerns independent vertex retention; the second concerns one actual edge-proposal/equalization step around its actual conditional mean. Neither alone maintains the caps over an entire packing process.
+- [Near-perfect central grid matching](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND4_ADAPTIVE_EQUALIZED_NIBBLE.md>) now passes a complete root reread and two independent root-agent audits. Exact equalization, a consistent terminal-single-root Palm law, once-only vertex/pair cap bans, and a complete waste ledger prove a matching covering1-o(1) of the folded middle vertices. K=(log b)^(2/3), h=Theta(sqrt b) also permits H=Theta(sqrt(b log b)) with negligible derivative overhead. This settles CENTRAL placement for the reusable grids; actual noncentral coverage remains open, and the full-cube coefficient is unchanged.
+- [Growing-prefix catalogue theorem](scratch/GROWING_PREFIX_GRID_KERNEL_AND_MATCHING_20260907.md), independently audited, extends the full kernel and central matching to a slowly growing number of ordered prefix groups. It supports higher-choice geometries and compact unions of alternative templates under its explicit size/path hypotheses; it does not construct them or prove noncentral coverage. The audited weighted extension in the matching note permits feasible past-hole-dependent proposal weights with deterministic subpolynomial caps.
+- [High-valence prefix boxes](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/HIGH_VALENCE_PREFIX_BOX.md>) and [four-option reservations](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round6_four_grid_balanced_trade_and_reservation.md>) passed full root and independent audits: the central matching theorem composes with literal routing choices at near-width total cost. The union of available options is not their simultaneously realizable support.
+- [Marked possible-pool kernel](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND4_OFFCENTRAL_MARKED_POOL_KERNEL.md>) and [adaptive zero-hit theorem, Sections 1–9](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND4_HIGH_VALENCE_POOL_ZERO_HIT.md>) passed root and independent root-agent audits, including many suppliers and whole-cube possible-pool density. The proof controls actual adaptive availability, not only an expected offer count. Compatible simultaneous routing, arbitrary hole-feedback weighting, and aggregate actual band coverage are not supplied.
+- [Common-root chain composition](scratch/CHAIN_POOL_MATCHING_AND_GAUSSIAN_AVAILABILITY_20260907.md) now passes a complete independent audit. Near-width literal word families have possible-pool density 1-o(1), while their selectable flexible mass at depth q~c sqrt(b) remains a positive fraction min(c,1) of principal charge for every fixed c>0. This removes the broad-arm dilution problem. It is still a family of possible words, not one density-one word. The exact phase objective and finite-range optimizer in the [chain geometry](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/CHAIN_OF_CYCLIC_RAIL_CELLS.md>) also passed root and independent audits.
+- [All-depth single-root assignment](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/HIGH_VALENCE_ALL_DEPTH_ROOT_UPDATE.md>) passed root and independent audits: a fixed o(W) root-pair patch makes the exact net/lossless update an ordinary assignment, including every old target losing its last witness. No positive global drift is asserted. [Independent-swap pool bound](scratch/INDEPENDENT_ADJACENT_SWAP_POOL_BOUND_20260907.md) also passed: ALL choices of J disjoint adjacent swaps add at most8J targets per rank in a fixed source bank, not across different routings.
+- [Actual independent-routing Poisson baseline](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND4_ACTUAL_ROUTING_POISSON_BASELINE.md>) passed full root and independent audits, with the finite clarification epsilon<=1. A fixed Gaussian-depth target has supplier count converging in total variation to Poisson(exp(c^2)); its default absence probability tends to exp(-exp(c^2)). This is not an obstruction to optimized routing and does not by itself prove concentration of the whole rank-hole fraction.
+- [Uniform growing PBBS budget](</Users/amir.nuriyev/.codex/worktrees/c69c/problem/research_round1/pbbs_growing_budget_uniform_bound.md>) passed full root reading and separate independent structural and coefficient audits. An exact original-forest product and an actual first-interruption witness yield Pr(B<=J)<=C[r^(-1/2)+(J+1)^2/r], uniformly in r,J. Every J=o(sqrt(r)) has vanishing fraction. This avoids the retracted Q6 and any reached-state reset, but does not establish the full Gaussian lifetime or a physical packing theorem.
+- [Exact quaternary four-axis charge](</Users/amir.nuriyev/.codex/worktrees/aa30/problem/research_round1/ROUND7_Q4D4_EXACT_96_CERTIFICATE.md>): root read and checked the analytic dual and explicit eight-rectangle cover proving fractional and integral chain-pair charge96. A separate [root verifier](scratch/verify_q4d4_dual_independent_20260907.py), run only on H100, independently checked all proper-shore dual constraints and all256 pointwise rational primal inequalities. This closes that flat-transfer candidate, not the unrestricted conjecture. The larger six-axis actual-cover search terminated without an incumbent and remains UNKNOWN.
+- [Disjoint-label coherent augmentation](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/TWO_LABEL_BLOCK_CUT_AUGMENTATION.md>) passed root and independent audits. Exact protection components and disjoint label-pair cuts give lossless gain at least H_sep/(2 kappa_d) at unchanged word length, with actual old losses/zero-weight obligations included. The required large separable-hole pool is not inferred from the possible pool.
+- [Bank-wide ownership augmentation](</Users/amir.nuriyev/.codex/worktrees/c3da/problem/research_round2/BANK_OWNERSHIP_COMPONENT_AUGMENTATION.md>) passed root and independent audits. Assigning one current witness per old target allows all chains to change simultaneously. Its exact distinct-gain law is a product over freshly randomized chains, and its reached-state hazard/moment bounds are valid without an iid residual law. Persistent ownership-protected separability remains unproved; even many possible suppliers can leave connected protection graphs.
+- [Joint actual Poisson and rank concentration](</Users/amir.nuriyev/.codex/worktrees/e333/problem/research_round1/joint_actual_poisson_rank_concentration.md>) passed root and independent audits, including the supporting geometric separation and full-state coupling notes. The default independent-phase rank-hole fraction converges in L2 to exp(-exp(c^2)) at depth c sqrt(b). Successful append-only completion of that unchanged default word requires at least(1/e-o_P(1))W additional letters. This is not a lower bound against correlated rerouting or unrestricted nu.
+- [Binary exact-width source classification](</Users/amir.nuriyev/.codex/worktrees/d22d/problem/research_round1/round7_cyclic_width_rigidity_and_binary_aperture.md>) passed root and independent audits. For a supplied odd-dimensional Middle Levels chronology with lower aperture ell=r-1, all factors are prescribed pairs or eligible singletons, and shared Boolean window clauses plus the fixed upper deck are necessary and sufficient for full universality. Saturated flatness is credited as prior. This does not establish a chronology or a feasible Boolean instance in new dimensions.
+- [Exact five-ary four-axis fractional charge](scratch/q5d4_independent_verification_WEHRNs.json): a root-reviewed screen and a separate strict-jump verifier ran only on H100. The independently repriced denominator-six dual and all625 pointwise primal inequalities give the exact proper-nonempty-shore fractional optimum566/3. This flat-transfer candidate cannot beat the current coefficient; no integral optimum or OR word is asserted. [Independent verifier source](scratch/verify_q5d4_certificates_independent_20260907.py).
+- [Selected-reference temporal Palm law](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND4_SELECTED_REFERENCE_TEMPORAL_PALM.md>) and [full-scale marginal objective](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND5_SELECTED_CHAIN_MARGINAL_OBJECTIVE.md>) passed root reading and independent audit. Actual support-selection bounds include the bans; bundle pruning gives expected uniform phase-score error O(Ld²h+Ld⁴)=o(dLh²). This removes fresh exterior-phase noise for one selected reference, not the bank-dependent marginal assignment or the law after coordinated updates.
+- [Native selected-bank resource](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND8_NATIVE_POOL_RESOURCE.md>) passed root reading and independent source audits. The exact incidence identity and d-times-tail normalization show that almost every selected frame has almost all of its full Gaussian selectable mass supplied by Omega(d) OTHER possible pools, simultaneously for every routing. These are not coherent replacement paths or globally disjoint target assignments.
+- [Capacity-efficient component splicing](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round9_component_splicing_and_owner_exchange.md>) passed full root and independent audit. Gap-free merges need no spare span capacity; a supplied exact-cardinality fractional flow rounds without weighted loss and can force replacement paths in different chains for every old target. Choosing all those recipient paths jointly is an explicit unsolved input, not part of the ordinary flow theorem.
+- [Two-chain actual witness transfer](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/TWO_CHAIN_TRANSFER_AUGMENTATION.md>) and [net covariance/parity coupling](</Users/amir.nuriyev/.codex/worktrees/7796/problem/research_round1/TWO_CHAIN_NET_COVARIANCE_COUPLING.md>) passed full root and independent audit. The literal example has solo gains-1,-2 and joint lossless gain+1 at unchanged length; its manufactured exterior is quadratic-cost. The general coupling is NET, not targetwise lossless, and supplies no asymptotic bank statistic.
+- [Bank-wide exact parity/OR coupling](scratch/BANK_WIDE_PARITY_COUPLING_AND_EXACT_OR_GAIN_20260907.md), written by root and twice independently audited, permits many chains to change simultaneously. Its exact miss law and repeated-target correction preserve each chain's cut marginal without falsely adding pairwise gains. For fixed coverage weights and cut kernels, first-step product stationarity gives an expected bonus certificate. Its asymptotic interaction score and sustained improvement remain unproved; adaptive old-hole weights do not satisfy that stationarity automatically.
+- [Whole-pool pair-transfer resource bound](</Users/amir.nuriyev/.codex/worktrees/ae28/problem/research_round1/ROUND8_WHOLE_POOL_PAIR_TRANSFER_BOUND.md>) passed root reading and independent full audit. In the current mark-blind selected bank, every adaptive sparse physical parity coupling has expected correlation correction O(Wd⁴/h)=o(W) on each fixed Gaussian annulus and o(4^b) across the full valid band. This now rules out a constant first-step density bonus for that coupling under its stationarity assumptions; it does not rule out dense or nonlinear coordination, iterations, or different initial banks.
+- [Deterministic native batching](</Users/amir.nuriyev/.codex/worktrees/3ca2/problem/research_round1/round10_native_bundle_greedy_recipient_selection.md>) constructs a constant fraction of actual fresh demands by weighted greedy port matching and explicit bipartite phase coloring, with large coherent owned bundles. Root read the full proof and independent audits passed the net/guard accounting. Its guaranteed fraction is below the iid recipient baseline. The independently audited [recipient-thinning calibration](scratch/RECIPIENT_THINNING_BASELINE_AND_PRIVATE_LOSS_THRESHOLD_20260907.md) shows why changing the thinning threshold cannot rescue that coarse guarantee; coherent saving of private old coverage remains necessary for that method.
+
+The master handoff is unchanged. New nonregular finite-tag, adaptive-capacity, exact-interface, and crossed-rail local results are routed through the coordination ledger with explicit audit status; none is being substituted for the missing all-rank selection proof.
+
+## 2026-08-20: historical consolidation; PBBS closure claim withdrawn 2026-09-07
+
+**AUDIT NOTICE (2026-08-20, independent second reader).**  Five
+findings, all accepted and recorded in the files below: sparse-descent
+Theorem S4 is FALSE (demand `Theta(W sqrt n)` independent of `C`;
+ledger reverses at large `C`); the multi-swap `O(d)` splice is false
+for arbitrary boundary owners; PBBS Corollary Q6.1's boxed bound was
+corrected to a conditional `nu_H = Omega(W/H)` packing inference, but
+the 2026-09-07 audit above disproves its Q6 premise, so the qualitative
+refutation is NOT established by this chain; Corollary B2's band-flag hypothesis is not supplied by
+run-floored middle-levels 2-factors, so the S2F/AWM conditionals are
+unsupported as routes to coefficient one (traversal half only);
+steering Lemma 29.1 is a sketch.  Sections 5.7-5.11 of the sixth file
+and master Section 7.2bis are relabeled SPECULATIVE STRATEGY.  Durable
+additions: prime transfer; far-rank absorption/DCC (threshold needs a
+binomial lower-tail argument); ucycle/ML m-shift equivalence; PBBS
+queue identities; rotation rigidity; corrected boundary count;
+autocorrelation length bound; holonomy/covering observation.
+
+- [MATH_THEOREM_RUNLENGTH_CRITERION_AND_CENTRAL_UCYCLE_EQUIVALENCES_20260820.md](MATH_THEOREM_RUNLENGTH_CRITERION_AND_CENTRAL_UCYCLE_EQUIVALENCES_20260820.md),
+  SHA `4d8c92486592a3ccc203b85a750ee16fe53368fc885b12c6cd6951ea44bd783f`,
+  proves far-rank absorption with exact per-target threshold
+  `H*=Theta(sqrt(n log n))`, the assembled run-length criterion for
+  asymptotic coefficient one, the defective-central-covering reduction
+  (superseding the exact form of conjecture 7.2.5 as a target), the
+  `ML(2m+1)` `m`-shift lift of doubly-exact central universal cycles,
+  the seam-cleanliness/age-sum law, the factor-2 seam law, wreath
+  hypergraph degree/codegree lemmas, and the log-`n` seam analysis; it
+  identifies the rank-`m` trace of conjecture 7.2.5 with the open
+  Baranyai--Katona wreath conjecture at `(2m+1,m)` and states the
+  `omega(1)`-wreath-chaining problem as the weakest unsolved singleton
+  link. The former Q6-based negative resolution of Open Problems1/1'
+  is withdrawn; an actual tail estimate and all compiler hypotheses
+  remain necessary. The displayed SHA is the historical pre-correction version.
+
+- [MATH_THEOREM_PBBS_QUEUE_FLUSH_DYNAMICS_AND_RUN_CONSERVATION_20260820.md](MATH_THEOREM_PBBS_QUEUE_FLUSH_DYNAMICS_AND_RUN_CONSERVATION_20260820.md),
+  historical SHA `5d19733e30a4d77a8fae33804fcb863695e546051a2427786f9e7e857d028177`,
+  supplies the exact two-step map and marked exit/height rules Q1-Q3.
+  The corrected conservation identity is `T=h+2#R+#S` when T includes
+  the consuming update. Q6 is false; Q6.1/Q6.2 and their closure/density
+  conclusions are withdrawn as proofs. Sections3.5-6 are explicitly
+  labelled historical. The informal cone and front-cost discussion is
+  not a certified replacement for the false primitive-height mechanism.
+
+- [MATH_THEOREM_MULTISWAP_EROSION_FLOOR_REDUCTION_20260820.md](MATH_THEOREM_MULTISWAP_EROSION_FLOOR_REDUCTION_20260820.md),
+  SHA `6d7c5708b8b3c12c5ef879ba12c8051351ae1e83b88ddee12514e4cc013bce3e`,
+  proves the window-counting floor `d>=(sqrt(pi/8)+o(1))sqrt n` for
+  every erosion architecture, the `t`-swap trade (band reach `t·d`
+  versus run floor `d`, from the adjacency-free factorization theorem),
+  and the age-only splice theorem; at `t=Theta(sqrt(log n))` the
+  run-floor requirement drops to the natural `Theta(sqrt n)` scale,
+  within the proved pair-cell residence range, bypassing Johnson
+  splicing and the 2-adic whole-cell obstruction via `o(W)` overlaps.
+  The remaining open core of the erosion route is the multi-swap lower
+  injection (Open Problem 6 there).
+
+- [MATH_THEOREM_SPARSE_DESCENT_ARCHITECTURE_20260820.md](MATH_THEOREM_SPARSE_DESCENT_ARCHITECTURE_20260820.md),
+  SHA `5c4c131a5db06497b3c5efa90b44277f7e7c2af94c9b43dac1f2f720ad875242`,
+  proves that window-intersection chains are sparse (the departure
+  schedule designs the ranks, removing every swap-size cap), that a cut
+  truncated-SCD supplies an exact defect-free family of `(1+eps)W`
+  anchored segments of `O(sqrt n)` elements (dissolving the STW
+  leave-exponent problem), that anchoring is a regular-bipartite
+  matching, and that the run-floor turnover budget exceeds the total
+  descent demand by a factor of two (the volume ledger closes).  All
+  counting obstructions to coefficient one are thereby closed with
+  slack in this architecture; the single remaining gate is staircase
+  serialization (Open Problem 7 there), the sharpest form to date of
+  handoff gate 7.3.8.
+
+- [MATH_THEOREM_PRIME_TRANSFER_AND_EQUIVARIANT_SUPPLY_20260820.md](MATH_THEOREM_PRIME_TRANSFER_AND_EQUIVARIANT_SUPPLY_20260820.md),
+  SHA `402c383970730749e4ff96be5f6b054987c760466458bf3397d7da2046f53569`,
+  proves the prime transfer theorem (coefficient one for prime `k`
+  implies it for all `k`, via splice telescoping and any `o(k)`
+  prime-gap bound), the quotient-chain lifting lemma, and — using the
+  published necklace-poset symmetric chain decompositions
+  (Griggs–Killian–Savage 2004 for primes; Jordan 2010 in general) —
+  the `Z_n`-equivariant chain supply at prime dimension, which closes
+  the binding per-coordinate cut class of the serialization gate by
+  exact symmetry.  The remaining gate is the fundamental-domain
+  schedule (Open Problem 8 there), now on `Cat_m` quotient objects with
+  slack `sqrt n` per-step, slack 4 spacing, and quiet margins.
+
+- [MATH_CANDIDATE_COHORT_CONSTRUCTION_20260820.md](MATH_CANDIDATE_COHORT_CONSTRUCTION_20260820.md),
+  SHA `92822cf229dfabfb3bd7473f20a7ddfa62c1472195dcd3b3264d5144f60ede07`,
+  block 76.5 (same section, same-day self-correction): THE
+  TV FORM OF R'' IS DEAD TRIVIALLY — after any pool-blind
+  serve the state law is confined to a density-1/(sigma+1)
+  image, TV >= sigma/(sigma+1): INTER(p) never TV-mixes, so
+  75.4's TV demand and 76.4's Chatterjee-Diaconis import are
+  RETIRED; R'' corrected to R''-FUNCTIONAL, the minimal
+  one-sided statement the machinery consumes: P(S in
+  fan(v+u) | F_v) >= (1-o(1))(sigma+1)/M at uniform
+  observation times for u >= poly(n) — a lower bound on one
+  local functional (upper bounds already proved in 75.2);
+  the open content is whether constant uniform dilution
+  kills grooving at the level of this single functional;
+  block 76 (Section 5.58): INJECTIVITY CHECK SETTLED
+  (negative, exact structure) — 76.1 LEMMA (proved,
+  insertion-depth invariance): all sigma+1 candidate
+  predecessors of a state share the non-pool order, the pool
+  SET, and the pool-minus-pick relative order, differing
+  only in the pick's pool depth; 76.2 pool-blind rules
+  (every natural zero-preference rule) have serve fan-in
+  EXACTLY sigma+1 — the 75.9 bijectivity import route is
+  REFUTED; 76.3 exact entropy ledger: serve compresses
+  exactly log(sigma+1) = the uniform injection — R'' is
+  whether the zero-sum entropy flow circulates or stalls;
+  76.4 FIBER-QUOTIENT reformulation (open): pi' recovers its
+  predecessor fiber, so on the fiber quotient the serve step
+  IS injective and INTER(p) has the permuted-chain shape —
+  cruxes queued: Markovianity of the uniform step on the
+  quotient (q1), coverage fiber-measurability (q2),
+  expansion (q3);
+  block 75 (Section 5.57): THE LAL' ATTACK — design map (pure
+  random dead by coupon wall; full feedback dead empirically
+  by grooving; rare feedback dead by the budget integral
+  ln(1+1/p); bounded soft tilt NEITHER dead nor alive — the
+  attempted "tilt wall" fails because per-step tilts compound
+  into free long-horizon steering, recorded so it is not
+  retried); 75.2 DILUTION-ROBUST GAP BOUND (PROVED): with
+  deterministic feedback times of density p and uniform picks
+  elsewhere, beta_g^{(p)} keeps the uniform-pick factors and
+  eta^{(p)} <= 2/(delta sigma) + T e^{-c delta sigma} = o(1)
+  for delta sigma >= C log n — the whole short-gap machinery
+  survives constant dilution; 75.3 EXACT stationary offer
+  identity P(S in fan) = (sigma+1)/M; 75.4 PROBLEM R''
+  (OPEN): poly mixing of the interleaved chain (adversarial
+  eligible picks at density p, uniform at 1-p) — p=1 fails
+  (conveyor), p=0 is Goel/Jonasson, entropy balance exactly
+  tight (fan-in sigma+1 vs injection log(sigma+1)); 75.5
+  conditional SKETCH: R'' => LAL' form (B) per rank at any
+  eps > 0 via p = 1 - Theta(eps) (budget f(p) =
+  ln(1/p)/(1-p) -> 1), two-regime bootstrap (Paley-Zygmund
+  fan occupancy, then quadratic-crowding ledger); 75.9 R''
+  vs literature: OUTSIDE robust mixing (Ganapathy — doubly
+  stochastic adversaries only) and OUTSIDE permuted chains
+  (Chatterjee-Diaconis — state-independent bijections only);
+  enlarged-state bijectivity of the serve map queued as the
+  import route; C19+C20 (h100, preregistered): dilution
+  restores late access monotonically (mechanism real) but
+  costs a STABLE constant tax x1.4-1.8 in misses at slack
+  1.2 — U-shape prediction REFUTED at n <= 19, route alive
+  only asymptotically; NEW DATUM: the band constant matters
+  — sigma = 0.7 sqrt(n ln n) FLATTENS both greedy and
+  diluted greedy (~3.5-5% missing), sigma = 1.1 sqrt keeps
+  both falling — the MDCU floor constant ~1.1 binds the
+  adaptive rule class, not just witnesses;
+  block 74 (Section 5.56): FOURTH AUDIT — blocks 70/71
+  CREDITED ("first credible unconditional coverage theorem";
+  71.1 exhaustively machine-verified at n = 5, 6 by the
+  auditor on h100), five repairs demanded and ALL EXECUTED:
+  74.1 the factorial-moment counting completed with the r!
+  cancellation DISPLAYED (block-leader parametrization; the
+  old gap-length display spent the simplex volume
+  L^{r-1}/(r-1)! silently); 74.2 the explicit g <= k / g > k
+  case split of 71.1 (for g > k only the final k picks are
+  constrained, tower property); 74.3 joint-moment counting
+  completed and the "joint Bonferroni" gap REMOVED via
+  Chu-Vandermonde for falling factorials applied to
+  Z = hits_S + hits_S' (one-dimensional Bonferroni on Z);
+  74.4 the 72.2 hop price CORRECTED from n/sigma to Theta(n)
+  (conveyor dead time n - sigma; clustered pool appearances)
+  — the steering wall STRENGTHENS to shortfall Theta(n);
+  74.5 LAL' replacing 73.5, with the late-crowding bound as
+  an explicit HYPOTHESIS (unit-offer form: >= 1 offer +
+  crowd = o(M); growing-offer form: J -> infinity offers +
+  crowd = O(M)); 74.6 MASTER_HANDOFF Section 7.2bis updated;
+  block 71 NOT promoted pending one more hostile audit
+  (auditor's instruction).  74.1-74.3 submitted for that
+  audit;
+  block 73 (Section 5.55): C15b — THE 65.5 LEDGER IS NEARLY
+  TIGHT (within 2-8% at t0 = 3L/4, all 8 rows) and the
+  binding channel is LATE FAN STARVATION: misses average
+  0.3-1.4 late offers (minima 0), 3-4x below uniform-prefix
+  expectation, while late crowding is tiny (2-4% of steps) —
+  the Theta(sigma) offer budget is frontloaded into the
+  crowded phase; freshness cannot repair what it is never
+  offered.  THE LATE-ACCESS LEMMA formulated (73.5, open):
+  a zero-preferring eligible schedule whose last eps L/2
+  steps offer every surviving miss Omega(1) times => 1 - o(1)
+  coverage via 65.5 + published mixing — the Sub-Poisson Walk
+  Question reduces to KEEPING THE OFFER STREAM ALIVE, weaker
+  than LUL, converging with the forced phase-compatible sweep
+  (72.2);
+  block 72 (Section 5.54): THE LAYER-2 INTERFACE — coupon wall
+  now rigorous (random rule needs M ln(1/delta): adaptivity
+  NECESSARY); THE STEERING WALL (clean negative): targeted
+  miss-tours cost n/sigma per hop (pool offers sigma+1 of n
+  letters), so post-hoc repair tours fail at MDCU sigma by
+  sqrt(n/log n) — phase-compatible sweeps (the block-55
+  P-sweep shape) are FORCED by arithmetic, not chosen; the
+  absorption lemma remains the open Layer-2 statement but its
+  input distribution (miss density e^{-(1+eps)},
+  pairwise-independent, per rank) is now proved rather than
+  heuristic;
+  block 71 (Section 5.53): GAP-STRATIFIED CROSS-SET RUN BOUND
+  + PER-RANK CONCENTRATION (post-audit repair, NEW,
+  submitted for re-audit) — 71.1: for ANY pair (S, S') and
+  gap g, the forced pick-set of a cross-set window transition
+  has size exactly g, so P <= beta_g = g!/(sigma+1)^g (g <=
+  sigma), = beta beyond; sum over g < T is eta = 2/sigma +
+  T beta = o(1) UNIFORMLY over pairs regardless of overlap —
+  short cross-gaps are CHEAP (beta_1 = 1/(sigma+1)), the
+  observation the third audit's counterexample channel
+  needed.  71.2: joint factorial moments -> mu^{r+q},
+  P(both unhit) -> e^{-2mu} uniformly, Var(#misses) = o(M^2),
+  miss fraction -> e^{-(1+eps)} IN PROBABILITY per shallow
+  rank.  NOT claimed: joint-over-ranks whp (rate ~ n^{-1/2}
+  polylog per rank does not survive a union over sqrt(n)
+  ranks; 4th-moment route noted, unwritten);
+  block 70 (Section 5.52): FIXED-SET PLATEAU THEOREM, FULL
+  WRITE-OUT — unconditional on published mixing input
+  (Jonasson 2006 sharp for sigma = o(n); Goel 2006 polynomial
+  for the rest): the pure random (sigma+1)-tail walk with
+  sigma >= C0 log n, at every shallow rank k <= floor, has
+  per-set hit counts -> Poisson(1+eps) (all factorial moments,
+  two-sided, uniform in S) and E[miss fraction] =
+  e^{-(1+eps)} + o(1) within the MDCU budget L = (1+eps)M.
+  Proof = stationarity (62.2) + floor exclusion (62.1) + run
+  bound (62.3) + TV transfer (63.2) + T = 3n T_mix split +
+  Bonferroni.  First unconditional coverage theorem for any
+  eligible rule in the program; equally precise negative:
+  randomness alone plateaus below 1 - o(1).  Concentration
+  and cross-set/joint-rank whp statements remain OPEN (69(4));
+  block 69 (Section 5.51): THIRD AUDIT (2026-08-21) accepted
+  in full — R' WAS ALREADY PUBLISHED: the chain is the
+  bottom-b-to-top shuffle, b = sigma+1; Goel 2006 (AoAP
+  16(1):30-55) polynomial mixing via the inverse walk;
+  Jonasson 2006 ("Biased random-to-top shuffling", AoAP),
+  Case 1 = literally this walk, sharp Theta((n^3/b^2) log n)
+  for b = o(n); both verified.  The coupling program (64/67/
+  68) is unnecessary for R'.  PROMOTED: block 66's fixed-set
+  part — Poisson(1+eps) visits and E[miss fraction] =
+  e^{-(1+eps)} + o(1) for the pure random walk — now rests on
+  a published theorem (final write-out pending).  WITHDRAWN:
+  66's pair decorrelation/variance/concentration and
+  "all-ranks-simultaneously" (cross-set close-window terms
+  uncovered — concentration OPEN); 67.2 wait-independence;
+  67.3 supermartingale framing (|delta+noise| is a
+  SUBmartingale; only the correction-sign corollary stands);
+  57.2's k >= n/log n range and its tilting/freshness
+  inheritance (corrected inline).  "Position = age" corrected
+  (conveyor only).  C18 checker fixed (violation iff d > 0;
+  the 4559 flags were favorable decreases).  Compute-policy
+  note: C16-C18 ran locally; auditor reran on H100, C16/C17
+  reproduced.  REAL OPEN LAYER: adaptive multi-rank upgrade
+  from the Poisson plateau to 1 - o(1) coverage (fan access +
+  late crowding under one shared zero-preferring schedule) +
+  Layer-1 concentration;
+  block 67 (Section 5.49): R' BROKEN INTO PER-LETTER PIECES
+  [see block 69: 67.2 and 67.3-as-supermartingale WITHDRAWN;
+  R' closed by literature instead] —
+  67.1 (PROVED): under ANY coupling each letter's zone wait is
+  exactly Geom(1/(sigma+1)) per deck, iid across passes; 67.2
+  (PROVED): far letters (|offset| > sigma) never enter the
+  same-letter overlap, so with independent residuals their two
+  waits are independent — per-pass offset increment has mean 0,
+  variance >= 2 sigma^2; 67.3 (PROVED, corollary of 64.1):
+  cross-serve corrections to a far letter's |offset| are
+  DECREASES only — supermartingale with variance drives every
+  far letter into the matching window in O(n^3/sigma^2) steps.
+  Remaining for R' (67.4): near-letter matching rate, matched-
+  letter breakage/simultaneity endgame, formal assembly —
+  three named, standard-genre steps; R' is no longer a
+  monolith;
+  block 66 (Section 5.48): POISSONIZATION / EXACT PLATEAU
+  THEOREM (modulo R' alone) [see block 69: fixed-set part
+  PROMOTED via Goel/Jonasson; concentration and
+  all-ranks-simultaneously WITHDRAWN — cross-set close-window
+  terms are not covered; concentration OPEN] — per-set window hits of the pure
+  random rule converge to Poisson(1+eps): all factorial
+  moments close via the T = Theta(n T_mix) split (floor
+  exclusion kills gaps < floor; run bound e^{-sigma} kills
+  [floor, T); two-sided TV + submultiplicativity to
+  2^{-Theta(n)} beats the 1/M scale beyond T).  Hence miss
+  fraction -> e^{-(1+eps)} in probability, per rank, all
+  shallow ranks simultaneously; C16 already within 1% at
+  n=13.  The ONLY unproved input in Layer 1 is now R'
+  (polynomial mixing of the back-(sigma+1) walk); Layers 1
+  and 2 meet at that single statement;
+  block 65 (Section 5.47): C15 COVER-FIRST DATA + THE
+  J-WEIGHTED SNUB INEQUALITY — fan starvation is empirically
+  ZERO (N0 = 0 in 10/12 rows; every set is offered while
+  uncovered — (L1) is the easy half of LUL*); crowding
+  dominates the J=1 bound and is ~20x loose (snubbed zeros
+  recover); cross-rank contention only ~5% of crowd (the
+  53.1 wall is not binding for cover-first); cover-first
+  beats plain potential-greedy ~10% relative.  65.5 (PROVED):
+  J-weighted, time-split snub inequality miss <= #{few late
+  appearances} + (late crowd)/J — late crowding is QUADRATIC
+  in zero density, so this accounting can carry e^{-c eps
+  sigma} miss targets where 60.1 provably cannot;
+  block 64 (Section 5.46): THE DISPLACEMENT LYAPUNOV — for the
+  letter-matching coupling of two decks, with Phi = sum of
+  per-letter position displacements: 64.1 (PROVED) increases
+  happen only for letters with BOTH positions strictly inside
+  the open straddle (min J, max J) — at most |J_X - J_Y| - 1
+  per step, all in the pool zone; 64.2 (PROVED, verified with
+  zero violations over 20000 coupled steps): matched serve
+  Delta Phi <= 0, loose same-letter serve Delta Phi <= -1,
+  different-letter serve <= two O(n) teleport terms + sigma-1
+  (measured mean +0.53 at n=60).  C17: the coupling COALESCES
+  at the conjectured rate — T_couple/((n^3/sigma^2) log n)
+  constant ~0.09-0.13 over n=30..120 at sigma ~ 0.7 sqrt(n ln
+  n); sigma=1 tracks Wilson's Theta(n^3 log n).  Open for R'
+  (64.4): (D1) pool-overlap lower bound and (D2) teleport
+  centering for the coupled dynamics; optional stopping is
+  then standard.  Also corrected the 63.4 sketch in place
+  ("matched forever" is false — straddle breakage, confined
+  to the pool zone).
+  block 63 (Section 5.45): THE BASE CHAIN IS A GROUP WALK —
+  63.1 (PROVED): the random tail-MTF chain = random walk on
+  S_n with step uniform on the sigma+1 back-cycles
+  {c_{n-sigma}..c_n}; equivalently the UNIFORM measure on
+  gap-floored words ((sigma+1)-regular generation tree); the
+  sigma=1 case is the INVERSE RUDVALIS SHUFFLE, mixing
+  Theta(n^3 log n) — a known theorem (D. B. Wilson, Electron.
+  Comm. Probab. 8 (2003) 77-85, DOI 10.1214/ECP.v8-1071),
+  matching the diffusion heuristic at sigma=1.  63.2 (PROVED):
+  two-sided r_d = 1/M +- worst-case TV distance (no spectral
+  input; note s_2(P)=1 — the conveyor transports young-position
+  observables isometrically, so one-step spectral methods fail).
+  63.3 (PROVED reduction): polynomial TV mixing + sigma >= C
+  log n  =>  Problem R, and per-set second moments close =>
+  coverage >= (1+eps)/(3+2eps) at every rank simultaneously,
+  the first proved-modulo-mixing coverage constant for any
+  eligible rule at the MDCU budget; exact plateau needs
+  factorial moments (routine, deferred).  63.4 PROBLEM R'
+  (open): polynomial mixing for back-(sigma+1)-to-top,
+  sigma in [C log n, m-1]; coupling route sketched (matched
+  letters ride the conveyor forever; repair via simultaneous
+  pool overlap); P*P contains adjacent transpositions
+  (i,i+1), i in [n-sigma, n-1].
+  block 62 (Section 5.44): THE SHELF-SHUFFLE BASE CHAIN — three
+  new unconditional lemmas: 62.1 floor exclusion (equal
+  k-windows are >= gap-floor apart in ANY floored word; tight;
+  confirmed numerically at floor+1 exactly); 62.2 the random
+  (sigma+1)-tail MTF chain is doubly stochastic, irreducible,
+  aperiodic — UNIFORM stationary law on S_n, so the stationary
+  window marginal is uniform on C(n,k) at EVERY rank
+  simultaneously; 62.3 uniform run bound (repeat probability
+  r_d <= (sigma+1)!/(sigma+1)^{sigma+1} ~ e^{-sigma} for all
+  lags, conditional on any history).  Representation: the walk
+  = repeated passes through a FIFO-in/uniform-out
+  (sigma+1)-buffer, same machine family as
+  Diaconis-Fulman-Holmes shelf shufflers (AoAP 2013);
+  diffusion heuristic T_dec ~ n^3/sigma^2 matches C16 echo
+  decay.  PROBLEM R posed (aggregate decorrelation
+  sum(r_d - 1/M)^+ = o(1)) — strictly cleaner than LUL (no
+  Z-feedback); modulo R the random rule's plateau
+  1 - e^{-(1+eps)} becomes a theorem ladder (Cauchy-Schwarz /
+  Paley-Zygmund / Chen-Stein).  C16 numerics
+  ([scripts/plateau_c16.py](scripts/plateau_c16.py)): coverage
+  within 1.2% of the Poisson plateau at all ranks, n=13/15;
+  blocks 60-61 (Sections 5.42-5.43): THE SNUB INEQUALITY AND
+  THE EXACT d-CHOICE THEOREM — 60.1 (PROVED, unconditional):
+  for any zero-preferring eligible rule, per-rank misses <=
+  N_0 (fan starvation) + sum_t (c_t - 1)^+ (fan crowding);
+  coverage has exactly two failure channels.  60.2 (PROVED):
+  the idealized independent-fan d-choice process reaches
+  coverage 1 - delta in <= M(1 + (ln(1/delta)+1)/d) expected
+  steps (exact geometric sums, Bernstein concentration; no ODE
+  limit) — slack eps buys miss e^{-eps(sigma+1)/2} whp, the
+  DE's answer now a theorem FOR THE IDEALIZED PROCESS ONLY.
+  60.3: real fans are Johnson-graph STARS anchored at the
+  current (k-1)-prefix (proved), with Theta(sigma) expected
+  appearances per k-set (conditional).  60.4 LUL* (HYPOTHESIS,
+  minimal form): MDCU per rank needs only (L1) fan access
+  N_0 = o(M) and (L2) crowding sum (c_t-1)^+ = o(M); neither
+  proved for any rule; C13 is not zero-preferring per rank
+  (cross-rank contention term open; C15 proposed).  C14
+  (block 61, h100): pool-shape scaling at fixed slack 1.2,
+  n = 11..19 — the witness-shaped pool sigma = 1 does NOT
+  scale (miss flat ~0.22 at rank m, RISING at rank m+2:
+  0.086 -> 0.159); the max-valid pool sigma = m-1 falls
+  monotonically (0.097 -> 0.073), direction as idealized law
+  but slower (star-fan correlation); the asymptotic shape
+  0.7 sqrt(n ln n) is flat ~0.10 but only moves sigma 4 -> 5
+  on this range — scaling question NOT settled either way;
+  and block 59 (Section 5.41): SECOND AUDIT (2026-08-21) accepted
+  in full — witnesses independently replayed and CONFIRMED by
+  the auditor; sigma+1 off-by-one corrected (50.1, 54.1);
+  "balance automatic" withdrawn; C10 seeding bug fixed; LUL,
+  absorption (P-sweep), DE narrative, and "final
+  decomposition" downgraded to research hypotheses; two-point
+  slack data does not establish eps(n) -> 0; no new bound on
+  nu(k).  WITNESS CERTIFICATES FROZEN:
+  [witnesses/n7_L56.txt](witnesses/n7_L56.txt) SHA
+  `ae1edfe3beb27df79ff2f4f052c1b19684eec6080fd75f8a2b6cee1610f2c9c6`,
+  [witnesses/n9_L198.txt](witnesses/n9_L198.txt) SHA
+  `c4caf0c89520fc43172dd1a58874dc7a61bdd06cff7ea36b94f5a4e9f96944b4`,
+  verifier [witnesses/verify_witness.py](witnesses/verify_witness.py) SHA
+  `a3433e2773f441dd3bbfe8e42cfbb84e80026ef744a8e48758af5282a962e061`
+  (both PASS),
+  and blocks 57-58 (Sections 5.39-5.40): TWO COMPONENTS PROVED +
+  THE BALANCE MECHANISM FOUND — 57.1 exact pool lemma (exactly
+  sigma+1 eligible at every step, deterministic; queue plank
+  discharged); 57.2 sequence-SAW for the random tail-MTF walk
+  (three-line first moment, e^{-Theta(n log n)} margin,
+  survives tilting) — of the 53.3 decomposition only
+  reorder-fiber discrepancy remains; C13: dense-gradient
+  potential-greedy reproduces the witnesses' sub-Poisson
+  dispersion (0.25-0.41) at all ranks/n/slacks — the 53.1 wall
+  does not bind balance rules; C13b: pool 2->6 cuts misses 3x
+  and improves dispersion; proof program: supermartingale on
+  fiber potential + coverage DE + P-sweep; n=9 finisher final
+  {180:2, 189:1, 198:0},
+  and blocks 55-56 (Sections 5.37-5.38): absorption on the MTF
+  graph — cleanup half PROPOSED, not proved (P-sweep: a
+  sketched Hall/serialization lemma; audit 2 downgrade), but
+  random bulk
+  leaves Poisson deficits at Theta(sqrt n) ranks and the 53.1
+  wall reappears — everything rests on the SUB-POISSON WALK
+  QUESTION (sigma-tail MTF walk with sub-Poisson top-k fibers
+  at all shallow ranks; witnesses answer yes at n=7,9); MTF
+  under random requests is classical (Flajolet-Gabarro-
+  Thimonier 92), designed-request universality unstudied; C12
+  closes the pull-law census — beta-LIFO marginals fail, no
+  memoryless/short-memory policy inhabits the band,
+  and block 54 (Section 5.36): the MOVE-TO-FRONT COMPILATION
+  (corrected by audit 2: eligible tail is sigma+1; balance is
+  NOT automatic — near-balance and near-uniform fibers are
+  explicit CONDITIONS) — under the floor, every rank-k window
+  is the top-k of the recency permutation (LRU stack property
+  = the nested flags); MDCU <=> a (sigma+1)-tail move-to-front
+  walk on S_n of length (1+eps)W, near-balanced, whose prefix
+  contents have near-uniform fiber counts at all shallow k
+  (conditions, not consequences); the rigid word = the LRU
+  worst case (round-robin); the core = derandomizing Poisson
+  fibers with log-sigma bits/step — a constructive sequential
+  discrepancy problem; literature contacts: Mattson stack
+  algorithms, online discrepancy, GJKO Euler-tour absorption
+  (first theorem-shaped target for existing machinery),
+  and block 53 (Section 5.35): the multi-rank wall and the FINAL
+  DECOMPOSITION — per-rank feedback schedulers provably cannot
+  reach the MDCU (Theta(sqrt n) shallow ranks each need bulk
+  fresh rate; focus budget short by sqrt n; C10 side ranks in
+  evidence); cross-rank correlation too weak to rescue (data);
+  resolution: MDCU = floor/queue + sequence-SAW (ONE monotone
+  property — near-self-avoidance at the shortest shallow
+  length implies all lengths) + FIBER DISCREPANCY of the
+  sequence->set map (= the sub-Poisson fingerprint) — the
+  x*-fold demand is REORGANIZED, not gone (audit 2: fiber
+  discrepancy must still hold simultaneously at every shallow
+  rank; only the sequence-SAW half collapses to one property),
+  and block 52 (Section 5.34): C10 — the staleness DE is
+  QUANTITATIVELY CONFIRMED (sim vs DE to 0.001-0.01 from pool
+  >= 3 at n=11 and 13; coverage a pure function of (sigma,tau),
+  n-independent); LUL true empirically in the operative regime;
+  side ranks lag — attention rotation is the binding open
+  design problem; priorities reordered (multi-rank DE system,
+  then LUL proof, then queue-floor bookkeeping),
+  and block 51 (Section 5.33): **THE n=9 WITNESS EXISTS** — L=198
+  over Z_9, all gaps >= 8, full 126/126/84 coverage
+  (eps(9) <= 0.571 < 0.6 = the n=7 bound); C3 curve
+  126:48 .. 180:3; matched-slack missing fractions IMPROVE
+  n=7 -> n=9 (9.9 -> 5.7% at slack 1.2, 3.3 -> 0.9% at 1.4);
+  ALL FOUR fingerprints replicate (balance; floor-hugging with
+  the same 1.1-sqrt(n log n) band constant; sub-Poisson 0.37-
+  0.40; slow-growing Kendall walk 3.36/round),
+  and block 50 (Section 5.32): the staleness DE at depth one —
+  queue arithmetic (Little's law: eligible pool = sigma =
+  E[gap] - floor; the finite tests ran the tightest corner
+  sigma ~ 1; the MDCU floor gives pool sqrt(n log n) = the 35.2
+  entropy dial); the DE `d rho/d tau = 1 - rho^sigma` reaches
+  `1 - O(log sigma/sigma)` coverage in `(1+o(1))W` steps —
+  reproducing the MDCU depth-one clause and the 43.3 defect
+  rate from a third independent derivation; the isolated gap is
+  the LOCAL UNIFORMITY LEMMA (fan staleness = rho + o(1)
+  despite slow prefix drift); multi-rank system shape stated
+  (attention rotation forced, pool/rank ratio diverges),
+  and block 49 (Section 5.31): the rule-class landscape (C5–C8) —
+  closed-form arithmetic priorities are an EMPIRICAL NO-GO
+  (lose to random at n >= 9, 5–10x off frontier);
+  freshness-greedy feedback (zero design bits) wins by 2.5–4x
+  but limit-cycles; FIFO covers exactly n sets per rank
+  (46.1 corollary data-exact); NEW ATTACK PLAN 49.4: the
+  Poisson obstruction does not apply to adaptive random greedy —
+  Wormald/DE analysis of the random freshness scheduler is the
+  proposed proof engine for the exact zone (named obstacles),
+  and block 48 (Section 5.30): the interval-sweep skeleton — MDCU
+  coverage = a LOW-DISCREPANCY TRANSPOSITION WALK in S_n
+  (partial SJT-species path, length (1+eps)W/n << n!) whose
+  middle-interval complements sweep central ranks
+  near-injectively; volume needs only Theta(1) transpositions
+  per round (witness: mean 1.75, Kendall steps 0-3), the demand
+  is discrepancy; witness clean intervals supply only 34 of 91
+  covered sets — RAGGED-CUT AMPLIFICATION named (desynchronized
+  phase sawtooths re-cut the age order, carrying the majority
+  of diversity),
+  and block 47 (Section 5.29): the balance clause DISSOLVES —
+  no-accumulation lemma (47.1, proved: a splice charges exactly
+  one gap per letter, no per-letter error accumulation; the
+  n-dimensional Steinitz balancing requirement is withdrawn);
+  P-phase upgrades to P-align (47.2): in-band splicing demands
+  the entry point's return ORDER match the exit point's
+  departure ORDER (type + phase), a reachability condition on
+  the drift flow's permutation-type paths (finite check C4
+  queued),
+  and block 46 addendum (46.4): witness multiplicity dispersion is
+  SUB-POISSON by a factor 2.5-3.5 at every rank (var/mean
+  0.29-0.40 vs 1.0 random) — a self-organized tiling, the 43.1
+  regime, not a lucky cover; absence-mass identity noted
+  (design freedom is overlap structure only),
+  and block 46 (Section 5.28): the shift-defect innovation bound
+  (Lemma 46.1, proved): distinct k-windows `<= gcd(L,n) + k|D|`
+  with `D` the shift-defect set — rigid words have `<= n`
+  windows (counting proof of the wreath coverage death) and the
+  MDCU forces deviation mass `>= ~2W/n`; witness anatomy:
+  slip-and-reset sawtooth gaps, near-perfect sequence-window
+  innovation (50/55/56 of 56), three-layer structure (lattice /
+  floor-hugging quasiperiodic slippage / sparse reset
+  corrections = 40.1's diversity events),
+  and block 45 (Section 5.27): **THE n=7 WITNESS EXISTS** — an
+  L=56 cyclic word over Z_7 with all letter-gaps >= 6 whose
+  3/4/5-windows cover all 35+35+21 subsets (h100 annealing from
+  the rigid wreath start; independently verified) — the first
+  explicit slack-beats-exactness datum (wreath-hard at L=35,
+  exists at eps=0.6); missing-vs-L curve 42:9, 49:3, 56:0;
+  floor-hugging gap fingerprint (mode at the floor, tail to
+  n+4, within the MDCU band); computation C1: 27.4 divisibility
+  confirmed at n=7..13 while lexical/DKS factor gap spread
+  grows LINEARLY (lex(0,1) maxdev = n-3 exactly) — published
+  equivariant factors cannot be the MDCU base (44.8),
+  redirecting construction to the age side; n=9 scaling search
+  running,
+  and block 44 (Section 5.26): literature contact — Theorem 27.4
+  confirmed against Muetze's middle-layer 2-factors (cycle
+  lengths multiples of `2n`); lexical (KT88) and modular (DKS94,
+  `j == i + Sigma(B) mod m+1`) matchings both rotation-invariant,
+  hence both shatter and the naive DKS hope is refuted at the
+  joint; the middle-levels and central-levels theorems
+  (Gregor–Micka–Muetze, all depths) are PROVEN EXEMPLARS of the
+  narrow-band architecture; the new obstruction is PHASE: each
+  splice issues every letter an out-of-band gap, forcing coarse
+  factors, balanced splice schedules, and the new plank P-phase
+  (relative-phase spectra of gadget classes must net the circle;
+  rotation cannot tune phase within a class); sharpest program
+  form — central-levels machine + phase discipline + lockstep
+  dictionary = MDCU,
+  and block 43 (Section 5.25): the entropy ledger — `Theta(W log
+  n)` total design bits against `W sqrt(n log log n)` exact-zone
+  windows forces a SELF-ORGANIZING flow (structural correctness
+  with `o(1)`-density corrections); the narrow-band principle
+  confines the search to arithmetic local shuffles, with the DKS
+  modular matchings as canonical candidates; the finite-optima
+  prediction is sharpened to correction density
+  `<= log n/sqrt(n log log n)`,
+  and block 42 (Section 5.24): block factorization — the MDCU is a
+  flow of `~(1+eps)W/n` orders of `[n]` with per-letter
+  displacement `<= tau` per round; windows are two-arc sets of the
+  local order; order-preserving drift is refuted (rotation no-go
+  at scale); the concrete final form is a permutation-flow tiling
+  of the central ranks, a Tuscan/Vatican-square species with
+  `tau`-close rows and set-union windows,
+  and block 41 (Section 5.23): the out-pool joint check closes —
+  the first object to survive its first joint check — converging
+  onto Theorem C's target: the standing object is the MDCU
+  (multi-rank defective central ucycle with tolerance), whose
+  existence implies coefficient one modulo the named bookkeeping;
+  the program's mechanisms (slack, defects, tolerance) each
+  provably relieve a specific rigidity, and the `k = 7` archived
+  optimum is the smallest MDCU instance,
+  and block 40 (Section 5.22): the in/out asymmetry (pollution
+  binds in-dwells only; out-dwells carry the diversity), the
+  TOLERANT m-SHIFT consolidation (departure stream = arrival
+  stream lagged `m` with `O(sqrt(n log n))`-local reordering;
+  tolerance 0 = the wreath object; the day's two corners merge
+  into one object), and first data contact: the archived optimal
+  `k = 7` word realizes all 127 targets as nested suffix-union
+  flags with mostly-pair letters — confirming the SIC suffix-chain
+  mechanism, quadratic reuse, and sparse fat letters in a real
+  optimum,
+  and block 39 (Section 5.21): the joint check cracks QFWD (tenth
+  refutation — pollution costs an in-dwell, not a round trip, so
+  the pollution-free boundary is `m - O(d)`, not `n/2`, putting
+  both middle layers and the whole exact zone in the polluted
+  band; band depth corrected to `H*`); the deep zone survives; the
+  top-band trichotomy (exact windows ⟺ FIFO/wreath; universal
+  refresh ⟹ coefficient 2; per-target ⟹ length `W sqrt(n log n)`)
+  leaves one design point — near-FIFO with `o(1)`-density
+  scheduled dwell variations — plus a falsifiable prediction: the
+  known finite optima must be near-FIFO with sparse
+  irregularities,
+  and block 38 (Section 5.20): plank (f) dissolves — the only
+  ratio-`sqrt n`-per-letter compilation economy is quadratic
+  interval reuse (windows ARE the realizations); the pollution
+  lemma (proved) shows QUASI-FIFO discipline (dwells `m ± O(d)`)
+  makes all windows `<= n/2` pollution-free with `Theta(log n)`
+  bits/step of residual entropy; the consolidated object is the
+  QFWD (quasi-FIFO window design), with planks: shallow window
+  bijectivity, deep mixing, mirror exactness for the top layers,
+  and joint bookkeeping,
+  and block 37 (Section 5.19): the B2 check executed in-house
+  yields the singleton/FIFO no-go (one-singleton-letter-per-step
+  economy forces the wreath endpoint — the ucycle corner's rigidity
+  explained), the ledger correction that the collar's `Theta(H)`
+  per-chain overhead makes per-anchor flag chaining fatal, hence
+  the NEW plank (f): the flag stream must factor into runs of
+  `omega(sqrt(n log n))` anchors compiled jointly — the Frame
+  Theorem's original plank list was incomplete,
+  with blocks 35–36 (Sections 5.17–5.18): audit repair of the
+  absorption threshold via the sharp two-sided tail (Lemma A1′ in
+  the run-length file); anchors carry full band flags (conditional
+  repair of audit finding 4); the floor-dial lemma (maximal floor
+  forces the m-shift/wreath endpoint; at `d = C sqrt n` the floor
+  costs `o(1)` of the entropy); the deep-zone margin derived; the
+  conditional Frame Theorem with its exhaustive open-plank list;
+  and the exact zone shown to have NO static obstruction
+  (normalized-matching SDR, floor-robust defect version) — plank
+  (a) is purely a sequencing theorem,
+  and block 34 (Section 5.16): the `n = 7` LSGC test reduces
+  (proved: tight out-pool forces FIFO arrivals) to a cyclic word
+  over `Z_7` with letter-gaps `>= 6` whose 3/4/5-windows cover all
+  35+35+21 subsets — zero slack being the wreath-hard doubly-exact
+  ucycle; the affine no-go (proved) shows the gap floor is
+  incompatible with algebraic periodicity; one greedy run reached
+  86/91 at `L = 49`; search packaged in `scripts/lsgc_n7_search.py`
+  for the remote box; finite question open,
+  and block 33 (Section 5.15): the lockstep theorem — under the run
+  floor, peels equal windows (`T_x(j) = V_j ∖ {z_j..z_{j+x-1}}`, age
+  argument), all depth-sections are Johnson walks driven by one word
+  pair, sections at depth `o(sqrt n)` are forced near-Hamiltonian
+  simultaneously, and SIC becomes: a floored Lagged-Section Gray
+  Code (LSGC) of length `(1+eps)W` exists — with a posed finite
+  test at `n = 7`, lags 0–2,
+  post-audit blocks 31–32 (Sections 5.13–5.14): laminarity forced by
+  owner capacity (`|T ∆ T'| <= x + x'`, two-line proof);
+  suffix-intersection towers make the required `Theta(sqrt n)`
+  departure-sharing structural; suffix-intersection rigidity removes
+  the assignment layer; the open core becomes SIC (span-intersection
+  cover by one floored walk); peel criticality `lambda(x) =
+  (1+eps)e^{2x^2/n}` shows the shallow cone is at perfect-matching
+  criticality, the Poisson obstruction rules out all random/greedy
+  SIC walks (deriving the `1-1/e` stall), and the depth dichotomy
+  confines exact design to a `Theta(sqrt(n log log n))`-thick band
+  whose depth-1 trace is the wreath corner,
+  is a CANDIDATE, not a theorem: a fully specified cohort architecture
+  (same-class cohorts sharing one stationary-due `tau`-block per
+  cycle, rotating exterior pads, drain-and-retool class boundaries,
+  mirrored arrival service for the upper cone) that threads all six of
+  the day's refutations and closes every individually-derived ledger;
+  its status is gated on the Pruesse–Ruskey citation check, a joint
+  constants re-derivation, and independent audit (V1–V3 there).
+  Same-day continuation inside the file: the V2 joint re-derivation
+  REFUTED the unbraided form (Section 5.5 letter-tail theorem, cycle
+  `>=3d`, coefficient `>=3-o(1)` — the seventh refutation of the
+  date); the braided patch restores duty `1-O(1/C)`; the triple check
+  (Section 5.6) proved backbone-sharing necessary, identified the
+  lower/upper pairing as a simultaneous containment matching, and
+  established the convergence of the day's two cores into one object
+  — a coupled two-layer traversal with local alignment, of which the
+  Mütze Hamilton cycle is a lag-0 instance; and block 26 (Section
+  5.7) closed the loop: the residual content of the entire program is
+  a single extremal object, a middle-levels Hamilton cycle (or
+  `>=n^{3/2}`-long-path cover) with coordinate run floor
+  `sqrt(n ln n)` outside an `o(W/sqrt(n log n))` budget.  Favorable
+  arithmetic: the mean run in ANY middle-levels Hamilton cycle is
+  exactly `n`, so the demanded floor is `o(mean)`, whereas
+  Goddyn–Gvozdjak (Electron. J. Combin. 10(1) (2003) #R27, DOI
+  10.37236/1720, verified) achieve floor `n-2.001 log2 n ~ mean` on
+  the unconstrained hypercube.  Verification of the object would
+  prove handoff conjecture 7.1.3.  Block 27 (Section 5.8) then
+  BYPASSED Hamiltonicity: corrected boundary lemma (`<= H` short
+  runs per piece end, so `o(W/(n log n))` pieces of length
+  `omega(n log n)` suffice); PROVED rotation-rigidity theorem
+  (rotation acts freely on the middle levels for all odd `n`; a
+  rotation-invariant cycle of length `2ln` gives all coordinates one
+  common gap multiset with mean `n`, all runs EXACTLY `n` at `l=1`;
+  explicit `n=5` witness); eighth refutation (all-`2n` invariant
+  2-factors require vanishing-measure necklace autocorrelation); and
+  route v5: a 2-factor of the necklace-quotient multigraph (exists
+  by König) with polylog cycle lengths, holonomies coprime to `n`,
+  and an affine window-avoidance condition that is entropically
+  nearly free — a constrained-2-factor design problem, no longer a
+  strengthening of the middle levels theorem.  Block 28 (Section
+  5.9): holonomy check passes (covering connectivity gives full
+  holonomy group; prime transfer moots composite `n`); NINTH
+  refutation — polylog quotient cycles with nonzero shift are
+  impossible through typical necklaces (closure forces `2l >=
+  |A ∆ sigma^s A| = (1/2-o(1))n`); salvage v5′ is stronger:
+  `Theta(n)` cycles forced and better (lift pieces `Theta(n^2)`,
+  boundary budget trivial, runs auto-equalized), the window
+  condition collapses to an `o(1)`-density in-word part plus a
+  `Theta(log n)`-deep copy-seam part, and the residual gates are
+  the endgame steering lemma, the joint assembly, and the v3
+  mounting re-run.  Block 29 (Section 5.10): the steering lemma is
+  proved (solo derivation — Hall/counting with slack, mid-course
+  guidance, body-tail coordination), the v3 mounting closes
+  structurally (mirror = the lift's own alternation, pads
+  unnecessary, collar term `2H·O(Cat_m/n)`), and the program is
+  reduced to ONE object — the STEERABLE 2-FACTOR CONJECTURE (S2F)
+  on the necklace quotient at prime `n`, which implies coefficient
+  one at primes and hence, by prime transfer, handoff conjecture
+  7.1.3 for all `k`.  Attack routes recorded (absorption on orbit
+  space; two-matching sampling with switching repair; explicit DKS
+  modular lane) with iron-law flags (rerouting×window
+  retroactivity, orbit-simplicity, B2 line-by-line check).
+
+Master handoff Section 5.6 carries the theorem-level summary of all
+five theorem files; the sixth file is the gated candidate above.
+
 ## 2026-08-12: signed lattice closed in projection; positive rail and large-host gates isolated
 
 - [MATH_SYNTHESIS_AUG12_INTEGRAL_LATTICE_REBASE_20260812.md](MATH_SYNTHESIS_AUG12_INTEGRAL_LATTICE_REBASE_20260812.md),
@@ -27073,3 +28113,1317 @@ residence, and the lower common-cap compiler remain open.
   successor graph; Hamiltonicity adds the standard subtour cuts.  A
   protected owner triangle proves that an arbitrary completed two-factor
   cannot be made resident by rotation, reversal, or intact opening.
+
+### 2026-08-21: tail-MTF endpoint/cyclic closure is solved; stationary and late-repair routes are sharply delimited
+
+- [MATH_CANDIDATE_TAIL_MTF_EXACT_BRIDGES_CYCLIC_CLOSURE_20260821.md](MATH_CANDIDATE_TAIL_MTF_EXACT_BRIDGES_CYCLIC_CLOSURE_20260821.md),
+  SHA `8824d4347fc25e01ddb62a31abfa2b519316fe9923bef689c003067e84ddc7e9`,
+  proves directed tail-MTF diameter `<n^3`, a common exact bridge length
+  `n^3+f^2`, asymptotically free fixed-endpoint localization, and cyclic
+  closure preserving equal-letter gap at least `f`.  It removes endpoint
+  return and cyclic seams as asymptotic gates, but not block-palette coverage.
+
+- [MATH_CANDIDATE_STATIONARY_FEEDBACK_ENDPOINT_OBSTRUCTION_20260821.md](MATH_CANDIDATE_STATIONARY_FEEDBACK_ENDPOINT_OBSTRUCTION_20260821.md),
+  SHA `cce24fd5e8ffa2b9ac60e93727b5470913a1095959e759d11a654026ab4b57d9`,
+  proves that unseen tail-MTF edges are complete right-endpoint fibers.
+  Their exact matching size is their density times `n!`, every doubly
+  stochastic eligible kernel has unseen mass equal to that density, and
+  vanishing conditional TV displacement leaves the coupon plateau.  Adaptive
+  coefficient-one constructions must transport permutation--coverage
+  correlation.
+
+- [MATH_CANDIDATE_MULTIRANK_LATE_ACCESS_BARRIER_20260821.md](MATH_CANDIDATE_MULTIRANK_LATE_ACCESS_BARRIER_20260821.md),
+  SHA `0edbcec66bedab8c171af24187b1d74338dfc40b3e6e8024146fd41726005496`,
+  gives the exact weighted common-choice snub ledger, identifies cross-rank
+  column discordance as the term absent from separate per-rank late-access
+  arguments, and gives the exact excess-repeat identity for growing central
+  subbands.  A typical stationary plateau cannot be repaired in an `o(W)`
+  terminal phase; the live singleton target is bulk aligned freshness with
+  `o(W)` excess repeats.
+
+- [MATH_CANDIDATE_FIXED_ENDPOINT_PALETTE_FRACTIONAL_MATCHING_20260821.md](MATH_CANDIDATE_FIXED_ENDPOINT_PALETTE_FRACTIONAL_MATCHING_20260821.md),
+  H100 SHA `c3f762f4e4b0bbb432afdfc3140d9220c4a3523a1d9ba249bf042dc31b8c21fd`,
+  proves that a random exponentially long fixed-endpoint tail-MTF core is
+  band-simple—has no within-core repetition at any DCC-band rank—with
+  probability `1-o(1)`.  Two exact bridges make the seed average legitimate.  After
+  symmetric dummy augmentation the block palette has an exact fractional
+  perfect matching of physical length `W+o(W)`; a second normalization has
+  physical length at most `W`, exact outer degrees, and total middle-layer
+  deficit `2(W-N)=o(W)`.  Independent hostile audit passed after restricting
+  the return bound to its correct `k<f` scope.  This solves endpoint balance
+  and fractional Hall/capacity, not integral path selection.
+
+- [MATH_AUDIT_FIXED_ENDPOINT_PALETTE_MATCHING_BLACKBOX_20260821.md](MATH_AUDIT_FIXED_ENDPOINT_PALETTE_MATCHING_BLACKBOX_20260821.md),
+  H100 SHA `471fee3b739d1f72e226260bbe4b11d047666540dd2c4135ac26f69faaa8311a`,
+  derives the sharp palette scales.  Adjacent nested ranks have normalized
+  co-load `(4+o(1))/n`; under the canonical uniformly random free-core law,
+  all distinct same-rank middle-target pairs have normalized co-load
+  `O(n^-2)`, with the Johnson-adjacent value `(8+o(1))/n^2`.  This uniform
+  bound does not pass to an arbitrary branch law in one later
+  common-transformation fiber.  The
+  dummy lift has exponential entropy per edge coordinate.  No named standard
+  nibble, growing-uniformity, conflict-free, rainbow, transversal, or generic
+  absorption theorem reaches the required `o(W)` real leave; a projective
+  decoration shows degree and pair-codegree data alone cannot do so.  On either rank
+  parity separately the formal pair scale is favorable, but both projections
+  must be rounded using the same path in every slot.  This motivates parity
+  projection; the next certificate sharpens the gate to colored Hall.
+
+- [MATH_CANDIDATE_PARITY_PROJECTION_HALL_REDUCTION_20260821.md](MATH_CANDIDATE_PARITY_PROJECTION_HALL_REDUCTION_20260821.md),
+  H100 SHA `8d71c3f5c7de59db57e00a2a99ff1c434fbfbc3d88d1daa485e9d9a3da6b4d61`,
+  proves that, for one selected full path, every omitted-rank observation is
+  an exact union/intersection transition color of the retained parity traces
+  together with the stated boundary traces.  Once one common path is selected per
+  slot, completion of every omitted rank is an independent capacitated Hall
+  problem with explicit deficiency `delta_q`; a matched parity together with
+  `sum_q delta_q=o(W)` gives the same paths `o(W)` total claimed collision and
+  leave.  At the omitted middle rank this is exactly an almost-rainbow
+  union-color problem on queue-coherent Middle-Levels paths.  This remains
+  valid, but the later adaptive-quota union theorem removes the required
+  initial matching altogether.
+
+- [MATH_CANDIDATE_PARITY_FIBER_RIGIDITY_20260821.md](MATH_CANDIDATE_PARITY_FIBER_RIGIDITY_20260821.md),
+  H100 SHA `d1c85262b2e657e64756c8857793591802411f9de34986e588daf15ec988e308`,
+  proves ordered trace reconstruction, a deterministic deck-fiber/chord
+  bound, and exponentially likely simultaneous chordlessness of the two
+  central decks under the canonical palette law.  Conditioning on this
+  support preserves exact fractional marginals; once each slot's unordered
+  middle deck is fixed, slotwise parity switches then alter only `o(W)`
+  opposite-central targets.  Rare chord-rich cores and
+  global recomposition remain open.
+
+- [MATH_CUSTOM_PALETTE_ROUNDING_RESIDUAL_AND_FIBER_BARRIERS_20260821.md](MATH_CUSTOM_PALETTE_ROUNDING_RESIDUAL_AND_FIBER_BARRIERS_20260821.md),
+  H100 SHA `bb07517e24b10382de33d6022a758b40bc12964e9c6edca8201c54c601a5fbb9`,
+  gives an exact hypergeometric/KL residual-killing lemma.  It constructs
+  abstract residual families of unused density
+  `1-Theta(n^(-1/3)(log n)^(2/3))` that admit no next balanced core, refuting
+  a universal scalar-residual next-core lemma.  It also
+  quantifies the small ordered-trace and bridge postprocessing fibers.  The
+  residual families need not be dynamically reachable, so global
+  near-factors, augmentations, and reachable-state invariants remain viable.
+
+- [MATH_CANDIDATE_CYCLOMATIC_HALL_GRAPHIC_ROUNDING_20260821.md](MATH_CANDIDATE_CYCLOMATIC_HALL_GRAPHIC_ROUNDING_20260821.md),
+  H100 SHA `0ec44c9d9d28fc92c5dfe63fad2dcedb75359d41cf9ea042a1f246e0bc940691`,
+  identifies postponed-rank Hall deficiency with excess cycle rank.  Adding
+  one private root per ordered deck gives exact graphic quota deficiency
+  `epsilon_k=max_I(beta_k(I)-h_k(I))_+` and
+  `epsilon_k<=delta_k<=epsilon_k+s`.  Canonical edge marginals are exactly
+  forest-roundable, but detached spanning-tree/negative-cylinder rounding
+  almost surely contains no full queue-coherent palette path; whole path
+  bundles do not themselves form a matroid.
+
+- [MATH_THEOREM_GLOBAL_PARITY_CYCLE_RESERVOIR_AND_FIFO_RECOMPOSITION_BARRIER_20260821.md](MATH_THEOREM_GLOBAL_PARITY_CYCLE_RESERVOIR_AND_FIFO_RECOMPOSITION_BARRIER_20260821.md),
+  H100 SHA `dc3a27f4c9aaf36928bfdef8e842ad13bf353f4155390f1296c29614421b4862`,
+  proves that the unordered middle projection has a linear distinct-color
+  chord reservoir and an exact zero-defect abstract path cover, but the
+  lift must satisfy the FIFO identity `v_t=u_(t-m)`.  Recomposition into
+  `o(W)` fragments cannot repair linear defect.  Positively, a linear
+  common-transformation fiber has `exp(Omega(n log n))` branches and common
+  full-state endpoints; polynomial macros contain genuine Cartesian
+  `Theta(n)`-checkpoint products with exponentially small bad mass.  This
+  supplies local endpoint and entropy control, not integral selection.  The
+  later forced-suffix theorem shows that deleting only the endpoint
+  checkpoint still leaves a periodic collar and is insufficient for an exact
+  central deck matching.
+
+- [MATH_THEOREM_COMMON_ENDPOINT_LINEAR_DECK_CODE_20260821.md](MATH_THEOREM_COMMON_ENDPOINT_LINEAR_DECK_CODE_20260821.md),
+  H100 SHA `0a83281560aa2481bff34e47f146df2d01d0b5e9d27ad85be2d0b860973f6159`,
+  proves that, after deleting the forced checkpoint, one fixed-endpoint
+  linear fiber contains `exp(Omega_C(n log n))` retained central decks with
+  pairwise replacement distance `Omega_C(n)`.  At length
+  `Theta(n log n)` the code has size `exp(Omega(n(log n)^2))` and linear
+  distance.  This is genuine local deck mobility, not a prescribed-residual
+  or cycle-decreasing augmentation.
+
+- [MATH_REDUCTION_ONE_CENTRAL_MATCHING_PLUS_GRAPHIC_COLORS_20260821.md](MATH_REDUCTION_ONE_CENTRAL_MATCHING_PLUS_GRAPHIC_COLORS_20260821.md),
+  H100 SHA `0d80452215fc1776c5b28ca10d4114700fa4e51a5b5bcfe458722354db688170`,
+  is the intermediate sufficient theorem which strictly superseded the
+  initial matched-parity gate.  Pairwise-disjoint
+  retained rank-`m` decks suffice; every other band rank is postponed to
+  capacitated Hall/graphic completion.  The exact claimed-resource bound is
+  `2(W-A)+2 sum_(k in K\setminus\{m\})delta_k` plus the already charged
+  checkpoint ledger,
+  under its stated outer-capacity and boundary hypotheses.  The later
+  postselected-quota theorem is sharper and no longer assumes even this one
+  central matching; the free-history theorem, rather than naive repeated
+  full-state checkpoints, supplies the current physical central model.
+
+- [MATH_CUSTOM_PARITY_GRAPHIC_NIBBLE_INVARIANT_20260821.md](MATH_CUSTOM_PARITY_GRAPHIC_NIBBLE_INVARIANT_20260821.md),
+  H100 SHA `6536f67838e84c6bf4976ca5c6e137c1e06dd3a77a0b38dd47b2b3e3e2cf3829`,
+  gives the exact sequential cycle charge
+  `kappa(E|F)=sum_C(|V(E) cap C|-1)_+` and the bound
+  `epsilon_k<=sum_i(kappa_(i,k)-h_(i,k))_+`.  For linear microblocks,
+  quenched joint pair probabilities `O(a/(M_kn^2))` plus component-square mass
+  `O(M_ka)` would give total charge `O(W|K|/n)=o(W)`.  Both hypotheses are
+  open; annealed central codegrees do not establish either.  They are a
+  sufficient fixed-quota strategy, not requirements of the later adaptive
+  union-cover criterion.
+
+- [MATH_ATTACK_ONE_CENTRAL_RECTANGULAR_GREEDY_QUENCHED_GATE_20260821.md](MATH_ATTACK_ONE_CENTRAL_RECTANGULAR_GREEDY_QUENCHED_GATE_20260821.md),
+  H100 SHA `75f1a54ffb1224c142b062b0d2b1f0a816134757051fe2fc224cab6fa05f68e9`,
+  computes the exact annealed feasible-branch count for retained
+  checkpoint-deleted central decks and proves favorable entropy down to a
+  polynomially sparse random residual.  It also proves the decisive
+  quenched caveat: a density-`1/2+o(1)` dictator star has no legal run
+  longer than `m`, while modular sum classes have density exactly `1/n`
+  and no Johnson edge.  The surviving theorem must control the residuals
+  actually reached by the global selection.
+
+- [MATH_THEOREM_POSTPONED_GRAPHIC_COALESCENT_AND_DECOUPLING_GATE_20260821.md](MATH_THEOREM_POSTPONED_GRAPHIC_COALESCENT_AND_DECOUPLING_GATE_20260821.md),
+  H100 SHA `80f786f83a818f4d9abbae289196fa73309878a9a4b4196d3eaa63b2151065d4`,
+  strictly sharpens the one-central formulation.  After bare paths are
+  selected and real/dummy quotas may be chosen post hoc, the exact rankwise
+  Hall deficiency is `(R-|union_i U_i|)_+`; no subset-Hall or graphic gate
+  remains.  Consequently simultaneous quota-relative union deficit `o(W)`,
+  the already known layer-size baseline, and physical cyclic serialization
+  imply `DCC(n,H,o(1))`.  The note also gives the exact first-order repeat
+  ledger, a narrowed-tail all-band annealed `O(n^-2)` pair kernel, and scoped
+  coalescent/coupon tools.  It does not choose paths with the required
+  unions, and it does not change the earlier fixed-quota fractional model.
+
+- [MATH_CENTRAL_SLOT_HYPERGRAPH_VARIABLE_R_NIBBLE_AND_SEED_GATE_20260821.md](MATH_CENTRAL_SLOT_HYPERGRAPH_VARIABLE_R_NIBBLE_AND_SEED_GATE_20260821.md),
+  H100 SHA `cd4503b1d5acac5ada972bf4f47bff9b461694352dc58163bce116b90117dd2b`,
+  proves the endpoint-forced reverse suffix and the failure of a repeated
+  common transformation after only endpoint deletion.  It replaces that
+  model by independently seeded narrowed-floor histories joined by `O(n)`
+  seams.  Their central slot hypergraph has exact relabeling marginals,
+  normalized pair codegree `O(log n/n^2)`, and
+  `r Delta_2/Delta=O(log^2 n/n)=o(1)`; any central near-factor lifts to a
+  literal cyclic FIFO word with only `O(W/log n)` central seam cost.  One
+  regular tiny bite is proved, but iterating the growing-rank nibble to
+  `o(W)` leave is open, and charging the same short seams throughout the
+  full band is not sublinear.
+
+- [MATH_THEOREM_TWO_BLOCK_FIFO_PRODUCT_ATOMS_AND_LINEAR_SEAMS_20260821.md](MATH_THEOREM_TWO_BLOCK_FIFO_PRODUCT_ATOMS_AND_LINEAR_SEAMS_20260821.md),
+  H100 SHA `b12a0d33997d273179e2ea70f11c9e01d92976a9c054c55d34b414c991443232`,
+  proves a universal `3k+1` connector for the near-half truncated-history
+  graph, exact coprime two-stream torus enumeration, an unconditional MSW
+  product factor of one split middle slice, and internal simplicity at every
+  nearby rank.  Quadratic atoms serialize with `o(W)` full-band seam charge.
+  Conditional growing-rank Baranyai--Katona factors cover almost all middle
+  targets, but do not control other ranks; coherent multirank aggregation is
+  open.  For three or more equal streams, the exact `Lb` phase/counter bound
+  rules out the natural central `L=Theta(qb)` periodic recursion; it does not
+  rule out much longer schedules or the other alternatives listed in the
+  theorem.
+
+- [MATH_LEMMA_RAINBOW_POSA_ENDPOINT_GATE_AND_FIXED_FIBER_NOGO_20260821.md](MATH_LEMMA_RAINBOW_POSA_ENDPOINT_GATE_AND_FIXED_FIBER_NOGO_20260821.md),
+  H100 SHA `da383e9db8d95852a5b0a30efd6e50e2487b994632975d4ffb5633904a5b213d`,
+  gives the exact directed rainbow endpoint criterion: every legal fan of
+  every specified unextendable deck-preserving endpoint representation lies
+  in the used owner deck.  Fixed common-transformation replacements have one
+  endpoint and therefore no Posa expansion; even all orders above one owner
+  expose only `m(m+1)` colors.  A variable-endpoint deck-preserving splice or
+  controlled exchange remains open, and the criterion alone says nothing
+  about the other ranks or cyclic closure.
+
+- [MATH_COUNTEREXAMPLE_GROWING_RANK_LOCAL_KERNEL_NIBBLE_20260821.md](MATH_COUNTEREXAMPLE_GROWING_RANK_LOCAL_KERNEL_NIBBLE_20260821.md),
+  H100 SHA `09993652da46dfcfcef979cb8f8450e0501cff0552ff8dad4eca1dc55b551b76`,
+  proves that exact regularity, `r Delta_2/Delta=o(1)`, and `Xi=o(1)` do not
+  force a near-perfect matching at growing rank.  Its equipartition
+  slot--target multihypergraphs match the central numerical scales, allow
+  arbitrary parallel degree inflation, and nevertheless have maximum
+  matching coverage `O(1/n)`.  This refutes parameter-only iteration of the
+  one-bite lemma, not a Johnson-palette theorem using global structure.
+
+- [MATH_THEOREM_ADAPTIVE_UNION_HEAVY_TAIL_ALIGNMENT_NECESSITY_20260821.md](MATH_THEOREM_ADAPTIVE_UNION_HEAVY_TAIL_ALIGNMENT_NECESSITY_20260821.md),
+  H100 SHA `4e17d21c1078b4910978b501e2026b2fe80af0bda71769df344f8131221b3c63`,
+  proves that successful adaptive union coverage forces almost every used
+  middle-stage block into an `exp(-O(a log n))` simultaneous-freshness tail
+  on a `Theta((log n)^2)` inner band.  Some `Theta(a log n)` coordinates must
+  have positive upper-orthant correlation, so negative association and
+  diffuse product/subgaussian candidate laws cannot close the gate.  The
+  result is necessary-only and leaves clustered wreath/product alignment
+  viable.
+
+- [MATH_THEOREM_CLUSTERED_PRODUCT_PHASE_ALIGNMENT_20260821.md](MATH_THEOREM_CLUSTERED_PRODUCT_PHASE_ALIGNMENT_20260821.md),
+  H100 SHA `38d51551fee0eb03792543d5c5f4d4f7403c8ec7b5ad19a25afd5036a26b5e7f`,
+  proves that clustered two-stream type schedules are legal and band-simple
+  and have exact monotone upper/lower phase maps.  A rigid aligned order bank
+  which partitions each relevant Cartesian target profile has `q/b`
+  upper-profile holes at offset `q`, totaling
+  `(1/2-o(1))W_b`, despite sufficient scalar layer surplus; independent
+  per-rank alignment, conditional on the requisite tight-cycle factors,
+  leaves `(1/4-o(1))` of the adjacent upper rank missing in expectation.
+  Exact MSW alignment closes the adjacent balanced slice,
+  but a nonrigid coherent multirank order-bank theorem remains open.  The
+  exhaustive H100 phase/count script has SHA
+  `21515f809faf2ac8d22a0a7f2421aba52420463f19ed92a19e2416730cb3f198`.
+
+- [MATH_THEOREM_CLUSTERED_PROFILE_CAPACITY_DEFICIT_20260821.md](MATH_THEOREM_CLUSTERED_PROFILE_CAPACITY_DEFICIT_20260821.md),
+  H100 SHA `7d7054f544c1a8161092d014639c5866f0bb5f44f2bf6af996a9b76eb899e386`,
+  proves that, conditional on complementary-rank tight-cycle factors at all
+  admissible payload ranks, the pooled clustered schedules have aggregate
+  positive split-profile capacity deficit
+  `O(W_b b^(-1/4))=o(W_b)`.  Log-concavity localizes deficient profiles to a
+  width `O(sqrt(b/q))`, after which the hypergeometric atom bound and the
+  Gaussian layer ratio give the aggregate estimate.  Thus the rigid
+  `(1/2-o(1))W_b` phase-hole ledger is not a scalar profile-volume barrier;
+  the still-open task is an integral labelled order-bank transport.  The
+  H100 audit script has SHA
+  `cc29909b8cdfcc125515f8747f04bf4971e67098504b936ae25f7139d111615c`.
+
+- [MATH_THEOREM_CLUSTERED_PHASE_ORIGIN_FERRERS_TRANSPORT_20260821.md](MATH_THEOREM_CLUSTERED_PHASE_ORIGIN_FERRERS_TRANSPORT_20260821.md),
+  H100 SHA `3d79759b87592061e3061e15bb35b23ffa7ae315259e28de1dea89523aa569bc`,
+  proves that the pooled profile capacity can be balanced integrally across
+  every counter-origin phase diagonal at once.  Enumerating the rankwise
+  order pairs in nested Ferrers columns and assigning column `j` the common
+  relative shift `j mod b` gives discrepancy less than `b^2` in every
+  profile/diagonal bin.  Summed over all offsets, profiles, and diagonals,
+  the equal-bin deficit remains `O(W_b b^(-1/4))+O(Hb^4)=o(W_b)`.  This is
+  conditional on the local tight-cycle factors and solves phase-origin
+  integrality only: the cyclic orders occupying a common column need not be
+  label-compatible across ranks.  The exhaustive H100 audit script has SHA
+  `32e183aefa8a7c2e159c34dfe28b337c0ed5e749e055cb551a432706f7bce106`.
+
+- [MATH_THEOREM_CLUSTERED_FRACTIONAL_CONTAINMENT_TRANSPORT_20260821.md](MATH_THEOREM_CLUSTERED_FRACTIONAL_CONTAINMENT_TRANSPORT_20260821.md),
+  H100 SHA `a40a867e8624e66b6b94a31a250fa542f27f5418c5792ff4e1cbe46d1a640d61`,
+  gives the exact symmetric labelled containment flow of profile value
+  `min(P_(q,s),T_(q,s))`, a separate integral Boolean-containment matching
+  at every offset, and one unthinned nested fractional chain law.  The
+  rankwise claim thinning need not be simultaneously real, and neither the
+  integral matchings nor the fractional labels are coinstantiated by common
+  tight-factor orders.  Its H100 audit script has SHA
+  `2d7de75474fa3e5553548864ae017106b259b1fc13f27d04d6eca9df6ddb9dd4`.
+
+- [MATH_THEOREM_CLUSTERED_FULL_ORBIT_LINKS_AND_COLOR_CAP_REDUCTION_20260821.md](MATH_THEOREM_CLUSTERED_FULL_ORBIT_LINKS_AND_COLOR_CAP_REDUCTION_20260821.md),
+  H100 SHA `03b5b64c64b4d5433beae8720aa28e595d985e06a5cc2627baa91db775aff429`,
+  proves that every one-color token/source/target link has the largest
+  matching allowed by its shore sizes and that the full token rows collapse
+  exactly to a Boolean-containment matching with clustered color capacities.
+  It does not solve common-order realization.  Its H100 audit script has SHA
+  `b274f2f8ea35d3650bee99f4afef4e3098b52d4c3c0f5318107018f30e7ab8e8`.
+
+- [MATH_BARRIER_CLUSTERED_TOKEN_LABEL_COINSTANTIATION_NONTU_20260821.md](MATH_BARRIER_CLUSTERED_TOKEN_LABEL_COINSTANTIATION_NONTU_20260821.md),
+  H100 SHA `534e4f06c3211be21ef603c2de9cef5e877d57a3f5b247c7f3f1de2222152c39`,
+  gives a minimal determinant-`-2` token/middle-label/upper-label face with
+  restricted fractional value `3/2` and integer value `1`.  It blocks
+  automatic TU/network-flow/two-matroid reasoning for those three capacity
+  families, not a near-perfect matching in the full dense orbit.  Its H100
+  audit script has SHA
+  `e15e702153ed123c6ea154f9449d9d712cc4d6e6bd7be4458956a5bf6ff65def`.
+
+- [MATH_BARRIER_FIXED_FACTOR_PHASE_LABEL_MATRIX_NONTU_20260821.md](MATH_BARRIER_FIXED_FACTOR_PHASE_LABEL_MATRIX_NONTU_20260821.md),
+  H100 SHA `bd7fba2c5760e1af4909c029e2b6071c1aca44fdbda09bba5a3c956042fcb70a`,
+  proves a fixed-factor physical determinant-two minor, exact `10/3` versus
+  `2` packing optima at `b=5`, and the Walecki family with exact gap ratio
+  `b/(b-2)` for every odd `b`.  It also shows that direct disjoint-deck factor
+  selection is not a matroid.  The ratio tends to one and the family lies at
+  extreme payload `r=2`, so this is a formulation barrier rather than a
+  coefficient-one no-go.  Its H100 audit script has SHA
+  `09fa784002bf65a30afa0b5c06de54f4ed023e2c0d795beac0951711052f24cf`.
+
+- [MATH_THEOREM_FULL_MULTIPLICITY_INDEPENDENT_RELABELING_AND_DYCK_NIBBLE_BARRIERS_20260821.md](MATH_THEOREM_FULL_MULTIPLICITY_INDEPENDENT_RELABELING_AND_DYCK_NIBBLE_BARRIERS_20260821.md),
+  H100 SHA `30d0cbb2221197b93deb22eef722e3a9d328a447cae6161cdf69486518377fcb`,
+  proves that independent rank-and-side conjugations leave at least a
+  `(1/4-o(1))` target fraction uncovered at every
+  `q<=Q=o(sqrt b)`, even with all `q+1` payload sources, and derives the
+  near-maximal endpoint anti-alignment required of successful correlated
+  product-uniform marginals.  It also proves exact regular degree `k!^2` but
+  maximum codegree `k!^2` in the raw Petr--Turek Dyck-slot palette and a
+  robust normalized `Theta(1/k)` complementary-pair band after negligible
+  target projection.  Correlated/trimmed/global-geometry routes remain open.
+  Its H100 audit script has SHA
+  `20149c84d4256ae9ed803f28f902d2f9cc24e5d05a62cc022069496f76166cf5`.
+
+- [MATH_THEOREM_CLUSTERED_COMPLEMENTARY_PAYLOAD_ENDPOINT_COVERAGE_20260821.md](MATH_THEOREM_CLUSTERED_COMPLEMENTARY_PAYLOAD_ENDPOINT_COVERAGE_20260821.md),
+  H100 SHA `a2b0152cebc4fdefc2ce2d148eecea6018620d151901576af495c96857741d30`,
+  is the first positive coherent order-level island.  Conditional on the
+  local tight-cycle factors, complementary payloads use the same labelled
+  cyclic orders and origins to cover `(1/2-o(1))W_b` targets across the odd
+  balanced profiles.  The origins may remain in one type run throughout the
+  whole band, with `O(W_b/sqrt b+HW_b/b)=o(W_b)` holes and sublinear seam
+  charge.
+  Even offsets and other split profiles remain physically open; the later
+  constant-origin theorem removes interior phase types only from the pooled
+  scalar-capacity ledger.
+  Its H100 audit script has SHA
+  `f66dd02bd769813e5d352871d247e60fa69a98ad1add40a777c6e4dc5bb49adb`.
+
+- [MATH_THEOREM_CONSTANT_ORIGIN_ENDPOINT_PROFILE_CAPACITY_20260821.md](MATH_THEOREM_CONSTANT_ORIGIN_ENDPOINT_PROFILE_CAPACITY_20260821.md),
+  H100 SHA `2d97228b0d83472aa296fe3ca42e8ad3ca694c90acac8f513900868b9d6cf3e2`,
+  discards every clustered origin whose next `H` types cross a run boundary
+  and proves that the remaining common all-`A`/all-`B` chains have pooled
+  split-profile deficit
+  `O(W_b b^(-1/4)log^(7/4)b)=o(W_b)` over the canonical band.  The lifted
+  endpoint-only token hypergraphs also have separate integral matchings with
+  aggregate `o(W_b)` deficit.  This removes moving phase boundaries and
+  interior types from the separate-offset relaxation; cross-offset nesting,
+  physical labelled order assignment, and compatible factor banks remain
+  open.  Its H100 audit script has SHA
+  `b3f1869731a88fdc3e47cff2bb90adf27cd20323fb98677299e176114e3a4ee0`.
+
+- [MATH_THEOREM_Q1_PRODUCT_SCD_COLOR_CAP_MATCHING_20260821.md](MATH_THEOREM_Q1_PRODUCT_SCD_COLOR_CAP_MATCHING_20260821.md),
+  H100 SHA `86b7cf295ea0b5419d9418f94965abe950c492a20db7637bab0aeab23e0a47ad`,
+  gives an explicit labelled q=1 tokenwise containment matching which
+  respects every clustered endpoint color cap and loses exactly
+  `D_b=sum_d c_d^2(b-2d)=O(W_b/sqrt b)` equal-bottom targets.  It is the
+  prototype for the general-offset construction, not a physical common-order
+  lift.  Its H100 audit script has SHA
+  `200957e89c28af8653d04f243e86b0ab694becda6e5a1d484ecabf7c8b3adb68`.
+
+- [MATH_THEOREM_PRODUCT_SCD_GENERAL_Q_FAR_RECTANGLE_MATCHING_AND_SHIFT_GATE_20260821.md](MATH_THEOREM_PRODUCT_SCD_GENERAL_Q_FAR_RECTANGLE_MATCHING_AND_SHIFT_GATE_20260821.md),
+  H100 SHA `1908c6ba60812b6a20dca94ca14930c435e74ea7f4077541578f10a127df8047`,
+  characterizes every constant-shift matching in a product-chain rectangle
+  and uses all unequal-bottom rectangles to give per-offset target deficit
+  `O(W_b/sqrt b+qW_b/b+exp(-Omega(b))W_b)`.  Its aggregate error is
+  `o(W_b)` only for `Q=o(sqrt b)`, below the DCC band, and common cyclic
+  orders are not realized.  Its H100 audit script has SHA
+  `aada591fe04ebc3935f631beeb5af34d54430cf62d7a48bd58df1f2bff449e9f`.
+
+- [MATH_THEOREM_EQUAL_BOTTOM_SHIFT_AUGMENTATION_IS_NETWORK_FLOW_20260821.md](MATH_THEOREM_EQUAL_BOTTOM_SHIFT_AUGMENTATION_IS_NETWORK_FLOW_20260821.md),
+  H100 SHA `ed5162e1cb13861538744dd14b9920d01d6165f0ce09717c0e2614c1f7dc701e`,
+  proves that the fixed-offset equal-bottom constant-shift augmentation with
+  arbitrary integral residual rank/color capacities is exactly an integral
+  min-cost flow through color-prefix chains.  It proves no residual-cut
+  lower bound, cross-offset consistency, or order lift.  Its H100 audit
+  script has SHA
+  `5fa7c4b4c6308e558e49997c7cedf6e49c306394a28dff9efd3aae46d575070f`.
+
+- [MATH_THEOREM_ALL_OFFSET_TOKEN_ORBIT_SMALL_CODEGREE_ROUNDING_20260821.md](MATH_THEOREM_ALL_OFFSET_TOKEN_ORBIT_SMALL_CODEGREE_ROUNDING_20260821.md),
+  H100 SHA `59fdbe51cae5e5f6c1e8b4f96525ff84e4813cf9c47e4638d6d8c28a9c8dd0da`,
+  lifts the exact fractional flow to a 3-uniform token/source/target
+  hypergraph and applies quantitative Molloy--Reed edge coloring.  Every
+  offset in the canonical band has a separate integral matching, and their
+  total target deficit is `o(W_b)`.  The theorem does not make those
+  matchings nested or realize one common tight-factor order bank.  Its H100
+  audit script has SHA
+  `ca6666e4360a80d081dc49de2a54dc5ec6cdf0cf186625c0ec1cbc96dd151781`.
+
+- [MATH_BARRIER_PRODUCT_HOOK_SCD_INTERIOR_PHASE_OVERLOAD_20260821.md](MATH_BARRIER_PRODUCT_HOOK_SCD_INTERIOR_PHASE_OVERLOAD_20260821.md),
+  H100 SHA `fcd97f636c82683e251c7468215a01837e05987c6311ce04593546b0f51cf0b7`,
+  proves that the canonical product-hook SCD demands `Omega(W_b)` target
+  incidences in the interior clustered color classes at every
+  `q in [sqrt b,2sqrt b]`, while their total
+  capacity is only `O(W_b/sqrt b)`.  Its summed unchanged-hook deficit on
+  that window is `Omega(sqrt b W_b)`, and deleting all equal-bottom
+  rectangles costs `(3/4+o(1))W_b` over the band.  This is a barrier to the
+  canonical hook and its `o(W_b)` modifications, not to noncanonical,
+  adaptive, mixed, or absorbed product constructions.  Its H100 audit script
+  has SHA
+  `ee77a88e8e78425a41a12d2a7e6fffa99b96befeb858c05f1d126f78bb5d1238`.
+
+- [MATH_OBSTRUCTION_Q1_PRODUCT_SCD_COMMON_ORIGIN_DIAGONAL_20260821.md](MATH_OBSTRUCTION_Q1_PRODUCT_SCD_COMMON_ORIGIN_DIAGONAL_20260821.md),
+  H100 SHA `86bb6629e65c73791780fef4aa193efb2bc917d6dc030fb923877d69f3a0b166`,
+  proves that a fixed physical origin colors whole counter-sum diagonals,
+  whereas the q=1 product-SCD choice compares the two chain-bottom ranks.
+  Every active atom has at least `min(r,b-r)` wrong cells, forcing at least
+  `(1-o(1))W_b/(3b)` switches or deletions globally before successor-label
+  consistency.  This is an `o(W_b)` zero-switch obstruction; an absorber
+  remains possible.  Its H100 audit script has SHA
+  `dbe681bc59a6ae34969d542ad074ca5b26da5d6659fadcc104e0a871b51e101b`.
+
+- [MATH_OBSTRUCTION_GROWING_RANK_WREATH_BALANCED_SLICE_RESIDUAL_20260821.md](MATH_OBSTRUCTION_GROWING_RANK_WREATH_BALANCED_SLICE_RESIDUAL_20260821.md),
+  scope-fixed H100 SHA
+  `17378330ee7a8562e56b2b70e3b851af035400f2e1869b46de66aae00bb433b8`,
+  proves the exact wreath degree/pair-codegree profile and constructs a
+  wreath-free residual of density `1-O(b^(-1/2))` whose unweighted point
+  degrees differ only by `O(Mb^(-3/2))` and which supports a positive exactly
+  point-regular near-unit weighting.  Thus residual density and one-point
+  regularity cannot be the sole nibble invariant.  The result neither proves
+  nor disproves an approximate growing-rank wreath factor.  Its H100 audit
+  script has SHA
+  `7b2e6ee186ad8ee8c931a182fdf5817221f1c90c0eee802f269badb15085e9a8`.
+
+- [MATH_BARRIER_LITERAL_COMMON_ORDER_OVERLAP_B14_20260821.md](MATH_BARRIER_LITERAL_COMMON_ORDER_OVERLAP_B14_20260821.md),
+  H100 SHA `b8d73b23879259bace7608254f2995f8c4eaddeea79565d76f22bd86d7c92d4b`,
+  proves the exact cardinality loss forced by intersecting neighboring
+  factor banks literally.  At `q/sqrt b->c>0`, actual weighted
+  incompatibility is at least
+  `(e^(-c^2)-erfc(c)+o(1))W_b`; for
+  `1<<Q<<sqrt b`, its aggregate is at least
+  `(1+o(1))Q^2W_b/sqrt(pi b)`.  Hence literal overlap can have sublinear
+  forced loss only through `Q=o(b^(1/4))`.  This does not obstruct
+  nonidentical-order interval-coordinate couplings, cross-rank multicovers,
+  or transport using one-sided endpoint surplus by itself; the later exact
+  CSP theorem rules out those couplings only when they remain inside the
+  same one-copy clustered factor bank.  Its H100 audit script has SHA
+  `ace14cca1f58d9ae7e9743f19289c1251fac5d6c67010ffac4fd891517fa746a`.
+
+- [MATH_REDUCTION_RADIUS2_JOHNSON_SHELL_PACKING_GATE_20260821.md](MATH_REDUCTION_RADIUS2_JOHNSON_SHELL_PACKING_GATE_20260821.md),
+  H100 SHA `7f6bcbf740e3001039010cc9ce1ee6549dab141f88dcbeb8d51976f32522812e`,
+  proves that two radius-two shells in `J(2b,b)` are disjoint exactly when
+  their centers have Johnson distance at least five.  Thus near-full packing
+  of rank-two Walecki slices is equivalent to the open asymptotically perfect
+  code assertion
+  `A(2b,10,b)~W_b/binom(b,2)^2`.  The shell hypergraph is
+  `binom(b,2)^2`-uniform and regular, has a perfect fractional matching, and
+  has normalized maximum codegree `~4/b`; its growing uniformity prevents
+  the audited fixed-rank nibble theorems from applying.  Even a proof would
+  give disjoint middle targets only, not the DCC band.  Its H100 audit script
+  has SHA
+  `26165d08fdbc3a951fb16864d785ee036e646b83e69616e223a2477e346e91f7`.
+
+- [MATH_THEOREM_STATIC_ALL_BAND_PREFIX_MULTICOVER_20260821.md](MATH_THEOREM_STATIC_ALL_BAND_PREFIX_MULTICOVER_20260821.md),
+  H100 SHA `f343a4bceb3f1b9cebca9a48fa71f61851790088d161e8939f29c5db3726eaf1`,
+  constructs exactly `W=\binom{2m+1}{m}` permutation states, one per
+  `m`-set, whose rank-`k` prefixes collectively cover every `k`-set for
+  every rank.  The two middle prefix maps are bijective, so the static
+  all-rank quota-relative union deficit is zero.  This is only a static
+  multicover: it supplies no short ordering, FIFO chronology, transition
+  bound, or realization by `o(W)` legal atoms.  Its H100 audit script has SHA
+  `b0e8b4102cdddd9bd4da923cd518635aa772c60f7ccca100e327e5a1364b55ea`.
+
+- [MATH_THEOREM_NONIDENTICAL_ENDPOINT_ORDER_CSP_AND_PAIRING_BARRIER_20260821.md](MATH_THEOREM_NONIDENTICAL_ENDPOINT_ORDER_CSP_AND_PAIRING_BARRIER_20260821.md),
+  H100 SHA `4924fd2e9c582885a1ad6685fa86e79c999d9ba8838fc79e013fcacf2920973f`,
+  conditional on the local tight-cycle factors, gives the exact
+  cyclic-interval CSP for arbitrary nonidentical endpoint factor banks and
+  proves its deterministic zero-coordinate row/column bound.  At every
+  `q~c sqrt b`, the endpoint CSP has at least
+  `(Gamma_c+o(1))W_b` aggregate holes, while all clustered interior phases
+  have only `o(W_b)` occurrences; hence the complete one-copy clustered
+  `A^rB^(b-r)` product-factor bank still misses
+  `(Gamma_c-o(1))W_b` targets for every choice of factors, conjugations, and
+  origins.  It also extends the `b^(1/4)` cardinality barrier to arbitrary
+  one-to-one nonidentical blocks, proves full interval-coordinate
+  isomorphisms dihedral, and shows that `d_A,d_B` adjacent swaps retain at
+  least `[a_0+a_1-2d_A-2d_B]_+b` targets locally.  This is a no-go only for
+  the one-copy clustered geometry and `o(W_b)` repairs; changed schedules,
+  different factor/atom geometries, and linear-scale rerouting remain open.
+  Its H100 audit script has SHA
+  `8d2ef3a9a3d149db3c8ae392357457d9142237c777d9d84ba520138afb803b14`.
+
+- [MATH_THEOREM_CONSTANT_SIDE_CHAIN_FRACTIONAL_AND_SCD_SUPPORT_20260821.md](MATH_THEOREM_CONSTANT_SIDE_CHAIN_FRACTIONAL_AND_SCD_SUPPORT_20260821.md),
+  H100 SHA `f996eafe69309583cf15ca04b4b048846aa1ed12170c4a132e96c0860dea3dd1`,
+  proves exact simultaneous fractional all-`A`/all-`B` full-chain loads,
+  cap-faithful endpoint marginals with aggregate
+  `O(W_b b^(-1/4)log^(7/4)b)=o(W_b)` deficit, and an exact wider-side
+  product-SCD assignment covering every central target at every offset.
+  The integral theorem is an unrestricted Boolean-chain cover; it does not
+  realize physical origin caps, cyclic-factor orders, internally simple
+  atoms, or serialization.  Its H100 audit script has SHA
+  `be15334658e903dc125899b935dbb6535c1b16cbec57f7ae79b6a9990d3976f7`;
+  the finite `b=3,5,7` MILP script has SHA
+  `fb6476615e9f14ae13cb7de399cb30e7398c836605a8c7f2e52941dd8c4b7434`.
+
+- [MATH_THEOREM_AFFINE_NESTED_BALANCED_SCHEDULE_PROFILE_CAPACITY_20260821.md](MATH_THEOREM_AFFINE_NESTED_BALANCED_SCHEDULE_PROFILE_CAPACITY_20260821.md),
+  H100 SHA `6b2f22fdc9e18bbcf746cb18c35658e8b50857973c25fd346501659536032b82`,
+  gives an explicit nested affine type schedule with exact phase injection,
+  at most `q` phase holes per profile, aggregate scalar deficit
+  `O(W_b b^(-1/4)log^(3/4)b)=o(W_b)`, and physically legal internally
+  simple central atoms.  The physical count is conditional on the requisite
+  local tight-cycle factors, and the theorem assigns no distinct labelled
+  targets across order pairs.  Its H100 audit script has SHA
+  `7911877ed2fc7c84e2729a3b89ca2fc4944823fe2758d698e7cfcc4b63f3239c`.
+
+- [MATH_OBSTRUCTION_AFFINE_BALANCED_FACTOR_ROW_LOAD_AND_SCD_DIAGONAL_20260821.md](MATH_OBSTRUCTION_AFFINE_BALANCED_FACTOR_ROW_LOAD_AND_SCD_DIAGONAL_20260821.md),
+  H100 SHA `821362005b652549de6866e35b78b5508fca0b282d59312238533ea6d18add03`,
+  computes exact labelled factor-row means, variances, and absence bounds.
+  At `q~c sqrt b`, the affine schedule's one or two independently conjugated
+  dominant banks leave `\Omega_c(W_b)` labelled misses.  It also proves that
+  every complete cover on the fixed product-SCD trajectories is
+  `(1/4-o(1))W_b` from a physical row-regular marking.  This is a Hamming
+  compilation barrier, not an equal target-deficit theorem; correlated
+  banks and different trajectories remain open.  Its H100 audit script has
+  SHA
+  `bbfce61fc45c1a9b381575521dbac5a32495da96f042a6109c9984eef994c6d4`.
+
+- [MATH_OBSTRUCTION_RANDOM_NESTED_SCHEDULE_MEAN_ONE_COUPON_20260821.md](MATH_OBSTRUCTION_RANDOM_NESTED_SCHEDULE_MEAN_ONE_COUPON_20260821.md),
+  H100 SHA `7b704d219ae8d863a3c401fab4099233d652355aa064a2a7e0f70ea4efa8c3e6`,
+  proves that a uniform nested schedule spreads every central source coupon
+  to `o(1)` but leaves total target mean at most one.  Under mutually
+  independent rank-and-side conjugations, at least an
+  `(e^(-1)-o(1))` target fraction remains uncovered throughout
+  `q->infinity`, `q=o(sqrt(b/log b))`.  This does not obstruct a correlated
+  multirank factor bank or deliberate anti-alignment.  Its H100 audit script
+  has SHA
+  `1a07cdae5778c1948d4bc2b19118fa8eca3b3edc64a2dc33fd3df001be1c895c`.
+
+- [MATH_THEOREM_AFFINE_FULL_CHAIN_LOADS_RETIREMENT_LP_AND_MATCHING_OBSTRUCTION_20260821.md](MATH_THEOREM_AFFINE_FULL_CHAIN_LOADS_RETIREMENT_LP_AND_MATCHING_OBSTRUCTION_20260821.md),
+  H100 SHA `df6b7a56a30636d6d1b7de582a21cc84937606bde43f1616772821efcc60f82f`,
+  proves that the raw affine whole-chain orbit has exact target loads
+  `T_(q,s)/P_(q,s)` and explicit pair loads, while every ordinary full-band
+  matching has aggregate deficit `\Omega(sqrt(b)W_b)`.  It formulates the
+  exact phase-preserving retirement LP and dual and lifts every feasible
+  point to a labelled fractional retired-chain matching with maximum pair
+  load `O(1/b)`.  The next theorem closes the asymptotic retirement optimum,
+  and the later alternating-GK theorem closes abstract growing-rank integral
+  rounding.  Physical factor-order/product-atom lift remains open.
+  Its H100 audit script has SHA
+  `853638b0bc8f2a4902575fab50f83197fb61cc5cc53d08f62871d67788f072ea`.
+
+- [MATH_THEOREM_HALFSTEP_PERSISTENT_ALTERNATING_RETIREMENT_20260821.md](MATH_THEOREM_HALFSTEP_PERSISTENT_ALTERNATING_RETIREMENT_20260821.md),
+  H100 SHA `c7a253de6765ee096b0a5c76bd1946f272209e5c14c457f1c139957059a47069`,
+  constructs the exact two-orientation Boolean flow on persistent alternating
+  half-step phases, clamps it to literal phase capacities, and proves
+  `mathfrak D_ret=o(W_b)` for `H=O(sqrt(b log b))` with the explicit finite
+  bound (3.13).  Its exact labelled retired-chain lift has real-target
+  incidence `sum_(q<=H)M_q-o(W_b)` and maximum pair load `O(1/b)`.  This
+  closes the shared-offset scalar and labelled fractional retirement gates,
+  not integral growing-rank matching or common factor/order/atom
+  coinstantiation.  Its H100 audit script has SHA
+  `0d96e06cbbf715088e19ca59a6120219b55eaed0fa66ecf4b0eb2790f420a0f6`.
+
+- [MATH_OBSTRUCTION_RETIRED_CHAIN_LOCAL_LOADS_AND_PAIR_CODEGREES_20260821.md](MATH_OBSTRUCTION_RETIRED_CHAIN_LOCAL_LOADS_AND_PAIR_CODEGREES_20260821.md),
+  H100 SHA `4c33c7b4958230c26d68f34b330d3d46fb1d9e2c7de2395a3571857d6925f186`,
+  constructs an abstract graded retired-chain hypergraph with exact target
+  layer sizes `M_q`, an exactly target-saturating fractional matching,
+  maximum vertex load one, and pair load at most `2/b`, while every integral
+  matching loses `Omega(sqrt(b)W_b)` target incidences.  This rules out any
+  rounding theorem based only on those local statistics and the partite
+  chain format.  It is not a counterexample to the affine Boolean-chain
+  hypergraph, whose orbit and containment structure are absent.  Its H100
+  audit script has SHA
+  `30194c4b9effcb3afc9cb3b99136e0f285521a8ecca21ab367c1af269604141f`.
+
+- [MATH_THEOREM_BOOLEAN_ALTERNATING_GK_INTEGRAL_RETIREMENT_20260821.md](MATH_THEOREM_BOOLEAN_ALTERNATING_GK_INTEGRAL_RETIREMENT_20260821.md),
+  H100 SHA `ec05b81a0748f0a25e61b2ab2c71a58f8097791d7fec9094504fff26eee25103`,
+  proves that the Greene--Kleitman SCD in the interleaved coordinate order
+  has exactly alternating upper edges, derives the split-refined chain-top
+  and parity-tail formulas, and selects longest-top chains within each
+  persistent half-step phase capacity.  It gives an integral
+  occurrence-token/source/labelled-target retired-chain matching with target
+  incidence `sum_(q<=H)M_q-o(W_b)` for `H=O(sqrt(b log b))`.  This closes
+  abstract growing-rank rounding using global Boolean structure, but does not
+  coinstantiate full product-atom translation orbits or common cyclic
+  tight-factor orders.  Its H100 audit script has SHA
+  `6d832d17a2b02177b73b69f55c5a4a5fe0a12b60d82031aaa63b7a6b60eb0087`.
+
+- [MATH_OBSTRUCTION_ALTERNATING_GK_DIRECT_FIFO_SUCCESSOR_20260821.md](MATH_OBSTRUCTION_ALTERNATING_GK_DIRECT_FIFO_SUCCESSOR_20260821.md),
+  H100 SHA `de4dcd0be7632abdfad58ac72cfd1ebba54a63e2007e3c1a06f0934fb4e1dd6c`,
+  proves that the first GK addition in one fixed alternating linear order is
+  always below the current source maximum.  Under direct FIFO updating that
+  maximum drops strictly every `b` steps, so every run stops within `b^2`
+  updates and there is no directed cycle.  The result blocks only canonical
+  first-successor serialization, not product translations, atom-dependent
+  conjugations, or a different successor map.  Its H100 audit script has SHA
+  `c63ec093855b4a1c69d33fd66e03c0ca3c3c0f16367ce6432b91627f2da86c98`.
+
+- [MATH_THEOREM_POLYLOG_FACTOR_MENU_RESIDUAL_HITTING_SELECTOR_GATE_20260821.md](MATH_THEOREM_POLYLOG_FACTOR_MENU_RESIDUAL_HITTING_SELECTOR_GATE_20260821.md),
+  H100 SHA `6fdf33134e0f68e8db74d341f989e7a87e95cbc22f84d2b3e481ccd42ffd52fa`,
+  gives an exact fixed-layer sourcewise selector criterion.  If each of
+  `K` independent fresh banks has `\eta`-residual hitting, greedy selection
+  leaves expected fraction at most
+  `min((1+\eta K)^(-1),exp(-\eta\delta K))`; a uniform same-target pair
+  bound implies `\eta=(1+CB)^(-1)`.  Conversely, a
+  containment-respecting covering map can have exact uniform-neighbor
+  marginals and correct target mean yet image fraction
+  `O((log W)/binom(b,q))`, so a polylogarithmic menu may match only
+  `o(M_q)` targets.  The corrected nontransitive necessary audit is the
+  averaged union-support condition, not a transitivity shortcut.  Residual
+  hitting is unproved for physical factor banks, and a sourcewise matching
+  may choose different banks inside one indivisible atom; atomwise
+  coinstantiation and `K`-free serialization remain open.  Its H100 audit
+  script has SHA
+  `6008679ab0cb505755d7431bb501e6ca90e9874a2e118667ff28767ba9619881`.
+
+## 2026-08-22: exact adaptive boundary and corrected all-depth gate
+
+- [MATH_THEOREM_PUNCTURED_INDEPENDENT_RESIDUAL_HIGH_MOMENTS_20260822.md](MATH_THEOREM_PUNCTURED_INDEPENDENT_RESIDUAL_HIGH_MOMENTS_20260822.md),
+  SHA `5679873d53a34cb030a0c69c9ffedf047cbfa9bca32ca1eb08558af262efae6b`,
+  proves every fixed even centered moment of a rooted independent-residual
+  degree, the sixth-moment aggregate bad-incidence purge, global edge-count
+  concentration, and the exact deterministic cap-trimming recurrence.  It
+  closes independent product checkpoints, not the adaptive history.
+
+- [MATH_THEOREM_PUNCTURED_FIXED_SLICE_HIGH_MOMENTS_AND_STOPPED_PALM_REDUCTION_20260822.md](MATH_THEOREM_PUNCTURED_FIXED_SLICE_HIGH_MOMENTS_AND_STOPPED_PALM_REDUCTION_20260822.md),
+  SHA `c5b4384d4e9747c4f532177a23d1448a1ff095730793aa0c54ba9baa484ca178`,
+  de-Poissonizes those moments to every exact two-shore slice with
+  exponentially small error, optimizes the sixth-moment comparison budget,
+  proves the stopped incidence-Palm identity and exact isolated-mark kernel,
+  and proves that full-state slice comparison costs `exp(Omega(r^2))`.
+  Gate A is reduced to one local stopped shape-bias comparison.
+
+- [MATH_THEOREM_ROOTED_CONFLICT_EXPOSURE_DRIFT_AND_MICROBITE_HIERARCHY_20260822.md](MATH_THEOREM_ROOTED_CONFLICT_EXPOSURE_DRIFT_AND_MICROBITE_HIERARCHY_20260822.md),
+  SHA `3dd0833d55be634149c54d8922d4bfe55860a65258f34d24af7b15b8a0937081`,
+  proves the exact rooted normalized-degree drift and its factorial
+  microbite hierarchy through order six, reducing the aggregate purge to
+  six shorewise conflict-union exposure sums.  A regular
+  Fano-plus-`K_4^(3)` example shows that the degree cap alone can jump from
+  ratio one to two in one bite.  The punctured initial exposures vanish by
+  transitivity; their adaptive preservation remains open.
+
+- [MATH_THEOREM_CONFLICT_UNION_EXPOSURE_COMPRESSION_AND_INITIAL_COLLISION_20260822.md](MATH_THEOREM_CONFLICT_UNION_EXPOSURE_COMPRESSION_AND_INITIAL_COLLISION_20260822.md),
+  SHA `43291b67083914bb0c4d773404e9707dee1052d9fc2038f4f26d34b53c913dd8`,
+  rewrites every factorial union exposure through the external conflict-star
+  occupancies `a_G(v)` and bounds its Bonferroni collision defect.  The exact
+  punctured pair profile makes that defect `O_ell(1/r)` initially.  The
+  smaller adaptive interface is preservation of weighted first exposures
+  plus a current-scale external-row cap; the initial absolute cap alone does
+  not persist automatically.
+
+- [MATH_THEOREM_GATE_B_CAPACITY_THRESHOLD_AND_WEIGHTED_FIFO_SEAM_20260822.md](MATH_THEOREM_GATE_B_CAPACITY_THRESHOLD_AND_WEIGHTED_FIFO_SEAM_20260822.md),
+  SHA `d97b76162aa9d05ced8fc431452af90d11afca1ad3c4d46a5a9b5713773542aa`,
+  proves that a punctured bank with residual density `x` can have
+  Gaussian-band aggregate holes `o(A)` only when `x=o(r^(-1/3))`.  Thus the
+  current stopped descent cannot feed Gate B without a critical cover-down.
+  It also proves the exact multiplicity-weighted FIFO seam ledger and an
+  `O(BN^2)` interval dynamic program for its minimum physical cut cost.
+
+- [MATH_REDUCTION_PUNCTURED_COVERDOWN_HOLE_ENRICHMENT_FLAG_ARCS_AND_SPECTRAL_CONE_20260822.md](MATH_REDUCTION_PUNCTURED_COVERDOWN_HOLE_ENRICHMENT_FLAG_ARCS_AND_SPECTRAL_CONE_20260822.md),
+  SHA `8497067c015b8420afda536ec828d1eafff4a472a41e01c792855251bc966bd6`,
+  proves the necessary `Omega(1/x)` joint hole-flag enrichment, the exact
+  positive fractional row-cover dual, and independent logarithmic rounding
+  to `o(Cat_r)` physical rows with `o(A)` damage.  It also gives equivalent
+  residual-biased-sampler and external-degree-floor inputs and a weaker
+  long-flag-arc promotion interface.  The positive residual correlation is
+  open, but no BK or integral wreath rounding theorem is required afterward.
+
+- [MATH_THEOREM_SATURATING_RAINBOW_FIFO_RECUT_CRITERION_20260822.md](MATH_THEOREM_SATURATING_RAINBOW_FIFO_RECUT_CRITERION_20260822.md),
+  SHA `b621b107608bdd4bfbb58fa06a981d9520f8007b563360701494cfa8aa1c43cf`,
+  gives the exact phase-port criterion for completing a Johnson arc to a
+  FIFO row, the interval-transversal characterization of a `Cat_m`-row
+  recut, and the literal consecutive-shadow ledger.  Rainbow saturation
+  alone does not imply either required statistic.
+
+- [MATH_THEOREM_ALL_SPLIT_PRODUCT_ATOM_REGULARITY_AND_BOUNDARY_PROFILE_20260822.md](MATH_THEOREM_ALL_SPLIT_PRODUCT_ATOM_REGULARITY_AND_BOUNDARY_PROFILE_20260822.md),
+  SHA `a36b7ad58d95c31f2369a156cbe605c89d8ad861071ff888b16ca376464c86fe`,
+  constructs the all-split `b^2`-target torus atoms, proves degree `(b!)^2`,
+  the complete Johnson-distance codegree profile and exact uniform
+  fractional perfect matching, and supplies a legal linear connector.
+  Integral near-packing remains open.
+
+- [MATH_THEOREM_ALL_SPLIT_TORUS_FRAGMENT_PROFILE_AND_NIBBLE_SCALE_OBSTRUCTION_20260822.md](MATH_THEOREM_ALL_SPLIT_TORUS_FRAGMENT_PROFILE_AND_NIBBLE_SCALE_OBSTRUCTION_20260822.md),
+  SHA `daea81ed37c894f8dcfc4ff05b5370952df7f18cc7e91c618cb9fa90881d8c87`,
+  proves the phase-refined fragment degree/codegree profile and the exact
+  seam-compatible scale window, then shows that every pure independently
+  thinned fragment residual becomes edge-empty after only `o(1)` covered
+  mass.  A globally coordinated packing is still possible in principle.
+
+- [MATH_RESEARCH_GATE_C_FIXED_SPLIT_CROSSING_AND_INTEGRALITY_BARRIERS_20260822.md](MATH_RESEARCH_GATE_C_FIXED_SPLIT_CROSSING_AND_INTEGRALITY_BARRIERS_20260822.md),
+  SHA `91582671a4b3b602bdc28d93f8253d2b283e0aa5b72ba9a63840bf1094830351`,
+  proves that every all-split atom crosses every fixed two-slice central
+  band in at least `2b` vertices, so a complete fixed-band factor (if one is
+  constructed) is already maximal.  For prime `b` it also proves that a
+  perfect atom factor is impossible and that exactly two holes must be
+  complementary.  These are coordination and residue constraints, not an
+  obstruction to a near-factor; the exact middle wreath factor remains
+  conditional/open.
+
+- [MATH_THEOREM_GATE_C_ONE_TO_TWO_PRODUCT_ATOM_ABSORBER_20260822.md](MATH_THEOREM_GATE_C_ONE_TO_TWO_PRODUCT_ATOM_ABSORBER_20260822.md),
+  SHA `8c4267a8e37d15aac15a25e3cd485a96f5d83c9f4812845b27786db178140642`,
+  constructs a monotone `1->2` product-atom switch absorbing one structured
+  `b^2`-target packet, a complement-safe doubled switch, and a disjoint
+  symmetric binary atlas of capacity `Omega(W/b^2)`.  It reduces global
+  absorption to balanced-margin packet tiling plus trigger-to-packet Hall
+  expansion.  An exact opposite-shell census shows that the packet orbit is
+  not itself a pure-nibble near-factor theorem; an explicit five-packet
+  factor at `b=7` is finite positive evidence only.
+
+- [MATH_THEOREM_GATE_C_FIXED_BAND_CONTAINMENT_RIGIDITY_20260822.md](MATH_THEOREM_GATE_C_FIXED_BAND_CONTAINMENT_RIGIDITY_20260822.md),
+  SHA `01fdd663184df7301e20544fbdf253d7fcd29fd593ccafe6f195d4dd9fe9bfdc`,
+  proves that a product atom is wholly contained in a fixed central
+  two-slice band exactly when it uses that band's unordered split.  Hence no
+  exact coverage-preserving trade supported inside a completed band can move
+  across splits: every useful cross-split absorber must cover outside-band
+  holes while releasing equal inside-band volume.
+
+- [MATH_THEOREM_GATE_C_CROSS_SPLIT_PACKET_TRANSPORTER_20260822.md](MATH_THEOREM_GATE_C_CROSS_SPLIT_PACKET_TRANSPORTER_20260822.md),
+  SHA `e05172c882771c0926c6237b82b878b65fc074c8151c025536fd0ced38b0b602`,
+  constructs a genuine cross-split `3<->3` atom trade by toggling two
+  disjoint copies of the one-to-two absorber in opposite directions.  The
+  trade moves exactly one structured `b^2`-hole packet between splits and
+  supplies the boundary-changing local motion forced by rigidity.  Global
+  packet tiling and disjoint routing to absorber triggers remain open.  Its
+  complement-doubled `6<->6` form transports complement-closed packets and
+  preserves the coordinate-residue balance.
+
+- [MATH_THEOREM_GATE_C_PACKET_DOMAIN_GRAPH_DENSITY_AND_ROUTING_20260822.md](MATH_THEOREM_GATE_C_PACKET_DOMAIN_GRAPH_DENSITY_AND_ROUTING_20260822.md),
+  SHA `c9777ddfbda3872f023dd7b6ff29a6061028fa3284ad2c3a4bdff7ae150f2b9c`,
+  proves that the labelled absorber-domain disjointness graph has diameter
+  two, with explicit common-hub bounds, and that transporter swaps generate
+  every binary hole-state permutation inside a disjoint atlas.  It gives the
+  exact support-compatible Hall criterion for routing external packets to
+  absorber ports and isolates the remaining simultaneous support-packing
+  problem.
+
+- [MATH_THEOREM_EXTERNAL_WINDOW_REGULARITY_AND_SURVIVOR_CATALOGUE_NO_GO_20260822.md](MATH_THEOREM_EXTERNAL_WINDOW_REGULARITY_AND_SURVIVOR_CATALOGUE_NO_GO_20260822.md),
+  SHA `a154213fcfb09585e16a2119546ca2acd40e3d368a57ed15e4f4a4b360980909`,
+  extends the rooted boundary-polymer estimate to every shallow external
+  window through `q<=sqrt(r)/4`, proving product and exact-slice external
+  degree concentration.  It then proves that the complete surviving
+  labelled or physical catalogue cannot meet the critical cover-down floor,
+  even for residual-dependent holes.  A stopped-hazard theorem shows that
+  an all-target external cap would force `Omega(A)` holes, so the missing
+  input must be a history-induced hole/high-degree alignment, a hole-biased
+  subcatalogue, or a long-flag-arc tail.
+
+- [MATH_THEOREM_GATE_A_ONE_STEP_LAG_EROSION_ABSORPTION_20260822.md](MATH_THEOREM_GATE_A_ONE_STEP_LAG_EROSION_ABSORPTION_20260822.md),
+  SHA `d61346a3932727273c6500a621342991c0f9ccc3138bce8fad5e682ffb75ae13`,
+  proves that covariance created only by sorting surviving carriers into
+  child degree buckets is a bounded multiple of the preceding favorable
+  erosion and telescopes away on carrier-history space.  Gate A therefore
+  needs ancestor-row predictable-rate regression and aggregate
+  actual/reference erosion, not a separate child-column theorem.
+
+- [MATH_THEOREM_GATE_A_CARRIER_HAZARD_BOUNDARY_CONDUCTANCE_20260822.md](MATH_THEOREM_GATE_A_CARRIER_HAZARD_BOUNDARY_CONDUCTANCE_20260822.md),
+  SHA `b888b3db045d63ef023bf93f11c67d5c31b4121d1f4b7eef74cf20690a1e8395`,
+  proves the exact and finite-bite evolution of a carrier hazard through
+  its conflict-boundary conductance.  For an old bucket the decrement is
+  `kappa_d=tau_d+Var(h|d)`, with exact two-blocker formulas; a conflict-matrix
+  compression reduces `tau_d` to centered conflict-degree exposure and a
+  length-three walk energy.  Predictable state mixing remains open.
+
+- [MATH_REDUCTION_GATE_B_ZERO_AVOIDANCE_SIXTEEN_LOCAL_ATOMS_20260822.md](MATH_REDUCTION_GATE_B_ZERO_AVOIDANCE_SIXTEEN_LOCAL_ATOMS_20260822.md),
+  SHA `bfe167069665a142d520387daf465942d44d48962113991e0215ccce707192fa`,
+  identifies the complete leading zero-avoidance boundary bank: ten
+  matching atoms and six positive path-corrected atoms.  The bank obeys the
+  exact three-profile identity and has residual at least `1/(3b)`; the
+  remaining full-exposure scalar is matrix-valued stability against the
+  `O(D_M/r^2)` remote dressing.
+
+- [MATH_OBSTRUCTION_GATE_B_J2_LOCAL_SCALE_AND_FIVE_VERTEX_BANK_20260822.md](MATH_OBSTRUCTION_GATE_B_J2_LOCAL_SCALE_AND_FIVE_VERTEX_BANK_20260822.md),
+  SHA `636671d28385d5f45fac299ab9f7ca48dbd4c01d7685e76883cfff40b3ae6564`,
+  gives exact rational `j=2` boundary rows for the sixteen-atom bank,
+  factors their positive determinant and proves its two-row singular scale
+  is `(9/(2sqrt(2))+o(1))D_M/r^5`.  It shows why the existing absolute
+  `O(D_M/r^2)` remainder is not a relative perturbation theorem, and
+  classifies the complete next layer as 190 five-vertex terms, for 212
+  terms on 104 vertex sets through size five.  Full harmonic resummation
+  and the `j>=3` regimes remain open.
+
+- [MATH_THEOREM_GATE_B_J3_TWO_ROW_MINOR_AND_FULL_PROFILE_GATE_20260822.md](MATH_THEOREM_GATE_B_J3_TWO_ROW_MINOR_AND_FULL_PROFILE_GATE_20260822.md),
+  SHA `d4c06afc1fe7a2c041485712b87116b98113db564ead5eac1a5121798d29a376`,
+  gives all four exact rational rows of the fixed-`j=3` `t=0,ell` local
+  minor, factors its determinant, and proves its least singular value is
+  `(147/2+o(1))/r^5`.  Thus that minor does not improve the `j=2` scale.
+  Two larger puncture rows suggest a full-profile `Theta(r^-4)` scale, but
+  a uniform factorial-tail asymptotic remains explicitly open; even that
+  scale would still require relative remote-polymer control.
+
+- [MATH_THEOREM_GATE_B_J3_FULL_PROFILE_FINITE_DIFFERENCE_20260822.md](MATH_THEOREM_GATE_B_J3_FULL_PROFILE_FINITE_DIFFERENCE_20260822.md),
+  SHA `178c679e2e7610de1bb9f6de485d6cae90fe814ae101ff841e8214fa0aa3ba89`,
+  closes the fixed-`j=3` full sixteen-atom conditioning problem without a
+  factorial-tail asymptotic.  The exact difference of the two large
+  puncture rows is rational; paired with the central row it has determinant
+  at least `2/(3r^8)`, giving normalized full-profile least singular value
+  at least `1/(1000r^4)`.  This is a fixed-depth local theorem: uniform
+  harmonic depth and shore-adapted relative control of the remote dressing
+  remain open.  The exact checker SHA is
+  `eadd91a5a77abcd73dda8ab19934c12f971628b21bcfecf60c72c31e2123d6d7`.
+
+- [MATH_THEOREM_GATE_B_UNIFORM_ALLJ_LOCAL_DEFECT_CONDITIONING_20260822.md](MATH_THEOREM_GATE_B_UNIFORM_ALLJ_LOCAL_DEFECT_CONDITIONING_20260822.md),
+  SHA `8a6ac590457ccd7c312cd5402959c2909dd4e061378784aabaa7c26483dbdd63`,
+  closes the conditioning of the full sixteen-atom local bank uniformly for
+  every `2<=j<=r-2`.  Two differences from the complete local row are each
+  exactly two omitted three-blocker path terms.  Their Hahn distributions
+  are a common quadratic plus endpoint defects, and the resulting exact
+  determinant has a parity-split positive-coefficient factorization.  This
+  gives normalized full-profile least singular value at least `r^-29`.
+  The remaining Gate-B input is shore-adapted relative control of the remote
+  dressing, or a direct full zero-avoidance determinant.  The exact checker
+  SHA is `5185c23f16dace0c5cdfceb69eb924fd5e59f74685bfcdaa5189423655411311`.
+
+- [MATH_THEOREM_GATE_C_ALL_PAIRING_COHERENT_TOUR_ORBIT_20260822.md](MATH_THEOREM_GATE_C_ALL_PAIRING_COHERENT_TOUR_ORBIT_20260822.md),
+  SHA `08d6ae6f5de72e7cb4b47070084a5b8e356d2d8b2bbae336ba8a0da2ac77c81d`,
+  constructs the all-pairing coherent FIFO-tour orbit, proves exact degree
+  `(b-1)(b!)^2`, the complete Johnson-distance census, sharp normalized
+  pair-codegree `~1/(2b)`, fractional middle/adjacent loads, and the seam
+  implication.  Growing uniformity prevents a black-box near-matching.
+
+- [MATH_OBSTRUCTION_GATE_C_GK_SCD_COHERENT_TOUR_20260822.md](MATH_OBSTRUCTION_GATE_C_GK_SCD_COHERENT_TOUR_20260822.md),
+  SHA `63f96f74c29bbd958ae06dcba7da0b9b23bf41794eec481d40299a84653d6a5a`,
+  proves that every coherent tour projects to parallel directed Hamilton
+  cycles while all ordered Greene--Kleitman flag arcs point backward in one
+  total order.  Hence the GK SCD contains no whole coherent tour, and a
+  repair covering `R` flags needs at least `R/(2b)` exceptions.  Arbitrary
+  non-GK symmetric-chain systems are not ruled out; the next theorem gives
+  a positive non-GK repair and isolates the stronger remaining lift.
+
+- [MATH_THEOREM_GATE_C_NON_GK_SCD_HAMILTON_FLAG_REPAIR_20260822.md](MATH_THEOREM_GATE_C_NON_GK_SCD_HAMILTON_FLAG_REPAIR_20260822.md),
+  SHA `1ce99d86c71358ee99bef2901e62578051116767d1264c165d03a1e4d367cbec`,
+  proves that the uniform central-flag weighting is both fractionally
+  SCD-realizable and Hamilton-arc-decomposable at the marginal level,
+  gives the exact simultaneous central-diamond switch criterion for an
+  arbitrary full SCD, and applies a Catalan switch bank to build a genuine
+  non-GK SCD with a rankwise-disjoint `(1/2+o(1))` Hamilton-projection
+  subsystem.  Two explicit coherent phase tours then agree with that SCD
+  on exactly `b(b-2)=q-b` flags each—one defect per packet—and their
+  retained systems are jointly rankwise-target-disjoint.  The relative
+  per-tour defect is `1/(b-1)=o(1)`, but the fixed Hamilton cycle has only
+  those two supports, covering `O(b^2)=o(N)` flags; packing exponentially
+  many high-overlap supports with FIFO middle geometry and extending their
+  deeper chain assignments remains the exact Gate-C obstruction.  The
+  theorem checker SHA is
+  `5068e9ea0e339dcd6a962a571e906bad3434de801809a397102438f7e7aee168`;
+  the independent finite overlap-spectrum checker SHA is
+  `a3a405defc7aa6a230b35adaee496ccba2b494468a180c79b47f43ef75b6ac87`.
+
+- [MATH_OBSTRUCTION_GATE_C_CYCLIC_MINIMUM_AND_ONE_ASCENT_SCARCITY_20260822.md](MATH_OBSTRUCTION_GATE_C_CYCLIC_MINIMUM_AND_ONE_ASCENT_SCARCITY_20260822.md),
+  SHA `5f77152c0193ea6147d5a1ba873921486e52743850ddca6bb4ccb42641d3cba0`,
+  gives the exact cyclic-Dyck/first-return membership test for every
+  coherent-tour flag in the Catalan-switched factor and an explicit
+  all-Hamilton-cycle phase template.  Every retained arc crosses coordinate
+  parity, so each same-parity Hamilton edge forces `h=(b-1)/2` missing
+  flags.  In the natural family `H_A=(0,A^down,(A^c)^down)`, every odd
+  internal run of the subset word forces such an edge.  An exact run-length
+  generating function proves that only `2^{b+O_C(log b)}` phase supports
+  have overlap at least `q-Cb`, exponentially below the required
+  `Theta(4^b/b^(5/2))` tours.  This rigorously kills the full one-ascent
+  route, but not general nearly parity-alternating cycles, of which there
+  are already `b!(b-1)!`.  Its checker SHA is
+  `1370d13f9fb385dd75c662b20c4af6530cb7321c756671a0a51eb69cbd7dec4b`.
+
+- [MATH_OBSTRUCTION_GATE_C_ONE_ASCENT_FULL_SUBLINEAR_SCARCITY_20260822.md](MATH_OBSTRUCTION_GATE_C_ONE_ASCENT_FULL_SUBLINEAR_SCARCITY_20260822.md),
+  SHA `4eb28533f98df3bfb35d15b0df0e20122e9a58e20281ef48569acf6976f32949`,
+  sharpens the preceding one-ascent count through the entire
+  coefficient-one-compatible defect range.  Exact coefficient extraction
+  restores the factorial lost in the crude `b^{O(K)}` bound:
+  the number with exactly `j` odd internal runs is, within a constant,
+  `2^{b-j/2} binom(b+j/2,j)`.  Uniformly for every `K=o(b)`, at most
+  `2^{b+o(b)}` phase supports can have loss `o(q)`, exponentially below
+  `N/q=Theta(4^b/b^(5/2))`.  At `K=c b/log b` the note gives the full
+  second-order exponent, still `b log 2+o(b)`.  Because actual factor
+  overlap implies the parity/odd-run condition, this closes the complete
+  one-ascent route even under nonuniform aggregate `o(N)` repair; exact
+  Dyck membership cannot rescue it.  Its checker SHA is
+  `1558e3a2c260727ab72a1b0cfa7826a29f4958f6e53c25e56985958d16561d3c`.
+
+- [MATH_OBSTRUCTION_GATE_C_PARITY_DEFECT_BANDWIDTH_20260822.md](MATH_OBSTRUCTION_GATE_C_PARITY_DEFECT_BANDWIDTH_20260822.md),
+  SHA `4568f53c80d12a26839dc0c9b316dbf5ae736304f542843f2c4303cbd2739f12`,
+  proves a universal obstruction for the fixed Catalan-switched factor.
+  If a coherent phase support misses at most `L` of its `q=b(b-1)` flags,
+  then its Hamilton cycle has at most `floor(L/h)` same-parity edges and
+  every middle lies in only `O(1+L/b)` parity-split layers.  Consequently,
+  all tours with loss `O(b)` together cover only `O(N/sqrt(b))=o(N)`
+  factor flags, regardless of their number or codegrees; fixed-fraction
+  coverage under a common loss cap requires
+  `L >= (alpha*sqrt(pi)/4+o(1)) b^(3/2)`.  The note also gives the exact
+  alternating-cycle parameterization, its two accessible layers, orbit
+  flag degrees, and first moment.  This kills the entire `q-O(b)`
+  fixed-factor target but not coefficient one, since `b^(3/2)=o(q)`;
+  the surviving frontier is a matched wider-band construction at a
+  mesoscopic loss scale.  Its checker SHA is
+  `3f09a6e1183772fe971bf9cf0eae5ed4b97331b0c36245d129e6fb543df2ee11`.
+
+- [MATH_REDUCTION_GATE_C_MESOSCOPIC_PARITY_STAIRCASE_20260822.md](MATH_REDUCTION_GATE_C_MESOSCOPIC_PARITY_STAIRCASE_20260822.md),
+  SHA `f80794bd80c97f9ccba5761778d4fa217f7652d523b9175d0e7c261741a9f21a`,
+  certifies the surviving coefficient-one scale: a parity band
+  `K=a_b sqrt(b)`, with `a_b->infinity` and `a_b=o(sqrt(b))`, misses
+  only `o(N)` middles, while `N/q` tours with `O(bK)` defect incur only
+  `o(N)` aggregate repair.  It constructs an exact antipodal staircase
+  parity word with `4j` same-parity edges whose coherent windows reach
+  every split layer `|2a-b|<=2j+1`, gives the full endpoint census and
+  exact labelled-orbit flag degrees, and builds a nonnegative marginal
+  fractional cover of every complete flag in the band using odd-indexed
+  staircase atoms.  The same theorem isolates the normalization failure:
+  a uniformly coordinate-labelled phase hits any fixed central factor
+  only `O(1)` times on average, so every such orbit mixture needs
+  `Omega(N)` support mass rather than `Theta(N/q)`.  The remaining step is
+  factor-adapted selection of rare high-overlap labellings and integral
+  rankwise packing.  Its checker SHA is
+  `f133bcb97982684d2df763f74365129fdd0ddbfc1850190e12d7c01c384cfff1`.
+
+- [MATH_THEOREM_GATE_C_ANTIPODAL_SWAP_FACTOR_ADAPTED_TOUR_20260822.md](MATH_THEOREM_GATE_C_ANTIPODAL_SWAP_FACTOR_ADAPTED_TOUR_20260822.md),
+  SHA `beea2a63ec579bd0b66944f6809471b4c686b45eeb7b6fd57a3167b551c1636a`,
+  gives the first explicit factor-adapted coherent tours at the exhaustive
+  mesoscopic parity-band scale.  Starting from the descending tour, it
+  swaps `j` spaced antipodal label pairs and proves that both phases have
+  exact loss `(4j+1)b-9j+2`, with a one-unit endpoint correction when
+  `4j=b-1`.  Hence every `j=o(b)` retains `q-O(bj)=(1-o(1))q` flags of
+  the fixed genuine Catalan-switched factor; taking
+  `j=a_b sqrt(b)` reaches a `1-o(1)` middle band with affordable aggregate
+  repair.  The proof is a self-contained canonical-interval reduction,
+  primitive-Dyck prefix-height criterion, and complete residue census.
+  This closes factor-adapted existence but not multiplicity: the evident
+  sparse-swap variants number only `exp(o(b))`, versus the required
+  `Theta(4^b/b^(5/2))`.  Its checker SHA is
+  `93c5451686f3d7fc7e6cdc5db11b4cf9ea1e06802d5babcceba872974345a12b`.
+
+- [MATH_REDUCTION_GATE_C_GENERAL_ANTIPODAL_WREATH_PREFIX_ENTROPY_20260822.md](MATH_REDUCTION_GATE_C_GENERAL_ANTIPODAL_WREATH_PREFIX_ENTROPY_20260822.md),
+  SHA `8225b8a01db657f1e3be77d845076cde2035dc0e235e3e82e1b2fc0be64d450b`,
+  enlarges the sparse-swap construction to every signed antipodal
+  permutation and gives an exact prefix-height test for every coherent
+  flag and both phases.  High overlap forces the parity-corrected
+  orientation word to have `o(b)` transitions, so signs contribute only
+  `exp(o(b))` choices.  If the residue permutation has `K` cyclic
+  successor breaks, the descending-block family has sharp leading entropy
+  `K log b`: it is too small for `K=o(b/log b)`, while at
+  `K=c b/log b` it has size `exp((c+o(1))b)` and crosses the candidate
+  supply threshold exactly at `c=log 4`.  This identifies the first
+  entropy-viable coefficient-one regime but does not prove that arbitrary
+  block orders pass `q-O(bK)` of the factor prefix tests; that analytic
+  count is now the live multiplicity gate.  Its checker SHA is
+  `9aa8bd8f49576dc402c2e9093e42b52f95c0b80b1accb3f12fd243c8ed8f8338`.
+
+- [MATH_OBSTRUCTION_GATE_C_ORDERED_GK_DIAMOND_FIXED_CUT_20260822.md](MATH_OBSTRUCTION_GATE_C_ORDERED_GK_DIAMOND_FIXED_CUT_20260822.md),
+  SHA `48a2cccb69b845748331f41480c4799f65f357c3ca7a5c090a313dc11281def9`,
+  lifts the parity-bandwidth obstruction from the particular Catalan repair
+  to the entire construction class generated from one ordered
+  Greene--Kleitman SCD by arbitrary legal central Boolean-diamond switches.
+  Every such switch fixes `L,U`, merely reverses its arc, and preserves the
+  exact Catalan-convolution undirected multigraph across the alternating
+  positional cut.  Consequently every collection of `q-O(b)` high-overlap
+  coherent phases covers only `O(N/sqrt(b))=o(N)` factor flags.  More
+  sharply, any rankwise-disjoint `q-Cb` partial-tour packing covering
+  `alpha N` in a general central factor needs, relative to every balanced
+  cut, at least
+  `(alpha^2 sqrt(pi)/64+o(1))N/sqrt(b)` flags internal to each shore.
+  Thus the least possible escape at this loss scale is
+  `Omega(N/sqrt(b))` endpoint-changing outer-incidence surgery; the
+  fixed-factor `q-O(bK)` wide-band route remains viable once
+  `K=Theta(sqrt(b))`.  The exhaustive finite checker SHA is
+  `fd9b6956a119fb9e53caf14f7c599b4a0a72896a306b244e0174799a44d1e244`.
+
+- [MATH_REDUCTION_GATE_A_SEQUENTIAL_RANDOM_GREEDY_CLOCK_20260822.md](MATH_REDUCTION_GATE_A_SEQUENTIAL_RANDOM_GREEDY_CLOCK_20260822.md),
+  SHA `083d016fc3b4bcb147495d1cb5a3430f4b43ac59131c429b53e175ac69795a3c`,
+  replaces each parallel microbite by one uniform alive row and proves the
+  exact surviving-family decrement
+  `mu^+=mu-(E T+Var h)/(Z-mu)`.  More strongly, for normalized hazard
+  `s=h/Z`, its full future-denominator/survivor payoff differs pointwise
+  from `(1-s)s` by `O_m((Delta_C/Z)^2)`, even before mixing states; hence
+  the total future-rate error is exponentially small at punctured scale.
+  Exact edge/root/carrier martingales and brackets, the backward extension
+  martingale, and a literal adverse high-tail graph example are included.
+  The clock therefore reduces Gate A to the contemporaneous stopped
+  state-Palm regression `d -> E[h/Z | d]`; it does not refresh an already
+  adverse profile or transfer the parallel-law moment/purge ledger.  The
+  exhaustive finite checker SHA is
+  `b68ccffde9dbbca7cae2a8925911db75f636984281d2b0a533189db14bd17d2f`.
+
+- [MATH_REDUCTION_GATE_A_CONTEMPORANEOUS_NORMALIZED_EXPOSURE_20260822.md](MATH_REDUCTION_GATE_A_CONTEMPORANEOUS_NORMALIZED_EXPOSURE_20260822.md),
+  SHA `d10e69f6045b18def197c1ddfe57230daa27b2ce79d38726f737dc75ba5d1b18`,
+  removes the random current edge count from the unpurged sequential
+  ancestor regression by normalizing degree and hazard with the realized
+  shore average.  Its exact tail-tilt formula leaves only the normalized
+  companion/row-duplicate deficit `(R_v-J_v)/z` and the carrier duplicate
+  load; the degree and common `Theta(rz)` exposure terms cancel or have the
+  favorable sign.  A pointwise typed-pair theorem bounds the latter by
+  `O_m,K(r Lambda_H/z+r^2 Lambda_L/z)`.  The stopped tail-local companion
+  deficit, a summable current typed-codegree substitute, and the normalized
+  center transfer remain open.  A checked disjoint-union family proves that
+  vanishing global conflict/companion energies, pair-codegree one, and a
+  fixed degree cap do not force an `o(1)` or numerically adequate tail-local
+  loss.
+  The mixed-state and obstruction exact checker SHA is
+  `64c438e95e8a3ee40a2f4042d2126ec2029d02c8301e65eae7d3192782bbe268`.
+
+- [MATH_CORRECTION_GATE_A_SIGNED_REFERENCE_TAIL_CLUSTER_20260822.md](MATH_CORRECTION_GATE_A_SIGNED_REFERENCE_TAIL_CLUSTER_20260822.md),
+  SHA `46d1ab89c02e80ca08f81490a66b575733b07e899062798357b9de342faa7bf2`,
+  restores the signed duplicate shift in the normalized carrier-hazard
+  covariance and proves the fixed-labelled-carrier product-FKG term.  An
+  exact `r=3` uniform two-shore slice has positive `U` deficits on both
+  shores and absolute tilted duplicate loads `19--43`, but the negative
+  duplicate shifts and favorable degree shifts make the unsplit hazard
+  covariance favorable.  The tail concentrates on the single local orbit
+  where the missing middle and lower targets meet once.  Thus G.168's
+  absolute-`Q` relaxation is valid but not a faithful numerical interface;
+  the live theorem must retain the signed joint residual or whole avoidance
+  profile.  The exact rational checker SHA is
+  `740f50428f4dec18888278a1bb457f1bb4311edf25c30baebd4948bd754e41e6`.
+
+- [MATH_OBSTRUCTION_GATE_A_PUNCTURED_HAZARD_DEGREE_MONOTONICITY_20260822.md](MATH_OBSTRUCTION_GATE_A_PUNCTURED_HAZARD_DEGREE_MONOTONICITY_20260822.md),
+  SHA `de5ee6ffa9c4ffb3350fc92421a6a0f4b9249d3af83e49e7c3e977a3925126df`,
+  gives an exact punctured obstruction to the all-test monotone-regression
+  shortcut.  On the genuine `r=3` uniform two-shore slice obtained by
+  deleting one middle and one lower target, the state--root--ordered-
+  twelve-carrier Palm profile `zeta_sigma(d)=E[h_gamma/Z | d]` has an
+  adjacent downward step on each shore: `336 -> 360` in the middle and
+  `904 -> 912` in the lower.  The note gives reduced rational differences,
+  independent integer cross-products, and exact Palm masses.  It refutes
+  monotonicity for every degree test but not the specific normalized
+  twelfth-order tail covariance, which remains favorable on this slice,
+  nor an asymptotic tail-decorated theorem.  The exact checker SHA is
+  `1476dfbc1a8dc36d7fbeee9c800847803f1828131d8e6dfbe1d67d5f7e381421`.
+
+- [MATH_OBSTRUCTION_GATE_A_PRODUCT_PALM_M12_SIMPSON_20260822.md](MATH_OBSTRUCTION_GATE_A_PRODUCT_PALM_M12_SIMPSON_20260822.md),
+  SHA `43e75302afa35c377cc39116869dec2f2d4433b05d1121474cc6a92015ad4eaa`,
+  gives an exact non-punctured product-law counterexample at the literal
+  Gate-A carrier order `m=12`.  Every fixed labelled carrier has
+  nonnegative hazard/high-degree-tail covariance, but survival weighting
+  over carrier labels creates a negative Simpson term.  Fourteen external
+  rows per selected private carrier target make the full Palm covariance
+  negative; thirteen leave it positive.  The note derives the complete
+  carrier-type distributions and the affine rational covariance formula.
+  It rules out only an abstract mixture-of-FKG closure: a
+  directed-punctured signed-tail theorem may still exploit its boundary
+  geometry.  The exact checker SHA is
+  `b4b7670ce0b0c4184145ae4118642d5b0745f316429712586651409f7f6e4af7`.
+
+- [MATH_REDUCTION_GATE_A_PUNCTURED_PRODUCT_CONNECTED_CARRIER_CLUSTER_20260822.md](MATH_REDUCTION_GATE_A_PUNCTURED_PRODUCT_CONNECTED_CARRIER_CLUSTER_20260822.md),
+  SHA `59787c85ba51eddb28d79e7adf52f221953cdc3de57f656aa73a986809798f9f`,
+  removes every one-body Simpson contribution from the punctured product
+  reference law.  Row transitivity makes the conditional one-carrier
+  hazard exactly constant, both for a fixed root and after shore-root Palm
+  averaging.  The remaining signed statistic `Xi` has an exact subset-
+  activity expansion; after subtracting its constant root-only term,
+  every nonzero `Xi^circ` summand contains an off-root connected two-star
+  `F_i-G-F_j`.  The full Palm covariance is exactly the favorable
+  fixed-carrier FKG term plus `q0 Cov_pi(Xi^circ,P)`.  This isolates the
+  all-order tail-decorated boundary-polymer target but does not bound its
+  tail tilt, transfer it to exact slices, or transfer it to the stopped
+  law.  The exact exhaustive `r=2` checker SHA is
+  `9c39bcdc0d69a312fc7626a4c9477e80158a671458bb17449f211a204d1535f8`.
+
+- [MATH_REDUCTION_GATE_A_PUNCTURED_TAIL_MOBIUS_U_STATISTIC_20260822.md](MATH_REDUCTION_GATE_A_PUNCTURED_TAIL_MOBIUS_U_STATISTIC_20260822.md),
+  SHA `3bd95565eeb7bd9dcb55979351d824db408bfb36412eb796a3b3cf559d385fc8`,
+  expands the punctured connected correction exactly over carrier-index
+  subsets.  Its `s`-body kernel is supported only when one further
+  catalogue row meets all `s` carriers off-root.  Summing all unused
+  carrier extensions then removes the label mixture completely: the
+  adverse `m=12` term is the signed binomial sum of connected live-carrier
+  U-statistics compared under the factorial-Palm root tilt and the exact
+  high-tail root tilt.  The first unresolved object is the tail-decorated
+  `s=2` off-root star; no asymptotic bound or stopped/slice transfer is
+  claimed.  The exact rational `r=2` checker SHA is
+  `687d8e20b5c5ed7d43fc2b8da01d40d948260c92ea3a9fc3c3dbdf1479db070c`.
+
+- [MATH_REDUCTION_GATE_A_TWO_STAR_DIRECTIONAL_HOEFFDING_TAIL_RESPONSE_20260822.md](MATH_REDUCTION_GATE_A_TWO_STAR_DIRECTIONAL_HOEFFDING_TAIL_RESPONSE_20260822.md),
+  SHA `51252b5b151c6aec368667df716f92837118a8563118cc52fc305eac7bfe2455`,
+  splits the first `s=2` tail-decorated punctured kernel without assuming
+  false fixed-root transitivity.  Its weighted first projection is an
+  exact rooted-position profile on the `2r` flag orbits, and the remainder
+  is a directional product of a row-centered two-star kernel and a
+  row-centered conditional tail response.  At literal `m=12`, the
+  factorial-versus-tail difference is exactly the signed sum of these two
+  pieces.  The note records deterministic positional oscillation only as
+  a sufficient envelope and identifies the fully pair-connected second
+  piece; later evidence shows that the range envelope is likely too
+  strong.  It proves no asymptotic bound.  The complete-`r=2`, full-root-star rational
+  checker SHA is
+  `47f856d52fffe2a790d690a3b3a2e05e6b42826674920e95761dfdb013b41855`.
+
+- [MATH_REDUCTION_GATE_A_TWO_STAR_POSITION_WEIGHT_SIGNED_REGRESSION_20260822.md](MATH_REDUCTION_GATE_A_TWO_STAR_POSITION_WEIGHT_SIGNED_REGRESSION_20260822.md),
+  SHA `8ee04ad40011a346e27fa35a931b88e6e9c3c5d7fc702c29898a402e6b624e8f`,
+  replaces that range envelope by the exact signed object.  The `2r`
+  puncture positions carry factorial and cutoff-tail weights whose ratio
+  gives one finite likelihood covariance.  Inside each position, the
+  second-carrier factorial and tail laws give a second likelihood
+  covariance of the signed two-star kernel.  Their nested identity is the
+  complete `s=2` factorial-versus-tail difference, with no generic rare-
+  tail denominator or absolute split.  Exhaustive `r=3` and seeded
+  `r=4,5,6` evidence warns that the position-profile range itself need not
+  visibly shrink; this evidence is not a theorem.  The exact `r=2`,
+  literal-`m=12` rational checker SHA is
+  `80aa4f9582369304be5e6867a21fe1930bc2b28d43b5ad813547f697dd64ba4a`.
+
+- [MATH_REDUCTION_GATE_A_TWO_STAR_TWO_SHORE_OVERLAP_CELLS_20260822.md](MATH_REDUCTION_GATE_A_TWO_STAR_TWO_SHORE_OVERLAP_CELLS_20260822.md),
+  SHA `2c219c45d76633f1c5ae5c16446ae23c65cde175f3452b0cd854b958d7986655`,
+  recombines the rooted-position and within-position likelihood terms
+  into one exact ordered-pair covariance.  Partitioning that covariance
+  by the two-shore overlap vector fixes the carrier survival weight and
+  leaves a finite between-cell covariance plus an exact signed
+  within-cell determinant.  The latter has a tail-mass-relative
+  normalization with no absolute range.  Total overlap is not
+  weight-sufficient for unequal shore densities, while the two-shore
+  vector does not determine the conditional tail transform; exact
+  `r=2` certificates also rule out cellwise determinant positivity.
+  The self-contained rational checker SHA is
+  `419e389cdd7e980c77e12e941bc8a0958ab606d42e7215882e1bf3effd52cf79`.
+
+- [MATH_REDUCTION_GATE_A_FACTORIAL_PAIR_PALM_OFFROOT_DISJOINTNESS_20260822.md](MATH_REDUCTION_GATE_A_FACTORIAL_PAIR_PALM_OFFROOT_DISJOINTNESS_20260822.md),
+  SHA `df9d1baf182835fdd1f045b561993dc3099d6bfd17396436e69ce9025513f662`,
+  combines the rooted boundary-polymer overlap kernels with a sequential
+  arithmetic-geometric-mean summation over survival-weighted carrier
+  tuples.  For fixed order `m`, any specified pair of factorial-Palm
+  carriers has a nonroot common target with probability
+  `O_m((r x^3)^(-1)+(r^2 x^4)^(-1))` when
+  `alpha<1/(3(m-1))`; in particular the `m=12` factorial pair Palm is
+  concentrated on the off-root-disjoint cell for `alpha<1/33`.  The note
+  explicitly leaves open cutoff-tail leakage, kernel-weighted tail
+  uniform integrability, and the signed determinant inside the dominant
+  disjoint cell.
+
+- [MATH_REDUCTION_GATE_C_BLOCK_SHUFFLE_ROW_RIGIDITY_20260822.md](MATH_REDUCTION_GATE_C_BLOCK_SHUFFLE_ROW_RIGIDITY_20260822.md),
+  SHA `9b05cc8ae7356e0850125752403bb811d79927092320902a3e666c12069015a5`,
+  gives the exact deletion-deck statistic for every cyclic-predecessor
+  row of a signed antipodal labelling.  Deleting a middle coordinate is
+  factor-valid exactly when it occurs after the base walk's last proper
+  prefix of height at most two.  Consequently overlap `q-O(bK)`, with
+  `K=o(b)`, forces all but `o(b)` good rows to become positive, escape
+  above height two within `o(b)` steps, and never return.  This reduces
+  the entropy-viable block-shuffle route to a simultaneous early-escape
+  permutation count; it does not assert that enough such orders exist.
+  Its checker SHA is
+  `7d824fc4ff2eebec3e1c82148e18b0fd368676ad041ff160aaff262ad5bf5dcc`.
+
+- [MATH_THEOREM_GATE_C_LOCAL_DECK_ENTROPY_COMMON_CORE_20260822.md](MATH_THEOREM_GATE_C_LOCAL_DECK_ENTROPY_COMMON_CORE_20260822.md),
+  SHA `93a0433ea1b7899a86f1f4cfb753e55d06cbc9ad322ede2d677a42059305fdaf`,
+  proves both sides of the natural local-permutation construction.  A
+  parity-preserving permutation of `k` consecutive unused residue pairs
+  changes at most `k+1` staircase row decks, so every resulting phase has
+  loss `O(b(j+k))`; at `k=c b/log b` these rooted labellings have entropy
+  `exp((c+o(1))b)`.  However all of them share the same
+  `q-O(b(j+k))=q-o(q)` factor flags, so this factorial parameter family
+  has matching number one.  Packable Gate-C entropy must therefore alter
+  macroscopically many row decks.  Its checker SHA is
+  `e4c96afaa868138c686329ddd18bec58aa0e6c45885339727a29fc7c0a374c45`.
+
+- [MATH_REDUCTION_GATE_C_EQUAL_BLOCK_TWO_SIDED_BALLOT_RIGIDITY_20260822.md](MATH_REDUCTION_GATE_C_EQUAL_BLOCK_TWO_SIDED_BALLOT_RIGIDITY_20260822.md),
+  SHA `615091495a9a73d365f5ecca13252f14dd9c0ceaa8e5fb588f60701d4c33334f`,
+  gives an exact block-word formula for every interior row of an equal
+  odd-block antipodal shuffle.  A cyclic block cut is viable only when
+  its parity-displacement walk keeps every prefix between zero and its
+  terminal height; every failed cut annihilates all factor flags in at
+  least `ell-2` rows.  Thus phase loss `O(bK)` forces only
+  `O(K^2/b)` failed cuts, or `O(b/log^2 b)=o(K)` at the entropy threshold
+  `K=Theta(b/log b)`.  Conversely, `R` failed cuts still retain at least
+  `(K-R)(ell-3)(b-2)` factor flags, so `R=O(K^2/b)` is also sufficient
+  for loss `O(bK)`.  The live equal-block question is now the count and
+  incidence profile of cyclic block orders passing this two-sided ballot
+  test at almost every cut.  Its checker SHA is
+  `7a9616f53195d3fdaa76a39a1aac6f876f94b7695d1142cd60681c21f9711caa`.
+
+- [MATH_REDUCTION_GATE_C_SINGLE_ROOT_BALLOT_LAW_AND_MOMENT_GATE_20260822.md](MATH_REDUCTION_GATE_C_SINGLE_ROOT_BALLOT_LAW_AND_MOMENT_GATE_20260822.md),
+  SHA `1738b1d5e9553ae80da0d64c2bb9d01229425dbd6dcccf19e86c492eee4673ce`,
+  proves that a fixed cut of a uniform `K=2e+1` block order has a word
+  uniform on the `C(2e,e)` parity-balanced sign words and is two-sided
+  ballot with probability `O(1/K)`.  The extra square-root saving comes
+  from pairing signs into a cardinal-direction planar walk and jointly
+  bounding a meander with a fixed alternating sum.  It also isolates the
+  exact remaining entropy theorem: a bound
+  `E(G)_(K-R)<=C^K` for the number `G` of ballot cuts would give
+  `|B_(K,R)|<=C^K K^R=exp(O(K+R log K))`, which is subexponential in `b`
+  at the live scale.  Its checker SHA is
+  `bdcf5f5ea755e0529b331c614cec972d9b54f553dbc55bb09f98fb3aa8433c04`.
+
+- [MATH_REDUCTION_GATE_C_BLOCK_GAP_WINDING_COORDINATES_20260822.md](MATH_REDUCTION_GATE_C_BLOCK_GAP_WINDING_COORDINATES_20260822.md),
+  SHA `6bae2ba8a23a31aaf6373b0ffea0047cdda707a07732998adc10ebf11ac53d2a`,
+  rewrites the equal-block two-sided-ballot test in exact successive-value
+  gap coordinates.  If `sigma=tau^{-1}`, `d_a` is the clockwise position
+  gap from value `a` to `a+1`, `D_a(u)` is the lifted sum of `u` gaps, and
+  `E_a(u)` counts its even gaps, then the row sign is exactly
+  `(-1)^(E_a(u)+floor(D_a(u)/K))`.  A good cut forces both incident gaps
+  odd, so at most `R` gaps are even when only `R<K` cuts fail.  The block
+  count is therefore an explicit Hamiltonian positive-gap count with sparse
+  parity defects and simultaneous winding-ballot constraints.  This does
+  not yet prove its required subfactorial entropy bound.  The exact checker
+  SHA is `93cd5e2ef7eab08247724cdcdf3b6c5fb12a92d660845f907d161ed08d91ae68`.
+
+- [MATH_THEOREM_GATE_B_SHORE_DIFFERENCE_CURRENT_AND_REMOTE_CONE_20260822.md](MATH_THEOREM_GATE_B_SHORE_DIFFERENCE_CURRENT_AND_REMOTE_CONE_20260822.md),
+  SHA `5cc09a0b026b62f2c218a20b98dc96c261f3650753a883afa5d59d476b2c1e06`,
+  proves the exact pointwise coupling
+  `|K_r(w)-K_(r-1)(w)|<=2j`: paired middle/lower windows differ by one
+  label, and only the `2j` distinguished harmonic labels can change a
+  summand.  For every blocker set this improves the rooted-current factor
+  from `2r` to `2j` in the transverse shore direction.  Combined with the
+  boundary-codegree/polymer mass of the complete remote zero-avoidance
+  tail, it gives `|R_r-R_(r-1)|=O(jD_M/r^3)` while each shore is only known
+  to be `O(D_M/r^2)`.  Thus fixed-depth remote dressing lies in an
+  `O(1/r)` common-shore cone; a nonzero fully dressed rooted-core
+  determinant is still required.  The exhaustive `9!` checker SHA is
+  `50e34d90f18e124b7bacb2ed9c44cef0b0568bef2070f73eb97bf20b33495cdc`.
+
+- [MATH_THEOREM_GATE_B_J2_SIX_VERTEX_ROOTED_CORE_DETERMINANT_20260822.md](MATH_THEOREM_GATE_B_J2_SIX_VERTEX_ROOTED_CORE_DETERMINANT_20260822.md),
+  SHA `867c9585122050cd5c3336861482d6954c0cbeb8d1a94df5d1753db45411e70f`,
+  proves the canonical `j=2` rooted-core determinant through six incident
+  cuts.  With every blocker component required to meet one of the event
+  roots, two puncture-side differences have the exact determinant
+  `P(r)/(12Q(r)^2)>0` for every `r>=23`, where the note lists all 27
+  positive coefficients of `P` in powers of `r-23`.  In particular the
+  determinant is `(4/3)r^-6-6r^-7+O(r^-8)` and at least
+  `2^-187 r^-6`.  A nearby rootless decoration can cancel this leading
+  coefficient, so arbitrary rootless components still require grouped
+  cumulant resummation.  The exact checker SHA is
+  `63e2015bb5c7a1fee3941ea473b2b37c2c1be5c8e009e522867b01805ea3d662`;
+  it authenticates the two frozen research evaluators with SHAs
+  `ed599de779f6f185a13a3718cca91edeaa44461003eb19781d2a3cad6690b674`
+  and `1c109fcf68a1324852e62b74a81fff63a4ad4620e5ebd2080f5a9f9aee02494b`.
+
+- [MATH_REDUCTION_GATE_C_MULTIROOT_GRID_AND_TWO_ROOT_FOUR_LETTER_20260822.md](MATH_REDUCTION_GATE_C_MULTIROOT_GRID_AND_TWO_ROOT_FOUR_LETTER_20260822.md),
+  SHA `814885e2ac4895950e17be131a3b75303a338b2f0f502b41a0eca968e098cf55`,
+  corrects the optimistic single-threshold chamber picture for simultaneous
+  ballot cuts.  In common time, every root sign is the product of a
+  threshold in marked-value order and a threshold in marked-position
+  order, giving a two-dimensional grid of step types.  For two roots, after
+  fixing their value and position separations, the remaining permutation
+  is exactly a uniform four-letter multiset bridge; joint goodness forces
+  four explicit meanders on the two value arcs.  This is the exact finite
+  state space for the next moment estimate, not yet that estimate.  Its
+  checker SHA is
+  `fa2ac5b62fb5da32d9a38c897b3a7cb7a986448724466a0213ef8d0281672d94`.
+
+- [MATH_THEOREM_GATE_C_PIVOT_FLIP_FACTORIAL_MOMENT_20260822.md](MATH_THEOREM_GATE_C_PIVOT_FLIP_FACTORIAL_MOMENT_20260822.md),
+  SHA `ca98c35c1e934ba6583e0793c6181a531759e1e7d1971f7e4115dbd4c88c7f2f`,
+  closes the equal-block entropy count by a walk-flip filtration.  A good
+  cut can be exposed only when the next increment is one of at most two
+  global pivot edges.  Conditional on the parity-color fiber, the next
+  value is uniform in a shrinking parity pool, giving the all-order bound
+  `E(G)_j<={2(H_e+H_(e+1))}^j`.  Hence orders with at most `R` failed cuts
+  number at most `K^R O(log K)^K`; at `K=Theta(b/log b)` and
+  `R=O(b/log^2 b)` this is `exp(o(b))`, decisively ruling out the equal-
+  block coefficient-one route.  The result does not address unequal or
+  multiscale blocks.  Its exhaustive checker SHA is
+  `4f6557f84f128540c33dffbcbb8ecd2ae1020883730d1d341f3d7f8c17800c88`.
+
+- [MATH_COROLLARY_GATE_C_PIVOT_MISS_SET_TAIL_20260822.md](MATH_COROLLARY_GATE_C_PIVOT_MISS_SET_TAIL_20260822.md),
+  SHA `de8f8fdab80db6b4c3feba354a295762960b9dcf3b38a464704708d645a5f857`,
+  strengthens the pivot factorial-moment tail by prescribing the at most
+  `R` missed reveal times directly.  The exact color-fiber cancellation
+  gives `|{G>=K-R}|<=binom(K,e+1)2^(K-R)e_R(n_p)`, and hence the closed
+  bound `4^K[((e+1)^2/2)^R/R!]`.  At the equal-block scale this is
+  `exp(O(b/log b))`; for `R=0` it gives fewer than `4^K` all-good linear
+  orders.  It remains an equal-block no-go only.  The exact census checker
+  SHA is `21014502681a749995eb7e8a12f5a3d81d8c923fa6df6e34e206a5c95f87a171`.
+
+- [MATH_THEOREM_GATE_C_UNEQUAL_ODD_BLOCK_WEIGHTED_EXCURSION_20260822.md](MATH_THEOREM_GATE_C_UNEQUAL_ODD_BLOCK_WEIGHTED_EXCURSION_20260822.md),
+  SHA `8626c932e6ef4beff8621caec31f072751070228b253b677abed455ef49ae9dd`,
+  extends the block-row formula to arbitrary labelled odd lengths.  Its
+  weighted prefix walk has negative depth `lambda_i` and terminal
+  overshoot `upsilon_i`; exactly
+  `min(ell_i-1,lambda_i+(upsilon_i-2)_+)` interior rows are killed, while
+  `[ell_i-lambda_i-upsilon_i-3]_+` deep rows each retain `b-2` flags.
+  Hence `q-M<=b+(b-2)sum_i(lambda_i+upsilon_i+3)`.  This rigorously shows
+  how long blocks can buffer non-ballot block orders, but does not supply
+  packable diversity.  The direct-lift/deletion-deck checker SHA is
+  `f6d1a681ec5cb43d3480db3278bb205c6b6a5a5ba86c3dd7e02f9bd5cd134ce9`.
+
+- [MATH_THEOREM_GATE_C_ONE_GIANT_ENTROPY_COMMON_ATLAS_20260822.md](MATH_THEOREM_GATE_C_ONE_GIANT_ENTROPY_COMMON_ATLAS_20260822.md),
+  SHA `81053a13711a697da83bae48dd8a6711d7808153d2019fd70509a4bb86996cdf`,
+  gives the first entropy-sharp unequal-block test and its exact packing
+  obstruction.  One giant block plus `S=Theta(b/log b)` singleton blocks
+  has `S!=exp((c+o(1))b)` distinct orders and every order retains
+  `q-O(bS)=q-o(q)` factor flags.  Yet all giant-row middle targets lie in
+  an atlas of size below `b^2 2^S`, so even after arbitrary `q-o(q)`
+  thinning a rankwise-disjoint subfamily has only `exp(o(b))` members.
+  Thus local factorial label entropy is not macroscopic support diversity;
+  several moving macroscopic blocks or a moving-factor coverdown remain
+  necessary.  The exhaustive small-instance checker SHA is
+  `afa288ab10f968f8bc645a53b6018a66c16b71e9cb7866d66d5db66c265c2b3c`.
+
+- [MATH_OBSTRUCTION_GATE_C_FIXED_PAIRING_ATLAS_CAP_20260822.md](MATH_OBSTRUCTION_GATE_C_FIXED_PAIRING_ATLAS_CAP_20260822.md),
+  SHA `64d28f9b139622ebf241ffdfe8279df9306c2e1730e608392e0040f7b618b23f`,
+  closes the whole fixed-pairing antipodal block-shuffle subroute.  The
+  exact defect-one middle atlas of one perfect pairing has size
+  `b(b-1)2^(b-2)`, so even arbitrary `q-o(q)` thinning permits only
+  `2^(b+o(b))` rankwise-disjoint near-tours from that pairing.  More
+  generally a central-factor cover requires
+  `Omega(2^b/b^(5/2))` genuinely different pairings.  Thus equal,
+  unequal, and multiscale corrected-antipodal shuffles cannot close Gate C
+  without an outer exponentially pairing-diverse layer.  The exhaustive
+  fixed-pairing checker SHA is
+  `82e4bf7ea7e3b0b78e2b582bb2db58dbfe300a7c197f5a1fc88271a1f97a52e1`.
+
+- [MATH_THEOREM_GATE_C_PAIRING_DEFECT_INCIDENCE_AND_MENU_20260822.md](MATH_THEOREM_GATE_C_PAIRING_DEFECT_INCIDENCE_AND_MENU_20260822.md),
+  SHA `ea2ba36f43bdc4e5082ccdfb9ad482f095deba3ea9527e8b9e3076b8b11659a9`,
+  computes the exact incidence geometry of perfect pairings against their
+  defect-one middle strata.  At Johnson distance `d`, with `a=b-d`, the
+  pair codegree is
+  `a!d![ad(ad-1)+(a(a-1)+d(d-1))/4]`; after quotienting complementary
+  clone targets its maximum normalized value is `5(b-2)/b^2` for `b>=7`.
+  A random menu of `(4a_b/sqrt(pi)+o(1))2^b/b^(5/2)` distinct pairings,
+  for any slowly divergent `a_b`, covers all but `e^(-a_b)W` middle
+  targets and is optimal up to `a_b`.  The note also isolates the exact
+  ordered empty/double fiber-balance condition for tour refinement and
+  constructs a fixed-order middle-target-disjoint Hamming-code bank of
+  at least `2^(b-ceil(log_2(b+1)))` tours per pairing.  Cross-pairing
+  middle rounding, adjacent-rank collisions, and SCD extension remain.
+  The exhaustive checker SHA is
+  `552990f2429c5b9462e3873cfe966e1506347f270f1aa139ff1eeddf3f143c37`.
+
+- [MATH_THEOREM_GATE_C_FIXED_ORDER_THREE_RANK_CAYLEY_BANK_20260822.md](MATH_THEOREM_GATE_C_FIXED_ORDER_THREE_RANK_CAYLEY_BANK_20260822.md),
+  SHA `ec326a7e2c5e57dc640f6f5de5c6cc1942163e52017d60969d0d5f7432d1e16f`,
+  upgrades the fixed-pairing local bank from middle-only to simultaneous
+  target disjointness at ranks `b-1,b,b+1`.  For one fixed pair order, all
+  cross-state collisions forbid at most
+  `2b(b-1)^2+4b(b-1)+8b(b-2)+2b=2b^3+8b^2-16b` XOR differences.  A greedy
+  independent set in the resulting Cayley graph therefore supplies at
+  least `2^b/(2b^3+8b^2-16b+1)` rankwise-compatible whole tours per
+  pairing.  This closes local three-rank capacity with only polynomial
+  loss; cross-pairing bank selection, all offsets, and SCD extension remain.
+  The exhaustive checker SHA is
+  `076cbd535fb9666a57509864b9106560846ca977f0e38b0674214efc816c47a7`.
+
+- [MATH_THEOREM_GATE_C_THREE_RANK_LINEAR_COSET_RESOLUTION_20260822.md](MATH_THEOREM_GATE_C_THREE_RANK_LINEAR_COSET_RESOLUTION_20260822.md),
+  SHA `49d29d5ea0fb86452b72a7b7be96533123764d2603a9c05d701b7d729f6b8e05`,
+  combines the Cayley collision bank with the Hamming-coset idea.  A random
+  binary map with only `O(log b)` rows has kernel avoiding all
+  `2b^3+8b^2-16b` possible three-rank collision differences.  Every coset
+  is therefore a bank of at least `2^b/poly(b)` tours jointly disjoint at
+  ranks `b-1,b,b+1`; simultaneously, the cosets exactly fourfold resolve
+  every fixed-pairing defect-one middle target and have exact adjacent
+  signature loads `2(b-1)`, `8`, and `2`.  This closes local central
+  three-rank resolution.  Cross-pairing bank selection remains, while
+  all-offset control and SCD extension are separate later requirements.
+  The exhaustive checker SHA is
+  `f59a44913edba64690f416799a96227ff4d66345c8bb3359eb21ec090ac56e93`.

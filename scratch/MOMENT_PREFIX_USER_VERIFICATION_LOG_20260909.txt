@@ -1,0 +1,50 @@
+Height-moment prefix verification
+
+PASS: every r=68,...,3423 (3356 cases) has 100000*U_r < Cat_r.
+PASS: every generated refinement preserves the exact mass, including its charged reserve.
+PASS: 1016 distinct successful transcripts replayed without the search-priority heuristic.
+PASS: one construction-specific predecessor lower transcript replayed at r=67.
+PASS: E_3424 < 9998021412265816178/10^24 < 1/100000.
+The displayed polynomial identity proves that the analytic envelope decreases for every r>=4.
+Consequently, on the stated finite inputs, nu(k) < 1.00001 W(k) for every k>=137.
+
+Generation counters:
+{
+  "finite_certificates": 3356,
+  "moment_upgrades": 9175715,
+  "sparse_splits": 475901,
+  "generated_prefix_nodes": 56473229,
+  "charged_reserve_families": 445835,
+  "explicit_next_size_choices": 40992287
+}
+
+Structural counters:
+{
+  "dyck_roots_height_checked": 23713,
+  "conditional_height_tail_checks": 440,
+  "nonprimitive_count_checks": 10,
+  "symmetric_height_groups": 32,
+  "core_option_coefficients": 43460,
+  "mass_and_height_conservation": 3160,
+  "reflection_geometric_tail_checks": 3239,
+  "complementary_row_period_counts": 620,
+  "one_row_moment_correction_identities": 435,
+  "physical_state_period_checks": 125475,
+  "physical_cycles": 629
+}
+
+Successful replay counters:
+{
+  "replayed_upgrades": 1665043,
+  "replayed_sparse_splits": 187108,
+  "replayed_certificates": 1016
+}
+
+Maximum prefix depth in the complete finite band: 24
+
+Predecessor strict margin 100000*C_low-W(135): 327792368018303184461425658055756750
+
+No large universal word was emitted. No k=17 word was read or modified.
+These are computer-assisted deductions on inherited finite construction and pruning premises, not their independent formal verification.
+All 3356 cases were generated with exact checks; only the stated 1016 successful transcripts were separately replayed in this session.
+All complete transcripts are supplied for full replay.

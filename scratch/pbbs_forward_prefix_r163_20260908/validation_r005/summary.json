@@ -1,0 +1,50 @@
+{
+  "r": 5,
+  "n": 11,
+  "catalan": 42,
+  "width": 462,
+  "reason": "FULL_EXACT_CENSUS",
+  "U": 9,
+  "relative_overhead_upper": {
+    "numerator": 9,
+    "denominator": 42,
+    "lower": "0.214285714285714285714285714285",
+    "upper": "0.214285714285714285714285714286",
+    "decimal_places": 30
+  },
+  "construction_overhead_integer_upper": 99,
+  "word_length_integer_upper": 561,
+  "frontier_mass": 42,
+  "frontier_leaf_count": 8,
+  "nonterminal_leaf_count": 0,
+  "terminal_leaf_count": 8,
+  "generated_nodes": 19,
+  "refinements": 11,
+  "rounded_charge_increases": 0,
+  "max_depth": 4,
+  "every_split_exact_mass_conserving": true,
+  "every_split_unrounded_charge_nonincreasing": true,
+  "rounded_U_freshly_summed": true,
+  "terminal_final_row_included": true,
+  "exact_native_overhead": 52,
+  "exact_cycles": 12,
+  "exact_height_sum": 32,
+  "exact_unrounded_charge": [
+    52,
+    11
+  ],
+  "complete_signature_count_matches": true,
+  "all_period_and_height_histograms_match": true,
+  "rounded_U_not_assumed_equal_to_exact_charge": true,
+  "replay": {
+    "status": "PASS",
+    "priority_order_not_used": true,
+    "every_recorded_split_completely_regenerated": true,
+    "replayed_splits": 11,
+    "replayed_generated_nodes": 19,
+    "final_leaf_count": 8,
+    "final_mass": 42,
+    "final_U": 9,
+    "final_leaf_records_all_checked": true
+  }
+}

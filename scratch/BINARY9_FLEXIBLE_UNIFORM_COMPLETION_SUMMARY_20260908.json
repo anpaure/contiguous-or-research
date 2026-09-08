@@ -1,0 +1,110 @@
+{
+  "host": "arboghast",
+  "stop_reason": "all flexible-uniform sources completed",
+  "elapsed_seconds": 0.033565906807780266,
+  "witness_found": false,
+  "cases": [
+    {
+      "source_id": 0,
+      "full_owner": 2,
+      "root": 1,
+      "short_owners": [
+        5,
+        7,
+        8,
+        13
+      ],
+      "absorbed_sides": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "status": "INFEASIBLE_EXHAUSTIVE_PROOF_REPLAY_PASS",
+      "generated_counts_by_slot": [
+        144,
+        144,
+        144,
+        144,
+        576
+      ],
+      "retained_counts_by_slot": [
+        5,
+        6,
+        2,
+        2,
+        16
+      ],
+      "dfs_nodes": 1,
+      "unavailable_target": 269
+    },
+    {
+      "source_id": 1,
+      "full_owner": 11,
+      "root": 1,
+      "short_owners": [
+        0,
+        3,
+        7,
+        8
+      ],
+      "absorbed_sides": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "status": "INFEASIBLE_EXHAUSTIVE_PROOF_REPLAY_PASS",
+      "generated_counts_by_slot": [
+        144,
+        144,
+        144,
+        144,
+        576
+      ],
+      "retained_counts_by_slot": [
+        4,
+        4,
+        2,
+        4,
+        9
+      ],
+      "dfs_nodes": 1,
+      "unavailable_target": 294
+    },
+    {
+      "source_id": 2,
+      "full_owner": 11,
+      "root": 2,
+      "short_owners": [
+        0,
+        3,
+        8,
+        9
+      ],
+      "absorbed_sides": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "status": "INFEASIBLE_EXHAUSTIVE_PROOF_REPLAY_PASS",
+      "generated_counts_by_slot": [
+        144,
+        144,
+        144,
+        144,
+        576
+      ],
+      "retained_counts_by_slot": [
+        1,
+        2,
+        2,
+        2,
+        10
+      ],
+      "dfs_nodes": 1,
+      "unavailable_target": 312
+    }
+  ]
+}
