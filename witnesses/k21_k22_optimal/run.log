@@ -1,0 +1,3 @@
+LITERAL_PASS {"k": 21, "length": 352719, "targets_covered": 2097151, "suffix_union_events": 4937949, "separately_rechecked_witnesses": 2097151, "upper_bound_minus_B": 0}
+LITERAL_PASS {"k": 22, "length": 705435, "targets_covered": 4194303, "suffix_union_events": 9875974, "separately_rechecked_witnesses": 4194303, "upper_bound_minus_B": 0}
+FINAL_PASS {"B21": 352719, "upper21": 352719, "gap21": 0, "B22": 705435, "upper22": 705435, "gap22": 0, "cyclic_minimum21": 352716, "B23": 1352082, "B24": 2704159, "elapsed_wall_seconds": 13.289871970191598}

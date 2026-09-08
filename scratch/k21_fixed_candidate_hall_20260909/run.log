@@ -1,0 +1,2 @@
+GRAPH_READY targets=33143 demand=695859 cells=33592 edges=1997177 candidates=2011584
+PASS_FIXED_GRAPH flow=695397 deficiency=462 Hall_weight=31185 neighbor_capacity=30723 cpu=2.85256 wall=2.85254

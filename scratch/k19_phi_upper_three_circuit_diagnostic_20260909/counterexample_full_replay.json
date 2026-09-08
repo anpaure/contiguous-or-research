@@ -1,0 +1,108 @@
+{
+  "status": "PASS_COUNTEREXAMPLE_FULL_REPLAY",
+  "period": 92378,
+  "rank9_states": 92378,
+  "rank10_states": 92378,
+  "every_outgoing_edge_is_canonical_phi": true,
+  "both_residence_exclusions_at_every_position": true,
+  "one_hamilton_cycle": true,
+  "changed_incoming_labels": [
+    175433,
+    44363,
+    109897
+  ],
+  "missing_rank11_target": 109931,
+  "missing_rank11_coordinates_one_based": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    9,
+    11,
+    12,
+    14,
+    16,
+    17
+  ],
+  "rank11_pair_colors": 75581,
+  "ordinary_and_cyclic_upper_interval_absence": true,
+  "all_contained_rank10_positions": [
+    {
+      "position": 4231,
+      "upper": 109923,
+      "preceding_outside_bit": 4,
+      "following_outside_bit": 16
+    },
+    {
+      "position": 32946,
+      "upper": 109899,
+      "preceding_outside_bit": 131072,
+      "following_outside_bit": 262144
+    },
+    {
+      "position": 39398,
+      "upper": 108907,
+      "preceding_outside_bit": 512,
+      "following_outside_bit": 262144
+    },
+    {
+      "position": 43849,
+      "upper": 109930,
+      "preceding_outside_bit": 131072,
+      "following_outside_bit": 512
+    },
+    {
+      "position": 45407,
+      "upper": 109867,
+      "preceding_outside_bit": 131072,
+      "following_outside_bit": 16384
+    },
+    {
+      "position": 48207,
+      "upper": 101739,
+      "preceding_outside_bit": 131072,
+      "following_outside_bit": 16384
+    },
+    {
+      "position": 51736,
+      "upper": 77163,
+      "preceding_outside_bit": 4096,
+      "following_outside_bit": 262144
+    },
+    {
+      "position": 58607,
+      "upper": 107883,
+      "preceding_outside_bit": 512,
+      "following_outside_bit": 16
+    },
+    {
+      "position": 65690,
+      "upper": 109675,
+      "preceding_outside_bit": 128,
+      "following_outside_bit": 512
+    },
+    {
+      "position": 67812,
+      "upper": 44395,
+      "preceding_outside_bit": 16384,
+      "following_outside_bit": 262144
+    },
+    {
+      "position": 78118,
+      "upper": 109929,
+      "preceding_outside_bit": 131072,
+      "following_outside_bit": 16
+    }
+  ],
+  "files": {
+    "counterexample_lower_cycle.word": {
+      "bytes": 627712,
+      "sha256": "4037dd78d59f42f73867cc857bdeb5aa268872b204dff00b0dcb8ce5801db4b7"
+    },
+    "counterexample_upper_cycle.word": {
+      "bytes": 633231,
+      "sha256": "daeaf0e1d4d5caba98c95012f2fb13296625e733928342951461f32dc0a2cb88"
+    }
+  }
+}

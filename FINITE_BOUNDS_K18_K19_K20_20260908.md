@@ -1,15 +1,23 @@
-# Exact finite answers in dimensions 18, 19 and 20
+# Exact finite answers in dimensions 18–22
 
-All three dimensions are now exact: verified literal words attain the
+All five dimensions are now exact: verified literal words attain the
 endpoint lower bound. These are finite answers, independent of an eventual
-asymptotic estimate. Exact attainment is established through dimension 20;
-the next unresolved dimension is 21. Updated 2026-09-09.
+asymptotic estimate. Exact attainment is established through dimension 22;
+the next unresolved dimension is 23. Updated 2026-09-09.
 
 | Dimension | Endpoint lower bound B(k) | Constructed upper bound | Gap | Upper bound above B(k) |
 | ---: | ---: | ---: | ---: | ---: |
 | 18 | 48,623 | 48,623 | 0 | 0% — exact |
 | 19 | 92,381 | 92,381 | 0 | 0% — exact |
 | 20 | 184,759 | 184,759 | 0 | 0% — exact |
+| 21 | 352,719 | 352,719 | 0 | 0% — exact |
+| 22 | 705,435 | 705,435 | 0 | 0% — exact |
+
+The next recorded endpoint lower bounds are B(23)=1,352,082 and
+B(24)=2,704,159. They are lower bounds only; no upper word for dimensions
+23 or 24 is certified by this record. The cyclic optimum mu(21)=352716
+is also verified. See the
+[consolidated exact 21/22 and cyclic 21 record](K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md).
 
 The earlier 94,161- and 188,322-letter constructions remain documented below
 as historical upper bounds; they are no longer the current answers.
@@ -26,11 +34,13 @@ d W+d(d+1)/2 >= Lambda.
 | 18 | 48,620 | 106,761 | 3 |
 | 19 | 92,378 | 262,143 | 3 |
 | 20 | 184,756 | 431,909 | 3 |
+| 21 | 352,716 | 1,048,575 | 3 |
+| 22 | 705,432 | 1,744,435 | 3 |
 
 These integer calculations were executed on h100. Independent maximization
 of the endpoint bound over all target ranks gives the same lower bounds.
-The new 19/20 forward verifier records every rank and both inequalities
-certifying the minimal delay at that rank.
+The independent 19/20 and 21/22 forward verifiers record every rank and
+both inequalities certifying the minimal delay at that rank.
 
 ## Matching literal constructions
 
@@ -73,6 +83,47 @@ of every saved witness also passed for both dimensions. Its
 [report](witnesses/k19_k20_optimal/complete_suffix_range_cyclic_lift_certificate.json)
 additionally proves mu(19)=92,378 and verifies that the20 word is the
 byte-identical periodic-core lift of the19 word.
+
+At dimension 21, the supplied
+[352,719-letter word](answers/k21_optimal352719.word) covers all 2,097,151
+nonempty targets. The independent forward scan checks 4,937,973 OR-change
+events and obtains B(21)=352719. The raw SHA-256 is
+`eb44ff87a669ae0163bdf926283c22c5494e08322efb5c947994a676dc3af1d2`.
+
+At dimension 22, the supplied
+[705,435-letter word](answers/k22_optimal705435.word) covers all 4,194,303
+nonempty targets. The same independent method checks 10,228,713 change
+events and obtains B(22)=705435. The raw SHA-256 is
+`a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd`.
+
+Both complete cubes and both lower-bound equalities passed in one bounded
+h100 forward run. Every target and binomial rank census is checked, and
+the four complete ordinary-witness arrays are retained in the
+[forward proof and certificate](scratch/K21_K22_OPTIMAL_INDEPENDENT_FORWARD_CERTIFICATE_20260909.md)
+and [paired machine report](scratch/k21_k22_optimal_forward_20260909/k21_k22_optimal_forward_complete_certificate.json).
+The separate suffix/range/cyclic/lift check also passed, certifying
+mu(21)=352716. The
+[consolidated exact 21/22 record](K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md)
+links that additional evidence. No search reconstruction is required for
+the ordinary optimality claims.
+
+## Historical upper bounds in dimensions 21 and 22
+
+These prior complete words remain preserved as construction history:
+
+| Historical stage | Dimension 21 | Dimension 22 |
+|---|---:|---:|
+| Initial supplied pair | [353,297](answers/k21_upper353297.word) | [706,594](answers/k22_upper706594.word) |
+| Context refinement | [353,094](answers/k21_upper353094.word) | [706,188](answers/k22_upper706188.word) |
+| Final upper pair before exact closure | [352,862](answers/k21_upper352862.word) | [705,724](answers/k22_upper705724.word) |
+
+The [initial carrier, repair and Hall record](K21_K22_VERIFIED_UPPER_BOUNDS_AND_COMPILER_CONSTRAINTS_20260909.md)
+and [context-refinement verification](K21_K22_CONTEXT_REFINEMENT_VERIFIED_20260909.md)
+retain their original scope. The final upper pair passed independent
+suffix enumeration and range-OR replay; its frontier forward checker was
+superseded before execution by the optimal pair. All three stages are now
+known to be nonoptimal. The separate 357,442/714,884 report is weaker than
+these historical pairs and does not replace the exact answers.
 
 ## Historical height-adaptive and doubled upper bounds
 

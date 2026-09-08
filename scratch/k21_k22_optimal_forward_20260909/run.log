@@ -1,0 +1,3 @@
+{"k": 21, "status": "PASS", "length": 352719, "targets": 2097151, "missing": 0, "B": 352719, "sha256": "eb44ff87a669ae0163bdf926283c22c5494e08322efb5c947994a676dc3af1d2", "gap": 0, "optimality_certified": true, "cpu_seconds": 2.554261866}
+{"k": 22, "status": "PASS", "length": 705435, "targets": 4194303, "missing": 0, "B": 705435, "sha256": "a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd", "gap": 0, "optimality_certified": true, "cpu_seconds": 5.16991367}
+{"status": "PASS_OPTIMAL_FULL_CUBES", "report": "/home/amodo/exact-b-k21-k22-optimal-forward-20260909/k21_k22_optimal_forward_complete_certificate.json", "cpu_seconds": 7.738175413, "wall_seconds": 7.739107304718345}

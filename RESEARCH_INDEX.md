@@ -1,6 +1,130 @@
 # Research index
 
-## Latest 2026-09-09: exact 19 and 20; universal width-length 19 cycle
+## Current 2026-09-09: exactness through22 and consolidated bounds
+
+- [Optimal21/22 and cyclic21 verification](K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md)
+  establishes nu(21)=352719, nu(22)=705435 and mu(21)=352716. Both
+  ordinary gaps are zero. Complete independent forward and suffix scans,
+  every-witness range queries, the safe opening and the byte-identical
+  periodic lift pass. The first unsettled dimension is23; B(23)=1352082
+  and B(24)=2704159 are lower-bound targets, not attained values here.
+- [Asymptotic bounds ledger](ASYMPTOTIC_BOUNDS.md) separates the conditional
+  0.93 stretched-exponential rate, proved onset, verified uniform thresholds,
+  isolated finite certificates and the still-missing57/87/137 numerical bands.
+- [Three-placement compatibility and13-vertex withdrawal](scratch/THREE_PLACEMENT_COMPATIBILITY_AND_THIRTEEN_VERTEX_WITHDRAWAL_AUDIT_20260909.md)
+  give a complete bounded-order obstruction description, with explicit
+  matching, locality and cyclic-indexing guards. Hall perfection by itself
+  still does not prove simultaneous compilation.
+- [Two-order local connector bank](scratch/TWO_ORDER_CANONICAL_PHI_CONNECTOR_AND_COMPLETE_0P1_PORT_BANK_20260909.md)
+  resolves all59 input-age failures of the original fixed actual19 rule.
+  One [complete fixed replay](scratch/ACTUAL19_TWO_ORDER_COMPLETE1430_LOCAL_CONNECTOR_BANK_CERTIFICATE_20260909.md)
+  verifies1430 legal local pieces:1371 original routes and59 swaps.
+  [Balanced padding for generalq](scratch/GROWING_Q_TWO_ORDER_PHI_CONNECTORS_WITH_BALANCED_PADDING_20260909.md)
+  requires an already resident parent and adds2q-4 coordinates.
+  [Two unused-sector steps and parent re-entry](scratch/TWO_STEP_UNUSED_SECTOR_EXTENSION_AND_INJECTIVE_PARENT_REENTRY_20260909.md)
+  further extend the pieces; degree, boundary-age, connectivity and coverage
+  obligations remain. These local results do not constitute the supplied
+  exact21 construction or an all-dimension proof.
+- [Master handoff](MASTER_HANDOFF.md), [solution table](answers/README.md)
+  and the repository README now use the exact22 frontier. Previous numerical
+  intervals below are historical. The all-k exact objective remains active.
+
+## Latest 2026-09-09: improved21/22 words and explicit age-safe replacement heads
+
+- [New complete literal certificates](K21_K22_CONTEXT_REFINEMENT_VERIFIED_20260909.md)
+  improve the verified bounds to352719<=nu(21)<=353094 and
+  705435<=nu(22)<=706188: gaps375/753. Independent forward/suffix scans
+  find every target; every saved witness passes a separate range-OR
+  query. The22 file is the byte-identical ordinary doubled21 lift.
+- [Ordered overlapping refinement and simultaneous contexts](scratch/ORDERED_OVERLAPPING_REFINEMENT_AND_SIMULTANEOUS_CONTEXT_CERTIFICATES_AUDIT_20260909.md)
+  pass pure proof review with their boundary, disjoint-block and gap guards.
+  Pair inflation is the existing depth-one flat compiler. The actual202
+  operation schedule and644-edit trace were not attached or replayed.
+- [The corrected private-head bank](scratch/FORCED_111_D_FREED_HEAD_MENUS_AND_PRIVATE_DYCK_BANKS_20260909.md)
+  is explicit: D=1R maps to1110R. The tempting110D bank deletes an age2
+  coordinate; the corrected deletion has age>=3 by the complete inverse
+  analysis. Incidence is forced and injective, but full-factor completion
+  and incoming history supply are not proved.
+- [General backward-age obligations and plateau ages](scratch/CANONICAL_PHI_BACKWARD_AGE_OBLIGATIONS_AND_INITIAL_PLATEAU_THEOREM_20260909.md)
+  give a q-dependent exact local interface and injective critical-plateau
+  edge. Valid incoming history depth/boundary ages are required. This is
+  positive local progress, not an all-dimension existence theorem.
+- Master9.36–9.37 and the current finite tables are updated. All mathematical
+  execution remains onh100; no new push. The full exact goal remains ACTIVE.
+
+## Earlier 2026-09-09: complete upper words at21/22 and compiler capacity audits
+
+- [The supplied words pass complete independent checks](K21_K22_VERIFIED_UPPER_BOUNDS_AND_COMPILER_CONSTRAINTS_20260909.md):
+  352719<=nu(21)<=353297 and705435<=nu(22)<=706594, with gaps578/1159.
+  Forward and suffix enumerations find all2097151/4194303 targets; every
+  saved witness passes a separate range-OR query. The22 file regenerates
+  byte for byte by the ordinary2N lift. Equality remains verified through20.
+- The later357442/714884 report is weaker and does not replace these
+  incumbents. Its separate capacity proof passes under the explicit flat
+  protected-window rank floor: q>=d+1-(3k/2)^(1/3)(1+o(1)); at the last
+  odd dimensions before padding increases the gap is O(k^(1/6)). The
+  49210 pair-deficit requirement is for hypothetical exactN352719.
+- The individual-cell core, arbitrary finite-group weighted Hall deficiency,
+  and exact odd/even excess-drop formulas pass pure audits, with prior
+  attribution retained. Matching feasibility is not a common-cap theorem.
+  The [numerical462 Hall claim now passes independent reconstruction](scratch/K21_FIXED_THREE_CYCLE_PHYSICAL_CANDIDATE_HALL_DEFICIENCY_462_VERIFIED_20260909.md):
+  graph1,997,177 edges, maximum695,397 against695,859 demand, explicit
+  31,185-target set with complete30,723-cell neighborhood. One fixed-graph
+  run, no new word search. This is a fixed cyclic skeleton obstruction.
+- [The literal carrier and repair also pass](scratch/K21_SUPPLIED_THREE_CYCLE_CARRIER_LOWER_HOLES_AND_572_REPAIR_CERTIFICATE_20260909.md):
+  periods352548/105/63,569 cyclic holes,579 opened holes, all supplied by
+  the572-letter tail with separate range checks. Carrier rotation symmetry
+  holds; actual cap symmetry does not. No unavailable generator replay.
+- The [q3 construction record](EXACT_PHI_INDUCTION_AND_UPPER_SUPPORT_GATE_20260909.md)
+  now includes an exact two-deletion exit-age test, a direct-parent-splice
+  obstruction, and an explicit whole01-sector path cover. The residual
+  age-compatible spanning and coverage problem remains open.
+- A stronger [fresh-arrival obstruction](scratch/Q3_ALL_ROOT_ENTRANCE_BANK_FORCES_ONE_STEP_RUNS_20260909.md)
+  now rules out completing ALL fixed-root first entrances: at least
+  Cat_(r-1) of Cat_r incidences must change in any strict residence>=2
+  factor. The local disjoint paths remain valid; wholesale extension is
+  impossible. Selective port replacement is required before more routing.
+- The [abstract forbidden-facet audit](scratch/SMALL_FAMILY_SHADOW_HALL_WITH_FORBIDDEN_FACETS_LIMITATION_20260909.md)
+  also limits a larger-q Hall argument based only on Catalan size and
+  distinctness. O(log r) arbitrary forbidden choices can already destroy
+  Hall; actual correlated parent-age realizability is not asserted.
+- All mathematical execution remains onh100. No new push was made.
+  The all-dimensional exact goal is ACTIVE.
+
+## Earlier 2026-09-09: canonical local induction and a missing upper-coverage constraint
+
+- [The new proof-progress record](EXACT_PHI_INDUCTION_AND_UPPER_SUPPORT_GATE_20260909.md)
+  gives a canonical-Phi two-coordinate excursion with q+2 transitions,
+  minimum positive lower runs q, and one new-coordinate run exactly q.
+  Under a compatible parent history its first two ownership maps are
+  injective. A separate explicit inverse proves injectivity of the exit
+  map. For q=3,r>=7, small-family shadow/Hall selection and deleting the
+  old root in the internal step give a FULL bank of disjoint five-step
+  paths. At the actual19 parent this gives4862 pieces. Incorporating
+  untouched states, age-compatible joining, higher coverage, lower
+  compilation and optimal opening remain unproved. No matching was run.
+- A fully replayed three-edge change to the actual19 carrier preserves
+  canonicalPhi, Hamiltonicity and residence but loses rank11 target109931.
+  Its eleven rank10 subsets are isolated in the upper chronology. No
+  lower-cap compiler preserving that chronology can restore the target.
+  The fixed1216-circuit diagnostic found19 such counterexamples; it did
+  not alter either supplied optimal word. First-higher edge-color coverage
+  is therefore a separate necessary constraint on the incoming matching.
+- The retained uniform middle-window theorem is automatic for an
+  exact-width universal cycle, as MASTER3.40 already proves. A growing
+  compiler width is necessary; it is not a new architecture assumption.
+  The exact opening obstruction can be expressed through complete
+  compatible runs and coordinate first/last occurrences. At the supplied
+  19 cut it reduces to255 proper targets containing one rank11 edge color.
+  The fixed-cut diagnostic passed all255. Exactly one, rank12 target515158,
+  needs the one-sided extremal case; the final six source letters witness it.
+  Its complete witness core also proves that moving the cut back one phase
+  would lose that target. Safe opening cannot mean arbitrary opening.
+- The user's requested snapshot was committed and pushed as
+  `dfc1a9270a4d681c6ef5975daae81810719a5c82`. This subsequent research is
+  local. Equality remains verified through20, and the all-k goal is ACTIVE.
+
+## Earlier 2026-09-09: exact 19 and 20; universal width-length 19 cycle
 
 - [The supplied words attain both exact optima](K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md):
   nu(19)=B(19)=92,381 and nu(20)=B(20)=184,759. Independent forward
@@ -24,8 +148,9 @@
   per coordinate at exact21, stronger than the user's5,599 consequence.
   These are necessary conditions, not an all-dimensional construction.
 - [Uniform cyclic-window capacity](scratch/UNIFORM_CYCLIC_MIDDLE_WINDOW_CAPACITY_AND_OPENING_OBSTRUCTION_20260909.md)
-  requires qM>=4^r-1 and opening d>=q when every q-window of a
-  width-M cyclic universal core has rank r. Thus q must grow at least
+  requires qM>=4^r-1 and literal prefix opening d>=q. Uniform middle
+  windows are automatic for a width-M cyclic universal core by MASTER3.40.
+  Thus q must grow at least
   on the square-root scale. This specializes the retained endpoint
   argument and explains why a fixed triple compiler is not an all-k proof.
 - [The bounded-height spectral barrier](scratch/PBBS_BOUNDED_HEIGHT_SPECTRAL_CONSTRUCTOR_BARRIER_INDEPENDENT_AUDIT_20260909.md)

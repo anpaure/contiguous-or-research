@@ -1,10 +1,10 @@
-# Exact answers through `k=20`
+# Exact answers through `k=22`
 
-The files below are optimal nonzero words. Dimensions 1–16 use the legacy
-`kNN.word` names; dimensions 17–20 use the linked descriptive filenames.
+The exact-value table below lists optimal nonzero words. Dimensions 1–16 use the legacy
+`kNN.word` names; dimensions 17–22 use the linked descriptive filenames.
 Every contiguous-subarray OR is computed over ordinary integer bitmasks.
-Each listed length attains the endpoint lower bound B(k). The next
-unresolved dimension is 21.
+Each length in that table attains the endpoint lower bound B(k). The next
+unresolved dimension is 23. The cyclic optimum mu(21)=352716 is also verified.
 
 | `k` | `nu(k)` | SHA-256 |
 |---:|---:|---|
@@ -28,12 +28,28 @@ unresolved dimension is 21.
 | [18](k18_optimal48623.word) | 48623 | `6b191b447231c665bb1288cdc7ebdea5c73fd79502ef47015ee3d98fcf685be5` |
 | [19](k19_optimal92381.word) | 92381 | `1d0e7595dc72c6f1b7590e9565d5c0d3c30d70138e993d074e7d90d778d4e414` |
 | [20](k20_optimal184759.word) | 184759 | `047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02` |
+| [21](k21_optimal352719.word) | 352719 | `eb44ff87a669ae0163bdf926283c22c5494e08322efb5c947994a676dc3af1d2` |
+| [22](k22_optimal705435.word) | 705435 | `a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd` |
 
 The empty word is optimal for the nonzero `k=0` problem, so no `k00.word`
 file is needed.  Prepending `0` to any listed word gives an optimal word for
 the version that also requires the zero mask.
 
-Verify the legacy filenames for dimensions 1–16 with:
+## Current finite frontier
+
+| k | Endpoint lower bound B(k) | Verified optimal word length | Gap |
+|---:|---:|---:|---:|
+| [21](k21_optimal352719.word) | 352,719 | 352,719 | 0 |
+| [22](k22_optimal705435.word) | 705,435 | 705,435 | 0 |
+| 23 | 1,352,082 | — | — |
+| 24 | 2,704,159 | — | — |
+
+The entries for 23 and 24 are lower bounds only; no upper word for either
+dimension is recorded in this table. See the
+[consolidated exact 21/22 and cyclic 21 record](../K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md)
+and the [independent forward certificate](../scratch/K21_K22_OPTIMAL_INDEPENDENT_FORWARD_CERTIFICATE_20260909.md).
+
+Verify the legacy filenames for dimensions1–16 with:
 
 ```sh
 for k in $(seq 1 16); do
@@ -113,6 +129,46 @@ claiming a replay of the unavailable search that produced the19 core.
 | 18 | [48,623 letters](k18_optimal48623.word) | 48,623 |
 | 19 | [92,381 letters](k19_optimal92381.word) | 92,381 |
 | 20 | [184,759 letters](k20_optimal184759.word) | 184,759 |
+| 21 | [352,719 letters](k21_optimal352719.word) | 352,719 |
+| 22 | [705,435 letters](k22_optimal705435.word) | 705,435 |
+
+## Exact `k=21` and `k=22` certificates
+
+The supplied [352,719-letter word](k21_optimal352719.word) covers all
+2,097,151 nonempty targets, and the supplied
+[705,435-letter word](k22_optimal705435.word) covers all 4,194,303.
+Independent forward enumeration verifies every target and every rank;
+both lengths equal the independently computed all-rank endpoint bounds:
+
+```text
+nu(21) = B(21) = 352719.
+nu(22) = B(22) = 705435.
+```
+
+The [forward proof and certificate](../scratch/K21_K22_OPTIMAL_INDEPENDENT_FORWARD_CERTIFICATE_20260909.md)
+links the source, raw hashes, complete reports and all four ordinary
+witness arrays. The separate suffix/range/cyclic/lift verification also
+passed and certifies mu(21)=352716. Its evidence is recorded in the
+[consolidated exact 21/22 record](../K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md).
+These finite conclusions do not depend on reconstructing the user's search.
+
+## Historical upper bounds in dimensions 21 and 22
+
+The verified upper-bound progression is retained unchanged:
+
+| Historical stage | k=21 word | k=22 word |
+|---|---|---|
+| Initial supplied pair | [353,297 letters](k21_upper353297.word) | [706,594 letters](k22_upper706594.word) |
+| Context refinement | [353,094 letters](k21_upper353094.word) | [706,188 letters](k22_upper706188.word) |
+| Final upper pair before exact closure | [352,862 letters](k21_upper352862.word) | [705,724 letters](k22_upper705724.word) |
+
+The first pair's [carrier, repair and 462-Hall certificate](../K21_K22_VERIFIED_UPPER_BOUNDS_AND_COMPILER_CONSTRAINTS_20260909.md)
+and the second pair's [complete checks and ordinary lift](../K21_K22_CONTEXT_REFINEMENT_VERIFIED_20260909.md)
+remain historical evidence. The final upper pair passed the independent
+suffix/range verification before the optimal files were supplied; its
+frontier forward checker was prepared but never executed. These upper
+words are now known to be nonoptimal. The separate 357,442/714,884 report
+is a weaker historical result and does not change the exact answers.
 
 ## Historical upper bounds in dimensions 18–20
 

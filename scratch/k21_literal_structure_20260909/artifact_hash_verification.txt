@@ -1,0 +1,10 @@
+all_lower_short_interval_witnesses.json: OK
+complete_named_middle_carrier.jsonl: OK
+cyclic_bank_opened_prefix_and_repair_holes.json: OK
+fixed_phi_violations.json: OK
+k21_three_cycle_structure_and_repairs_certificate.json: OK
+literal_three_periods_and_572_repairs.json: OK
+rank1_through9_short_masks_and_holes.json: OK
+rotation_equivariance_violations.json: OK
+rotation_quotient_rows.json: OK
+two_step_residence_violations.json: OK

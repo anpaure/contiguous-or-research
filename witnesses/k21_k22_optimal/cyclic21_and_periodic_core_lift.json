@@ -1,0 +1,20 @@
+{
+  "status": "PASS_CYCLIC_OPTIMUM_AND_PERIODIC_LIFT",
+  "cyclic21_period": 352716,
+  "cyclic21_minimum": 352716,
+  "cyclic21_sha256": "f6121263598c34174d59c38f39096e24170f0ef9108a0acccd963a36f52d9d02",
+  "cyclic_coverage_basis": "Every2097151 independently range-checked ordinary witness lies in C+C[:3] and has length at most M; reducing its start modulo M preserves its interval letters.",
+  "distinct_cyclic_rank10_triples": 352716,
+  "distinct_cyclic_rank11_four_windows": 352716,
+  "safe_opening_extra_letters": 3,
+  "first_three": [
+    1499680,
+    1372192,
+    1358336
+  ],
+  "extra_coordinate_mask": 2097152,
+  "lifted_updates": 352715,
+  "regenerated22_byte_identical": true,
+  "regenerated22_length": 705435,
+  "regenerated22_sha256": "a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd"
+}

@@ -1,0 +1,16 @@
+{
+  "binary_sha256": "f6595344c18876165034bec17e0d8c9a629736a151b98a283ba63cfea0d9f591",
+  "cpp_source_sha256": "26fb17223bcd5ef0d79ac27a90b37d2c7b52b1c7cf706622f7c22f624fdee120",
+  "hostname": "arboghast",
+  "input_sha256": "0b166713d18f9ba4d064b07575c17068008954ac808313359c5fd0bf5dfe24d7",
+  "resource_caps": {
+    "address_space_bytes": 2147483648,
+    "aggregate_cpu_seconds": 120,
+    "driver_cpu_seconds": 5,
+    "individual_file_bytes": 536870912,
+    "mathematical_child_cpu_seconds": 115,
+    "wall_seconds": 150
+  },
+  "runner_source_sha256": "e615be577c4e43427fc022b7e88eb0616299d460f70e226b8886bb58d1651d33",
+  "status": "RUNNING_NOT_CERTIFIED"
+}

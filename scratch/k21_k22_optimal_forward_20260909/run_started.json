@@ -1,0 +1,11 @@
+{
+  "hostname": "arboghast",
+  "resource_caps": {
+    "address_space_bytes": 2147483648,
+    "cpu_seconds": 60,
+    "maximum_file_bytes": 268435456,
+    "wall_seconds": 90
+  },
+  "source_sha256": "ce205cef9f5f2208bcaccd1bb2f1d25ecd29f19f01782c17040ab89874080312",
+  "status": "RUNNING_NOT_CERTIFIED"
+}

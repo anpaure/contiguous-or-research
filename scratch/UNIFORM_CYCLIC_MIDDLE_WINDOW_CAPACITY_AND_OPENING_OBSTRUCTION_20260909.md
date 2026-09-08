@@ -5,6 +5,16 @@ No mathematical computation or literature search was run. This is a
 necessary condition for extending the successful flat triple architecture,
 not an all-dimensional construction or an obstruction to general OR words.
 
+**Correction of attribution and scope after root's source check.**
+MASTER_HANDOFF Section3.8, equation(3.40), already proves that EVERY cyclic
+universal word of exact width has uniform witness length on each maximal
+rank layer. It also already proves the capacity lower bound and the
+private-coordinate upper bound q<=r. Thus the uniform-window hypothesis
+below is redundant for a width-sized cyclic universal word; Sections1--2
+rederive consequences of that retained theorem, rather than impose or
+establish a new architecture assumption. Section5 records the exact source
+argument and distinguishes literal prefix openings from generic cut repair.
+
 ## 1. Precise hypotheses and middle-window rigidity
 
 Let n=2r+1 with r>=1, M=binom(n,r)=binom(n,r+1), and let C be a cyclic
@@ -133,3 +143,35 @@ compiler requires changing its fixed window width. A possible all-r
 construction must provide a growing q, a simultaneous short-target
 compiler, and an opening with d>=q whose longer upper witnesses survive.
 No such construction, matching sufficiency, or induction is proved here.
+
+## 5. Retained exact-width rigidity and generic cut repair
+
+For completeness, here is the specific already-retained implication in
+MASTER_HANDOFF Section3.8. Each of the M rank-r targets must use a distinct
+cyclic start and end. Lift the selected witnesses to integer intervals
+[i,e_i], with e_(i+M)=e_i+M. Distinct equal-rank targets forbid nesting,
+so every increment e_(i+1)-e_i is a positive integer. Their sum over a
+period is M. Every increment is therefore1, which makes all witness
+lengths one common q. In particular all cyclic q-windows have rank r.
+
+The private-coordinate argument in the same equation proves q<=r:
+consecutive rank-r windows differ, so choose a coordinate present in
+C_i but absent in C_(i+1),...,C_(i+q). The q such coordinates selected
+for a q-window are distinct and all belong to its rank-r union.
+Together with (2.2), the old theorem already supplies
+
+    ceil((4^r-1)/M)<=q<=r.
+
+Accordingly the sqrt(r) lower scale applies to EVERY exact-width cyclic
+universal word on2r+1 sites. It does not require separately postulating a
+uniform middle carrier. It still does not prove existence of that cyclic
+word, nor an optimal opening of it.
+
+The inequality d>=q in Section3 is for a literal periodic prefix opening
+C followed by its next d letters. It must not be applied to the generic
+normalization in MASTER_HANDOFF equations(3.36)--(3.37), which appends
+disjoint first-occurrence blocks outside a largest letter rather than a
+literal periodic collar. That different construction preserves all cyclic
+targets with at most n-max_i|C_i|-1 appended letters. Its appended words
+need not continue the old q-window row, and no d>=q claim was proved for
+that construction or for arbitrary universal linear words.
