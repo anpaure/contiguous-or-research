@@ -1,0 +1,42 @@
+{
+  "r": 68,
+  "n": 137,
+  "reason": "TARGET_CERTIFIED",
+  "catalan": 86218923998960285726185640663701108500,
+  "mass": 86218923998960285726185640663701108500,
+  "U": 860872256709126171307785011672491,
+  "initial_U": 235352974644597583601783719533044428,
+  "relative_overhead_upper": {
+    "numerator": 860872256709126171307785011672491,
+    "denominator": 86218923998960285726185640663701108500,
+    "lower": "0.000009984725125072396316850760",
+    "upper": "0.000009984725125072396316850761",
+    "places": 30
+  },
+  "target_reciprocal": 100000,
+  "target_certified": true,
+  "exact_target_margin": 131698328047668595407139496452008500,
+  "width": 11811992587857559144487432770927051864500,
+  "word_length_integer_upper": 11812110527356728294772901937473650995767,
+  "refinements": 162,
+  "generated_nodes": 2571,
+  "final_leaves": 2409,
+  "unfinished_leaves": 2388,
+  "max_depth": 3,
+  "rounded_charge_increases": 0,
+  "all_final_rows_freshly_summed": true,
+  "all_next_size_and_row_period_classes_retained": true,
+  "exact_height_table_used": true,
+  "exact_symmetry_classes_used": true,
+  "sparse_reserves_used": false,
+  "replay": {
+    "status": "PASS",
+    "priority_not_used": true,
+    "all_splits_regenerated": true,
+    "final_mass": 86218923998960285726185640663701108500,
+    "final_U": 860872256709126171307785011672491,
+    "final_leaves": 2409,
+    "refinements": 162,
+    "generated_nodes": 2571
+  }
+}

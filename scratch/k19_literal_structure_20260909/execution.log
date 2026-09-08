@@ -1,0 +1,358 @@
+{
+  "status": "PASS_LITERAL19_STRUCTURAL_RECONSTRUCTION",
+  "scope": "One pinned literal19 and one pinned existing canonical19 file; no generator or search replay.",
+  "word19_sha256": "1d0e7595dc72c6f1b7590e9565d5c0d3c30d70138e993d074e7d90d778d4e414",
+  "canonical_sha256": "5e44113db3152b216af7761766f69a7b389db54b5c1f5dce9ac227ba6e6e71cd",
+  "checker_sha256": "4db31c92fd839768205d10a1e0a2168a9a7520215e466b4aca0537ea125627d7",
+  "checks": {
+    "word_hash_argument_format": true,
+    "pinned_literal_hash": true,
+    "pinned_existing_canonical_hash": true,
+    "literal_length_and_nonempty_masks": true,
+    "width_arithmetic": true,
+    "one_period_plus_three_literal_letters": true,
+    "all_literal_triples_rank9": true,
+    "all_literal_four_windows_rank10": true,
+    "rank9_window_bijection": true,
+    "rank10_window_bijection": true,
+    "consecutive_lower_union_is_outgoing_upper": true,
+    "incoming_outgoing_intersection_is_current_lower": true,
+    "causal_envelope_contains_literal_same_index": true,
+    "envelope_triples_have_exact_R_i_phase": true,
+    "envelope_four_windows_have_exact_U_i_phase": true,
+    "one_coordinate_insertions_and_deletions": true,
+    "both_delayed_deletion_exclusions": true,
+    "actual_caps_contain_all_individual_triple_deficit_pins": true,
+    "all_rank1_through8_targets_have_literal_or_pair_witness": true,
+    "low_witness_range_inside_actual_linear_word": true,
+    "low_witness_direct_literal_replay": true,
+    "canonical_cycle_literal_lengths": true,
+    "canonical_original_owner_ranks": true,
+    "canonical_named_lower_no_repeat": true,
+    "canonical_named_lower_rank": true,
+    "canonical_same_complete_named_lower_layer": true,
+    "canonical_incoming_upper_bijection": true,
+    "canonical_outgoing_is_same_phi": true,
+    "incoming_matching_difference_is_permutation": true,
+    "matching_difference_cycle_closure": true,
+    "matching_difference_cyclic_transport": true,
+    "rotation_orbit_has_nineteen_distinct_named_labels": true,
+    "rotation_orbit_closes_after_nineteen": true,
+    "4862_rotation_orbits": true
+  },
+  "actual_period_length": 92378,
+  "linear_length": 92381,
+  "lower_layer_rank": 9,
+  "upper_layer_rank": 10,
+  "phase": {
+    "lower": "R_i=OR C_i,C_(i+1),C_(i+2)",
+    "upper": "U_i=OR C_i,...,C_(i+3)",
+    "envelope": "E_i=INTERSECTION U_(i-3),...,U_i",
+    "exact_triple_identity": "OR E_i,E_(i+1),E_(i+2)=R_i",
+    "exact_four_identity": "OR E_i,...,E_(i+3)=U_i"
+  },
+  "literal_rank_occurrences": [
+    [
+      1,
+      38
+    ],
+    [
+      2,
+      342
+    ],
+    [
+      3,
+      2033
+    ],
+    [
+      4,
+      6061
+    ],
+    [
+      5,
+      14250
+    ],
+    [
+      6,
+      28671
+    ],
+    [
+      7,
+      40983
+    ]
+  ],
+  "envelope_rank_occurrences": [
+    [
+      7,
+      92378
+    ]
+  ],
+  "literal_pair_rank_occurrences": [
+    [
+      4,
+      19
+    ],
+    [
+      5,
+      228
+    ],
+    [
+      6,
+      1178
+    ],
+    [
+      7,
+      11229
+    ],
+    [
+      8,
+      79724
+    ]
+  ],
+  "envelope_pair_rank_occurrences": [
+    [
+      8,
+      92378
+    ]
+  ],
+  "triple_pin_rank_occurrences": [
+    [
+      1,
+      15561
+    ],
+    [
+      2,
+      76817
+    ]
+  ],
+  "distinct_literal_targets": 82859,
+  "distinct_pair_targets": 88217,
+  "changed_pair_positions": 12654,
+  "lower_short_target_count": 169765,
+  "lower_rank_census": [
+    {
+      "rank": 1,
+      "literal_distinct": 19,
+      "pair_distinct": 0,
+      "overlap": 0,
+      "total_distinct": 19,
+      "expected": 19,
+      "pair_only": 0
+    },
+    {
+      "rank": 2,
+      "literal_distinct": 171,
+      "pair_distinct": 0,
+      "overlap": 0,
+      "total_distinct": 171,
+      "expected": 171,
+      "pair_only": 0
+    },
+    {
+      "rank": 3,
+      "literal_distinct": 969,
+      "pair_distinct": 0,
+      "overlap": 0,
+      "total_distinct": 969,
+      "expected": 969,
+      "pair_only": 0
+    },
+    {
+      "rank": 4,
+      "literal_distinct": 3857,
+      "pair_distinct": 19,
+      "overlap": 0,
+      "total_distinct": 3876,
+      "expected": 3876,
+      "pair_only": 19
+    },
+    {
+      "rank": 5,
+      "literal_distinct": 11438,
+      "pair_distinct": 228,
+      "overlap": 38,
+      "total_distinct": 11628,
+      "expected": 11628,
+      "pair_only": 190
+    },
+    {
+      "rank": 6,
+      "literal_distinct": 26030,
+      "pair_distinct": 1178,
+      "overlap": 76,
+      "total_distinct": 27132,
+      "expected": 27132,
+      "pair_only": 1102
+    },
+    {
+      "rank": 7,
+      "literal_distinct": 40375,
+      "pair_distinct": 11210,
+      "overlap": 1197,
+      "total_distinct": 50388,
+      "expected": 50388,
+      "pair_only": 10013
+    },
+    {
+      "rank": 8,
+      "literal_distinct": 0,
+      "pair_distinct": 75582,
+      "overlap": 0,
+      "total_distinct": 75582,
+      "expected": 75582,
+      "pair_only": 75582
+    }
+  ],
+  "ordinary_short_witness_replays": 169765,
+  "rotation_equivariance": {
+    "successor": {
+      "violations": 0,
+      "first_positions": []
+    },
+    "outgoing": {
+      "violations": 0,
+      "first_positions": []
+    },
+    "incoming": {
+      "violations": 0,
+      "first_positions": []
+    },
+    "literal": {
+      "violations": 0,
+      "first_positions": []
+    },
+    "envelope": {
+      "violations": 0,
+      "first_positions": []
+    },
+    "triple_pins": {
+      "violations": 0,
+      "first_positions": []
+    }
+  },
+  "quotient_rows": 4862,
+  "quotient_scope": "One row determines a field on its orbit only when that field has zero equivariance violations; the full named carrier is also retained.",
+  "canonical_components": 360,
+  "fixed_phi_agrees": true,
+  "fixed_phi_violations": 0,
+  "native_outgoing_changed": 0,
+  "native_outgoing_unchanged": 92378,
+  "outgoing_changed_by_native_height": [],
+  "native_incoming_unchanged": 21926,
+  "native_incoming_changed": 70452,
+  "incoming_difference_nontrivial_circuits": 1755,
+  "incoming_difference_circuit_lengths": [
+    [
+      3,
+      1216
+    ],
+    [
+      5,
+      399
+    ],
+    [
+      6,
+      38
+    ],
+    [
+      7,
+      38
+    ],
+    [
+      9,
+      19
+    ],
+    [
+      11,
+      19
+    ],
+    [
+      361,
+      1
+    ],
+    [
+      684,
+      1
+    ],
+    [
+      690,
+      19
+    ],
+    [
+      1178,
+      1
+    ],
+    [
+      2166,
+      1
+    ],
+    [
+      2945,
+      1
+    ],
+    [
+      21147,
+      1
+    ],
+    [
+      22344,
+      1
+    ]
+  ],
+  "incoming_changed_by_native_height": [
+    [
+      1,
+      19
+    ],
+    [
+      2,
+      3306
+    ],
+    [
+      3,
+      18240
+    ],
+    [
+      4,
+      24453
+    ],
+    [
+      5,
+      16055
+    ],
+    [
+      6,
+      6479
+    ],
+    [
+      7,
+      1615
+    ],
+    [
+      8,
+      266
+    ],
+    [
+      9,
+      19
+    ]
+  ],
+  "shared_unoriented_middle_incidences": [
+    [
+      1,
+      70452
+    ],
+    [
+      2,
+      21926
+    ]
+  ],
+  "resource_caps": {
+    "cpu_seconds": 60,
+    "wall_seconds": 90,
+    "address_space_bytes": 2147483648,
+    "per_file_size_bytes": 1073741824
+  },
+  "host": "arboghast",
+  "elapsed_seconds": 2.659485172946006
+}

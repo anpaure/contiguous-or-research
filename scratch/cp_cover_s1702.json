@@ -1,0 +1,15 @@
+{
+  "allow_cycle_cover": true,
+  "arc_hint": null,
+  "base_only": true,
+  "elapsed": 608.7292399406433,
+  "hint": null,
+  "k": 17,
+  "lazy_constraints": 0,
+  "max_choice_changes": null,
+  "round": 0,
+  "schema": "graded-quotient-carrier-v1",
+  "seed_shadow_cuts": false,
+  "shadow_seed": null,
+  "status": "UNKNOWN"
+}

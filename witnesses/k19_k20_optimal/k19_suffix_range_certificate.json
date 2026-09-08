@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "k": 19,
+  "length": 92381,
+  "input_sha256": "1d0e7595dc72c6f1b7590e9565d5c0d3c30d70138e993d074e7d90d778d4e414",
+  "input_bytes": 598636,
+  "nonempty_targets": 524287,
+  "targets_covered": 524287,
+  "missing_targets": 0,
+  "suffix_union_events": 1200846,
+  "separately_rechecked_witnesses": 524287,
+  "maximum_saved_witness_length": 29,
+  "witness_file": "k19_all_target_witnesses.jsonl.gz",
+  "witness_format": "JSONL [target,zero-based inclusive start,end], gzip",
+  "target_rank_counts": [
+    0,
+    19,
+    171,
+    969,
+    3876,
+    11628,
+    27132,
+    50388,
+    75582,
+    92378,
+    92378,
+    75582,
+    50388,
+    27132,
+    11628,
+    3876,
+    969,
+    171,
+    19,
+    1
+  ],
+  "all_rank_lower_bound": {
+    "B": 92381,
+    "maximizing_ranks": [
+      10
+    ],
+    "rows": [
+      {
+        "rank": 1,
+        "width": 19,
+        "smaller": 0,
+        "t": 0,
+        "lower": 19,
+        "capacity_at_t_minus_one": null
+      },
+      {
+        "rank": 2,
+        "width": 171,
+        "smaller": 19,
+        "t": 1,
+        "lower": 172,
+        "capacity_at_t_minus_one": 0
+      },
+      {
+        "rank": 3,
+        "width": 969,
+        "smaller": 190,
+        "t": 1,
+        "lower": 970,
+        "capacity_at_t_minus_one": 0
+      },
+      {
+        "rank": 4,
+        "width": 3876,
+        "smaller": 1159,
+        "t": 1,
+        "lower": 3877,
+        "capacity_at_t_minus_one": 0
+      },
+      {
+        "rank": 5,
+        "width": 11628,
+        "smaller": 5035,
+        "t": 1,
+        "lower": 11629,
+        "capacity_at_t_minus_one": 0
+      },
+      {
+        "rank": 6,
+        "width": 27132,
+        "smaller": 16663,
+        "t": 1,
+        "lower": 27133,
+        "capacity_at_t_minus_one": 0
+      },
+      {
+        "rank": 7,
+        "width": 50388,
+        "smaller": 43795,
+        "t": 1,
+        "lower": 50389,
+        "capacity_at_t_minus_one": 0
+      },
+      {
+        "rank": 8,
+        "width": 75582,
+        "smaller": 94183,
+        "t": 2,
+        "lower": 75584,
+        "capacity_at_t_minus_one": 75583
+      },
+      {
+        "rank": 9,
+        "width": 92378,
+        "smaller": 169765,
+        "t": 2,
+        "lower": 92380,
+        "capacity_at_t_minus_one": 92379
+      },
+      {
+        "rank": 10,
+        "width": 92378,
+        "smaller": 262143,
+        "t": 3,
+        "lower": 92381,
+        "capacity_at_t_minus_one": 184759
+      },
+      {
+        "rank": 11,
+        "width": 75582,
+        "smaller": 354521,
+        "t": 5,
+        "lower": 75587,
+        "capacity_at_t_minus_one": 302338
+      },
+      {
+        "rank": 12,
+        "width": 50388,
+        "smaller": 430103,
+        "t": 9,
+        "lower": 50397,
+        "capacity_at_t_minus_one": 403140
+      },
+      {
+        "rank": 13,
+        "width": 27132,
+        "smaller": 480491,
+        "t": 18,
+        "lower": 27150,
+        "capacity_at_t_minus_one": 461397
+      },
+      {
+        "rank": 14,
+        "width": 11628,
+        "smaller": 507623,
+        "t": 44,
+        "lower": 11672,
+        "capacity_at_t_minus_one": 500950
+      },
+      {
+        "rank": 15,
+        "width": 3876,
+        "smaller": 519251,
+        "t": 132,
+        "lower": 4008,
+        "capacity_at_t_minus_one": 516402
+      },
+      {
+        "rank": 16,
+        "width": 969,
+        "smaller": 523127,
+        "t": 440,
+        "lower": 1409,
+        "capacity_at_t_minus_one": 521971
+      },
+      {
+        "rank": 17,
+        "width": 171,
+        "smaller": 524096,
+        "t": 867,
+        "lower": 1038,
+        "capacity_at_t_minus_one": 523497
+      },
+      {
+        "rank": 18,
+        "width": 19,
+        "smaller": 524267,
+        "t": 1005,
+        "lower": 1024,
+        "capacity_at_t_minus_one": 523586
+      },
+      {
+        "rank": 19,
+        "width": 1,
+        "smaller": 524286,
+        "t": 1023,
+        "lower": 1024,
+        "capacity_at_t_minus_one": 523775
+      }
+    ]
+  },
+  "middle_rank": 10,
+  "middle_suffix_events": 92378,
+  "repeated_middle_targets": 0,
+  "endpoints_without_middle_target": [
+    0,
+    1,
+    2
+  ],
+  "all_letters_nonempty": true,
+  "all_witnesses_nonwrapping": true,
+  "exact_equality_certified": true
+}

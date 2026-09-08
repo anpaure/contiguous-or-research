@@ -1,0 +1,65 @@
+{
+  "audited_improvements": 0,
+  "best_audited": {
+    "baseline_only": true,
+    "body_sha256": "3e9027a8ff08709c703438cd8c4722db264226a026d1e7458e582bd75e69b25e",
+    "full_gates_pass": false,
+    "json_sha256": "d7585693242e352997efc424870f323fd048c81c8d2d099e0b630f63ec5cfd12",
+    "paths": {
+      "audit": "/tmp/k17_fixed_matching_refine_20260906_d8a31/hard600/search/initial.audit.json",
+      "body": "/tmp/k17_fixed_matching_refine_20260906_d8a31/hard600/search/initial.txt",
+      "json": "/tmp/k17_fixed_matching_refine_20260906_d8a31/hard600/search/initial.json"
+    },
+    "quotient_score": {
+      "bad2_orbits": 0,
+      "bad3_orbits": 0,
+      "constant_bad3_orbits": 0,
+      "invalid_rank_starts": [
+        0,
+        0,
+        69,
+        0
+      ],
+      "max_component": 23307,
+      "min_component": 68,
+      "missing_orbits": [
+        0,
+        102,
+        51,
+        48
+      ],
+      "pair_collisions": [
+        305,
+        434,
+        1056,
+        1136
+      ],
+      "physical_cycles": 5,
+      "quotient_cycles": 5,
+      "quotient_loops": 0,
+      "residence_shortfall_orbits": 0,
+      "zero_voltage_cycles": 0
+    },
+    "solver_feasible_for_mode": false
+  },
+  "best_objective_bound": null,
+  "has_solver_solution": false,
+  "interpretation": "No solver solution/proof in this budget; not an UNSAT claim. Baseline remains audited.",
+  "is_compiled_word": false,
+  "l2_improvement": 0,
+  "objective": null,
+  "requested_solver_seconds": 600.0,
+  "response_stats": "CpSolverResponse summary:\nstatus: UNKNOWN\nobjective: 0\nbest_bound: 0\nintegers: 0\nbooleans: 11438\nconflicts: 5651723\nbranches: 361957756\npropagations: 3835549824\ninteger_propagations: 0\nrestarts: 29733\nlp_iterations: 0\nwalltime: 601.196\nusertime: 601.196\ndeterministic_time: 4006.48\ngap_integral: 0\n",
+  "scope": "fixed M0; resident and U1 hard; L2 hard",
+  "solver_solutions": 0,
+  "solver_wall_seconds": 601.1959035990001,
+  "source": {
+    "body": "/tmp/k17_fixed_matching_refine_20260906_d8a31/seed17090501.best.txt",
+    "body_sha256": "3e9027a8ff08709c703438cd8c4722db264226a026d1e7458e582bd75e69b25e",
+    "json": "/tmp/k17_fixed_matching_refine_20260906_d8a31/seed17090501.best.json",
+    "json_sha256": "a0762509a6ca6ab9df6af2cffd6755e7fa43e6fadf68df61dab75ce7b9ed38ab"
+  },
+  "status": "UNKNOWN",
+  "total_wall_seconds": 602.5473851719871,
+  "workers": 4
+}

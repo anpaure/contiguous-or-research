@@ -1,0 +1,18 @@
+{
+  "canonical_core_necklaces": 364,
+  "conclusion": "no quotient-simple q4 period-10 column has induced owner reflection action i->1-i, even with row-dependent translating lifts",
+  "counts": {
+    "boundary_words": 188160,
+    "disjoint_boundary_pairs": 2115072,
+    "owner_nonsimple": 173440,
+    "owner_simple": 1941632
+  },
+  "normalization_proof_interface": "translate the five-core to its unique necklace representative; rotate any odd-axis involution i->a-i to i->1-i; the two fixed owner-cycle edges split the support order into disjoint boundary words s0..s4 and s5..s9",
+  "remaining_three_pair_relation_histogram": {
+    "000": 1940480,
+    "001": 384,
+    "010": 384,
+    "100": 384
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,200 @@
+{
+  "banks": {
+    "10": {
+      "available_cycles": 4,
+      "colour_conflict_resources": 0,
+      "conflicting_cycle_pairs": [],
+      "owner_conflict_resources": 0,
+      "pairwise_owner_colour_disjoint": true,
+      "simultaneous": {
+        "component_reduction": 36,
+        "old_components_met": 39,
+        "output_component_owner_lengths": [
+          230,
+          253,
+          756
+        ],
+        "output_components_on_touched_owners": 3,
+        "q2_support_losses": 0
+      }
+    },
+    "wrap": {
+      "available_cycles": 4,
+      "colour_conflict_resources": 1,
+      "conflicting_cycle_pairs": [
+        [
+          3,
+          7
+        ]
+      ],
+      "owner_conflict_resources": 1,
+      "pairwise_owner_colour_disjoint": false,
+      "simultaneous": null
+    }
+  },
+  "individual_cycles": [
+    {
+      "component_reduction": 10,
+      "context": "10",
+      "incidence_length": 22,
+      "index": 0,
+      "mapped_suffix_edge": [
+        "10111000",
+        "10101100"
+      ],
+      "new_component_owner_lengths": [
+        399
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 11,
+      "source_suffix_edge": [
+        "111000",
+        "101100"
+      ],
+      "status": "PASS"
+    },
+    {
+      "component_reduction": 13,
+      "context": "wrap",
+      "incidence_length": 28,
+      "index": 1,
+      "mapped_suffix_edge": [
+        "11110000",
+        "11011000"
+      ],
+      "new_component_owner_lengths": [
+        462
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 14,
+      "source_suffix_edge": [
+        "111000",
+        "101100"
+      ],
+      "status": "PASS"
+    },
+    {
+      "component_reduction": 10,
+      "context": "10",
+      "incidence_length": 22,
+      "index": 2,
+      "mapped_suffix_edge": [
+        "10111000",
+        "10101010"
+      ],
+      "new_component_owner_lengths": [
+        399
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 11,
+      "source_suffix_edge": [
+        "111000",
+        "101010"
+      ],
+      "status": "PASS"
+    },
+    {
+      "component_reduction": 10,
+      "context": "wrap",
+      "incidence_length": 24,
+      "index": 3,
+      "mapped_suffix_edge": [
+        "11110000",
+        "11010100"
+      ],
+      "new_component_owner_lengths": [
+        399
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 11,
+      "source_suffix_edge": [
+        "111000",
+        "101010"
+      ],
+      "status": "PASS"
+    },
+    {
+      "component_reduction": 12,
+      "context": "10",
+      "incidence_length": 26,
+      "index": 4,
+      "mapped_suffix_edge": [
+        "10110100",
+        "10110010"
+      ],
+      "new_component_owner_lengths": [
+        441
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 13,
+      "source_suffix_edge": [
+        "110100",
+        "110010"
+      ],
+      "status": "PASS"
+    },
+    {
+      "component_reduction": 10,
+      "context": "wrap",
+      "incidence_length": 24,
+      "index": 5,
+      "mapped_suffix_edge": [
+        "11101000",
+        "11100100"
+      ],
+      "new_component_owner_lengths": [
+        399
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 11,
+      "source_suffix_edge": [
+        "110100",
+        "110010"
+      ],
+      "status": "PASS"
+    },
+    {
+      "component_reduction": 9,
+      "context": "10",
+      "incidence_length": 20,
+      "index": 6,
+      "mapped_suffix_edge": [
+        "10110100",
+        "10101100"
+      ],
+      "new_component_owner_lengths": [
+        378
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 10,
+      "source_suffix_edge": [
+        "110100",
+        "101100"
+      ],
+      "status": "PASS"
+    },
+    {
+      "component_reduction": 11,
+      "context": "wrap",
+      "incidence_length": 24,
+      "index": 7,
+      "mapped_suffix_edge": [
+        "11101000",
+        "11011000"
+      ],
+      "new_component_owner_lengths": [
+        420
+      ],
+      "new_components_on_touched_owners": 1,
+      "old_components_met": 12,
+      "source_suffix_edge": [
+        "110100",
+        "101100"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "source_s": 3,
+  "status": "PASS",
+  "target_s": 4
+}

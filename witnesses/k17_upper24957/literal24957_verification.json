@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "input_sha256": "dc7c7af32feb73c91fd14e00c6a046de6d753af4d2fc632f71960dcdbdd820db",
+  "length": 24957,
+  "dimension": 17,
+  "distinct_nonempty_targets": 131071,
+  "missing_count": 0,
+  "missing_targets": [],
+  "rank_census": {
+    "1": 17,
+    "2": 136,
+    "3": 680,
+    "4": 2380,
+    "5": 6188,
+    "6": 12376,
+    "7": 19448,
+    "8": 24310,
+    "9": 24310,
+    "10": 19448,
+    "11": 12376,
+    "12": 6188,
+    "13": 2380,
+    "14": 680,
+    "15": 136,
+    "16": 17,
+    "17": 1
+  },
+  "all_letters_nonempty": true,
+  "nonwrapping_witnesses_checked_by_segment_tree": 131071,
+  "witness_indexing": "zero-based inclusive endpoints"
+}

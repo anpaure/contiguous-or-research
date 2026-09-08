@@ -1,0 +1,851 @@
+{
+  "status": "PASS",
+  "host": "arboghast",
+  "input_sha256": "fed20c313c639740b089428c1d2b8b572fc7138de4c11c2203be554e4acfa2a3",
+  "cycle_count": 146,
+  "state_count": 24310,
+  "capped_erosion_letters_reconstructed": 24310,
+  "periodic_states_independently_last_occurrence_replayed": 24310,
+  "counts": {
+    "all_rank8_subset_candidates": 218790,
+    "complete_neutral_candidates": 196724,
+    "legal_neutral_edges": 53618,
+    "native": 24310,
+    "cross_component": 4998,
+    "rejected_neutral_candidates": 143106,
+    "self": 24310,
+    "discarded_unequal_height_candidates": 22066
+  },
+  "extra_internal_edge_count": 0,
+  "component_edges": [
+    {
+      "source_cycle": 1,
+      "destination_cycle": 0,
+      "multiplicity": 85
+    },
+    {
+      "source_cycle": 2,
+      "destination_cycle": 1,
+      "multiplicity": 119
+    },
+    {
+      "source_cycle": 2,
+      "destination_cycle": 8,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 3,
+      "destination_cycle": 1,
+      "multiplicity": 102
+    },
+    {
+      "source_cycle": 4,
+      "destination_cycle": 1,
+      "multiplicity": 102
+    },
+    {
+      "source_cycle": 5,
+      "destination_cycle": 1,
+      "multiplicity": 102
+    },
+    {
+      "source_cycle": 6,
+      "destination_cycle": 1,
+      "multiplicity": 102
+    },
+    {
+      "source_cycle": 7,
+      "destination_cycle": 1,
+      "multiplicity": 102
+    },
+    {
+      "source_cycle": 8,
+      "destination_cycle": 1,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 9,
+      "destination_cycle": 2,
+      "multiplicity": 85
+    },
+    {
+      "source_cycle": 9,
+      "destination_cycle": 14,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 10,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 10,
+      "destination_cycle": 3,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 10,
+      "destination_cycle": 5,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 11,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 11,
+      "destination_cycle": 6,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 12,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 12,
+      "destination_cycle": 7,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 12,
+      "destination_cycle": 14,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 13,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 13,
+      "destination_cycle": 7,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 13,
+      "destination_cycle": 14,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 14,
+      "destination_cycle": 8,
+      "multiplicity": 221
+    },
+    {
+      "source_cycle": 14,
+      "destination_cycle": 25,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 15,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 15,
+      "destination_cycle": 3,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 16,
+      "destination_cycle": 3,
+      "multiplicity": 68
+    },
+    {
+      "source_cycle": 16,
+      "destination_cycle": 6,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 17,
+      "destination_cycle": 3,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 17,
+      "destination_cycle": 4,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 17,
+      "destination_cycle": 7,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 18,
+      "destination_cycle": 3,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 18,
+      "destination_cycle": 5,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 18,
+      "destination_cycle": 7,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 19,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 19,
+      "destination_cycle": 4,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 19,
+      "destination_cycle": 14,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 20,
+      "destination_cycle": 3,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 20,
+      "destination_cycle": 4,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 20,
+      "destination_cycle": 7,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 21,
+      "destination_cycle": 4,
+      "multiplicity": 68
+    },
+    {
+      "source_cycle": 21,
+      "destination_cycle": 7,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 22,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 22,
+      "destination_cycle": 5,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 22,
+      "destination_cycle": 14,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 23,
+      "destination_cycle": 3,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 23,
+      "destination_cycle": 5,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 23,
+      "destination_cycle": 7,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 24,
+      "destination_cycle": 2,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 24,
+      "destination_cycle": 6,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 24,
+      "destination_cycle": 14,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 26,
+      "destination_cycle": 3,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 26,
+      "destination_cycle": 6,
+      "multiplicity": 68
+    },
+    {
+      "source_cycle": 27,
+      "destination_cycle": 4,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 27,
+      "destination_cycle": 5,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 27,
+      "destination_cycle": 6,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 28,
+      "destination_cycle": 4,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 28,
+      "destination_cycle": 5,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 28,
+      "destination_cycle": 6,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 29,
+      "destination_cycle": 9,
+      "multiplicity": 51
+    },
+    {
+      "source_cycle": 29,
+      "destination_cycle": 33,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 30,
+      "destination_cycle": 9,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 30,
+      "destination_cycle": 12,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 31,
+      "destination_cycle": 9,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 31,
+      "destination_cycle": 13,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 32,
+      "destination_cycle": 9,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 32,
+      "destination_cycle": 24,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 32,
+      "destination_cycle": 41,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 33,
+      "destination_cycle": 14,
+      "multiplicity": 68
+    },
+    {
+      "source_cycle": 33,
+      "destination_cycle": 55,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 33,
+      "destination_cycle": 57,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 34,
+      "destination_cycle": 10,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 34,
+      "destination_cycle": 22,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 35,
+      "destination_cycle": 10,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 35,
+      "destination_cycle": 13,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 35,
+      "destination_cycle": 23,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 36,
+      "destination_cycle": 10,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 36,
+      "destination_cycle": 24,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 36,
+      "destination_cycle": 28,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 37,
+      "destination_cycle": 11,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 37,
+      "destination_cycle": 24,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 38,
+      "destination_cycle": 11,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 38,
+      "destination_cycle": 24,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 38,
+      "destination_cycle": 26,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 39,
+      "destination_cycle": 12,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 39,
+      "destination_cycle": 13,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 40,
+      "destination_cycle": 14,
+      "multiplicity": 136
+    },
+    {
+      "source_cycle": 41,
+      "destination_cycle": 14,
+      "multiplicity": 136
+    },
+    {
+      "source_cycle": 42,
+      "destination_cycle": 14,
+      "multiplicity": 136
+    },
+    {
+      "source_cycle": 43,
+      "destination_cycle": 14,
+      "multiplicity": 136
+    },
+    {
+      "source_cycle": 44,
+      "destination_cycle": 9,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 44,
+      "destination_cycle": 15,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 45,
+      "destination_cycle": 10,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 45,
+      "destination_cycle": 15,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 45,
+      "destination_cycle": 18,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 46,
+      "destination_cycle": 11,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 46,
+      "destination_cycle": 15,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 46,
+      "destination_cycle": 26,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 47,
+      "destination_cycle": 15,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 47,
+      "destination_cycle": 16,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 47,
+      "destination_cycle": 24,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 48,
+      "destination_cycle": 16,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 48,
+      "destination_cycle": 26,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 49,
+      "destination_cycle": 13,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 49,
+      "destination_cycle": 17,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 49,
+      "destination_cycle": 19,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 49,
+      "destination_cycle": 43,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 51,
+      "destination_cycle": 9,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 51,
+      "destination_cycle": 19,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 51,
+      "destination_cycle": 42,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 52,
+      "destination_cycle": 10,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 52,
+      "destination_cycle": 19,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 52,
+      "destination_cycle": 27,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 53,
+      "destination_cycle": 13,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 53,
+      "destination_cycle": 15,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 53,
+      "destination_cycle": 20,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 54,
+      "destination_cycle": 9,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 54,
+      "destination_cycle": 22,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 54,
+      "destination_cycle": 42,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 59,
+      "destination_cycle": 5,
+      "multiplicity": 34
+    },
+    {
+      "source_cycle": 60,
+      "destination_cycle": 12,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 60,
+      "destination_cycle": 15,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 60,
+      "destination_cycle": 23,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 61,
+      "destination_cycle": 16,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 61,
+      "destination_cycle": 17,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 61,
+      "destination_cycle": 23,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 61,
+      "destination_cycle": 27,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 62,
+      "destination_cycle": 17,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 62,
+      "destination_cycle": 18,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 62,
+      "destination_cycle": 20,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 62,
+      "destination_cycle": 23,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 63,
+      "destination_cycle": 12,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 63,
+      "destination_cycle": 18,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 63,
+      "destination_cycle": 22,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 63,
+      "destination_cycle": 43,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 64,
+      "destination_cycle": 11,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 64,
+      "destination_cycle": 19,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 64,
+      "destination_cycle": 28,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 65,
+      "destination_cycle": 16,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 65,
+      "destination_cycle": 18,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 65,
+      "destination_cycle": 20,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 65,
+      "destination_cycle": 28,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 66,
+      "destination_cycle": 12,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 66,
+      "destination_cycle": 19,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 66,
+      "destination_cycle": 21,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 66,
+      "destination_cycle": 40,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 67,
+      "destination_cycle": 10,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 67,
+      "destination_cycle": 22,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 67,
+      "destination_cycle": 59,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 68,
+      "destination_cycle": 11,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 68,
+      "destination_cycle": 22,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 68,
+      "destination_cycle": 27,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 69,
+      "destination_cycle": 29,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 83,
+      "destination_cycle": 103,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 104,
+      "destination_cycle": 17,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 104,
+      "destination_cycle": 20,
+      "multiplicity": 17
+    },
+    {
+      "source_cycle": 104,
+      "destination_cycle": 21,
+      "multiplicity": 34
+    }
+  ],
+  "nontrivial_component_sccs": [],
+  "source_scc_size_census": {
+    "1": 24310
+  },
+  "nontrivial_source_scc_count": 0,
+  "sccs_independently_verified_by_reachability_and_acyclic_condensation": true,
+  "chosen_cut_cycle": [],
+  "reassignment_summary": {
+    "chosen_cut_cycle": [],
+    "all_cut_components_distinct": null
+  },
+  "scope": "Exactly D^min(h,3), without any further entrywise caps. All neutral legal edges tested; one deterministic SCC/cycle diagnostic, no variants.",
+  "resources": {
+    "cpu_seconds": 120,
+    "wall_seconds": 150,
+    "address_space_bytes": 2147483648
+  },
+  "elapsed_seconds": 3.7098456448875368,
+  "artifacts": {
+    "capped_periodic_states.json": {
+      "bytes": 4427277,
+      "sha256": "af78b935a87e4b1d000e83b93838b765c41adc948c6da1a03eb9b479c024a204"
+    },
+    "complete_neutral_candidates.csv": {
+      "bytes": 6988755,
+      "sha256": "ee3bb4eb74459e7837b3b820f39d2240c93283663753262b106854731e72af6d"
+    },
+    "complete_neutral_legal_edges.csv": {
+      "bytes": 1553517,
+      "sha256": "ecbdb44113fb7a35067d3447683fc4498d21186b2ab1261b6363e9e034c1221f"
+    },
+    "capped_neutral_component_quotient.json": {
+      "bytes": 1550953,
+      "sha256": "0b5fcc6de5863404e6b046123cd62a9c94f7e47c78cb68e6e53e795f19d11ddc"
+    },
+    "complete_alternative_matching_arcs.csv": {
+      "bytes": 681341,
+      "sha256": "779f81d655b68de17fc5be946734d18f996a9c55b9eff616c117e916f593ea5a"
+    },
+    "capped_alternative_matching_scc_and_cycle.json": {
+      "bytes": 596820,
+      "sha256": "8ea3d99530274f0aa9d9c8de64d368af4dca1cdf3109114d818d6c70b404e360"
+    }
+  }
+}

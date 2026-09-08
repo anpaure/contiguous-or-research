@@ -1,0 +1,18 @@
+{
+  "task": "file assembly only",
+  "source_files": 65,
+  "full_text_documents": 41,
+  "essential_sources": 39,
+  "contextual_sources": 18,
+  "finite_artifacts": 6,
+  "original_copies_byte_identical": true,
+  "full_text_md_txt_identical": true,
+  "complete_source_sections_verified": true,
+  "unbundled_historical_local_links": 9,
+  "mathematical_code_executed": false,
+  "finite_word_verifier_rerun": false,
+  "external_or_formal_verification": false,
+  "zip_member_integrity": "validated after archive creation",
+  "math_like_nonlinks_preserved": true,
+  "source_snapshot_current_at_validation": true
+}

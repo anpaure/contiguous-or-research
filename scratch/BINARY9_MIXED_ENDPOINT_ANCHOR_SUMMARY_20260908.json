@@ -1,0 +1,237 @@
+{
+  "host": "arboghast",
+  "scope": "Fixed-left source, four mixed-sign shorts plus one full packet. Necessary endpoint/incidence/vertical-anchor certificates only; no internal row orders or all-rank replacement cover checked.",
+  "stop_reason": "complete",
+  "owners_completed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "source_choices_expected": 160160,
+  "source_choices_processed": 160160,
+  "owner_counts": [
+    {
+      "full_owner": 0,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1564,
+      "support_selections_passing_endpoints": 1,
+      "sources_with_endpoint_certificate": 1,
+      "sources_with_anchor_certificate": 1,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 1,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1601,
+      "support_selections_passing_endpoints": 2,
+      "sources_with_endpoint_certificate": 2,
+      "sources_with_anchor_certificate": 2,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "full_owner": 2,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1948,
+      "support_selections_passing_endpoints": 0,
+      "sources_with_endpoint_certificate": 0,
+      "sources_with_anchor_certificate": 0,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 3,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1565,
+      "support_selections_passing_endpoints": 0,
+      "sources_with_endpoint_certificate": 0,
+      "sources_with_anchor_certificate": 0,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 4,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1744,
+      "support_selections_passing_endpoints": 1,
+      "sources_with_endpoint_certificate": 1,
+      "sources_with_anchor_certificate": 1,
+      "survivors_by_number_zero_shorts": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 5,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1802,
+      "support_selections_passing_endpoints": 10,
+      "sources_with_endpoint_certificate": 10,
+      "sources_with_anchor_certificate": 9,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        8,
+        1,
+        0
+      ]
+    },
+    {
+      "full_owner": 6,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1706,
+      "support_selections_passing_endpoints": 6,
+      "sources_with_endpoint_certificate": 6,
+      "sources_with_anchor_certificate": 6,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "full_owner": 7,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1963,
+      "support_selections_passing_endpoints": 1,
+      "sources_with_endpoint_certificate": 1,
+      "sources_with_anchor_certificate": 1,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 8,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1723,
+      "support_selections_passing_endpoints": 1,
+      "sources_with_endpoint_certificate": 1,
+      "sources_with_anchor_certificate": 1,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 9,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1609,
+      "support_selections_passing_endpoints": 0,
+      "sources_with_endpoint_certificate": 0,
+      "sources_with_anchor_certificate": 0,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 10,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1934,
+      "support_selections_passing_endpoints": 1,
+      "sources_with_endpoint_certificate": 1,
+      "sources_with_anchor_certificate": 1,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 11,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1726,
+      "support_selections_passing_endpoints": 1,
+      "sources_with_endpoint_certificate": 1,
+      "sources_with_anchor_certificate": 1,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 12,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1553,
+      "support_selections_passing_endpoints": 0,
+      "sources_with_endpoint_certificate": 0,
+      "sources_with_anchor_certificate": 0,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "full_owner": 13,
+      "source_choices_processed": 11440,
+      "sources_with_at_least_four_owner_edges": 1660,
+      "support_selections_passing_endpoints": 1,
+      "sources_with_endpoint_certificate": 1,
+      "sources_with_anchor_certificate": 1,
+      "survivors_by_number_zero_shorts": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "surviving_source_count": 24,
+  "elapsed_seconds": 0.48086025286465883
+}

@@ -1,0 +1,29 @@
+{
+  "best_remaining_pair_swap": {
+    "delta": 0,
+    "new": 184472,
+    "old": 152016
+  },
+  "best_remaining_self_swap": {
+    "delta": 0,
+    "new": 1040,
+    "old": 1039
+  },
+  "elapsed_seconds": 0.34458041191101074,
+  "final_energy": 54,
+  "final_histogram": {
+    "0": 27,
+    "1": 626,
+    "2": 27
+  },
+  "instance": "/dev/shm/q4z17_reflect_sample0_augmented170k.dat",
+  "iterations": 0,
+  "output_state": "/dev/shm/q4z17_reflect_sample0_augmented170k.e54.steepest1.solution.json",
+  "pair_comparisons_per_iteration": 10230948,
+  "pair_options": 189462,
+  "self_options": 3749,
+  "source_energy": 54,
+  "source_state": "/dev/shm/q4z17_reflect_sample0_augmented170k.e56_pair_two.solution.json",
+  "status": "PASS",
+  "trajectory": []
+}

@@ -1,0 +1,12 @@
+audit_q4_k17_owner_targeted_reflection_pairs_freeze_20260814.h100.out PASS [595, 484, 631] 36
+audit_q4_k17_e62_row624_targeted_top5000_freeze_20260814.h100.out PASS 624 None
+audit_q4_k17_e64_row348_targeted_top5000_freeze_20260814.h100.out PASS 348 None
+audit_q4_k17_e64_row664_targeted_top5000_freeze_20260814.h100.out PASS 664 None
+audit_q4_k17_e66_row605_targeted_top5000_freeze_20260814.h100.out PASS 605 None
+audit_q4_k17_e70_row459_targeted_top5000_freeze_20260814.h100.out PASS 459 None
+audit_q4_k17_e74_row399_targeted_top5000_freeze_20260814.h100.out PASS 399 None
+audit_q4_k17_e76_row395_targeted_top5000_freeze_20260814.h100.out PASS 395 None
+audit_q4_k17_e78_row516_targeted_top5000_freeze_20260814.h100.out PASS 516 None
+FREEZE_REPLAY_PASS 9
+THEOREM_SHA256 8c6fd9f281c6ef5f225c82eb705fff3d95aabc6d43d3ea881dae8db4d5e22828
+FREEZE_SCOPE E62_ONLY

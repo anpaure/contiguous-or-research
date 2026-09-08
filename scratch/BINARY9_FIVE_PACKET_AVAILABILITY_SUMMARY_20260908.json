@@ -1,0 +1,27 @@
+{
+  "host": "arboghast",
+  "scope": "All full4+5 rows grouped by exact old-owner mask, followed by full Boolean OR-zeta; necessary critical availability for all five-whole-packet sources only.",
+  "status": "COMPLETE",
+  "phase": "done",
+  "enumerated_full_rows": 362880,
+  "owner_mask_size_histogram": [
+    0,
+    140,
+    1731,
+    14476,
+    68820,
+    134916,
+    103652,
+    34115,
+    4813,
+    217,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_count_expected": 2002,
+  "surviving_source_count": 2002,
+  "elapsed_seconds": 1.270716871600598
+}

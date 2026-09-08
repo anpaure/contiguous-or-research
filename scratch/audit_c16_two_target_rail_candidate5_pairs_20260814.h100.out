@@ -1,0 +1,75 @@
+{
+  "commuting_pair_counts": {
+    "C6+C6": {
+      "inverse_typed_signature_pairs": 0,
+      "nonpath_factor": 0,
+      "owner_colour_disjoint_inverse_pairs": 0,
+      "zero_typed_binary": 0,
+      "zero_typed_create_both_targets": 0
+    },
+    "C6+C8": {
+      "inverse_typed_signature_pairs": 0,
+      "nonpath_factor": 0,
+      "owner_colour_disjoint_inverse_pairs": 0,
+      "zero_typed_binary": 0,
+      "zero_typed_create_both_targets": 0
+    },
+    "C8+C8": {
+      "inverse_typed_signature_pairs": 0,
+      "nonpath_factor": 0,
+      "owner_colour_disjoint_inverse_pairs": 0,
+      "zero_typed_binary": 0,
+      "zero_typed_create_both_targets": 0
+    }
+  },
+  "completeness_scope": "Every native alternating C6/C8 in the current candidate-5 m=9 factor containing an absent A/B-provider incidence; every commuting owner-and-colour-disjoint pair from those banks. Overlapping sequential cycles and open noncycle rails are excluded.",
+  "corrected_middle_owner_form": "O_i=(A intersection B) minus a two-element set; consecutive two-element omissions share one element",
+  "five_owner_adjacent_window_census": {
+    "internal_upper_q1_colours_distinct": 721710,
+    "internal_upper_q1_colours_equal": 0,
+    "missing_incidence_histogram": {
+      "3": 404,
+      "4": 8406,
+      "5": 61536,
+      "6": 202132,
+      "7": 296940,
+      "8": 152292
+    },
+    "native_C6_closures": 0,
+    "native_C8_closures": 0,
+    "rails_missing_at_most_four": 8810,
+    "total": 721710
+  },
+  "literal_ranks": {
+    "factor_owner_rank": 9,
+    "intersection_rank": 11,
+    "target_A_rank": 12,
+    "target_B_rank": 12,
+    "target_exchange_distance": 1
+  },
+  "single_cycle_banks": {
+    "C6": {
+      "creates_A": 6,
+      "creates_B": 5,
+      "creates_both": 0,
+      "distinct_target_relevant_cycles": 382,
+      "target_start_arcs": 1936
+    },
+    "C8": {
+      "creates_A": 22,
+      "creates_B": 25,
+      "creates_both": 0,
+      "distinct_target_relevant_cycles": 1495,
+      "target_start_arcs": 1936
+    }
+  },
+  "solutions": [],
+  "status": "PASS",
+  "targets": {
+    "A": "100011010111110111",
+    "B": "100010011111110111",
+    "current_load_A": 0,
+    "current_load_B": 0,
+    "intersection": "100010010111110111"
+  }
+}

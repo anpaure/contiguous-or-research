@@ -1,0 +1,135 @@
+{
+  "indexing": "zero based",
+  "source_length": 308,
+  "fixed_positions": [
+    0,
+    305
+  ],
+  "attachment_changed_positions": [
+    306,
+    307
+  ],
+  "pivot_required_mask": 98304,
+  "pivot_required_bits": [
+    15,
+    16
+  ],
+  "A304": 9557,
+  "A305": 5461,
+  "T304": 79189,
+  "T305": 103765,
+  "legal_initial_pin": {
+    "position": 0,
+    "target": 21866,
+    "protect_bit": 0,
+    "protect_position": 1,
+    "all_owner_rows_replayed": 306
+  },
+  "targets": {
+    "21866": {
+      "all_source_witnesses": [],
+      "stable_source_witnesses": [],
+      "boundary_dependent_source_witnesses": [],
+      "prefix_superowner_positions": [
+        0,
+        50
+      ],
+      "remaining_Q_superowners": [
+        21870,
+        21882,
+        21994,
+        22378,
+        23914,
+        30058,
+        87402
+      ],
+      "initial_owner_contains": true,
+      "last_prefix_owner_contains": false,
+      "contains_pivot_required_bits": false
+    },
+    "43860": {
+      "all_source_witnesses": [],
+      "stable_source_witnesses": [],
+      "boundary_dependent_source_witnesses": [],
+      "prefix_superowner_positions": [
+        102,
+        152
+      ],
+      "remaining_Q_superowners": [
+        43861,
+        43868,
+        43892,
+        43988,
+        44884,
+        47956,
+        60244
+      ],
+      "initial_owner_contains": false,
+      "last_prefix_owner_contains": false,
+      "contains_pivot_required_bits": false
+    },
+    "46420": {
+      "all_source_witnesses": [],
+      "stable_source_witnesses": [],
+      "boundary_dependent_source_witnesses": [],
+      "prefix_superowner_positions": [
+        204,
+        254
+      ],
+      "remaining_Q_superowners": [
+        46421,
+        46428,
+        46452,
+        46548,
+        46932,
+        48468,
+        62804
+      ],
+      "initial_owner_contains": false,
+      "last_prefix_owner_contains": false,
+      "contains_pivot_required_bits": false
+    },
+    "70998": {
+      "all_source_witnesses": [],
+      "stable_source_witnesses": [],
+      "boundary_dependent_source_witnesses": [],
+      "prefix_superowner_positions": [
+        153,
+        203
+      ],
+      "remaining_Q_superowners": [
+        70999,
+        71006,
+        71030,
+        71126,
+        71510,
+        73046,
+        87382
+      ],
+      "initial_owner_contains": false,
+      "last_prefix_owner_contains": false,
+      "contains_pivot_required_bits": false
+    },
+    "92834": {
+      "all_source_witnesses": [],
+      "stable_source_witnesses": [],
+      "boundary_dependent_source_witnesses": [],
+      "prefix_superowner_positions": [
+        51,
+        101
+      ],
+      "remaining_Q_superowners": [
+        92835,
+        92842,
+        92898,
+        93090,
+        93858,
+        96930,
+        125602
+      ],
+      "initial_owner_contains": false,
+      "last_prefix_owner_contains": false,
+      "contains_pivot_required_bits": false
+    }
+  }
+}

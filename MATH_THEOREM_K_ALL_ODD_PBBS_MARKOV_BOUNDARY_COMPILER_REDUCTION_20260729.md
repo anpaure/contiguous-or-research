@@ -3,8 +3,9 @@
 Date: 2026-07-29
 
 Status: unconditional reduction theorem, exact compiler theorem, and audited
-calibration at `k=11,13,15`.  The resulting all-odd existence lemma is stated
-precisely but is not proved uniformly.  No all-odd equality claim is made.
+calibration at `k=11,13,15`.  The architecture-free flat-middle gate is stated
+separately from the stronger PBBS/protected wrapper.  The resulting all-odd
+existence lemma is not proved uniformly.  No all-odd equality claim is made.
 
 ## 1. Parameters and the target
 
@@ -28,7 +29,11 @@ The proved monotone-deadline theorem gives
  \nu(k)\ge B(k):=W+d.                                    \tag{1.1}
 \]
 
-We treat the nontrivial range `k>=3`, where `d>=1`; `k=1` is immediate.
+We treat the nontrivial range `k>=3`; `k=1` is immediate.  Here
+\(1\le d\le m=r-1\).  Indeed \(\Lambda=2^{2m}-1\), and
+\(mW\ge\Lambda\): this is direct for `m=1`, while
+\(m\binom{2m+1}{m}/4^m>1\) at `m=2` and its successive ratio is
+\((m+1)(2m+3)/(2m(m+2))>1\).
 
 Thus an all-odd upper theorem only has to construct a word of length `W+d`.
 The purpose of this note is to state exactly what the PBBS/Markov route must
@@ -91,13 +96,15 @@ at each visited vertex, so toggling it preserves degree two.  The union of
 all toggles is the symmetric difference.  QED.
 
 The Middle Levels Hamilton-cycle theorem supplies a connected spanning
-2-factor of `Gamma_k`.  Therefore **unprotected component reduction is never
-the obstruction**: the q1 factor fibre always contains a connected factor,
-and every PBBS factor is algebraically connected to it by alternating
-circuits.
-
-What is not implied is that the target factor, or the intermediate toggles,
-preserve PBBS all-depth flags or residence.  This distinction is essential.
+2-factor of `Gamma_k`.  Thus connectivity is not an obstruction **inside the
+unprotected q1-factor subproblem**: the q1 factor fibre contains a connected
+factor, and the particular q1-exact PBBS two-matching factor audited in
+Section 3 is algebraically connected to it by alternating circuits.  This
+says nothing about whether the resulting middle ordering is upper-complete
+or admits `COMP_d(T)`, and it is not a necessity statement for arbitrary
+optimal words.  In particular, neither the target factor nor the
+intermediate toggles are thereby known to preserve PBBS all-depth flags or
+residence.
 
 ### Theorem 2.2 (transversal alternating-cycle merge)
 
@@ -121,15 +128,16 @@ distinct rank-`r-1` sets `X,Y` were both contained in two rank-`r` sets, then
 \(X\cup Y\).  Thus a transversal alternating `C_6` is the first possible
 automatic merge, and it merges three components at once.
 
-This gives a sharp protected-reduction target:
+This gives one sufficient protected-reduction target inside the PBBS wrapper:
 
 > while a protected factor has at least three components, find a transversal
 > alternating circuit whose toggled endpoint remains protected.
 
-Iterating such circuits reaches one or two components.  The theorem explains
-why two components are a natural stopping point rather than a defect: the
-automatic two-edge merge is intrinsically absent, while Section 6 shows that
-two components already have enough external boundary capacity.
+If such circuits remain available, iteration reaches one or two components.
+Two components are a convenient stopping point: the automatic two-edge
+merge is intrinsically absent, while Section 6 handles their at most two
+deleted q1 cut colours.  Neither reduction to two components nor this q1
+capacity is necessary or sufficient for `FMCC(m)`.
 
 In a fixed-matching chart there is also an exact nontransversal criterion.
 Write the old factor permutation as \(\sigma=M_0^{-1}P\), replace `P` by
@@ -155,6 +163,78 @@ also covers circuits which visit one old component several times.  Theorem
 
 ## 3. The protected PBBS face
 
+We first discharge an external assumption which must not be hidden inside
+the phrase “PBBS all-depth factor.”  Put
+
+\[
+ \mathcal X=\binom{[2m+1]}m,
+ \qquad \mathcal U=\binom{[2m+1]}{m+1},
+\]
+
+and let `f` be the canonical PBBS permutation of \(\mathcal X\).  The source
+used here is the **antipodal two-matching lift**
+
+\[
+ M_+(A)=f(A)^c,\qquad M_-(A)=f^{-1}(A)^c.              \tag{3.1}
+\]
+
+It is not merely the assertion that some PBBS windows cover every shadow.
+
+### Proposition 3.1 (the chosen PBBS source is q1-exact)
+
+For every `m>=1`, the two maps in (3.1) are edge-disjoint perfect matchings
+of the rank-`m`/rank-`m+1` inclusion graph.  Their union is a simple spanning
+two-factor, and after suppressing the rank-`m` shore its Johnson factor on
+\(\mathcal U\) uses every rank-`m` lower-q1 colour exactly once.
+
+#### Proof
+
+PBBS gives a permutation `f` with
+
+\[
+ A\cap f(A)=\varnothing,
+ \qquad |f^{-1}(A)\cap f(A)|=m-1.                    \tag{3.2}
+\]
+
+Applying the first identity to `f^{-1}(A)` also gives
+`A\cap f^{-1}(A)=\varnothing`, so both complements in (3.1) contain `A`.
+The second identity follows from the audited fact that `f^2` is a Johnson
+factor: substitute `C=f^{-1}(A)` into
+`|C\cap f^2(C)|=m-1`.  Both sets in (3.1) have rank `m+1`, so they are
+incidence neighbours.  Each map is a bijection, being a
+composition of a permutation and complementation, and is therefore a
+perfect matching.  Equation (3.2) also gives
+`f^{-1}(A) != f(A)`, so their edges at `A` are distinct.
+
+The two upper neighbours of `A` are thus distinct rank-`m+1` supersets of
+the same rank-`m` set.  Their intersection is exactly `A`.  Suppressing
+`A` consequently creates one Johnson edge with lower colour `A`.  There is
+one such suppressed edge for every \(A\in\mathcal X\), proving exactness rather
+than mere support.  This proof includes `m=1`; then (3.2) says the two PBBS
+neighbours have empty intersection and are distinct.  QED.
+
+This is independently the construction proved in
+`THREAD_A_COMPOSITE_ODD_PBBS_TWO_MATCHING_SHADOW_FACTOR_20260729.md`,
+Theorems 1.1 and 2.1.  It also identifies the carrier used by the all-depth
+theorem.  If `B_{i+1}=f^2(B_i)`, then its rank-`m+1` owner is
+
+\[
+ T_i=f(B_i)^c=B_i\cup B_{i+1},
+ \qquad T_i\cap T_{i+1}=B_{i+1}.                    \tag{3.3}
+\]
+
+Thus the PBBS `q`-edge intersection witnesses lift to the same two-matching
+factor, while complementation gives its upper witnesses.  The all-depth
+audit supplies support at the deeper ranks; Proposition 3.1 separately
+supplies multiplicity-one at lower q1.  Neither statement may be substituted
+for the other.
+
+There is a related convention trap.  The bare centered Johnson factor
+`f^2` on rank `m` has every adjacent **union** colour exactly once and a
+lower-intersection load between one and three.  It is the lift (3.1), or the
+equivalent complemented carrier (3.3), that has the lower-q1 palette needed
+by `Gamma_k` exactly once.
+
 Call a q1-exact factor `G` **`d`-protected** when:
 
 1. every cyclic positive coordinate run in every physical cycle has length
@@ -166,23 +246,35 @@ Call a q1-exact factor `G` **`d`-protected** when:
    geodesic fixed-width upper deck.
 
 The audited PBBS chronology theorem supplies the all-depth flag tower at the
-source.  Alternating toggles preserve q1 exactness automatically, but they do
-not automatically preserve conditions 1--3.  Define
+two-matching source.  It does **not** assert the growing `d`-residence
+condition.  Alternating toggles preserve q1 exactness automatically, but they
+do not automatically preserve conditions 1--3.  Define
 
 \[
- \mathscr P_{m,d}=\{G:G\text{ is a `d`-protected q1-exact factor}\}. \tag{3.1}
+ \mathscr P_{m,d}=\{G:G\text{ is a `d`-protected q1-exact factor}\}. \tag{3.4}
 \]
 
 The exact protected component-reduction problem is
 
 \[
- \boxed{\text{find }G\in\mathscr P_{m,d}\text{ with }c(G)\le2.}       \tag{3.2}
+ \boxed{\text{find }G\in\mathscr P_{m,d}\text{ with }c(G)\le2.}       \tag{3.5}
 \]
 
-Theorem 2.1 says that any endpoint in (3.2) is a simultaneous alternating
+Theorem 2.1 says that any endpoint in (3.5) is a simultaneous alternating
 trade of the PBBS factor.  Requiring a path through \(\mathscr P_{m,d}\) after
 every primitive toggle is a stronger property and is not needed for the
 existence proof.
+
+Equivalently, with the minimum of the empty set interpreted as infinity, the
+component clause of endpoint-form UPMBC is exactly
+
+\[
+ c_{\rm prot}(m,d):=min_{G\in\mathscr P_{m,d}}c(G)\le2. \tag{3.6}
+\]
+
+The algebraic Markov theorem supplies PBBS reachability automatically once
+such a q1-exact endpoint exists.  Protected-route theorems are sufficient
+ways to prove (3.6), not extra necessities in its statement.
 
 ## 4. Exact two-component opening and its target kernels
 
@@ -205,9 +297,10 @@ We require:
   contiguous interval of `T`.
 
 There is an exact finite safe-opening test.  For an upper target `Y` and a
-source component `C`, let `W_C(Y)` be all cyclic source intervals in `C`
-having union `Y`.  For a witness interval `I`, let `E(I)` be its set of
-traversed factor edges and put
+source component `C`, let `W_C(Y)` be all directed occurrences
+`(start,length)` of cyclic source intervals in `C` having union `Y`, with
+length between one and the component length.  For an occurrence `I`, let
+`E(I)` be its `length-1` traversed factor edges and put
 
 \[
  K_C(Y)=\bigcap_{I\in W_C(Y)}E(I),                        \tag{4.2}
@@ -254,6 +347,11 @@ Thus a uniform PBBS safe-opening proof may be attacked by a hereditary
 kernel-dispersion bound such as (4.4); component connectivity alone is not
 enough.
 
+Failure of (4.3) certifies only that the specified factor `G`, port atlas
+`\mathcal A(G)`, and one/two-component opening scheme have no upper-safe
+member.  It does not obstruct another factor, a different seam alphabet, a
+multi-component opening, or an arbitrary upper-complete middle permutation.
+
 ### Corollary 4.2 (edge-disjoint witness reserve)
 
 If the factor has `c<=2` components and every upper target has at least
@@ -270,6 +368,105 @@ This is a strong sufficient hypothesis, not a property currently proved for
 PBBS.  The calibrated factors have some low-multiplicity targets and use the
 sharper kernel/seam criterion instead.
 
+### Lemma 4.3 (componentwise fixed-depth kernel dispersion)
+
+Let `q>=1` and let `C` be a directed cycle of length greater than `2q`.  For a fixed-depth
+target `Y`, let \(\mu_C^q(Y)=t\) be the number of based cyclic `q`-edge
+windows with trace `Y`, and let \(K_C^q(Y)\) be the intersection of their
+edge spans.
+If `t>=1`, then
+
+\[
+ |K_C^q(Y)|\le \max\{q-t+1,0\}.                         \tag{4.5}
+\]
+
+Consequently, if \(a_{C,t}\) counts the targets with exactly `t` such
+occurrences, then
+
+\[
+ \sum_{Y:\,\mu_C^q(Y)\ge1} |K_C^q(Y)|
+ \le \sum_{t=1}^{q}(q+1-t)a_{C,t}.                      \tag{4.6}
+\]
+
+#### Proof
+
+If the kernel is nonempty, cut the cycle at one common kernel edge.  A
+`q`-edge window containing that edge has one of `q` consecutive start
+positions.  The `t` distinct based windows have start span at least `t-1`,
+and the intersection of their edge intervals has length at most
+`q-(t-1)`.  If `t>q`, no common edge exists.  Summing by multiplicity gives
+(4.6).  QED.
+
+For two source cycles of lengths `L_0,L_1`, define
+
+\[
+ \kappa_i(Y)=
+ \begin{cases}
+ |K_{C_i}^q(Y)|,&C_i\text{ supports }Y,\\
+ L_i,&C_i\text{ does not support }Y.
+ \end{cases}
+\]
+
+Exactly \(\kappa_0(Y)\kappa_1(Y)\) cut pairs destroy all old depth-`q` witnesses
+of `Y`.  Hence a union bound over depths and targets gives a cut pair that
+destroys no fixed-width protected target whenever
+
+\[
+ \sum_{q,Y}\kappa_0(Y)\kappa_1(Y)<L_0L_1.              \tag{4.7}
+\]
+
+This is only the unfiltered cut census.  Residence, orientation, and seam
+legality may restrict the admissible port atlas; on that atlas the exact
+quantity is the number of admissible bad pairs, not the product above.
+PBBS supplies at least one canonical window and therefore a kernel of size
+at most `q` on a supporting component, but no audited PBBS theorem controls
+the componentwise multiplicities \(a_{C,t}\) strongly enough to prove (4.7).
+That missing component-dispersion estimate is a precise fixed-width UPMBC
+subtarget.  The exact variable-width opening gate remains (4.3), and the
+product census must still be intersected with the admissible residence/seam
+port atlas.
+
+### Theorem 4.4 (exact one-seam restoration and the common-core obstruction)
+
+Fix the cuts and orientations of two components, writing the first opened
+path as `Q_0` and the second as `Q_1`.  Let `Y` be an upper target whose old
+cyclic witnesses are all killed by the cuts.  Define `S_0(Y)` to be the
+maximal terminal segment of `Q_0` all of whose middle sets are contained in
+`Y`, taking it to be empty when the seam-adjacent terminal owner is not
+contained in `Y`.  Define `S_1(Y)` analogously as the maximal initial segment
+of `Q_1`, again allowing the empty segment.  Then the new seam restores `Y`
+if and only if both segments are nonempty and
+
+\[
+ \bigcup_{T\in S_0(Y)\cup S_1(Y)}T=Y.                    \tag{4.8}
+\]
+
+#### Proof
+
+Any new witness must cross the unique seam, so it is a terminal segment of
+`Q_0` followed by an initial segment of `Q_1`.  If its union is `Y`, every
+member is contained in `Y`, hence the witness lies inside the two maximal
+segments.  Conversely, if (4.8) holds, concatenating the two maximal segments
+is itself one crossing interval with union `Y`.  QED.
+
+Let `A` and `B` be the two middle sets adjacent to the seam.  Every restored
+killed target contains the seam core \(A\cup B\).  For a Johnson seam this
+core has rank `r+1`.  Consequently, if the killed family \(\mathcal K\) is
+nonempty, then
+
+\[
+ \left|\bigcap_{Y\in\mathcal K}Y\right|<r+1              \tag{4.9}
+\]
+
+is an intrinsic obstruction to repairing all of them with this fixed
+one-Johnson-seam architecture.
+Equations (4.2) and (4.8) together are a necessary-and-sufficient
+cut-kernel/witness-atlas test, not merely a fixed-width proxy.
+
+It is not an obstruction to different cuts, another factor, multiple seams,
+non-Johnson transitions, or a middle permutation not obtained from a cycle
+factor.
+
 ## 5. The exact full depth-`d` compiler
 
 The compiler must not be restricted to the `DA=DP` one-core normal form.
@@ -282,6 +479,20 @@ For a fixed path `T`, define its maximal erosion envelope
  P_p=\bigcap_{\max(0,p-d)\le i\le\min(p,W-1)}T_i,
  \qquad 0\le p<W+d.                                      \tag{5.1}
 \]
+
+If `T` is linearly `d`-resident as required in Section 4, coordinatewise
+erosion gives
+
+\[
+ D^dP=T.                                                   \tag{5.1a}
+\]
+
+Indeed, in one binary coordinate erosion shortens an internal positive run
+by `d` at its left edge, and the following `d` adjacent unions restore that
+edge.  A non-endpoint-truncated run survives exactly when its length is at
+least `d+1`; endpoint-truncated runs are restored by the clipped extreme
+source cell.  Thus the linear residence condition in Section 4 is precisely
+what is needed for (5.1a).
 
 Use bits `a_(p,x)` and interpret
 
@@ -306,8 +517,8 @@ and, for every `i` and every `x in T_i`,
 \]
 
 Let \(\mathcal I_d\) be all source intervals of one through `d` letters.
-For every nonempty \(S\subset[k]\) with `|S|<r`, introduce witness variables
-`z_(S,I)` for \(I\in\mathcal I_d\) and impose
+For every nonempty \(S\subset[k]\) with `|S|<r`, introduce **binary** witness
+variables `z_(S,I)` for \(I\in\mathcal I_d\) and impose
 
 \[
  \sum_{I\in\mathcal I_d}z_{S,I}\ge1,                    \tag{5.6}
@@ -325,8 +536,8 @@ Call (5.3)--(5.8) `COMP_d(T)`.
 
 ### Theorem 5.1 (exact compiler equivalence)
 
-`COMP_d(T)` is feasible if and only if there is a nonzero word `A` of length
-`W+d` such that
+`COMP_d(T)` is feasible if and only if there is a word `A` of length `W+d`
+such that every letter is nonempty,
 
 \[
  D^dA=T                                                   \tag{5.9}
@@ -377,12 +588,19 @@ QED.
 ## 6. Two-ended q1 absorption
 
 Opening `c<=2` q1-exact cycles deletes at most two distinct lower-q1 colours.
-The one seam, when present, may restore one deleted colour or may be foreign.
-Let `Q(T)` be the deleted q1 colours not restored by an internal seam.
-Then
+Require the joining seam, when present, to be Johnson.  Let `R_cut` be the
+set of deleted cut colours and let `R_int(T)` be the set of rank-`r-1`
+intersections on the final path.  Define directly
 
 \[
- |Q(T)|\le2.                                              \tag{6.1}
+ Q(T)=R_{\rm cut}\setminus R_{\rm int}(T).                \tag{6.1}
+\]
+
+Thus the seam may restore one deleted colour or may be foreign.  In either
+case
+
+\[
+ |Q(T)|\le2.                                              \tag{6.2}
 \]
 
 The first `d` and last `d` source positions form the two boundary halos.
@@ -392,10 +610,10 @@ interval wholly in the right halo.
 
 ### Lemma 6.1 (derivative compatibility of the two cut-colour pins)
 
-For a `d`-resident opening, each deleted cut colour is individually
-compatible with its own halo.  In particular, setting the extreme source
-letter equal to that cut colour and leaving all other letters at their
-maximal erosion values still satisfies `D^dA=T`.
+For a linearly `d`-resident q1-exact Johnson opening, each deleted cut colour
+is individually compatible with its own halo.  In particular, setting the
+extreme source letter equal to that cut colour and leaving all other letters
+at their maximal erosion values still satisfies `D^dA=T`.
 
 #### Proof
 
@@ -405,31 +623,176 @@ At the left end write the cut colour as
  Q=T_0\setminus\{x\}.
 \]
 
-Relative to the chosen orientation, `x` is inserted across the deleted cut.
-Residence implies that `x` persists through `T_0,...,T_d`.  Hence `x` belongs
-to `P_1` (indeed to every needed remaining member of the first source
-window).  Replacing `P_0=T_0` by `Q` therefore does not change
-`P_0\cup\cdots\cup P_d=T_0`.  The modified position participates in no other
-middle window.  The right end is the reversed argument.  QED.
+The retained first path edge has colour
 
-This lemma proves that q1 boundary capacity is not the obstruction for one
-or two components.  It does **not** prove that all the other lower targets can
-be installed simultaneously; that is exactly the remaining feasibility of
-the pinned system `COMP_d(T)`.
+\[
+ R=T_0\cap T_1=P_1.
+\]
 
-Nor does it prove that more than two components are impossible.  The full
-compiler may realize additional missing q1 colours by other short source
-intervals.  Reducing to at most two components is a clean sufficient
-normalization which makes the cut-colour part automatic, not a necessity for
-all optimal words.
+The source q1 deck is squarefree, so `Q` and `R` are distinct facets of the
+same rank-`r` set `T_0`.  Therefore \(Q\cup P_1=Q\cup R=T_0\).
+Replacing `P_0=T_0` by `Q` consequently leaves the first `(d+1)`-window union
+equal to `T_0`; the modified source position belongs to no other middle
+window.  The right end uses the distinct deleted and retained facets of
+`T_(W-1)` in reverse order.  QED.
+
+This lemma proves only that each of the at most two deleted q1 cut colours is
+individually derivative-compatible with its designated outer halo.  It does
+**not** prove that the two pins and all other lower targets can be installed
+simultaneously; that is exactly the remaining feasibility of the pinned
+system `COMP_d(T)`.
+
+### Lemma 6.2 (exact two-boundary q1 palette cap)
+
+Let `T=D^dA` be a Johnson path through distinct rank-`r` vertices.  If a
+rank-`r-1` target `S` is witnessed by a source interval which avoids the two
+extreme source positions, then `S` is an internal Johnson colour of `T`.
+If, in addition, `A` covers every rank-`r-1` target, then all such targets
+missing from the internal palette number at most two: one may use the left
+extreme and one may use the right extreme.
+
+#### Proof
+
+The witness has length at most `d`, because any longer interval contains a
+full `(d+1)`-window of rank `r`.  Write it as `[u,v]`, with
+`0<u<=v<W+d-1`.  The full `(d+1)`-windows which contain `[u,v]` have start
+indices
+
+\[
+ [v-d,u]\cap[0,W-1].                                    \tag{6.3}
+\]
+
+There are at least two such starts: before clipping there are
+`d-(v-u+1)+2>=2`, while avoidance of the two extreme source positions leaves
+at least two after either boundary clipping.  Every corresponding middle set
+contains `S`.  Two consecutive entries in this nontrivial block are distinct
+rank-`r` Johnson neighbours containing the same rank-`r-1` set, so their
+intersection is exactly `S`.
+
+Under the additional coverage assumption, any missing target must therefore
+use an extreme source position.  The unions of all left-extreme source
+intervals form a nested family; two members of rank `r-1` are equal.  Thus
+the left end supplies at most one missing target, and the right end supplies
+at most one.  QED.
+
+For a q1-exact `c`-component opening with a feasible full compiler, the `c`
+deleted cut colours are distinct.  Lemma 6.2 implies that its seams must
+restore at least `c-2` of them into the internal palette.  This does not make
+more than two components impossible: a many-component opening can work when
+its seams recycle enough cut colours.  Reducing to at most two components is
+a clean sufficient normalization which makes this palette count automatic.
+
+### Lemma 6.3 (off-diagonal diamond constraint)
+
+A Johnson edge is uniquely determined by its lower and upper q1 labels.  In
+particular, a genuinely new seam cannot reproduce both labels of the same
+deleted edge.
+
+#### Proof
+
+If the labels are `L` of rank `r-1` and `U` of rank `r+1`, then
+`U\setminus L={a,b}` and the unique edge is
+
+\[
+ \{L\cup\{a\},L\cup\{b\}\}.                            \tag{6.4}
+\]
+
+Thus equality of both labels forces equality of the unordered edge.  QED.
+
+For `c` cuts and `c-1` Johnson seams, let `R^-` be the deleted lower labels
+and `Q^-` the seam lower labels.  Feasibility of the unrestricted compiler
+requires
+
+\[
+ |R^-\setminus Q^-|\le2.                                \tag{6.5}
+\]
+
+If the final path is upper-complete, every upper target whose last adjacent
+witness was cut must occur among the seam upper labels `Q^+`.  Lemma 6.3
+makes this a coupled off-diagonal diamond SDR rather than two independent
+palette counts: a seam may recycle the lower
+label of one cut and the last upper label of another, but cannot do both jobs
+for the same cut unless it simply restores that old edge.  For `c=2`, the
+two boundary cells provide capacity for both lower cut labels at q1, freeing
+the unique seam to serve upper chronology; simultaneous absorption is still
+subject to pinned full `COMP_d(T)` feasibility.  This is exactly the
+nonrecycling `k=15` pattern.
+
+At upper q1, “adjacent” loses no arbitrary-interval witnesses: if a
+contiguous interval of distinct rank-`r` Johnson vertices has union `U` of
+rank `r+1`, every member is an `r`-facet of `U`, and its first adjacent pair
+already has union `U`.  Thus a last upper-q1 occurrence can be audited on the
+edge palette.
 
 The strict historical rule “the seam colour must equal a deleted cut colour”
 is therefore unnecessary.  At `k=15` the winning seam is foreign and both
 deleted colours use the two halos.
 
-## 7. The one missing uniform lemma
+## 7. The architecture-free gate and the PBBS wrapper
 
-The preceding results isolate the following statement.
+The exact general target exposed by Section 5 does not mention PBBS,
+components, protected circuits, or seams.
+
+### Flat-middle carrier--compiler condition `FMCC(m)`
+
+There is a linear ordering
+
+\[
+ T=(T_0,\ldots,T_{W-1})
+\]
+
+of all members of \(\binom{[2m+1]}{m+1}\), each exactly once, such that:
+
+1. every target of rank greater than `m+1` is the union of a contiguous
+   interval of `T`; and
+2. the full Boolean system `COMP_d(T)` is feasible.
+
+No Johnson adjacency or cyclic-factor provenance is included in this
+condition.
+
+### Theorem 7.1 (exact flat-middle reduction)
+
+`FMCC(m)` implies
+
+\[
+ \nu(2m+1)=B(2m+1).                                      \tag{7.1}
+\]
+
+Moreover, among length-`W+d` universal words whose `d`th derivative is a
+permutation of the middle layer, `FMCC(m)` is necessary and sufficient.
+
+#### Proof
+
+The forward implication is Corollary 5.2: `COMP_d(T)` supplies a nonempty
+length-`W+d` antecedent covering every lower target, the entries of `T`
+cover the middle layer, and upper completeness of `T` lifts through (5.11).
+The lower bound (1.1) gives equality.
+
+Conversely, suppose a universal word `A` of length `W+d` has
+`T=D^dA` equal to a middle-layer permutation.  The word `A` itself certifies
+`COMP_d(T)` by Theorem 5.1.  Let an upper target `Y` be witnessed by a source
+interval `[a,b]`.  Every interval of at most `d+1` source letters is
+contained in some full window `[i,i+d]`, where one may choose
+
+\[
+ i\in[\max(0,b-d),\min(a,W-1)].
+\]
+
+The interval of choices is nonempty because `b-a<=d` and
+`0<=a<=b<=W+d-1`.  Thus an upper witness has more than `d+1` letters.  The
+union of all full windows inside
+the witnessing interval is exactly its source union, because its first and
+last source letters occur in the first and last such windows.  Those full
+windows form a contiguous interval of `T`, so they witness `Y`.  Hence `T`
+is upper-complete and `FMCC(m)` holds.  QED.
+
+The positive-slack deadline theorem does not force an arbitrary optimal word
+into this flat-middle normal form.  Thus failure of `FMCC(m)` would refute
+this normal form, not by itself refute equality.  For proving the upper
+bound, however, existence of one `FMCC(m)` witness is the architecture-free
+remaining construction gate.
+
+The PBBS programme attacks `FMCC(m)` through the following stronger wrapper.
 
 ### Uniform PBBS--Markov boundary-compiler lemma `UPMBC(m)`
 
@@ -445,12 +808,16 @@ For `k=2m+1`, with `r,W,d` as in Section 1, there exist:
 4. a feasible solution of `COMP_d(T)` in which the colours in `Q(T)` are
    realized in distinct outer halos.
 
-### Theorem 7.1 (uniform implication)
+Here “alternating-circuit transform” means algebraic reachability in the
+q1-factor fibre.  The canonical PBBS source need not itself be `d`-protected,
+and no protected primitive-by-primitive route is asserted.
+
+### Theorem 7.2 (uniform PBBS implication)
 
 If `UPMBC(m)` holds for every `m`, then
 
 \[
- \nu(2m+1)=B(2m+1)\qquad\text{for every }m.               \tag{7.1}
+ \nu(2m+1)=B(2m+1)\qquad\text{for every }m.               \tag{7.2}
 \]
 
 #### Proof
@@ -458,17 +825,24 @@ If `UPMBC(m)` holds for every `m`, then
 Items 1--3 produce an upper-safe middle path.  Item 4 and Theorem 5.1 produce
 a length-`W+d` lower-complete antecedent.  Corollary 5.2 gives equality.  QED.
 
-This is the sharp uniform gap for this architecture.  Its four clauses must
-be kept simultaneous.  PBBS all-depth support alone does not control
+This is a precise sufficient uniform lemma for the PBBS/protected
+architecture, and it implies `FMCC(m)`.  Its four clauses must be kept
+simultaneous.  PBBS all-depth support alone does not control
 residence; q1 Markov connectivity alone does not preserve the shadow tower;
 component count alone does not give an upper-safe seam; and marginal Hall
 alone does not imply the exact compiler clauses.
 
+Accordingly, every negative statement about protected component reduction,
+transversal `C_6` connectors, cut kernels, or the at-most-two-cycle opening
+is architecture-specific.  Such a statement can refute a proposed proof of
+`UPMBC(m)` but cannot rule out a different `FMCC(m)` chronology.
+
 ## 8. Exact calibration at `k=11,13,15`
 
 All three known optimal words have `d=3`.  Their third derivative is an exact
-Hamilton ordering of the middle rank, has zero linear residence defects, and
-has no upper hole at any rank.
+Hamilton ordering of the middle rank, has zero internal-run linear residence
+defects, and has no upper hole at any rank.  Endpoint-truncated short runs are
+not counted as defects under this convention.
 
 | `k` | protected factor components | opening/seam | fixed lower holes by depth | unrecycled q1 halo colours | word SHA-256 |
 |---:|:---|:---|:---|:---|:---|
@@ -487,41 +861,56 @@ and independently cover every nonempty mask.
 The endpoint factors at `k=11,13` are algebraically PBBS-Markov reachable by
 Theorem 2.1.  A protected primitive-by-primitive route from the canonical
 PBBS seed was not frozen for those two cases.  At `k=15`, a literal protected
-sequence reduced the audited all-depth factor from nine cycles to three and
-then two before the successful opening.
+sequence of support `4,6,4` exchanges reduced the audited all-depth factor
+through component counts `9 -> 4 -> 3 -> 2` before the successful opening.
+That chain begins at the audited nine-cycle endpoint in the fixed-PBBS-
+matching fibre; no protected primitive-by-primitive route from the canonical
+PBBS factor to that nine-cycle endpoint is frozen.
 
 ### The common-Q warning
 
 Let `P` be the maximal erosion (5.1).  The retained certificates satisfy:
 
-| `k` | `DA=DP` | number of differing cells |
+| `k` | `DA=DP` | number of differing mask positions |
 |---:|:---:|---:|
 | 11 | no | 5 |
 | 13 | no | 209 |
 | 15 | yes | 0 |
 
-Thus the `DA=DP` one-core compiler is a successful `k=15` specialization,
-not an audited uniform normal form.  Any all-odd proof must either prove that
-alternative common-Q certificates always exist or use the full exact system
-`COMP_d(T)`.  Treating the retained `k=11,13` words as evidence for the
-stronger one-core statement would be incorrect.
+Thus the `DA=DP` one-core compiler is a successful specialization, not a
+uniform normal form.  Alternative same-chronology one-core certificates now
+exist at `k=11` and `k=13`, so the displayed counts are only properties of
+the retained words; “positions” means mask positions, not coordinate
+incidences.  But the uniform normalization statement is definitively false:
+at `k=9`, `COMP_2(T)` is feasible while the `129` targets of ranks at most
+three cannot fit into the `128` literal positions forced by `DA=DP`.
+Likewise the necessary literal-capacity inequality already fails at `k=19`
+and `k=21`.  Therefore a general all-odd proof must use the full exact system
+`COMP_d(T)`; one-core Hall may be invoked only as an explicitly verified
+optional branch.  Exact proof and hashes are in
+`MATH_AUDIT_AD_ALL_ODD_COMPILER_ONECORE_NORMALIZATION_20260729.md`.
 
 ## 9. Proved boundary and next attack
 
 The following are now proved:
 
-* PBBS supplies the all-depth source tower;
+* the antipodal PBBS two-matching source is q1-exact, independently of its
+  all-depth support;
+* the same source supplies the all-depth tower;
 * alternating circuits are a complete algebraic Markov basis for q1 factors;
 * unprotected q1 component reduction is always possible;
 * safe opening is exactly the target-kernel avoidance problem (4.3);
 * the full length-`W+d` lower compiler is exactly `COMP_d(T)`; and
-* at most two unrecycled q1 cut colours are structurally compatible with the
-  two boundary halos.
+* for a one/two-cycle Johnson opening, each of its at most two unrecycled q1
+  cut colours is individually compatible with its own boundary halo.
 
-The unproved uniform step is `UPMBC(m)`: find a **protected** at-most-two-cycle
-Markov endpoint with one kernel-avoiding opening and a feasible pinned full
-compiler.  The cases `m=5,6,7` pass, but all have `d=3`; they do not prove the
-growing-residence statement.  A viable proof must establish either
+The architecture-free construction target is `FMCC(m)`: some upper-complete
+middle permutation with feasible full `COMP_d(T)`.  The continuing PBBS lane
+attacks it through the stronger `UPMBC(m)`: find a **protected**
+at-most-two-cycle Markov endpoint with one kernel-avoiding opening and a
+feasible pinned full compiler.  The cases `m=5,6,7` pass, but all have `d=3`;
+they do not prove the growing-residence statement.  A viable proof of this
+PBBS wrapper must establish either
 
 \[
  \sum_{|Y|>r}|B_Y|<|\mathcal A(G)|                       \tag{9.1}
@@ -532,3 +921,10 @@ or a stronger recursive invariant that directly carries a safe port and a
 `COMP_d` solution from semilength `m` to `m+1`.
 
 No cardinality heuristic or unprotected Hamiltonization proves this lemma.
+Conversely, a sparse protected-connector cut, a cyclic repair dependency, or
+a one-seam kernel cover certifies failure only for its specified
+factor/library/port choice.  Even a universal protected-route no-go does not
+refute endpoint-form `UPMBC(m)`, whose clause 1 permits a simultaneous
+algebraic transform; one must exclude every four-clause endpoint/opening/
+compiler witness.  None of these local certificates is a no-go for
+`FMCC(m)` or for the coefficient-one theorem itself.

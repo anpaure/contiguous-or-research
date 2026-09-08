@@ -1,0 +1,42 @@
+{
+  "host": "arboghast",
+  "elapsed_seconds": 0.004089211113750935,
+  "results": [
+    {
+      "representative_id": 0,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 1,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 2,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 3,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 4,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 6,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 7,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 8,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    },
+    {
+      "representative_id": 9,
+      "status": "PHYSICAL_CYCLE_AND_GUARDS_PASS"
+    }
+  ]
+}

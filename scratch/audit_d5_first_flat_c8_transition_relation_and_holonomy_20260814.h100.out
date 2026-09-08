@@ -1,0 +1,553 @@
+{
+  "aggregate_search_counters": {
+    "all_fixed_side_runs_at_least_three": 147,
+    "collar_q1_simple": 357,
+    "fixed_side_residence_failure": 189,
+    "full_q1_exact_simple_both_phases": 336,
+    "internal_q2_zero_current": 147,
+    "johnson_direct_orientations": 63,
+    "non_johnson_direct_orientations": 21,
+    "owner_simple_path_pairs": 357,
+    "q1_exact_path_pairs": 3087
+  },
+  "certificate_sha256": "05552624784b67253b9f7d07b3e37c63cb25254d9b80872835952c38ba9605c1",
+  "common_transport_domain": [
+    8,
+    9,
+    11,
+    16,
+    17
+  ],
+  "flat_sha256": "2b7bc68cb4559696c0dcf6bc0f7464c8dbe0d7d398dfab2b0996282a7f419dcc",
+  "literal_checks": {
+    "boundary_relation": 126,
+    "c8_owner_q1": 126,
+    "full_phase_q1": 252,
+    "internal_q2_simple_phases": 252,
+    "internal_q2_zero": 126,
+    "resolved_resident_window": 1512
+  },
+  "partition_sha256": {
+    "search_d5_first_flat_token0_general_c8_adjacent_recut_0_3_20260814.h100.out": "0969ef88181ba88524d69ddbaa7c80461e47c75525a8c2dcd024f4889c968b1a",
+    "search_d5_first_flat_token0_general_c8_adjacent_recut_12_15_20260814.h100.out": "dad62603293375c23f659294451ebaf2ab7a7992bd75e7b3ea5314937b3fc546",
+    "search_d5_first_flat_token0_general_c8_adjacent_recut_15_18_20260814.h100.out": "ecee48f495b0c7b04147181f6252cc8cdd9ba2e6d1c4e6d82c5e2597acd86935",
+    "search_d5_first_flat_token0_general_c8_adjacent_recut_18_21_20260814.h100.out": "570dc64851ab17a12bcb40e023a1f501aa41e0adcf6d14d0df3fe959ff9b38d6",
+    "search_d5_first_flat_token0_general_c8_adjacent_recut_3_6_20260814.h100.out": "c603fe9706f95a8ef7cff91d3bdc4dd819970f257ee72ac17be4403ef0bbda70",
+    "search_d5_first_flat_token0_general_c8_adjacent_recut_6_9_20260814.h100.out": "d55d4e120bb356d8cd50d25ac2c6d78a4e3e8cac3e44b6a946e72f81e2620971",
+    "search_d5_first_flat_token0_general_c8_adjacent_recut_9_12_20260814.h100.out": "4d6b9e17e382e6e07886d9ddded9276365a954f503fcb23e94f3ac77df98de7e"
+  },
+  "pseudoforest": {
+    "components": 33,
+    "holonomies": [
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          141,
+          142
+        ],
+        "token_nodes": [
+          "0010110101011111110000",
+          "1010010111011111100000"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      },
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          153,
+          154
+        ],
+        "token_nodes": [
+          "0010011011011111010001",
+          "0011101011011011101000"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      },
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          165,
+          166
+        ],
+        "token_nodes": [
+          "0010110101111011100100",
+          "1010010111011011101000"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      },
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          175,
+          176
+        ],
+        "token_nodes": [
+          "0010010111011111001001",
+          "0010011011011111100100"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      },
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          187,
+          188
+        ],
+        "token_nodes": [
+          "0011100011111011011000",
+          "0011100011111110110000"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      },
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          198,
+          199
+        ],
+        "token_nodes": [
+          "0010011011111011010100",
+          "0011101011011011010010"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      },
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          211,
+          212
+        ],
+        "token_nodes": [
+          "0010011011111100110100",
+          "1000111110011110010100"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      },
+      {
+        "aligned_assignment_count": 260,
+        "router_nodes": [
+          224,
+          225
+        ],
+        "token_nodes": [
+          "0011100011111101001010",
+          "1010010111011110100010"
+        ],
+        "transport_robust_assignment_lower_bound": 240
+      }
+    ],
+    "tree_components": 25,
+    "unicyclic_components": 8
+  },
+  "q1_witnesses_sha256": "18f59d809934a4283b6a71a6ee1311586c42f54955d09820332959b6e9f17b35",
+  "q2_rejected_by_witness": {
+    "2": 7,
+    "9": 7,
+    "16": 7
+  },
+  "q2_simple_solutions": 126,
+  "raw_resident_zero_current_solutions": 147,
+  "relation_reports": [
+    {
+      "full_relation_size": 42,
+      "input_states": [
+        5,
+        8,
+        9,
+        11,
+        16,
+        17
+      ],
+      "output_states": [
+        8,
+        9,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18
+      ],
+      "restricted_relation": [
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          16
+        ]
+      ],
+      "restricted_relation_size": 20,
+      "token_permutation": [
+        0,
+        2,
+        1
+      ],
+      "transport_domain": [
+        8,
+        9,
+        11,
+        16,
+        17
+      ]
+    },
+    {
+      "full_relation_size": 42,
+      "input_states": [
+        5,
+        8,
+        9,
+        11,
+        16,
+        17
+      ],
+      "output_states": [
+        8,
+        9,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18
+      ],
+      "restricted_relation": [
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          16
+        ]
+      ],
+      "restricted_relation_size": 20,
+      "token_permutation": [
+        1,
+        0,
+        2
+      ],
+      "transport_domain": [
+        8,
+        9,
+        11,
+        16,
+        17
+      ]
+    },
+    {
+      "full_relation_size": 42,
+      "input_states": [
+        5,
+        8,
+        9,
+        11,
+        16,
+        17
+      ],
+      "output_states": [
+        8,
+        9,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18
+      ],
+      "restricted_relation": [
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          16
+        ]
+      ],
+      "restricted_relation_size": 20,
+      "token_permutation": [
+        2,
+        1,
+        0
+      ],
+      "transport_domain": [
+        8,
+        9,
+        11,
+        16,
+        17
+      ]
+    }
+  ],
+  "representative": {
+    "context_label": 2,
+    "incoming_state": 16,
+    "new": [
+      [
+        "00100100110110111110000",
+        "10100100110110110110000"
+      ],
+      [
+        "00100110110110110110000",
+        "10100110110110110100000"
+      ],
+      [
+        "00100110110110111100000",
+        "10000110110110111100000"
+      ],
+      [
+        "00000110110110111110000",
+        "10000100110110111110000"
+      ]
+    ],
+    "old": [
+      [
+        "00100100110110111110000",
+        "10000100110110111110000"
+      ],
+      [
+        "00100110110110110110000",
+        "10100100110110110110000"
+      ],
+      [
+        "00100110110110111100000",
+        "10100110110110110100000"
+      ],
+      [
+        "00000110110110111110000",
+        "10000110110110111100000"
+      ]
+    ],
+    "outgoing_state": 18,
+    "pivot": 0,
+    "router_label": 6,
+    "token_permutation": [
+      0,
+      2,
+      1
+    ],
+    "witness_index": 0
+  },
+  "scope": "literal first-flat C8 extension relation plus transported support-quotient pseudoforest holonomy; not literal all-factor boundary identification or a 226-package resource coinstantiation",
+  "selection_sha256": "94deb656dac1d8955b20d851e92600156d703842d6de169d4b6bea356fa3ec32",
+  "status": "PASS",
+  "tree_successors_per_state": 4
+}

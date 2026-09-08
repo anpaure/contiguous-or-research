@@ -1,0 +1,498 @@
+{
+  "all_holes": [
+    {
+      "frozen_pair_degree": 327,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 330,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 595
+    },
+    {
+      "frozen_pair_degree": 327,
+      "frozen_self_degree": 19,
+      "minimal_blocker_menus": 340,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 484
+    },
+    {
+      "frozen_pair_degree": 327,
+      "frozen_self_degree": 50,
+      "minimal_blocker_menus": 340,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 631
+    },
+    {
+      "frozen_pair_degree": 347,
+      "frozen_self_degree": 20,
+      "minimal_blocker_menus": 361,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 81
+    },
+    {
+      "frozen_pair_degree": 364,
+      "frozen_self_degree": 0,
+      "minimal_blocker_menus": 364,
+      "minimum_blocker_mass": 48,
+      "minimum_blocker_vertices": 5,
+      "row": 408
+    },
+    {
+      "frozen_pair_degree": 364,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 366,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 532
+    },
+    {
+      "frozen_pair_degree": 362,
+      "frozen_self_degree": 18,
+      "minimal_blocker_menus": 371,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 401
+    },
+    {
+      "frozen_pair_degree": 367,
+      "frozen_self_degree": 24,
+      "minimal_blocker_menus": 380,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 501
+    },
+    {
+      "frozen_pair_degree": 370,
+      "frozen_self_degree": 26,
+      "minimal_blocker_menus": 382,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 480
+    },
+    {
+      "frozen_pair_degree": 379,
+      "frozen_self_degree": 21,
+      "minimal_blocker_menus": 382,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 642
+    },
+    {
+      "frozen_pair_degree": 378,
+      "frozen_self_degree": 10,
+      "minimal_blocker_menus": 384,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 115
+    },
+    {
+      "frozen_pair_degree": 386,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 387,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 424
+    },
+    {
+      "frozen_pair_degree": 385,
+      "frozen_self_degree": 11,
+      "minimal_blocker_menus": 388,
+      "minimum_blocker_mass": 12,
+      "minimum_blocker_vertices": 2,
+      "row": 486
+    },
+    {
+      "frozen_pair_degree": 393,
+      "frozen_self_degree": 15,
+      "minimal_blocker_menus": 389,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 597
+    },
+    {
+      "frozen_pair_degree": 387,
+      "frozen_self_degree": 16,
+      "minimal_blocker_menus": 391,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 629
+    },
+    {
+      "frozen_pair_degree": 364,
+      "frozen_self_degree": 32,
+      "minimal_blocker_menus": 392,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 158
+    },
+    {
+      "frozen_pair_degree": 386,
+      "frozen_self_degree": 11,
+      "minimal_blocker_menus": 392,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 191
+    },
+    {
+      "frozen_pair_degree": 392,
+      "frozen_self_degree": 3,
+      "minimal_blocker_menus": 392,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 114
+    },
+    {
+      "frozen_pair_degree": 376,
+      "frozen_self_degree": 35,
+      "minimal_blocker_menus": 393,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 143
+    },
+    {
+      "frozen_pair_degree": 376,
+      "frozen_self_degree": 22,
+      "minimal_blocker_menus": 395,
+      "minimum_blocker_mass": 22,
+      "minimum_blocker_vertices": 3,
+      "row": 38
+    },
+    {
+      "frozen_pair_degree": 385,
+      "frozen_self_degree": 15,
+      "minimal_blocker_menus": 396,
+      "minimum_blocker_mass": 12,
+      "minimum_blocker_vertices": 3,
+      "row": 99
+    },
+    {
+      "frozen_pair_degree": 385,
+      "frozen_self_degree": 20,
+      "minimal_blocker_menus": 396,
+      "minimum_blocker_mass": 12,
+      "minimum_blocker_vertices": 3,
+      "row": 112
+    },
+    {
+      "frozen_pair_degree": 394,
+      "frozen_self_degree": 32,
+      "minimal_blocker_menus": 401,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 441
+    },
+    {
+      "frozen_pair_degree": 407,
+      "frozen_self_degree": 8,
+      "minimal_blocker_menus": 401,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 273
+    },
+    {
+      "frozen_pair_degree": 394,
+      "frozen_self_degree": 15,
+      "minimal_blocker_menus": 404,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 588
+    },
+    {
+      "frozen_pair_degree": 422,
+      "frozen_self_degree": 21,
+      "minimal_blocker_menus": 404,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 376
+    },
+    {
+      "frozen_pair_degree": 407,
+      "frozen_self_degree": 24,
+      "minimal_blocker_menus": 406,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 324
+    },
+    {
+      "frozen_pair_degree": 386,
+      "frozen_self_degree": 23,
+      "minimal_blocker_menus": 408,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 610
+    },
+    {
+      "frozen_pair_degree": 385,
+      "frozen_self_degree": 39,
+      "minimal_blocker_menus": 409,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 310
+    },
+    {
+      "frozen_pair_degree": 434,
+      "frozen_self_degree": 8,
+      "minimal_blocker_menus": 410,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 149
+    },
+    {
+      "frozen_pair_degree": 395,
+      "frozen_self_degree": 18,
+      "minimal_blocker_menus": 411,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 18
+    },
+    {
+      "frozen_pair_degree": 382,
+      "frozen_self_degree": 37,
+      "minimal_blocker_menus": 412,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 606
+    },
+    {
+      "frozen_pair_degree": 407,
+      "frozen_self_degree": 12,
+      "minimal_blocker_menus": 415,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 53
+    },
+    {
+      "frozen_pair_degree": 398,
+      "frozen_self_degree": 31,
+      "minimal_blocker_menus": 418,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 670
+    },
+    {
+      "frozen_pair_degree": 419,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 422,
+      "minimum_blocker_mass": 22,
+      "minimum_blocker_vertices": 3,
+      "row": 386
+    },
+    {
+      "frozen_pair_degree": 397,
+      "frozen_self_degree": 46,
+      "minimal_blocker_menus": 424,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 188
+    },
+    {
+      "frozen_pair_degree": 422,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 426,
+      "minimum_blocker_mass": 22,
+      "minimum_blocker_vertices": 3,
+      "row": 63
+    },
+    {
+      "frozen_pair_degree": 416,
+      "frozen_self_degree": 20,
+      "minimal_blocker_menus": 430,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 633
+    },
+    {
+      "frozen_pair_degree": 406,
+      "frozen_self_degree": 27,
+      "minimal_blocker_menus": 432,
+      "minimum_blocker_mass": 28,
+      "minimum_blocker_vertices": 4,
+      "row": 176
+    },
+    {
+      "frozen_pair_degree": 420,
+      "frozen_self_degree": 12,
+      "minimal_blocker_menus": 432,
+      "minimum_blocker_mass": 22,
+      "minimum_blocker_vertices": 4,
+      "row": 36
+    },
+    {
+      "frozen_pair_degree": 434,
+      "frozen_self_degree": 11,
+      "minimal_blocker_menus": 439,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 402
+    },
+    {
+      "frozen_pair_degree": 423,
+      "frozen_self_degree": 32,
+      "minimal_blocker_menus": 441,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 130
+    },
+    {
+      "frozen_pair_degree": 443,
+      "frozen_self_degree": 39,
+      "minimal_blocker_menus": 460,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 192
+    }
+  ],
+  "all_minimum_menu_rows": [
+    {
+      "frozen_pair_degree": 327,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 330,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 595
+    }
+  ],
+  "energy": 86,
+  "hardness_definition": "ascending inclusion-minimal blocker-menu count, then descending minimum blocker vertex count, then ascending frozen pair degree, then row id",
+  "hole_menu_size_histogram": {
+    "330": 1,
+    "340": 2,
+    "361": 1,
+    "364": 1,
+    "366": 1,
+    "371": 1,
+    "380": 1,
+    "382": 2,
+    "384": 1,
+    "387": 1,
+    "388": 1,
+    "389": 1,
+    "391": 1,
+    "392": 3,
+    "393": 1,
+    "395": 1,
+    "396": 2,
+    "401": 2,
+    "404": 2,
+    "406": 1,
+    "408": 1,
+    "409": 1,
+    "410": 1,
+    "411": 1,
+    "412": 1,
+    "415": 1,
+    "418": 1,
+    "422": 1,
+    "424": 1,
+    "426": 1,
+    "430": 1,
+    "432": 2,
+    "439": 1,
+    "441": 1,
+    "460": 1
+  },
+  "holes": 43,
+  "minimum_menu_size": 330,
+  "status": "PASS",
+  "top_hard_rows": [
+    {
+      "frozen_pair_degree": 327,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 330,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 595
+    },
+    {
+      "frozen_pair_degree": 327,
+      "frozen_self_degree": 19,
+      "minimal_blocker_menus": 340,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 484
+    },
+    {
+      "frozen_pair_degree": 327,
+      "frozen_self_degree": 50,
+      "minimal_blocker_menus": 340,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 631
+    },
+    {
+      "frozen_pair_degree": 347,
+      "frozen_self_degree": 20,
+      "minimal_blocker_menus": 361,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 81
+    },
+    {
+      "frozen_pair_degree": 364,
+      "frozen_self_degree": 0,
+      "minimal_blocker_menus": 364,
+      "minimum_blocker_mass": 48,
+      "minimum_blocker_vertices": 5,
+      "row": 408
+    },
+    {
+      "frozen_pair_degree": 364,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 366,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 532
+    },
+    {
+      "frozen_pair_degree": 362,
+      "frozen_self_degree": 18,
+      "minimal_blocker_menus": 371,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 401
+    },
+    {
+      "frozen_pair_degree": 367,
+      "frozen_self_degree": 24,
+      "minimal_blocker_menus": 380,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 501
+    },
+    {
+      "frozen_pair_degree": 370,
+      "frozen_self_degree": 26,
+      "minimal_blocker_menus": 382,
+      "minimum_blocker_mass": 8,
+      "minimum_blocker_vertices": 2,
+      "row": 480
+    },
+    {
+      "frozen_pair_degree": 379,
+      "frozen_self_degree": 21,
+      "minimal_blocker_menus": 382,
+      "minimum_blocker_mass": 14,
+      "minimum_blocker_vertices": 2,
+      "row": 642
+    },
+    {
+      "frozen_pair_degree": 378,
+      "frozen_self_degree": 10,
+      "minimal_blocker_menus": 384,
+      "minimum_blocker_mass": 18,
+      "minimum_blocker_vertices": 3,
+      "row": 115
+    },
+    {
+      "frozen_pair_degree": 386,
+      "frozen_self_degree": 4,
+      "minimal_blocker_menus": 387,
+      "minimum_blocker_mass": 24,
+      "minimum_blocker_vertices": 3,
+      "row": 424
+    }
+  ]
+}

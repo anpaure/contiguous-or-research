@@ -1,0 +1,71 @@
+Remote build host: 213.173.111.107:48809
+Compiler flags: g++ -O3 -std=c++2a -Wall -Wextra -Wpedantic
+No SAT solve was launched; every formula used K11_FOREST_BUILD_ONLY=1.
+
+Source and binaries on the build host:
+a66bf34be18ae09c3b22252fe96c7dd96f9f780495ce0acd1fa7868d3f015247  k11_forest_sat.cpp
+f2d5cdc3324cc13650b9a6809930323bc7db510d1064092fe5419cdb119321f1  k11_forest_sat_density
+61b3824b402611e9b267c957dad0200fc8b21cf2ad6d150a0df07eba3fc72814  k11_local_density_pb_unit.cpp
+ad1ae6ddb031153d88e9a4e69fe28ec14ecc30fb872919f480682364090a8498  k11_local_density_pb_unit
+
+Unit output:
+PASS: mux, full-adder, ripple-adder, and unsigned-comparator truth tables
+
+Production build-only counts:
+
+density_off_branch0
+variables=2924697 clauses=14732380
+
+density_on_branch0
+variables=2983733 clauses=15012606
+local_density_pb_variables=59036 local_density_pb_clauses=280226
+
+density_off_e0c1
+variables=2924697 clauses=14772036
+min_component_schedule_clauses=39656
+
+density_on_e0c1
+variables=2983733 clauses=15052262
+min_component_schedule_clauses=39656
+local_density_pb_variables=59036 local_density_pb_clauses=280226
+
+density_off_e1c2
+variables=2924938 clauses=14811758
+min_component_schedule_clauses=39625
+min_component_low_cap_clauses=36114
+min_component_exception_clauses=1980
+
+density_on_e1c2
+variables=2983974 clauses=15091984
+min_component_schedule_clauses=39625
+min_component_low_cap_clauses=36114
+min_component_exception_clauses=1980
+local_density_pb_variables=59036 local_density_pb_clauses=280226
+
+Remote log SHA-256:
+5f5cf6f6c8d690b94f7100229438e24f3462dea9463a556f41fd3b8cdbd34073  density_off_branch0.log
+a016a1e51679c2d77f37d612b81e5be2e46f8005daa0fbd12447cdea6988f178  density_off_e0c1.log
+a1e580b0496c5e7551ee48c549894ffdfe8b0bcfb0f3a1d72e2bb84b5ee57bb1  density_off_e1c2.log
+bf33696c77e092a688d17849d968ebf474f9608317a85c034e9f68d284e64af2  density_on_branch0.log
+3962cb9237db1b80978fb89ba136dd15a04819e6b9cf489a26deb1ba2691eda9  density_on_e0c1.log
+df57d14685124b366454acb16ee676b324cb2cf64baf97a90c87ec93cf3e4970  density_on_e1c2.log
+
+Disabled-mode deterministic literal-stream comparison:
+
+IDENTICAL branch0
+variables 2924697 declared 2924697
+clauses 14732380 literal_calls 65118464
+hash1 508f5b599ffa2587
+hash2 ce4ebfb80b9d4243
+
+IDENTICAL e0c1
+variables 2924697 declared 2924697
+clauses 14772036 literal_calls 65261404
+hash1 1ba2f6438525dabf
+hash2 08e01def7963e234
+
+IDENTICAL e1c2
+variables 2924938 declared 2924938
+clauses 14811758 literal_calls 65383266
+hash1 a90ec30698cb6056
+hash2 b12d755236aaccbd

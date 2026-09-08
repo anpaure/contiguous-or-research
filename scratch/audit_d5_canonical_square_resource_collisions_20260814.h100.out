@@ -1,0 +1,65 @@
+{
+  "auxiliary_owner": {
+    "all_are_existing_middle_level_owners": true,
+    "distinct": 163,
+    "load_histogram": {
+      "1": 162,
+      "2": 1
+    },
+    "occurrences": 164
+  },
+  "certificate_sha256": "05552624784b67253b9f7d07b3e37c63cb25254d9b80872835952c38ba9605c1",
+  "collateral_phase_histogram": {
+    "(False, False)": 139,
+    "(False, True)": 12,
+    "(True, False)": 13
+  },
+  "direct_factor_overlap_histogram": {
+    "('D_is_existing_owner', True)": 164,
+    "('D_is_prescribed_terminal', False)": 144,
+    "('D_is_prescribed_terminal', True)": 20,
+    "('D_is_touched_owner', False)": 114,
+    "('D_is_touched_owner', True)": 50,
+    "('lower_values_in_new_factor', 1)": 2,
+    "('lower_values_in_new_factor', 2)": 21,
+    "('lower_values_in_new_factor', 3)": 76,
+    "('lower_values_in_new_factor', 4)": 65,
+    "('lower_values_in_old_factor', 1)": 2,
+    "('lower_values_in_old_factor', 2)": 18,
+    "('lower_values_in_old_factor', 3)": 74,
+    "('lower_values_in_old_factor', 4)": 70,
+    "('square_edges_new', 1)": 145,
+    "('square_edges_new', 2)": 19,
+    "('square_edges_old', 1)": 137,
+    "('square_edges_old', 2)": 27,
+    "('upper_values_in_factor', 4)": 164
+  },
+  "distance_two_rows": 164,
+  "distinct_square_resource_overlap_with_factor": {
+    "lower_new": 510,
+    "lower_old": 516,
+    "upper_new": 572,
+    "upper_old": 572
+  },
+  "four_edge_square_resource_distinct": {
+    "lower": 629,
+    "upper": 572
+  },
+  "four_edge_square_resource_load_histogram": {
+    "lower": {
+      "1": 602,
+      "2": 27
+    },
+    "upper": {
+      "1": 490,
+      "2": 80,
+      "3": 2
+    }
+  },
+  "four_edge_square_resource_occurrences": {
+    "lower": 656,
+    "upper": 656
+  },
+  "selection_sha256": "94deb656dac1d8955b20d851e92600156d703842d6de169d4b6bea356fa3ec32",
+  "status": "PASS"
+}

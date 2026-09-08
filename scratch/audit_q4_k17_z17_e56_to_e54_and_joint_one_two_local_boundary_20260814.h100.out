@@ -1,0 +1,70 @@
+{
+  "e54_mixed_two_boundary": {
+    "best_exchange": null,
+    "mixed_exact_tests": 0,
+    "mixed_surviving_faces": 0,
+    "report": "scratch/audit_q4_k17_z17_augmented170k_e54_exact_mixed_two_20260814.h100.json",
+    "self_exact_tests": 0,
+    "self_surviving_faces": 0,
+    "source_energy": 54,
+    "status": "NO_NEGATIVE_MIXED_TWO_EXCHANGE"
+  },
+  "e54_one_boundary": {
+    "best_remaining_pair_swap": {
+      "delta": 0,
+      "new": 184472,
+      "old": 152016
+    },
+    "best_remaining_self_swap": {
+      "delta": 0,
+      "new": 1040,
+      "old": 1039
+    },
+    "report": "scratch/audit_q4_k17_z17_augmented170k_e54_steepest1_20260814.h100.out",
+    "source_energy": 54,
+    "status": "NO_NEGATIVE_ONE_EXCHANGE"
+  },
+  "e54_pair_two_boundary": {
+    "best_exchange": {
+      "add": [
+        129980,
+        158938
+      ],
+      "delta": 0,
+      "remove": [
+        157012,
+        161711
+      ]
+    },
+    "exact_incoming_pair_tests": 333,
+    "pair_options": 189462,
+    "report": "scratch/audit_q4_k17_z17_augmented170k_e54_exact_pair_two_20260814.h100.json",
+    "source_energy": 54,
+    "status": "NO_NEGATIVE_TWO_PAIR_EXCHANGE",
+    "surviving_faces": 24,
+    "threshold_survivor_sum": 68
+  },
+  "e56_pair_descent": {
+    "best_exchange": {
+      "add": [
+        161828,
+        179569
+      ],
+      "delta": -2,
+      "remove": [
+        7814,
+        179488
+      ]
+    },
+    "exact_incoming_pair_tests": 77,
+    "pair_options": 189462,
+    "report": "scratch/audit_q4_k17_z17_augmented170k_e56_exact_pair_two_20260814.h100.json",
+    "source_energy": 56,
+    "status": "PASS",
+    "surviving_faces": 39,
+    "threshold_survivor_sum": 67
+  },
+  "method": "independent E56 pair2 descent replay and complete E54 one- and two-exchange replay over pair, pair+self, and self+self menus",
+  "scope": "finite 189462-pair/3749-self face; three-local mixed menus not included",
+  "status": "PASS"
+}

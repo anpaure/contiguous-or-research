@@ -1,0 +1,12 @@
+length=255 covered=1022 required=1023
+missing decimal mask: 644 = 512 | 128 | 4
+rank 1: length1=10
+rank 2: length1=45
+rank 3: length1=117 length2=2; one mask missing
+rank 4: length1=83 length2=127
+rank 5: length2=124 length3=128
+rank 6: length3=125 length4=85
+rank 7: length4=84 length5=36
+rank 8: length5=36 length6=9
+rank 9: length6=9 length7=1
+rank 10: length7=1

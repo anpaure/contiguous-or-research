@@ -1,6 +1,6 @@
 {
   "DA_equals_DP": true,
-  "audit_sha256": "6f14769bbfa22e3a566046200ae664012fe385d6cef74ed5f2462dedb06c649b",
+  "audit_sha256": "c946caa64b6ce0360dfb630017f10a431b61f7df736008304aa64b068d6974a6",
   "boundary_pins": [
     {
       "position": 0,
@@ -57,7 +57,7 @@
     0,
     1
   ],
-  "proof_scope": "The equality nu(15)=6438 uses only the proved deadline lower bound and the literal word check. Factor, seam-census, and CP-SAT artifacts are independently replayed provenance, not trusted proof dependencies.",
+  "proof_scope": "The equality nu(15)=6438 uses only the proved deadline lower bound and the literal word check. This audit hash-pins the factor and compiler provenance and independently reconstructs the winning chronology, but does not rerun their searches; none is a trusted proof dependency.",
   "schema": "ad-k15-exact-6438-certificate-scope-audit-v1",
   "seam_colour": 17017,
   "seam_recycles_cut_colour": false,

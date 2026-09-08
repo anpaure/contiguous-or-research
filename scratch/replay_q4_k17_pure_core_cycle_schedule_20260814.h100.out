@@ -1,0 +1,284 @@
+{
+  "certificate_sha256": {
+    "scratch/search_q4_k17_pure_core_cycle_schedule_faces0_13_20260814.h100.out": "fb06c2cb1d8660748fa40ab9d851488671eee8f05063e5881501e33ad844d08d",
+    "scratch/search_q4_k17_pure_core_cycle_schedule_faces10_12_20260814.h100.out": "04f64f5c03c9374c38b37d2f33b167f80c68cb6b7b117d772da0b560dbae3493",
+    "scratch/search_q4_k17_pure_core_cycle_schedule_faces1_3_20260814.h100.out": "786c3a29b997df057d6910bcb4799d5f466cb541403f4621920c0094efb1e001",
+    "scratch/search_q4_k17_pure_core_cycle_schedule_faces4_6_20260814.h100.out": "07bdeb13fff103f9a05c72bdd637648861ff910816c6b739b24728036d60481c",
+    "scratch/search_q4_k17_pure_core_cycle_schedule_faces7_9_20260814.h100.out": "9b74fa3b21bc3cb5684bbd186bb0ce471741fe8e499845f8face62e49f9e3cff"
+  },
+  "feasible_faces": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "reports": [
+    {
+      "distinct_cycle_words": 28,
+      "expanded_cycles": 143,
+      "period_10_cycles": 143,
+      "period_11_cycles": 0,
+      "t": 0,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 31,
+      "expanded_cycles": 142,
+      "period_10_cycles": 132,
+      "period_11_cycles": 10,
+      "t": 1,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 15,
+      "expanded_cycles": 141,
+      "period_10_cycles": 121,
+      "period_11_cycles": 20,
+      "t": 2,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 20,
+      "expanded_cycles": 140,
+      "period_10_cycles": 110,
+      "period_11_cycles": 30,
+      "t": 3,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 15,
+      "expanded_cycles": 139,
+      "period_10_cycles": 99,
+      "period_11_cycles": 40,
+      "t": 4,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 15,
+      "expanded_cycles": 138,
+      "period_10_cycles": 88,
+      "period_11_cycles": 50,
+      "t": 5,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 27,
+      "expanded_cycles": 137,
+      "period_10_cycles": 77,
+      "period_11_cycles": 60,
+      "t": 6,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 16,
+      "expanded_cycles": 136,
+      "period_10_cycles": 66,
+      "period_11_cycles": 70,
+      "t": 7,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 16,
+      "expanded_cycles": 135,
+      "period_10_cycles": 55,
+      "period_11_cycles": 80,
+      "t": 8,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 21,
+      "expanded_cycles": 134,
+      "period_10_cycles": 44,
+      "period_11_cycles": 90,
+      "t": 9,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 18,
+      "expanded_cycles": 133,
+      "period_10_cycles": 33,
+      "period_11_cycles": 100,
+      "t": 10,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 22,
+      "expanded_cycles": 132,
+      "period_10_cycles": 22,
+      "period_11_cycles": 110,
+      "t": 11,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 32,
+      "expanded_cycles": 131,
+      "period_10_cycles": 11,
+      "period_11_cycles": 120,
+      "t": 12,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    },
+    {
+      "distinct_cycle_words": 18,
+      "expanded_cycles": 130,
+      "period_10_cycles": 0,
+      "period_11_cycles": 130,
+      "t": 13,
+      "type_counts": [
+        139,
+        297,
+        8,
+        20,
+        20,
+        140,
+        127,
+        237,
+        442
+      ]
+    }
+  ],
+  "scope": "factor-independent labelled-core/type cycle schedules only; rank-seven representative pins are not present and are not inferred",
+  "source_sha256": "0b195aec1a3bf8f3b05c4314d2e8c8e91214fb257fbb01f03e909218bd9affbe",
+  "states": 72,
+  "status": "PASS",
+  "transition_arcs": 793
+}

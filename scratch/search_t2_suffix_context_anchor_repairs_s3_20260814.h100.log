@@ -1,0 +1,8 @@
+c 0/4 10 111000 101100 broken=2 lower=C22 solution=22
+c 0/4 wrap 111000 101100 broken=3 lower=C26 solution=28
+c 1/4 10 111000 101010 broken=2 lower=C22 solution=22
+c 1/4 wrap 111000 101010 broken=2 lower=C24 solution=24
+c 2/4 10 110100 110010 broken=2 lower=C26 solution=26
+c 2/4 wrap 110100 110010 broken=2 lower=C24 solution=24
+c 3/4 10 110100 101100 broken=2 lower=C20 solution=20
+c 3/4 wrap 110100 101100 broken=2 lower=C24 solution=24

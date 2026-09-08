@@ -1,0 +1,250 @@
+{
+  "base_residence_replay": {
+    "4": {
+      "lower_projection": {
+        "bad_2_collars": 2,
+        "bad_collision_events": 2,
+        "common_intersection": "0000000101000000",
+        "common_intersection_rank": 2,
+        "immediate_lower_palette_births": 7,
+        "immediate_lower_palette_losses": 7,
+        "minimum_positive_run": 1,
+        "minimum_zero_run": 2,
+        "witness": {
+          "collisions": [
+            {
+              "coordinate": 10,
+              "side": "right",
+              "singleton_owner": "10000101011110100",
+              "singleton_value": 1
+            }
+          ],
+          "label": "10100101011110100"
+        }
+      },
+      "q2": {
+        "negative_occurrences": 6,
+        "positive_occurrences": 6,
+        "support_losses": 0
+      },
+      "seam_gap_histogram": {
+        "17": 6,
+        "85": 2
+      },
+      "single_switch_component_owner_length": 272,
+      "upper_projection": {
+        "bad_2_collars": 4,
+        "bad_collision_events": 4,
+        "common_intersection": "0010010101011000",
+        "common_intersection_rank": 6,
+        "minimum_positive_run": 2,
+        "minimum_zero_run": 1,
+        "witness": {
+          "collisions": [
+            {
+              "coordinate": 8,
+              "side": "left",
+              "singleton_owner": "00101101011111000",
+              "singleton_value": 0
+            }
+          ],
+          "label": "00101101011110000"
+        }
+      }
+    },
+    "6": {
+      "lower_projection": {
+        "bad_2_collars": 5,
+        "bad_collision_events": 6,
+        "common_intersection": "0000010011000000",
+        "common_intersection_rank": 3,
+        "immediate_lower_palette_births": 5,
+        "immediate_lower_palette_losses": 5,
+        "minimum_positive_run": 1,
+        "minimum_zero_run": 2,
+        "witness": {
+          "collisions": [
+            {
+              "coordinate": 0,
+              "side": "left",
+              "singleton_owner": "10000110110111000",
+              "singleton_value": 1
+            }
+          ],
+          "label": "10100110110111000"
+        }
+      },
+      "q2": {
+        "negative_occurrences": 6,
+        "positive_occurrences": 6,
+        "support_losses": 0
+      },
+      "seam_gap_histogram": {
+        "17": 6,
+        "85": 2
+      },
+      "single_switch_component_owner_length": 272,
+      "upper_projection": {
+        "bad_2_collars": 6,
+        "bad_collision_events": 7,
+        "common_intersection": "0010010011011000",
+        "common_intersection_rank": 6,
+        "minimum_positive_run": 2,
+        "minimum_zero_run": 1,
+        "witness": {
+          "collisions": [
+            {
+              "coordinate": 15,
+              "side": "right",
+              "singleton_owner": "00100110110111100",
+              "singleton_value": 0
+            }
+          ],
+          "label": "00100100110111100"
+        }
+      }
+    },
+    "both": {
+      "component_owner_lengths": [
+        153,
+        221
+      ],
+      "lower_bad_2_collars": 7,
+      "seam_gap_histogram": {
+        "17": 14,
+        "68": 2
+      },
+      "upper_bad_2_collars": 10
+    }
+  },
+  "suffix_matching_replay": [
+    {
+      "c16_edges": 1,
+      "covered_vertices": 2,
+      "suffix_semilength": 2,
+      "vertices": 2
+    },
+    {
+      "c16_edges": 1,
+      "covered_vertices": 2,
+      "suffix_semilength": 3,
+      "vertices": 5
+    },
+    {
+      "c16_edges": 2,
+      "covered_vertices": 4,
+      "suffix_semilength": 4,
+      "vertices": 14
+    },
+    {
+      "c16_edges": 5,
+      "covered_vertices": 10,
+      "suffix_semilength": 5,
+      "vertices": 42
+    },
+    {
+      "c16_edges": 14,
+      "covered_vertices": 28,
+      "suffix_semilength": 6,
+      "vertices": 132
+    },
+    {
+      "c16_edges": 42,
+      "covered_vertices": 84,
+      "suffix_semilength": 7,
+      "vertices": 429
+    },
+    {
+      "c16_edges": 132,
+      "covered_vertices": 264,
+      "suffix_semilength": 8,
+      "vertices": 1430
+    },
+    {
+      "c16_edges": 429,
+      "covered_vertices": 858,
+      "suffix_semilength": 9,
+      "vertices": 4862
+    },
+    {
+      "c16_edges": 1430,
+      "covered_vertices": 2860,
+      "suffix_semilength": 10,
+      "vertices": 16796
+    }
+  ],
+  "tensor_topology_replays": [
+    {
+      "c16_suffix_edges": 1,
+      "m": 8,
+      "post_t2_component_histogram": {
+        "34": 1420,
+        "170": 2
+      },
+      "post_t2_components": 1422,
+      "selections": {
+        "both": {
+          "component_count": 1410,
+          "reduction": 12
+        },
+        "one_b4": {
+          "component_count": 1415,
+          "reduction": 7
+        },
+        "one_b6": {
+          "component_count": 1415,
+          "reduction": 7
+        }
+      },
+      "suffix_vertices": 2
+    },
+    {
+      "c16_suffix_edges": 1,
+      "m": 9,
+      "post_t2_component_histogram": {
+        "38": 4837,
+        "190": 5
+      },
+      "post_t2_components": 4842,
+      "selections": {
+        "both": {
+          "component_count": 4830,
+          "reduction": 12
+        },
+        "one_b4": {
+          "component_count": 4835,
+          "reduction": 7
+        },
+        "one_b6": {
+          "component_count": 4835,
+          "reduction": 7
+        }
+      },
+      "suffix_vertices": 5
+    },
+    {
+      "c16_suffix_edges": 2,
+      "m": 10,
+      "post_t2_component_histogram": {
+        "42": 16726,
+        "210": 14
+      },
+      "post_t2_components": 16740,
+      "selections": {
+        "both": {
+          "component_count": 16716,
+          "reduction": 24
+        },
+        "one_b4": {
+          "component_count": 16726,
+          "reduction": 14
+        },
+        "one_b6": {
+          "component_count": 16726,
+          "reduction": 14
+        }
+      },
+      "suffix_vertices": 14
+    }
+  ]
+}

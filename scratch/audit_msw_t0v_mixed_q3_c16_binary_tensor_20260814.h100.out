@@ -1,0 +1,919 @@
+{
+  "candidates": [
+    {
+      "c16_colours": [
+        "110010001111",
+        "100010101111",
+        "000010111111",
+        "010010111110",
+        "110010110110",
+        "110000110111",
+        "110010110101",
+        "110010101101"
+      ],
+      "c16_owners": [
+        "110010001101",
+        "100010001111",
+        "000010101111",
+        "000010111110",
+        "010010110110",
+        "110000110110",
+        "110000110101",
+        "110010100101"
+      ],
+      "index": 4,
+      "physical_roles": [
+        {
+          "root": "110101101000",
+          "sign": "-"
+        },
+        {
+          "root": "111100100010",
+          "sign": "+"
+        },
+        {
+          "root": "111100001010",
+          "sign": "-"
+        },
+        {
+          "root": "111100101000",
+          "sign": "+"
+        },
+        {
+          "root": "110111010000",
+          "sign": "-"
+        },
+        {
+          "root": "110111100000",
+          "sign": "-"
+        },
+        {
+          "root": "110111001000",
+          "sign": "-"
+        },
+        {
+          "root": "110111000010",
+          "sign": "+"
+        },
+        {
+          "root": "101101001010",
+          "sign": "+"
+        },
+        {
+          "root": "111101000010",
+          "sign": "-"
+        },
+        {
+          "root": "111101010000",
+          "sign": "+"
+        },
+        {
+          "root": "110101110000",
+          "sign": "+"
+        },
+        {
+          "root": "110110011000",
+          "sign": "+"
+        }
+      ],
+      "resources_per_packet": {
+        "colours": 14,
+        "incidences": 30,
+        "owners": 15
+      },
+      "runs": [
+        {
+          "common_binary_phase": true,
+          "components": 120,
+          "cycle_histogram": {
+            "13": 119,
+            "169": 1
+          },
+          "m": 6,
+          "negative_G2_fibres": [],
+          "packets": 1,
+          "upper_q3_casualties": []
+        },
+        {
+          "common_binary_phase": true,
+          "components": 417,
+          "cycle_histogram": {
+            "15": 416,
+            "195": 1
+          },
+          "m": 7,
+          "negative_G2_fibres": [],
+          "packets": 1,
+          "upper_q3_casualties": []
+        },
+        {
+          "common_binary_phase": true,
+          "components": 1406,
+          "cycle_histogram": {
+            "17": 1404,
+            "221": 2
+          },
+          "m": 8,
+          "negative_G2_fibres": [
+            {
+              "G2": "1111",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "1100",
+                "1010"
+              ]
+            },
+            {
+              "G2": "1111",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010101111",
+              "suffixes": [
+                "1100",
+                "1010"
+              ]
+            }
+          ],
+          "packets": 2,
+          "upper_q3_casualties": []
+        },
+        {
+          "common_binary_phase": true,
+          "components": 4802,
+          "cycle_histogram": {
+            "19": 4797,
+            "247": 5
+          },
+          "m": 9,
+          "negative_G2_fibres": [
+            {
+              "G2": "111110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "110010",
+                "101010"
+              ]
+            },
+            {
+              "G2": "111110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010101111",
+              "suffixes": [
+                "110010",
+                "101010"
+              ]
+            },
+            {
+              "G2": "111101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "111000",
+                "101100"
+              ]
+            },
+            {
+              "G2": "111101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010101111",
+              "suffixes": [
+                "111000",
+                "101100"
+              ]
+            },
+            {
+              "G2": "110111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100011010111",
+              "suffixes": [
+                "110100"
+              ]
+            },
+            {
+              "G2": "110111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100010101111",
+              "suffixes": [
+                "110100"
+              ]
+            }
+          ],
+          "packets": 5,
+          "upper_q3_casualties": [
+            "100011010111110111",
+            "100010101111110111"
+          ]
+        },
+        {
+          "common_binary_phase": true,
+          "components": 16628,
+          "cycle_histogram": {
+            "21": 16614,
+            "273": 14
+          },
+          "m": 10,
+          "negative_G2_fibres": [
+            {
+              "G2": "11111100",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11001100",
+                "10101100"
+              ]
+            },
+            {
+              "G2": "11111100",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11001100",
+                "10101100"
+              ]
+            },
+            {
+              "G2": "11111010",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11001010",
+                "10101010"
+              ]
+            },
+            {
+              "G2": "11111010",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11001010",
+                "10101010"
+              ]
+            },
+            {
+              "G2": "11110110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11100010",
+                "10110010"
+              ]
+            },
+            {
+              "G2": "11110110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11100010",
+                "10110010"
+              ]
+            },
+            {
+              "G2": "11011110",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11010010"
+              ]
+            },
+            {
+              "G2": "11011110",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11010010"
+              ]
+            },
+            {
+              "G2": "11111001",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11101000",
+                "10111000"
+              ]
+            },
+            {
+              "G2": "11111001",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11101000",
+                "10111000"
+              ]
+            },
+            {
+              "G2": "11110101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11110000",
+                "10110100"
+              ]
+            },
+            {
+              "G2": "11110101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11110000",
+                "10110100"
+              ]
+            },
+            {
+              "G2": "11011101",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11011000"
+              ]
+            },
+            {
+              "G2": "11011101",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11011000"
+              ]
+            },
+            {
+              "G2": "11100111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11100100"
+              ]
+            },
+            {
+              "G2": "11100111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11100100"
+              ]
+            },
+            {
+              "G2": "11010111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11010100"
+              ]
+            },
+            {
+              "G2": "11010111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100010101111",
+              "suffixes": [
+                "11010100"
+              ]
+            }
+          ],
+          "packets": 14,
+          "upper_q3_casualties": [
+            "10001101011111011110",
+            "10001010111111011110",
+            "10001101011111010111",
+            "10001010111111010111"
+          ]
+        }
+      ]
+    },
+    {
+      "c16_colours": [
+        "110010001111",
+        "100010011111",
+        "000010111111",
+        "010010111110",
+        "110010110110",
+        "110000110111",
+        "110010110101",
+        "110010101101"
+      ],
+      "c16_owners": [
+        "110010001101",
+        "100010001111",
+        "000010011111",
+        "000010111110",
+        "010010110110",
+        "110000110110",
+        "110000110101",
+        "110010100101"
+      ],
+      "index": 5,
+      "physical_roles": [
+        {
+          "root": "110101101000",
+          "sign": "-"
+        },
+        {
+          "root": "111100100010",
+          "sign": "+"
+        },
+        {
+          "root": "111100001010",
+          "sign": "-"
+        },
+        {
+          "root": "111100101000",
+          "sign": "+"
+        },
+        {
+          "root": "110111010000",
+          "sign": "-"
+        },
+        {
+          "root": "110111100000",
+          "sign": "-"
+        },
+        {
+          "root": "110111001000",
+          "sign": "-"
+        },
+        {
+          "root": "110111000010",
+          "sign": "+"
+        },
+        {
+          "root": "101101001010",
+          "sign": "+"
+        },
+        {
+          "root": "111101000010",
+          "sign": "-"
+        },
+        {
+          "root": "111101100000",
+          "sign": "+"
+        },
+        {
+          "root": "110101110000",
+          "sign": "+"
+        },
+        {
+          "root": "110110011000",
+          "sign": "+"
+        }
+      ],
+      "resources_per_packet": {
+        "colours": 14,
+        "incidences": 30,
+        "owners": 15
+      },
+      "runs": [
+        {
+          "common_binary_phase": true,
+          "components": 120,
+          "cycle_histogram": {
+            "13": 119,
+            "169": 1
+          },
+          "m": 6,
+          "negative_G2_fibres": [],
+          "packets": 1,
+          "upper_q3_casualties": []
+        },
+        {
+          "common_binary_phase": true,
+          "components": 417,
+          "cycle_histogram": {
+            "15": 416,
+            "195": 1
+          },
+          "m": 7,
+          "negative_G2_fibres": [],
+          "packets": 1,
+          "upper_q3_casualties": []
+        },
+        {
+          "common_binary_phase": true,
+          "components": 1406,
+          "cycle_histogram": {
+            "17": 1404,
+            "221": 2
+          },
+          "m": 8,
+          "negative_G2_fibres": [
+            {
+              "G2": "1111",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "1100",
+                "1010"
+              ]
+            },
+            {
+              "G2": "1111",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010011111",
+              "suffixes": [
+                "1100",
+                "1010"
+              ]
+            }
+          ],
+          "packets": 2,
+          "upper_q3_casualties": []
+        },
+        {
+          "common_binary_phase": true,
+          "components": 4802,
+          "cycle_histogram": {
+            "19": 4797,
+            "247": 5
+          },
+          "m": 9,
+          "negative_G2_fibres": [
+            {
+              "G2": "111110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "110010",
+                "101010"
+              ]
+            },
+            {
+              "G2": "111110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010011111",
+              "suffixes": [
+                "110010",
+                "101010"
+              ]
+            },
+            {
+              "G2": "111101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "111000",
+                "101100"
+              ]
+            },
+            {
+              "G2": "111101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010011111",
+              "suffixes": [
+                "111000",
+                "101100"
+              ]
+            },
+            {
+              "G2": "110111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100011010111",
+              "suffixes": [
+                "110100"
+              ]
+            },
+            {
+              "G2": "110111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100010011111",
+              "suffixes": [
+                "110100"
+              ]
+            }
+          ],
+          "packets": 5,
+          "upper_q3_casualties": [
+            "100010011111110111",
+            "100011010111110111"
+          ]
+        },
+        {
+          "common_binary_phase": true,
+          "components": 16628,
+          "cycle_histogram": {
+            "21": 16614,
+            "273": 14
+          },
+          "m": 10,
+          "negative_G2_fibres": [
+            {
+              "G2": "11111100",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11001100",
+                "10101100"
+              ]
+            },
+            {
+              "G2": "11111100",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11001100",
+                "10101100"
+              ]
+            },
+            {
+              "G2": "11111010",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11001010",
+                "10101010"
+              ]
+            },
+            {
+              "G2": "11111010",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 3,
+              "old_load": 5,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11001010",
+                "10101010"
+              ]
+            },
+            {
+              "G2": "11110110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11100010",
+                "10110010"
+              ]
+            },
+            {
+              "G2": "11110110",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11100010",
+                "10110010"
+              ]
+            },
+            {
+              "G2": "11011110",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11010010"
+              ]
+            },
+            {
+              "G2": "11011110",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11010010"
+              ]
+            },
+            {
+              "G2": "11111001",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11101000",
+                "10111000"
+              ]
+            },
+            {
+              "G2": "11111001",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11101000",
+                "10111000"
+              ]
+            },
+            {
+              "G2": "11110101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11110000",
+                "10110100"
+              ]
+            },
+            {
+              "G2": "11110101",
+              "delta": -2,
+              "fibre_size": 2,
+              "new_load": 6,
+              "old_load": 8,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11110000",
+                "10110100"
+              ]
+            },
+            {
+              "G2": "11011101",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11011000"
+              ]
+            },
+            {
+              "G2": "11011101",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11011000"
+              ]
+            },
+            {
+              "G2": "11100111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11100100"
+              ]
+            },
+            {
+              "G2": "11100111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 2,
+              "old_load": 3,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11100100"
+              ]
+            },
+            {
+              "G2": "11010111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100011010111",
+              "suffixes": [
+                "11010100"
+              ]
+            },
+            {
+              "G2": "11010111",
+              "delta": -1,
+              "fibre_size": 1,
+              "new_load": 0,
+              "old_load": 1,
+              "prefix": "100010011111",
+              "suffixes": [
+                "11010100"
+              ]
+            }
+          ],
+          "packets": 14,
+          "upper_q3_casualties": [
+            "10001101011111011110",
+            "10001001111111010111",
+            "10001001111111011110",
+            "10001101011111010111"
+          ]
+        }
+      ]
+    }
+  ],
+  "status": "PASS"
+}

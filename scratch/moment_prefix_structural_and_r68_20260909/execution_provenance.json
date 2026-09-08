@@ -1,0 +1,17 @@
+{
+  "actual_mathematical_runs": 1,
+  "host": "h100 (arboghast)",
+  "command": "python3 /home/amodo/verify_moment_prefix_structure_and_r68_20260909.py",
+  "source_sha256": "6f1f556319147121250420d4715a21e0a7cbf3a679392b3b7b8b210a11c17132",
+  "complete_report_sha256": "4a72d1ed42e689b59eff6e7b80bf082e5cc7044b436731a18313834794df16d4",
+  "structural_report_sha256": "82ad0a974e938687b7d80fa7a311de5ede6948bcac063bc44a24a2d89ae86700",
+  "height_table_sha256": "ea5cda37eae19665debafd9df93e1b9fbad049c22162ffe43420de3439cf459c",
+  "split_log_sha256": "a971bc255d40a18d0c7dd853de10dc06cdec8e255545f9c0a162f59f678b5ff4",
+  "final_leaves_sha256": "147c7c06c846043e0ceb30a936aa9a7877c6cf7d77a0ee9a4558c784f737e5b4",
+  "cpu_limit_seconds": 60,
+  "wall_limit_seconds": 90,
+  "address_space_limit_bytes": 1073741824,
+  "cpu_elapsed_seconds": 1.53143053,
+  "wall_elapsed_seconds": 1.532426885329187,
+  "scope": "Exact structural checks plus one r68 target and complete priority-free replay; no full claimed band, predecessor run, or optional r163 recharge."
+}

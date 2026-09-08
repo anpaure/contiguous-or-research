@@ -1,0 +1,278 @@
+{
+  "distinct_fixed_lower_edges": 8,
+  "distinct_fixed_owner_edges": 8,
+  "distinct_joint_edge_pairs": 8,
+  "distinct_owner_decks": 8,
+  "lower_fixed_edge_graph": {
+    "component_size_histogram": {
+      "1": 54,
+      "2": 8
+    },
+    "degree_histogram": {
+      "0": 54,
+      "1": 16
+    },
+    "edges": 8,
+    "maximum_matching": 8,
+    "nonisolated_vertices": 16,
+    "one_maximum_matching": [
+      [
+        495,
+        5183
+      ],
+      [
+        1501,
+        10965
+      ],
+      [
+        2925,
+        18859
+      ],
+      [
+        3483,
+        9705
+      ],
+      [
+        3687,
+        6927
+      ],
+      [
+        7335,
+        13611
+      ],
+      [
+        10471,
+        13011
+      ],
+      [
+        11061,
+        21299
+      ]
+    ],
+    "unmatched_vertices_at_maximum": 54,
+    "vertices": 70
+  },
+  "multiplier_expanded_owner_lower_typed_columns": 16,
+  "new_fixed_face_completion": {
+    "combined_matching_is_perfect": true,
+    "combined_matching_size": 35,
+    "new_edge_pair_intersection_histogram": {
+      "3": 8
+    },
+    "new_nondihedral_edges": [
+      [
+        22,
+        31
+      ],
+      [
+        246,
+        1391
+      ],
+      [
+        341,
+        1290
+      ],
+      [
+        497,
+        1301
+      ],
+      [
+        509,
+        1362
+      ],
+      [
+        704,
+        832
+      ],
+      [
+        799,
+        1347
+      ],
+      [
+        899,
+        1145
+      ]
+    ],
+    "removed_fixed_vertices": 16,
+    "residual_strong_edges": 756,
+    "residual_strong_maximum_matching": 27,
+    "residual_strong_vertices": 54,
+    "strong_completion_matching": [
+      [
+        0,
+        329
+      ],
+      [
+        16,
+        227
+      ],
+      [
+        27,
+        519
+      ],
+      [
+        165,
+        1184
+      ],
+      [
+        200,
+        1337
+      ],
+      [
+        258,
+        506
+      ],
+      [
+        285,
+        1216
+      ],
+      [
+        310,
+        1112
+      ],
+      [
+        369,
+        1397
+      ],
+      [
+        384,
+        502
+      ],
+      [
+        396,
+        1172
+      ],
+      [
+        425,
+        1321
+      ],
+      [
+        430,
+        802
+      ],
+      [
+        629,
+        779
+      ],
+      [
+        752,
+        1287
+      ],
+      [
+        792,
+        1366
+      ],
+      [
+        940,
+        1381
+      ],
+      [
+        969,
+        1156
+      ],
+      [
+        1107,
+        1119
+      ],
+      [
+        1116,
+        1396
+      ],
+      [
+        1161,
+        1195
+      ],
+      [
+        1200,
+        1292
+      ],
+      [
+        1212,
+        1377
+      ],
+      [
+        1221,
+        1245
+      ],
+      [
+        1333,
+        1422
+      ],
+      [
+        1357,
+        1429
+      ],
+      [
+        1368,
+        1403
+      ]
+    ]
+  },
+  "normalized_distinct_owner_lower_typed_columns": 4,
+  "owner_deck_lower_fibre_histogram": {
+    "2": 8
+  },
+  "owner_fixed_edge_graph": {
+    "component_size_histogram": {
+      "1": 54,
+      "2": 8
+    },
+    "degree_histogram": {
+      "0": 54,
+      "1": 16
+    },
+    "edges": 8,
+    "maximum_matching": 8,
+    "nonisolated_vertices": 16,
+    "one_maximum_matching": [
+      [
+        1787,
+        1967
+      ],
+      [
+        5869,
+        23859
+      ],
+      [
+        7003,
+        21723
+      ],
+      [
+        8957,
+        21839
+      ],
+      [
+        9167,
+        22989
+      ],
+      [
+        11551,
+        13087
+      ],
+      [
+        12731,
+        22355
+      ],
+      [
+        13711,
+        19189
+      ]
+    ],
+    "unmatched_vertices_at_maximum": 54,
+    "vertices": 70
+  },
+  "scope": "complete multiplier closure of the normalized owner/lower typed columns; counts do not distinguish physical rails having the same owner and lower decks",
+  "status": "PASS",
+  "strong_self_comparison": {
+    "candidate_edges_in_sample_zero_matching": 0,
+    "candidate_edges_in_strong_fixed_edge_graph": 0,
+    "candidate_owner_decks_already_strong": 0,
+    "distinct_strong_owner_decks": 136456,
+    "genuinely_new_candidate_owner_decks": 8,
+    "matching_overlap_edges": [],
+    "quotient_simple_strong_orders": 545824,
+    "raw_strong_orders": 645120,
+    "sample_zero_matching_edges": 35,
+    "strong_fixed_edges": 1260
+  }
+}
