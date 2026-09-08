@@ -1,5 +1,25 @@
 # Universal contiguous-subarray OR arrays
 
+## Proposed coefficient-one proof — September 8, 2026
+
+The new manuscript proposes
+`nu(k) = (1 + o(1)) binom(k, floor(k/2))` for all ranks and dimensions.
+It has internal AI-agent reviews; external review and formal verification
+have not been obtained. This asymptotic claim does not settle the exact
+finite optimum or supply an explicit convergence rate.
+
+- [Proof manuscript](COEFFICIENT_ONE_PROOF_20260908.md)
+- [Full proof text and supporting lemmas](review/COEFFICIENT_ONE_REVIEW_20260908/FULL_PROOF_TEXT.md)
+- [Portable review package and dependency notes](review/COEFFICIENT_ONE_REVIEW_20260908/README.md)
+- [Download the complete review ZIP](review/COEFFICIENT_ONE_REVIEW_20260908.zip)
+- [Finite construction recipe](COEFFICIENT_ONE_CONSTRUCTION_20260908.md)
+- [Current master handoff](MASTER_HANDOFF.md)
+
+The package includes complete local proof sources, exact originals, an
+index and checksums. Its required published external theorem is cited in
+its README. The finite-word verifier in the package checks the earlier
+k=17 construction, not the proposed asymptotic theorem.
+
 For a word of nonzero `k`-bit masks, consider the bitwise OR of every
 contiguous subarray.  Let `nu(k)` be the minimum word length needed to obtain
 all `2^k-1` nonzero masks, and let `N(k)=nu(k)+1` when the zero mask is also
@@ -66,7 +86,7 @@ conjectured optimal values**, not claimed solutions.
 | 14 | 7 | 3432 | 6475 | 2 | **3434** | exact |
 | 15 | 8 | 6435 | 16383 | 3 | **6438** | exact |
 | 16 | 8 | 12870 | 26332 | 3 | **12873** | exact |
-| 17 | 9 | 24310 | 65535 | 3 | **24313** | `24313 <= nu(17) <= 25746` |
+| 17 | 9 | 24310 | 65535 | 3 | **24313** | `24313 <= nu(17) <= 25745` |
 | 18 | 9 | 48620 | 106761 | 3 | **48623** | open target |
 | 19 | 10 | 92378 | 262143 | 3 | **92381** | open target |
 | 20 | 10 | 184756 | 431909 | 3 | **184759** | open target |
@@ -98,7 +118,7 @@ The first unresolved finite case is therefore `k=17`, with conjectured value
 `B(17)=24313`.  The former length-`12874`, length-`12875`, and standard
 trimmed-lift `k=16` certificates remain historical checkpoints.
 
-There is now also a literal certified upper bound
+An earlier literal certified upper bound is
 
 \[
                     24313\le\nu(17)\le25746.
@@ -117,6 +137,13 @@ word is [`answers/k17_upper25746.word`](answers/k17_upper25746.word), SHA-256
 Two independent literal scans cover all `131,071` nonempty masks.  This is an
 upper bound only; the active construction still targets the lower-bound
 length `24313`.
+
+The later retained [25,745-letter word](answers/k17_upper25745.word)
+improves the upper bound to `24313 <= nu(17) <= 25745`. Its
+[deterministic boundary-splice generator](review/COEFFICIENT_ONE_REVIEW_20260908/finite_construction/scripts/k17_boundary_splice_20260906_b7e41_audit.py)
+and [saved exhaustive verification](review/COEFFICIENT_ONE_REVIEW_20260908/finite_construction/scratch/k17_literal_compress_20260905_a19f7/worker3.standard.verify.json)
+are included. This remains an upper bound, not an exact optimum; the saved
+verification was not rerun when publishing the proof package.
 
 ## Research record
 
