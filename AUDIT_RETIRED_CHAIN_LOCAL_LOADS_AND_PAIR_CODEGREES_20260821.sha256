@@ -1,0 +1,5 @@
+4c33c7b4958230c26d68f34b330d3d46fb1d9e2c7de2395a3571857d6925f186  MATH_OBSTRUCTION_RETIRED_CHAIN_LOCAL_LOADS_AND_PAIR_CODEGREES_20260821.md
+30194c4b9effcb3afc9cb3b99136e0f285521a8ecca21ab367c1af269604141f  scratch/audit_retired_chain_local_load_obstruction_20260821.py
+
+H100 replay: PASS
+Hostile proof audit: PASS after the token--source poset-order and notation patches

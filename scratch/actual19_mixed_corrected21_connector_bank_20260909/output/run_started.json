@@ -1,0 +1,11 @@
+{
+  "resource_caps": {
+    "address_space_bytes": 1073741824,
+    "cpu_seconds": 30,
+    "file_bytes": 134217728,
+    "wall_seconds": 45
+  },
+  "scope": "One pinned actual19 carrier; one age-dependent route at every fixed P=00D1 port.",
+  "source_sha256": "a696a4cff29f93675f987a23f7b9db726642d6d3c9f9161d2cbc83ddd991902d",
+  "status": "RUNNING_NOT_CERTIFIED"
+}

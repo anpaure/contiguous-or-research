@@ -1,0 +1,27 @@
+{
+  "reports": [
+    {
+      "class": "all minimum-excess pure-rail polarities; two prescribed bad-window cuts at C10 distance one or two; three same-polarity cuts; exact lower+upper q1",
+      "counters": {
+        "cross_johnson_c10": 2368,
+        "minimum_assignments": 160
+      },
+      "solution": null,
+      "state": "state_one",
+      "status": "NO_WITNESS"
+    },
+    {
+      "class": "all minimum-excess pure-rail polarities; two prescribed bad-window cuts at C10 distance one or two; three same-polarity cuts; exact lower+upper q1",
+      "counters": {
+        "cross_johnson_c10": 224,
+        "minimum_assignments": 320,
+        "q1_collision_assignments_interface_impossible": 128
+      },
+      "solution": null,
+      "state": "state_two",
+      "status": "NO_WITNESS"
+    }
+  ],
+  "source_sha256": "cae68fd6542d1925c3663c901f981fee596dfa10560fc01b278d367960c7573d",
+  "status": "NO_WITNESS"
+}

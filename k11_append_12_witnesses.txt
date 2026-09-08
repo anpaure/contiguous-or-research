@@ -1,0 +1,13 @@
+target=251 rank=7 interval=[464,465] length=2 mode=cross-seam
+target=493 rank=7 interval=[476,476] length=1 mode=append-only
+target=607 rank=7 interval=[471,471] length=1 mode=append-only
+target=941 rank=7 interval=[469,469] length=1 mode=append-only
+target=956 rank=7 interval=[468,468] length=1 mode=append-only
+target=958 rank=8 interval=[467,468] length=2 mode=append-only
+target=1267 rank=7 interval=[465,466] length=2 mode=append-only
+target=1468 rank=7 interval=[470,470] length=1 mode=append-only
+target=1694 rank=7 interval=[472,472] length=1 mode=append-only
+target=1763 rank=7 interval=[474,474] length=1 mode=append-only
+target=1884 rank=7 interval=[475,475] length=1 mode=append-only
+target=1946 rank=7 interval=[473,473] length=1 mode=append-only
+target=1990 rank=7 interval=[466,467] length=2 mode=append-only

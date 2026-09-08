@@ -1,0 +1,248 @@
+{
+  "all_letters_nonzero_and_in_cube": true,
+  "cpu_seconds": 1.21997311,
+  "distinct_nonempty_targets": 1048575,
+  "endpoint_lower_bound": {
+    "B": 184759,
+    "all_rank_rows": [
+      {
+        "capacity_at_tau": 0,
+        "capacity_at_tau_minus_one": null,
+        "lower_bound": 20,
+        "rank": 1,
+        "rank_size": 20,
+        "smaller_nonempty_target_count": 0,
+        "tau": 0
+      },
+      {
+        "capacity_at_tau": 191,
+        "capacity_at_tau_minus_one": 0,
+        "lower_bound": 191,
+        "rank": 2,
+        "rank_size": 190,
+        "smaller_nonempty_target_count": 20,
+        "tau": 1
+      },
+      {
+        "capacity_at_tau": 1141,
+        "capacity_at_tau_minus_one": 0,
+        "lower_bound": 1141,
+        "rank": 3,
+        "rank_size": 1140,
+        "smaller_nonempty_target_count": 210,
+        "tau": 1
+      },
+      {
+        "capacity_at_tau": 4846,
+        "capacity_at_tau_minus_one": 0,
+        "lower_bound": 4846,
+        "rank": 4,
+        "rank_size": 4845,
+        "smaller_nonempty_target_count": 1350,
+        "tau": 1
+      },
+      {
+        "capacity_at_tau": 15505,
+        "capacity_at_tau_minus_one": 0,
+        "lower_bound": 15505,
+        "rank": 5,
+        "rank_size": 15504,
+        "smaller_nonempty_target_count": 6195,
+        "tau": 1
+      },
+      {
+        "capacity_at_tau": 38761,
+        "capacity_at_tau_minus_one": 0,
+        "lower_bound": 38761,
+        "rank": 6,
+        "rank_size": 38760,
+        "smaller_nonempty_target_count": 21699,
+        "tau": 1
+      },
+      {
+        "capacity_at_tau": 77521,
+        "capacity_at_tau_minus_one": 0,
+        "lower_bound": 77521,
+        "rank": 7,
+        "rank_size": 77520,
+        "smaller_nonempty_target_count": 60459,
+        "tau": 1
+      },
+      {
+        "capacity_at_tau": 251943,
+        "capacity_at_tau_minus_one": 125971,
+        "lower_bound": 125972,
+        "rank": 8,
+        "rank_size": 125970,
+        "smaller_nonempty_target_count": 137979,
+        "tau": 2
+      },
+      {
+        "capacity_at_tau": 335923,
+        "capacity_at_tau_minus_one": 167961,
+        "lower_bound": 167962,
+        "rank": 9,
+        "rank_size": 167960,
+        "smaller_nonempty_target_count": 263949,
+        "tau": 2
+      },
+      {
+        "capacity_at_tau": 554274,
+        "capacity_at_tau_minus_one": 369515,
+        "lower_bound": 184759,
+        "rank": 10,
+        "rank_size": 184756,
+        "smaller_nonempty_target_count": 431909,
+        "tau": 3
+      },
+      {
+        "capacity_at_tau": 671850,
+        "capacity_at_tau_minus_one": 503886,
+        "lower_bound": 167964,
+        "rank": 11,
+        "rank_size": 167960,
+        "smaller_nonempty_target_count": 616665,
+        "tau": 4
+      },
+      {
+        "capacity_at_tau": 881818,
+        "capacity_at_tau_minus_one": 755841,
+        "lower_bound": 125977,
+        "rank": 12,
+        "rank_size": 125970,
+        "smaller_nonempty_target_count": 784625,
+        "tau": 7
+      },
+      {
+        "capacity_at_tau": 930318,
+        "capacity_at_tau_minus_one": 852786,
+        "lower_bound": 77532,
+        "rank": 13,
+        "rank_size": 77520,
+        "smaller_nonempty_target_count": 910595,
+        "tau": 12
+      },
+      {
+        "capacity_at_tau": 1008111,
+        "capacity_at_tau_minus_one": 969325,
+        "lower_bound": 38786,
+        "rank": 14,
+        "rank_size": 38760,
+        "smaller_nonempty_target_count": 988115,
+        "tau": 26
+      },
+      {
+        "capacity_at_tau": 1041046,
+        "capacity_at_tau_minus_one": 1025475,
+        "lower_bound": 15571,
+        "rank": 15,
+        "rank_size": 15504,
+        "smaller_nonempty_target_count": 1026875,
+        "tau": 67
+      },
+      {
+        "capacity_at_tau": 1044661,
+        "capacity_at_tau_minus_one": 1039605,
+        "lower_bound": 5056,
+        "rank": 16,
+        "rank_size": 4845,
+        "smaller_nonempty_target_count": 1042379,
+        "tau": 211
+      },
+      {
+        "capacity_at_tau": 1048876,
+        "capacity_at_tau_minus_one": 1047033,
+        "lower_bound": 1843,
+        "rank": 17,
+        "rank_size": 1140,
+        "smaller_nonempty_target_count": 1047224,
+        "tau": 703
+      },
+      {
+        "capacity_at_tau": 1048385,
+        "capacity_at_tau_minus_one": 1046925,
+        "lower_bound": 1460,
+        "rank": 18,
+        "rank_size": 190,
+        "smaller_nonempty_target_count": 1048364,
+        "tau": 1270
+      },
+      {
+        "capacity_at_tau": 1048866,
+        "capacity_at_tau_minus_one": 1047418,
+        "lower_bound": 1448,
+        "rank": 19,
+        "rank_size": 20,
+        "smaller_nonempty_target_count": 1048554,
+        "tau": 1428
+      },
+      {
+        "capacity_at_tau": 1049075,
+        "capacity_at_tau_minus_one": 1047627,
+        "lower_bound": 1448,
+        "rank": 20,
+        "rank_size": 1,
+        "smaller_nonempty_target_count": 1048574,
+        "tau": 1447
+      }
+    ],
+    "maximizing_ranks": [
+      10
+    ]
+  },
+  "expected_length": 184759,
+  "expected_nonempty_targets": 1048575,
+  "first_occurrence_events": 2494149,
+  "input_bytes": 1246071,
+  "input_path": "/home/amodo/k20_optimal184759_forward_input.word",
+  "input_sha256": "047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02",
+  "k": 20,
+  "length": 184759,
+  "length_equals_all_rank_endpoint_bound": true,
+  "missing_target_count": 0,
+  "missing_targets": [],
+  "optimality_certified": true,
+  "status": "PASS",
+  "target_rank_counts": {
+    "1": 20,
+    "2": 190,
+    "3": 1140,
+    "4": 4845,
+    "5": 15504,
+    "6": 38760,
+    "7": 77520,
+    "8": 125970,
+    "9": 167960,
+    "10": 184756,
+    "11": 167960,
+    "12": 125970,
+    "13": 77520,
+    "14": 38760,
+    "15": 15504,
+    "16": 4845,
+    "17": 1140,
+    "18": 190,
+    "19": 20,
+    "20": 1
+  },
+  "wall_seconds": 1.2193092368543148,
+  "witness_format": {
+    "byteorder": "little",
+    "dtype": "signed int32",
+    "endpoints": "zero-based inclusive ordinary intervals",
+    "entries": 1048576,
+    "files": {
+      "end": {
+        "bytes": 4194304,
+        "file": "k20_ordinary_witness_end.int32",
+        "sha256": "12980b8426ea612d6b7737c4af7a9a90a3a336a0a22e0456009aa405c1d041b3"
+      },
+      "start": {
+        "bytes": 4194304,
+        "file": "k20_ordinary_witness_start.int32",
+        "sha256": "ac698e5804951f8c101c1cb9fe0150ca49fbbc1d61c9f887ad64925d6ef68719"
+      }
+    },
+    "index_zero_unused": true
+  }
+}

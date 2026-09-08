@@ -1,7 +1,10 @@
-# Exact answers through `k=16`
+# Exact answers through `k=22`
 
-Each `kNN.word` file is a whitespace-separated optimal nonzero word.  Every
-contiguous-subarray OR is computed over ordinary integer bitmasks.
+The exact-value table below lists optimal nonzero words. Dimensions 1–16 use the legacy
+`kNN.word` names; dimensions 17–22 use the linked descriptive filenames.
+Every contiguous-subarray OR is computed over ordinary integer bitmasks.
+Each length in that table attains the endpoint lower bound B(k). The next
+unresolved dimension is 23. The cyclic optimum mu(21)=352716 is also verified.
 
 | `k` | `nu(k)` | SHA-256 |
 |---:|---:|---|
@@ -21,12 +24,32 @@ contiguous-subarray OR is computed over ordinary integer bitmasks.
 | 14 | 3434 | `7d94117099bbb46402e8f4edda718dae7eb10e2e5e34e9b588e08a198b43db17` |
 | 15 | 6438 | `f35da2f0c98ec07de3e5318554157af490558e881be5c8bbcb5e3d1c8c08b14b` |
 | 16 | 12873 | `890ac346ce142f5f9ed564d487ff3e2fb99aea93ae2c104ec13765fa5d3814fe` |
+| [17](k17_optimal24313.word) | 24313 | `7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9` |
+| [18](k18_optimal48623.word) | 48623 | `6b191b447231c665bb1288cdc7ebdea5c73fd79502ef47015ee3d98fcf685be5` |
+| [19](k19_optimal92381.word) | 92381 | `1d0e7595dc72c6f1b7590e9565d5c0d3c30d70138e993d074e7d90d778d4e414` |
+| [20](k20_optimal184759.word) | 184759 | `047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02` |
+| [21](k21_optimal352719.word) | 352719 | `eb44ff87a669ae0163bdf926283c22c5494e08322efb5c947994a676dc3af1d2` |
+| [22](k22_optimal705435.word) | 705435 | `a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd` |
 
 The empty word is optimal for the nonzero `k=0` problem, so no `k00.word`
 file is needed.  Prepending `0` to any listed word gives an optimal word for
 the version that also requires the zero mask.
 
-Verify all files with:
+## Current finite frontier
+
+| k | Endpoint lower bound B(k) | Verified optimal word length | Gap |
+|---:|---:|---:|---:|
+| [21](k21_optimal352719.word) | 352,719 | 352,719 | 0 |
+| [22](k22_optimal705435.word) | 705,435 | 705,435 | 0 |
+| 23 | 1,352,082 | — | — |
+| 24 | 2,704,159 | — | — |
+
+The entries for 23 and 24 are lower bounds only; no upper word for either
+dimension is recorded in this table. See the
+[consolidated exact 21/22 and cyclic 21 record](../K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md)
+and the [independent forward certificate](../scratch/K21_K22_OPTIMAL_INDEPENDENT_FORWARD_CERTIFICATE_20260909.md).
+
+Verify the legacy filenames for dimensions1–16 with:
 
 ```sh
 for k in $(seq 1 16); do
@@ -56,6 +79,191 @@ The monotone-deadline lower bound and the retained word give
 The construction, exact common-cap matching model, and four independent
 literal replays are recorded in
 [`MATH_CERTIFICATE_K16_OPTIMAL_12873_TRUEFF_COMMONCAP_20260731.md`](../MATH_CERTIFICATE_K16_OPTIMAL_12873_TRUEFF_COMMONCAP_20260731.md).
+
+## Exact `k=17` and `k=18` certificates
+
+The supplied [24,313-letter word](k17_optimal24313.word) is optimal:
+nu(17)=B(17)=24313. The
+[independent direct-forward certificate](../scratch/K17_OPTIMAL24313_DIRECT_FORWARD_AND_TWO_CYCLE_SEAM_CERTIFICATE_20260908.md)
+verifies all 131,071 targets and the literal two-cycle seam. Its matching
+endpoint lower bound is recorded in the
+[standalone lower-bound audit](../scratch/K17_STANDALONE_ENDPOINT_LOWER_BOUND_AND_LITERAL_OPTIMALITY_AUDIT_20260908.md).
+
+The supplied [48,623-letter word](k18_optimal48623.word) is also optimal:
+nu(18)=B(18)=48623. Its complete checks cover all 262,143 nonempty targets
+by independent first-occurrence enumeration and suffix/range-OR replay.
+See the [exact 18 record](../K18_OPTIMAL48623_VERIFIED_20260908.md).
+
+## Exact `k=19` and `k=20` certificates
+
+The supplied [92,381-letter word](k19_optimal92381.word) covers all 524,287
+nonempty targets, and the supplied
+[184,759-letter word](k20_optimal184759.word) covers all 1,048,575.
+The independent forward verifier explicitly checks every target and every
+rank, and computes the endpoint bound over all ranks with exact integers.
+Both literal lengths equal that bound, proving
+
+```text
+nu(19) = B(19) = 92381.
+nu(20) = B(20) = 184759.
+```
+
+The completed [forward proof and certificate](../scratch/K19_K20_OPTIMAL_INDEPENDENT_FORWARD_CERTIFICATE_20260909.md)
+links its independent source, raw hashes, full reports and every ordinary
+interval witness. The actual
+[combined machine report](../scratch/k19_k20_optimal_forward_20260909/k19_k20_forward_complete_certificate.json)
+has PASS for both words. See the
+[consolidated 19/20 record](../K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md)
+and the [finite comparison](../FINITE_BOUNDS_K18_K19_K20_20260908.md).
+These ordinary optimality claims do not depend on a reconstructed generator.
+
+The separate [suffix/range/cyclic/lift report](../witnesses/k19_k20_optimal/complete_suffix_range_cyclic_lift_certificate.json)
+also passes every saved interval query. The
+[92,378-letter cyclic core](k19_cyclic92378.word) attains mu(19), and the
+20-coordinate file regenerates byte for byte from its safe three-letter
+opening and periodic continuation. This checks the supplied lift, without
+claiming a replay of the unavailable search that produced the19 core.
+
+| Dimension | Current optimal word | Endpoint lower bound |
+| ---: | --- | ---: |
+| 18 | [48,623 letters](k18_optimal48623.word) | 48,623 |
+| 19 | [92,381 letters](k19_optimal92381.word) | 92,381 |
+| 20 | [184,759 letters](k20_optimal184759.word) | 184,759 |
+| 21 | [352,719 letters](k21_optimal352719.word) | 352,719 |
+| 22 | [705,435 letters](k22_optimal705435.word) | 705,435 |
+
+## Exact `k=21` and `k=22` certificates
+
+The supplied [352,719-letter word](k21_optimal352719.word) covers all
+2,097,151 nonempty targets, and the supplied
+[705,435-letter word](k22_optimal705435.word) covers all 4,194,303.
+Independent forward enumeration verifies every target and every rank;
+both lengths equal the independently computed all-rank endpoint bounds:
+
+```text
+nu(21) = B(21) = 352719.
+nu(22) = B(22) = 705435.
+```
+
+The [forward proof and certificate](../scratch/K21_K22_OPTIMAL_INDEPENDENT_FORWARD_CERTIFICATE_20260909.md)
+links the source, raw hashes, complete reports and all four ordinary
+witness arrays. The separate suffix/range/cyclic/lift verification also
+passed and certifies mu(21)=352716. Its evidence is recorded in the
+[consolidated exact 21/22 record](../K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md).
+These finite conclusions do not depend on reconstructing the user's search.
+
+## Historical upper bounds in dimensions 21 and 22
+
+The verified upper-bound progression is retained unchanged:
+
+| Historical stage | k=21 word | k=22 word |
+|---|---|---|
+| Initial supplied pair | [353,297 letters](k21_upper353297.word) | [706,594 letters](k22_upper706594.word) |
+| Context refinement | [353,094 letters](k21_upper353094.word) | [706,188 letters](k22_upper706188.word) |
+| Final upper pair before exact closure | [352,862 letters](k21_upper352862.word) | [705,724 letters](k22_upper705724.word) |
+
+The first pair's [carrier, repair and 462-Hall certificate](../K21_K22_VERIFIED_UPPER_BOUNDS_AND_COMPILER_CONSTRAINTS_20260909.md)
+and the second pair's [complete checks and ordinary lift](../K21_K22_CONTEXT_REFINEMENT_VERIFIED_20260909.md)
+remain historical evidence. The final upper pair passed the independent
+suffix/range verification before the optimal files were supplied; its
+frontier forward checker was prepared but never executed. These upper
+words are now known to be nonoptimal. The separate 357,442/714,884 report
+is a weaker historical result and does not change the exact answers.
+
+## Historical upper bounds in dimensions 18–20
+
+The earlier dimension 18 lifts of
+[48,626](k18_upper48626.word), [49,316](k18_upper49316.word) and
+[49,336](k18_upper49336.word) letters remain as historical artifacts.
+The [94,161-letter height-adaptive 19 word](k19_upper94161.word), SHA-256
+`1c039f3225afa9fa32306c26d44cd7d79a05a83077dd928889b2d43286f86224`,
+and its [188,322-letter 20 lift](k20_upper188322.word), SHA-256
+`0d42106351f630eda5693e91a246ceb738f0704004a38b803eba8456aeec3874`,
+are also retained unchanged. Their construction and complete verification
+records remain linked from the
+[finite comparison](../FINITE_BOUNDS_K18_K19_K20_20260908.md).
+They are universal words but are now known not to be optimal.
+
+## Historical `k=17` upper-bound words
+
+[`k17_upper24658.word`](k17_upper24658.word) is the last recorded supplied
+upper word before exact 17 closure. It has 24,658 nonzero letters, covers
+all 131,071 targets, and has SHA-256
+`24f7f831b7446e942cc0927472296b2d20069f694b8bbad6374e65cc07b6f7fb`.
+Its complete suffix-OR and independent range-OR checks remain in the
+[verification report](../witnesses/k17_upper24658/literal24658_verification.json)
+and [target witnesses](../witnesses/k17_upper24658/literal24658_target_witnesses.json).
+The user's rewrite/search regeneration procedure was not supplied; the
+certificate verifies that historical literal word. It is 345 letters
+longer than the now-proved optimum. Reproduce its check on h100 with:
+
+```sh
+python3 scripts/verify_k17_upper24658.py answers/k17_upper24658.word witnesses/k17_upper24658
+```
+
+[`k17_upper24668.word`](k17_upper24668.word) is retained with its
+[complete verification](../K17_UPPER24668_VERIFIED_20260908.md), including
+its original hash and all target witnesses.
+
+[`k17_upper24715.word`](k17_upper24715.word) is the preceding supplied
+universal word, retained unchanged with SHA-256
+`3e7da8c69f8d32ca73750e12b8746fc483f9d56a441ad94f1d3a2e9b4c11b2fe`.
+Its [literal verification](../witnesses/k17_upper24715/literal24715_verification.json)
+and [target witnesses](../witnesses/k17_upper24715/literal24715_target_witnesses.json)
+remain available. Its rewrite/search regeneration procedure was not
+supplied or independently verified.
+
+The independently constructed
+[24,947-letter forest word](../scratch/k17_height_adaptive_20260908/binary_forest_repair/k17_height_forest24947.word)
+is retained with SHA-256
+`a358c7d539ea8af286c61a45f621b7d9bc1227c292829ea3bb981acd1f975389`.
+It keeps the 24,829-letter prefix below and replaces its 128-letter repair
+by a 118-letter binary-forest repair. That repair is optimal within the
+specified forest model; the full word is now known not to be optimal. Its
+[exact proof and full witness certificate](../scratch/K17_HEIGHT_ADAPTIVE24947_OPTIMAL_BINARY_FOREST_REPAIR_20260908.md)
+remain available.
+
+[`k17_upper24957.word`](k17_upper24957.word) is the independently implemented
+deterministic height-adaptive PBBS construction, retained unchanged with
+SHA-256 `dc7c7af32feb73c91fd14e00c6a046de6d753af4d2fc632f71960dcdbdd820db`.
+Open each of the 146 canonical cycles at its least lower-owner mask, form
+the intersection of each future `h+1` upper owners, and append the first
+`h` letters of that period. Here `h` is the invariant Dyck height, and
+cycles are ordered by their initial masks. This fixed concatenation has
+24,829 letters and 128 missing targets. Appending all missing masks as
+letters in increasing order gives the 24,957-word without a cut or ordering
+search. Its [complete construction certificate](../scratch/K17_HEIGHT_ADAPTIVE_25202_AND_REPAIRED24957_EXACT_CERTIFICATE_20260908.md),
+[literal verification](../witnesses/k17_upper24957/literal24957_verification.json),
+and [target witnesses](../witnesses/k17_upper24957/literal24957_target_witnesses.json)
+are retained.
+
+`k17_upper25374.word` is an earlier supplied and verified universal word,
+retained unchanged. Its SHA-256 is
+`16951cef9e2efff841c6bbf9cc72f2061f35650dda850714fcceee7a7bb43208`.
+Its [literal verification](../witnesses/k17_upper25374/literal25374_verification.json)
+and [target witnesses](../witnesses/k17_upper25374/literal25374_target_witnesses.json)
+remain available. The search's intermediate and Hall-count claims were not
+independently verified. The 24,957-word saved 417 letters relative to it.
+
+`k17_upper25745.word` is the earlier verified 25,745-letter boundary-splice
+construction and is retained unchanged for provenance:
+
+```text
+SHA-256: ef69969f6f72bc85173c9ccb413b7c111a398e725b956f2a91cbe5decbabca38
+```
+
+For `X` equal to `k16.word`, its exact zero-based construction is
+`X[1:][::-1] + [65536,50122,33642] + [x|65536 for x in X[3:]]`.
+Appendix B of `MASTER_HANDOFF.md` proves coverage using seven source interval
+identities, without requiring another external word body. Rebuild and verify:
+
+```sh
+python3 scripts/k17_boundary_splice_20260906_b7e41_audit.py --word answers/k17_upper25745.word
+python3 scratch/verify_exact_or_word.py --k 17 --allow-longer answers/k17_upper25745.word
+```
+
+The 24,957-word saved 788 letters relative to that construction. The older
+`k17_upper25746.word` is also retained unchanged for provenance.
 
 ## Historical nonoptimal K16 upper-bound words
 

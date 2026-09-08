@@ -1,0 +1,285 @@
+{
+  "status": "PASS_ALL_SPECIFIED_RATIONAL_CERTIFICATES",
+  "fixed_point_scale": "10000000000000000000000000000000000000000",
+  "logarithm_atanh_terms": 64,
+  "logarithm_tail_bound": "3^(-128)",
+  "pi_method": "Machin identity 16 atan(1/5)-4 atan(1/239), 64 alternating terms each",
+  "pi_lower": "3.1415926535897932384626433832795028841344",
+  "pi_upper": "3.1415926535897932384626433832795028842596",
+  "natural_log10_lower": "2.3025850929940456840179914546843642075878",
+  "natural_log10_upper": "2.3025850929940456840179914546843642076394",
+  "rows": [
+    {
+      "r": "1000000000000",
+      "L": 1100,
+      "M": 790,
+      "d": 330,
+      "Q": "4000000000004000000",
+      "prime_count": 138,
+      "depth_guard": {
+        "numerator": "50000",
+        "denominator": "551"
+      },
+      "nb_mean_guard": {
+        "numerator": "225000000000",
+        "denominator": "167284151"
+      },
+      "A_z_lower": "7.1349570181032663485448407738250989566161",
+      "A_z_upper": "7.1349570181032663485448407738250989567555",
+      "b_factors": 1100,
+      "b_factors_capped_at_one": 0,
+      "endpoint_bounds": [
+        {
+          "s": 0,
+          "rho_upper": "0.0000008418852181807267360984655572960166",
+          "log_y_lower": "27.6955596370670568798888209324432384194680",
+          "b_upper": {
+            "numerator": "14271244214851258245332717123230725619739",
+            "denominator": "55391119274134113759777641864886476838936"
+          },
+          "log_b_upper": "-1.3561726603551091755476460843570074645039"
+        },
+        {
+          "s": 1099,
+          "rho_upper": "0.0108739884959176495239533323441113380353",
+          "log_y_lower": "20.9649441796101630229120183428071412361788",
+          "b_upper": {
+            "numerator": "52418026432927364908226577752243520015475",
+            "denominator": "69883147265367210076373394476023804120596"
+          },
+          "log_b_upper": "-0.2875739743310737122559753005910325874593"
+        }
+      ],
+      "sum_log_b_upper": "-834.9295228048957506541655936444665110372986",
+      "upper_log_four_times_ten_to_d_times_harmonic_term": "-24.1840237529594175045481551914158591044930",
+      "harmonic_term_certified_less_than_quarter_ten_to_minus_d": true,
+      "other_terms": [
+        {
+          "name": "short_period",
+          "prefactor": "4000000",
+          "exponent": {
+            "numerator": "790",
+            "denominator": "1"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "13.5588200317608689322859427402209199608686",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        },
+        {
+          "name": "depth",
+          "prefactor": "2202",
+          "exponent": {
+            "numerator": "380742936",
+            "denominator": "303601"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "485.1533649976554120290294957119609202621925",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        },
+        {
+          "name": "nonprimitive",
+          "prefactor": "13200000000017600000000004400000000",
+          "exponent": {
+            "numerator": "150000000000",
+            "denominator": "167284151"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "56.8729927477337467535586483580319307854851",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        }
+      ],
+      "all_four_sum_strictly_less_than_ten_to_minus_d": true
+    },
+    {
+      "r": "100000000000000",
+      "L": 3500,
+      "M": 2250,
+      "d": 950,
+      "Q": "4000000000000040000000",
+      "prime_count": 334,
+      "depth_guard": {
+        "numerator": "500000",
+        "denominator": "1751"
+      },
+      "nb_mean_guard": {
+        "numerator": "22500000000000",
+        "denominator": "5368567751"
+      },
+      "A_z_lower": "8.1603077250156805570943016353143432052503",
+      "A_z_upper": "8.1603077250156805570943016353143432054287",
+      "b_factors": 3500,
+      "b_factors_capped_at_one": 0,
+      "endpoint_bounds": [
+        {
+          "s": 0,
+          "rho_upper": "0.0000000841885218180726736098465557296017",
+          "log_y_lower": "32.3007298230542201229248042812211465218712",
+          "b_upper": {
+            "numerator": "11657853070271101743728462557235335441791",
+            "denominator": "46143899747220314461321148973173066459816"
+          },
+          "log_b_upper": "-1.3757847328483824091749991901465636504131"
+        },
+        {
+          "s": 3499,
+          "rho_upper": "0.0061658940361608537181246216690385956240",
+          "log_y_lower": "24.4123082401406361245511590519821062439632",
+          "b_upper": {
+            "numerator": "24481743673752890469860778211834648177143",
+            "denominator": "27124786933489595693945732279980118048848"
+          },
+          "log_b_upper": "-0.1025202732327408510547300779798023734651"
+        }
+      ],
+      "sum_log_b_upper": "-2318.5222885777892337544759791897476367296484",
+      "upper_log_four_times_ten_to_d_times_harmonic_term": "-72.2204447174243510930589234706348645166557",
+      "harmonic_term_certified_less_than_quarter_ten_to_minus_d": true,
+      "other_terms": [
+        {
+          "name": "short_period",
+          "prefactor": "40000000",
+          "exponent": {
+            "numerator": "2250",
+            "denominator": "1"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "43.6534772824584991571132493812307470168008",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        },
+        {
+          "name": "depth",
+          "prefactor": "7002",
+          "exponent": {
+            "numerator": "40507509336",
+            "denominator": "3066001"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "11014.1421823905869395559119695250803484304651",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        },
+        {
+          "name": "nonprimitive",
+          "prefactor": "4200000000000056000000000000140000000000",
+          "exponent": {
+            "numerator": "15000000000000",
+            "denominator": "5368567751"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "513.9632607631581152457956981025885132801797",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        }
+      ],
+      "all_four_sum_strictly_less_than_ten_to_minus_d": true
+    },
+    {
+      "r": "10000000000000000",
+      "L": 10200,
+      "M": 6150,
+      "d": 2600,
+      "Q": "4000000000000000400000000",
+      "prime_count": 801,
+      "depth_guard": {
+        "numerator": "5000000",
+        "denominator": "5101"
+      },
+      "nb_mean_guard": {
+        "numerator": "2250000000000000",
+        "denominator": "132729045301"
+      },
+      "A_z_lower": "9.1608962075011682604121940406727075236659",
+      "A_z_upper": "9.1608962075011682604121940406727075239091",
+      "b_factors": 10200,
+      "b_factors_capped_at_one": 26,
+      "endpoint_bounds": [
+        {
+          "s": 0,
+          "rho_upper": "0.0000000084188521818072673609846555729602",
+          "log_y_lower": "36.9059000090423022097107871906338158550170",
+          "b_upper": {
+            "numerator": "91609479834420863751064640963044812291391",
+            "denominator": "369059000090423022097107871906338158550170"
+          },
+          "log_b_upper": "-1.3934217651358103280810420131950073933097"
+        },
+        {
+          "s": 10199,
+          "rho_upper": "0.0030667050764288542471878203403546622253",
+          "log_y_lower": "27.9477467104049421564788999291975467293424",
+          "b_upper": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "log_b_upper": "0.0000000000000000000000000000000000000000"
+        }
+      ],
+      "sum_log_b_upper": "-6195.8960890199679477707285928161974235590862",
+      "upper_log_four_times_ten_to_d_times_harmonic_term": "-142.4158463321439232983265775716796812694773",
+      "harmonic_term_certified_less_than_quarter_ten_to_minus_d": true,
+      "other_terms": [
+        {
+          "name": "short_period",
+          "prefactor": "400000000",
+          "exponent": {
+            "numerator": "6150",
+            "denominator": "1"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "142.0854887492890748434093576973454402041629",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        },
+        {
+          "name": "depth",
+          "prefactor": "20402",
+          "exponent": {
+            "numerator": "12398188161608",
+            "denominator": "78060603"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "152829.6963173576854092209586436621297232014566",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        },
+        {
+          "name": "nonprimitive",
+          "prefactor": "1224000000000000163200000000000004080000000000",
+          "exponent": {
+            "numerator": "1500000000000000",
+            "denominator": "132729045301"
+          },
+          "lower_margin_E_minus_log4C_minus_dlog10": "5209.2929456352126768685707187391047697375001",
+          "certified_term_less_than_quarter_ten_to_minus_d": true
+        }
+      ],
+      "all_four_sum_strictly_less_than_ten_to_minus_d": true
+    }
+  ],
+  "integral": {
+    "status": "PASS",
+    "cells": 1250,
+    "log_series_terms_per_cell": 32,
+    "exact_sum_of_downward_1e18_cells": "1074181933864880728",
+    "denominator": "1000000000000000000",
+    "certified_integral_strictly_greater_than": "1073/1000",
+    "margin_above_1073_over_1000": {
+      "numerator": "147741733110091",
+      "denominator": "125000000000000000"
+    },
+    "coefficient_squared": {
+      "numerator": "26072521475",
+      "denominator": "180818786826"
+    },
+    "coefficient_margin_below_038_squared": {
+      "numerator": "47139178343",
+      "denominator": "226023483532500"
+    },
+    "conversion_fifth_power": {
+      "numerator": "695688369300000",
+      "denominator": "1396009989636349"
+    },
+    "conversion_margin_below_one_half": {
+      "numerator": "4633251036349",
+      "denominator": "2792019979272698"
+    }
+  },
+  "natural_log_calls": 30860,
+  "no_floating_point_mathematical_premises": true,
+  "no_optimization_or_parameter_search": true,
+  "resource_caps": {
+    "cpu_seconds": 120,
+    "wall_seconds": 150,
+    "address_space_bytes": 2147483648
+  },
+  "elapsed_seconds": 1.0834720842540264,
+  "script_sha256": "d595577c7b3df193c447861a3d491a4c7fbf82a1fd4c31179e13ca2d9d3117b1"
+}

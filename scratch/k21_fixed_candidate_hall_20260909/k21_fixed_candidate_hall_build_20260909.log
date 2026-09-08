@@ -1,0 +1,7 @@
+/home/amodo/certify_k21_fixed_three_cycle_candidate_hall_20260909.cpp: In function ‘int main(int, char**)’:
+/home/amodo/certify_k21_fixed_three_cycle_candidate_hall_20260909.cpp:102:7: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  102 |       for(int j=0;j<3;j++)need(word[offset+period+j]==c.A[j],"literal prefix-three collar");offset+=period+3;
+      |       ^~~
+/home/amodo/certify_k21_fixed_three_cycle_candidate_hall_20260909.cpp:102:93: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  102 |       for(int j=0;j<3;j++)need(word[offset+period+j]==c.A[j],"literal prefix-three collar");offset+=period+3;
+      |                                                                                             ^~~~~~

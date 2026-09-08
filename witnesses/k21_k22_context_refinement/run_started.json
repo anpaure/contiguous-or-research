@@ -1,0 +1,9 @@
+{
+  "status": "RUNNING_NOT_CERTIFIED",
+  "limits": {
+    "cpu_seconds": 120,
+    "wall_seconds": 150,
+    "address_space_bytes": 3221225472,
+    "file_bytes": 536870912
+  }
+}

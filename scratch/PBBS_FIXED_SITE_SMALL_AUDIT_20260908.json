@@ -1,0 +1,122 @@
+{
+  "host": "arboghast",
+  "elapsed_seconds": 0.025463963858783245,
+  "scope": "exhaustive r=1,...,5, no sampling",
+  "results": [
+    {
+      "r": 1,
+      "n": 3,
+      "states": 3,
+      "cycle_lengths": {
+        "3": 1
+      },
+      "gap_histogram": {
+        "3": 3
+      },
+      "top_zero_gap_histogram": {},
+      "mean_T_exact_numerator": 3,
+      "mean_T_exact_denominator": 3,
+      "trace_endpoint_checks": 3,
+      "all_checks": "PASS"
+    },
+    {
+      "r": 2,
+      "n": 5,
+      "states": 10,
+      "cycle_lengths": {
+        "5": 2
+      },
+      "gap_histogram": {
+        "5": 10
+      },
+      "top_zero_gap_histogram": {
+        "5": 5
+      },
+      "mean_T_exact_numerator": 20,
+      "mean_T_exact_denominator": 10,
+      "trace_endpoint_checks": 10,
+      "all_checks": "PASS"
+    },
+    {
+      "r": 3,
+      "n": 7,
+      "states": 35,
+      "cycle_lengths": {
+        "7": 2,
+        "21": 1
+      },
+      "gap_histogram": {
+        "5": 14,
+        "7": 14,
+        "11": 7
+      },
+      "top_zero_gap_histogram": {
+        "5": 14,
+        "7": 7
+      },
+      "mean_T_exact_numerator": 105,
+      "mean_T_exact_denominator": 35,
+      "trace_endpoint_checks": 35,
+      "all_checks": "PASS"
+    },
+    {
+      "r": 4,
+      "n": 9,
+      "states": 126,
+      "cycle_lengths": {
+        "9": 3,
+        "27": 2,
+        "45": 1
+      },
+      "gap_histogram": {
+        "5": 27,
+        "7": 36,
+        "9": 27,
+        "11": 18,
+        "17": 18
+      },
+      "top_zero_gap_histogram": {
+        "5": 27,
+        "7": 36,
+        "9": 18
+      },
+      "mean_T_exact_numerator": 504,
+      "mean_T_exact_denominator": 126,
+      "trace_endpoint_checks": 126,
+      "all_checks": "PASS"
+    },
+    {
+      "r": 5,
+      "n": 11,
+      "states": 462,
+      "cycle_lengths": {
+        "11": 3,
+        "33": 4,
+        "55": 4,
+        "77": 1
+      },
+      "gap_histogram": {
+        "5": 44,
+        "7": 121,
+        "9": 110,
+        "11": 55,
+        "13": 22,
+        "17": 66,
+        "19": 11,
+        "23": 22,
+        "27": 11
+      },
+      "top_zero_gap_histogram": {
+        "5": 44,
+        "7": 121,
+        "9": 110,
+        "11": 11,
+        "13": 22
+      },
+      "mean_T_exact_numerator": 2310,
+      "mean_T_exact_denominator": 462,
+      "trace_endpoint_checks": 462,
+      "all_checks": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+tree	sha256_of_sorted_sha256sum_stream	files	method
+input/semantic_cores	372e49fdae090ca203ad7e97565126696f20de493d8a37ebb819af73e854c218	12	find -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum
+input/semantic_cores_alt	285379daf85a42ee29559de7f0e1d82d5d8747ad90ae19dfd30238d00315d47d	4	find -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum
+exact_crosscheck	db9690317c10ac2db759c3628a610c8ea0177efe3f88ee7a95e2cb3de971bd87	427	find -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum

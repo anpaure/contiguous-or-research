@@ -1,0 +1,65 @@
+{
+  "all_masks_contain_target": true,
+  "all_masks_contained_in_allowed_rows": true,
+  "all_reflection_pairs_owner_disjoint": true,
+  "allowed_row_count": 162,
+  "catalogue_records": 25,
+  "existing_records": 0,
+  "literal_witnesses_replayed": 25,
+  "new_records": 25,
+  "scope": "literal replay of every emitted mask/witness; enumeration completeness follows from the anchored symbolic theorem",
+  "status": "PASS",
+  "target_row": 14
+}
+{
+  "all_masks_contain_target": true,
+  "all_masks_contained_in_allowed_rows": true,
+  "all_reflection_pairs_owner_disjoint": true,
+  "allowed_row_count": 162,
+  "catalogue_records": 23,
+  "existing_records": 0,
+  "literal_witnesses_replayed": 23,
+  "new_records": 23,
+  "scope": "literal replay of every emitted mask/witness; enumeration completeness follows from the anchored symbolic theorem",
+  "status": "PASS",
+  "target_row": 42
+}
+{
+  "all_masks_contain_target": true,
+  "all_masks_contained_in_allowed_rows": true,
+  "all_reflection_pairs_owner_disjoint": true,
+  "allowed_row_count": 186,
+  "catalogue_records": 75,
+  "existing_records": 0,
+  "literal_witnesses_replayed": 75,
+  "new_records": 75,
+  "scope": "literal replay of every emitted mask/witness; enumeration completeness follows from the anchored symbolic theorem",
+  "status": "PASS",
+  "target_row": 228
+}
+{
+  "all_masks_contain_target": true,
+  "all_masks_contained_in_allowed_rows": true,
+  "all_reflection_pairs_owner_disjoint": true,
+  "allowed_row_count": 196,
+  "catalogue_records": 36,
+  "existing_records": 0,
+  "literal_witnesses_replayed": 36,
+  "new_records": 36,
+  "scope": "literal replay of every emitted mask/witness; enumeration completeness follows from the anchored symbolic theorem",
+  "status": "PASS",
+  "target_row": 625
+}
+{
+  "all_masks_contain_target": true,
+  "all_masks_contained_in_allowed_rows": true,
+  "all_reflection_pairs_owner_disjoint": true,
+  "allowed_row_count": 186,
+  "catalogue_records": 120,
+  "existing_records": 0,
+  "literal_witnesses_replayed": 120,
+  "new_records": 120,
+  "scope": "literal replay of every emitted mask/witness; enumeration completeness follows from the anchored symbolic theorem",
+  "status": "PASS",
+  "target_row": 89
+}

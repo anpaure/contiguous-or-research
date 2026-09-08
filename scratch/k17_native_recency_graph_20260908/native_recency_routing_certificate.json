@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "host": "arboghast",
+  "input_sha256": "fed20c313c639740b089428c1d2b8b572fc7138de4c11c2203be554e4acfa2a3",
+  "cycle_count": 146,
+  "state_count": 24310,
+  "native_erosion_letters_reconstructed": 24310,
+  "periodic_states_independently_last_occurrence_replayed": 24310,
+  "counts": {
+    "all_rank8_subset_candidates": 218790,
+    "complete_neutral_candidates": 86972,
+    "legal_neutral_edges": 48637,
+    "native": 24310,
+    "discarded_unequal_height_candidates": 131818,
+    "self": 24310,
+    "rejected_neutral_candidates": 38335,
+    "cross_component": 17
+  },
+  "claims": {
+    "all24310_native_states_and_both_middle_bijections": true,
+    "every_state_has_exactly_one_self_and_native_edge": true,
+    "no_extra_internal_edges": true,
+    "exactly17_cross_edges": true,
+    "one_cross_component_pair": true,
+    "all_cross_height3_from153_to85": true,
+    "quotient_acyclic": true
+  },
+  "extra_internal_edges": [],
+  "component_edges": [
+    {
+      "source_cycle": 83,
+      "destination_cycle": 103,
+      "multiplicity": 17
+    }
+  ],
+  "scope": "All same-height legal edges are enumerated. Unequal-height edges are excluded from cycle covers by the separately proved monotonicity theorem, not by a claimed full edge census.",
+  "resources": {
+    "cpu_seconds": 120,
+    "wall_seconds": 150,
+    "address_space_bytes": 2147483648
+  },
+  "elapsed_seconds": 1.941991196013987,
+  "artifacts": {
+    "native_periodic_states.json": {
+      "bytes": 4068813,
+      "sha256": "39ab5568b24184a609f4a54e7ab65cd623d3ffb37974ecfdfa73f7fc487d87c2"
+    },
+    "complete_neutral_candidates.csv": {
+      "bytes": 2856065,
+      "sha256": "0d9e77022ef32e31e406d76d70670f0cf33c8e52896ed649e5f7d5ca962bd559"
+    },
+    "complete_neutral_legal_edges.csv": {
+      "bytes": 1374189,
+      "sha256": "df84d767f06043608dc2b1b962358033465b4100e6a8fcb92095747e372e6478"
+    },
+    "native_neutral_component_quotient.json": {
+      "bytes": 17031,
+      "sha256": "ca94eb3c3e1de975d51181156a99e03cd7dbbf9271c8161618b8359539b14e57"
+    }
+  }
+}

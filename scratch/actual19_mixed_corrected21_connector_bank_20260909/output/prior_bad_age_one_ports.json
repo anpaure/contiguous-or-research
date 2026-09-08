@@ -1,0 +1,2775 @@
+[
+  {
+    "D_bit0_first": "1101100101010100",
+    "D_mask": 10907,
+    "actual_parent_predecessor": 43629,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1136082,
+      1135834,
+      1660120,
+      611548,
+      87262,
+      87255
+    ],
+    "child_states": [
+      1660120,
+      611548,
+      87262,
+      87255
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 1599,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      43753,
+      43629,
+      305772
+    ],
+    "parent_position": 1600,
+    "parent_state": 305772,
+    "predicted_bad_predecessor_10D0": 43629
+  },
+  {
+    "D_bit0_first": "1100111111000000",
+    "D_mask": 1011,
+    "actual_parent_predecessor": 4045,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      15
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1072922,
+      1056666,
+      1580952,
+      532380,
+      8094,
+      8087
+    ],
+    "child_states": [
+      1580952,
+      532380,
+      8094,
+      8087
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 2180,
+    "parent_first_D_bit_exact_age": 13,
+    "parent_history_last_three": [
+      12173,
+      4045,
+      266188
+    ],
+    "parent_position": 2181,
+    "parent_state": 266188,
+    "predicted_bad_predecessor_10D0": 4045
+  },
+  {
+    "D_bit0_first": "1011011001100100",
+    "D_mask": 9837,
+    "actual_parent_predecessor": 39349,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      9
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1160010,
+      1127274,
+      1651560,
+      602988,
+      78702,
+      78695
+    ],
+    "child_states": [
+      1651560,
+      602988,
+      78702,
+      78695
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 2914,
+    "parent_first_D_bit_exact_age": 7,
+    "parent_history_last_three": [
+      55717,
+      39349,
+      301492
+    ],
+    "parent_position": 2915,
+    "parent_state": 301492,
+    "predicted_bad_predecessor_10D0": 39349
+  },
+  {
+    "D_bit0_first": "1101100010101100",
+    "D_mask": 13595,
+    "actual_parent_predecessor": 54381,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1159386,
+      1157338,
+      1681624,
+      633052,
+      108766,
+      108759
+    ],
+    "child_states": [
+      1681624,
+      633052,
+      108766,
+      108759
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 4683,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      55405,
+      54381,
+      316524
+    ],
+    "parent_position": 4684,
+    "parent_state": 316524,
+    "predicted_bad_predecessor_10D0": 54381
+  },
+  {
+    "D_bit0_first": "1010111000101100",
+    "D_mask": 13429,
+    "actual_parent_predecessor": 53717,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1156906,
+      1156010,
+      1680296,
+      631724,
+      107438,
+      107431
+    ],
+    "child_states": [
+      1680296,
+      631724,
+      107438,
+      107431
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 6300,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      54165,
+      53717,
+      315860
+    ],
+    "parent_position": 6301,
+    "parent_state": 315860,
+    "predicted_bad_predecessor_10D0": 53717
+  },
+  {
+    "D_bit0_first": "1101001011010010",
+    "D_mask": 19275,
+    "actual_parent_predecessor": 77101,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      7
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1208922,
+      1202778,
+      1727064,
+      678492,
+      154206,
+      154199
+    ],
+    "child_states": [
+      1727064,
+      678492,
+      154206,
+      154199
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 12028,
+    "parent_first_D_bit_exact_age": 5,
+    "parent_history_last_three": [
+      80173,
+      77101,
+      339244
+    ],
+    "parent_position": 12029,
+    "parent_state": 339244,
+    "predicted_bad_predecessor_10D0": 77101
+  },
+  {
+    "D_bit0_first": "1101100110001100",
+    "D_mask": 12699,
+    "actual_parent_predecessor": 50797,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1158354,
+      1150170,
+      1674456,
+      625884,
+      101598,
+      101591
+    ],
+    "child_states": [
+      1674456,
+      625884,
+      101598,
+      101591
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 13471,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      54889,
+      50797,
+      312940
+    ],
+    "parent_position": 13472,
+    "parent_state": 312940,
+    "predicted_bad_predecessor_10D0": 50797
+  },
+  {
+    "D_bit0_first": "1100111001010100",
+    "D_mask": 10867,
+    "actual_parent_predecessor": 43469,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      7
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1397530,
+      1135514,
+      1659800,
+      611228,
+      86942,
+      86935
+    ],
+    "child_states": [
+      1659800,
+      611228,
+      86942,
+      86935
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 14033,
+    "parent_first_D_bit_exact_age": 5,
+    "parent_history_last_three": [
+      174477,
+      43469,
+      305612
+    ],
+    "parent_position": 14034,
+    "parent_state": 305612,
+    "predicted_bad_predecessor_10D0": 43469
+  },
+  {
+    "D_bit0_first": "1101010010101010",
+    "D_mask": 21803,
+    "actual_parent_predecessor": 87213,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1223506,
+      1223002,
+      1747288,
+      698716,
+      174430,
+      174423
+    ],
+    "child_states": [
+      1747288,
+      698716,
+      174430,
+      174423
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 14174,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      87465,
+      87213,
+      349356
+    ],
+    "parent_position": 14175,
+    "parent_state": 349356,
+    "predicted_bad_predecessor_10D0": 87213
+  },
+  {
+    "D_bit0_first": "1100110101001010",
+    "D_mask": 21171,
+    "actual_parent_predecessor": 84685,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      7
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1218330,
+      1217946,
+      1742232,
+      693660,
+      169374,
+      169367
+    ],
+    "child_states": [
+      1742232,
+      693660,
+      169374,
+      169367
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 17581,
+    "parent_first_D_bit_exact_age": 5,
+    "parent_history_last_three": [
+      84877,
+      84685,
+      346828
+    ],
+    "parent_position": 17582,
+    "parent_state": 346828,
+    "predicted_bad_predecessor_10D0": 84685
+  },
+  {
+    "D_bit0_first": "1110001110101000",
+    "D_mask": 5575,
+    "actual_parent_predecessor": 22301,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1096762,
+      1093178,
+      1617464,
+      568892,
+      44606,
+      44599
+    ],
+    "child_states": [
+      1617464,
+      568892,
+      44606,
+      44599
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 17928,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      24093,
+      22301,
+      284444
+    ],
+    "parent_position": 17929,
+    "parent_state": 284444,
+    "predicted_bad_predecessor_10D0": 22301
+  },
+  {
+    "D_bit0_first": "1010110101011000",
+    "D_mask": 6837,
+    "actual_parent_predecessor": 27349,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      22
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1168682,
+      1103274,
+      1627560,
+      578988,
+      54702,
+      54695
+    ],
+    "child_states": [
+      1627560,
+      578988,
+      54702,
+      54695
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 19208,
+    "parent_first_D_bit_exact_age": 20,
+    "parent_history_last_three": [
+      60053,
+      27349,
+      289492
+    ],
+    "parent_position": 19209,
+    "parent_state": 289492,
+    "predicted_bad_predecessor_10D0": 27349
+  },
+  {
+    "D_bit0_first": "1010101101001100",
+    "D_mask": 13013,
+    "actual_parent_predecessor": 52053,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      13
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1250986,
+      1152682,
+      1676968,
+      628396,
+      104110,
+      104103
+    ],
+    "child_states": [
+      1676968,
+      628396,
+      104110,
+      104103
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 20874,
+    "parent_first_D_bit_exact_age": 11,
+    "parent_history_last_three": [
+      101205,
+      52053,
+      314196
+    ],
+    "parent_position": 20875,
+    "parent_state": 314196,
+    "predicted_bad_predecessor_10D0": 52053
+  },
+  {
+    "D_bit0_first": "1010110011001010",
+    "D_mask": 21301,
+    "actual_parent_predecessor": 85205,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      7
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1251754,
+      1218986,
+      1743272,
+      694700,
+      170414,
+      170407
+    ],
+    "child_states": [
+      1743272,
+      694700,
+      170414,
+      170407
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 22641,
+    "parent_first_D_bit_exact_age": 5,
+    "parent_history_last_three": [
+      101589,
+      85205,
+      347348
+    ],
+    "parent_position": 22642,
+    "parent_state": 347348,
+    "predicted_bad_predecessor_10D0": 85205
+  },
+  {
+    "D_bit0_first": "1010111010010100",
+    "D_mask": 10613,
+    "actual_parent_predecessor": 42453,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      25
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1134378,
+      1133482,
+      1657768,
+      609196,
+      84910,
+      84903
+    ],
+    "child_states": [
+      1657768,
+      609196,
+      84910,
+      84903
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 22761,
+    "parent_first_D_bit_exact_age": 23,
+    "parent_history_last_three": [
+      42901,
+      42453,
+      304596
+    ],
+    "parent_position": 22762,
+    "parent_state": 304596,
+    "predicted_bad_predecessor_10D0": 42453
+  },
+  {
+    "D_bit0_first": "1011010101100010",
+    "D_mask": 18093,
+    "actual_parent_predecessor": 72373,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      8
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1324394,
+      1193322,
+      1717608,
+      669036,
+      144750,
+      144743
+    ],
+    "child_states": [
+      1717608,
+      669036,
+      144750,
+      144743
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 24071,
+    "parent_first_D_bit_exact_age": 6,
+    "parent_history_last_three": [
+      137909,
+      72373,
+      334516
+    ],
+    "parent_position": 24072,
+    "parent_state": 334516,
+    "predicted_bad_predecessor_10D0": 72373
+  },
+  {
+    "D_bit0_first": "1011011010010100",
+    "D_mask": 10605,
+    "actual_parent_predecessor": 42421,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      11
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1166154,
+      1133418,
+      1657704,
+      609132,
+      84846,
+      84839
+    ],
+    "child_states": [
+      1657704,
+      609132,
+      84846,
+      84839
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 24576,
+    "parent_first_D_bit_exact_age": 9,
+    "parent_history_last_three": [
+      58789,
+      42421,
+      304564
+    ],
+    "parent_position": 24577,
+    "parent_state": 304564,
+    "predicted_bad_predecessor_10D0": 42421
+  },
+  {
+    "D_bit0_first": "1010110100110010",
+    "D_mask": 19637,
+    "actual_parent_predecessor": 78549,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      30
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1336746,
+      1205674,
+      1729960,
+      681388,
+      157102,
+      157095
+    ],
+    "child_states": [
+      1729960,
+      681388,
+      157102,
+      157095
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 25737,
+    "parent_first_D_bit_exact_age": 28,
+    "parent_history_last_three": [
+      144085,
+      78549,
+      340692
+    ],
+    "parent_position": 25738,
+    "parent_state": 340692,
+    "predicted_bad_predecessor_10D0": 78549
+  },
+  {
+    "D_bit0_first": "1011010011001010",
+    "D_mask": 21293,
+    "actual_parent_predecessor": 85173,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      18
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1349994,
+      1218922,
+      1743208,
+      694636,
+      170350,
+      170343
+    ],
+    "child_states": [
+      1743208,
+      694636,
+      170350,
+      170343
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 30600,
+    "parent_first_D_bit_exact_age": 16,
+    "parent_history_last_three": [
+      150709,
+      85173,
+      347316
+    ],
+    "parent_position": 30601,
+    "parent_state": 347316,
+    "predicted_bad_predecessor_10D0": 85173
+  },
+  {
+    "D_bit0_first": "1100110010110100",
+    "D_mask": 11571,
+    "actual_parent_predecessor": 46285,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      6
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1395098,
+      1141146,
+      1665432,
+      616860,
+      92574,
+      92567
+    ],
+    "child_states": [
+      1665432,
+      616860,
+      92574,
+      92567
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 31583,
+    "parent_first_D_bit_exact_age": 4,
+    "parent_history_last_three": [
+      173261,
+      46285,
+      308428
+    ],
+    "parent_position": 31584,
+    "parent_state": 308428,
+    "predicted_bad_predecessor_10D0": 46285
+  },
+  {
+    "D_bit0_first": "1011010101010100",
+    "D_mask": 10925,
+    "actual_parent_predecessor": 43701,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1267018,
+      1135978,
+      1660264,
+      611692,
+      87406,
+      87399
+    ],
+    "child_states": [
+      1660264,
+      611692,
+      87406,
+      87399
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 33695,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      109221,
+      43701,
+      305844
+    ],
+    "parent_position": 33696,
+    "parent_state": 305844,
+    "predicted_bad_predecessor_10D0": 43701
+  },
+  {
+    "D_bit0_first": "1011011100001100",
+    "D_mask": 12525,
+    "actual_parent_predecessor": 50101,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      12
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1247082,
+      1148778,
+      1673064,
+      624492,
+      100206,
+      100199
+    ],
+    "child_states": [
+      1673064,
+      624492,
+      100206,
+      100199
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 34513,
+    "parent_first_D_bit_exact_age": 10,
+    "parent_history_last_three": [
+      99253,
+      50101,
+      312244
+    ],
+    "parent_position": 34514,
+    "parent_state": 312244,
+    "predicted_bad_predecessor_10D0": 50101
+  },
+  {
+    "D_bit0_first": "1100101010111000",
+    "D_mask": 7507,
+    "actual_parent_predecessor": 30029,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      6
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1231514,
+      1108634,
+      1632920,
+      584348,
+      60062,
+      60055
+    ],
+    "child_states": [
+      1632920,
+      584348,
+      60062,
+      60055
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 35726,
+    "parent_first_D_bit_exact_age": 4,
+    "parent_history_last_three": [
+      91469,
+      30029,
+      292172
+    ],
+    "parent_position": 35727,
+    "parent_state": 292172,
+    "predicted_bad_predecessor_10D0": 30029
+  },
+  {
+    "D_bit0_first": "1100111010010100",
+    "D_mask": 10611,
+    "actual_parent_predecessor": 42445,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1141530,
+      1133466,
+      1657752,
+      609180,
+      84894,
+      84887
+    ],
+    "child_states": [
+      1657752,
+      609180,
+      84894,
+      84887
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 38950,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      46477,
+      42445,
+      304588
+    ],
+    "parent_position": 38951,
+    "parent_state": 304588,
+    "predicted_bad_predecessor_10D0": 42445
+  },
+  {
+    "D_bit0_first": "1011001101100100",
+    "D_mask": 9933,
+    "actual_parent_predecessor": 39733,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      7
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1143914,
+      1128042,
+      1652328,
+      603756,
+      79470,
+      79463
+    ],
+    "child_states": [
+      1652328,
+      603756,
+      79470,
+      79463
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 40306,
+    "parent_first_D_bit_exact_age": 5,
+    "parent_history_last_three": [
+      47669,
+      39733,
+      301876
+    ],
+    "parent_position": 40307,
+    "parent_state": 301876,
+    "predicted_bad_predecessor_10D0": 39733
+  },
+  {
+    "D_bit0_first": "1111010010010100",
+    "D_mask": 10543,
+    "actual_parent_predecessor": 42173,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1165682,
+      1132922,
+      1657208,
+      608636,
+      84350,
+      84343
+    ],
+    "child_states": [
+      1657208,
+      608636,
+      84350,
+      84343
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 41993,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      58553,
+      42173,
+      304316
+    ],
+    "parent_position": 41994,
+    "parent_state": 304316,
+    "predicted_bad_predecessor_10D0": 42173
+  },
+  {
+    "D_bit0_first": "1101001011100010",
+    "D_mask": 18251,
+    "actual_parent_predecessor": 73005,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1194706,
+      1194586,
+      1718872,
+      670300,
+      146014,
+      146007
+    ],
+    "child_states": [
+      1718872,
+      670300,
+      146014,
+      146007
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 42651,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      73065,
+      73005,
+      335148
+    ],
+    "parent_position": 42652,
+    "parent_state": 335148,
+    "predicted_bad_predecessor_10D0": 73005
+  },
+  {
+    "D_bit0_first": "1011001010101100",
+    "D_mask": 13645,
+    "actual_parent_predecessor": 54581,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      27
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1256042,
+      1157738,
+      1682024,
+      633452,
+      109166,
+      109159
+    ],
+    "child_states": [
+      1682024,
+      633452,
+      109166,
+      109159
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 43289,
+    "parent_first_D_bit_exact_age": 25,
+    "parent_history_last_three": [
+      103733,
+      54581,
+      316724
+    ],
+    "parent_position": 43290,
+    "parent_state": 316724,
+    "predicted_bad_predecessor_10D0": 54581
+  },
+  {
+    "D_bit0_first": "1010101110101000",
+    "D_mask": 5589,
+    "actual_parent_predecessor": 22357,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      30
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1354922,
+      1093290,
+      1617576,
+      569004,
+      44718,
+      44711
+    ],
+    "child_states": [
+      1617576,
+      569004,
+      44718,
+      44711
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 43348,
+    "parent_first_D_bit_exact_age": 28,
+    "parent_history_last_three": [
+      153173,
+      22357,
+      284500
+    ],
+    "parent_position": 43349,
+    "parent_state": 284500,
+    "predicted_bad_predecessor_10D0": 22357
+  },
+  {
+    "D_bit0_first": "1101001110100100",
+    "D_mask": 9675,
+    "actual_parent_predecessor": 38701,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1158234,
+      1125978,
+      1650264,
+      601692,
+      77406,
+      77399
+    ],
+    "child_states": [
+      1650264,
+      601692,
+      77406,
+      77399
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 44725,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      54829,
+      38701,
+      300844
+    ],
+    "parent_position": 44726,
+    "parent_state": 300844,
+    "predicted_bad_predecessor_10D0": 38701
+  },
+  {
+    "D_bit0_first": "1101010100110100",
+    "D_mask": 11435,
+    "actual_parent_predecessor": 45741,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1262938,
+      1140058,
+      1664344,
+      615772,
+      91486,
+      91479
+    ],
+    "child_states": [
+      1664344,
+      615772,
+      91486,
+      91479
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 46446,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      107181,
+      45741,
+      307884
+    ],
+    "parent_position": 46447,
+    "parent_state": 307884,
+    "predicted_bad_predecessor_10D0": 45741
+  },
+  {
+    "D_bit0_first": "1111010010010010",
+    "D_mask": 18735,
+    "actual_parent_predecessor": 74941,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1198962,
+      1198458,
+      1722744,
+      674172,
+      149886,
+      149879
+    ],
+    "child_states": [
+      1722744,
+      674172,
+      149886,
+      149879
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 46784,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      75193,
+      74941,
+      337084
+    ],
+    "parent_position": 46785,
+    "parent_state": 337084,
+    "predicted_bad_predecessor_10D0": 74941
+  },
+  {
+    "D_bit0_first": "1100101011001100",
+    "D_mask": 13139,
+    "actual_parent_predecessor": 52557,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      8
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1159834,
+      1153690,
+      1677976,
+      629404,
+      105118,
+      105111
+    ],
+    "child_states": [
+      1677976,
+      629404,
+      105118,
+      105111
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 48932,
+    "parent_first_D_bit_exact_age": 6,
+    "parent_history_last_three": [
+      55629,
+      52557,
+      314700
+    ],
+    "parent_position": 48933,
+    "parent_state": 314700,
+    "predicted_bad_predecessor_10D0": 52557
+  },
+  {
+    "D_bit0_first": "1111010100001100",
+    "D_mask": 12463,
+    "actual_parent_predecessor": 49853,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1156466,
+      1148282,
+      1672568,
+      623996,
+      99710,
+      99703
+    ],
+    "child_states": [
+      1672568,
+      623996,
+      99710,
+      99703
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 52861,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      53945,
+      49853,
+      311996
+    ],
+    "parent_position": 52862,
+    "parent_state": 311996,
+    "predicted_bad_predecessor_10D0": 49853
+  },
+  {
+    "D_bit0_first": "1011010011011000",
+    "D_mask": 6957,
+    "actual_parent_predecessor": 27829,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      16
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1167722,
+      1104234,
+      1628520,
+      579948,
+      55662,
+      55655
+    ],
+    "child_states": [
+      1628520,
+      579948,
+      55662,
+      55655
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 53300,
+    "parent_first_D_bit_exact_age": 14,
+    "parent_history_last_three": [
+      59573,
+      27829,
+      289972
+    ],
+    "parent_position": 53301,
+    "parent_state": 289972,
+    "predicted_bad_predecessor_10D0": 27829
+  },
+  {
+    "D_bit0_first": "1101111010000100",
+    "D_mask": 8571,
+    "actual_parent_predecessor": 34285,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1121234,
+      1117146,
+      1641432,
+      592860,
+      68574,
+      68567
+    ],
+    "child_states": [
+      1641432,
+      592860,
+      68574,
+      68567
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 56140,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      36329,
+      34285,
+      296428
+    ],
+    "parent_position": 56141,
+    "parent_state": 296428,
+    "predicted_bad_predecessor_10D0": 34285
+  },
+  {
+    "D_bit0_first": "1101100100101010",
+    "D_mask": 21659,
+    "actual_parent_predecessor": 86637,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1254618,
+      1221850,
+      1746136,
+      697564,
+      173278,
+      173271
+    ],
+    "child_states": [
+      1746136,
+      697564,
+      173278,
+      173271
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 58001,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      103021,
+      86637,
+      348780
+    ],
+    "parent_position": 58002,
+    "parent_state": 348780,
+    "predicted_bad_predecessor_10D0": 86637
+  },
+  {
+    "D_bit0_first": "1010111010100100",
+    "D_mask": 9589,
+    "actual_parent_predecessor": 38357,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      12
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1141546,
+      1125290,
+      1649576,
+      601004,
+      76718,
+      76711
+    ],
+    "child_states": [
+      1649576,
+      601004,
+      76718,
+      76711
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 63853,
+    "parent_first_D_bit_exact_age": 10,
+    "parent_history_last_three": [
+      46485,
+      38357,
+      300500
+    ],
+    "parent_position": 63854,
+    "parent_state": 300500,
+    "predicted_bad_predecessor_10D0": 38357
+  },
+  {
+    "D_bit0_first": "1101010010111000",
+    "D_mask": 7467,
+    "actual_parent_predecessor": 29869,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1362266,
+      1108314,
+      1632600,
+      584028,
+      59742,
+      59735
+    ],
+    "child_states": [
+      1632600,
+      584028,
+      59742,
+      59735
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 66028,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      156845,
+      29869,
+      292012
+    ],
+    "parent_position": 66029,
+    "parent_state": 292012,
+    "predicted_bad_predecessor_10D0": 29869
+  },
+  {
+    "D_bit0_first": "1010110101001100",
+    "D_mask": 12981,
+    "actual_parent_predecessor": 51925,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      9
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1154346,
+      1152426,
+      1676712,
+      628140,
+      103854,
+      103847
+    ],
+    "child_states": [
+      1676712,
+      628140,
+      103854,
+      103847
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 68834,
+    "parent_first_D_bit_exact_age": 7,
+    "parent_history_last_three": [
+      52885,
+      51925,
+      314068
+    ],
+    "parent_position": 68835,
+    "parent_state": 314068,
+    "predicted_bad_predecessor_10D0": 51925
+  },
+  {
+    "D_bit0_first": "1110011000110010",
+    "D_mask": 19559,
+    "actual_parent_predecessor": 78237,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1205106,
+      1205050,
+      1729336,
+      680764,
+      156478,
+      156471
+    ],
+    "child_states": [
+      1729336,
+      680764,
+      156478,
+      156471
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 69363,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      78265,
+      78237,
+      340380
+    ],
+    "parent_position": 69364,
+    "parent_state": 340380,
+    "predicted_bad_predecessor_10D0": 78237
+  },
+  {
+    "D_bit0_first": "1010111011010000",
+    "D_mask": 2933,
+    "actual_parent_predecessor": 11733,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      23
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1202986,
+      1072042,
+      1596328,
+      547756,
+      23470,
+      23463
+    ],
+    "child_states": [
+      1596328,
+      547756,
+      23470,
+      23463
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 71709,
+    "parent_first_D_bit_exact_age": 21,
+    "parent_history_last_three": [
+      77205,
+      11733,
+      273876
+    ],
+    "parent_position": 71710,
+    "parent_state": 273876,
+    "predicted_bad_predecessor_10D0": 11733
+  },
+  {
+    "D_bit0_first": "1100101111000010",
+    "D_mask": 17363,
+    "actual_parent_predecessor": 69453,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      9
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1203354,
+      1187482,
+      1711768,
+      663196,
+      138910,
+      138903
+    ],
+    "child_states": [
+      1711768,
+      663196,
+      138910,
+      138903
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 72008,
+    "parent_first_D_bit_exact_age": 7,
+    "parent_history_last_three": [
+      77389,
+      69453,
+      331596
+    ],
+    "parent_position": 72009,
+    "parent_state": 331596,
+    "predicted_bad_predecessor_10D0": 69453
+  },
+  {
+    "D_bit0_first": "1010110110011000",
+    "D_mask": 6581,
+    "actual_parent_predecessor": 26325,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      26
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1105194,
+      1101226,
+      1625512,
+      576940,
+      52654,
+      52647
+    ],
+    "child_states": [
+      1625512,
+      576940,
+      52654,
+      52647
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 72153,
+    "parent_first_D_bit_exact_age": 24,
+    "parent_history_last_three": [
+      28309,
+      26325,
+      288468
+    ],
+    "parent_position": 72154,
+    "parent_state": 288468,
+    "predicted_bad_predecessor_10D0": 26325
+  },
+  {
+    "D_bit0_first": "1100101011010010",
+    "D_mask": 19283,
+    "actual_parent_predecessor": 77133,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      8
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1233562,
+      1202842,
+      1727128,
+      678556,
+      154270,
+      154263
+    ],
+    "child_states": [
+      1727128,
+      678556,
+      154270,
+      154263
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 73581,
+    "parent_first_D_bit_exact_age": 6,
+    "parent_history_last_three": [
+      92493,
+      77133,
+      339276
+    ],
+    "parent_position": 73582,
+    "parent_state": 339276,
+    "predicted_bad_predecessor_10D0": 77133
+  },
+  {
+    "D_bit0_first": "1010101011010010",
+    "D_mask": 19285,
+    "actual_parent_predecessor": 77141,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1233578,
+      1202858,
+      1727144,
+      678572,
+      154286,
+      154279
+    ],
+    "child_states": [
+      1727144,
+      678572,
+      154286,
+      154279
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 75964,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      92501,
+      77141,
+      339284
+    ],
+    "parent_position": 75965,
+    "parent_state": 339284,
+    "predicted_bad_predecessor_10D0": 77141
+  },
+  {
+    "D_bit0_first": "1100111010001100",
+    "D_mask": 12659,
+    "actual_parent_predecessor": 50637,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      14
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1153818,
+      1149850,
+      1674136,
+      625564,
+      101278,
+      101271
+    ],
+    "child_states": [
+      1674136,
+      625564,
+      101278,
+      101271
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 77586,
+    "parent_first_D_bit_exact_age": 12,
+    "parent_history_last_three": [
+      52621,
+      50637,
+      312780
+    ],
+    "parent_position": 77587,
+    "parent_state": 312780,
+    "predicted_bad_predecessor_10D0": 50637
+  },
+  {
+    "D_bit0_first": "1110100100110100",
+    "D_mask": 11415,
+    "actual_parent_predecessor": 45661,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1262778,
+      1139898,
+      1664184,
+      615612,
+      91326,
+      91319
+    ],
+    "child_states": [
+      1664184,
+      615612,
+      91326,
+      91319
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 79840,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      107101,
+      45661,
+      307804
+    ],
+    "parent_position": 79841,
+    "parent_state": 307804,
+    "predicted_bad_predecessor_10D0": 45661
+  },
+  {
+    "D_bit0_first": "1110101001100100",
+    "D_mask": 9815,
+    "actual_parent_predecessor": 39261,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1128114,
+      1127098,
+      1651384,
+      602812,
+      78526,
+      78519
+    ],
+    "child_states": [
+      1651384,
+      602812,
+      78526,
+      78519
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 80798,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      39769,
+      39261,
+      301404
+    ],
+    "parent_position": 80799,
+    "parent_state": 301404,
+    "predicted_bad_predecessor_10D0": 39261
+  },
+  {
+    "D_bit0_first": "1101001010111000",
+    "D_mask": 7499,
+    "actual_parent_predecessor": 29997,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      7
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1165914,
+      1108570,
+      1632856,
+      584284,
+      59998,
+      59991
+    ],
+    "child_states": [
+      1632856,
+      584284,
+      59998,
+      59991
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 80882,
+    "parent_first_D_bit_exact_age": 5,
+    "parent_history_last_three": [
+      58669,
+      29997,
+      292140
+    ],
+    "parent_position": 80883,
+    "parent_state": 292140,
+    "predicted_bad_predecessor_10D0": 29997
+  },
+  {
+    "D_bit0_first": "1011010101001010",
+    "D_mask": 21165,
+    "actual_parent_predecessor": 84661,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      16
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1226058,
+      1217898,
+      1742184,
+      693612,
+      169326,
+      169319
+    ],
+    "child_states": [
+      1742184,
+      693612,
+      169326,
+      169319
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 85693,
+    "parent_first_D_bit_exact_age": 14,
+    "parent_history_last_three": [
+      88741,
+      84661,
+      346804
+    ],
+    "parent_position": 85694,
+    "parent_state": 346804,
+    "predicted_bad_predecessor_10D0": 84661
+  },
+  {
+    "D_bit0_first": "1101100011001100",
+    "D_mask": 13083,
+    "actual_parent_predecessor": 52333,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1251546,
+      1153242,
+      1677528,
+      628956,
+      104670,
+      104663
+    ],
+    "child_states": [
+      1677528,
+      628956,
+      104670,
+      104663
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 87004,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      101485,
+      52333,
+      314476
+    ],
+    "parent_position": 87005,
+    "parent_state": 314476,
+    "predicted_bad_predecessor_10D0": 52333
+  },
+  {
+    "D_bit0_first": "1101001101010100",
+    "D_mask": 10955,
+    "actual_parent_predecessor": 43821,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      5
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1266778,
+      1136218,
+      1660504,
+      611932,
+      87646,
+      87639
+    ],
+    "child_states": [
+      1660504,
+      611932,
+      87646,
+      87639
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 87050,
+    "parent_first_D_bit_exact_age": 3,
+    "parent_history_last_three": [
+      109101,
+      43821,
+      305964
+    ],
+    "parent_position": 87051,
+    "parent_state": 305964,
+    "predicted_bad_predecessor_10D0": 43821
+  },
+  {
+    "D_bit0_first": "1010101010110010",
+    "D_mask": 19797,
+    "actual_parent_predecessor": 79189,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      6
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1207466,
+      1206954,
+      1731240,
+      682668,
+      158382,
+      158375
+    ],
+    "child_states": [
+      1731240,
+      682668,
+      158382,
+      158375
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 87175,
+    "parent_first_D_bit_exact_age": 4,
+    "parent_history_last_three": [
+      79445,
+      79189,
+      341332
+    ],
+    "parent_position": 87176,
+    "parent_state": 341332,
+    "predicted_bad_predecessor_10D0": 79189
+  },
+  {
+    "D_bit0_first": "1100110011110000",
+    "D_mask": 3891,
+    "actual_parent_predecessor": 15565,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      7
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1208730,
+      1079706,
+      1603992,
+      555420,
+      31134,
+      31127
+    ],
+    "child_states": [
+      1603992,
+      555420,
+      31134,
+      31127
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 89247,
+    "parent_first_D_bit_exact_age": 5,
+    "parent_history_last_three": [
+      80077,
+      15565,
+      277708
+    ],
+    "parent_position": 89248,
+    "parent_state": 277708,
+    "predicted_bad_predecessor_10D0": 15565
+  },
+  {
+    "D_bit0_first": "1101001101101000",
+    "D_mask": 5835,
+    "actual_parent_predecessor": 23341,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      5
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      11
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1111130,
+      1095258,
+      1619544,
+      570972,
+      46686,
+      46679
+    ],
+    "child_states": [
+      1619544,
+      570972,
+      46686,
+      46679
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 91068,
+    "parent_first_D_bit_exact_age": 9,
+    "parent_history_last_three": [
+      31277,
+      23341,
+      285484
+    ],
+    "parent_position": 91069,
+    "parent_state": 285484,
+    "predicted_bad_predecessor_10D0": 23341
+  },
+  {
+    "D_bit0_first": "1111100110001000",
+    "D_mask": 4511,
+    "actual_parent_predecessor": 18045,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1084914,
+      1084666,
+      1608952,
+      560380,
+      36094,
+      36087
+    ],
+    "child_states": [
+      1608952,
+      560380,
+      36094,
+      36087
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 91280,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      18169,
+      18045,
+      280188
+    ],
+    "parent_position": 91281,
+    "parent_state": 280188,
+    "predicted_bad_predecessor_10D0": 18045
+  },
+  {
+    "D_bit0_first": "1101011001010100",
+    "D_mask": 10859,
+    "actual_parent_predecessor": 43437,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1136466,
+      1135450,
+      1659736,
+      611164,
+      86878,
+      86871
+    ],
+    "child_states": [
+      1659736,
+      611164,
+      86878,
+      86871
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 91738,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      43945,
+      43437,
+      305580
+    ],
+    "parent_position": 91739,
+    "parent_state": 305580,
+    "predicted_bad_predecessor_10D0": 43437
+  },
+  {
+    "D_bit0_first": "1101110100001100",
+    "D_mask": 12475,
+    "actual_parent_predecessor": 49901,
+    "bad_age_one": true,
+    "child_deletion_ages_from_three_parent_states": [
+      3,
+      2,
+      4
+    ],
+    "child_deletion_exact_ages": [
+      "infinite_in_embedded_periodic_history",
+      2,
+      4
+    ],
+    "child_edge_legality": [
+      true,
+      false,
+      true
+    ],
+    "child_history_last_three_then_connector": [
+      1164754,
+      1148378,
+      1672664,
+      624092,
+      99806,
+      99799
+    ],
+    "child_states": [
+      1672664,
+      624092,
+      99806,
+      99799
+    ],
+    "connector_residence_three_legal": false,
+    "parent_a_exact_age": 1,
+    "parent_a_last_absent_position": 91840,
+    "parent_first_D_bit_exact_age": 2,
+    "parent_history_last_three": [
+      58089,
+      49901,
+      312044
+    ],
+    "parent_position": 91841,
+    "parent_state": 312044,
+    "predicted_bad_predecessor_10D0": 49901
+  }
+]

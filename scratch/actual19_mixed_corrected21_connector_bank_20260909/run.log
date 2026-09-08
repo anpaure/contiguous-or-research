@@ -1,0 +1,1 @@
+{"all_fixed_ports_have_legal_selected_route": true, "elapsed_cpu_seconds": 0.553959171, "elapsed_wall_seconds": 0.5544336368329823, "enumerated_port_count": 1430, "locally_legal_connector_count": 1430, "original_route_count": 1371, "status": "PASS_FIXED_ACTUAL19_MIXED_LOCAL_CONNECTOR_BANK", "swapped_bad_port_route_count": 59}

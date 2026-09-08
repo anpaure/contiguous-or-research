@@ -1,0 +1,38 @@
+K11 q369 top-layer exact cut regression
+Date: 2026-07-23
+
+Source SHA-256 (final source recorded by this regression):
+4e63cce6d95099cb0571aa5aa50b405b1d63b05bb18742e5262c484ac6325c07
+
+Remote binary SHA-256:
+b60cf2d72526148c74a66504ede874603fe897ca8c4a8c0e638ea7bc13c45c8c
+
+Remote build log SHA-256:
+ea0d1308462aa83a0c61d6678a289803b625f532d50976852c43b2a05921facd
+
+Remote flag-absent q369 baseline log SHA-256:
+7fc296997a65c27ff67e417fa7180499b67ce5ab2a073fa4d133f10237a1277f
+
+Exhaustive combinatorial check:
+PASS omissions=463 short_cells=1392 maximal_rank5_pool=463 residual_cells=561 residual_maxima_sizes=[463,464]
+PASS monotone schedules=463 omissions=0..462 bijective
+
+Flag absent, containment caps enabled:
+q19_factor_prefix variables=2882282 clauses=14460196 portal_branch_clauses=704
+q19_fixed_row variables=2882282 clauses=14459977 portal_branch_clauses=485
+q19_abstract variables=2882282 clauses=14460414 portal_branch_clauses=922
+q369_schedule variables=2882282 clauses=14459954 portal_branch_clauses=462
+
+Flag enabled, containment caps enabled:
+variables=2882282 clauses=14919116
+portal_branch_clauses=462
+q369_top_layer_clauses=462
+q369_rank_four_clauses=458700
+
+Delta:
+variables=0
+clauses=459162
+
+Invalid-gate regression:
+exit=2
+K11_FOREST_Q369_TOP_LAYER_CUT requires K11_FOREST_PORTAL_BRANCH=q369_schedule

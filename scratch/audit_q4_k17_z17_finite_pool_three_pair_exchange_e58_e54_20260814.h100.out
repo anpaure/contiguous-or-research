@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "best_exchange": {
+        "add": [
+          169767,
+          174503,
+          179488
+        ],
+        "delta": -2,
+        "remove": [
+          20761,
+          127008,
+          169836
+        ]
+      },
+      "exact_triple_tests": 2726,
+      "pair_options": 189462,
+      "report": "scratch/audit_q4_k17_z17_augmented170k_exact_three_pair_20260814.h100.json",
+      "retained_candidate_sum": 11406,
+      "retained_pair_tests": 911706,
+      "source_energy": 58,
+      "status": "PASS",
+      "surviving_faces": 621
+    },
+    {
+      "best_exchange": {
+        "add": [
+          158938,
+          165436,
+          167607
+        ],
+        "delta": 0,
+        "remove": [
+          11131,
+          157012,
+          161711
+        ]
+      },
+      "exact_triple_tests": 424,
+      "pair_options": 189462,
+      "report": "scratch/audit_q4_k17_z17_augmented170k_e54_exact_three_pair_20260814.h100.json",
+      "retained_candidate_sum": 3872,
+      "retained_pair_tests": 303716,
+      "source_energy": 54,
+      "status": "NO_NEGATIVE_THREE_PAIR_EXCHANGE",
+      "surviving_faces": 250
+    }
+  ],
+  "method": "independent replay of all 24804 outgoing face minima, exact distinct exclusions, retained pairs/triples, and output state",
+  "scope": "finite reflected-pair pool only; self lifts fixed",
+  "status": "PASS"
+}

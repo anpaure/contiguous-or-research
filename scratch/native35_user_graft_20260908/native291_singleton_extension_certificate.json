@@ -1,0 +1,524 @@
+{
+  "initial": {
+    "tail": [
+      554,
+      440,
+      122,
+      318
+    ],
+    "suffix_unions": [
+      318,
+      382,
+      510,
+      1022
+    ],
+    "missing_singletons": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "legal_missing_singletons": [
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "success": true,
+  "extension_length": 20,
+  "extension_letters": [
+    1024,
+    1,
+    16686,
+    64,
+    16,
+    17454,
+    128,
+    256,
+    17423,
+    512,
+    32,
+    17431,
+    2048,
+    4096,
+    17491,
+    8,
+    4,
+    17521,
+    8192,
+    2
+  ],
+  "total_word_length": 311,
+  "rounds": [
+    {
+      "round": 1,
+      "missing_before": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "ordered_legal_singleton_pairs": 20,
+      "complete_gadget_candidates": 885,
+      "chosen_singletons": [
+        11,
+        1
+      ],
+      "letters": [
+        1024,
+        1,
+        16686
+      ],
+      "removed_from_old_last_letter": 5,
+      "restoring_new_coordinate": 15,
+      "score": [
+        5,
+        6,
+        -6,
+        0
+      ],
+      "suffix_unions_after": [
+        16686,
+        16687,
+        17711,
+        17727
+      ]
+    },
+    {
+      "round": 2,
+      "missing_before": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "ordered_legal_singleton_pairs": 36,
+      "complete_gadget_candidates": 1704,
+      "chosen_singletons": [
+        7,
+        5
+      ],
+      "letters": [
+        64,
+        16,
+        17454
+      ],
+      "removed_from_old_last_letter": 9,
+      "restoring_new_coordinate": 11,
+      "score": [
+        4,
+        5,
+        -5,
+        0
+      ],
+      "suffix_unions_after": [
+        17454,
+        17470,
+        17534,
+        17790
+      ]
+    },
+    {
+      "round": 3,
+      "missing_before": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "ordered_legal_singleton_pairs": 25,
+      "complete_gadget_candidates": 1200,
+      "chosen_singletons": [
+        8,
+        9
+      ],
+      "letters": [
+        128,
+        256,
+        17423
+      ],
+      "removed_from_old_last_letter": 6,
+      "restoring_new_coordinate": 1,
+      "score": [
+        3,
+        4,
+        -4,
+        0
+      ],
+      "suffix_unions_after": [
+        17423,
+        17679,
+        17807,
+        17839
+      ]
+    },
+    {
+      "round": 4,
+      "missing_before": [
+        2,
+        3,
+        4,
+        6,
+        10,
+        12,
+        13,
+        14
+      ],
+      "ordered_legal_singleton_pairs": 16,
+      "complete_gadget_candidates": 734,
+      "chosen_singletons": [
+        10,
+        6
+      ],
+      "letters": [
+        512,
+        32,
+        17431
+      ],
+      "removed_from_old_last_letter": 4,
+      "restoring_new_coordinate": 5,
+      "score": [
+        2,
+        3,
+        -3,
+        0
+      ],
+      "suffix_unions_after": [
+        17431,
+        17463,
+        17975,
+        17983
+      ]
+    },
+    {
+      "round": 5,
+      "missing_before": [
+        2,
+        3,
+        4,
+        12,
+        13,
+        14
+      ],
+      "ordered_legal_singleton_pairs": 8,
+      "complete_gadget_candidates": 330,
+      "chosen_singletons": [
+        12,
+        13
+      ],
+      "letters": [
+        2048,
+        4096,
+        17491
+      ],
+      "removed_from_old_last_letter": 3,
+      "restoring_new_coordinate": 7,
+      "score": [
+        1,
+        2,
+        -2,
+        0
+      ],
+      "suffix_unions_after": [
+        17491,
+        21587,
+        23635,
+        23639
+      ]
+    },
+    {
+      "round": 6,
+      "missing_before": [
+        2,
+        3,
+        4,
+        14
+      ],
+      "ordered_legal_singleton_pairs": 4,
+      "complete_gadget_candidates": 187,
+      "chosen_singletons": [
+        4,
+        3
+      ],
+      "letters": [
+        8,
+        4,
+        17521
+      ],
+      "removed_from_old_last_letter": 2,
+      "restoring_new_coordinate": 6,
+      "score": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "suffix_unions_after": [
+        17521,
+        17525,
+        17533,
+        17535
+      ]
+    },
+    {
+      "round": 7,
+      "missing_before": [
+        2,
+        14
+      ],
+      "ordered_legal_singleton_pairs": 1,
+      "complete_gadget_candidates": 1,
+      "chosen_singletons": [
+        14,
+        2
+      ],
+      "letters": [
+        8192,
+        2
+      ],
+      "removed_from_old_last_letter": null,
+      "restoring_new_coordinate": null,
+      "score": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "suffix_unions_after": [
+        2,
+        8194,
+        25715,
+        25719
+      ]
+    }
+  ],
+  "stopped": null,
+  "all_singletons_present": true,
+  "missing_singletons": [],
+  "all_existing_targets_retained": true,
+  "all_new_endpoints_fresh_rank8_and9": true,
+  "original_targets": 1876,
+  "final_targets": 1979,
+  "new_targets": 103,
+  "original_below8_targets": 548,
+  "new_distinct_below8_targets": 37,
+  "new_below8_target_masks": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    16,
+    32,
+    64,
+    80,
+    128,
+    256,
+    512,
+    544,
+    1024,
+    1342,
+    2048,
+    4096,
+    8192,
+    8194,
+    16686,
+    16687,
+    16750,
+    17423,
+    17431,
+    17454,
+    17463,
+    17470,
+    17491,
+    17499,
+    17521,
+    17525,
+    17582,
+    17679,
+    17935,
+    19479,
+    21587,
+    25713
+  ],
+  "original_below8_state_incidences": 582,
+  "added_below8_state_incidences": 40,
+  "added_below8_repeated_incidences": 3,
+  "final_below8_repeated_incidences": 37,
+  "final_rank8_targets": 308,
+  "final_rank9_targets": 308,
+  "final_below9_targets": 893,
+  "endpoint_delay": 3,
+  "endpoint_lower_bound": 311,
+  "optimal_for_covered_target_family": true,
+  "potential_rank9": {
+    "N": 311,
+    "D": 308,
+    "L": 0,
+    "b_terminal": 3,
+    "E": 0
+  },
+  "new_endpoint_witnesses": [
+    {
+      "position": 291,
+      "letter": 1024,
+      "new_rank8": 1406,
+      "new_rank9": 1534
+    },
+    {
+      "position": 292,
+      "letter": 1,
+      "new_rank8": 1343,
+      "new_rank9": 1407
+    },
+    {
+      "position": 293,
+      "letter": 16686,
+      "new_rank8": 17711,
+      "new_rank9": 17727
+    },
+    {
+      "position": 294,
+      "letter": 64,
+      "new_rank8": 16751,
+      "new_rank9": 17775
+    },
+    {
+      "position": 295,
+      "letter": 16,
+      "new_rank8": 16766,
+      "new_rank9": 16767
+    },
+    {
+      "position": 296,
+      "letter": 17454,
+      "new_rank8": 17534,
+      "new_rank9": 17790
+    },
+    {
+      "position": 297,
+      "letter": 128,
+      "new_rank8": 17598,
+      "new_rank9": 17662
+    },
+    {
+      "position": 298,
+      "letter": 256,
+      "new_rank8": 17838,
+      "new_rank9": 17854
+    },
+    {
+      "position": 299,
+      "letter": 17423,
+      "new_rank8": 17807,
+      "new_rank9": 17839
+    },
+    {
+      "position": 300,
+      "letter": 512,
+      "new_rank8": 18191,
+      "new_rank9": 18319
+    },
+    {
+      "position": 301,
+      "letter": 32,
+      "new_rank8": 17967,
+      "new_rank9": 18223
+    },
+    {
+      "position": 302,
+      "letter": 17431,
+      "new_rank8": 17975,
+      "new_rank9": 17983
+    },
+    {
+      "position": 303,
+      "letter": 2048,
+      "new_rank8": 19511,
+      "new_rank9": 20023
+    },
+    {
+      "position": 304,
+      "letter": 4096,
+      "new_rank8": 23575,
+      "new_rank9": 23607
+    },
+    {
+      "position": 305,
+      "letter": 17491,
+      "new_rank8": 23635,
+      "new_rank9": 23639
+    },
+    {
+      "position": 306,
+      "letter": 8,
+      "new_rank8": 21595,
+      "new_rank9": 23643
+    },
+    {
+      "position": 307,
+      "letter": 4,
+      "new_rank8": 17503,
+      "new_rank9": 21599
+    },
+    {
+      "position": 308,
+      "letter": 17521,
+      "new_rank8": 17533,
+      "new_rank9": 17535
+    },
+    {
+      "position": 309,
+      "letter": 8192,
+      "new_rank8": 25717,
+      "new_rank9": 25725
+    },
+    {
+      "position": 310,
+      "letter": 2,
+      "new_rank8": 25715,
+      "new_rank9": 25719
+    }
+  ],
+  "restricted_method": "At each stable frontier enumerate every ordered pair of fresh missing singleton appends and every restoring six-letter swap of the old last letter; choose the displayed deterministic score. Last pair omits restore. No leading filler, global search, random choice, or broader fallback.",
+  "resource_caps": {
+    "cpu_seconds": 90,
+    "wall_seconds": 110,
+    "address_space_bytes": 1073741824
+  }
+}

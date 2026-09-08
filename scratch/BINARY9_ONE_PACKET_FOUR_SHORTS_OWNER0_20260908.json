@@ -1,0 +1,1 @@
+{"host":"arboghast","cases":[{"full_owner":0,"candidate_rows":7456,"status":"INFEASIBLE","solver_wall_seconds":1.259742928,"case_elapsed_seconds":1.6216210471466184,"branches":0,"conflicts":0}],"witness":null,"scope":"One full fixed-left packet plus four shorts replaced by five full rows; all512 targets.","elapsed_seconds":2.1115779979154468}

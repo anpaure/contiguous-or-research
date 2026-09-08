@@ -1,0 +1,81 @@
+{
+  "prefix_first_owners": [
+    43613,
+    43853,
+    43877
+  ],
+  "prefix_first_letters": [
+    43613,
+    43597,
+    43589
+  ],
+  "prefix_last_owner": 103765,
+  "maximal_A305": 5461,
+  "mandatory_pivot_mask": 98304,
+  "mandatory_pivot_bits": [
+    15,
+    16
+  ],
+  "targets": {
+    "43857": {
+      "all_witnesses": [],
+      "stable_witnesses": [],
+      "boundary_dependent_witnesses": [],
+      "initial_subset": false,
+      "initial_pin_replays_all_owners": false,
+      "first_owner_removed_bits": [
+        2,
+        3
+      ],
+      "last_prefix_owner_contains": false,
+      "pivot_possible_by_required_mask": false,
+      "missing_required_bits": [
+        16
+      ],
+      "prefix_superowner_positions": [
+        51,
+        101
+      ],
+      "remaining_Q_superowners": [
+        43861,
+        43889,
+        43985,
+        44881,
+        47953,
+        60241,
+        109393
+      ]
+    },
+    "46420": {
+      "all_witnesses": [],
+      "stable_witnesses": [],
+      "boundary_dependent_witnesses": [],
+      "initial_subset": false,
+      "initial_pin_replays_all_owners": false,
+      "first_owner_removed_bits": [
+        0,
+        3,
+        9,
+        11
+      ],
+      "last_prefix_owner_contains": false,
+      "pivot_possible_by_required_mask": false,
+      "missing_required_bits": [
+        16
+      ],
+      "prefix_superowner_positions": [
+        204,
+        254
+      ],
+      "remaining_Q_superowners": [
+        46421,
+        46428,
+        46452,
+        46548,
+        46932,
+        48468,
+        62804
+      ]
+    }
+  }
+}

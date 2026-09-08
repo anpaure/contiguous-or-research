@@ -1,0 +1,97 @@
+{
+  "canonical_vertical_endpoints": 117572,
+  "flat_certificate_sha256": "2b7bc68cb4559696c0dcf6bc0f7464c8dbe0d7d398dfab2b0996282a7f419dcc",
+  "flat_word_factors": 226,
+  "flat_word_maximum_token_appearances": 3,
+  "flat_word_port_appearances": 678,
+  "flat_word_product_verified_on_all_477_tokens": true,
+  "isolated_flat_word_demand_histogram": {
+    "1": 14,
+    "2": 6
+  },
+  "isolated_flat_word_port_demand": 26,
+  "isolated_moved_token_cause_histogram": {
+    "stable_incidence_is_changed_tail_owner": 17,
+    "stable_incidence_is_degree_one_endpoint": 3
+  },
+  "isolated_moved_token_values": [
+    "0010010101011111101100",
+    "0010010011011111101100",
+    "0000110011011111101100",
+    "0010100011011111011100",
+    "1010010101011110110010",
+    "0010100011011111110010",
+    "1010011011011100101010",
+    "0010110101011110101010",
+    "0010100011011111101010",
+    "0010010011011111011010",
+    "0010100011011101111010",
+    "0010100011011101011110",
+    "0010010011011111110001",
+    "0010010101111100110101",
+    "0000110011011110110101",
+    "0010010101011110101101",
+    "0010100011011110011101",
+    "0010010011011110011011",
+    "0000110011011010111011",
+    "0000110011011001111011"
+  ],
+  "isolated_moved_tokens": 20,
+  "lifted_component_reduction": 371,
+  "lifted_touched_components_after": 1,
+  "lifted_touched_components_before": 372,
+  "minimum_hall_cut": {
+    "demand": 1,
+    "supply": 0
+  },
+  "phase_common_projected_degree_histogram_on_moved_tokens": {
+    "0": 20,
+    "1": 457
+  },
+  "scope": "literal rank-12 head-shore projected Johnson cuts already present in both frozen phases; added dilation is not excluded",
+  "selection_sha256": "94deb656dac1d8955b20d851e92600156d703842d6de169d4b6bea356fa3ec32",
+  "status": "PASS_ZERO_SITE_OBSTRUCTION",
+  "witness": {
+    "flat_word_appearances": 1,
+    "incident_projected_edges": [
+      {
+        "common": false,
+        "edge_owner": "0010010101011111101000",
+        "post_head_pair": [
+          "0010010101011111101100",
+          "0010010101011111101001"
+        ],
+        "pre_head_pair": [
+          "1010010101011111101000",
+          "0010010101011111101001"
+        ]
+      },
+      {
+        "common": false,
+        "edge_owner": "0010010101011110101100",
+        "post_head_pair": [
+          "0010010101011111101100",
+          "0010010101011110101101"
+        ],
+        "pre_head_pair": [
+          "1010010101011110101100",
+          "0010010101011111101100"
+        ]
+      },
+      {
+        "common": false,
+        "edge_owner": "0010010101011101101100",
+        "post_head_pair": [
+          "0010010101011101111100",
+          "0010010101011101101101"
+        ],
+        "pre_head_pair": [
+          "0010010101011111101100",
+          "0010010101011101111100"
+        ]
+      }
+    ],
+    "target_image": "0010010101011101101101",
+    "token": "0010010101011111101100"
+  }
+}

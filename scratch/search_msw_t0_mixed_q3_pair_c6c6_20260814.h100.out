@@ -1,0 +1,15 @@
+{
+  "catalogue_sizes": [
+    804,
+    804
+  ],
+  "counts": {
+    "creates_W3": 5553,
+    "nonpath_factors": 133,
+    "owner_disjoint_pairs": 319987,
+    "q3_support_safe": 2660
+  },
+  "menu": "c6c6",
+  "solutions": [],
+  "status": "PASS"
+}

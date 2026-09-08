@@ -1,0 +1,68 @@
+{
+  "anchored_orientation_words": 512,
+  "anchored_raw_parameter_count": 60963840,
+  "complement_classes": 512,
+  "l3_truth_table": [
+    [
+      0,
+      0,
+      false
+    ],
+    [
+      1,
+      0,
+      true
+    ],
+    [
+      1,
+      1,
+      false
+    ],
+    [
+      2,
+      0,
+      false
+    ],
+    [
+      2,
+      1,
+      true
+    ],
+    [
+      2,
+      2,
+      false
+    ],
+    [
+      3,
+      0,
+      false
+    ],
+    [
+      3,
+      1,
+      false
+    ],
+    [
+      3,
+      2,
+      false
+    ],
+    [
+      3,
+      3,
+      false
+    ]
+  ],
+  "one_sided_base_delta_checks": 16,
+  "owner_exact_orientation_pair_checks": 1048576,
+  "phase_reflection_checks": 100,
+  "phase_rotation_checks": 100,
+  "phase_swap_checks": 900,
+  "raw_orientation_words": 1024,
+  "scope": "finite replay of orientation, affine-menu, and phase identities; anchored witness completeness and resource scope are symbolic",
+  "status": "PASS",
+  "synthetic_signature_count": 4,
+  "synthetic_two_sided_menu_count": 16,
+  "two_sided_complement_symmetry_checks": 16
+}

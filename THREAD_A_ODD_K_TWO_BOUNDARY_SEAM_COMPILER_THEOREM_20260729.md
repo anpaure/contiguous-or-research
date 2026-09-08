@@ -29,6 +29,13 @@ The theorem below proves that these hypotheses are sufficient for
 and proves that the two lower-`q=1` cut colours have no intrinsic endpoint
 obstruction.
 
+The logical core is Theorem 4.1: for one fixed middle chronology `T`,
+upper completeness together with feasibility of the unrestricted
+`COMP_d(T)` is necessary and sufficient for a universal antecedent `A`
+with `D^dA=T`.  PBBS support, a two-cycle opening, and the restriction
+`DA=DP` are only ways of certifying that core statement.  They are not part
+of the minimal lemma, and `DA=DP` is not imposed by `COMP_d(T)`.
+
 ## 1. Parameters and derivative notation
 
 Let
@@ -178,7 +185,81 @@ coordinate occurs in the left side.  This proves (2.7).  A value in (2.7)
 has rank `r-1` only when its intersection interval has exactly two terms,
 which proves the last assertion.  \(\square\)
 
-## 3. The exact maximal-default compiler
+## 3. The exact full compiler and its one-core specialization
+
+For a fixed path `T` and maximal erosion `P`, introduce bits
+
+\[
+ a_{p,x}\in\{0,1\},\qquad
+ A_p=\{x:a_{p,x}=1\}
+ \quad(0\le p<W+d).                                     \tag{3.1}
+\]
+
+Impose containment and nonemptiness:
+
+\[
+ a_{p,x}=0\quad(x\notin P_p),
+ \qquad
+ \sum_{x=1}^{k}a_{p,x}\ge1.                             \tag{3.2}
+\]
+
+For every middle position and every coordinate present there, impose
+
+\[
+ \sum_{p=i}^{i+d}a_{p,x}\ge1
+ \qquad(0\le i<W,\ x\in T_i).                           \tag{3.3}
+\]
+
+Let `I_d` be all source intervals of lengths `1,...,d`.  For each nonempty
+lower target `S`, `|S|<r`, and each `I in I_d`, introduce a binary witness
+`z_(S,I)` and impose
+
+\[
+ \sum_{I\in\mathcal I_d}z_{S,I}\ge1,                   \tag{3.4}
+\]
+
+\[
+ \sum_{p\in I}a_{p,x}\ge z_{S,I}\quad(x\in S),        \tag{3.5}
+\]
+
+\[
+ a_{p,x}\le1-z_{S,I}
+ \quad(p\in I,\ x\notin S).                            \tag{3.6}
+\]
+
+Call (3.2)--(3.6) `COMP_d(T)`.
+
+### Theorem 3.1 (full compiler equivalence)
+
+`COMP_d(T)` is feasible if and only if there is a nonzero word `A` of
+length `W+d` such that
+
+\[
+                         D^dA=T                         \tag{3.7}
+\]
+
+and every nonempty target of rank below `r` is a contiguous union in `A`.
+
+#### Proof
+
+Containment in (3.2) excludes a coordinate from every `(d+1)`-window whose
+corresponding middle owner omits it.  Equation (3.3) includes every
+coordinate of `T_i` somewhere in `A_i,...,A_(i+d)`.  Hence (3.7) holds
+coordinatewise.  Equations (3.4)--(3.6) say exactly that some interval of
+`A` of length at most `d` has union `S`.
+
+Conversely, if `D^dA=T`, then every source letter is contained in every
+middle window using it and hence in their intersection `P_p`; thus (3.2)--
+(3.3) hold.  An interval of at least `d+1` source letters contains a full
+`(d+1)`-window whose union is a rank-`r` member of `T`.  It therefore cannot
+realize a lower target.  Every lower witness has length at most `d` and
+supplies a variable satisfying (3.4)--(3.6).  \(\square\)
+
+This is the full chronology-faithful compiler.  It does not require
+`DA=DP`.  The exact `k=15` certificate happens to lie in the following
+stronger and simpler one-core subclass.
+
+### The maximal-default one-core specialization
 
 Define the residual lower family
 
@@ -186,7 +267,7 @@ Define the residual lower family
  \mathcal R(P)=
  \left\{S\subseteq[k]:1\le |S|<r,\quad
  S\notin\bigcup_{t=1}^{d-1}\operatorname{supp}(D^tP)
- \right\}.                                               \tag{3.1}
+ \right\}.                                               \tag{3.8}
 \]
 
 These are exactly the lower targets not already supplied by the fixed
@@ -196,13 +277,13 @@ Let `J={0,...,W+d-1}`.  A maximal-default compiler assignment is an
 injection
 
 \[
-                         \phi:\mathcal R(P)\longrightarrow J             \tag{3.2}
+                         \phi:\mathcal R(P)\longrightarrow J             \tag{3.9}
 \]
 
 such that
 
 \[
-                         S\subseteq P_{\phi(S)}                          \tag{3.3}
+                         S\subseteq P_{\phi(S)}                          \tag{3.10}
 \]
 
 for every residual target.  It defines
@@ -212,16 +293,16 @@ for every residual target.  It defines
  \begin{cases}
  S,&\phi(S)=p,\\
  P_p,&p\notin\phi(\mathcal R(P)).
- \end{cases}                                             \tag{3.4}
+ \end{cases}                                             \tag{3.11}
 \]
 
-### Theorem 3.1 (exact compiler criterion)
+### Theorem 3.2 (exact one-core criterion)
 
-The assignment (3.2)--(3.4) satisfies `A<=P` and `DA=DP` if and only if
+The assignment (3.9)--(3.11) satisfies `A<=P` and `DA=DP` if and only if
 
 \[
  A_p\cup A_{p+1}=P_p\cup P_{p+1}
- \qquad(0\le p<W+d-1).                                  \tag{3.5}
+ \qquad(0\le p<W+d-1).                                  \tag{3.12}
 \]
 
 Equivalently, introduce binary variables `y_(S,p)` only when
@@ -230,7 +311,7 @@ Equivalently, introduce binary variables `y_(S,p)` only when
 \[
  \sum_p y_{S,p}=1,
  \qquad
- \sum_S y_{S,p}\le1.                                   \tag{3.6}
+ \sum_S y_{S,p}\le1.                                   \tag{3.13}
 \]
 
 For a coordinate `x`, define
@@ -239,32 +320,33 @@ For a coordinate `x`, define
  \epsilon_{p,x}=
  \mathbf1_{x\notin P_p}
  +\mathbf1_{x\in P_p}
-   \sum_{\substack{S\in\mathcal R(P)\\x\notin S}}y_{S,p}.             \tag{3.7}
+   \sum_{\substack{S\in\mathcal R(P)\\x\notin S}}y_{S,p}.             \tag{3.14}
 \]
 
-Then (3.5) is equivalent to the adjacent omission inequalities
+Then (3.12) is equivalent to the adjacent omission inequalities
 
 \[
  \epsilon_{p,x}+\epsilon_{p+1,x}\le1
  \quad
- \left(x\in P_p\cup P_{p+1}\right).                    \tag{3.8}
+ \left(x\in P_p\cup P_{p+1}\right).                    \tag{3.15}
 \]
 
-Thus (3.6)--(3.8) are an exact integral characterization of this compiler,
+Thus (3.13)--(3.15) are an exact integral characterization of this
+specialized compiler,
 not a marginal Hall relaxation.
 
 #### Proof
 
-Containment (3.3) gives `A<=P`.  Equation (3.5) is the coordinatewise
+Containment (3.10) gives `A<=P`.  Equation (3.12) is the coordinatewise
 definition of `DA=DP`.  If \(x\) belongs to \(P_p\cup P_{p+1}\), then
 \(\epsilon_{p,x}\) records exactly whether the actual letter \(A_p\) omits
 \(x\):
 an unassigned position uses `P_p`, while an assigned position uses its
-unique target.  The union in (3.5) loses `x` precisely when both adjacent
-letters omit it.  This is excluded exactly by (3.8).  The assignment and
-capacity equations are exactly (3.6).  \(\square\)
+unique target.  The union in (3.12) loses `x` precisely when both adjacent
+letters omit it.  This is excluded exactly by (3.15).  The assignment and
+capacity equations are exactly (3.13).  \(\square\)
 
-Containment Hall is necessary but not sufficient; (3.8) is the chronology
+Containment Hall is necessary but not sufficient; (3.15) is the chronology
 coupling which Hall alone discards.
 
 ## 4. Universal-word theorem
@@ -277,16 +359,16 @@ Call the linear middle chronology `T` upper-complete if
  \quad\text{for some }0\le a\le b<W.                    \tag{4.1}
 \]
 
-### Theorem 4.1 (linear seam/compiler sufficiency)
+### Theorem 4.1 (exact linear chronology/compiler equivalence)
 
-Let `k,r,W,d,h,T,P` satisfy (1.1)--(2.6).  Suppose:
+Let `k,r,W,d,h,T,P` satisfy (1.1)--(2.6), with `T` a permutation of the
+rank-`r` layer.  The following are equivalent.
 
-1. `T` is a permutation of the rank-`r` layer and is upper-complete in the
-   arbitrary-width sense (4.1);
-2. the exact maximal-default compiler (3.6)--(3.8) is feasible.
+1. There is a nonzero universal word `A` of length `W+d` with `D^dA=T`.
+2. `T` is upper-complete in the arbitrary-width sense (4.1), and
+   `COMP_d(T)` is feasible.
 
-Then its word `A` has length `W+d=B(k)`, covers every nonempty subset of
-`[k]`, and therefore
+When these conditions hold,
 
 \[
                          \boxed{\nu(k)=B(k)}.             \tag{4.2}
@@ -294,33 +376,35 @@ Then its word `A` has length `W+d=B(k)`, covers every nonempty subset of
 
 #### Proof
 
-Theorem 3.1 gives `DA=DP`, so
+Assume item 2.  Theorem 3.1 supplies a nonzero word `A` with `D^dA=T` and
+all lower targets.  The middle layer is exactly `T`.  If an upper target
+satisfies \(U=T_a\cup\cdots\cup T_b\), then
 
 \[
- D^tA=D^tP\quad(t\ge1),
- \qquad D^dA=D^dP=T.                                    \tag{4.3}
+ U=A_a\cup A_{a+1}\cup\cdots\cup A_{b+d},               \tag{4.3}
 \]
 
-Every lower target of rank below `r` either occurs in one of the fixed rows
-`D^tP`, `1<=t<d`, or belongs to `R(P)` and is installed literally in `A`.
-Thus all lower targets occur.  Equation (4.3) supplies every middle target.
+so every upper target occurs and `A` is universal.
 
-If \(U\) is an upper target and (4.1) gives
-\(U=T_a\cup\cdots\cup T_b\), then (4.3) gives
+Conversely, assume item 1.  Theorem 3.1 gives feasibility of `COMP_d(T)`.
+Let an upper target `U` be the union of `A_a,...,A_b`.  Containment
+`A<=P` and Lemma 2.2 show that an interval of at most `d` source letters has
+rank at most `r`; hence `b-a+1>=d+1`.  Every source position in `[a,b]`
+belongs to some full window `[i,i+d] subseteq [a,b]`, and every such full
+window has union `T_i`.  Therefore
 
 \[
- U=A_a\cup A_{a+1}\cup\cdots\cup A_{b+d},               \tag{4.4}
+ U=\bigcup_{i=a}^{b-d}T_i,                               \tag{4.4}
 \]
 
-a literal contiguous interval of `A`.  Hence every upper target occurs.
-All letters are nonempty: assigned targets are nonempty and unassigned
-letters have rank at least `h>=1`.  The word is universal and has length
-`W+d`; (1.3) proves optimality.  \(\square\)
+which proves upper completeness.
 
-Within the declared subclass `A<=P`, `DA=DP`, and maximal values at every
-position not used by a residual target, the compiler criterion is necessary
-and sufficient.  It is only sufficient among arbitrary optimal words,
-because a general compiler need not freeze `DA`.
+The word length is `W+d=B(k)`, so (1.3) proves optimality.  \(\square\)
+
+The maximal-default one-core system (3.9)--(3.15) is a stronger sufficient
+certificate for `COMP_d(T)`.  Within that declared subclass its criterion is
+necessary and sufficient; it is not necessary for an arbitrary optimal
+word, because a general compiler need not freeze `DA`.
 
 ## 5. The two-boundary lemma
 
@@ -390,9 +474,9 @@ whole `r`-set.  Thus \(c_0\cup P_1=T_0=P_0\cup P_1\), proving (5.6).
 The right endpoint is identical after reversal.  \(\square\)
 
 Lemma 5.1 proves local compatibility with maximal adjacent cells.  It does
-not permit one to ignore (3.8) if the full compiler also changes those
-adjacent cells.  The two endpoint pins must be included in the same integral
-compiler instance.
+not permit one to ignore the full compiler constraints if adjacent cells are
+also changed.  The two endpoint pins must be included in the same integral
+compiler instance; in the one-core specialization this includes (3.15).
 
 ## 6. Two-cycle theorem
 
@@ -403,28 +487,26 @@ Let `k=2m+1` and let `d=d(k)<r`.  Suppose there exists a two-cycle factor
 choose and orient one cut in each cycle and one connecting Johnson seam so
 that the resulting path `T` has all of the following properties.
 
-1. **Erosion/residence.**  `T` satisfies (2.4)--(2.6); it is enough that it
-   be strongly `d`-resident.
+1. **Erosion/residence.**  `T` is strongly `d`-resident and therefore
+   satisfies (2.4)--(2.7).
 2. **Upper chronology.**  Every upper target satisfies (4.1).  Equivalently,
    relative to the two opened paths, it has either a surviving interval
    witness inside one path or a witness which is the union of a suffix of
    `Q_0` and a prefix of `Q_1`.
-3. **Common lower compiler.**  The residual family (3.1), including the one
-   or two q1 colours in (5.3), admits one integral assignment satisfying
-   (3.6)--(3.8), with each missing cut colour pinned to its own outer
-   endpoint.
+3. **Common lower compiler.**  `COMP_d(T)` is feasible with the one or two
+   missing q1 colours in (5.3) pinned to distinct outer endpoints (more
+   generally, to disjoint intervals in their respective boundary halos).
+   Feasibility of the pinned one-core system (3.9)--(3.15) is a stronger
+   sufficient certificate.
 
 Then `nu(k)=B(k)`.
 
 #### Proof
 
-Under item 1, Lemma 2.2 shows that every rank-`(r-1)` value in the fixed
-positive rows is an internal transition colour of `T`.  Hence the missing
-colours (5.3) really belong to the residual family (3.1).  Lemma 5.1 proves
-that their proposed endpoint pins have no local obstruction, even when the
-seam recycles neither cut colour.  Item 3 imposes the remaining global
-omission constraints.  Items 1--3 are exactly the hypotheses of Theorem 4.1.
-Apply that theorem and then the monotone-deadline lower bound.  \(\square\)
+Lemma 5.1 proves that the proposed endpoint pins have no local obstruction,
+even when the seam recycles neither cut colour.  Item 3 imposes every
+remaining compiler constraint simultaneously.  Items 1--3 are exactly the
+hypotheses of Theorem 4.1, so that theorem proves the result.  \(\square\)
 
 The source factor may be cyclically complete at every lower and upper depth;
 this is a powerful way to obtain candidates for items 2--3, but it is not by
@@ -526,7 +608,8 @@ which Theorem 6.1 needs after cutting:
 1. a reduction to exactly two components (or a multi-boundary analogue);
 2. an oriented Johnson seam whose final path is `d(k)`-resident and retains
    every arbitrary-width upper target;
-3. an integral solution of the common residual compiler (3.6)--(3.8).
+3. an integral solution of the unrestricted common compiler `COMP_d(T)`
+   (or of the stronger one-core specialization (3.9)--(3.15)).
 
 A sufficient all-odd existence schema is therefore:
 
@@ -548,9 +631,12 @@ strictly weaker.
    specifically to the two outer rank-`r` cells which absorb the cut q1
    facets.
 4. Lemma 5.1 proves local endpoint compatibility only.  Other compiler pins
-   can create adjacent omission conflicts, which is why (3.8) remains.
-5. Ordinary containment Hall does not imply (3.8), and a fractional
-   assignment does not produce a word.
+   can create adjacent omission conflicts, which is why the pins must remain
+   inside one full `COMP_d(T)` instance (or satisfy (3.15) in the one-core
+   specialization).
+5. Ordinary containment Hall does not imply `COMP_d(T)` or the adjacent
+   omission constraints (3.15), and a fractional assignment does not produce
+   a word.
 6. The condition `DA=DP` is a sufficient grading restriction, not a
    necessary property of every optimal word.
 7. If `h=0`, unmatched maximal letters can be empty; hypothesis (1.4) cannot

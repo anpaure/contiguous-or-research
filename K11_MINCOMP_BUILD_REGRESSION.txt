@@ -1,0 +1,36 @@
+Build host: 213.173.111.107:48809
+Compiler: g++ -O3 -std=c++2a -Wall -Wextra -Wpedantic
+Source SHA-256: c16750771e78912f427d472d845cf952e30e4909eea97b474b6fccc0d9676017
+Binary SHA-256: f1b797b7213fe889799cb46cae3f9c7d768db133f3eef4982dad192c877ed0c5
+
+All builds enabled the existing adjacent-shadow, rank-three-shadow, band,
+joint-band, endpoint-alignment, canonical-rank6, boundary-rank6, and
+singleton-pool modules.  They used k11_upper549_natural_array.txt only for
+phase selection and set K11_FOREST_BUILD_ONLY=1.
+
+No K11_FOREST_MIN_COMPONENT, rank6 branch 0:
+variables=2924697 clauses=14732380
+
+K11_FOREST_MIN_COMPONENT=e0c1, rank6 branch 0:
+variables=2924697 clauses=14772036
+min_component_schedule_clauses=39656
+min_component_low_cap_clauses=0
+min_component_exception_clauses=0
+
+K11_FOREST_MIN_COMPONENT=e1c2, rank6 branch 1:
+variables=2924938 clauses=14811758
+min_component_schedule_clauses=39625
+min_component_low_cap_clauses=36114
+min_component_exception_clauses=1980
+
+Arithmetic checks:
+14772036-14732380 = 39656.
+14811758-14734039 = 39625+36114+1980 = 77719.
+
+Remote full-log SHA-256 values:
+ffdd1c857a802982a82f054519e054375224a433676114f747e696d52758da26  mincomp_absent_build.log
+b4dca5d7c1c7ae85f4e611b5242e9e4d1fde8dfd346a8baa141b6af826d7a63a  mincomp_e0_build.log
+3f7b7d17bed34cc41f87993dcfdcb066507e226aa574b68bc045f31b3992b995  mincomp_e1_build.log
+
+The absent-mode counts exactly match the pre-change branch-0 regression:
+2924697 variables and 14732380 clauses.

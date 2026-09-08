@@ -1,0 +1,987 @@
+{
+  "best_exchange": {
+    "add": [
+      204462,
+      219234,
+      1675
+    ],
+    "delta": 2,
+    "kind": "PPS",
+    "remove": [
+      16092,
+      18997,
+      1674
+    ]
+  },
+  "elapsed_seconds": 59.10089445114136,
+  "face_audit": [
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        303,
+        16092,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        3381,
+        16092,
+        1674
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        3836,
+        189651,
+        2084
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        5093,
+        16092,
+        1674
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        7638,
+        16092,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        10642,
+        16092,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        11118,
+        16092,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        11118,
+        18158,
+        2501
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        11118,
+        189651,
+        2501
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        11118,
+        194629,
+        2501
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        14174,
+        16092,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        15785,
+        16092,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        16229,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        17008,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        17091,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18158,
+        1674
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18683,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18997,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18997,
+        1554
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": 2,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18997,
+        1674
+      ],
+      "pc": 4,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18997,
+        1768
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18997,
+        2501
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18997,
+        3270
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        18997,
+        3377
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": 2,
+      "kind": "PPS",
+      "out": [
+        16092,
+        19102,
+        1674
+      ],
+      "pc": 24,
+      "sc": 4
+    },
+    {
+      "best": 4,
+      "kind": "PPS",
+      "out": [
+        16092,
+        21230,
+        1674
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        21378,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        22198,
+        1674
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        23639,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        23639,
+        1674
+      ],
+      "pc": 4,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        24797,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        24858,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": 2,
+      "kind": "PPS",
+      "out": [
+        16092,
+        27008,
+        1674
+      ],
+      "pc": 3,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        27008,
+        1768
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        132010,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        137008,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        142008,
+        1674
+      ],
+      "pc": 4,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        147008,
+        1674
+      ],
+      "pc": 22,
+      "sc": 4
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        147008,
+        3377
+      ],
+      "pc": 9,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        158938,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        161828,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        174503,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": 2,
+      "kind": "PPS",
+      "out": [
+        16092,
+        189651,
+        1674
+      ],
+      "pc": 16,
+      "sc": 7
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        194629,
+        1674
+      ],
+      "pc": 13,
+      "sc": 4
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16092,
+        199463,
+        1674
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16229,
+        189651,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        16229,
+        194629,
+        1133
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        17008,
+        189651,
+        1554
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18158,
+        199463,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        19102,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        137008,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        137008,
+        1554
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        137008,
+        2084
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        137008,
+        2501
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        137008,
+        3270
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        137008,
+        3377
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        18997,
+        194629,
+        624
+      ],
+      "pc": 2,
+      "sc": 3
+    },
+    {
+      "best": 4,
+      "kind": "PPS",
+      "out": [
+        19102,
+        189651,
+        235
+      ],
+      "pc": 9,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        23639,
+        189651,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        23639,
+        189651,
+        1554
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        23639,
+        189651,
+        2501
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        23639,
+        189651,
+        2714
+      ],
+      "pc": 3,
+      "sc": 2
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        23639,
+        189651,
+        3270
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        142008,
+        161828,
+        1332
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        142008,
+        161828,
+        3152
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        147008,
+        161828,
+        349
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        161828,
+        199463,
+        349
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        161828,
+        199463,
+        3377
+      ],
+      "pc": 2,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        624
+      ],
+      "pc": 6,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        913
+      ],
+      "pc": 9,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        1332
+      ],
+      "pc": 7,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        1554
+      ],
+      "pc": 6,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        2501
+      ],
+      "pc": 6,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        2714
+      ],
+      "pc": 6,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        3270
+      ],
+      "pc": 6,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "kind": "PPS",
+      "out": [
+        184472,
+        194629,
+        3377
+      ],
+      "pc": 6,
+      "sc": 1
+    },
+    {
+      "best": null,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        235,
+        1674
+      ],
+      "pc": 2
+    },
+    {
+      "best": null,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        703,
+        1674
+      ],
+      "pc": 2
+    },
+    {
+      "best": 2,
+      "gc": 2,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        913,
+        1674
+      ],
+      "pc": 1
+    },
+    {
+      "best": 2,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        1332,
+        1674
+      ],
+      "pc": 2
+    },
+    {
+      "best": 2,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        1554,
+        1674
+      ],
+      "pc": 2
+    },
+    {
+      "best": null,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        1674,
+        1768
+      ],
+      "pc": 2
+    },
+    {
+      "best": null,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        1674,
+        2501
+      ],
+      "pc": 2
+    },
+    {
+      "best": null,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        1674,
+        3270
+      ],
+      "pc": 2
+    },
+    {
+      "best": null,
+      "gc": 1,
+      "hc": 1,
+      "kind": "PSS",
+      "out": [
+        16092,
+        1674,
+        3377
+      ],
+      "pc": 2
+    }
+  ],
+  "instance": "/dev/shm/q4z17_reflect_sample0_augmented205k.dat",
+  "outgoing_faces": 88760,
+  "output_histogram": null,
+  "output_state": null,
+  "pair_options": 223564,
+  "pps_faces": 50085,
+  "pps_survivors": 76,
+  "pps_tests": 11,
+  "pss_faces": 32130,
+  "pss_survivors": 9,
+  "pss_tests": 5,
+  "scope": "complete PPS/PSS/SSS depth-three oracle in finite face",
+  "self_options": 3749,
+  "source_energy": 46,
+  "source_histogram": {
+    "0": 23,
+    "1": 634,
+    "2": 23
+  },
+  "source_state": "/dev/shm/q4z17_reflect_sample0_augmented205k.steepest1.solution.json",
+  "sss_faces": 6545,
+  "sss_survivors": 0,
+  "sss_tests": 0,
+  "status": "NO_NEGATIVE_MIXED_THREE_EXCHANGE"
+}

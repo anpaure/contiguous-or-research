@@ -1,0 +1,19 @@
+{
+  "all_masks_contained_in_F": true,
+  "allowed_row_count": 208,
+  "every_mask_seen_at_exactly_its_ten_target_rows": true,
+  "frozen_pair_masks": 7919,
+  "genuinely_new_pair_masks": 2087,
+  "instance_pair_masks": 277960,
+  "literal_witness_replays": 112153,
+  "new_union_exactly_subtracts_frozen_instance": true,
+  "new_union_literal_witnesses_replayed": 2087,
+  "per_target_record_sum": 100060,
+  "scope": "independent literal and tenfold replay of complete owner-only F208 atlas",
+  "status": "PASS",
+  "target_catalogues": 208,
+  "tenfold_membership_histogram": {
+    "10": 10006
+  },
+  "unique_pair_masks": 10006
+}

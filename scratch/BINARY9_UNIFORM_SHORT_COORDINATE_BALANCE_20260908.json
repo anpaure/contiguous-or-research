@@ -1,0 +1,1765 @@
+{
+  "host": "arboghast",
+  "scope": "Necessary balance only: all four old shorts have z=1; z is absorbed into each displayed left shore; no row orders searched.",
+  "base_rows": [
+    [
+      "0461",
+      "5723"
+    ],
+    [
+      "0473",
+      "2651"
+    ],
+    [
+      "0674",
+      "3152"
+    ],
+    [
+      "0726",
+      "1435"
+    ],
+    [
+      "1507",
+      "4263"
+    ],
+    [
+      "1605",
+      "7432"
+    ],
+    [
+      "2104",
+      "6375"
+    ],
+    [
+      "2150",
+      "7463"
+    ],
+    [
+      "3206",
+      "7154"
+    ],
+    [
+      "3210",
+      "4567"
+    ],
+    [
+      "3617",
+      "5204"
+    ],
+    [
+      "4302",
+      "6157"
+    ],
+    [
+      "5034",
+      "6721"
+    ],
+    [
+      "5426",
+      "7301"
+    ]
+  ],
+  "old_longer_varying_right_shore_masks": [
+    172,
+    102,
+    46,
+    58,
+    92,
+    156,
+    232,
+    216,
+    178,
+    240,
+    53,
+    226,
+    198,
+    139
+  ],
+  "full_owners": 14,
+  "roots_per_owner": 5,
+  "eligible_quartets_per_owner_root": 715,
+  "counts_by_owner_then_root": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0
+    ]
+  ],
+  "total_surviving_owner_root_quartets": 6,
+  "cases": [
+    {
+      "full_owner": 0,
+      "root": 0,
+      "middle_path": [
+        172,
+        165,
+        177,
+        113,
+        83
+      ],
+      "target_coordinate_counts": [
+        4,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 0,
+      "root": 1,
+      "middle_path": [
+        172,
+        165,
+        177,
+        113,
+        83
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 0,
+      "root": 2,
+      "middle_path": [
+        172,
+        165,
+        177,
+        113,
+        83
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 0,
+      "root": 3,
+      "middle_path": [
+        172,
+        165,
+        177,
+        113,
+        83
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 0,
+      "root": 4,
+      "middle_path": [
+        172,
+        165,
+        177,
+        113,
+        83
+      ],
+      "target_coordinate_counts": [
+        3,
+        0,
+        2,
+        1,
+        2,
+        4,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 1,
+      "root": 0,
+      "middle_path": [
+        102,
+        101,
+        85,
+        149,
+        153
+      ],
+      "target_coordinate_counts": [
+        4,
+        0,
+        3,
+        1,
+        3,
+        1,
+        2,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 1,
+      "root": 1,
+      "middle_path": [
+        102,
+        101,
+        85,
+        149,
+        153
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        2,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 1,
+      "root": 2,
+      "middle_path": [
+        102,
+        101,
+        85,
+        149,
+        153
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 1,
+      "root": 3,
+      "middle_path": [
+        102,
+        101,
+        85,
+        149,
+        153
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        3,
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 1,
+      "root": 4,
+      "middle_path": [
+        102,
+        101,
+        85,
+        149,
+        153
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        4,
+        0,
+        2,
+        2,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 2,
+      "root": 0,
+      "middle_path": [
+        46,
+        43,
+        75,
+        201,
+        209
+      ],
+      "target_coordinate_counts": [
+        4,
+        2,
+        0,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 2,
+      "root": 1,
+      "middle_path": [
+        46,
+        43,
+        75,
+        201,
+        209
+      ],
+      "target_coordinate_counts": [
+        3,
+        2,
+        1,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 2,
+      "root": 2,
+      "middle_path": [
+        46,
+        43,
+        75,
+        201,
+        209
+      ],
+      "target_coordinate_counts": [
+        3,
+        2,
+        1,
+        3,
+        1,
+        2,
+        2,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 2,
+      "root": 3,
+      "middle_path": [
+        46,
+        43,
+        75,
+        201,
+        209
+      ],
+      "target_coordinate_counts": [
+        3,
+        3,
+        1,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 2,
+      "root": 4,
+      "middle_path": [
+        46,
+        43,
+        75,
+        201,
+        209
+      ],
+      "target_coordinate_counts": [
+        3,
+        3,
+        1,
+        4,
+        0,
+        2,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 3,
+      "root": 0,
+      "middle_path": [
+        58,
+        27,
+        147,
+        135,
+        197
+      ],
+      "target_coordinate_counts": [
+        4,
+        3,
+        2,
+        1,
+        2,
+        0,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 3,
+      "root": 1,
+      "middle_path": [
+        58,
+        27,
+        147,
+        135,
+        197
+      ],
+      "target_coordinate_counts": [
+        3,
+        3,
+        2,
+        1,
+        2,
+        1,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 3,
+      "root": 2,
+      "middle_path": [
+        58,
+        27,
+        147,
+        135,
+        197
+      ],
+      "target_coordinate_counts": [
+        3,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 3,
+      "root": 3,
+      "middle_path": [
+        58,
+        27,
+        147,
+        135,
+        197
+      ],
+      "target_coordinate_counts": [
+        3,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 3,
+      "root": 4,
+      "middle_path": [
+        58,
+        27,
+        147,
+        135,
+        197
+      ],
+      "target_coordinate_counts": [
+        3,
+        4,
+        1,
+        2,
+        3,
+        1,
+        0,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 4,
+      "root": 0,
+      "middle_path": [
+        92,
+        86,
+        54,
+        51,
+        163
+      ],
+      "target_coordinate_counts": [
+        2,
+        4,
+        2,
+        0,
+        3,
+        3,
+        1,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 4,
+      "root": 1,
+      "middle_path": [
+        92,
+        86,
+        54,
+        51,
+        163
+      ],
+      "target_coordinate_counts": [
+        2,
+        3,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 4,
+      "root": 2,
+      "middle_path": [
+        92,
+        86,
+        54,
+        51,
+        163
+      ],
+      "target_coordinate_counts": [
+        2,
+        3,
+        2,
+        1,
+        3,
+        2,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 4,
+      "root": 3,
+      "middle_path": [
+        92,
+        86,
+        54,
+        51,
+        163
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        3,
+        1,
+        3,
+        2,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 4,
+      "root": 4,
+      "middle_path": [
+        92,
+        86,
+        54,
+        51,
+        163
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        3,
+        1,
+        4,
+        2,
+        2,
+        0
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 5,
+      "root": 0,
+      "middle_path": [
+        156,
+        154,
+        210,
+        195,
+        99
+      ],
+      "target_coordinate_counts": [
+        2,
+        4,
+        0,
+        1,
+        2,
+        1,
+        3,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 5,
+      "root": 1,
+      "middle_path": [
+        156,
+        154,
+        210,
+        195,
+        99
+      ],
+      "target_coordinate_counts": [
+        2,
+        3,
+        1,
+        1,
+        2,
+        1,
+        3,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 5,
+      "root": 2,
+      "middle_path": [
+        156,
+        154,
+        210,
+        195,
+        99
+      ],
+      "target_coordinate_counts": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 5,
+      "root": 3,
+      "middle_path": [
+        156,
+        154,
+        210,
+        195,
+        99
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 5,
+      "root": 4,
+      "middle_path": [
+        156,
+        154,
+        210,
+        195,
+        99
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 6,
+      "root": 0,
+      "middle_path": [
+        232,
+        204,
+        78,
+        71,
+        23
+      ],
+      "target_coordinate_counts": [
+        2,
+        3,
+        4,
+        2,
+        1,
+        0,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 6,
+      "root": 1,
+      "middle_path": [
+        232,
+        204,
+        78,
+        71,
+        23
+      ],
+      "target_coordinate_counts": [
+        2,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 6,
+      "root": 2,
+      "middle_path": [
+        232,
+        204,
+        78,
+        71,
+        23
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        3,
+        2,
+        1,
+        1,
+        3,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 6,
+      "root": 3,
+      "middle_path": [
+        232,
+        204,
+        78,
+        71,
+        23
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 6,
+      "root": 4,
+      "middle_path": [
+        232,
+        204,
+        78,
+        71,
+        23
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        3,
+        3,
+        0,
+        1,
+        4,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 7,
+      "root": 0,
+      "middle_path": [
+        216,
+        212,
+        150,
+        166,
+        39
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        4,
+        0,
+        2,
+        2,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 7,
+      "root": 1,
+      "middle_path": [
+        216,
+        212,
+        150,
+        166,
+        39
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 7,
+      "root": 2,
+      "middle_path": [
+        216,
+        212,
+        150,
+        166,
+        39
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3
+      ],
+      "surviving_quartets": [
+        [
+          5,
+          10,
+          11,
+          12
+        ]
+      ]
+    },
+    {
+      "full_owner": 7,
+      "root": 3,
+      "middle_path": [
+        216,
+        212,
+        150,
+        166,
+        39
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        3,
+        1,
+        3,
+        1,
+        2,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 7,
+      "root": 4,
+      "middle_path": [
+        216,
+        212,
+        150,
+        166,
+        39
+      ],
+      "target_coordinate_counts": [
+        0,
+        2,
+        3,
+        1,
+        3,
+        1,
+        2,
+        4
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 8,
+      "root": 0,
+      "middle_path": [
+        178,
+        170,
+        142,
+        141,
+        77
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        3,
+        4,
+        0,
+        1,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 8,
+      "root": 1,
+      "middle_path": [
+        178,
+        170,
+        142,
+        141,
+        77
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 8,
+      "root": 2,
+      "middle_path": [
+        178,
+        170,
+        142,
+        141,
+        77
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 8,
+      "root": 3,
+      "middle_path": [
+        178,
+        170,
+        142,
+        141,
+        77
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        2,
+        3,
+        1,
+        2,
+        1,
+        3
+      ],
+      "surviving_quartets": [
+        [
+          0,
+          3,
+          12,
+          13
+        ],
+        [
+          2,
+          5,
+          11,
+          13
+        ]
+      ]
+    },
+    {
+      "full_owner": 8,
+      "root": 4,
+      "middle_path": [
+        178,
+        170,
+        142,
+        141,
+        77
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        2,
+        3,
+        1,
+        2,
+        0,
+        4
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 9,
+      "root": 0,
+      "middle_path": [
+        240,
+        120,
+        60,
+        30,
+        15
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 9,
+      "root": 1,
+      "middle_path": [
+        240,
+        120,
+        60,
+        30,
+        15
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 9,
+      "root": 2,
+      "middle_path": [
+        240,
+        120,
+        60,
+        30,
+        15
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 9,
+      "root": 3,
+      "middle_path": [
+        240,
+        120,
+        60,
+        30,
+        15
+      ],
+      "target_coordinate_counts": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "surviving_quartets": [
+        [
+          3,
+          4,
+          6,
+          10
+        ]
+      ]
+    },
+    {
+      "full_owner": 9,
+      "root": 4,
+      "middle_path": [
+        240,
+        120,
+        60,
+        30,
+        15
+      ],
+      "target_coordinate_counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 10,
+      "root": 0,
+      "middle_path": [
+        53,
+        45,
+        108,
+        106,
+        202
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        2,
+        4,
+        0,
+        3,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 10,
+      "root": 1,
+      "middle_path": [
+        53,
+        45,
+        108,
+        106,
+        202
+      ],
+      "target_coordinate_counts": [
+        1,
+        2,
+        2,
+        3,
+        1,
+        3,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 10,
+      "root": 2,
+      "middle_path": [
+        53,
+        45,
+        108,
+        106,
+        202
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 10,
+      "root": 3,
+      "middle_path": [
+        53,
+        45,
+        108,
+        106,
+        202
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        2,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 10,
+      "root": 4,
+      "middle_path": [
+        53,
+        45,
+        108,
+        106,
+        202
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        3,
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 11,
+      "root": 0,
+      "middle_path": [
+        226,
+        114,
+        90,
+        89,
+        29
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        1,
+        3,
+        4,
+        1,
+        3,
+        0
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 11,
+      "root": 1,
+      "middle_path": [
+        226,
+        114,
+        90,
+        89,
+        29
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 11,
+      "root": 2,
+      "middle_path": [
+        226,
+        114,
+        90,
+        89,
+        29
+      ],
+      "target_coordinate_counts": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 11,
+      "root": 3,
+      "middle_path": [
+        226,
+        114,
+        90,
+        89,
+        29
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 11,
+      "root": 4,
+      "middle_path": [
+        226,
+        114,
+        90,
+        89,
+        29
+      ],
+      "target_coordinate_counts": [
+        1,
+        3,
+        0,
+        2,
+        3,
+        2,
+        4,
+        1
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 12,
+      "root": 0,
+      "middle_path": [
+        198,
+        228,
+        225,
+        105,
+        57
+      ],
+      "target_coordinate_counts": [
+        3,
+        0,
+        1,
+        2,
+        1,
+        4,
+        3,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 12,
+      "root": 1,
+      "middle_path": [
+        198,
+        228,
+        225,
+        105,
+        57
+      ],
+      "target_coordinate_counts": [
+        3,
+        1,
+        1,
+        2,
+        1,
+        3,
+        3,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 12,
+      "root": 2,
+      "middle_path": [
+        198,
+        228,
+        225,
+        105,
+        57
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 12,
+      "root": 3,
+      "middle_path": [
+        198,
+        228,
+        225,
+        105,
+        57
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        3,
+        3,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 12,
+      "root": 4,
+      "middle_path": [
+        198,
+        228,
+        225,
+        105,
+        57
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        2,
+        1,
+        0,
+        3,
+        4,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 13,
+      "root": 0,
+      "middle_path": [
+        139,
+        169,
+        184,
+        180,
+        116
+      ],
+      "target_coordinate_counts": [
+        1,
+        0,
+        2,
+        2,
+        3,
+        4,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 13,
+      "root": 1,
+      "middle_path": [
+        139,
+        169,
+        184,
+        180,
+        116
+      ],
+      "target_coordinate_counts": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        3
+      ],
+      "surviving_quartets": [
+        [
+          0,
+          7,
+          8,
+          10
+        ],
+        [
+          5,
+          6,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "full_owner": 13,
+      "root": 2,
+      "middle_path": [
+        139,
+        169,
+        184,
+        180,
+        116
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 13,
+      "root": 3,
+      "middle_path": [
+        139,
+        169,
+        184,
+        180,
+        116
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        1,
+        3,
+        2,
+        3,
+        1,
+        3
+      ],
+      "surviving_quartets": []
+    },
+    {
+      "full_owner": 13,
+      "root": 4,
+      "middle_path": [
+        139,
+        169,
+        184,
+        180,
+        116
+      ],
+      "target_coordinate_counts": [
+        2,
+        1,
+        1,
+        3,
+        2,
+        3,
+        0,
+        4
+      ],
+      "surviving_quartets": []
+    }
+  ],
+  "elapsed_seconds": 0.004713793750852346
+}

@@ -12,6 +12,13 @@ No mathematical computation was used in this PBBS proof. The manuscript
 was recorded in MASTER_HANDOFF.md, Section 9.2, on 2026-09-08 as a proposed
 proof [P], retaining the review status above.
 
+**Current publication note (2026-09-09):** exact finite equality is now
+verified through22; see the [current solution table](answers/README.md).
+The [asymptotic bounds ledger](ASYMPTOTIC_BOUNDS.md) records the later,
+stronger height-adaptive quantitative results and their separate premises.
+This manuscript and the preserved review package retain their original
+proposed-proof status.
+
 ## Theorem
 
 Let nu(n) be the minimum length of a word of nonempty subsets of [n]
@@ -24,7 +31,15 @@ $$
 $$
 
 This holds in every sufficiently large dimension and covers every rank.
-No explicit convergence rate is asserted.
+No explicit convergence rate is asserted by this original argument.
+Subsequent internally reviewed quantitative refinements, with explicit
+constants and thresholds, are recorded in
+[the numerical-rate extension](COEFFICIENT_ONE_EXPLICIT_RATE_20260908.md)
+and [the terminal-rate extension](COEFFICIENT_ONE_TERMINAL_RATE_20260908.md).
+Another refinement of this original route is
+[the sharp-tail rate](COEFFICIENT_ONE_SHARP_TAIL_RATE_20260908.md).
+For the strongest current rate across all recorded routes, use the
+[consolidated bounds ledger](ASYMPTOTIC_BOUNDS.md).
 
 The new argument proves abundant overlap for ALL Gaussian-short PBBS
 repair intervals. It combines growing-depth stationary flux with an

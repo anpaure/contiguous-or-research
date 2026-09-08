@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ONE_SUPPLIED_CUT_ALL_255_TARGETS",
+  "removed_edge_colour": 384086,
+  "survival_reasons": {
+    "another_complete_compatible_run": 25,
+    "crossing_compatible_run_incomplete": 229,
+    "unique_run_left_extremal_witness": 1
+  },
+  "totals": {
+    "compatible_runs": 436900,
+    "complete_compatible_runs": 12840,
+    "minimal_witnesses": 20827,
+    "retained_minimal_witnesses": 20807
+  },
+  "failed_targets": [],
+  "elapsed_seconds": 4.0228988863527775
+}

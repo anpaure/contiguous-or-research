@@ -1,0 +1,403 @@
+{
+  "status": "PASS",
+  "word17_sha256": "7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9",
+  "canonical_sha256": "fed20c313c639740b089428c1d2b8b572fc7138de4c11c2203be554e4acfa2a3",
+  "scope": "One specified literal two-cycle carrier versus one specified canonical PBBS carrier. No construction search or trial switches.",
+  "actual_component_lengths": [
+    85,
+    24225
+  ],
+  "canonical_components": 146,
+  "lower_labels": 24310,
+  "upper_labels": 24310,
+  "shared_unoriented_incidences_per_lower": [
+    [
+      1,
+      17578
+    ],
+    [
+      2,
+      6732
+    ]
+  ],
+  "total_common_middle_incidences": 31042,
+  "changed_incidence_lower_labels_by_native_height": [
+    [
+      1,
+      17
+    ],
+    [
+      2,
+      1241
+    ],
+    [
+      3,
+      5831
+    ],
+    [
+      4,
+      6018
+    ],
+    [
+      5,
+      3247
+    ],
+    [
+      6,
+      1003
+    ],
+    [
+      7,
+      204
+    ],
+    [
+      8,
+      17
+    ]
+  ],
+  "unchanged_native_forward_successors": 6732,
+  "actual_temporal_violations": 0,
+  "native_temporal_violations": 119,
+  "native_temporal_violations_by_height": [
+    [
+      2,
+      119
+    ]
+  ],
+  "matching_differences": [
+    {
+      "native_side": "outgoing",
+      "actual_side": "outgoing",
+      "unchanged": 24310,
+      "changed": 0,
+      "nontrivial_circuit_count": 0,
+      "circuit_lengths": [],
+      "circuit_shapes": [],
+      "artifact": "alternating_circuits_native_outgoing_actual_outgoing.json"
+    },
+    {
+      "native_side": "outgoing",
+      "actual_side": "incoming",
+      "unchanged": 0,
+      "changed": 24310,
+      "nontrivial_circuit_count": 2,
+      "circuit_lengths": [
+        [
+          85,
+          1
+        ],
+        [
+          24225,
+          1
+        ]
+      ],
+      "circuit_shapes": [
+        {
+          "length": 85,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        },
+        {
+          "length": 24225,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        }
+      ],
+      "artifact": "alternating_circuits_native_outgoing_actual_incoming.json"
+    },
+    {
+      "native_side": "incoming",
+      "actual_side": "outgoing",
+      "unchanged": 0,
+      "changed": 24310,
+      "nontrivial_circuit_count": 146,
+      "circuit_lengths": [
+        [
+          17,
+          6
+        ],
+        [
+          51,
+          10
+        ],
+        [
+          85,
+          44
+        ],
+        [
+          119,
+          34
+        ],
+        [
+          153,
+          24
+        ],
+        [
+          187,
+          6
+        ],
+        [
+          221,
+          1
+        ],
+        [
+          357,
+          12
+        ],
+        [
+          459,
+          2
+        ],
+        [
+          561,
+          1
+        ],
+        [
+          765,
+          5
+        ],
+        [
+          1309,
+          1
+        ]
+      ],
+      "circuit_shapes": [
+        {
+          "length": 17,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 6
+        },
+        {
+          "length": 51,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 10
+        },
+        {
+          "length": 85,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 44
+        },
+        {
+          "length": 119,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 34
+        },
+        {
+          "length": 153,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 24
+        },
+        {
+          "length": 187,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 6
+        },
+        {
+          "length": 221,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        },
+        {
+          "length": 357,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 12
+        },
+        {
+          "length": 459,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 2
+        },
+        {
+          "length": 561,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        },
+        {
+          "length": 765,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 5
+        },
+        {
+          "length": 1309,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        }
+      ],
+      "artifact": "alternating_circuits_native_incoming_actual_outgoing.json"
+    },
+    {
+      "native_side": "incoming",
+      "actual_side": "incoming",
+      "unchanged": 6732,
+      "changed": 17578,
+      "nontrivial_circuit_count": 360,
+      "circuit_lengths": [
+        [
+          3,
+          289
+        ],
+        [
+          5,
+          68
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          170,
+          1
+        ],
+        [
+          16167,
+          1
+        ]
+      ],
+      "circuit_shapes": [
+        {
+          "length": 3,
+          "common_core_rank": 7,
+          "active_coordinate_count": 3,
+          "count": 289
+        },
+        {
+          "length": 5,
+          "common_core_rank": 6,
+          "active_coordinate_count": 5,
+          "count": 68
+        },
+        {
+          "length": 34,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        },
+        {
+          "length": 170,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        },
+        {
+          "length": 16167,
+          "common_core_rank": 0,
+          "active_coordinate_count": 17,
+          "count": 1
+        }
+      ],
+      "artifact": "alternating_circuits_native_incoming_actual_incoming.json"
+    }
+  ],
+  "rotation_equivariance": {
+    "native": {
+      "successor": {
+        "violations": 0,
+        "first_examples": []
+      },
+      "outgoing": {
+        "violations": 0,
+        "first_examples": []
+      },
+      "incoming": {
+        "violations": 0,
+        "first_examples": []
+      }
+    },
+    "actual": {
+      "successor": {
+        "violations": 0,
+        "first_examples": []
+      },
+      "outgoing": {
+        "violations": 0,
+        "first_examples": []
+      },
+      "incoming": {
+        "violations": 0,
+        "first_examples": []
+      },
+      "letter": {
+        "violations": 0,
+        "first_examples": []
+      },
+      "envelope": {
+        "violations": 0,
+        "first_examples": []
+      },
+      "pins": {
+        "violations": 0,
+        "first_examples": []
+      }
+    }
+  },
+  "quotient_row_count": 1430,
+  "quotient_scope": "Rows determine the full object only for fields whose equivariance violation count is zero.",
+  "lower_compiler": {
+    "literal_rank_occurrences": [
+      [
+        1,
+        17
+      ],
+      [
+        2,
+        136
+      ],
+      [
+        3,
+        680
+      ],
+      [
+        4,
+        2380
+      ],
+      [
+        5,
+        6188
+      ],
+      [
+        6,
+        14909
+      ]
+    ],
+    "literal_distinct_targets": 21777,
+    "envelope_rank_occurrences": [
+      [
+        6,
+        24310
+      ]
+    ],
+    "distinct_rank6_envelopes": 12376,
+    "pin_rank_occurrences": [
+      [
+        1,
+        4998
+      ],
+      [
+        2,
+        19312
+      ]
+    ],
+    "pair_preservation_checks": 24310
+  },
+  "resource_caps": {
+    "cpu_seconds": 30,
+    "wall_seconds": 45,
+    "address_space_bytes": 1073741824
+  },
+  "host": "arboghast",
+  "elapsed_seconds": 0.5301446770317852
+}

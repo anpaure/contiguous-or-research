@@ -1,0 +1,169 @@
+{
+  "host": "arboghast",
+  "scope": "Uniform-z1 shorts; either displayed shore may absorb z separately in each selected owner. Necessary complement-owner, coordinate-balance and root-endpoint tests only.",
+  "status": "complete",
+  "owner_counts": [
+    {
+      "full_owner": 0,
+      "required_complement_owners": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 1,
+      "required_complement_owners": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 2,
+      "required_complement_owners": [
+        7,
+        13
+      ],
+      "quartets_containing_required_owners": 55,
+      "shore_choices_with_balance": 1,
+      "surviving_sources": 1
+    },
+    {
+      "full_owner": 3,
+      "required_complement_owners": [
+        1,
+        9,
+        10,
+        12
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 4,
+      "required_complement_owners": [
+        0,
+        6,
+        13
+      ],
+      "quartets_containing_required_owners": 10,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 5,
+      "required_complement_owners": [
+        9,
+        10,
+        12
+      ],
+      "quartets_containing_required_owners": 10,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 6,
+      "required_complement_owners": [
+        0,
+        3,
+        13
+      ],
+      "quartets_containing_required_owners": 10,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 7,
+      "required_complement_owners": [
+        2,
+        4,
+        11,
+        12
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 8,
+      "required_complement_owners": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 9,
+      "required_complement_owners": [
+        2,
+        3,
+        6,
+        12
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 10,
+      "required_complement_owners": [
+        1,
+        5
+      ],
+      "quartets_containing_required_owners": 55,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 11,
+      "required_complement_owners": [
+        0,
+        3,
+        8
+      ],
+      "quartets_containing_required_owners": 10,
+      "shore_choices_with_balance": 2,
+      "surviving_sources": 2
+    },
+    {
+      "full_owner": 12,
+      "required_complement_owners": [
+        3,
+        4,
+        7,
+        11
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    },
+    {
+      "full_owner": 13,
+      "required_complement_owners": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "quartets_containing_required_owners": 1,
+      "shore_choices_with_balance": 0,
+      "surviving_sources": 0
+    }
+  ],
+  "surviving_source_count": 3,
+  "elapsed_seconds": 0.006112122908234596
+}

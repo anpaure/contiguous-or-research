@@ -1,0 +1,47 @@
+{
+  "cases": [
+    {
+      "best_exchange": {
+        "add": [
+          157012,
+          161711
+        ],
+        "delta": -2,
+        "remove": [
+          2186,
+          16754
+        ]
+      },
+      "exact_incoming_pair_tests": 359,
+      "pair_options": 166614,
+      "report": "scratch/audit_q4_k17_z17_augmented145k_exact_two_pair_exchange_20260814.h100.json",
+      "source_energy": 62,
+      "status": "PASS",
+      "surviving_faces": 45,
+      "threshold_survivor_sum": 120
+    },
+    {
+      "best_exchange": {
+        "add": [
+          152345,
+          174138
+        ],
+        "delta": 0,
+        "remove": [
+          5703,
+          152016
+        ]
+      },
+      "exact_incoming_pair_tests": 55,
+      "pair_options": 174462,
+      "report": "scratch/audit_q4_k17_z17_augmented155k_exact_two_pair_20260814.h100.json",
+      "source_energy": 60,
+      "status": "NO_NEGATIVE_TWO_PAIR_EXCHANGE",
+      "surviving_faces": 41,
+      "threshold_survivor_sum": 70
+    }
+  ],
+  "method": "independent full replay of all 1431 face minima, exact strict thresholds, every surviving incoming pair, and output state",
+  "scope": "finite pair pools only; self lifts held fixed",
+  "status": "PASS"
+}

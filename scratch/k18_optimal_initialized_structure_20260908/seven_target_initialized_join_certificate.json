@@ -1,0 +1,117 @@
+{
+  "unpermuted_six_letters": [
+    10771,
+    8739,
+    26656,
+    19106,
+    19076,
+    33444
+  ],
+  "join_holes": [
+    27298,
+    27299,
+    27302,
+    27303,
+    27315,
+    27319,
+    60070
+  ],
+  "witnesses": [
+    {
+      "old_mask": 27298,
+      "old_rank": 7,
+      "local_one_based_interval": [
+        3,
+        4
+      ],
+      "actual18_target": 156329,
+      "actual18_zero_based_interval": [
+        48537,
+        48538
+      ]
+    },
+    {
+      "old_mask": 27299,
+      "old_rank": 8,
+      "local_one_based_interval": [
+        2,
+        4
+      ],
+      "actual18_target": 156331,
+      "actual18_zero_based_interval": [
+        48536,
+        48538
+      ]
+    },
+    {
+      "old_mask": 27302,
+      "old_rank": 8,
+      "local_one_based_interval": [
+        3,
+        5
+      ],
+      "actual18_target": 156393,
+      "actual18_zero_based_interval": [
+        48537,
+        48539
+      ]
+    },
+    {
+      "old_mask": 27303,
+      "old_rank": 9,
+      "local_one_based_interval": [
+        2,
+        5
+      ],
+      "actual18_target": 156395,
+      "actual18_zero_based_interval": [
+        48536,
+        48539
+      ]
+    },
+    {
+      "old_mask": 27315,
+      "old_rank": 9,
+      "local_one_based_interval": [
+        1,
+        4
+      ],
+      "actual18_target": 157355,
+      "actual18_zero_based_interval": [
+        48535,
+        48538
+      ]
+    },
+    {
+      "old_mask": 27319,
+      "old_rank": 10,
+      "local_one_based_interval": [
+        1,
+        5
+      ],
+      "actual18_target": 157419,
+      "actual18_zero_based_interval": [
+        48535,
+        48539
+      ]
+    },
+    {
+      "old_mask": 60070,
+      "old_rank": 9,
+      "local_one_based_interval": [
+        3,
+        6
+      ],
+      "actual18_target": 160489,
+      "actual18_zero_based_interval": [
+        48537,
+        48540
+      ]
+    }
+  ],
+  "long_cyclic_targets": 130748,
+  "short_linear_targets": 633,
+  "separate_union_targets": 131064,
+  "long_forward_intervals": 550409,
+  "short_forward_intervals": 1883
+}
