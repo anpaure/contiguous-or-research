@@ -199,7 +199,7 @@ Current status:
 - **[P]** full-cube coefficient one: proposed proof in 9.2, not promoted
   to a settled [I] theorem by the internal reviews.
 - **[O]** Exact equality in every dimension; the first unsettled case is
-  now \(k=21\), with target \(B(21)=352719\).
+  now \(k=23\), with target \(B(23)=1{,}352{,}082\).
 - **[R], exact construction audit:** every one of the 65,535 lower targets
   has an individual short cap host in the fixed capped PBBS bank. However,
   preserving every native H3 pair while freezing H1/H2 is impossible for
