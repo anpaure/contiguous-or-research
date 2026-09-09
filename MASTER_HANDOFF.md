@@ -2359,7 +2359,7 @@ the all-pairing orbit; its maximum normalized pair codegree is
 \((b^2-5)/(2b^2(b-1))\). The growing-rank correlated selector controlling all
 nonzero band offsets is not proved.
 
-### Gate D [I]+[W]: finite \(k=17,18,19,20\) closed
+### Gate D [I]+[W]: finite \(k=17,18,19,20,21,22\) closed
 
 The supplied optimal word and independent complete replay establish
 \(\nu(17)=24313\); see 9.26. Its two-block join retains all internal
@@ -2367,7 +2367,9 @@ witnesses and supplies exactly five missing targets across the boundary.
 The newly supplied optimal18 word also passes complete independent
 verification and attains48623; see9.27. The supplied19/20 words now also
 pass independent complete verification and attain92381/184759; see9.31.
-The next unresolved finite case is21, with endpoint target352719.
+The supplied21/22 words attain352719/705435 after independent complete
+verification; see9.39. The next unresolved finite case is23, with endpoint
+target1352082.
 Section 3.10 supplies an intermediate-bound repair criterion; 3.11 closes
 prescribed colour extension and packet-owner avoidance, but leaves
 degree-two acyclicity open. Section 3.12 is only a necessary
