@@ -1,5 +1,13 @@
 # Universal contiguous-subarray OR arrays: authoritative handoff
 
+**Public-document scope.** This handoff contains the consolidated results and
+their stated proof hypotheses. Appendix J contains the conditional harmonic
+rate, its explicit onset, the uniform-envelope derivation, and the numerical
+certificate record needed by the asymptotic ledger. References marked
+`archived research: ...` identify provenance in the local research archive;
+those files are not part of this public checkout and are not additional
+unspoken premises. Retained public files use ordinary relative links.
+
 **Mathematical state and research record:** 2026-09-09. This document preserves
 the self-contained finite and conditional proofs and records the September 8
 coefficient improvements and proposed PBBS proof in Section 9. The active
@@ -44,7 +52,7 @@ at the exact19 target. These are constructive interfaces and necessary
 conditions; they do not establish the all-dimensional equality objective.
 The current
 investigation is tracked in
-[the exact-goal checkpoint](scratch/EXACT_B_GOAL_CHECKPOINT_20260909.md).
+the exact-goal checkpoint (`archived research: scratch/EXACT_B_GOAL_CHECKPOINT_20260909.md`).
 
 Tags mean **[I]** proved here, **[C]** proved here from the displayed
 hypotheses, **[O]** open, and **[W]** an external finite word body whose
@@ -96,14 +104,14 @@ Current status:
   1,048,575 targets; a separate range tree checks every saved witness.
   The19 cycle and its three-letter opening pass, and the20 word
   regenerates byte for byte by the periodic-core lift. Section9.31 and
-  [the full exact record](K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md) supersede
-  [the numerical comparison and certificates](FINITE_BOUNDS_K18_K19_K20_20260908.md).
+  the full exact record (`archived research: K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md`) supersede
+  the numerical comparison and certificates (`archived research: FINITE_BOUNDS_K18_K19_K20_20260908.md`).
 - **[I]+[W], exact dimensions21–22:** \(\mu(21)=352716\),
   \(\nu(21)=B(21)=352719\), and \(\nu(22)=B(22)=705435\).
   Both additive gaps are zero. Independent forward and suffix enumerations
   cover every target; every saved suffix witness passes a separate range-OR
   query. The21 cyclic core and safe opening pass, and the22 lift regenerates
-  byte for byte. [Complete record](K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md).
+  byte for byte. Complete record (`archived research: K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md`).
 - **[R], strongest current construction rate:** reciprocal-period charging
   and the sharp reverse-depth product give
   \(\nu(k)/W(k)\le1+\exp[-(93/100)(k(\log k)^2)^{1/5}]\)
@@ -197,16 +205,16 @@ Current status:
   preserving every native H3 pair while freezing H1/H2 is impossible for
   a full cover: the exact low-target assignment maximum is 8,245 of 9,401.
   A 1,768-target Hall family has only 612 usable slots. The
-  [host census](scratch/K17_CAPPED_PBBS_ALL_LOWER_TARGETS_INDIVIDUAL_HOST_CERTIFICATE_20260908.md)
-  and [independently replayed Hall certificate](scratch/K17_CAPPED_LOW_TARGET_FLOW_HALL_OBSTRUCTION_20260908.md)
+  host census (`archived research: scratch/K17_CAPPED_PBBS_ALL_LOWER_TARGETS_INDIVIDUAL_HOST_CERTIFICATE_20260908.md`)
+  and independently replayed Hall certificate (`archived research: scratch/K17_CAPPED_LOW_TARGET_FLOW_HALL_OBSTRUCTION_20260908.md`)
   show that the next construction must change this constraint. They do
   not rule out general short-interval caps or unrestricted exact equality.
 - **[R], capped-bank follow-up:** allowing internal pairs to change
   while keeping full anchors at0,3,6,... gives individual hosts for
   every rank1–7target, but the exact simultaneous menu is impossible:
   4,441forced rank7placements and eight further implications leave
-  target2103 without a host. The [replayed finite certificate](scratch/K17_CANONICAL_W3_ANCHOR_EIGHT_STEP_PROPAGATION_OBSTRUCTION_20260908.md)
-  excludes this one anchor frame. A separate [directed-context port census](scratch/K17_CAPPED_RANK6_CONTEXT_PORT_CENSUS_20260908.md)
+  target2103 without a host. The replayed finite certificate (`archived research: scratch/K17_CANONICAL_W3_ANCHOR_EIGHT_STEP_PROPAGATION_OBSTRUCTION_20260908.md`)
+  excludes this one anchor frame. A separate directed-context port census (`archived research: scratch/K17_CAPPED_RANK6_CONTEXT_PORT_CENSUS_20260908.md`)
   found no cyclic fusion among74,562prescribed one-coordinate caps.
   Neither result excludes more general changes of states or sources.
 - **[R]** Exact-construction progress is recorded in 9.4: a new 306-owner
@@ -2547,14 +2555,14 @@ word recipe; the new proposed theorem concerns its asymptotic length.
 Trying all admissible integer depths and taking the shortest output avoids
 needing an explicit slow-diagonal threshold. An executable implementation
 of that recipe has not been delivered in this continuation. The
-[construction companion](/Users/amir.nuriyev/Documents/problem/COEFFICIENT_ONE_CONSTRUCTION_20260908.md)
+[construction companion](COEFFICIENT_ONE_CONSTRUCTION_20260908.md)
 records the finite steps. The current verified actual word at \(k=17\) is
-[the optimal 24,313-letter word](/Users/amir.nuriyev/Documents/problem/answers/k17_optimal24313.word),
+[the optimal 24,313-letter word](answers/k17_optimal24313.word),
 with exact equality \(\nu(17)=B(17)=24,313\). Its complete
 literal verification is recorded in 9.26; the independently implemented
 height-adaptive recipe is in 9.13. Both are separate from the earlier
 logarithmic compiler.
-The [remote finite-ledger check](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_K17_FINITE_COMPILER_LEDGER_20260908.md)
+The remote finite-ledger check (`archived research: scratch/PBBS_K17_FINITE_COMPILER_LEDGER_20260908.md`)
 shows that the earlier fixed-aperture PBBS ledger could not certify an improvement
 at that dimension; it does not rule out better words.
 
@@ -2631,15 +2639,15 @@ read or rerun. The general geometry was checked by proof.
 
 Detailed records:
 
-- [Received proof and complete audit record](/Users/amir.nuriyev/Documents/problem/scratch/USER_SELECTIVE_TRUNCATION_PROPOSED_1_177987_20260908.md).
-- [Geometry, padding and literal-word audit](/Users/amir.nuriyev/Documents/problem/scratch/USER_SELECTIVE_TRUNCATION_GEOMETRY_PADDING_COMPILER_AUDIT_20260908.md).
-- [Independent exact mask and numerical verifier; run only on h100](/Users/amir.nuriyev/Documents/problem/scratch/USER_SELECTIVE_TRUNCATION_EXACT_AUDIT_20260908.py).
+- [Received proof and complete audit record](scratch/USER_SELECTIVE_TRUNCATION_PROPOSED_1_177987_20260908.md).
+- [Geometry, padding and literal-word audit](scratch/USER_SELECTIVE_TRUNCATION_GEOMETRY_PADDING_COMPILER_AUDIT_20260908.md).
+- [Independent exact mask and numerical verifier; run only on h100](scratch/USER_SELECTIVE_TRUNCATION_EXACT_AUDIT_20260908.py).
 
 ### 9.2 Proposed PBBS coefficient-one proof [P]
 
 The equation numbers (1)–(15) in this reproduced manuscript are local to 9.2.
 The separate editable source is
-[COEFFICIENT_ONE_PROOF_20260908.md](/Users/amir.nuriyev/Documents/problem/COEFFICIENT_ONE_PROOF_20260908.md).
+[COEFFICIENT_ONE_PROOF_20260908.md](COEFFICIENT_ONE_PROOF_20260908.md).
 
 **Status: proposed proof with AI-agent internal reviews. It has not been
 externally reviewed or formally verified. No gap was found in the current
@@ -2895,10 +2903,10 @@ one middle-rank target is realized there. Hence nu(n)>=W(n), proving(1).
 
 #### Supporting proofs and contribution record
 
-* [Exact stationary core law and flux](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_STATIONARY_CORE_CLOCK_FLUX_AND_RELAXED_DEPTH_ABUNDANCE_20260908.md).
-* [Full growing-depth eligibility and insertion-interface proof](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_COMMON_DEEP_BOUNDARY_ELIGIBILITY_BY_GROWING_DEPTH_FLUX_20260908.md).
-* [Exact actual multipoint renewal and native-partner proof](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_ACTUAL_COMMON_BOUNDARY_SHIFTED_TRIANGLE_RENEWAL_20260908.md).
-* [Complete previously audited literal compiler, tail and parity chain](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_ABUNDANCE_TO_COEFFICIENT_ONE_VERIFIED_COMPILER_CHAIN_20260908.md).
+* Exact stationary core law and flux (`archived research: scratch/PBBS_STATIONARY_CORE_CLOCK_FLUX_AND_RELAXED_DEPTH_ABUNDANCE_20260908.md`).
+* Full growing-depth eligibility and insertion-interface proof (`archived research: scratch/PBBS_COMMON_DEEP_BOUNDARY_ELIGIBILITY_BY_GROWING_DEPTH_FLUX_20260908.md`).
+* Exact actual multipoint renewal and native-partner proof (`archived research: scratch/PBBS_ACTUAL_COMMON_BOUNDARY_SHIFTED_TRIANGLE_RENEWAL_20260908.md`).
+* Complete previously audited literal compiler, tail and parity chain (`archived research: scratch/PBBS_ABUNDANCE_TO_COEFFICIENT_ONE_VERIFIED_COMPILER_CHAIN_20260908.md`).
 
 This consolidated manuscript also passed complete independent reads by
 both direct-route and appendix, with no mathematical correction required.
@@ -2952,14 +2960,14 @@ not itself a near-width almost-cover construction.
 
 The full proof, boundary cases, every-target-dimension passage and
 attribution are in
-[the finite completion audit](/Users/amir.nuriyev/Documents/problem/scratch/USER_FINITE_CYLINDER_COMPLETION_WITHOUT_DIMENSION_FLOOR_20260908.md).
+[the finite completion audit](scratch/USER_FINITE_CYLINDER_COMPLETION_WITHOUT_DIMENSION_FLOOR_20260908.md).
 
 ### 9.4 Exact-equality construction checkpoint [R]/[O]
 
 The active objective is \(\nu(k)=B(k)\) in every dimension. No proof of
 that statement, and no new optimal word beyond dimension 16, is asserted.
 The detailed state and executable records are linked from
-[the exact-goal checkpoint](/Users/amir.nuriyev/Documents/problem/scratch/EXACT_B_GOAL_CHECKPOINT_20260908.md).
+the exact-goal checkpoint (`archived research: scratch/EXACT_B_GOAL_CHECKPOINT_20260908.md`).
 
 **Current finite source component.** The six canonical PBBS components
 containing every positive run of length three have 306 owners altogether.
@@ -2974,22 +2982,22 @@ is nonempty, has minimum letter rank seven, and replays all 306 owners.
 With the other 140 components intact, it retains all 41,225 proper upper
 targets. These are exact finite checks on `h100`, with a complete
 612-option decision certificate in
-[the Johnson-prefix record](/Users/amir.nuriyev/Documents/problem/scratch/K17_PBBS_ALLPORTS_JOHNSON_306_OWNER_PREFIX_20260908.md).
+the Johnson-prefix record (`archived research: scratch/K17_PBBS_ALLPORTS_JOHNSON_306_OWNER_PREFIX_20260908.md`).
 
 This prefix also has an explicit algebraic generalization. In dimension
 \(2r+1\), for every \(r\ge3\), it joins all \(r-2\) canonical
 components containing positive three-runs into a Johnson path with
 \(3(2r+1)(r-2)\) owners and minimum internal positive residence three.
 Its nonempty depth-two source has two more letters. The full seam proof
-is in [the all-dimensional short-run-sector construction](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_ALL_R_SHORT_RUN_SECTOR_JOHNSON_PATH_20260908.md).
+is in the all-dimensional short-run-sector construction (`archived research: scratch/PBBS_ALL_R_SHORT_RUN_SECTOR_JOHNSON_PATH_20260908.md`).
 Full upper-support preservation now has an all-dimensional proof. Every
 target at least three ranks above the lower-owner rank has an untouched
 maximum-height corridor; the next rank has a height-three witness, and
 the immediate-upper cut colors have explicit recaptures. Thus the path
 together with the untouched components covers all upper ranks for every
 \(r\ge3\). See
-[the full upper-preservation proof](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_GLOBAL_CORRIDOR_HEIGHT_AND_SHORT_SECTOR_FULL_UPPER_PRESERVATION_20260908.md)
-and [its independent internal audit](/Users/amir.nuriyev/Documents/problem/scratch/PBBS_SHORT_SECTOR_FULL_UPPER_PRESERVATION_INDEPENDENT_AUDIT_20260908.md).
+the full upper-preservation proof (`archived research: scratch/PBBS_GLOBAL_CORRIDOR_HEIGHT_AND_SHORT_SECTOR_FULL_UPPER_PRESERVATION_20260908.md`)
+and its independent internal audit (`archived research: scratch/PBBS_SHORT_SECTOR_FULL_UPPER_PRESERVATION_INDEPENDENT_AUDIT_20260908.md`).
 All-dimensional facet injectivity and subsequent cycle joins are separate
 requirements; this theorem alone supplies no optimal word.
 
@@ -3000,13 +3008,13 @@ suffix, so at least one must be recreated inside the remaining path.
 Moreover, 59 globally private rank-ten colors must be recovered on new
 adjacencies in that remaining path; the prefix and exceptional cells
 cannot supply them. Both requirements concern the same chronology.
-See [the exact endpoint interface](/Users/amir.nuriyev/Documents/problem/scratch/K17_PBBS_ALLPORTS_JOHNSON_PREFIX_ENDPOINT_INTERFACE_20260908.md).
+See the exact endpoint interface (`archived research: scratch/K17_PBBS_ALLPORTS_JOHNSON_PREFIX_ENDPOINT_INTERFACE_20260908.md`).
 
 The earlier prefix obtained from 17 individually safe cuts per component
 had three non-Johnson seams and is **ruled out for the proposed one-pivot
 schedule**. The exact facet budget permits at most two non-Johnson steps
 and repeated facet labels combined. The new prefix supersedes it;
-[the obstruction proof](/Users/amir.nuriyev/Documents/problem/scratch/K17_PBBS_PREFIX_ONE_PIVOT_NOGO_AND_CONSECUTIVE_START_BUDGET_20260908.md)
+the obstruction proof (`archived research: scratch/K17_PBBS_PREFIX_ONE_PIVOT_NOGO_AND_CONSECUTIVE_START_BUDGET_20260908.md`)
 does not rule out unrestricted exact words.
 
 **Current compatible cycle mergers.** After the mountain C6, four genuine
@@ -3019,8 +3027,8 @@ rank-seven pair and rank-six letter counters. With the unchanged 102
 protected prefix targets, all 19,448 rank-seven targets remain covered;
 all 12,376 rank-six targets occur as letters. These are properties of a
 bank of cyclic sources and one prefix, not a complete linear word.
-See [the 1513-cycle construction and finite certificates](/Users/amir.nuriyev/Documents/problem/scratch/K17_NINE_COMPONENT_1513_FUSION_AND_PARENT_FAMILY_SATURATION_20260908.md)
-and [the final lower-bank audit](/Users/amir.nuriyev/Documents/problem/scratch/K17_LOWER_BANK_FINAL_1513_INCREMENTAL_AUDIT_20260908.md).
+See the 1513-cycle construction and finite certificates (`archived research: scratch/K17_NINE_COMPONENT_1513_FUSION_AND_PARENT_FAMILY_SATURATION_20260908.md`)
+and the final lower-bank audit (`archived research: scratch/K17_LOWER_BANK_FINAL_1513_INCREMENTAL_AUDIT_20260908.md`).
 Every endpoint of the tested 221-parent connector family lies inside this
 1513-owner sector, so that entire family cannot join it to an outside
 component, even through temporary splits. New connectors are needed.
@@ -3041,7 +3049,7 @@ unions, and selected witness lengths follow a subsequence of
 \(1,2,3,4,3,2,1\). Each fixed upper rank has at most six targets absent
 from consecutive unions of the selected middle chronology. These are
 necessary conditions, not an existence proof. The proof and precise scope
-are in [the arbitrary-endpoint audit](/Users/amir.nuriyev/Documents/problem/scratch/ARBITRARY_ENDPOINT_DEFICIT_AND_FULL_WIDTH_BLOCK_INDEPENDENT_AUDIT_20260908.md).
+are in the arbitrary-endpoint audit (`archived research: scratch/ARBITRARY_ENDPOINT_DEFICIT_AND_FULL_WIDTH_BLOCK_INDEPENDENT_AUDIT_20260908.md`).
 
 **Scope of the separate tagged-module route.** Exact fixed-hub incidence
 equations obstruct the tested fixed-width architecture at dimension 19.
@@ -3051,7 +3059,7 @@ chronology cannot achieve length \(B(17)\), even by shrinking letters:
 shrinking can remove a facet occurrence but cannot let its protected
 endpoint serve a different facet. The precise hypotheses and conservative
 opening bounds are in
-[the tagged-module analysis](/Users/amir.nuriyev/Documents/problem/scratch/EXACT_B_TAGGED_MODULE_SECTOR_MOMENTS_AND_LOWER_CAP_BURDEN_20260908.md).
+the tagged-module analysis (`archived research: scratch/EXACT_B_TAGGED_MODULE_SECTOR_MOMENTS_AND_LOWER_CAP_BURDEN_20260908.md`).
 This excludes that frozen chronology, not general tagged sources or
 \(\nu(k)=B(k)\).
 
@@ -3100,7 +3108,7 @@ raw exponent is \(A_0=2^{80}e^{2^{20}}\), the low-height exponent is
 Every aperture is an actual finite compiler candidate, covering all ranks;
 the exact one-coordinate lift supplies the other parity.
 
-[The full numerical derivation and source audits](/Users/amir.nuriyev/Documents/problem/COEFFICIENT_ONE_EXPLICIT_RATE_20260908.md)
+The full numerical derivation and source audits (`archived research: COEFFICIENT_ONE_EXPLICIT_RATE_20260908.md`)
 record all constants, thresholds and construction costs. This extension
 has passed internal mathematical reviews; the inherited finite PBBS
 lemmas retain the manuscript's proposed-proof status. It is not an external
@@ -3131,7 +3139,7 @@ graph. Reusable anchors attain it in exactly one two-edge switch per
 component reduction. This preserves all recency states, their complete
 prefix-target inventory and the letter multiset. If the auxiliary graph
 is connected, the result is one ordinary word with no added letters.
-See [the full gadget and fusion proof](/Users/amir.nuriyev/Documents/problem/scratch/RECENCY_BICLIQUE_AND_COHERENT_CLASS_FUSION_INDEPENDENT_AUDIT_20260908.md).
+See the full gadget and fusion proof (`archived research: scratch/RECENCY_BICLIQUE_AND_COHERENT_CLASS_FUSION_INDEPENDENT_AUDIT_20260908.md`).
 
 The specified ports cannot simply be installed in the current k17 bank.
 Their prefix-rank menus are \(2,6,9,11,17\) and \(5,9,12,17\), omitting
@@ -3141,7 +3149,7 @@ must reach its rank-nine prefix in exactly four recency blocks; neither
 port does. This rules out that direct embedding while keeping the current
 flat owner schedule, including arbitrary caps preserving those windows.
 Boundary or schedule changes require a fresh target-coverage audit.
-[The precise local obstruction](/Users/amir.nuriyev/Documents/problem/scratch/K17_SIXWAY_RECENCY_PORT_OBSTRUCTION_IN_CURRENT_FLAT_BANK_20260908.md)
+The precise local obstruction (`archived research: scratch/K17_SIXWAY_RECENCY_PORT_OBSTRUCTION_IN_CURRENT_FLAT_BANK_20260908.md`)
 does not rule out the fusion theorem or unrestricted exact constructions.
 
 ### 9.7 Stronger numerical rate by terminal charging [P]
@@ -3170,7 +3178,7 @@ Thus **C=1**, with an improved exponent and an explicit threshold. These
 very conservative numbers still give no useful improvement at dimension
 17 and do not prove exact equality.
 
-[The complete numerical proof and independent audits](/Users/amir.nuriyev/Documents/problem/COEFFICIENT_ONE_TERMINAL_RATE_20260908.md)
+The complete numerical proof and independent audits (`archived research: COEFFICIENT_ONE_TERMINAL_RATE_20260908.md`)
 retain the finite error term, the corrected exterior constant 2048 for
 the floored cutoff, all profile-conditioning requirements, and the exact
 parity lift. The inherited manuscript remains a proposed proof with
@@ -3220,7 +3228,7 @@ All logarithms are natural. These explicitly improve the earlier
 numerical rates, but their conservative constants do not themselves give
 a useful dimension-17 comparison; the later finite improvement is in 9.13.
 
-[The complete numerical proof and audits](/Users/amir.nuriyev/Documents/problem/COEFFICIENT_ONE_SHARP_TAIL_RATE_20260908.md)
+The complete numerical proof and audits (`archived research: COEFFICIENT_ONE_SHARP_TAIL_RATE_20260908.md`)
 record the exact finite tail, shift-free conditional clock estimate,
 shrinking-window floors, profilewise cap, fixed-parameter moment constants,
 logarithmic balance and both parity conversions. The general logarithmic
@@ -3264,7 +3272,7 @@ cannot introduce a new rank-\(s\) target. For the rooted word,
 has six downward steps and therefore cannot occur in a 24,313-letter
 universal word; its abstract transition theorem remains valid.
 
-[The independent finite proof and all word artifacts](/Users/amir.nuriyev/Documents/problem/scratch/USER_NATIVE35_GRAFT280_AND_ROOTED291_INDEPENDENT_CERTIFICATE_20260908.md)
+The independent finite proof and all word artifacts (`archived research: scratch/USER_NATIVE35_GRAFT280_AND_ROOTED291_INDEPENDENT_CERTIFICATE_20260908.md`)
 include a witness interval for every counted target, both requested
 openings, the full recency-state replay and the rank-potential ledger.
 The user's separately mentioned 24,313-state static inventory was not
@@ -3293,7 +3301,7 @@ then gives the inverse logarithm. The full inherited finite PBBS chain
 retains its proposed-proof status; internal audits are not external or
 formal certification.
 
-[The complete numerical proof and separate audits](/Users/amir.nuriyev/Documents/problem/COEFFICIENT_ONE_INVERSE_LOG_RATE_20260908.md)
+The complete numerical proof and separate audits (`archived research: COEFFICIENT_ONE_INVERSE_LOG_RATE_20260908.md`)
 include the prefix restart, exact row likelihood comparison, every finite
 guard, error absorption and both parity conversions. The newer
 height-adaptive construction in 9.13 supersedes this rate and has completed
@@ -3315,7 +3323,7 @@ have an eight-element union. The resulting target family itself has exact
 minimum 311, because its 308 required nine-sets and 893 required lower
 targets exclude delay two by the endpoint bound.
 
-[The literal word, complete interval census and proof](/Users/amir.nuriyev/Documents/problem/scratch/NATIVE291_TO311_OPTIMAL_SINGLETON_EXTENSION_20260908.md)
+The literal word, complete interval census and proof (`archived research: scratch/NATIVE291_TO311_OPTIMAL_SINGLETON_EXTENSION_20260908.md`)
 also record 37 repeated below-eight incidences. Any optimal full-cube
 completion retaining this prefix must continue its initial four-window
 block for at least another 16,638 positions. This is an extension
@@ -3333,7 +3341,7 @@ targets by ordinary intervals, and every recorded witness passes an
 independent segment-tree range-OR check. It saves 371 positions against
 the previous 25,745-letter word and leaves an exact-bound gap of 1,061.
 
-[The verified word, certificate, all witnesses and proof](/Users/amir.nuriyev/Documents/problem/K17_UPPER25374_VERIFIED_20260908.md)
+The verified word, certificate, all witnesses and proof (`archived research: K17_UPPER25374_VERIFIED_20260908.md`)
 identify the byte body by SHA-256
 `16951cef9e2efff841c6bbf9cc72f2061f35650dda850714fcceee7a7bb43208`.
 The checker has a separate code audit. This upper bound requires no
@@ -3395,8 +3403,8 @@ to \(B(17)\) is 644.
 The user's reported 24,969-word used an unspecified cut/order and was not
 supplied. Our fixed convention gave 128 rather than 140 holes, with no
 cut or ordering search; boundary witnesses can depend on those choices.
-[The complete construction proof, internal audits, exact threshold checks,
-generator, word and all witnesses](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_PBBS_CONSTRUCTION_20260908.md)
+The complete construction proof, internal audits, exact threshold checks,
+generator, word and all witnesses (`archived research: HEIGHT_ADAPTIVE_PBBS_CONSTRUCTION_20260908.md`)
 record the distinction. The general theorem uses the retained finite
 global-maximum corridor and matching identities, not the much larger
 proposed clock/renewal chain. Internal review is not external or formal
@@ -3452,7 +3460,7 @@ state-average charge proves
  \qquad k\ge\lceil e^{e^{256}}\rceil.}
 \]
 Both parities and every numerical guard are checked in
-[the consolidated period proof](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_PERIOD_BOUNDS_20260908.md).
+the consolidated period proof (`archived research: HEIGHT_ADAPTIVE_PERIOD_BOUNDS_20260908.md`).
 This implies \(0\le\nu(k)-B(k)=O_m(W(k)/k^m)\) for every fixed
 \(m>0\). It is asymptotically stronger than the one-row estimate, whose
 finite thresholds remain useful. The latest profile-sieve and joint-profile
@@ -3469,7 +3477,7 @@ All 131,071 nonempty targets have ordinary nonwrapping witnesses, each
 independently rechecked by segment-tree OR. All letters are nonzero. The
 current SHA-256 is
 `22af061610f9c6cb4708ccca77c8d8008f251a1cc40f92858ca79bf7ad2ffff6`.
-The [actual word and complete certificate](/Users/amir.nuriyev/Documents/problem/K17_UPPER24668_VERIFIED_20260908.md)
+The actual word and complete certificate (`archived research: K17_UPPER24668_VERIFIED_20260908.md`)
 prove the finite upper bound independently of all PBBS premises. This
 saves 47 letters against 24,715 and leaves 355 to \(B(17)\). The user's
 rewrite search was not supplied or reproduced; it is not a premise of
@@ -3502,7 +3510,7 @@ period tail and exact collar charge yield
  e^{-2^{-50}k^{1/7}(\log\log k/\log k)^{6/7}},\qquad
  k\ge\lceil e^{e^{2^{21}}}\rceil.}
 \]
-The [complete proof and explicit constants](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_PROFILE_SIEVE_RATE_20260908.md)
+The complete proof and explicit constants (`archived research: HEIGHT_ADAPTIVE_PROFILE_SIEVE_RATE_20260908.md`)
 include the elementary prime-sum error \(32/\log Y\), original-law
 bookkeeping, numerical domain and both parities. This is a valid
 intermediate rate; 9.17 is stronger asymptotically.
@@ -3542,7 +3550,7 @@ selection counts at every child return, allowing the return to be lifted
 upward at the same time. Hence all physical periods are odd and the
 \(f\)- and \(f^2\)-periods coincide. If every gap row is primitive,
 the period equals \(M\). The one-site case is checked separately.
-[The full joint-profile, divisor and period record](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_MULTILEVEL_PROFILE_BOUND_20260908.md)
+The full joint-profile, divisor and period record (`archived research: HEIGHT_ADAPTIVE_MULTILEVEL_PROFILE_BOUND_20260908.md`)
 links the independent finite proofs.
 
 ### 9.17 Reverse-profile concentration and the first one-fifth rate [R]
@@ -3582,7 +3590,7 @@ collar charge consequently yields
  \qquad k\ge\lceil\exp(\exp(2^{21}))\rceil.}
 \]
 All constants, finite guards, full-law conditioning and both parities are
-proved in [the complete reverse-profile record](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_REVERSE_PROFILE_RATE_20260908.md).
+proved in the complete reverse-profile record (`archived research: HEIGHT_ADAPTIVE_REVERSE_PROFILE_RATE_20260908.md`).
 The relative error is eventually at most \(e^{-c_\theta k^\theta}\)
 for every fixed \(0<\theta<1/5\), including \(1/6\). The additive
 gap is at most the displayed relative error times \(W(k)\), and need
@@ -3618,7 +3626,7 @@ Taking \(\beta=1/2-1/(2\log\log n)\), \(\eta=1/\log n\), and
 eventually. In particular \(c=1/65536\) works. No numerical starting
 dimension is certified for this particular form. This improves 9.16,
 but is asymptotically weaker than both 9.15 and 9.17.
-[The fractional-LCM proof and audits](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_FRACTIONAL_LCM_BOUND_20260908.md)
+The fractional-LCM proof and audits (`archived research: HEIGHT_ADAPTIVE_FRACTIONAL_LCM_BOUND_20260908.md`)
 record the finite constants, optimization and original-law scope.
 
 The accompanying 24,660-word claim has only a sandbox link here; the
@@ -3676,7 +3684,7 @@ The same threshold also gives
 \[
                          \boxed{\nu(k)\le W(k)(1+e^{-k^{1/5}}).}
 \]
-The [complete logarithmic-gcd proof and finite audits](/Users/amir.nuriyev/Documents/problem/HEIGHT_ADAPTIVE_LOG_GCD_RATE_20260908.md)
+The complete logarithmic-gcd proof and finite audits (`archived research: HEIGHT_ADAPTIVE_LOG_GCD_RATE_20260908.md`)
 record the row normalization, constant20, reverse tower, exceptional
 probabilities and parity conversion. The threshold is conservative and
 not optimized. These are internally reviewed deductions on the retained
@@ -3690,7 +3698,7 @@ The then-verified finite upper bound was 24,668; the later supplied
 
 ### 9.20 Fresh primes, explicit onset and the verified 24,658 word [R]/[W]
 
-The [complete fresh-prime proof](HEIGHT_ADAPTIVE_FRESH_PRIME_RATE_20260908.md)
+The complete fresh-prime proof (`archived research: HEIGHT_ADAPTIVE_FRESH_PRIME_RATE_20260908.md`)
 and its independent audit retain the exact reverse geometric-row law,
 but select one new prime per successful upward step. A killed auxiliary
 trajectory exceeding the required original size cannot contribute after
@@ -3715,7 +3723,7 @@ logarithmic-gcd scale but has a smaller certified starting dimension.
 The audit retains every conditioning factor and proves the onset;
 user-reported verifier suites were not treated as independently executed.
 
-Separately, the actual supplied [24,658-letter word and certificate](K17_UPPER24658_VERIFIED_20260908.md)
+Separately, the actual supplied 24,658-letter word and certificate (`archived research: K17_UPPER24658_VERIFIED_20260908.md`)
 pass all131071 nonempty-target checks and independent range-OR replay:
 
     24313 <= nu(17) <= 24658, gap345.
@@ -3727,7 +3735,7 @@ no PBBS or asymptotic premise. Search regeneration was not supplied.
 
 ### 9.21 Sharp residues and a depth product with coefficient 3/5 [R]
 
-The [full depth-product proof and finite audits](HEIGHT_ADAPTIVE_DEPTH_PRODUCT_RATE_20260908.md)
+The full depth-product proof and finite audits (`archived research: HEIGHT_ADAPTIVE_DEPTH_PRODUCT_RATE_20260908.md`)
 give, for every k>=2^131073+1,
 
     nu(k)/W(k) <=1+exp[-(3/5)(k(log k)^2)^(1/5)].
@@ -3750,7 +3758,7 @@ and coefficient3/5. No external or formal certification is asserted.
 
 ### 9.22 A stopped logarithmic-LCM alternative [R]
 
-The [complete stopped-LCM proof](HEIGHT_ADAPTIVE_STOPPED_LCM_RATE_20260908.md)
+The complete stopped-LCM proof (`archived research: HEIGHT_ADAPTIVE_STOPPED_LCM_RATE_20260908.md`)
 uses the exact increment log N-log gcd(Q,N) while the running LCM
 satisfies log Q<H. The gcd expectation is bounded by log H+18+2mu H.
 The conditional killed/stopped-process argument gives a fully specified
@@ -3765,7 +3773,7 @@ alternative but weaker than9.21 and9.23; no new finite word is implied.
 
 ### 9.23 Reciprocal-period charging, coefficient 0.93 and finite certificates [R]
 
-The [harmonic-period proof and exact numerical certificates](HEIGHT_ADAPTIVE_HARMONIC_PERIOD_RATE_20260908.md)
+The harmonic-period proof and exact numerical certificates (`archived research: HEIGHT_ADAPTIVE_HARMONIC_PERIOD_RATE_20260908.md`)
 retain the reciprocal period in the actual overhead. Since periods are
 multiples of n, a uniform candidate point-probability bound B costs
 only B times a harmonic sum, at most B(1+M) up to periods exp M.
@@ -3823,7 +3831,7 @@ The word at17 remains the independently verified24658certificate.
 
 ### 9.24 Exact translated periods, the finite census through101, and the native overhead barrier
 
-**[R].** The [full result record](HEIGHT_ADAPTIVE_EXACT_ROTATION_PERIOD_AND_FINITE_CENSUS_20260908.md)
+**[R].** The full result record (`archived research: HEIGHT_ADAPTIVE_EXACT_ROTATION_PERIOD_AND_FINITE_CENSUS_20260908.md`)
 links the independent symbolic audits, new arithmetic implementation,
 exact finite census, and complete native recency graph certificate.
 These retain the finite support, particle-reduction and rooted-fibre
@@ -3897,7 +3905,7 @@ the inventory and are not automatically excluded by this native result.
 
 ### 9.25 Uniform finite guarantees from dimension 29 [R]
 
-The [complete uniform-threshold record](HEIGHT_ADAPTIVE_UNIFORM_FINITE_THRESHOLDS_20260908.md)
+The complete uniform-threshold record (`archived research: HEIGHT_ADAPTIVE_UNIFORM_FINITE_THRESHOLDS_20260908.md`)
 contains the exact signature recursion, two independent analytic audits
 and a new exact numerical certificate. These retain the finite construction,
 corridor, particle-reduction and original rooted-fibre premises. They do
@@ -3963,7 +3971,7 @@ The [supplied optimal word](answers/k17_optimal24313.word) has exactly
 
     7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9.
 
-The [full optimality record](K17_OPTIMAL24313_VERIFIED_20260908.md) links
+The [full optimality record](EXACT_FINITE_RESULTS.md) links
 the actual file, standalone verifiers, every target witness, independent
 forward scan and the self-contained analytic lower-bound audit.
 
@@ -4018,7 +4026,7 @@ corresponding target counts. Higher-rank coverage was checked independently.
 The unprovided quotient-search certificate and generator were not replayed;
 the final literal and its reconstructed opening suffice for optimality.
 
-The [verified exact lift to18](scratch/K18_VERIFIED_48626_TRIMMED_LIFT_FROM_OPTIMAL_K17_20260908.md)
+The verified exact lift to18 (`archived research: scratch/K18_VERIFIED_48626_TRIMMED_LIFT_FROM_OPTIMAL_K17_20260908.md`)
 emits A_1,...,A_m,{z},A_1|z,...,A_(m-1)|z for m=24313. Its length48626
 word passed all262143target and independent range-OR witness checks:
 
@@ -4036,7 +4044,7 @@ The [supplied optimal18 word](answers/k18_optimal48623.word) has length
 
     6b191b447231c665bb1288cdc7ebdea5c73fd79502ef47015ee3d98fcf685be5.
 
-The [complete record](K18_OPTIMAL48623_VERIFIED_20260908.md) links two
+The [complete record](EXACT_FINITE_RESULTS.md) links two
 independent coverage implementations and all ordinary interval witnesses.
 The suffix recurrence finds all262143nonempty targets, and a separately
 built segment tree rechecks every saved interval. The first-coordinate
@@ -4054,7 +4062,7 @@ construction's generation history. Equality is now known through18.
 The previously verified48626lift remains historical, and19is the first
 unsettled dimension.
 
-The [initialized extension audit](scratch/INITIALIZED_RECENCY_EXTENSION_INTERLEAVING_AND_K18_LOWER_BOUND_AUDIT_20260908.md)
+The initialized extension audit (`archived research: scratch/INITIALIZED_RECENCY_EXTENSION_INTERLEAVING_AND_K18_LOWER_BOUND_AUDIT_20260908.md`)
 also proves a general exact identity. Let lambda_k(P) be the least
 number of nonempty recency updates such that their prefix families,
 including that of initialP, cover the nonemptyk-cube. Then
@@ -4071,7 +4079,7 @@ base target. The initial-state interpretation gives actual suffix
 witnesses, including those crossing the original boundary.
 
 The supplied mechanism independently passes
-[complete structural reconstruction](scratch/K18_OPTIMAL_INITIALIZED_TWO_CYCLE_STRUCTURE_AND_BYTE_REGENERATION_20260908.md).
+complete structural reconstruction (`archived research: scratch/K18_OPTIMAL_INITIALIZED_TWO_CYCLE_STRUCTURE_AND_BYTE_REGENERATION_20260908.md`).
 It uses the pair-preserving adjustment689to8881 at the optimal17seed's
 final position, producing terminal profile(6,1^11). From its actual
 two cyclesQ85/R24225, a rotated reverseR traversal omits one initial
@@ -4095,8 +4103,8 @@ the general requirement to4859 in both directions. A single-switch19lift costs a
 
 ### 9.28 Forward pruning-prefix upper certificates [R method; finite band pending]
 
-The [new method record](HEIGHT_ADAPTIVE_FORWARD_PREFIX_CERTIFICATE_METHOD_20260908.md)
-and [independent proof audit](scratch/PBBS_FORWARD_PREFIX_PERIOD_COMPLETION_AND_UNIFORM_BAND_AUDIT_20260908.md)
+The new method record (`archived research: HEIGHT_ADAPTIVE_FORWARD_PREFIX_CERTIFICATE_METHOD_20260908.md`)
+and independent proof audit (`archived research: scratch/PBBS_FORWARD_PREFIX_PERIOD_COMPLETION_AND_UNIFORM_BAND_AUDIT_20260908.md`)
 establish a valid finite upper bound at every complete prefix-tree
 stopping point, retaining the stated PBBS construction and fibre inputs.
 
@@ -4129,7 +4137,7 @@ by9.24. This distinction does not affect the exact18literal certificate.
 
 ### 9.29 Height-moment prefix charges [R method and first pair; uniform band pending]
 
-The [height-moment method record](HEIGHT_ADAPTIVE_MOMENT_PREFIX_CERTIFICATE_METHOD_20260909.md)
+The height-moment method record (`archived research: HEIGHT_ADAPTIVE_MOMENT_PREFIX_CERTIFICATE_METHOD_20260909.md`)
 reviews the user's latest proof and distinguishes its valid mathematical
 interfaces from its unprovided finite computation. For the exact core count
 K(a,b)=binom(a,b)binom(a,b+1)/a, the total remaining height satisfies
@@ -4168,8 +4176,8 @@ excess is below0.000009984725125072396316850761. All162refinements and
 uses exact heights and exact symmetry classes throughout, no sparse
 reserves. Its5050height cells,23713directDyck roots,125475middlebridges,
 2575orderedrows and288smallprefixstates also pass the stated structural
-checks. [Complete numerical evidence](scratch/MOMENT_PREFIX_R68_INDEPENDENT_NUMERICAL_CERTIFICATE_20260909.md)
-and [report](scratch/moment_prefix_structural_and_r68_20260909/moment_prefix_complete_certificate.json)
+checks. Complete numerical evidence (`archived research: scratch/MOMENT_PREFIX_R68_INDEPENDENT_NUMERICAL_CERTIFICATE_20260909.md`)
+and report (`archived research: scratch/moment_prefix_structural_and_r68_20260909/moment_prefix_complete_certificate.json`)
 are retained.
 
 The user reports100000U_r<Cat_r for all3356integers68<=r<=3423,
@@ -4184,7 +4192,7 @@ change the exact17/18 results or prove exact equality in any new dimension.
 
 ### 9.30 Exact frontier: fixed matching and paired-endpoint runs [R]/[O]
 
-The [consolidated exact-frontier record](EXACT_EQUALITY_FIXED_MATCHING_AND_RUN_CONSTRAINTS_20260909.md)
+The consolidated exact-frontier record (`archived research: EXACT_EQUALITY_FIXED_MATCHING_AND_RUN_CONSTRAINTS_20260909.md`)
 separates the following completed results from the still-open all-rank
 constructor. At the time of this earlier record, equality was known
 through18. Section9.31 below subsequently closes both19/20 gaps.
@@ -4314,8 +4322,8 @@ with5599 from this turnover consequence. Neither excludes exact21.
 
 The current finite frontier is therefore B(21)=352719 and B(22)=705435,
 with no attaining words claimed here. The all-dimensional goal remains
-active. [Full proof, hashes, checks and artifacts](K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md)
-and [complete numerical report](witnesses/k19_k20_optimal/complete_suffix_range_cyclic_lift_certificate.json)
+active. Full proof, hashes, checks and artifacts (`archived research: K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md`)
+and complete numerical report (`archived research: witnesses/k19_k20_optimal/complete_suffix_range_cyclic_lift_certificate.json`)
 record the exact scope. Internal reviews are not external or formal
 certification, and the user's constructions are not claimed as new
 discoveries of this verification turn.
@@ -4346,7 +4354,7 @@ Thus N_r-B(n)=2^(n-o(n)) for this native constructor. Section9.24
 already established the same leading exponential conclusion; this
 refines its subexponential penalty and supplies the explicit height-two
 bound. It is not a lower bound on unrestrictednu(n), and does not
-contradict any of the optimal17–20 words. [Independent pure-proof audit](scratch/PBBS_BOUNDED_HEIGHT_SPECTRAL_CONSTRUCTOR_BARRIER_INDEPENDENT_AUDIT_20260909.md)
+contradict any of the optimal17–20 words. Independent pure-proof audit (`archived research: scratch/PBBS_BOUNDED_HEIGHT_SPECTRAL_CONSTRUCTOR_BARRIER_INDEPENDENT_AUDIT_20260909.md`)
 checks the exact scope and constants; no new enumeration was run.
 
 ### 9.33 Canonical two-coordinate paths and a separate upper-coverage gate [R]/[W]
@@ -4367,7 +4375,7 @@ remain an allocation issue. The exit map K->K+kappa(K) is also injective:
 delete the up-step after the last prefix minimum to invert it. This
 does not prove disjointness of all internal11 paths, arbitrary prescribed
 outputs, compatible boundary ages, upper coverage or global compilation.
-[Complete constructive proof](scratch/CANONICAL_PHI_BALANCED_BLOCK_BARRIER_AND_MINIMAL_RUN_SECTOR_EXCURSION_20260909.md)
+Complete constructive proof (`archived research: scratch/CANONICAL_PHI_BALANCED_BLOCK_BARRIER_AND_MINIMAL_RUN_SECTOR_EXCURSION_20260909.md`)
 records these limitations and the independent internal proof reviews.
 
 For q=3,r>=7 the entire local bank can be chosen disjointly. All old
@@ -4385,8 +4393,8 @@ search. It does not join untouched parent states or prove coverage.
 The fixed prescribed-parent diagnostic had found375 colliding pairs
 among its4862 first11 occurrences, with all ages and Phi steps valid.
 The Hall choice changes that prescribed second deletion; the diagnostic
-does not obstruct the improved bank. [Independent bank audit](scratch/Q3_FIRST11_COLLISION_REPAIR_BY_SMALL_SHADOW_HALL_INDEPENDENT_AUDIT_20260909.md)
-and [fixed diagnostic](scratch/K19_FIXED_ROOT_PRESCRIBED_PARENT_SECTOR_PORT_CERTIFICATE_20260909.md)
+does not obstruct the improved bank. Independent bank audit (`archived research: scratch/Q3_FIRST11_COLLISION_REPAIR_BY_SMALL_SHADOW_HALL_INDEPENDENT_AUDIT_20260909.md`)
+and fixed diagnostic (`archived research: scratch/K19_FIXED_ROOT_PRESCRIBED_PARENT_SECTOR_PORT_CERTIFICATE_20260909.md`)
 distinguish these two statements.
 
 A separate finite counterexample rules out omitting upper coverage.
@@ -4403,7 +4411,7 @@ original optimal word or unrestricted equality.
 The bounded diagnostic independently reverted all1216 recorded three-
 circuits of the original carrier:361 preserve Hamiltonicity and residence,
 and19 lose a rank11 target. The first was materialized and checked globally.
-[Counterexample, complete proof and artifacts](scratch/PHI_HAMILTON_RESIDENCE_DOES_NOT_FORCE_FIRST_UPPER_COVERAGE_20260909.md)
+Counterexample, complete proof and artifacts (`archived research: scratch/PHI_HAMILTON_RESIDENCE_DOES_NOT_FORCE_FIRST_UPPER_COVERAGE_20260909.md`)
 give the exact source-reviewed h100 scope. An incoming edge U->R has
 first-higher color U union Phi(R); covering every such rank-(r+2) color
 must accompany the matching, connectivity and residence conditions.
@@ -4426,7 +4434,7 @@ or modified word was inspected. Its two minimal witnesses have the single
 common entering edge92377, so the exact core theorem also proves that an
 opening at that preceding phase would lose it. The successful universal
 cycle is not safe to open at every phase.
-[Current proof-progress record](EXACT_PHI_INDUCTION_AND_UPPER_SUPPORT_GATE_20260909.md)
+Current proof-progress record (`archived research: EXACT_PHI_INDUCTION_AND_UPPER_SUPPORT_GATE_20260909.md`)
 separates the established local path from the remaining global conditions.
 No new optimum beyond20 or all-dimensional equality is claimed.
 
@@ -4443,23 +4451,23 @@ nonempty letters and ordinary nonwrapping intervals. Forward event counts
 are4943869/10241093; suffix counts4943248/9886544. No length cutoff was
 used. The22 word is the byte-identical ordinary doubled21 lift. Exact
 all-rank endpoint calculations give the displayed lower bounds.
-[Proof, hashes and complete reports](K21_K22_VERIFIED_UPPER_BOUNDS_AND_COMPILER_CONSTRAINTS_20260909.md)
+Proof, hashes and complete reports (`archived research: K21_K22_VERIFIED_UPPER_BOUNDS_AND_COMPILER_CONSTRAINTS_20260909.md`)
 record the independent h100 runs and all saved witnesses. Equality remains
 established through20. The subsequent357442/714884 report is weaker and
 does not replace these incumbents.
 
 The exact individual-cell criterion and arbitrary finite-group weighted
-Hall-deficiency statement pass the [pure audit](scratch/SHORT_CELL_WEIGHTED_ORBIT_HALL_AND_PARITY_EXCESS_INDEPENDENT_AUDIT_20260909.md).
+Hall-deficiency statement pass the pure audit (`archived research: scratch/SHORT_CELL_WEIGHTED_ORBIT_HALL_AND_PARITY_EXCESS_INDEPENDENT_AUDIT_20260909.md`).
 Their prior repository proofs are explicitly cited. The quotient computes
 the physical matching number, not an equivariant assignment or a common
-cap for overlapping cells. The [separate fixed-graph certificate](scratch/K21_FIXED_THREE_CYCLE_PHYSICAL_CANDIDATE_HALL_DEFICIENCY_462_VERIFIED_20260909.md)
+cap for overlapping cells. The separate fixed-graph certificate (`archived research: scratch/K21_FIXED_THREE_CYCLE_PHYSICAL_CANDIDATE_HALL_DEFICIENCY_462_VERIFIED_20260909.md`)
 now verifies the numerical462 deficiency:1,997,177 edges, feasible flow
 695,397 against695,859 targets, and31,185 physical Hall targets with a
 complete30,723-cell neighborhood. Every local candidate and the full
 neighborhood were regenerated from the literal-derived triples. This
 rules out complete compilation on those fixed cycles, even with broken
 rotation symmetry; it does not bound the cost of arbitrary repair words.
-The [literal structure audit](scratch/K21_SUPPLIED_THREE_CYCLE_CARRIER_LOWER_HOLES_AND_572_REPAIR_CERTIFICATE_20260909.md)
+The literal structure audit (`archived research: scratch/K21_SUPPLIED_THREE_CYCLE_CARRIER_LOWER_HOLES_AND_572_REPAIR_CERTIFICATE_20260909.md`)
 independently reconstructs periods352548,105,63 and verifies569 cyclic
 lower holes, ten extra opening losses, and the572-letter tail repairing
 all579 ordinary holes. Every middle owner is canonicalPhi; carrier and
@@ -4468,7 +4476,7 @@ Neither run reconstructs the unavailable original search or repair forest.
 The exact odd/even endpoint excess can drop by one; the stated slack
 criterion is valid and does not itself imply attainment of either bound.
 
-The [window-rank capacity audit](scratch/WINDOW_RANK_DEFICIT_CAPACITY_AND_NEAR_DEADLINE_PROTECTION_AUDIT_20260909.md)
+The window-rank capacity audit (`archived research: scratch/WINDOW_RANK_DEFICIT_CAPACITY_AND_NEAR_DEADLINE_PROTECTION_AUDIT_20260909.md`)
 passes the arbitrary-word chain-at-a-start bound. In particular every
 universal21 word of lengthN satisfies
 
@@ -4488,7 +4496,7 @@ exactly-3. Their two fresh old coordinates have ages2 and1. The next
 prescribed parent deletion must avoid both; the following one must avoid
 the age-one coordinate. Those conditions are necessary and sufficient
 for continuing the old parent chronology thereafter, but do not prevent
-inventory collisions. [Exact exit encoding](scratch/Q3_EXCURSION_EXIT_AGE_TEST_AND_EXACT_OUTPUT_ENCODING_20260909.md)
+inventory collisions. Exact exit encoding (`archived research: scratch/Q3_EXCURSION_EXIT_AGE_TEST_AND_EXACT_OUTPUT_ENCODING_20260909.md`)
 recovers both fresh coordinates from the output's last-minimum steps.
 
 Keeping all parent10 states while grafting the bank forces2Cat_r cuts.
@@ -4496,11 +4504,11 @@ There remain Cat_r free outgoing mouths and missing heads. Direct
 parent10 repair alone cannot yield one cycle: either a mouth lacks the
 old root and hence every eligible head, or all parent root-deletion
 tails are cut and the grafts already close components inaccessible to
-the free sockets. [Full degree and component proof](scratch/Q3_EXCURSION_PARENT_COPY_DEGREE_DEFICITS_AND_DIRECT_SPLICE_OBSTRUCTION_20260909.md)
+the free sockets. Full degree and component proof (`archived research: scratch/Q3_EXCURSION_PARENT_COPY_DEGREE_DEFICITS_AND_DIRECT_SPLICE_OBSTRUCTION_20260909.md`)
 also gives the exact unused-sector matching graph. Additional routing
 and/or reopening is required; this does not rule out the child optimum.
 
-The [complete canonical sector law](scratch/COMPLETE_CANONICAL_PHI_SECTOR_LAW_AND_EXPLICIT_01_STRIP_EXTENSION_20260909.md)
+The complete canonical sector law (`archived research: scratch/COMPLETE_CANONICAL_PHI_SECTOR_LAW_AND_EXPLICIT_01_STRIP_EXTENSION_20260909.md`)
 provides a positive extension: natural upper01 incoming incidences follow
 the parent from its nonnegative-prefix boundary to its first return.
 They partition the entire01 sector into explicit paths for a Hamilton
@@ -4509,7 +4517,7 @@ other paths can be added with no state collision. The remaining three-
 band incidence graph is exact; its matching, socket ages, component
 connection, all-rank coverage and optimal opening are not proved.
 
-The subsequent [fresh-arrival obstruction](scratch/Q3_ALL_ROOT_ENTRANCE_BANK_FORCES_ONE_STEP_RUNS_20260909.md)
+The subsequent fresh-arrival obstruction (`archived research: scratch/Q3_ALL_ROOT_ENTRANCE_BANK_FORCES_ONE_STEP_RUNS_20260909.md`)
 is stronger: the all-root first entrance bank cannot have ANY strict
 spanning residence>=2 completion. For every Dyck D of semilength r-1,
 lower00 U=011D always receives its second old bit freshly. Its outgoing
@@ -4523,7 +4531,7 @@ whole01 extension or unused-sector routing removes this obstruction.
 The local disjoint-path statements above remain valid; the next bank
 must change its port selection. This does not disprove exact child words.
 
-For growing residence, a [separate forbidden-facet construction](scratch/SMALL_FAMILY_SHADOW_HALL_WITH_FORBIDDEN_FACETS_LIMITATION_20260909.md)
+For growing residence, a separate forbidden-facet construction (`archived research: scratch/SMALL_FAMILY_SHADOW_HALL_WITH_FORBIDDEN_FACETS_LIMITATION_20260909.md`)
 gives a Catalan-size family violating Hall after only O(log r) arbitrary
 forbidden removals per left. It does not realize actual correlated age
 patterns, and hence only rules out using size/distinctness alone to
@@ -4538,7 +4546,7 @@ enumerations and a separate range-OR check of every saved witness:
     352719 <= nu(21) <= 353094, gap375;
     705435 <= nu(22) <= 706188, gap753.
 
-The [complete record](K21_K22_CONTEXT_REFINEMENT_VERIFIED_20260909.md)
+The complete record (`archived research: K21_K22_CONTEXT_REFINEMENT_VERIFIED_20260909.md`)
 contains input hashes, both reviewed sources, reports and witnesses.
 Forward events are4943081/10239314; suffix events4943001/9886049.
 All2097151/4194303 targets are covered, and the22 file is byte-identical
@@ -4546,7 +4554,7 @@ to the ordinary2N lift. One paired run per independent implementation
 completed onh100 within its fixed limits. The earlier353297/706594 pair
 and its462 fixed-graph obstruction remain valid historical results.
 
-The [refinement proof audit](scratch/ORDERED_OVERLAPPING_REFINEMENT_AND_SIMULTANEOUS_CONTEXT_CERTIFICATES_AUDIT_20260909.md)
+The refinement proof audit (`archived research: scratch/ORDERED_OVERLAPPING_REFINEMENT_AND_SIMULTANEOUS_CONTEXT_CERTIFICATES_AUDIT_20260909.md`)
 passes ordered overlapping interval representations of old letters,
 nonempty pair inflation, safe neighbor-contained insertion, and their
 simultaneous composition for disjoint original blocks and guarded gaps.
@@ -4567,17 +4575,17 @@ inflation is constrained by the original endpoint theorem.
 
 The natural replacement head110D in Section9.35 deletes a coordinate
 of exact age2, so it cannot serve residence3. The
-[full two-step inverse classification](scratch/Q3_ROOT_SOCKET_TWO_STEP_AGES_AND_CORRECTED_1110_HEADS_20260909.md)
+full two-step inverse classification (`archived research: scratch/Q3_ROOT_SOCKET_TWO_STEP_AGES_AND_CORRECTED_1110_HEADS_20260909.md`)
 proves that at011D00 the first two plateau ones have ages1,2, while all
 D-ones have age at least3. Its only exceptional inverse branch already
 closes a one-state run. Thus writingD=1R and choosing head1110R00 is a
 locally age-safe, injective correction. The
-[exact head menus](scratch/FORCED_111_D_FREED_HEAD_MENUS_AND_PRIVATE_DYCK_BANKS_20260909.md)
+exact head menus (`archived research: scratch/FORCED_111_D_FREED_HEAD_MENUS_AND_PRIVATE_DYCK_BANKS_20260909.md`)
 show these heads are private in the entire forced-source incidence graph.
 Freeing exactly this Cat_(r-1)-head bank forces its intended matching;
 global age supply and completion are still not established.
 
-The [general age theorem](scratch/CANONICAL_PHI_BACKWARD_AGE_OBLIGATIONS_AND_INITIAL_PLATEAU_THEOREM_20260909.md)
+The general age theorem (`archived research: scratch/CANONICAL_PHI_BACKWARD_AGE_OBLIGATIONS_AND_INITIAL_PLATEAU_THEOREM_20260909.md`)
 extends the local interface to growingq. At Q_j=0^j1^(j+1)D00, a valid
 residence-q history of sufficient depth gives exact ages1,...,m to the
 firstm=min(q,j+1) plateau ones; every other present bit has age>=m+1.
@@ -4592,12 +4600,12 @@ R1 subset P and R'_t=R_(t+1) union {the forward-deleted coordinate}.
 The genuine left boundary ages must discharge every remaining obligation.
 This is an exact finite local history test, not a one-copy inventory,
 connectivity or target-coverage theorem. The source and
-[independent audit](scratch/CANONICAL_PHI_PLATEAU_AGE_THEOREM_INDEPENDENT_AUDIT_20260909.md)
+independent audit (`archived research: scratch/CANONICAL_PHI_PLATEAU_AGE_THEOREM_INDEPENDENT_AUDIT_20260909.md`)
 retain the sufficient-history-depth guard. No computation was needed.
 
 ### 9.38 Two deletion orders complete the local connector bank [R]/[W]
 
-The [actual-parent embedding](scratch/ACTUAL_PARENT_0P1_EMBEDDING_CONNECTOR_AGE_SUPPLY_AND_BAD_EDGE_CRITERION_20260909.md)
+The actual-parent embedding (`archived research: scratch/ACTUAL_PARENT_0P1_EMBEDDING_CONNECTOR_AGE_SUPPLY_AND_BAD_EDGE_CRITERION_20260909.md`)
 is0P1: the added b is permanent, but the final parent coordinate a is active.
 At ports P=00D1,D=1R the original route
 000D11->001D10->011D00->1110R00 fails when a has age one. A fixed actual19
@@ -4605,7 +4613,7 @@ diagnostic found1371 valid ports and59 such failures among all1430 ports.
 A separate inverse proof excludes age two at these ports in any strict
 factor, without assuming residence.
 
-The [two-order theorem](scratch/TWO_ORDER_CANONICAL_PHI_CONNECTOR_AND_COMPLETE_0P1_PORT_BANK_20260909.md)
+The two-order theorem (`archived research: scratch/TWO_ORDER_CANONICAL_PHI_CONNECTOR_AND_COMPLETE_0P1_PORT_BANK_20260909.md`)
 repairs every local exception by using
 
     000D11 -> 001D10 -> 0110R10 -> 1110R00
@@ -4614,18 +4622,18 @@ when a is fresh. The two routes delete b,a,d or b,d,a. Their last two age
 tests are age(a)>=2 or age(d)>=2; a strict incoming edge introduces at most
 one coordinate, so at least one order works. Their endpoints and surviving
 ages agree. Prefixes and the a-bit separate all mixed stage banks.
-A [single reviewed h100 replay](scratch/ACTUAL19_TWO_ORDER_COMPLETE1430_LOCAL_CONNECTOR_BANK_CERTIFICATE_20260909.md)
+A single reviewed h100 replay (`archived research: scratch/ACTUAL19_TWO_ORDER_COMPLETE1430_LOCAL_CONNECTOR_BANK_CERTIFICATE_20260909.md`)
 passes all1430 original histories:1371 unchanged routes and59 swaps.
 This is a local path-bank result, not a new universal word.
 
-The [growing-q extension](scratch/GROWING_Q_TWO_ORDER_PHI_CONNECTORS_WITH_BALANCED_PADDING_20260909.md)
+The growing-q extension (`archived research: scratch/GROWING_Q_TWO_ORDER_PHI_CONNECTORS_WITH_BALANCED_PADDING_20260909.md`)
 starts from a parent already having residence q and embeds it as
 0^(q-2)P1^(q-2), q>=3. It deletes the q-2 fixed ones first and then chooses
 the last two deletions by the same age test, reaching1^q0R0^(q-1) with
 prefix ages1,...,q. The disjoint bank uses M+qh lowers and M+(q-1)h edges.
 It adds2q-4 coordinates and does not amplify residence.
 
-For q3 the [unused-sector extension](scratch/TWO_STEP_UNUSED_SECTOR_EXTENSION_AND_INJECTIVE_PARENT_REENTRY_20260909.md)
+For q3 the unused-sector extension (`archived research: scratch/TWO_STEP_UNUSED_SECTOR_EXTENSION_AND_INJECTIVE_PARENT_REENTRY_20260909.md`)
 adds two injective age-legal steps1110R00->1100R01->1000R11. A further
 injective re-entry into the occupied parent copy requires another cut and
 two exact continuation-age checks. No route of at most three extra edges
@@ -4653,7 +4661,7 @@ its four-windows every eleven-set once. Complete ordinary coverage verifies
 the particular safe opening. The periodic-core lift regenerates the22
 file byte for byte, saving the repeated three-position initialization.
 
-The [complete exact record](K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md)
+The complete exact record (`archived research: K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md`)
 contains both raw hashes, all witnesses, reviewed sources, reports and
 execution limits. Suffix events are4937949/9875974; independent forward
 events are4937973/10228713. These equalities require no PBBS asymptotic
@@ -4666,7 +4674,7 @@ ordinary-lift checks before the optimal files arrived. Equality is now
 verified through22; the next endpoint targets are B(23)=1352082 and
 B(24)=2704159. No all-dimension induction is established.
 
-The [placement compatibility audit](scratch/THREE_PLACEMENT_COMPATIBILITY_AND_THIRTEEN_VERTEX_WITHDRAWAL_AUDIT_20260909.md)
+The placement compatibility audit (`archived research: scratch/THREE_PLACEMENT_COMPATIBILITY_AND_THIRTEEN_VERTEX_WITHDRAWAL_AUDIT_20260909.md`)
 proves that, when triples are protected and cells are distinct singletons
 or adjacent pairs, infeasibility has a witness of at most three placements.
 The maximal common-cap criterion supplies the proof; the general q bound
@@ -11791,3 +11799,1175 @@ band: termwise \(o(4^b)\) is vacuous because every rank is already
 \(O(W)=o(4^b)\). No near-width density-almost-cover family is constructed
 here; these relaxed selectors remain [O]. The separate full-cube
 coefficient-one manuscript is recorded in 9.2 [P], with its review limits.
+
+<a id="conditional-asymptotic-bounds"></a>
+
+# Appendix J: Consolidated conditional asymptotic bounds
+
+**[C], with the finite hypotheses below; numerical records [R].** This
+appendix consolidates the reviewed deductions previously summarized in
+Sections 9.13–9.29. It is the public proof companion to
+[ASYMPTOTIC_BOUNDS.md](ASYMPTOTIC_BOUNDS.md). It does not establish
+\(\nu(k)=B(k)\) for every dimension. Internal independent reviews and
+exact arithmetic checks are not external or proof-assistant certification.
+No new mathematical calculation was executed during this consolidation.
+
+The harmonic, uniform-envelope and numerical derivations below are
+reproduced from the existing reviewed record. Their equation numbers and
+references to numbered subsections are local to their respective H, U, R
+or N block. Archived-source references give provenance, not an instruction
+to fetch an additional premise. Where a source says a calculation was
+executed, this records the September 8 execution; it does not claim a new
+run or publication of its entire transcript.
+
+## J.1 Explicit finite hypotheses and proof boundary
+
+Let \(n=2r+1\), \(r\ge1\),
+\(W_r=\binom{2r+1}{r}=n\operatorname{Cat}_r\), and
+\(\operatorname{Cat}_r=\binom{2r}{r}/(r+1)\). The conditional deductions
+use these precise finite inputs from the height-adaptive PBBS route:
+
+1. **Finite construction and support.** The canonical physical middle
+   states split into cycles of lengths \(v\), with invariant integer
+   heights \(1\le h\le r\). The height-adaptive erosion word on each
+   cycle, followed by its \(2h-1\) collar, represents every nonempty
+   target when the components are concatenated. Thus an actual ordinary
+   universal word has
+   \[
+   N_n=W_r+\sum_{\mathcal C}(2h_{\mathcal C}-1),\qquad
+   \epsilon_r=\frac{N_n-W_r}{W_r}
+             =\mathbb E_{\rm state}\frac{2h-1}{v}.
+   \]
+   This is the all-rank support/strict-height corridor input recorded in
+   9.13, not a consequence of a middle-level Hamilton cycle alone.
+2. **Uniform law and finite height moments.** A rooted Dyck word of
+   semilength \(r\) has exactly \(n\) distinct physical rotations.
+   Rotation-invariant quantities therefore have the uniform Dyck-root
+   law, not a uniform-cycle law. The reflection/range bounds are
+   \[
+   \mathbb E h^2\le2n,\qquad
+   \mathbb E(2h-1)\le2t-3,
+   \quad t=2^{2r+1}/\binom{2r+1}{r}.
+   \]
+3. **Actual periods and original rows.** Always \(n\mid v\). If the
+   first \(L\) original pruning-gap rows are primitive, then
+   \(2a_s+1\mid v\) for \(0\le s<L\), where \(a_s\) is the
+   semilength after \(s\) prunings. A primitive top row of odd length
+   \(p\) also gives \(v\ge np\). The exact period and ordered-row
+   conventions, including nonprimitive rows, are recorded in 9.24–9.25.
+4. **Original inverse-pruning fibre.** A fixed child Dyck word of
+   semilength \(d\), with \(k\) peaks, and an ordered nonnegative
+   row of \(p=2d+1\) entries and mass \(\ell\), specify exactly one
+   parent root of size \(r=d+k+\ell\). These are ordered rows, not
+   necklaces. Under \(\Pr_*(D)=4^{-|D|}/2\), after summing all
+   shallower profiles, the law conditional on the entire deeper profile
+   is
+   \[
+   a_s=2b-c+\operatorname{NB}(2b+1,(s+2)^{-2}),\quad
+   b=a_{s+1},\quad c=a_{s+2}.
+   \]
+   Here \(\operatorname{NB}(p,q)\) is the sum of \(p\) independent
+   variables with mass \((1-q)q^j\), \(j\ge0\). The whole original
+   row has that product law. In particular an odd row has nonprimitive
+   probability at most \(p e^{-2pq/3}\); a one-slot row is primitive.
+5. **Finite concentration and local atom inputs for H only.** Under
+   fixed size \(r\),
+   \[
+   \Pr_r\{|a_j-r/(j+1)|>(4+x)\sqrt r\}\le2e^{-x^2/6}
+   \quad(x\ge0).
+   \]
+   For \(q\le1/4\), \(pq\ge1000\), the negative-binomial law
+   is unimodal with maximum atom at most
+   \(1.001/\sqrt{2\pi pq}\). A unimodal integer law of maximum
+   atom \(\rho\) has residue discrepancy at most
+   \((1-1/d)\rho\) modulo \(d\).
+
+These are **displayed hypotheses of the conditional theorem**, not
+silently promoted [I] claims. The uniform-envelope proof U needs inputs
+1–4 and does not need the concentration or sharp-atom estimates in 5.
+The harmonic proof H needs all five. The finite bridge in N additionally
+uses the recorded, previously verified exact census comparisons specified
+there. The smaller uniform starts 57/87/137 remain unverified as complete
+bands; J.S states that distinction explicitly.
+
+## J.H The finite harmonic theorem and explicit 0.93 onset
+
+On the hypotheses in J.1, all logarithms being natural,
+\[
+\boxed{\displaystyle
+\nu(k)\le W(k)\left(1+
+ e^{-(93/100)(k(\log k)^2)^{1/5}}\right)
+ \quad\text{for every integer } k\ge2^{131073}+1.}
+\tag{1}
+\]
+The following derivation includes its finite four-term inequality and
+charges every prefactor, floor, shift and parity conversion.
+### J.H.1 Exact construction charge and a finite first moment
+
+For odd n=2r+1, write h and v for the normalized height and physical g=f² period of a uniform middle state. The proved height-adaptive word has exact normalized collar charge
+
+\[
+\epsilon_r:=\frac{N_n-W(n)}{W(n)}
+=\mathbb E\frac{2h-1}{v},\qquad n\mid v,\qquad 2h-1<n.
+\tag{2}
+\]
+
+The uniform middle-state/Dyck-root correspondence is a bijection with a uniform root rotation. Thus the expectation in (2) is the uniform fixed-size Dyck expectation for these rotation-invariant quantities. No additional cycle-length weighting is introduced in that probability law.
+
+The one-row moment audit (`archived research: scratch/PBBS_ONE_ROW_PERIOD_MOMENTS_AND_EXPLICIT_N_THREE_HALVES_RATE_20260908.md`), §3, proves by reflection and the range comparison that
+
+\[
+\mathbb E(2h-1)\le2t-3,\qquad t=2^{2r+1}/\binom{2r+1}{r}.
+\]
+
+The finite central-binomial bound
+
+\[
+c_r:=4^{-r}\binom{2r}{r}\ge\frac1{2\sqrt r}
+\]
+
+therefore yields
+
+\[
+\mathbb E(2h-1)
+\le\frac{8(r+1)\sqrt r}{2r+1}-3
+=4\sqrt r+\frac{4\sqrt r}{2r+1}-3\le4\sqrt r.
+\tag{3}
+\]
+
+The last inequality holds for every r≥1; for example `2r+1>=2sqrt(r)` bounds the added fraction by two. The same central-binomial bound gives the sharper auxiliary fixed-size debit. Under `P*(D)=4^{-|D|}/2`,
+
+\[
+\Pr_*(a_0=r)=\frac{c_r}{2(r+1)},\qquad
+\Pr_*(a_0=r)^{-1}\le Q_r:=4(r+1)\sqrt r.
+\tag{4}
+\]
+
+See the exact Boltzmann/profile audit (`archived research: scratch/PBBS_AUXILIARY_BOLTZMANN_JOINT_PROFILE_ATOM_INDEPENDENT_AUDIT_20260908.md`), §5. The expression Q_r is an upper bound for the inverse probability, not a claim of equality.
+
+### J.H.2 The finite parameters and local bound
+
+Let r≥1, `0<delta<=1/6`, integer L≥1, integer z≥2, and real M≥0 satisfy
+
+\[
+\frac{\delta\sqrt r}{L+2}\ge4,
+\qquad \frac{2(1-\delta)r}{(L+2)^3}\ge1000.
+\tag{5}
+\]
+
+Define
+
+\[
+\begin{aligned}
+E_A&=2(L+1)\exp\!\left[-\frac{(\delta\sqrt r/(L+2)-4)^2}{6}\right],\\
+E_P&=Q_rL(3r+1)\exp\!\left[-\frac{4(1-\delta)r}{3(L+2)^3}\right],\\
+A_z(M)&=\sum_{p\le z}\frac{\log p}{p-1}+\frac Mz,\\
+\rho_s&=\frac{1.001(s+2)^{3/2}}{2\sqrt{\pi(1-\delta)r}},\\
+y_s&=\frac{4(1-\delta)r}{s+2}-\frac{2(1+\delta)r}{s+3}+1,\\
+b_s&=\min\!\left\{1,\frac{A_z(M)+M\rho_s}{\log y_s}\right\},\quad0\le s<L.
+\end{aligned}
+\tag{6}
+\]
+
+Every prime sum in this note is over primes. The denominator is positive: the coefficient of r in y_s−1 has numerator
+
+\[
+(2-6\delta)s+8-16\delta>0
+\]
+
+over the positive denominator `(s+2)(s+3)`.
+
+The exact whole-deeper-profile reverse law under P* is
+
+\[
+a_s=2b-c+\operatorname{NB}(p=2b+1,q=(s+2)^{-2}),
+\quad b=a_{s+1},\ c=a_{s+2}.
+\]
+
+When the child values obey the relative delta ranges, the entire parent support obeys `2a_s+1>=y_s`, and
+
+\[
+pq\ge\frac{2(1-\delta)r}{(s+2)^3}\ge1000.
+\]
+
+The finite sharp NB lemma thus bounds the maximal atom by rho_s. It is uniform over the full infinite support, without imposing a parent range. The sharp residue/NB argument is fully proved in
+the local sharp audit (`archived research: scratch/PBBS_SHARP_UNIMODAL_NB_AND_DEPTH_INTEGRAL_INDEPENDENT_AUDIT_20260908.md`), §§1–2.
+
+For a deterministic integer u with `log u<=M`, its prime-power budget satisfies
+
+\[
+S(u):=\sum_{p^j\mid u}\frac{\log p}{p^j}\le A_z(M).
+\tag{7}
+\]
+
+Indeed the primes p≤z contribute at most their full geometric sums. For p>z, integrality of z gives p−1≥z, so their total is at most `sum_{p|u,p>z}log(p)/z<=log(u)/z`. This is the precise reason for the integer-cutoff correction. With noninteger z, p−1≥z need not hold.
+
+The sharp unimodal discrepancy gives
+
+\[
+\mathbb E_*\log\gcd(2a_s+1,u)\le S(u)+\rho_s\log u.
+\]
+
+On the divisibility event this logarithm is at least log y_s. Therefore
+
+\[
+\Pr_*\bigl(u\bmod(2a_s+1)=0\mid\text{entire deeper profile}\bigr)\le b_s.
+\tag{8}
+\]
+
+The candidate u is fixed throughout each use of this conditional inequality. No random-period conditioning is introduced.
+
+### J.H.3 Exceptional profiles and the reverse product
+
+Let A impose
+
+\[
+|a_j-r/(j+1)|\le\delta r/(j+1),\quad0\le j\le L+1,
+\]
+
+and let G additionally require primitivity of the first L original incoming-gap rows. The finite one-depth concentration estimate, at the nonnegative parameter in (5), gives
+
+\[
+\Pr_r(A^c)\le E_A.
+\tag{9}
+\]
+
+Depth zero is fixed, leaving L+1 terms in the union bound.
+
+Conditional on the entire child hierarchy under P*, the original row is an iid geometric vector of odd length p=2a_{s+1}+1. Its nonprimitive probability is at most `p exp(-2pq/3)`; when p=1 it is zero. On the child range,
+
+\[
+pq\ge\frac{2(1-\delta)r}{(L+2)^3},\qquad p\le3r+1.
+\]
+
+Drop fixed-size and irrelevant profile restrictions before using the full row kernel, then pay (4) once and sum over depths. This proves
+
+\[
+\Pr_r(A\text{ and a tested row is nonprimitive})\le E_P,
+\quad \Pr_r(G^c)\le E_A+E_P.
+\tag{10}
+\]
+
+The exact geometric-row and reverse-conditioning foundations are in
+the whole-row/tower audit (`archived research: scratch/PBBS_LOG_GCD_WHOLE_ROW_LAW_AND_SUCCESSIVE_CONDITIONING_AUDIT_20260908.md`).
+
+For completeness, fix u≤e^M. At reverse step s, let E_s impose the A ranges at depths s,...,L+1 and all tests `2a_j+1 | u` at depths j=s,...,L−1. The event E_{s+1} is measurable in the entire deeper-profile sigma-field and supplies both child ranges needed in (8). Drop only the parent A_s restriction inside the kernel, obtaining
+
+\[
+\Pr_*(E_s)\le b_s\Pr_*(E_{s+1}).
+\]
+
+The terminal event has probability at most one. Iterate and then impose a_0=r to obtain
+
+\[
+\Pr_r(A\text{ and all tests})\le Q_r\prod_{s=0}^{L-1}b_s=:B.
+\tag{11}
+\]
+
+This is successive conditioning, not independence across depths. Primitivity and fixed size are absent from the conditional NB laws. On G, the proved synchronous primitive-row theorem implies all these tests whenever the actual period is u. Consequently
+
+\[
+\Pr_r(G\text{ and }v=u)\le B\qquad(1\le u\le e^M).
+\tag{12}
+\]
+
+### J.H.4 Harmonic weighting removes the candidate-count loss
+
+Equation (12) is a good-event point-mass bound. For the small-period contribution, retain the reciprocal period in the exact charge (2). Because n divides v, write v=nj. Then
+
+\[
+\begin{aligned}
+\mathbb E\left[\frac{2h-1}{v};G,v\le e^M\right]
+&\le\sum_{1\le j\le\lfloor e^M/n\rfloor}\frac1j\Pr_r(G,v=nj)\\
+&\le B H_{\lfloor e^M/n\rfloor}\le B(1+M).
+\end{aligned}
+\tag{13}
+\]
+
+The empty sum is zero. For a nonempty sum, `H_N<=1+log N<=1+M`. Thus the number e^M of potential periods is not paid as an unweighted union bound.
+
+On v>e^M, (3) bounds the contribution by `4sqrt(r)e^{-M}`. On G^c, (2) bounds the integrand by one. Combining (9)–(13) gives the corrected, fully finite theorem
+
+\[
+\boxed{\displaystyle
+\epsilon_r\le4\sqrt r\,e^{-M}
++Q_r(1+M)\prod_{s=0}^{L-1}b_s+E_A+E_P.}
+\tag{14}
+\]
+
+No independence of height and period, or of different rows, has been assumed. The large-period height expectation is unconditional; the small-period argument uses only `2h-1<n` and the point-mass bound.
+
+### J.H.5 A finite prime budget for the asymptotic parameters
+
+Use the elementary Chebyshev bound theta(x)<3x, as proved and used in §4 of the fresh-prime construction note (`archived research: HEIGHT_ADAPTIVE_FRESH_PRIME_RATE_20260908.md`). For an integer m≥2,
+
+\[
+\psi(m)\le3m+3\sqrt m\log_2m<7m.
+\]
+
+The last inequality follows from `log m/sqrt m<=2/e`, `log2>2/3`, and `e>8/3`: the added coefficient is less than 27/8, and `3+27/8<7`.
+
+The factorial identity and its floor error therefore give
+
+\[
+\sum_{p^a\le m}\frac{\log p}{p^a}\le\log m+7.
+\]
+
+For each prime p≤m, the geometric tail starting at its first power above m is at most 2/m. Summing its log p weights gives at most `2theta(m)/m<6`. Hence
+
+\[
+\sum_{p\le m}\frac{\log p}{p-1}\le\log m+13.
+\tag{15}
+\]
+
+For z=floor M≥2, `M/z<1+1/z<=3/2`. Equation (15) proves the convenient finite bound
+
+\[
+A_z(M)\le\log(M+2)+15.
+\tag{16}
+\]
+
+### J.H.6 Explicit depth envelope at log r≥65536
+
+Put
+
+\[
+X=\log r\ge65536,\quad D=\log X,\quad
+\Gamma=r^{1/5}X^{-3/5},\quad T=\Gamma X,
+\]
+
+and choose
+
+\[
+\delta=.01,\qquad L=\lfloor25T/16\rfloor,\qquad
+M=1.07T,\qquad z=\lfloor M\rfloor.
+\tag{17}
+\]
+
+The sharper logarithm estimate
+
+\[
+D\le X/5000
+\tag{18}
+\]
+
+holds throughout this domain. At X=65536, `16log2<11.2<65536/5000`, using log2<.7; thereafter the difference increases. The inequality log2<.7 follows already from the first four nonnegative terms of exp(.7), whose sum exceeds two.
+
+The earlier scale proof remains valid with room to spare:
+
+\[
+\Gamma\ge2^{100}X,\quad T\ge2^{100}X^2,\quad
+\Gamma^2\ge2^{100}T,\quad \log T<X/4.
+\tag{19}
+\]
+
+In particular T≥4000, L+2≤2T<r, and both finite guards in (5) hold. The smallest pq is at least `1.98Gamma²/8>1000`.
+
+For each tested s, `y_s>=r/(L+2)`, and
+
+\[
+\log y_s\ge .8X-.4D-\log2\ge .7999X.
+\tag{20}
+\]
+
+Indeed `.4D<=X/12500`, and `log2<.7<=X/80000`; the sum of those two coefficients is less than .0001.
+
+Equations (16)–(17) imply
+
+\[
+A_z(M)\le .2X+.4D+16.
+\]
+
+Since X≥64000, `.4D+16<=X/12500+X/4000=.00033X<.0007749X`. As `.251*.7999=.2007749`, the non-atom term in b_s is at most .251.
+
+The atom coefficient is also finite, not a limiting claim. The existing Machin lower bound gives
+
+\[
+\pi>281476/89625>157/50,
+\quad\sqrt{.99\pi}>1.763.
+\]
+
+Therefore
+
+\[
+\frac{1.001\cdot1.07}{2\cdot.7999\sqrt{.99\pi}}<.38,
+\tag{21}
+\]
+
+because `.76*.7999*1.763=1.071770012>1.07107=1.001*1.07`. The weaker lower bound π>25/8 alone would not certify this new .38 constant; the stronger bound is explicitly used.
+
+The identity `T^{5/2}=sqrt(r)X` now proves the uniform envelope
+
+\[
+b_s\le\frac{251}{1000}+\frac{19}{50}\left(\frac{s+2}{T}\right)^{3/2}.
+\tag{22}
+\]
+
+### J.H.7 The shifted finite product and four-term absorption
+
+Let
+
+\[
+\phi(t)=-\log(.251+.38t^{3/2}),\qquad a=25/16.
+\]
+
+The independent exact arithmetic certificate (`archived research: scratch/HARMONIC_PERIOD_THREE_FINITE_ROWS_AND_INTEGRAL_RATIONAL_CERTIFICATE_20260908.md`), §3, proves
+
+\[
+I:=\int_0^a\phi(t)\,dt>
+\frac{1074181933864880728}{10^{18}}>1.074.
+\tag{23}
+\]
+
+This is a finite rational right-endpoint/logarithmic-series lower sum; all 1,250 downward-rounded cell numerators are retained. No numerical quadrature premise is used.
+
+The function is decreasing, φ(0)<2, and is positive up to a+.001. For the last assertion, `sqrt(a+.001)<1.251`, so
+
+\[
+.251+.38(a+.001)^{3/2}
+<.251+.38(1.5635)(1.251)=.99425663<1.
+\]
+
+Since T≥4000, `(L+2)/T` lies between a and a+.001. Monotonicity, including the two-position shift, gives
+
+\[
+\sum_{s=0}^{L-1}\phi((s+2)/T)
+\ge T\int_{2/T}^{(L+2)/T}\phi(t)\,dt
+\ge TI-2\phi(0)>1.074T-4\ge1.073T.
+\]
+
+Consequently
+
+\[
+\prod_{s=0}^{L-1}b_s\le e^{-1.073T}.
+\tag{24}
+\]
+
+The exceptional probabilities are bounded on the same entire finite domain. Since `sqrt(r)/(L+2)>=Gamma sqrt(T)/2>800`, the coarse exponent in E_A is at least `r/[240000(L+2)^2]>=TGamma²/960000>=4T`. Its log-prefactor is at most X≤T. The primitive exponent in E_P is at least `Gamma²/8>=4T`, while
+
+\[
+Q_rL(3r+1)\le64r^{5/2}T,
+\quad\log(64r^{5/2}T)\le4X\le T.
+\]
+
+Thus each exception is at most e^{-3T}, and
+
+\[
+E_A+E_P\le e^{-2T}.
+\tag{25}
+\]
+
+Substituting (24)–(25) in (14), the two remaining prefactors satisfy
+
+\[
+\log(4\sqrt r)\le X\le T/2000,
+\quad\log(Q_r(1+M))\le3X\le T/2000.
+\]
+
+The three terms after combining the exceptions are therefore each at most e^{-1.0695T}. Since `log3<2<=T/2000`, their sum is at most e^{-1.069T}. We have proved
+
+\[
+\boxed{\epsilon_r\le e^{-1.069T}\qquad(\log r\ge65536).}
+\tag{26}
+\]
+
+Every prefactor and finite Riemann error is charged explicitly; no remaining eventual qualification occurs in (26).
+
+### J.H.8 Both parities and the coefficient 0.93
+
+For an integer k≥2^{131073}+1, take n=k if k is odd and n=k−1 if it is even. Then r=(n−1)/2≥2^{131072}, so `log r>=131072log2>65536`. The proved literal even lift doubles both word length and central width, preserving the normalized error.
+
+On this range k≥10000 and log k≥10000. Hence
+
+\[
+r/k\ge .4999,\qquad \log r/\log k\ge .9999.
+\]
+
+The second estimate uses `.4999>e^{-1}`, so `log r>=log k-1`. Also
+
+\[
+.4999(.9999)^2>.499,
+\quad\left(\frac{930}{1069}\right)^5
+<\left(\frac{87}{100}\right)^5=.4984209207<.499.
+\]
+
+The first comparison inside the second chain is just `93000<93003`. Therefore
+
+\[
+\frac{T}{(k(\log k)^2)^{1/5}}>\frac{930}{1069}.
+\]
+
+Since `1.069*(930/1069)=.93`, equation (26) proves (1) for every dimension in its stated finite domain.
+
+## J.R Exact rational certificates for the harmonic inequality
+
+**Recorded finite arithmetic [R].** These are the three specified parameter
+choices and the exact integral certificate used above; no additional row
+or parameter search is asserted. The enclosing procedure and certified
+values are included here so the public result does not depend on a link
+to an unpublished log.
+
+### J.R.1 The three finite certificates
+
+Set delta=1/10, z=M, Q_r=4(r+1)sqrt(r), and
+
+    A_z = 1 + sum_(prime p<=M) log(p)/(p-1),
+    rho_s = (1001/1000)(s+2)^(3/2) / [2 sqrt(pi*(9r/10))],
+    y_s = (36r/10)/(s+2) - (22r/10)/(s+3) + 1,
+    b_s = min(1,(A_z+M*rho_s)/log(y_s)).
+
+For each of the following rows, the exact outward arithmetic proves
+
+    Q_r(1+M) product_(s=0)^(L-1) b_s < (1/4)10^(-d).
+
+| r | L | M | d | Proved upper bound on log[4*10^d*Q_r(1+M)*product b_s] |
+|---:|---:|---:|---:|---:|
+| 10^12 | 1,100 | 790 | 330 | < -24 |
+| 10^14 | 3,500 | 2,250 | 950 | < -72 |
+| 10^16 | 10,200 | 6,150 | 2,600 | < -142 |
+
+The full certified upper bounds, each a rational with denominator
+10^40, are respectively
+
+    -24.1840237529594175045481551914158591044930
+    -72.2204447174243510930589234706348645166557
+    -142.4158463321439232983265775716796812694773
+
+The required finite guards also pass in all three rows:
+
+    delta*sqrt(r)/(L+2) >= 4,
+    (18r/10)/(L+2)^3 >= 1000.
+
+For each remaining term C exp(-E), the program proves
+
+    E - log(4C) - d log(10) > 0.
+
+Its three (C,E) pairs are exactly
+
+    (4 sqrt(r), M),
+    (2(L+1), (delta*sqrt(r)/(L+2)-4)^2/6),
+    (Q_r L(3r+1), (36r/10)/[3(L+2)^3]).
+
+For concise display, the following integer lower bounds are weaker
+than the saved certified rational margins:
+
+| r | Short-period margin | Depth margin | Nonprimitive-row margin |
+|---:|---:|---:|---:|
+| 10^12 | >13 | >485 | >56 |
+| 10^14 | >43 | >11,014 | >513 |
+| 10^16 | >142 | >152,829 | >5,209 |
+
+Thus each of the four terms is strictly below (1/4)10^(-d), and their
+sum is strictly below 10^(-d). This conclusion is the direct numerical
+consequence of the specified four-term expression; it introduces no
+new conditioning or period assumption.
+
+### J.R.2 Why the logarithms and square roots are rigorous
+
+All arithmetic used in the inequalities is integer or rational. The
+working scale is B=10^40. A stored lower or upper integer represents
+that integer divided by B. Mathematical premises do not use binary
+floating point, quadrature, or a library logarithm.
+
+For a positive rational x, exact powers of two normalize it as
+x=2^e u with 1<=u<2. With y=(u-1)/(u+1),
+
+    log(u) = 2 sum_(j=0)^63 y^(2j+1)/(2j+1) + remainder,
+    0 <= remainder <= 3^(-128),
+
+because 0<=y<=1/3 and the positive series tail is bounded by its first
+term times 1/(1-y^2). Each multiplication and division in the truncated
+positive sum is rounded down for the lower enclosure and up for the
+upper enclosure. The explicit remainder is added to the upper bound.
+The same series encloses log(2). Multiplication by a negative exponent
+e correctly interchanges its lower and upper contributions.
+
+Pi is enclosed using Machin's identity
+
+    pi=16 atan(1/5)-4 atan(1/239).
+
+Each arctangent uses 64 alternating rational terms. Every individual
+term is rounded outward, and the next positive term bounds the
+remainder because the even-length partial sum is below the arctangent.
+The negative coefficient -4 uses the opposite arctangent bound.
+
+To obtain an upper rho_s bound, replace pi by its positive lower
+enclosure and compute the ceiling of B times the resulting square root
+using `isqrt` and exact integer-square comparisons. In particular, the
+program verifies both the claimed ceiling and the failure of the next
+smaller integer to be a valid upper bound.
+
+A_z is rounded up, rho_s is rounded up, and log(y_s) is rounded down.
+Their ratio therefore gives an upper bound for b_s, after applying the
+monotone cap min(1, .). The logarithm of that upper bound is itself
+rounded up. Adding these upper logarithms, log[4Q_r(1+M)], and d log(10)
+proves the product inequality without forming a giant product.
+
+For the other terms, E is retained as an exact rational. The verifier
+rounds E down and both logarithms up. A positive resulting margin is
+therefore a valid strict lower bound.
+
+### J.R.3 The integral certificate is reproduced exactly
+
+Consider
+
+    I = integral_(0)^(25/16) -log(251/1000+(19/50)t^(3/2)) dt.
+
+The integrand is positive and decreasing on this interval. Use the
+right endpoints t_i=(i/1000)^2 for i=1,...,1250. At those endpoints,
+
+    q_i = 251/1000 + 19i^3/(50*1000^3),
+    delta t_i = (2i-1)/10^6.
+
+Each q_i lies strictly between zero and one. The positive logarithm
+series gives
+
+    -log(q_i) > sum_(j=1)^32 (1-q_i)^j/j.
+
+Every cell contribution formed from that rational partial sum is
+rounded down separately to a multiple of 10^(-18). The exact sum of
+those 1,250 rounded cells is
+
+    1074181933864880728 / 10^18
+      = 1.074181933864880728.
+
+This is exactly the proposed integer numerator, not merely a nearby
+floating-point value. It exceeds 1073/1000 by
+
+    147741733110091 / 125000000000000000 > 0.
+
+The monotone right-endpoint inequality and the strictly positive
+omitted logarithm terms therefore prove I>1073/1000. Every rounded
+cell is saved for replay.
+
+### J.R.4 The two additional exact comparisons
+
+The squared coefficient in the proposed bound is exactly
+
+    [(1.001*1.07)/(0.7999*2*sqrt((157/50)*0.99))]^2
+      = 26072521475 / 180818786826.
+
+Its distance below (0.38)^2 is exactly
+
+    47139178343 / 226023483532500 > 0.
+
+Also
+
+    (930/1069)^5 = 695688369300000 / 1396009989636349,
+
+whose distance below 1/2 is exactly
+
+    4633251036349 / 2792019979272698 > 0.
+
+Both checks use rational comparisons after squaring positive quantities;
+no square-root approximation is needed for these two comparisons.
+
+## J.U Complete uniform-envelope derivation
+
+**Conditional on J.1 inputs 1–4.** The following proof derives the exact
+Narayana reciprocal moment, controls nonprimitive top rows by a positive
+generating function, and proves monotonicity of the analytic envelope.
+The notation and decimal constants are retained from the reviewed proof.
+
+### J.U.1 Probability space and the exact collar charge
+
+Put n=2r+1, r>=1, W_r=binom(n,r), and
+Cat_r=binom(2r,r)/(r+1). A uniform physical middle state corresponds
+bijectively to a uniform Dyck word of semilength r and one of n
+labelled locations for its unique unmatched zero. Thus
+
+    W_r=n Cat_r.
+
+The height h, child circumference p, and primitivity of the original
+top incoming-gap row are rotation invariant. Their joint law under
+uniform physical states is exactly their joint uniform-Dyck law.
+There is no weighting by the PBBS cycle length and no extra factor
+n in the probability of a root event.
+
+Let v be the physical g=f^2 period. Write L_r for the nonzero
+height-adaptive word length and C_r for its collar charge:
+
+    L_r=W_r+C_r,
+    C_r=sum_(physical g cycles C)(2h_C-1).
+
+This notation avoids confusing the construction length with the
+handoff's separate N(k)=nu(k)+1 convention. The finite all-rank
+compiler is proved in
+the height-adaptive finite-word audit (`archived research: scratch/PBBS_HEIGHT_ADAPTIVE_FINITE_WORD_AND_RANGE_BOUND_INDEPENDENT_AUDIT_20260908.md`).
+It gives exactly
+
+    C_r/W_r=E_state[(2h-1)/v].                         (1.1)
+
+The physical averaging is important: every cycle contributes v
+states, each with charge (2h-1)/v. It is not an average over equally
+weighted cycles.
+
+The previously proved moment and period inputs are
+
+    E h^2<=2n,       v>=n,
+    v>=np when the original top gap row is primitive.  (1.2)
+
+The height reflection calculation and its uniform-law scope are in
+the one-row moment audit (`archived research: scratch/PBBS_ONE_ROW_PERIOD_MOMENTS_AND_EXPLICIT_N_THREE_HALVES_RATE_20260908.md`),
+Sections 1 and 3. The original gap-row period implication nd|v, hence
+the primitive case of (1.2), is proved in
+the invariant-row period audit (`archived research: scratch/PBBS_INVARIANT_GAP_ROW_PERIOD_DIVISIBILITY_INDEPENDENT_AUDIT_20260908.md`).
+The new exact signature recursion is not needed to strengthen this
+particular implication.
+
+### J.U.2 Exact Narayana law for the child circumference
+
+Let K be the number of peaks of a uniform Dyck_r word. Deleting all
+peaks removes K up-steps, so the child semilength is
+
+    d=r-K,       p=2d+1.
+
+For completeness, the Narayana enumeration follows from the ordinary
+first-return Dyck decomposition. If C(z,u) counts Dyck words by
+semilength z and peaks u, then
+
+    C=1+z C (u+C-1).
+
+With F=C-1 this is F=z(1+F)(u+F). Formal Lagrange inversion gives,
+for 1<=k<=r,
+
+    [z^r u^k]F
+      =(1/r)t^(r-1)u^k (`archived research: scratch/1+t`)^r(u+t)^r
+      =(1/r)binom(r,k)binom(r,k-1).
+
+Replacing k by r-j and normalizing by Cat_r proves
+
+    Pr(d=j)=binom(r,j)binom(r,j+1)/(r Cat_r),
+    0<=j<=r-1.                                        (2.1)
+
+In particular Pr(d=0)=1/Cat_r. The resulting one-slot row p=1 is
+always primitive, including a constant row. This endpoint is kept
+in the reciprocal moment and excluded correctly from the bad-row
+generating function below.
+
+### J.U.3 The rational majorant, including the exceptional endpoint
+
+For integer j>=1 the proposed inequality is
+
+    1/(2j+1)^2
+      <=1/[4(j+1)(j+2)]
+          +5/[3(j+1)(j+2)(j+3)].                       (3.1)
+
+Subtracting the left side from the right side gives EXACTLY
+
+    (j-1)(56j+43)
+      /[12(j+1)(j+2)(j+3)(2j+1)^2].                   (3.2)
+
+Every denominator is positive. Thus (3.1) holds for j>=1, with
+equality at j=1. At j=0 the right side is 29/72, so the precise
+missing amount is 43/72. Consequently the all-j inequality is
+
+    1/(2j+1)^2
+      <=1/[4(j+1)(j+2)]
+        +5/[3(j+1)(j+2)(j+3)]
+        +(43/72) 1_{j=0}.                              (3.3)
+
+This is why the correction term is 43/(72 Cat_r), not an unspecified
+small-error term or a correction that requires d to grow.
+
+### J.U.4 Both Vandermonde calculations, with their exact missing terms
+
+Define
+
+    A_r=E[1/((d+1)(d+2))],
+    B_r=E[1/((d+1)(d+2)(d+3))].
+
+From (2.1) and
+
+    binom(r,j)/((j+1)(j+2))
+      =binom(r+2,j+2)/((r+1)(r+2)),
+
+Vandermonde gives
+
+    A_r=[binom(2r+2,r+1)-(r+2)]
+          /[r(r+1)(r+2)Cat_r].                         (4.1)
+
+Indeed, put ell=j+2 in the convolution
+sum_ell binom(r+2,ell)binom(r,r+1-ell). The original j-range
+0,...,r-1 omits exactly the nonzero ell=1 term, equal to r+2;
+the other omitted boundary terms vanish. This verifies the
+subtraction in the submitted exact formula.
+
+The exact central-binomial ratio is
+
+    binom(2r+2,r+1)/Cat_r=2(2r+1)<4(r+1).
+
+Dropping the negative term in (4.1) therefore proves
+
+    A_r<=4/[r(r+2)].                                   (4.2)
+
+For the second moment use instead
+
+    binom(r,j)/((j+1)(j+2)(j+3))
+      =binom(r+3,j+3)/((r+1)(r+2)(r+3)).
+
+The same convolution with ell=j+3 now yields the useful exact
+identity
+
+    B_r=[binom(2r+3,r+2)-binom(r+3,2)]
+          /[r(r+1)(r+2)(r+3)Cat_r].                    (4.3)
+
+The sole omitted nonzero boundary term is ell=2, equal to
+binom(r+3,2). The relevant ratio is
+
+    binom(2r+3,r+2)/Cat_r
+      =2(2r+3)(2r+1)/(r+2)<8(r+1),
+
+because
+
+    8(r+1)(r+2)-2(2r+3)(2r+1)=8r+10>0.
+
+Dropping the negative term in (4.3) gives the second claimed bound
+
+    B_r<=8/[r(r+2)(r+3)].                              (4.4)
+
+All identities and inequalities above hold for r>=1, including
+r=1. No truncation of the Narayana law has been made.
+
+### J.U.5 The resulting reciprocal-particle bound J_r
+
+Take expectation of (3.3) under (2.1) and insert (4.2), (4.4):
+
+    E p^(-2)
+      <=(1/4)A_r+(5/3)B_r+43/(72 Cat_r)
+      <=1/[r(r+2)]+40/[3r(r+2)(r+3)]+43/(72 Cat_r)
+      =:J_r.                                          (5.1)
+
+Combining the first two fractions gives exactly
+
+    J_r=(3r+49)/[3r(r+2)(r+3)]+43/(72 Cat_r).           (5.2)
+
+This moment is under the full uniform root/state law. It is not
+conditioned on the top row being primitive. That is legitimate and
+useful in the Cauchy–Schwarz bound: discarding the primitive-event
+indicator only enlarges the nonnegative quantity being bounded.
+
+### J.U.6 Full bad-row probability and the Cauchy–Schwarz envelope
+
+The original rooted inverse-pruning fibre, including its ordered
+incoming-gap coordinates, is proved in Sections 1–2 of
+the genealogy structural audit (`archived research: research_round1/pbbs_gaussian_clock_genealogy_structural_audit.md`).
+For a fixed child Dyck word of semilength d and k peaks, its parent
+row has p=2d+1 slots, mass ell, and parent semilength
+
+    r=d+k+ell.
+
+There is exactly one parent root per admissible ordered row. These
+are not necklaces and there is no division by p. This is the precise
+fibre needed in the following bad-row count, and it is the same
+original law used in (2.1).
+
+Let b_r count roots with a nonprimitive top row. Necessarily d>=1.
+For a repetition factor e>1 dividing odd p, one has e>=3, and its
+row-mass generating function is (1-x^e)^(-p/e). For 0<x<1 this is
+at most (1-x^3)^(-p/3). Union-bounding at most p possible factors
+overcounts nonprimitive rows in the correct direction.
+
+The child's peak enumerator obeys
+
+    N_d(x)=(1/d)sum_k binom(d,k)binom(d,k-1)x^k
+            <=sqrt(x)/d * (1+sqrt(x))^(2d).             (6.1)
+
+To see this, put y=sqrt(x). Each summand is y/d times
+binom(d,k)y^k binom(d,k-1)y^(k-1); summing these nonnegative
+products is at most the product of the full two binomial sums.
+
+Take x=9/25 and A=51/50. Exact rational arithmetic gives
+
+    A^3(1-x^3)=1975969296/1953125000>1,
+    B=A^2 x(1+sqrt(x))^2=374544/390625<1.
+
+Thus the row generating function is at most A^p and
+
+    sum_r b_r x^r
+      <=sum_(d>=1) x^d N_d(x)(2d+1)A^(2d+1)
+      <=3 sqrt(x) A B/(1-B)
+      =85957848/2010125<43.                             (6.2)
+
+The last strict comparison has positive integer margin 477527.
+The convergent positive geometric majorant justifies the summation;
+nonnegative coefficients give b_r<=43(25/9)^r for every r.
+This full argument was independently checked in
+the signature and generating-function audit (`archived research: scratch/PBBS_EXACT_SYMMETRY_SIGNATURE_RECURSION_AND_NONPRIMITIVE_TOP_GF_AUDIT_20260908.md`),
+Sections 5–6, which this audit read.
+
+The elementary Catalan estimate
+
+    Cat_r>=4^r/[2(r+1)sqrt(r)]                          (6.3)
+
+holds for all r>=1. One direct proof starts from
+c_1=binom(2,1)/4=1/2 and uses
+c_(r+1)/c_r=(2r+1)/(2r+2); the inequality
+(2r+1)^2>4r(r+1) inductively preserves c_r>=1/(2sqrt(r)).
+Combining (6.2)–(6.3) gives
+
+    Pr(bad top row)<=86(r+1)sqrt(r)(25/36)^r.           (6.4)
+
+There is no physical-state factor n here, because every root has
+exactly n rotations and the event is invariant under rotation.
+
+On the primitive event G, (1.2) bounds the state collar by 2h/(np).
+Everywhere, h<=r and v>=2r+1 imply (2h-1)/v<1. Hence (1.1) gives
+
+    C_r/W_r
+      <=(2/n)E[h/p;G]+Pr(G^c)
+      <=(2/n)sqrt(E h^2 * E p^(-2))+Pr(G^c)
+      <=2sqrt(2J_r/(2r+1))
+            +86(r+1)sqrt(r)(25/36)^r
+      =:E_r.                                          (6.5)
+
+No independence of h and p is used: this is unconditional
+Cauchy–Schwarz. No conditioning on a dynamically reached state,
+incidence measure, or primitive row is substituted into the moments.
+The bound is valid for every r>=1 even when its bad-event majorant
+exceeds one in a small dimension.
+
+### J.U.7 Strict monotonicity from r=4
+
+In the decomposition (5.1), both rational summands decrease strictly
+with r. Catalan numbers increase for r>=1 because
+
+    Cat_(r+1)/Cat_r=2(2r+1)/(r+2)>1.
+
+Thus J_r decreases strictly for r>=1, and so does
+2sqrt(2J_r/(2r+1)).
+
+For the second term Q_r=86(r+1)sqrt(r)(25/36)^r, the exact squared
+successive ratio is
+
+    (Q_(r+1)/Q_r)^2
+      =(25/36)^2 (r+2)^2/[r(r+1)].                     (7.1)
+
+For r>=4,
+
+    (r+2)^2/[r(r+1)]<=9/5,
+
+since 9r(r+1)-5(r+2)^2=(r-4)(4r+5)>=0. Therefore
+
+    (Q_(r+1)/Q_r)^2<=125/144<1.                        (7.2)
+
+Both terms of E_r decrease strictly for all r>=4. This proves
+the stated finite-to-infinite monotonicity; it makes no assertion
+that the exact construction ratios C_r/W_r themselves are monotone.
+
+### J.U.8 Certified thresholds and the exact parity bridge
+
+The separately executed and fully read
+numeric certificate (`archived research: scratch/SYMMETRY_DESCENT_UNIFORM_THRESHOLD_EXACT_NUMERIC_CERTIFICATE_20260908.md`)
+uses outward rational square-root enclosures and proves
+
+    E_45   <0.009272   <1/100,
+    E_163  <0.000992   <1/1000,
+    E_741  <0.00009987 <1/10000,
+    E_3424 <0.000009999<1/100000.
+
+It also checks all 31 cases r=14,...,44 in the already verified exact
+construction census, with that census's hash pinned. Each satisfies
+125 C_r<W_r. The unique largest ratio is at r=16 (dimension 33):
+
+    C_16/W_16=4479616/583401555<1/125<1/100.
+
+This finite band covers odd dimensions 29 through 89. Equation (6.5),
+the first numerical enclosure, and monotonicity cover every odd
+dimension from 91 onward. The other three enclosures start at odd
+dimensions 327, 1483, and 6849. No finite-census monotonicity is used.
+
+For clarity, the exact even lift is literal. Given a complete nonzero
+word A_1,...,A_m on the odd-dimensional ground set, emit
+
+    A_1,...,A_m,{z},A_1 union {z},...,A_(m-1) union {z}.
+
+Its length is 2m. Old witnesses remain. A target with z uses its
+lifted witness if the old witness ends before m, or its old suffix
+followed by {z} if the witness ends at m. The singleton {z} is the
+bridge itself. Since W(2r+2)=2W_r, the normalized odd-dimensional
+bound therefore holds unchanged in the next even dimension. This
+supplies every integer in each of the four headline ranges.
+
+The numeric audit's single h100 run, finite-band comparisons, and
+certificate hashes are its own execution record. This proof did not
+rerun its arithmetic or the underlying partition census. The exact
+symmetry recursion and census validation are separate retained proof
+inputs, not assumed consequences of the envelope calculation.
+
+## J.N Exact threshold comparisons and finite bridge
+
+**Recorded finite arithmetic [R].** The four analytic comparisons and
+the 31 finite census comparisons below were independently checked in
+the recorded run. The finite census itself is a separate recorded
+certificate input, not inferred from the analytic envelope. No entire
+713-case or 3,356-case band is certified by these checks.
+
+### J.N.1 The four outward-root comparisons
+
+Use exactly
+
+\[
+J_r=\frac{3r+49}{3r(r+2)(r+3)}+\frac{43}{72\operatorname{Cat}_r},
+\qquad
+E_r=2\sqrt{\frac{2J_r}{2r+1}}+
+86(r+1)\sqrt r\left(\frac{25}{36}\right)^r.
+\]
+
+The script also verifies the alternative displayed decomposition of J_r by exact rational equality.
+
+For each nonnegative rational radicand a/b, put Q=10^{60} and compute an integer q using `isqrt`, adjusting upward if necessary. The two exact integer checks are
+
+\[
+(q-1)^2b<aQ^2\le q^2b.
+\]
+
+Thus `sqrt(a/b)<=q/Q`, including the perfect-square case. Apply this independently to `2J_r/(2r+1)` and to r. All coefficients multiplying the roots are positive; substituting the upward roots gives a rational U_r≥E_r. The complete numerator/denominator of U_r and both root certificates are retained.
+
+The proved strict chains are:
+
+| r | Rounded-up display of U_r | Exact claimed bound checked | Target |
+|---:|---:|---:|---:|
+| 45 | 0.009271845429338486 | E_45 < 0.009272 | < 0.01 |
+| 163 | 0.000991315300369260 | E_163 < 0.000992 | < 0.001 |
+| 741 | 0.000099868373195185 | E_741 < 0.00009987 | < 0.0001 |
+| 3424 | 0.000009998021412266 | E_3424 < 0.000009999 | < 0.00001 |
+
+Each comparison is an integer cross multiplication of exact rationals. The report also gives 45-place outward decimal enclosures of U_r. Those are enclosures of the certified upper quantity U_r, not a claim that its lower decimal endpoint is a lower bound for E_r.
+
+### J.N.2 The finite bridge uses the existing exact census
+
+The program reused the already verified rotation-period census (`archived research: scratch/rotation_period_census_20260908/exact_rotation_period_census.json`). Before reading its rows as premises, it checked the file SHA-256 against
+
+`43b52c9d3ed72b9901dc7c6aca96a4ce8f46a12e322fc01c181da1a3412869b2`.
+
+It then checked `125*C_r<W_r` for **all 31 values r=14,...,44**, corresponding to odd dimensions n=29,...,89. No monotonicity of the finite construction ratios was assumed.
+
+The unique maximum is at r=16, meaning dimension n=33, with
+
+\[
+W_{33}=1,166,803,110,\quad C_{33}=8,959,232,\quad
+N_{33}=1,175,762,342,
+\]
+
+\[
+\frac{C_{33}}{W_{33}}=rac{4479616}{583401555}
+<\frac1{125}<\frac1{100}.
+\]
+
+Its exact strict margin `W_33-125*C_33` is 46,899,110. The report retains every individual finite-band row and margin, as well as the exact ratio comparisons establishing uniqueness of the maximum.
+
+Together with an established bound `epsilon_r<=E_r` and the separately proved decrease of E_r for r≥4, these numerical checks supply the finite-to-infinite bridge: the first band covers odd 29 through 89, E_45 starts at odd 91, and the other three envelope thresholds start at odd 327, 1483 and 6849. The exact even lift supplies their next even dimensions and therefore every dimension in each resulting range. This paragraph identifies the proof dependencies; it does not substitute a finite computation for the analytic envelope.
+
+### J.N.3 The quoted dimension-97 entry
+
+The stored n=97 row matches exactly:
+
+\[
+\begin{aligned}
+W_{97}&=12,738,806,129,490,428,451,365,214,300,\\
+C_{97}&=99,533,441,612,804,133,661,134,\\
+N_{97}&=12,738,905,662,932,041,255,498,875,434.
+\end{aligned}
+\]
+
+The exact strict margin for `100000*C_97<W_97` is
+
+\[
+2,785,461,968,210,015,085,251,814,300>0.
+\]
+
+Its ratio has the outward enclosure
+
+\[
+0.000007813404223366230172100460794832272637380
+\le C_{97}/W_{97}
+<0.000007813404223366230172100460794832272637381.
+\]
+
+No word of this enormous length was materialized or scanned in this audit; this is a replay of the already certified exact construction census.
+
+## J.S Public conclusions, finite scope and historical comparisons
+
+Under J.1, the strongest written relative-error bound is the coefficient
+0.93 theorem in J.H, with the displayed explicit onset. It bounds an
+actual finite construction at every dimension in that range; it neither
+asserts an additive error of zero nor resolves the all-dimensional
+exact-equality problem.
+
+The decreasing envelope and recorded finite bridge prove these sufficient
+uniform starts, for both parities:
+
+| All integer dimensions from | Relative excess above \(W(k)\) |
+|---:|---:|
+| 29 | <1% |
+| 327 | <0.1% |
+| 1,483 | <0.01% |
+| 6,849 | <0.001% |
+
+These are not claims of minimal starts. No monotonicity of the actual
+finite construction ratios is assumed. The three harmonic rows in J.R
+apply only to the pairs \(2\cdot10^{12}+1,+2\),
+\(2\cdot10^{14}+1,+2\), and \(2\cdot10^{16}+1,+2\), respectively,
+with errors below \(10^{-330},10^{-950},10^{-2600}\). They do not supply
+uniform thresholds beginning at those pairs, and those enormous words
+were not materialized.
+
+The exact period census in 9.24 independently covered odd dimensions
+3 through 101 and their even lifts. In particular, its finite bands
+29–102, 57–102 and 87–102 give excess below 1%, 0.1% and 0.01%, respectively;
+97/98 are below ten parts per million, and 101/102 below six parts per
+million. Sections 9.28–9.29 also record independently generated and
+completely replayed single-prefix certificates: r=163 gives dimension
+327/328 below 0.01%, and r=68 gives dimension137/138 below 0.001%.
+Those isolated checks do not establish new uniform starts.
+
+The following stronger uniform bands remain **user-reported, not fully
+independently replayed**:
+
+| Proposed uniform conclusion | Outstanding finite evidence |
+|---|---|
+| <0.1% for all k≥57 and <0.01% for all k≥87 | The 713-case forward-prefix band r=28–740, with its stated two tolerances; see 9.28. |
+| <0.001% for all k≥137 | The 3,356-case moment-prefix band r=68–3423; only r=68 was independently generated and replayed in that continuation; see 9.29. |
+
+The prefix proof methods passed internal review. The missing complete
+finite bands, and any claimed predecessor-failure/minimality certificate,
+are not supplied by a verification summary alone. The proved analytic
+envelope supplies the remaining tail only after the required band has
+actually been certified.
+
+For orientation, the earlier depth-product coefficient 3/5 on the same
+\((k(\log k)^2)^{1/5}\) scale and the same onset is superseded by J.H.
+The weaker fresh-prime estimate \(e^{-k^{1/5}/128}\) was recorded with
+the smaller onset \(2^{2048}+1\) in 9.20; its complete derivation is not
+reproduced in this appendix and it is not used in J.H or J.U. Earlier
+log-gcd, sieve and fractional-LCM routes are historical alternatives.
+
+The earlier leading-coefficient record remains distinct: Appendix A.7
+contains the self-contained coefficient 1.180703803847… [I]; 9.1 records
+the internally reviewed and numerically reproduced selective coefficient
+1.177987 [R]. The proposed 1.15325 endpoint optimization has not been
+independently audited in the recorded continuation. The clock/renewal
+coefficient-one manuscript in 9.2 remains [P]; J.H uses the separate finite
+hypotheses J.1. Neither internal review nor asymptotic coefficient one
+should be read as external certification or all-k exact equality.
+
+Finally, the construction-specific exponential collar-cost barrier in
+9.24 applies to the unchanged native construction. It is not a lower
+bound on the unrestricted optimum \(\nu(k)-B(k)\).
+
+## J.P Provenance of this consolidation
+
+The following local sources supplied the reproduced proofs and numerical
+records. Their contents above, together with the explicit J.1 hypotheses,
+are the public conditional derivation; the archive is not published here.
+
+- `archived research: HEIGHT_ADAPTIVE_HARMONIC_PERIOD_RATE_20260908.md`
+- `archived research: scratch/HARMONIC_PERIOD_THREE_FINITE_ROWS_AND_INTEGRAL_RATIONAL_CERTIFICATE_20260908.md`
+- `archived research: scratch/PBBS_NARAYANA_RECIPROCAL_MOMENT_AND_UNIFORM_ENVELOPE_AUDIT_20260908.md`
+- `archived research: scratch/SYMMETRY_DESCENT_UNIFORM_THRESHOLD_EXACT_NUMERIC_CERTIFICATE_20260908.md`
+
+The underlying harmonic probability/parity audit and top-row generating-
+function audit were separately read in the original review; their names
+remain provenance in the historical record. No checker, transcript or
+source file was newly added as a dependency during this consolidation.

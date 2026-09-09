@@ -1,7 +1,0 @@
-SMALL_LENGTH_PASS {"length": 1, "words": 7}
-SMALL_LENGTH_PASS {"length": 2, "words": 49}
-SMALL_LENGTH_PASS {"length": 3, "words": 343}
-SMALL_LENGTH_PASS {"length": 4, "words": 2401}
-SMALL_LENGTH_PASS {"length": 5, "words": 16807}
-SMALL_LENGTH_PASS {"length": 6, "words": 117649}
-FINAL_PASS {"words": 137256, "family_orientation_checks": 1647072, "arithmetic": {"status": "PASS", "paired_exits17": 1427, "paired_exits19": 4859, "run_start_rank9_floor_at_optimal18_trace": 4856, "previous_run_start_rank9_floor": 4835, "no_rank9_minimum_unmarked_letters19": 53479, "extra_unmarked_letters_above48623": 4856, "at_most_one_exit_length_lower_bound19": 97239, "improvement_over_previous_single_block_bound": 5}, "elapsed_seconds": 3.6019246596843004}

@@ -1,1 +1,0 @@
-ssh -o ClearAllForwardings=yes h100 'timeout 90s python3 /home/amodo/verify_k21_k22_optimal_forward_first_occurrence_20260909.py > /home/amodo/k21_k22_optimal_forward_20260909.run.log 2>&1'

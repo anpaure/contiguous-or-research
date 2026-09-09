@@ -1,28 +1,18 @@
 # Universal contiguous-subarray OR words
 
-**Exact optima are verified through dimension 22. The first unresolved dimension is 23.**
-The latest supplied words prove
+**Exact equality is verified through dimension 22. The first open case is 23.**
 
-\[
-\nu(21)=352719,\qquad \nu(22)=705435.
-\]
+For a word of nonempty sets, every target must occur as the union of one
+ordinary contiguous interval. The minimum word length is `nu(k)`; `B(k)`
+is the proved endpoint-count lower bound. The all-dimension conjecture
+`nu(k)=B(k)` remains open.
 
-Both words passed independent exhaustive ordinary-interval checks and attain
-proved endpoint lower bounds. Start with the
-[21/22 optimality and cyclic 21 certificate](K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md),
-the [independent forward certificate](scratch/K21_K22_OPTIMAL_INDEPENDENT_FORWARD_CERTIFICATE_20260909.md),
-or the [word inventory and hashes](answers/README.md).
+The [master handoff](MASTER_HANDOFF.md) contains the consolidated mathematical
+record. This branch keeps the publication materials and final solutions;
+exploratory notes, failed searches, duplicate outputs and bulk witness arrays
+belong to the separate local research workspace.
 
-For a word of nonzero `k`-bit integer masks, take the bitwise OR of every
-contiguous subarray. The minimum length that realizes all `2^k-1` nonzero
-masks is `nu(k)`. Intervals are ordinary, without wraparound, unless a
-result is explicitly labeled cyclic. If the zero mask is also required,
-the minimum is `N(k)=nu(k)+1`.
-
-## Exact finite results
-
-Every value below equals the proved lower bound `B(k)` and has a retained
-optimal word. The `k=0` value uses the empty word.
+## Exact results
 
 | k | Exact nu(k) | Word |
 |---:|---:|---|
@@ -50,103 +40,37 @@ optimal word. The `k=0` value uses the empty word.
 | 21 | 352,719 | [k21_optimal352719.word](answers/k21_optimal352719.word) |
 | 22 | 705,435 | [k22_optimal705435.word](answers/k22_optimal705435.word) |
 
-The next targets are **proved lower bounds only**:
+The next lower-bound targets are **B(23)=1,352,082** and
+**B(24)=2,704,159**; neither is claimed attained here.
+The cyclic minima `mu(19)=92,378` and `mu(21)=352,716` are also verified.
 
-| k | B(k), the conjectured optimum | Status |
-|---:|---:|---|
-| 23 | 1,352,082 | Open; no upper word claimed here |
-| 24 | 2,704,159 | Open; no upper word claimed here |
+See [the new finite results](EXACT_FINITE_RESULTS.md) for the lower-bound
+proof, cyclic openings, even-dimensional lifts and verification scope.
+[The answer inventory](answers/README.md) gives the exact file hashes.
 
-Separate cyclic certificates establish `mu(19)=92378` and
-`mu(21)=352716`, where `mu` permits intervals wrapping around a cyclic
-word. See the [19/20 record](K19_K20_OPTIMAL_AND_CYCLIC19_VERIFIED_20260909.md)
-and [21/22 record](K21_K22_OPTIMAL_AND_CYCLIC21_VERIFIED_20260909.md).
-These also document the corresponding verified periodic-core lifts.
+## Verify a word
 
-## The lower bound and the all-dimension conjecture
+The standard-library verifier enumerates all distinct suffix unions without
+a witness-length cutoff and checks the endpoint lower bound at every rank:
 
-For `k>=1` and each rank `s`, put
+```bash
+python3 verify_word.py answers/k21_optimal352719.word --k 21
+python3 verify_word.py answers/k22_optimal705435.word --k 22
+```
 
-\[
-m_s=\binom{k}{s},\qquad
-L_s=\sum_{j=1}^{s-1}\binom{k}{j},\qquad
-\tau_s=\min\left\{t\in\mathbb Z_{\ge0}:
-L_s\le t m_s+\frac{t(t+1)}2\right\}.
-\]
+[Compact verification results](answers/verification.json) record the fixed
+six-word check for dimensions 17–22. The explicit finite words do not depend
+on the asymptotic PBBS claims.
 
-The endpoint-count argument gives
+## Asymptotic bounds
 
-\[
-\nu(k)\ge B(k):=\max_{1\le s\le k}(m_s+\tau_s),
-\qquad B(0)=0.
-\]
+[ASYMPTOTIC_BOUNDS.md](ASYMPTOTIC_BOUNDS.md) summarizes the strongest recorded
+rates, explicit thresholds and the numerical bands still awaiting independent
+replay. Their conditional proofs and premises are consolidated in the master
+handoff. A small relative error does not establish exact equality.
 
-For the dimensions tabulated above, the middle-rank calculation attains
-this maximum; the latest certificates check every rank with exact integers.
-The [monotone-deadline proof](MONOTONE_DEADLINE_LOWER_BOUND_AND_EQUALITY_AUDIT_20260727.md)
-explains the endpoint argument. The remaining conjecture is
-
-\[
-\boxed{\nu(k)=B(k)\text{ for every }k.}
-\]
-
-The verified finite cases do not prove this for all dimensions. An
-asymptotic formula `nu(k)=(1+o(1))W(k)`, with
-`W(k)=binom(k,floor(k/2))`, also does not imply exact finite equality.
-
-## Asymptotic proofs and review package
-
-[ASYMPTOTIC_BOUNDS.md](ASYMPTOTIC_BOUNDS.md) is the current ledger of
-leading coefficients, quantitative rates, explicit thresholds and
-outstanding finite certificate bands. It separates the later
-height-adaptive PBBS deductions, with their retained mathematical inputs,
-from the earlier clock/renewal manuscript.
-
-The original coefficient-one publication materials remain available:
-
-- [Proposed proof manuscript](COEFFICIENT_ONE_PROOF_20260908.md).
-- [Construction companion](COEFFICIENT_ONE_CONSTRUCTION_20260908.md).
-- [Full unabridged review text](review/COEFFICIENT_ONE_REVIEW_20260908/FULL_PROOF_TEXT.md).
-- [Review-package README and dependency scope](review/COEFFICIENT_ONE_REVIEW_20260908/README.md).
-- [Downloadable review ZIP](review/COEFFICIENT_ONE_REVIEW_20260908.zip).
-
-**Review status:** the coefficient-one manuscript is a proposed proof
-with internal AI-agent reviews. It is not claimed to have external human
-peer review or formal proof-assistant verification. The later asymptotic
-results retain the hypotheses and review status stated in the ledger.
-Internal `PASS` labels are not external certification. Exhaustive finite
-word checks certify the named finite words; they do not verify an
-asymptotic theorem.
-
-The review package is a dated September 8 snapshot with stated external
-theorem dependencies. Its older finite-status passages, and those in the
-original construction companion, are historical. Use the current finite
-table and linked literal certificates for today's exact answers.
-
-## Historical upper bounds
-
-The supplied 21/22 improvements are preserved as superseded constructions:
-
-| Dimension | Verified progression |
-|---:|---|
-| 21 | [353,297](answers/k21_upper353297.word) → [353,094](answers/k21_upper353094.word) → [352,862](answers/k21_upper352862.word) → **[352,719, exact](answers/k21_optimal352719.word)** |
-| 22 | [706,594](answers/k22_upper706594.word) → [706,188](answers/k22_upper706188.word) → [705,724](answers/k22_upper705724.word) → **[705,435, exact](answers/k22_optimal705435.word)** |
-
-Earlier words, failed approaches and superseded numerical bounds remain
-in the record for provenance. They do not replace the current exact
-values. The [answers README](answers/README.md) and
-[finite comparison](FINITE_BOUNDS_K18_K19_K20_20260908.md) link their
-individual verification scopes and hashes.
-
-## Repository guide
-
-- [answers/](answers/README.md): literal words, hashes, exact values and historical upper bounds.
-- [MASTER_HANDOFF.md](MASTER_HANDOFF.md): authoritative current status, proved interfaces and unresolved gates.
-- [RESEARCH_INDEX.md](RESEARCH_INDEX.md): navigation through proofs, certificates and the current frontier.
-- [ASYMPTOTIC_BOUNDS.md](ASYMPTOTIC_BOUNDS.md): asymptotic results and finite approximation guarantees.
-- [MATHEMATICAL_HANDOFF.md](MATHEMATICAL_HANDOFF.md): chronological research history; later explicit corrections supersede older claims.
-
-Each computational certificate records its source, fixed inputs, resource
-limits, checks and retained witnesses. Follow those records for
-reproduction rather than treating a historical status statement or a
-filename as a correctness certificate.
+The previously published [coefficient-one manuscript](COEFFICIENT_ONE_PROOF_20260908.md),
+[construction companion](COEFFICIENT_ONE_CONSTRUCTION_20260908.md) and
+[review package](review/COEFFICIENT_ONE_REVIEW_20260908/README.md) remain available.
+They retain their stated internal-review status; no external or formal
+verification is claimed.

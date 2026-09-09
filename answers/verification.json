@@ -1,0 +1,1389 @@
+{
+  "scope": "Fixed independent publication check of the six supplied optimal words. Complete ordinary coverage and exact all-rank lower bounds; optional cyclic cores and byte-identical lifts at19/21. No search or asymptotic verification.",
+  "date": "2026-09-09",
+  "host": "arboghast (ssh h100)",
+  "verifier": "verify_word.py",
+  "verifier_sha256": "c180764adc420deab98f39b81b90e602b85229009c48ab7eab62ce8203fdaf91",
+  "execution": {
+    "runs": 1,
+    "automatic_retries": 0,
+    "exit_code": 0,
+    "batch_wall_limit_seconds": 150,
+    "termination_grace_seconds": 5,
+    "per_process_cpu_limit_seconds": 120,
+    "address_space_limit_bytes": 2147483648,
+    "file_size_ulimit_blocks": 65536,
+    "threads": 1,
+    "reported_wall_seconds": 8.3,
+    "reported_user_cpu_seconds": 7.79,
+    "reported_system_cpu_seconds": 0.5,
+    "launch": "timeout --signal=TERM --kill-after=5s 150s bash run.sh; run.sh sets ulimit -t120 -v2097152 -f65536 and executes six commands sequentially with set -euo pipefail",
+    "commands": [
+      "python3 verify_word.py k17_optimal24313.word --k 17 --sha256 7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9 --json k17.json",
+      "python3 verify_word.py k18_optimal48623.word --k 18 --sha256 6b191b447231c665bb1288cdc7ebdea5c73fd79502ef47015ee3d98fcf685be5 --json k18.json",
+      "python3 verify_word.py k19_optimal92381.word --k 19 --sha256 1d0e7595dc72c6f1b7590e9565d5c0d3c30d70138e993d074e7d90d778d4e414 --cyclic-core 92378 --lift-word k20_optimal184759.word --json k19.json",
+      "python3 verify_word.py k20_optimal184759.word --k 20 --sha256 047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02 --json k20.json",
+      "python3 verify_word.py k21_optimal352719.word --k 21 --sha256 eb44ff87a669ae0163bdf926283c22c5494e08322efb5c947994a676dc3af1d2 --cyclic-core 352716 --lift-word k22_optimal705435.word --json k21.json",
+      "python3 verify_word.py k22_optimal705435.word --k 22 --sha256 a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd --json k22.json"
+    ],
+    "output": "PASS_OPTIMAL k=17 length=24313 covered=131071/131071 B=24313 gap=0\nSHA-256 7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9\nPASS_OPTIMAL k=18 length=48623 covered=262143/262143 B=48623 gap=0\nSHA-256 6b191b447231c665bb1288cdc7ebdea5c73fd79502ef47015ee3d98fcf685be5\nPASS_OPTIMAL k=19 length=92381 covered=524287/524287 B=92381 gap=0\nSHA-256 1d0e7595dc72c6f1b7590e9565d5c0d3c30d70138e993d074e7d90d778d4e414\nCyclic core: {\"all_targets_have_witness_span_at_most_period\": true, \"cyclic_lower_bound\": 92378, \"length\": 92378, \"opening_delay\": 3, \"optimal\": true}\nPeriodic lift: {\"byte_identical\": true, \"format\": \"one decimal mask per line, final newline\", \"input_sha256\": \"047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02\", \"k\": 20, \"length\": 184759, \"word\": \"k20_optimal184759.word\"}\nPASS_OPTIMAL k=20 length=184759 covered=1048575/1048575 B=184759 gap=0\nSHA-256 047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02\nPASS_OPTIMAL k=21 length=352719 covered=2097151/2097151 B=352719 gap=0\nSHA-256 eb44ff87a669ae0163bdf926283c22c5494e08322efb5c947994a676dc3af1d2\nCyclic core: {\"all_targets_have_witness_span_at_most_period\": true, \"cyclic_lower_bound\": 352716, \"length\": 352716, \"opening_delay\": 3, \"optimal\": true}\nPeriodic lift: {\"byte_identical\": true, \"format\": \"one decimal mask per line, final newline\", \"input_sha256\": \"a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd\", \"k\": 22, \"length\": 705435, \"word\": \"k22_optimal705435.word\"}\nPASS_OPTIMAL k=22 length=705435 covered=4194303/4194303 B=705435 gap=0\nSHA-256 a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd\nreal 8.30\nuser 7.79\nsys 0.50\n"
+  },
+  "results": [
+    {
+      "status": "PASS_OPTIMAL",
+      "k": 17,
+      "word": "k17_optimal24313.word",
+      "length": 24313,
+      "input_sha256": "7d85f8494084c7eb3f4b196159f3a5b5b020a0170e26ad0e34c6087bda525ff9",
+      "input_bytes": 141069,
+      "nonempty_targets": 131071,
+      "covered_nonempty_targets": 131071,
+      "missing_targets": 0,
+      "target_rank_counts": [
+        0,
+        17,
+        136,
+        680,
+        2380,
+        6188,
+        12376,
+        19448,
+        24310,
+        24310,
+        19448,
+        12376,
+        6188,
+        2380,
+        680,
+        136,
+        17,
+        1
+      ],
+      "endpoint_lower_bound": 24313,
+      "gap_to_lower_bound": 0,
+      "all_rank_lower_bounds": [
+        {
+          "rank": 1,
+          "width": 17,
+          "smaller_targets": 0,
+          "delay": 0,
+          "lower_bound": 17,
+          "capacity_at_delay": 0,
+          "capacity_at_previous_delay": null
+        },
+        {
+          "rank": 2,
+          "width": 136,
+          "smaller_targets": 17,
+          "delay": 1,
+          "lower_bound": 137,
+          "capacity_at_delay": 137,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 3,
+          "width": 680,
+          "smaller_targets": 153,
+          "delay": 1,
+          "lower_bound": 681,
+          "capacity_at_delay": 681,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 4,
+          "width": 2380,
+          "smaller_targets": 833,
+          "delay": 1,
+          "lower_bound": 2381,
+          "capacity_at_delay": 2381,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 5,
+          "width": 6188,
+          "smaller_targets": 3213,
+          "delay": 1,
+          "lower_bound": 6189,
+          "capacity_at_delay": 6189,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 6,
+          "width": 12376,
+          "smaller_targets": 9401,
+          "delay": 1,
+          "lower_bound": 12377,
+          "capacity_at_delay": 12377,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 7,
+          "width": 19448,
+          "smaller_targets": 21777,
+          "delay": 2,
+          "lower_bound": 19450,
+          "capacity_at_delay": 38899,
+          "capacity_at_previous_delay": 19449
+        },
+        {
+          "rank": 8,
+          "width": 24310,
+          "smaller_targets": 41225,
+          "delay": 2,
+          "lower_bound": 24312,
+          "capacity_at_delay": 48623,
+          "capacity_at_previous_delay": 24311
+        },
+        {
+          "rank": 9,
+          "width": 24310,
+          "smaller_targets": 65535,
+          "delay": 3,
+          "lower_bound": 24313,
+          "capacity_at_delay": 72936,
+          "capacity_at_previous_delay": 48623
+        },
+        {
+          "rank": 10,
+          "width": 19448,
+          "smaller_targets": 89845,
+          "delay": 5,
+          "lower_bound": 19453,
+          "capacity_at_delay": 97255,
+          "capacity_at_previous_delay": 77802
+        },
+        {
+          "rank": 11,
+          "width": 12376,
+          "smaller_targets": 109293,
+          "delay": 9,
+          "lower_bound": 12385,
+          "capacity_at_delay": 111429,
+          "capacity_at_previous_delay": 99044
+        },
+        {
+          "rank": 12,
+          "width": 6188,
+          "smaller_targets": 121669,
+          "delay": 20,
+          "lower_bound": 6208,
+          "capacity_at_delay": 123970,
+          "capacity_at_previous_delay": 117762
+        },
+        {
+          "rank": 13,
+          "width": 2380,
+          "smaller_targets": 127857,
+          "delay": 54,
+          "lower_bound": 2434,
+          "capacity_at_delay": 130005,
+          "capacity_at_previous_delay": 127571
+        },
+        {
+          "rank": 14,
+          "width": 680,
+          "smaller_targets": 130237,
+          "delay": 171,
+          "lower_bound": 851,
+          "capacity_at_delay": 130986,
+          "capacity_at_previous_delay": 130135
+        },
+        {
+          "rank": 15,
+          "width": 136,
+          "smaller_targets": 130917,
+          "delay": 394,
+          "lower_bound": 530,
+          "capacity_at_delay": 131399,
+          "capacity_at_previous_delay": 130869
+        },
+        {
+          "rank": 16,
+          "width": 17,
+          "smaller_targets": 131053,
+          "delay": 495,
+          "lower_bound": 512,
+          "capacity_at_delay": 131175,
+          "capacity_at_previous_delay": 130663
+        },
+        {
+          "rank": 17,
+          "width": 1,
+          "smaller_targets": 131070,
+          "delay": 511,
+          "lower_bound": 512,
+          "capacity_at_delay": 131327,
+          "capacity_at_previous_delay": 130815
+        }
+      ],
+      "maximizing_ranks": [
+        9
+      ],
+      "suffix_union_events": 291650,
+      "maximum_distinct_suffix_unions": 12,
+      "maximum_first_witness_span": 24,
+      "all_letters_nonempty": true,
+      "interval_type": "ordinary, nonwrapping"
+    },
+    {
+      "status": "PASS_OPTIMAL",
+      "k": 18,
+      "word": "k18_optimal48623.word",
+      "length": 48623,
+      "input_sha256": "6b191b447231c665bb1288cdc7ebdea5c73fd79502ef47015ee3d98fcf685be5",
+      "input_bytes": 311240,
+      "nonempty_targets": 262143,
+      "covered_nonempty_targets": 262143,
+      "missing_targets": 0,
+      "target_rank_counts": [
+        0,
+        18,
+        153,
+        816,
+        3060,
+        8568,
+        18564,
+        31824,
+        43758,
+        48620,
+        43758,
+        31824,
+        18564,
+        8568,
+        3060,
+        816,
+        153,
+        18,
+        1
+      ],
+      "endpoint_lower_bound": 48623,
+      "gap_to_lower_bound": 0,
+      "all_rank_lower_bounds": [
+        {
+          "rank": 1,
+          "width": 18,
+          "smaller_targets": 0,
+          "delay": 0,
+          "lower_bound": 18,
+          "capacity_at_delay": 0,
+          "capacity_at_previous_delay": null
+        },
+        {
+          "rank": 2,
+          "width": 153,
+          "smaller_targets": 18,
+          "delay": 1,
+          "lower_bound": 154,
+          "capacity_at_delay": 154,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 3,
+          "width": 816,
+          "smaller_targets": 171,
+          "delay": 1,
+          "lower_bound": 817,
+          "capacity_at_delay": 817,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 4,
+          "width": 3060,
+          "smaller_targets": 987,
+          "delay": 1,
+          "lower_bound": 3061,
+          "capacity_at_delay": 3061,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 5,
+          "width": 8568,
+          "smaller_targets": 4047,
+          "delay": 1,
+          "lower_bound": 8569,
+          "capacity_at_delay": 8569,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 6,
+          "width": 18564,
+          "smaller_targets": 12615,
+          "delay": 1,
+          "lower_bound": 18565,
+          "capacity_at_delay": 18565,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 7,
+          "width": 31824,
+          "smaller_targets": 31179,
+          "delay": 1,
+          "lower_bound": 31825,
+          "capacity_at_delay": 31825,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 8,
+          "width": 43758,
+          "smaller_targets": 63003,
+          "delay": 2,
+          "lower_bound": 43760,
+          "capacity_at_delay": 87519,
+          "capacity_at_previous_delay": 43759
+        },
+        {
+          "rank": 9,
+          "width": 48620,
+          "smaller_targets": 106761,
+          "delay": 3,
+          "lower_bound": 48623,
+          "capacity_at_delay": 145866,
+          "capacity_at_previous_delay": 97243
+        },
+        {
+          "rank": 10,
+          "width": 43758,
+          "smaller_targets": 155381,
+          "delay": 4,
+          "lower_bound": 43762,
+          "capacity_at_delay": 175042,
+          "capacity_at_previous_delay": 131280
+        },
+        {
+          "rank": 11,
+          "width": 31824,
+          "smaller_targets": 199139,
+          "delay": 7,
+          "lower_bound": 31831,
+          "capacity_at_delay": 222796,
+          "capacity_at_previous_delay": 190965
+        },
+        {
+          "rank": 12,
+          "width": 18564,
+          "smaller_targets": 230963,
+          "delay": 13,
+          "lower_bound": 18577,
+          "capacity_at_delay": 241423,
+          "capacity_at_previous_delay": 222846
+        },
+        {
+          "rank": 13,
+          "width": 8568,
+          "smaller_targets": 249527,
+          "delay": 30,
+          "lower_bound": 8598,
+          "capacity_at_delay": 257505,
+          "capacity_at_previous_delay": 248907
+        },
+        {
+          "rank": 14,
+          "width": 3060,
+          "smaller_targets": 258095,
+          "delay": 84,
+          "lower_bound": 3144,
+          "capacity_at_delay": 260610,
+          "capacity_at_previous_delay": 257466
+        },
+        {
+          "rank": 15,
+          "width": 816,
+          "smaller_targets": 261155,
+          "delay": 274,
+          "lower_bound": 1090,
+          "capacity_at_delay": 261259,
+          "capacity_at_previous_delay": 260169
+        },
+        {
+          "rank": 16,
+          "width": 153,
+          "smaller_targets": 261971,
+          "delay": 587,
+          "lower_bound": 740,
+          "capacity_at_delay": 262389,
+          "capacity_at_previous_delay": 261649
+        },
+        {
+          "rank": 17,
+          "width": 18,
+          "smaller_targets": 262124,
+          "delay": 706,
+          "lower_bound": 724,
+          "capacity_at_delay": 262279,
+          "capacity_at_previous_delay": 261555
+        },
+        {
+          "rank": 18,
+          "width": 1,
+          "smaller_targets": 262142,
+          "delay": 723,
+          "lower_bound": 724,
+          "capacity_at_delay": 262449,
+          "capacity_at_previous_delay": 261725
+        }
+      ],
+      "maximizing_ranks": [
+        9
+      ],
+      "suffix_union_events": 583371,
+      "maximum_distinct_suffix_unions": 13,
+      "maximum_first_witness_span": 37,
+      "all_letters_nonempty": true,
+      "interval_type": "ordinary, nonwrapping"
+    },
+    {
+      "status": "PASS_OPTIMAL",
+      "k": 19,
+      "word": "k19_optimal92381.word",
+      "length": 92381,
+      "input_sha256": "1d0e7595dc72c6f1b7590e9565d5c0d3c30d70138e993d074e7d90d778d4e414",
+      "input_bytes": 598636,
+      "nonempty_targets": 524287,
+      "covered_nonempty_targets": 524287,
+      "missing_targets": 0,
+      "target_rank_counts": [
+        0,
+        19,
+        171,
+        969,
+        3876,
+        11628,
+        27132,
+        50388,
+        75582,
+        92378,
+        92378,
+        75582,
+        50388,
+        27132,
+        11628,
+        3876,
+        969,
+        171,
+        19,
+        1
+      ],
+      "endpoint_lower_bound": 92381,
+      "gap_to_lower_bound": 0,
+      "all_rank_lower_bounds": [
+        {
+          "rank": 1,
+          "width": 19,
+          "smaller_targets": 0,
+          "delay": 0,
+          "lower_bound": 19,
+          "capacity_at_delay": 0,
+          "capacity_at_previous_delay": null
+        },
+        {
+          "rank": 2,
+          "width": 171,
+          "smaller_targets": 19,
+          "delay": 1,
+          "lower_bound": 172,
+          "capacity_at_delay": 172,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 3,
+          "width": 969,
+          "smaller_targets": 190,
+          "delay": 1,
+          "lower_bound": 970,
+          "capacity_at_delay": 970,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 4,
+          "width": 3876,
+          "smaller_targets": 1159,
+          "delay": 1,
+          "lower_bound": 3877,
+          "capacity_at_delay": 3877,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 5,
+          "width": 11628,
+          "smaller_targets": 5035,
+          "delay": 1,
+          "lower_bound": 11629,
+          "capacity_at_delay": 11629,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 6,
+          "width": 27132,
+          "smaller_targets": 16663,
+          "delay": 1,
+          "lower_bound": 27133,
+          "capacity_at_delay": 27133,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 7,
+          "width": 50388,
+          "smaller_targets": 43795,
+          "delay": 1,
+          "lower_bound": 50389,
+          "capacity_at_delay": 50389,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 8,
+          "width": 75582,
+          "smaller_targets": 94183,
+          "delay": 2,
+          "lower_bound": 75584,
+          "capacity_at_delay": 151167,
+          "capacity_at_previous_delay": 75583
+        },
+        {
+          "rank": 9,
+          "width": 92378,
+          "smaller_targets": 169765,
+          "delay": 2,
+          "lower_bound": 92380,
+          "capacity_at_delay": 184759,
+          "capacity_at_previous_delay": 92379
+        },
+        {
+          "rank": 10,
+          "width": 92378,
+          "smaller_targets": 262143,
+          "delay": 3,
+          "lower_bound": 92381,
+          "capacity_at_delay": 277140,
+          "capacity_at_previous_delay": 184759
+        },
+        {
+          "rank": 11,
+          "width": 75582,
+          "smaller_targets": 354521,
+          "delay": 5,
+          "lower_bound": 75587,
+          "capacity_at_delay": 377925,
+          "capacity_at_previous_delay": 302338
+        },
+        {
+          "rank": 12,
+          "width": 50388,
+          "smaller_targets": 430103,
+          "delay": 9,
+          "lower_bound": 50397,
+          "capacity_at_delay": 453537,
+          "capacity_at_previous_delay": 403140
+        },
+        {
+          "rank": 13,
+          "width": 27132,
+          "smaller_targets": 480491,
+          "delay": 18,
+          "lower_bound": 27150,
+          "capacity_at_delay": 488547,
+          "capacity_at_previous_delay": 461397
+        },
+        {
+          "rank": 14,
+          "width": 11628,
+          "smaller_targets": 507623,
+          "delay": 44,
+          "lower_bound": 11672,
+          "capacity_at_delay": 512622,
+          "capacity_at_previous_delay": 500950
+        },
+        {
+          "rank": 15,
+          "width": 3876,
+          "smaller_targets": 519251,
+          "delay": 132,
+          "lower_bound": 4008,
+          "capacity_at_delay": 520410,
+          "capacity_at_previous_delay": 516402
+        },
+        {
+          "rank": 16,
+          "width": 969,
+          "smaller_targets": 523127,
+          "delay": 440,
+          "lower_bound": 1409,
+          "capacity_at_delay": 523380,
+          "capacity_at_previous_delay": 521971
+        },
+        {
+          "rank": 17,
+          "width": 171,
+          "smaller_targets": 524096,
+          "delay": 867,
+          "lower_bound": 1038,
+          "capacity_at_delay": 524535,
+          "capacity_at_previous_delay": 523497
+        },
+        {
+          "rank": 18,
+          "width": 19,
+          "smaller_targets": 524267,
+          "delay": 1005,
+          "lower_bound": 1024,
+          "capacity_at_delay": 524610,
+          "capacity_at_previous_delay": 523586
+        },
+        {
+          "rank": 19,
+          "width": 1,
+          "smaller_targets": 524286,
+          "delay": 1023,
+          "lower_bound": 1024,
+          "capacity_at_delay": 524799,
+          "capacity_at_previous_delay": 523775
+        }
+      ],
+      "maximizing_ranks": [
+        10
+      ],
+      "suffix_union_events": 1200846,
+      "maximum_distinct_suffix_unions": 13,
+      "maximum_first_witness_span": 29,
+      "all_letters_nonempty": true,
+      "interval_type": "ordinary, nonwrapping",
+      "cyclic_core": {
+        "length": 92378,
+        "opening_delay": 3,
+        "all_targets_have_witness_span_at_most_period": true,
+        "cyclic_lower_bound": 92378,
+        "optimal": true
+      },
+      "periodic_core_lift": {
+        "word": "k20_optimal184759.word",
+        "k": 20,
+        "length": 184759,
+        "input_sha256": "047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02",
+        "byte_identical": true,
+        "format": "one decimal mask per line, final newline"
+      }
+    },
+    {
+      "status": "PASS_OPTIMAL",
+      "k": 20,
+      "word": "k20_optimal184759.word",
+      "length": 184759,
+      "input_sha256": "047b990b9e9f7a4585ba5d8fadf9c3d191cd218c989c3ffacf6e351d91b88d02",
+      "input_bytes": 1246071,
+      "nonempty_targets": 1048575,
+      "covered_nonempty_targets": 1048575,
+      "missing_targets": 0,
+      "target_rank_counts": [
+        0,
+        20,
+        190,
+        1140,
+        4845,
+        15504,
+        38760,
+        77520,
+        125970,
+        167960,
+        184756,
+        167960,
+        125970,
+        77520,
+        38760,
+        15504,
+        4845,
+        1140,
+        190,
+        20,
+        1
+      ],
+      "endpoint_lower_bound": 184759,
+      "gap_to_lower_bound": 0,
+      "all_rank_lower_bounds": [
+        {
+          "rank": 1,
+          "width": 20,
+          "smaller_targets": 0,
+          "delay": 0,
+          "lower_bound": 20,
+          "capacity_at_delay": 0,
+          "capacity_at_previous_delay": null
+        },
+        {
+          "rank": 2,
+          "width": 190,
+          "smaller_targets": 20,
+          "delay": 1,
+          "lower_bound": 191,
+          "capacity_at_delay": 191,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 3,
+          "width": 1140,
+          "smaller_targets": 210,
+          "delay": 1,
+          "lower_bound": 1141,
+          "capacity_at_delay": 1141,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 4,
+          "width": 4845,
+          "smaller_targets": 1350,
+          "delay": 1,
+          "lower_bound": 4846,
+          "capacity_at_delay": 4846,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 5,
+          "width": 15504,
+          "smaller_targets": 6195,
+          "delay": 1,
+          "lower_bound": 15505,
+          "capacity_at_delay": 15505,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 6,
+          "width": 38760,
+          "smaller_targets": 21699,
+          "delay": 1,
+          "lower_bound": 38761,
+          "capacity_at_delay": 38761,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 7,
+          "width": 77520,
+          "smaller_targets": 60459,
+          "delay": 1,
+          "lower_bound": 77521,
+          "capacity_at_delay": 77521,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 8,
+          "width": 125970,
+          "smaller_targets": 137979,
+          "delay": 2,
+          "lower_bound": 125972,
+          "capacity_at_delay": 251943,
+          "capacity_at_previous_delay": 125971
+        },
+        {
+          "rank": 9,
+          "width": 167960,
+          "smaller_targets": 263949,
+          "delay": 2,
+          "lower_bound": 167962,
+          "capacity_at_delay": 335923,
+          "capacity_at_previous_delay": 167961
+        },
+        {
+          "rank": 10,
+          "width": 184756,
+          "smaller_targets": 431909,
+          "delay": 3,
+          "lower_bound": 184759,
+          "capacity_at_delay": 554274,
+          "capacity_at_previous_delay": 369515
+        },
+        {
+          "rank": 11,
+          "width": 167960,
+          "smaller_targets": 616665,
+          "delay": 4,
+          "lower_bound": 167964,
+          "capacity_at_delay": 671850,
+          "capacity_at_previous_delay": 503886
+        },
+        {
+          "rank": 12,
+          "width": 125970,
+          "smaller_targets": 784625,
+          "delay": 7,
+          "lower_bound": 125977,
+          "capacity_at_delay": 881818,
+          "capacity_at_previous_delay": 755841
+        },
+        {
+          "rank": 13,
+          "width": 77520,
+          "smaller_targets": 910595,
+          "delay": 12,
+          "lower_bound": 77532,
+          "capacity_at_delay": 930318,
+          "capacity_at_previous_delay": 852786
+        },
+        {
+          "rank": 14,
+          "width": 38760,
+          "smaller_targets": 988115,
+          "delay": 26,
+          "lower_bound": 38786,
+          "capacity_at_delay": 1008111,
+          "capacity_at_previous_delay": 969325
+        },
+        {
+          "rank": 15,
+          "width": 15504,
+          "smaller_targets": 1026875,
+          "delay": 67,
+          "lower_bound": 15571,
+          "capacity_at_delay": 1041046,
+          "capacity_at_previous_delay": 1025475
+        },
+        {
+          "rank": 16,
+          "width": 4845,
+          "smaller_targets": 1042379,
+          "delay": 211,
+          "lower_bound": 5056,
+          "capacity_at_delay": 1044661,
+          "capacity_at_previous_delay": 1039605
+        },
+        {
+          "rank": 17,
+          "width": 1140,
+          "smaller_targets": 1047224,
+          "delay": 703,
+          "lower_bound": 1843,
+          "capacity_at_delay": 1048876,
+          "capacity_at_previous_delay": 1047033
+        },
+        {
+          "rank": 18,
+          "width": 190,
+          "smaller_targets": 1048364,
+          "delay": 1270,
+          "lower_bound": 1460,
+          "capacity_at_delay": 1048385,
+          "capacity_at_previous_delay": 1046925
+        },
+        {
+          "rank": 19,
+          "width": 20,
+          "smaller_targets": 1048554,
+          "delay": 1428,
+          "lower_bound": 1448,
+          "capacity_at_delay": 1048866,
+          "capacity_at_previous_delay": 1047418
+        },
+        {
+          "rank": 20,
+          "width": 1,
+          "smaller_targets": 1048574,
+          "delay": 1447,
+          "lower_bound": 1448,
+          "capacity_at_delay": 1049075,
+          "capacity_at_previous_delay": 1047627
+        }
+      ],
+      "maximizing_ranks": [
+        10
+      ],
+      "suffix_union_events": 2401761,
+      "maximum_distinct_suffix_unions": 14,
+      "maximum_first_witness_span": 29,
+      "all_letters_nonempty": true,
+      "interval_type": "ordinary, nonwrapping"
+    },
+    {
+      "status": "PASS_OPTIMAL",
+      "k": 21,
+      "word": "k21_optimal352719.word",
+      "length": 352719,
+      "input_sha256": "eb44ff87a669ae0163bdf926283c22c5494e08322efb5c947994a676dc3af1d2",
+      "input_bytes": 2526061,
+      "nonempty_targets": 2097151,
+      "covered_nonempty_targets": 2097151,
+      "missing_targets": 0,
+      "target_rank_counts": [
+        0,
+        21,
+        210,
+        1330,
+        5985,
+        20349,
+        54264,
+        116280,
+        203490,
+        293930,
+        352716,
+        352716,
+        293930,
+        203490,
+        116280,
+        54264,
+        20349,
+        5985,
+        1330,
+        210,
+        21,
+        1
+      ],
+      "endpoint_lower_bound": 352719,
+      "gap_to_lower_bound": 0,
+      "all_rank_lower_bounds": [
+        {
+          "rank": 1,
+          "width": 21,
+          "smaller_targets": 0,
+          "delay": 0,
+          "lower_bound": 21,
+          "capacity_at_delay": 0,
+          "capacity_at_previous_delay": null
+        },
+        {
+          "rank": 2,
+          "width": 210,
+          "smaller_targets": 21,
+          "delay": 1,
+          "lower_bound": 211,
+          "capacity_at_delay": 211,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 3,
+          "width": 1330,
+          "smaller_targets": 231,
+          "delay": 1,
+          "lower_bound": 1331,
+          "capacity_at_delay": 1331,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 4,
+          "width": 5985,
+          "smaller_targets": 1561,
+          "delay": 1,
+          "lower_bound": 5986,
+          "capacity_at_delay": 5986,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 5,
+          "width": 20349,
+          "smaller_targets": 7546,
+          "delay": 1,
+          "lower_bound": 20350,
+          "capacity_at_delay": 20350,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 6,
+          "width": 54264,
+          "smaller_targets": 27895,
+          "delay": 1,
+          "lower_bound": 54265,
+          "capacity_at_delay": 54265,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 7,
+          "width": 116280,
+          "smaller_targets": 82159,
+          "delay": 1,
+          "lower_bound": 116281,
+          "capacity_at_delay": 116281,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 8,
+          "width": 203490,
+          "smaller_targets": 198439,
+          "delay": 1,
+          "lower_bound": 203491,
+          "capacity_at_delay": 203491,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 9,
+          "width": 293930,
+          "smaller_targets": 401929,
+          "delay": 2,
+          "lower_bound": 293932,
+          "capacity_at_delay": 587863,
+          "capacity_at_previous_delay": 293931
+        },
+        {
+          "rank": 10,
+          "width": 352716,
+          "smaller_targets": 695859,
+          "delay": 2,
+          "lower_bound": 352718,
+          "capacity_at_delay": 705435,
+          "capacity_at_previous_delay": 352717
+        },
+        {
+          "rank": 11,
+          "width": 352716,
+          "smaller_targets": 1048575,
+          "delay": 3,
+          "lower_bound": 352719,
+          "capacity_at_delay": 1058154,
+          "capacity_at_previous_delay": 705435
+        },
+        {
+          "rank": 12,
+          "width": 293930,
+          "smaller_targets": 1401291,
+          "delay": 5,
+          "lower_bound": 293935,
+          "capacity_at_delay": 1469665,
+          "capacity_at_previous_delay": 1175730
+        },
+        {
+          "rank": 13,
+          "width": 203490,
+          "smaller_targets": 1695221,
+          "delay": 9,
+          "lower_bound": 203499,
+          "capacity_at_delay": 1831455,
+          "capacity_at_previous_delay": 1627956
+        },
+        {
+          "rank": 14,
+          "width": 116280,
+          "smaller_targets": 1898711,
+          "delay": 17,
+          "lower_bound": 116297,
+          "capacity_at_delay": 1976913,
+          "capacity_at_previous_delay": 1860616
+        },
+        {
+          "rank": 15,
+          "width": 54264,
+          "smaller_targets": 2014991,
+          "delay": 38,
+          "lower_bound": 54302,
+          "capacity_at_delay": 2062773,
+          "capacity_at_previous_delay": 2008471
+        },
+        {
+          "rank": 16,
+          "width": 20349,
+          "smaller_targets": 2069255,
+          "delay": 102,
+          "lower_bound": 20451,
+          "capacity_at_delay": 2080851,
+          "capacity_at_previous_delay": 2060400
+        },
+        {
+          "rank": 17,
+          "width": 5985,
+          "smaller_targets": 2089604,
+          "delay": 340,
+          "lower_bound": 6325,
+          "capacity_at_delay": 2092870,
+          "capacity_at_previous_delay": 2086545
+        },
+        {
+          "rank": 18,
+          "width": 1330,
+          "smaller_targets": 2095589,
+          "delay": 1112,
+          "lower_bound": 2442,
+          "capacity_at_delay": 2097788,
+          "capacity_at_previous_delay": 2095346
+        },
+        {
+          "rank": 19,
+          "width": 210,
+          "smaller_targets": 2096919,
+          "delay": 1849,
+          "lower_bound": 2059,
+          "capacity_at_delay": 2098615,
+          "capacity_at_previous_delay": 2096556
+        },
+        {
+          "rank": 20,
+          "width": 21,
+          "smaller_targets": 2097129,
+          "delay": 2027,
+          "lower_bound": 2048,
+          "capacity_at_delay": 2097945,
+          "capacity_at_previous_delay": 2095897
+        },
+        {
+          "rank": 21,
+          "width": 1,
+          "smaller_targets": 2097150,
+          "delay": 2047,
+          "lower_bound": 2048,
+          "capacity_at_delay": 2098175,
+          "capacity_at_previous_delay": 2096127
+        }
+      ],
+      "maximizing_ranks": [
+        11
+      ],
+      "suffix_union_events": 4937949,
+      "maximum_distinct_suffix_unions": 14,
+      "maximum_first_witness_span": 29,
+      "all_letters_nonempty": true,
+      "interval_type": "ordinary, nonwrapping",
+      "cyclic_core": {
+        "length": 352716,
+        "opening_delay": 3,
+        "all_targets_have_witness_span_at_most_period": true,
+        "cyclic_lower_bound": 352716,
+        "optimal": true
+      },
+      "periodic_core_lift": {
+        "word": "k22_optimal705435.word",
+        "k": 22,
+        "length": 705435,
+        "input_sha256": "a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd",
+        "byte_identical": true,
+        "format": "one decimal mask per line, final newline"
+      }
+    },
+    {
+      "status": "PASS_OPTIMAL",
+      "k": 22,
+      "word": "k22_optimal705435.word",
+      "length": 705435,
+      "input_sha256": "a32fe59af4511fcf1a0e032e3f57ae358a9b74492a3f6d56aa8f4564c77ba2dd",
+      "input_bytes": 5347789,
+      "nonempty_targets": 4194303,
+      "covered_nonempty_targets": 4194303,
+      "missing_targets": 0,
+      "target_rank_counts": [
+        0,
+        22,
+        231,
+        1540,
+        7315,
+        26334,
+        74613,
+        170544,
+        319770,
+        497420,
+        646646,
+        705432,
+        646646,
+        497420,
+        319770,
+        170544,
+        74613,
+        26334,
+        7315,
+        1540,
+        231,
+        22,
+        1
+      ],
+      "endpoint_lower_bound": 705435,
+      "gap_to_lower_bound": 0,
+      "all_rank_lower_bounds": [
+        {
+          "rank": 1,
+          "width": 22,
+          "smaller_targets": 0,
+          "delay": 0,
+          "lower_bound": 22,
+          "capacity_at_delay": 0,
+          "capacity_at_previous_delay": null
+        },
+        {
+          "rank": 2,
+          "width": 231,
+          "smaller_targets": 22,
+          "delay": 1,
+          "lower_bound": 232,
+          "capacity_at_delay": 232,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 3,
+          "width": 1540,
+          "smaller_targets": 253,
+          "delay": 1,
+          "lower_bound": 1541,
+          "capacity_at_delay": 1541,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 4,
+          "width": 7315,
+          "smaller_targets": 1793,
+          "delay": 1,
+          "lower_bound": 7316,
+          "capacity_at_delay": 7316,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 5,
+          "width": 26334,
+          "smaller_targets": 9108,
+          "delay": 1,
+          "lower_bound": 26335,
+          "capacity_at_delay": 26335,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 6,
+          "width": 74613,
+          "smaller_targets": 35442,
+          "delay": 1,
+          "lower_bound": 74614,
+          "capacity_at_delay": 74614,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 7,
+          "width": 170544,
+          "smaller_targets": 110055,
+          "delay": 1,
+          "lower_bound": 170545,
+          "capacity_at_delay": 170545,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 8,
+          "width": 319770,
+          "smaller_targets": 280599,
+          "delay": 1,
+          "lower_bound": 319771,
+          "capacity_at_delay": 319771,
+          "capacity_at_previous_delay": 0
+        },
+        {
+          "rank": 9,
+          "width": 497420,
+          "smaller_targets": 600369,
+          "delay": 2,
+          "lower_bound": 497422,
+          "capacity_at_delay": 994843,
+          "capacity_at_previous_delay": 497421
+        },
+        {
+          "rank": 10,
+          "width": 646646,
+          "smaller_targets": 1097789,
+          "delay": 2,
+          "lower_bound": 646648,
+          "capacity_at_delay": 1293295,
+          "capacity_at_previous_delay": 646647
+        },
+        {
+          "rank": 11,
+          "width": 705432,
+          "smaller_targets": 1744435,
+          "delay": 3,
+          "lower_bound": 705435,
+          "capacity_at_delay": 2116302,
+          "capacity_at_previous_delay": 1410867
+        },
+        {
+          "rank": 12,
+          "width": 646646,
+          "smaller_targets": 2449867,
+          "delay": 4,
+          "lower_bound": 646650,
+          "capacity_at_delay": 2586594,
+          "capacity_at_previous_delay": 1939944
+        },
+        {
+          "rank": 13,
+          "width": 497420,
+          "smaller_targets": 3096513,
+          "delay": 7,
+          "lower_bound": 497427,
+          "capacity_at_delay": 3481968,
+          "capacity_at_previous_delay": 2984541
+        },
+        {
+          "rank": 14,
+          "width": 319770,
+          "smaller_targets": 3593933,
+          "delay": 12,
+          "lower_bound": 319782,
+          "capacity_at_delay": 3837318,
+          "capacity_at_previous_delay": 3517536
+        },
+        {
+          "rank": 15,
+          "width": 170544,
+          "smaller_targets": 3913703,
+          "delay": 23,
+          "lower_bound": 170567,
+          "capacity_at_delay": 3922788,
+          "capacity_at_previous_delay": 3752221
+        },
+        {
+          "rank": 16,
+          "width": 74613,
+          "smaller_targets": 4084247,
+          "delay": 55,
+          "lower_bound": 74668,
+          "capacity_at_delay": 4105255,
+          "capacity_at_previous_delay": 4030587
+        },
+        {
+          "rank": 17,
+          "width": 26334,
+          "smaller_targets": 4158860,
+          "delay": 158,
+          "lower_bound": 26492,
+          "capacity_at_delay": 4173333,
+          "capacity_at_previous_delay": 4146841
+        },
+        {
+          "rank": 18,
+          "width": 7315,
+          "smaller_targets": 4185194,
+          "delay": 552,
+          "lower_bound": 7867,
+          "capacity_at_delay": 4190508,
+          "capacity_at_previous_delay": 4182641
+        },
+        {
+          "rank": 19,
+          "width": 1540,
+          "smaller_targets": 4192509,
+          "delay": 1740,
+          "lower_bound": 3280,
+          "capacity_at_delay": 4194270,
+          "capacity_at_previous_delay": 4190990
+        },
+        {
+          "rank": 20,
+          "width": 231,
+          "smaller_targets": 4194049,
+          "delay": 2674,
+          "lower_bound": 2905,
+          "capacity_at_delay": 4194169,
+          "capacity_at_previous_delay": 4191264
+        },
+        {
+          "rank": 21,
+          "width": 22,
+          "smaller_targets": 4194280,
+          "delay": 2874,
+          "lower_bound": 2896,
+          "capacity_at_delay": 4194603,
+          "capacity_at_previous_delay": 4191707
+        },
+        {
+          "rank": 22,
+          "width": 1,
+          "smaller_targets": 4194302,
+          "delay": 2895,
+          "lower_bound": 2896,
+          "capacity_at_delay": 4194855,
+          "capacity_at_previous_delay": 4191959
+        }
+      ],
+      "maximizing_ranks": [
+        11
+      ],
+      "suffix_union_events": 9875974,
+      "maximum_distinct_suffix_unions": 15,
+      "maximum_first_witness_span": 29,
+      "all_letters_nonempty": true,
+      "interval_type": "ordinary, nonwrapping"
+    }
+  ]
+}

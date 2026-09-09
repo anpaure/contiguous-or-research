@@ -1,4 +1,0 @@
-{"kind":"initialize","r":3,"n":7,"catalan":5,"root_count":3,"initial_U":4,"node_columns":["id","s","a","b","w","P","beta_num","beta_den","mass","height_cap","charge_period","ceil_charge"],"priority":"largest integer ceil charge; smallest node id breaks ties"}
-{"kind":"split","parent_id":1,"first_child_id":3,"child_count":1,"child_mass":3,"child_ceil_sum":1,"frontier_U":3,"frontier_mass":5}
-{"kind":"split","parent_id":2,"first_child_id":4,"child_count":1,"child_mass":1,"child_ceil_sum":1,"frontier_U":3,"frontier_mass":5}
-{"kind":"split","parent_id":4,"first_child_id":5,"child_count":1,"child_mass":1,"child_ceil_sum":1,"frontier_U":3,"frontier_mass":5}

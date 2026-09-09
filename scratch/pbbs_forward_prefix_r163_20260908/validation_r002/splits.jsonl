@@ -1,2 +1,0 @@
-{"kind":"initialize","r":2,"n":5,"catalan":2,"root_count":2,"initial_U":2,"node_columns":["id","s","a","b","w","P","beta_num","beta_den","mass","height_cap","charge_period","ceil_charge"],"priority":"largest integer ceil charge; smallest node id breaks ties"}
-{"kind":"split","parent_id":1,"first_child_id":2,"child_count":1,"child_mass":1,"child_ceil_sum":1,"frontier_U":2,"frontier_mass":2}

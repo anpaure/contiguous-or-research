@@ -1,9 +1,0 @@
-length=3432 distinct_rank7=3432/3432 unique=1 values_ok=1 johnson=1 rank6_colors=3003/3003 rank8_colors=3003/3003 rank5_triples=1938/2002 forbidden_runs=0
-union_rank=7 covered=3432/3432
-union_rank=8 covered=3003/3003
-union_rank=9 covered=1753/2002
-union_rank=10 covered=961/1001
-union_rank=11 covered=363/364
-union_rank=12 covered=91/91
-union_rank=13 covered=14/14
-union_rank=14 covered=1/1

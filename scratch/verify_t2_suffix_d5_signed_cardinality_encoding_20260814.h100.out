@@ -1,8 +1,0 @@
-{
-  "k_modulo_totalizer_assignments": 128,
-  "python_sat_version": "1.9.dev7",
-  "selector_source_sha256": "f6027ea0c4b7c03a1bcb5dd3617ada395fade2d1a6137c9d72bfb50c162d135e",
-  "sequential_counter_assignments": 128,
-  "signed_q2_transform_assignments": 3000,
-  "status": "PASS"
-}

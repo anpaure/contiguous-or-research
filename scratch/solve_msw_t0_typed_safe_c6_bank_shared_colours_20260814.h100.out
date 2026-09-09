@@ -1,8 +1,0 @@
-{
-  "alternating_hexes": 826,
-  "chosen": [],
-  "chosen_count": 0,
-  "objective_bound": 0.0,
-  "status": "INFEASIBLE",
-  "wall_time_seconds": 0.421412502
-}

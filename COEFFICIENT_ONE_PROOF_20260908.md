@@ -32,14 +32,11 @@ $$
 
 This holds in every sufficiently large dimension and covers every rank.
 No explicit convergence rate is asserted by this original argument.
-Subsequent internally reviewed quantitative refinements, with explicit
-constants and thresholds, are recorded in
-[the numerical-rate extension](COEFFICIENT_ONE_EXPLICIT_RATE_20260908.md)
-and [the terminal-rate extension](COEFFICIENT_ONE_TERMINAL_RATE_20260908.md).
-Another refinement of this original route is
-[the sharp-tail rate](COEFFICIENT_ONE_SHARP_TAIL_RATE_20260908.md).
-For the strongest current rate across all recorded routes, use the
-[consolidated bounds ledger](ASYMPTOTIC_BOUNDS.md).
+Subsequent internally reviewed quantitative refinements, with their
+constants, thresholds and dependency qualifications, are consolidated in
+[the master handoff](MASTER_HANDOFF.md). For the strongest current rate
+across all recorded routes, use the
+[bounds ledger](ASYMPTOTIC_BOUNDS.md).
 
 The new argument proves abundant overlap for ALL Gaussian-short PBBS
 repair intervals. It combines growing-depth stationary flux with an
